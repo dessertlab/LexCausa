@@ -1,0 +1,34 @@
+[2026-03-03T14:05:06.607009] Pipeline log - Setup B
+Claim: Una societa di logistica stipula un contratto di fornitura con termine essenziale e penale di 8.000 euro per ogni giorno di ritardo. Il fornitore consegna con 12 giorni di ritardo, ma il committente a
+======================================================================
+Status: ok
+Duration: 505.44s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 4
+  Arguments: 1
+  Causal type: CIV_CONTRACT_REMEDIES
+
+[COUNTER]
+  Chain steps: 4
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7831685573863779
+  Net contra: 0.4241949469136166
+  Net final: 0.35897361047276133
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

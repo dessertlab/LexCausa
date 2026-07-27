@@ -1,0 +1,1428 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 0,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.0,
+      "attack_coverage_ratio": 0.0,
+      "attack_coverage_score": 0.0,
+      "attacks_avg": 0.2471,
+      "base_score_avg": 0.7595499577430256,
+      "cogency_avg": 0.6521748913932954,
+      "net_plausibility": 0.49179156578345423,
+      "net_plausibility_adjusted": 0.49179156578345423,
+      "net_plausibility_raw": 0.5124499577430256,
+      "norm_support_avg": 0.8408847981558047,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.3305342713531421,
+      "redundancy_penalty": 0.020658391959571382,
+      "semantics_avg": 0.7584785702090502
+    },
+    "pro": {
+      "attacks_avg": 0.0002,
+      "base_score_avg": 0.803029018883889,
+      "cogency_avg": 0.6520407133059812,
+      "net_plausibility": 0.803029018883889,
+      "net_plausibility_adjusted": 0.803029018883889,
+      "net_plausibility_dialectical_raw": 0.8028290188838889,
+      "net_plausibility_intrinsic_raw": 0.803029018883889,
+      "net_plausibility_raw": 0.803029018883889,
+      "norm_support_avg": 0.9363539192623218,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.1714965008603902,
+      "redundancy_penalty": 0.04287412521509755,
+      "semantics_avg": 0.7762507906238862
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1541,
+            "attacker_base_score": 0.796,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1208,
+            "damage_factor": 0.4,
+            "excess": 0.3852,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8283,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7357,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7296,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8104,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7357,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8095,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8454,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8141,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          }
+        ],
+        "attacks_sum": 0.1541,
+        "base_score": 0.7356701178683698,
+        "cogency": 0.6377283728803527,
+        "cogency_details": {
+          "argument_quality_score": 0.7243961059591714,
+          "coherence_score": 0.5510606398015341,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 2051 c.c., la responsabilità del custode sussiste solo se il danno è provato come conseguenza diretta e certa della cosa in custodia; le due perizie, divergenti sul ruolo dell’impermeabilizzazione condominiale rispetto ai lavori privati, non consentono di affermare con certezza che la vetusta impermeabilizzazione sia la causa esclusiva delle infiltrazioni. Tale incertezza impedisce di soddisfare il requisito di causalità richiesto dalla norma, perciò il condominio non può essere ritenuto automaticamente responsabile dell’intero danno.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7356701178683698,
+        "nesso_plausibility": 0.5815701178683698,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il requisito di custodia previsto dall’art. 2051 c.c. presuppone che la cosa sia riconosciuta come parte comune soggetta al controllo del condominio; tuttavia la fattispecie non dimostra che la terrazza di copertura sia stata attribuita al comune uso, né che il condominio abbia esercitato poteri di gestione o manutenzione su di essa, perciò non è provata la sua qualifica di cosa in custodia. In assenza di tale prova, la responsabilità per il danno non può essere automaticamente attribuita al condominio ai sensi dell’art. 2051 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.777026831581475,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.777026831581475
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il requisito di custodia previsto dall’art. 2051 c.c. presuppone che la cosa sia riconosciuta come parte comune soggetta al controllo del condominio; tuttavia la fattispecie non dimostra che la terrazza di copertura sia stata attribuita al comune uso, né che il condominio abbia esercitato poteri di gestione o manutenzione su di essa, perciò non è provata la sua qualifica di cosa in custodia. In assenza di tale prova, la responsabilità per il danno non può essere automaticamente attribuita al condominio ai sensi dell’art. 2051 c.c."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.8141,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2285,
+            "damage_factor": 0.4,
+            "excess": 0.4451,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7545,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7834,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1621,
+            "attacker_base_score": 0.8095,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1886,
+            "damage_factor": 0.4,
+            "excess": 0.4052,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8637,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7834,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1572,
+            "attacker_base_score": 0.8454,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1765,
+            "damage_factor": 0.4,
+            "excess": 0.3931,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.6958,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation",
+            "target_base_score": 0.7834,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.796,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.34009999999999996,
+        "base_score": 0.7834297976176814,
+        "cogency": 0.6666214099062381,
+        "cogency_details": {
+          "argument_quality_score": 0.6707307549619348,
+          "coherence_score": 0.6625120648505414,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’art. 1123 c.c. disciplina la ripartizione delle spese necessarie per la conservazione delle parti comuni tra i condomini in proporzione ai millesimi, ma tale meccanismo è puramente interno e non incide sull’obbligo di risarcimento verso il condomino leso, il quale può agire direttamente contro il soggetto responsabile per la custodia della cosa ai sensi dell’art. 2051 c.c.; la quota di partecipazione interna non può, di per sé, ridurre o estinguere il risarcimento dovuto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7834297976176814,
+        "nesso_plausibility": 0.44332979761768143,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 2051 c.c., la responsabilità del custode sussiste solo se il danno è provato come conseguenza diretta e certa della cosa in custodia; le due perizie, divergenti sul ruolo dell’impermeabilizzazione condominiale rispetto ai lavori privati, non consentono di affermare con certezza che la vetusta impermeabilizzazione sia la causa esclusiva delle infiltrazioni. Tale incertezza impedisce di soddisfare il requisito di causalità richiesto dalla norma, perciò il condominio non può essere ritenuto automaticamente responsabile dell’intero danno.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7399303088366255,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7399303088366255
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 2051 c.c., la responsabilità del custode sussiste solo se il danno è provato come conseguenza diretta e certa della cosa in custodia; le due perizie, divergenti sul ruolo dell’impermeabilizzazione condominiale rispetto ai lavori privati, non consentono di affermare con certezza che la vetusta impermeabilizzazione sia la causa esclusiva delle infiltrazioni. Tale incertezza impedisce di soddisfare il requisito di causalità richiesto dalla norma, perciò il condominio non può essere ritenuto automaticamente responsabile dell’intero danno."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7357,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7154,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8104,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7502,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7834,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7501864702661286,
+        "cogency": 0.7156669611305072,
+        "cogency_details": {
+          "argument_quality_score": 0.7175347600141515,
+          "coherence_score": 0.7137991622468629,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "In base all’art. 2051 c.c., la copertura è una cosa comune posta sotto la custodia del condominio, perciò la responsabilità è presunta salvo prova di caso fortuito o di esclusiva responsabilità di terzi; le perizie indicano la vetusta impermeabilizzazione come causa principale, ma la segnalazione di lavori privati eseguiti dal proprietario dell’ultimo piano introduce un possibile concorso di causa che non esclude la responsabilità del custode ma richiede una valutazione separata; così, il condominio è oggettivamente responsabile per la parte di danno derivante dalla mancata esecuzione della manutenzione straordinaria deliberata, mentre la quota imputabile all’intervento privato dovrà essere quantificata in fase successiva.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7501864702661286,
+        "nesso_plausibility": 0.7501864702661286,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il condomino ha subito infiltrazioni nell’appartamento con danni a soffitto, pareti e arredi quantificati in € 8.500; due perizie hanno individuato la causa nella terrazza di copertura, una imputando la vetusta impermeabilizzazione condominiale e l’altra rilevando anche lavori privati eseguiti anni prima dal proprietario dell’ultimo piano. L’assemblea condominiale aveva deliberato la manutenzione straordinaria della copertura, ma tale intervento non è stato realizzato per morosità diffusa e mancanza di cassa. Il danneggiato chiede il risarcimento integrale al condominio, mentre l’amministratore e alcuni condomini sostengono la responsabilità esclusiva dei morosi o del singolo proprietario che utilizza la terrazza.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7474760846571833,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7474760846571833
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il condomino ha subito infiltrazioni nell’appartamento con danni a soffitto, pareti e arredi quantificati in € 8.500; due perizie hanno individuato la causa nella terrazza di copertura, una imputando la vetusta impermeabilizzazione condominiale e l’altra rilevando anche lavori privati eseguiti anni prima dal proprietario dell’ultimo piano. L’assemblea condominiale aveva deliberato la manutenzione straordinaria della copertura, ma tale intervento non è stato realizzato per morosità diffusa e mancanza di cassa. Il danneggiato chiede il risarcimento integrale al condominio, mentre l’amministratore e alcuni condomini sostengono la responsabilità esclusiva dei morosi o del singolo proprietario che utilizza la terrazza."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7357,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7312,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8283,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.796,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7834,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7959673475030007,
+        "cogency": 0.6216694484600476,
+        "cogency_details": {
+          "argument_quality_score": 0.6923446176121104,
+          "coherence_score": 0.5509942793079846,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1227 c.c., il danno può essere imputato in parte al proprietario dell’ultimo piano qualora i lavori privati eseguiti anni prima abbiano modificato la pendenza o l’impermeabilizzazione della terrazza, configurando un concorso causale con la vetusta impermeabilizzazione condominiale; in tal caso la responsabilità del condominio sarebbe ridotta proporzionalmente all’entità del nesso di causalità attribuibile a tali opere private. Il danneggiato, invece, non ha compiuto alcuna condotta colposa né ha omesso di adottare le normali misure di mitigazione, perciò non sussiste alcun concorso del suo fatto colposo ai sensi dello stesso articolo.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7959673475030007,
+        "nesso_plausibility": 0.7959673475030007,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "In base all’art. 2051 c.c., la copertura è una cosa comune posta sotto la custodia del condominio, perciò la responsabilità è presunta salvo prova di caso fortuito o di esclusiva responsabilità di terzi; le perizie indicano la vetusta impermeabilizzazione come causa principale, ma la segnalazione di lavori privati eseguiti dal proprietario dell’ultimo piano introduce un possibile concorso di causa che non esclude la responsabilità del custode ma richiede una valutazione separata; così, il condominio è oggettivamente responsabile per la parte di danno derivante dalla mancata esecuzione della manutenzione straordinaria deliberata, mentre la quota imputabile all’intervento privato dovrà essere quantificata in fase successiva.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8266741032338802,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8266741032338802
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "In base all’art. 2051 c.c., la copertura è una cosa comune posta sotto la custodia del condominio, perciò la responsabilità è presunta salvo prova di caso fortuito o di esclusiva responsabilità di terzi; le perizie indicano la vetusta impermeabilizzazione come causa principale, ma la segnalazione di lavori privati eseguiti dal proprietario dell’ultimo piano introduce un possibile concorso di causa che non esclude la responsabilità del custode ma richiede una valutazione separata; così, il condominio è oggettivamente responsabile per la parte di danno derivante dalla mancata esecuzione della manutenzione straordinaria deliberata, mentre la quota imputabile all’intervento privato dovrà essere quantificata in fase successiva."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.001,
+            "attacker_base_score": 0.7834,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.812,
+            "damage_factor": 0.4,
+            "excess": 0.0025,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8637,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8095,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7357,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.001,
+        "base_score": 0.8095135132571197,
+        "cogency": 0.6256414680687146,
+        "cogency_details": {
+          "argument_quality_score": 0.6348603166111433,
+          "coherence_score": 0.6164226195262859,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione della copertura, parte comune dell’edificio, devono essere ripartite tra tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione o diversa destinazione d’uso; pertanto, salvo che l’assemblea abbia deliberato una diversa ripartizione, ciascun condomino dovrà contribuire al risarcimento di € 8.500 secondo la sua quota millesimale, con eventuale adeguamento per l’uso più intenso da parte del proprietario dell’ultimo piano. L’assemblea, ai sensi dell’art. 1135 c.c., è tenuta ad approvare la ripartizione di tali spese e a costituire, se necessario, il fondo speciale per le opere di manutenzione straordinaria. Inoltre, l’art. 1104 c.c. impone che anche i condomini morosi rimangano obbligati al pagamento della quota a loro spettante, potendo il condominio agire per il recupero coattivo del credito.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.8095135132571197,
+        "nesso_plausibility": 0.8085135132571197,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1227 c.c., il danno può essere imputato in parte al proprietario dell’ultimo piano qualora i lavori privati eseguiti anni prima abbiano modificato la pendenza o l’impermeabilizzazione della terrazza, configurando un concorso causale con la vetusta impermeabilizzazione condominiale; in tal caso la responsabilità del condominio sarebbe ridotta proporzionalmente all’entità del nesso di causalità attribuibile a tali opere private. Il danneggiato, invece, non ha compiuto alcuna condotta colposa né ha omesso di adottare le normali misure di mitigazione, perciò non sussiste alcun concorso del suo fatto colposo ai sensi dello stesso articolo.",
+        "retrieved_norms": [
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "1135",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1204_art1135",
+            "title": "Attribuzioni dell'assemblea dei condomini"
+          },
+          {
+            "articolo": "1104",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1167_art1104",
+            "title": "Obblighi dei partecipanti"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7394035761216844,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7394035761216844
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1227 c.c., il danno può essere imputato in parte al proprietario dell’ultimo piano qualora i lavori privati eseguiti anni prima abbiano modificato la pendenza o l’impermeabilizzazione della terrazza, configurando un concorso causale con la vetusta impermeabilizzazione condominiale; in tal caso la responsabilità del condominio sarebbe ridotta proporzionalmente all’entità del nesso di causalità attribuibile a tali opere private. Il danneggiato, invece, non ha compiuto alcuna condotta colposa né ha omesso di adottare le normali misure di mitigazione, perciò non sussiste alcun concorso del suo fatto colposo ai sensi dello stesso articolo."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7357,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7834,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6541,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6958,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8454,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.8454247866303393,
+        "cogency": 0.6688920381657333,
+        "cogency_details": {
+          "argument_quality_score": 0.6763913588106875,
+          "coherence_score": 0.6613927175207792,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c. il danno risarcibile è costituito dal costo necessario per il ripristino delle parti danneggiate, pari a € 8.500, ma, qualora il giudice accerti un concorso di responsabilità del proprietario dell’ultimo piano, l’importo deve essere diminuito in proporzione alla sua colpa, secondo quanto previsto dall’art. 1227 c.c.; pertanto la quota spettante al condominio sarà € 8.500 ridotta della percentuale di responsabilità attribuita al privato.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.8454247866303393,
+        "nesso_plausibility": 0.8454247866303393,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione della copertura, parte comune dell’edificio, devono essere ripartite tra tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione o diversa destinazione d’uso; pertanto, salvo che l’assemblea abbia deliberato una diversa ripartizione, ciascun condomino dovrà contribuire al risarcimento di € 8.500 secondo la sua quota millesimale, con eventuale adeguamento per l’uso più intenso da parte del proprietario dell’ultimo piano. L’assemblea, ai sensi dell’art. 1135 c.c., è tenuta ad approvare la ripartizione di tali spese e a costituire, se necessario, il fondo speciale per le opere di manutenzione straordinaria. Inoltre, l’art. 1104 c.c. impone che anche i condomini morosi rimangano obbligati al pagamento della quota a loro spettante, potendo il condominio agire per il recupero coattivo del credito.",
+        "retrieved_norms": [
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "1135",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1204_art1135",
+            "title": "Attribuzioni dell'assemblea dei condomini"
+          },
+          {
+            "articolo": "1104",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1167_art1104",
+            "title": "Obblighi dei partecipanti"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8158572506020639,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8158572506020639
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione della copertura, parte comune dell’edificio, devono essere ripartite tra tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione o diversa destinazione d’uso; pertanto, salvo che l’assemblea abbia deliberato una diversa ripartizione, ciascun condomino dovrà contribuire al risarcimento di € 8.500 secondo la sua quota millesimale, con eventuale adeguamento per l’uso più intenso da parte del proprietario dell’ultimo piano. L’assemblea, ai sensi dell’art. 1135 c.c., è tenuta ad approvare la ripartizione di tali spese e a costituire, se necessario, il fondo speciale per le opere di manutenzione straordinaria. Inoltre, l’art. 1104 c.c. impone che anche i condomini morosi rimangano obbligati al pagamento della quota a loro spettante, potendo il condominio agire per il recupero coattivo del credito."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7357,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7834,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7094,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7545,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8141,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.8140529767628569,
+        "cogency": 0.628333650704904,
+        "cogency_details": {
+          "argument_quality_score": 0.6939951622141824,
+          "coherence_score": 0.5626721391956254,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Alla luce dell’art. 2053 c.c., il condominio, in quanto titolare collettivo delle parti comuni, è responsabile per il danno cagionato dalla rovina della copertura, salvo prova che la causa sia esclusivamente imputabile a opere private; la perizia che rileva lavori di impermeabilizzazione eseguiti dal proprietario dell’ultimo piano costituisce, secondo l’art. 1227 c.c., un concorso di responsabilità che riduce la quota del condominio nella misura del nesso causale attribuibile al privato. Il riparto interno del danno deve avvenire secondo l’art. 1123 c.c. e l’art. 1135 c.c., con le quote proporzionali al valore delle unità, mentre i condomini morosi rimangono tenuti al pagamento della loro quota, salvo che la loro morosità sia stata la causa dell’omissione della manutenzione deliberata.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.8140529767628569,
+        "nesso_plausibility": 0.8140529767628569,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’art. 2056 c.c. il danno risarcibile è costituito dal costo necessario per il ripristino delle parti danneggiate, pari a € 8.500, ma, qualora il giudice accerti un concorso di responsabilità del proprietario dell’ultimo piano, l’importo deve essere diminuito in proporzione alla sua colpa, secondo quanto previsto dall’art. 1227 c.c.; pertanto la quota spettante al condominio sarà € 8.500 ridotta della percentuale di responsabilità attribuita al privato.",
+        "retrieved_norms": [
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "2053",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2142_art2053",
+            "title": "Rovina di edificio"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "1135",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1204_art1135",
+            "title": "Attribuzioni dell'assemblea dei condomini"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7518429385046191,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7518429385046191
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2056 c.c. il danno risarcibile è costituito dal costo necessario per il ripristino delle parti danneggiate, pari a € 8.500, ma, qualora il giudice accerti un concorso di responsabilità del proprietario dell’ultimo piano, l’importo deve essere diminuito in proporzione alla sua colpa, secondo quanto previsto dall’art. 1227 c.c.; pertanto la quota spettante al condominio sarà € 8.500 ridotta della percentuale di responsabilità attribuita al privato."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.49179156578345423,
+    "contra_adjusted": 0.49179156578345423,
+    "contra_raw": 0.5124499577430256,
+    "final": 0.31123745310043477,
+    "final_adjusted": 0.31123745310043477,
+    "final_raw": 0.2905790611408634,
+    "pro": 0.803029018883889,
+    "pro_adjusted": 0.803029018883889,
+    "pro_raw": 0.803029018883889,
+    "pro_raw_dialectical": 0.8028290188838889,
+    "pro_raw_intrinsic": 0.803029018883889,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.7545,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.178
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.8637,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1621
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.6958,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1572
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8283,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1541
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8637,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.001
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 0,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.829738881696598,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S4->S5",
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.8027404303800603,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S3->S4",
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7501864702661286,
+              "axis_id": "AX3",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S1->S2"
+              ]
+            }
+          ],
+          "bonus": 0.0,
+          "coverage_ratio": 0.0,
+          "enabled": true,
+          "quality_avg": 0.0,
+          "wpcs": 0.0
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.8125495959788798,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.020658391959571382,
+          "redundancy_index": 0.3305342713531421
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7512314805114915,
+          "high_similarity_pair_ratio": 0.8,
+          "links_count": 5,
+          "pair_count": 10,
+          "penalty": 0.04287412521509755,
+          "redundancy_index": 0.1714965008603902
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.8141,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2285,
+            "damage_factor": 0.4,
+            "excess": 0.4451,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7545,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7834,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1621,
+            "attacker_base_score": 0.8095,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1886,
+            "damage_factor": 0.4,
+            "excess": 0.4052,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8637,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7834,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1572,
+            "attacker_base_score": 0.8454,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1765,
+            "damage_factor": 0.4,
+            "excess": 0.3931,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.6958,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation",
+            "target_base_score": 0.7834,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.796,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.34009999999999996,
+        "base_score": 0.7834297976176814,
+        "cogency": 0.6666214099062381,
+        "cogency_details": {
+          "argument_quality_score": 0.6707307549619348,
+          "coherence_score": 0.6625120648505414,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’art. 1123 c.c. disciplina la ripartizione delle spese necessarie per la conservazione delle parti comuni tra i condomini in proporzione ai millesimi, ma tale meccanismo è puramente interno e non incide sull’obbligo di risarcimento verso il condomino leso, il quale può agire direttamente contro il soggetto responsabile per la custodia della cosa ai sensi dell’art. 2051 c.c.; la quota di partecipazione interna non può, di per sé, ridurre o estinguere il risarcimento dovuto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7834297976176814,
+        "nesso_plausibility": 0.44332979761768143,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 2051 c.c., la responsabilità del custode sussiste solo se il danno è provato come conseguenza diretta e certa della cosa in custodia; le due perizie, divergenti sul ruolo dell’impermeabilizzazione condominiale rispetto ai lavori privati, non consentono di affermare con certezza che la vetusta impermeabilizzazione sia la causa esclusiva delle infiltrazioni. Tale incertezza impedisce di soddisfare il requisito di causalità richiesto dalla norma, perciò il condominio non può essere ritenuto automaticamente responsabile dell’intero danno.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7399303088366255,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7399303088366255
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 2051 c.c., la responsabilità del custode sussiste solo se il danno è provato come conseguenza diretta e certa della cosa in custodia; le due perizie, divergenti sul ruolo dell’impermeabilizzazione condominiale rispetto ai lavori privati, non consentono di affermare con certezza che la vetusta impermeabilizzazione sia la causa esclusiva delle infiltrazioni. Tale incertezza impedisce di soddisfare il requisito di causalità richiesto dalla norma, perciò il condominio non può essere ritenuto automaticamente responsabile dell’intero danno."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1541,
+            "attacker_base_score": 0.796,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1208,
+            "damage_factor": 0.4,
+            "excess": 0.3852,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8283,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7357,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7296,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8104,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7357,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8095,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8454,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8141,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          }
+        ],
+        "attacks_sum": 0.1541,
+        "base_score": 0.7356701178683698,
+        "cogency": 0.6377283728803527,
+        "cogency_details": {
+          "argument_quality_score": 0.7243961059591714,
+          "coherence_score": 0.5510606398015341,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 2051 c.c., la responsabilità del custode sussiste solo se il danno è provato come conseguenza diretta e certa della cosa in custodia; le due perizie, divergenti sul ruolo dell’impermeabilizzazione condominiale rispetto ai lavori privati, non consentono di affermare con certezza che la vetusta impermeabilizzazione sia la causa esclusiva delle infiltrazioni. Tale incertezza impedisce di soddisfare il requisito di causalità richiesto dalla norma, perciò il condominio non può essere ritenuto automaticamente responsabile dell’intero danno.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7356701178683698,
+        "nesso_plausibility": 0.5815701178683698,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il requisito di custodia previsto dall’art. 2051 c.c. presuppone che la cosa sia riconosciuta come parte comune soggetta al controllo del condominio; tuttavia la fattispecie non dimostra che la terrazza di copertura sia stata attribuita al comune uso, né che il condominio abbia esercitato poteri di gestione o manutenzione su di essa, perciò non è provata la sua qualifica di cosa in custodia. In assenza di tale prova, la responsabilità per il danno non può essere automaticamente attribuita al condominio ai sensi dell’art. 2051 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.777026831581475,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.777026831581475
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il requisito di custodia previsto dall’art. 2051 c.c. presuppone che la cosa sia riconosciuta come parte comune soggetta al controllo del condominio; tuttavia la fattispecie non dimostra che la terrazza di copertura sia stata attribuita al comune uso, né che il condominio abbia esercitato poteri di gestione o manutenzione su di essa, perciò non è provata la sua qualifica di cosa in custodia. In assenza di tale prova, la responsabilità per il danno non può essere automaticamente attribuita al condominio ai sensi dell’art. 2051 c.c."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7357,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7154,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8104,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7502,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7834,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7501864702661286,
+        "cogency": 0.7156669611305072,
+        "cogency_details": {
+          "argument_quality_score": 0.7175347600141515,
+          "coherence_score": 0.7137991622468629,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "In base all’art. 2051 c.c., la copertura è una cosa comune posta sotto la custodia del condominio, perciò la responsabilità è presunta salvo prova di caso fortuito o di esclusiva responsabilità di terzi; le perizie indicano la vetusta impermeabilizzazione come causa principale, ma la segnalazione di lavori privati eseguiti dal proprietario dell’ultimo piano introduce un possibile concorso di causa che non esclude la responsabilità del custode ma richiede una valutazione separata; così, il condominio è oggettivamente responsabile per la parte di danno derivante dalla mancata esecuzione della manutenzione straordinaria deliberata, mentre la quota imputabile all’intervento privato dovrà essere quantificata in fase successiva.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7501864702661286,
+        "nesso_plausibility": 0.7501864702661286,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il condomino ha subito infiltrazioni nell’appartamento con danni a soffitto, pareti e arredi quantificati in € 8.500; due perizie hanno individuato la causa nella terrazza di copertura, una imputando la vetusta impermeabilizzazione condominiale e l’altra rilevando anche lavori privati eseguiti anni prima dal proprietario dell’ultimo piano. L’assemblea condominiale aveva deliberato la manutenzione straordinaria della copertura, ma tale intervento non è stato realizzato per morosità diffusa e mancanza di cassa. Il danneggiato chiede il risarcimento integrale al condominio, mentre l’amministratore e alcuni condomini sostengono la responsabilità esclusiva dei morosi o del singolo proprietario che utilizza la terrazza.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7474760846571833,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7474760846571833
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il condomino ha subito infiltrazioni nell’appartamento con danni a soffitto, pareti e arredi quantificati in € 8.500; due perizie hanno individuato la causa nella terrazza di copertura, una imputando la vetusta impermeabilizzazione condominiale e l’altra rilevando anche lavori privati eseguiti anni prima dal proprietario dell’ultimo piano. L’assemblea condominiale aveva deliberato la manutenzione straordinaria della copertura, ma tale intervento non è stato realizzato per morosità diffusa e mancanza di cassa. Il danneggiato chiede il risarcimento integrale al condominio, mentre l’amministratore e alcuni condomini sostengono la responsabilità esclusiva dei morosi o del singolo proprietario che utilizza la terrazza."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

@@ -1,0 +1,2342 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 4,
+      "attack_coverage_axes_total": 6,
+      "attack_coverage_bonus": 0.0382952,
+      "attack_coverage_ratio": 0.6666666666666666,
+      "attack_coverage_score": 0.31912666666666667,
+      "attacks_avg": 0.2793666666666667,
+      "base_score_avg": 0.7291720515265178,
+      "cogency_avg": 0.5701994521911419,
+      "net_plausibility": 0.485166985054412,
+      "net_plausibility_adjusted": 0.485166985054412,
+      "net_plausibility_raw": 0.44980538485985094,
+      "norm_support_avg": 0.9678869016623519,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.0234687984435116,
+      "redundancy_penalty": 0.00293359980543895,
+      "semantics_avg": 0.5698581840141145
+    },
+    "pro": {
+      "attacks_avg": 0.09795,
+      "base_score_avg": 0.7611207757047782,
+      "cogency_avg": 0.60203177171349,
+      "net_plausibility": 0.7611207757047782,
+      "net_plausibility_adjusted": 0.7611207757047782,
+      "net_plausibility_dialectical_raw": 0.6631707757047782,
+      "net_plausibility_intrinsic_raw": 0.7611207757047782,
+      "net_plausibility_raw": 0.7611207757047782,
+      "norm_support_avg": 0.9951388888888889,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.13284500987596481,
+      "redundancy_penalty": 0.033211252468991204,
+      "semantics_avg": 0.608185628783919
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1867,
+            "attacker_base_score": 0.8137,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1813,
+            "damage_factor": 0.4,
+            "excess": 0.4669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7258,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1776,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1584,
+            "damage_factor": 0.4,
+            "excess": 0.444,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7876,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0362,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.8049,
+            "damage_factor": 0.4,
+            "excess": 0.0904,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7902,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7348,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.4902,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6353,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7087,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.4449,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5979,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7253,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.529,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6946,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3643,
+        "base_score": 0.7144459638066996,
+        "cogency": 0.5366315161478568,
+        "cogency_details": {
+          "argument_quality_score": 0.6369845321313025,
+          "coherence_score": 0.43627850016441094,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il principio di non‑cumulo sancito dall’art. 1223 c.c. vieta di ottenere due volte lo stesso indennizzo per lo stesso danno, ma non comporta una riduzione automatica del risarcimento patrimoniale per le somme già restituite in sede penale, poiché la restituzione del prezzo è una restituzione dell’arricchimento ingiusto, mentre il lucro cessante e gli interessi costituiscono un danno distinto (art. 1494 c.c.). Di conseguenza, la restituzione di € 6.000 in ambito penale non esclude la quantificazione del danno da fermo attività, che deve essere valutata ex art. 2056 c.c. sulla base del nesso causale dimostrato.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7144459638066996,
+        "nesso_plausibility": 0.35014596380669955,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare la frode è necessario dimostrare non solo la conoscenza del difetto, ma anche la volontà di ingannare mediante una dichiarazione falsa; le chat mostrano soltanto che il venditore era a conoscenza dei vizi e non provano che abbia espresso con dolo la certezza che il macchinario fosse funzionante. Inoltre, la clausola “come visto” accettata dal compratore indica che la dichiarazione di funzionamento poteva essere intesa come una valutazione soggettiva, non come una garanzia assoluta, indebolendo la prova del dolo fraudolento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.511521696541142,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.511521696541142
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per configurare la frode è necessario dimostrare non solo la conoscenza del difetto, ma anche la volontà di ingannare mediante una dichiarazione falsa; le chat mostrano soltanto che il venditore era a conoscenza dei vizi e non provano che abbia espresso con dolo la certezza che il macchinario fosse funzionante. Inoltre, la clausola “come visto” accettata dal compratore indica che la dichiarazione di funzionamento poteva essere intesa come una valutazione soggettiva, non come una garanzia assoluta, indebolendo la prova del dolo fraudolento."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1434,
+            "attacker_base_score": 0.8137,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.128,
+            "damage_factor": 0.4,
+            "excess": 0.3586,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6931,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7694,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6663,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6542,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7694,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.6063,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.687,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7694,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7348,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.5347,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.693,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7694,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7087,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.5388,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.724,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.7694,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7253,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7752,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.1434,
+        "base_score": 0.7693663799251251,
+        "cogency": 0.5835185907128337,
+        "cogency_details": {
+          "argument_quality_score": 0.6892207733746731,
+          "coherence_score": 0.47781640805099435,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Per poter riconoscere il lucro cessante derivante dal fermo attività, il giudice deve avvalersi di prova documentale certa che dimostri la reale perdita di reddito, come previsto dall’art. 2056 c.c., il quale richiede la quantificazione del danno mediante equo apprezzamento basato su dati oggettivi (es. contratti, fatture, previsioni di produzione). L’assenza di tali documenti rende il danno patrimoniale ipotetico e non ammissibile a titolo di risarcimento. Pertanto, il compratore è tenuto a produrre la documentazione necessaria a dimostrare il nesso causale e l’entità del lucro cessante.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7693663799251251,
+        "nesso_plausibility": 0.6259663799251252,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il principio di non‑cumulo sancito dall’art. 1223 c.c. vieta di ottenere due volte lo stesso indennizzo per lo stesso danno, ma non comporta una riduzione automatica del risarcimento patrimoniale per le somme già restituite in sede penale, poiché la restituzione del prezzo è una restituzione dell’arricchimento ingiusto, mentre il lucro cessante e gli interessi costituiscono un danno distinto (art. 1494 c.c.). Di conseguenza, la restituzione di € 6.000 in ambito penale non esclude la quantificazione del danno da fermo attività, che deve essere valutata ex art. 2056 c.c. sulla base del nesso causale dimostrato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6477026757042498,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6477026757042498
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il principio di non‑cumulo sancito dall’art. 1223 c.c. vieta di ottenere due volte lo stesso indennizzo per lo stesso danno, ma non comporta una riduzione automatica del risarcimento patrimoniale per le somme già restituite in sede penale, poiché la restituzione del prezzo è una restituzione dell’arricchimento ingiusto, mentre il lucro cessante e gli interessi costituiscono un danno distinto (art. 1494 c.c.). Di conseguenza, la restituzione di € 6.000 in ambito penale non esclude la quantificazione del danno da fermo attività, che deve essere valutata ex art. 2056 c.c. sulla base del nesso causale dimostrato."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1694,
+            "attacker_base_score": 0.8137,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1273,
+            "damage_factor": 0.4,
+            "excess": 0.4236,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6926,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1544,
+            "attacker_base_score": 0.7348,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0897,
+            "damage_factor": 0.4,
+            "excess": 0.386,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7415,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.152,
+            "attacker_base_score": 0.7253,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0838,
+            "damage_factor": 0.4,
+            "excess": 0.3801,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7472,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0066,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7202,
+            "damage_factor": 0.4,
+            "excess": 0.0165,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7071,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.5134,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6649,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7087,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.544,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7311,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.7037,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.33039999999999997,
+        "base_score": 0.7037038108477283,
+        "cogency": 0.590448249712735,
+        "cogency_details": {
+          "argument_quality_score": 0.6244407527292111,
+          "coherence_score": 0.5564557466962591,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Secondo l’art. 1492 c.c., il compratore, di fronte a vizi della cosa venduta, può scegliere tra la risoluzione del contratto e la riduzione proporzionale del prezzo, scelta che resta revocabile finché non sia stata formulata in giudizio; pertanto la restituzione integrale del prezzo non è obbligatoria. Inoltre, la clausola “come visto”, se accettata dal compratore, può costituire una limitazione consensuale della garanzia, rendendo più congrua una riduzione del prezzo tenendo conto dei componenti mancanti e dell’inutilizzabilità residua. Il giudice può così quantificare il valore residuo del macchinario e disporre una riduzione proporzionale anziché la risoluzione totale.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7037038108477283,
+        "nesso_plausibility": 0.3733038108477283,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Per poter riconoscere il lucro cessante derivante dal fermo attività, il giudice deve avvalersi di prova documentale certa che dimostri la reale perdita di reddito, come previsto dall’art. 2056 c.c., il quale richiede la quantificazione del danno mediante equo apprezzamento basato su dati oggettivi (es. contratti, fatture, previsioni di produzione). L’assenza di tali documenti rende il danno patrimoniale ipotetico e non ammissibile a titolo di risarcimento. Pertanto, il compratore è tenuto a produrre la documentazione necessaria a dimostrare il nesso causale e l’entità del lucro cessante.",
+        "retrieved_norms": [
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5503501797969514,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5503501797969514
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per poter riconoscere il lucro cessante derivante dal fermo attività, il giudice deve avvalersi di prova documentale certa che dimostri la reale perdita di reddito, come previsto dall’art. 2056 c.c., il quale richiede la quantificazione del danno mediante equo apprezzamento basato su dati oggettivi (es. contratti, fatture, previsioni di produzione). L’assenza di tali documenti rende il danno patrimoniale ipotetico e non ammissibile a titolo di risarcimento. Pertanto, il compratore è tenuto a produrre la documentazione necessaria a dimostrare il nesso causale e l’entità del lucro cessante."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0631,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0066,
+            "damage_factor": 0.4,
+            "excess": 0.1578,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6542,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8488,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7144,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6774,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7902,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8488,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7037,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5971,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7071,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8488,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0631,
+        "base_score": 0.8488176631409853,
+        "cogency": 0.6945717623280951,
+        "cogency_details": {
+          "argument_quality_score": 0.7217060797622327,
+          "coherence_score": 0.6674374448939575,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce delle chat in cui il venditore ha ammesso di conoscere da settimane i difetti del macchinario e di aver promesso una revisione mai effettuata, si configurano tutti gli elementi del reato di frode previsto dall’art. 185 c.p., ovvero la falsa dichiarazione sulla funzionalità del bene al fine di ingannare l’acquirente e ottenere il pagamento di € 6.000; il dolo è attestato dall’intenzione di trarre profitto dal inganno (art. 43 c.p.). Il nesso causale è soddisfatto perché, se il venditore non avesse fornito la falsa informazione e non avesse consegnato il macchinario difettoso, l’acquirente non avrebbe versato la somma né subito il danno patrimoniale (art. 40 c.p.). Pertanto, il venditore è penalmente responsabile per frode, con conseguente obbligo di restituzione e risarcimento ai sensi dell’art. 185 c.p.",
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.8488176631409853,
+        "nesso_plausibility": 0.7857176631409852,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "L’acquirente ha versato € 6.000 al venditore online per l’acquisto di un macchinario presentato come funzionante; al momento della consegna il bene si è rivelato inutilizzabile e privo di alcuni componenti essenziali. Dalle conversazioni intercorsi fra le parti emerge che il venditore era a conoscenza dei difetti del macchinario da diverse settimane e aveva promesso una revisione che non è mai stata effettuata. L’acquirente ha sporto querela penale e, in sede civile, ha chiesto la risoluzione del contratto, la restituzione del prezzo pagato e il risarcimento per il fermo attività subito. Il venditore, in difesa, sostiene che il macchinario fosse usato e venduto “come visto” e attribuisce il malfunzionamento al trasporto.",
+        "retrieved_norms": [
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8014871148085223,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8014871148085223
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "L’acquirente ha versato € 6.000 al venditore online per l’acquisto di un macchinario presentato come funzionante; al momento della consegna il bene si è rivelato inutilizzabile e privo di alcuni componenti essenziali. Dalle conversazioni intercorsi fra le parti emerge che il venditore era a conoscenza dei difetti del macchinario da diverse settimane e aveva promesso una revisione che non è mai stata effettuata. L’acquirente ha sporto querela penale e, in sede civile, ha chiesto la risoluzione del contratto, la restituzione del prezzo pagato e il risarcimento per il fermo attività subito. Il venditore, in difesa, sostiene che il macchinario fosse usato e venduto “come visto” e attribuisce il malfunzionamento al trasporto."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1287,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0572,
+            "damage_factor": 0.4,
+            "excess": 0.3218,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.687,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7354,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7144,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6752,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7876,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7354,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7037,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5615,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.6649,
+            "reason": "active: factual_impediment",
+            "target_base_score": 0.7354,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1287,
+        "base_score": 0.7353983437233271,
+        "cogency": 0.590880996763608,
+        "cogency_details": {
+          "argument_quality_score": 0.7463925269708649,
+          "coherence_score": 0.4353694665563511,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il venditore ha violato l’obbligo di consegnare la cosa nello stato di cui all’art. 1493 c.c., poiché il macchinario presentava difetti di funzionamento e la mancanza di componenti, configurando un vizio che lo rende inidoneo all’uso a cui è destinato ai sensi dell’art. 1490 c.c. Tale inadempimento consente al compratore di domandare la risoluzione del contratto ex art. 1453 c.c. e, in caso di mancata adempienza, di ottenere il risarcimento del danno, inclusa la restituzione del prezzo e i danni consequenziali, come previsto dall’art. 1517 c.c.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7353983437233271,
+        "nesso_plausibility": 0.6066983437233271,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 7,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 8,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Alla luce delle chat in cui il venditore ha ammesso di conoscere da settimane i difetti del macchinario e di aver promesso una revisione mai effettuata, si configurano tutti gli elementi del reato di frode previsto dall’art. 185 c.p., ovvero la falsa dichiarazione sulla funzionalità del bene al fine di ingannare l’acquirente e ottenere il pagamento di € 6.000; il dolo è attestato dall’intenzione di trarre profitto dal inganno (art. 43 c.p.). Il nesso causale è soddisfatto perché, se il venditore non avesse fornito la falsa informazione e non avesse consegnato il macchinario difettoso, l’acquirente non avrebbe versato la somma né subito il danno patrimoniale (art. 40 c.p.). Pertanto, il venditore è penalmente responsabile per frode, con conseguente obbligo di restituzione e risarcimento ai sensi dell’art. 185 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1453",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1523_art1453",
+            "title": "Risolubilità del contratto per inadempimento"
+          },
+          {
+            "articolo": "1517",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1592_art1517",
+            "title": "Risoluzione di diritto"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5271134823141492,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5271134823141492
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Alla luce delle chat in cui il venditore ha ammesso di conoscere da settimane i difetti del macchinario e di aver promesso una revisione mai effettuata, si configurano tutti gli elementi del reato di frode previsto dall’art. 185 c.p., ovvero la falsa dichiarazione sulla funzionalità del bene al fine di ingannare l’acquirente e ottenere il pagamento di € 6.000; il dolo è attestato dall’intenzione di trarre profitto dal inganno (art. 43 c.p.). Il nesso causale è soddisfatto perché, se il venditore non avesse fornito la falsa informazione e non avesse consegnato il macchinario difettoso, l’acquirente non avrebbe versato la somma né subito il danno patrimoniale (art. 40 c.p.). Pertanto, il venditore è penalmente responsabile per frode, con conseguente obbligo di restituzione e risarcimento ai sensi dell’art. 185 c.p."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1326,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0664,
+            "damage_factor": 0.4,
+            "excess": 0.3316,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.693,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7348,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7144,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5447,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6353,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7348,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7037,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6262,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7415,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7348,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1326,
+        "base_score": 0.7348019353731533,
+        "cogency": 0.5644874470656784,
+        "cogency_details": {
+          "argument_quality_score": 0.6504674949389229,
+          "coherence_score": 0.4785073991924339,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai fini dell’art. 40 c.p., la condizione sine qua non dell’evento lesivo è rappresentata dall’omissione del venditore di provvedere alla revisione promessa, poiché eliminando tale omissione il macchinario non sarebbe stato consegnato con i difetti preesistenti; pertanto il nesso causale è accertato con il test “but‑for”. Con riferimento all’art. 41 c.p., il danno non è stato prodotto da una causa sopravvenuta (il trasporto) che da sola fosse sufficiente a rendere il macchinario inutilizzabile, così da non interrompere il nesso di causalità, ma costituisce una concausa non sufficiente, perciò il rapporto di causalità rimane valido.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7348019353731533,
+        "nesso_plausibility": 0.6022019353731534,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 6,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Il venditore ha violato l’obbligo di consegnare la cosa nello stato di cui all’art. 1493 c.c., poiché il macchinario presentava difetti di funzionamento e la mancanza di componenti, configurando un vizio che lo rende inidoneo all’uso a cui è destinato ai sensi dell’art. 1490 c.c. Tale inadempimento consente al compratore di domandare la risoluzione del contratto ex art. 1453 c.c. e, in caso di mancata adempienza, di ottenere il risarcimento del danno, inclusa la restituzione del prezzo e i danni consequenziali, come previsto dall’art. 1517 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1453",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1523_art1453",
+            "title": "Risolubilità del contratto per inadempimento"
+          },
+          {
+            "articolo": "1517",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1592_art1517",
+            "title": "Risoluzione di diritto"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.551519004178166,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.551519004178166
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il venditore ha violato l’obbligo di consegnare la cosa nello stato di cui all’art. 1493 c.c., poiché il macchinario presentava difetti di funzionamento e la mancanza di componenti, configurando un vizio che lo rende inidoneo all’uso a cui è destinato ai sensi dell’art. 1490 c.c. Tale inadempimento consente al compratore di domandare la risoluzione del contratto ex art. 1453 c.c. e, in caso di mancata adempienza, di ottenere il risarcimento del danno, inclusa la restituzione del prezzo e i danni consequenziali, come previsto dall’art. 1517 c.c."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1622,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1141,
+            "damage_factor": 0.4,
+            "excess": 0.4054,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.724,
+            "reason": "active: derogation",
+            "target_base_score": 0.7087,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7144,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5126,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5979,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7087,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7037,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5402,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7311,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7087,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1622,
+        "base_score": 0.7087044894908627,
+        "cogency": 0.5529148868815142,
+        "cogency_details": {
+          "argument_quality_score": 0.6446700564640584,
+          "coherence_score": 0.46115971729897015,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Il danno patrimoniale da riconoscere comprende (i) la restituzione integrale del prezzo pagato, € 6.000, ai sensi dell’art. 1493 c.c.; (ii) gli interessi legali maturati dal giorno della consegna fino al pagamento, secondo l’art. 1224 c.c.; (iii) il lucro cessante per il periodo di fermo attività, da quantificare con equo apprezzamento in base all’art. 1223 c.c. e all’art. 2056 c.c.; (iv) le spese documentate sostenute per tentare la riparazione o per il trasporto, che rientrano nella responsabilità del venditore ex art. 1494 c.c.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7087044894908627,
+        "nesso_plausibility": 0.5465044894908627,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 7,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai fini dell’art. 40 c.p., la condizione sine qua non dell’evento lesivo è rappresentata dall’omissione del venditore di provvedere alla revisione promessa, poiché eliminando tale omissione il macchinario non sarebbe stato consegnato con i difetti preesistenti; pertanto il nesso causale è accertato con il test “but‑for”. Con riferimento all’art. 41 c.p., il danno non è stato prodotto da una causa sopravvenuta (il trasporto) che da sola fosse sufficiente a rendere il macchinario inutilizzabile, così da non interrompere il nesso di causalità, ma costituisce una concausa non sufficiente, perciò il rapporto di causalità rimane valido.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1224",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1294_art1224",
+            "title": "Danni nelle obbligazioni pecuniarie"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.47610007808802773,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.47610007808802773
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai fini dell’art. 40 c.p., la condizione sine qua non dell’evento lesivo è rappresentata dall’omissione del venditore di provvedere alla revisione promessa, poiché eliminando tale omissione il macchinario non sarebbe stato consegnato con i difetti preesistenti; pertanto il nesso causale è accertato con il test “but‑for”. Con riferimento all’art. 41 c.p., il danno non è stato prodotto da una causa sopravvenuta (il trasporto) che da sola fosse sufficiente a rendere il macchinario inutilizzabile, così da non interrompere il nesso di causalità, ma costituisce una concausa non sufficiente, perciò il rapporto di causalità rimane valido."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7144,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5955,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6946,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7253,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7752,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7037,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.631,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7472,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7253,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7252535260979569,
+        "cogency": 0.5719925067634309,
+        "cogency_details": {
+          "argument_quality_score": 0.6694065070516101,
+          "coherence_score": 0.4745785064752518,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "La responsabilità penale (art. 185 c.p.Il risarcimento patrimoniale per il danno cagionato «deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta». (art. 1223 c.c.). Tuttavia, per evitare una duplice indennità, il giudice civile deve sottrarre dal risarcimento complessivo le somme già restituite in sede penale, in conformità al principio di non‑cumulo (CUMULABILITY_LIMITS). La difesa “come visto” del venditore non elimina la responsabilità penale né quella contrattuale, poiché il dolo dimostrato nelle chat rompe il nesso di causalità previsto dall’art. 40 c.p. e rende inefficace la clausola di esclusione di garanzia.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7252535260979569,
+        "nesso_plausibility": 0.7252535260979569,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 7,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 8,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Il danno patrimoniale da riconoscere comprende (i) la restituzione integrale del prezzo pagato, € 6.000, ai sensi dell’art. 1493 c.c.; (ii) gli interessi legali maturati dal giorno della consegna fino al pagamento, secondo l’art. 1224 c.c.; (iii) il lucro cessante per il periodo di fermo attività, da quantificare con equo apprezzamento in base all’art. 1223 c.c. e all’art. 2056 c.c.; (iv) le spese documentate sostenute per tentare la riparazione o per il trasporto, che rientrano nella responsabilità del venditore ex art. 1494 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1224",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1294_art1224",
+            "title": "Danni nelle obbligazioni pecuniarie"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.512185913563092,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.512185913563092
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il danno patrimoniale da riconoscere comprende (i) la restituzione integrale del prezzo pagato, € 6.000, ai sensi dell’art. 1493 c.c.; (ii) gli interessi legali maturati dal giorno della consegna fino al pagamento, secondo l’art. 1224 c.c.; (iii) il lucro cessante per il periodo di fermo attività, da quantificare con equo apprezzamento in base all’art. 1223 c.c. e all’art. 2056 c.c.; (iv) le spese documentate sostenute per tentare la riparazione o per il trasporto, che rientrano nella responsabilità del venditore ex art. 1494 c.c."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1011,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0665,
+            "damage_factor": 0.4,
+            "excess": 0.2527,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6931,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8137,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7144,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6223,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7258,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8137,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7037,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5849,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6926,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8137,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1011,
+        "base_score": 0.8137486964023842,
+        "cogency": 0.6373430304786128,
+        "cogency_details": {
+          "argument_quality_score": 0.7060763472213684,
+          "coherence_score": 0.5686097137358573,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "Il venditore risponde penalmente di frode ai sensi dell’art. 185 c.p., per dolo dimostrato dalla consapevolezza dei difetti e dalla promessa ingannevole di revisione, con nesso causale configurato dall’art. 40 c.p. e non interrotto dal trasporto perché quest’ultimo non è stato da solo sufficiente a produrre il guasto (art. 41 c.p.). Contestualmente, il venditore è civilmente responsabile per inadempimento contrattuale ai sensi degli artt. 1490, 1493 e 1453 c.c., poiché la cosa è stata consegnata priva delle qualità essenziali nonostante la clausola “come visto” è nulla per dolo e per violazione della garanzia di buona funzionalità. Di conseguenza l’acquirente ha diritto alla risoluzione del contratto con restituzione del prezzo di € 6.000, al risarcimento del lucro cessante per fermo attività e agli interessi legali (art. 1223, 1224 c.c.), eventuali riduzioni dovute a concorso di cause dovranno essere valutate ex art. 1227 c.c. senza pregiudicare il diritto di risarcimento penale.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.8137486964023842,
+        "nesso_plausibility": 0.7126486964023843,
+        "norm_support": 0.9708333333333332,
+        "norm_support_details": {
+          "citation_count": 6,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9583333333333334,
+          "citation_specificity_score": 0.8333333333333334,
+          "final": 0.9708333333333332,
+          "retrieved_norms_count": 8,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "La responsabilità penale (art. 185 c.p.Il risarcimento patrimoniale per il danno cagionato «deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta». (art. 1223 c.c.). Tuttavia, per evitare una duplice indennità, il giudice civile deve sottrarre dal risarcimento complessivo le somme già restituite in sede penale, in conformità al principio di non‑cumulo (CUMULABILITY_LIMITS). La difesa “come visto” del venditore non elimina la responsabilità penale né quella contrattuale, poiché il dolo dimostrato nelle chat rompe il nesso di causalità previsto dall’art. 40 c.p. e rende inefficace la clausola di esclusione di garanzia.",
+        "retrieved_norms": [
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.780708179751557,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.780708179751557
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La responsabilità penale (art. 185 c.p.Il risarcimento patrimoniale per il danno cagionato «deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta». (art. 1223 c.c.). Tuttavia, per evitare una duplice indennità, il giudice civile deve sottrarre dal risarcimento complessivo le somme già restituite in sede penale, in conformità al principio di non‑cumulo (CUMULABILITY_LIMITS). La difesa “come visto” del venditore non elimina la responsabilità penale né quella contrattuale, poiché il dolo dimostrato nelle chat rompe il nesso di causalità previsto dall’art. 40 c.p. e rende inefficace la clausola di esclusione di garanzia."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.485166985054412,
+    "contra_adjusted": 0.485166985054412,
+    "contra_raw": 0.44980538485985094,
+    "final": 0.2759537906503662,
+    "final_adjusted": 0.2759537906503662,
+    "final_raw": 0.31131539084492726,
+    "pro": 0.7611207757047782,
+    "pro_adjusted": 0.7611207757047782,
+    "pro_raw": 0.7611207757047782,
+    "pro_raw_dialectical": 0.6631707757047782,
+    "pro_raw_intrinsic": 0.7611207757047782,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7258,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1867
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7876,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1776
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.6926,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1694
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.724,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1622
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7415,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1544
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.7472,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.152
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.6931,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1434
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.693,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1326
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.687,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1287
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.6931,
+        "target": "S6->S7",
+        "target_role": "support",
+        "value": 0.1011
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 4,
+          "axes_total": 6,
+          "axis_details": [
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7087044894908627,
+              "axis_id": "AX6",
+              "axis_quality": 0.1622,
+              "link_ids": [
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7348019353731533,
+              "axis_id": "AX4",
+              "axis_quality": 0.1326,
+              "link_ids": [
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7353983437233271,
+              "axis_id": "AX3",
+              "axis_quality": 0.1287,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.8137486964023842,
+              "axis_id": "AX2",
+              "axis_quality": 0.1011,
+              "link_ids": [
+                "S6->S7"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.8488176631409853,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7252535260979569,
+              "axis_id": "AX5",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S5->S6"
+              ]
+            }
+          ],
+          "bonus": 0.0382952,
+          "coverage_ratio": 0.6666666666666666,
+          "enabled": true,
+          "quality_avg": 0.08743333333333332,
+          "wpcs": 0.31912666666666667
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.6698432763206285,
+          "high_similarity_pair_ratio": 0.3333333333333333,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.00293359980543895,
+          "redundancy_index": 0.0234687984435116
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.6337570417477593,
+          "high_similarity_pair_ratio": 0.06666666666666667,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.033211252468991204,
+          "redundancy_index": 0.13284500987596481
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1867,
+            "attacker_base_score": 0.8137,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1813,
+            "damage_factor": 0.4,
+            "excess": 0.4669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7258,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1776,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1584,
+            "damage_factor": 0.4,
+            "excess": 0.444,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7876,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0362,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.8049,
+            "damage_factor": 0.4,
+            "excess": 0.0904,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7902,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7348,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.4902,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6353,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7087,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.4449,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5979,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7253,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.529,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6946,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7144,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3643,
+        "base_score": 0.7144459638066996,
+        "cogency": 0.5366315161478568,
+        "cogency_details": {
+          "argument_quality_score": 0.6369845321313025,
+          "coherence_score": 0.43627850016441094,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il principio di non‑cumulo sancito dall’art. 1223 c.c. vieta di ottenere due volte lo stesso indennizzo per lo stesso danno, ma non comporta una riduzione automatica del risarcimento patrimoniale per le somme già restituite in sede penale, poiché la restituzione del prezzo è una restituzione dell’arricchimento ingiusto, mentre il lucro cessante e gli interessi costituiscono un danno distinto (art. 1494 c.c.). Di conseguenza, la restituzione di € 6.000 in ambito penale non esclude la quantificazione del danno da fermo attività, che deve essere valutata ex art. 2056 c.c. sulla base del nesso causale dimostrato.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7144459638066996,
+        "nesso_plausibility": 0.35014596380669955,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare la frode è necessario dimostrare non solo la conoscenza del difetto, ma anche la volontà di ingannare mediante una dichiarazione falsa; le chat mostrano soltanto che il venditore era a conoscenza dei vizi e non provano che abbia espresso con dolo la certezza che il macchinario fosse funzionante. Inoltre, la clausola “come visto” accettata dal compratore indica che la dichiarazione di funzionamento poteva essere intesa come una valutazione soggettiva, non come una garanzia assoluta, indebolendo la prova del dolo fraudolento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.511521696541142,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.511521696541142
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per configurare la frode è necessario dimostrare non solo la conoscenza del difetto, ma anche la volontà di ingannare mediante una dichiarazione falsa; le chat mostrano soltanto che il venditore era a conoscenza dei vizi e non provano che abbia espresso con dolo la certezza che il macchinario fosse funzionante. Inoltre, la clausola “come visto” accettata dal compratore indica che la dichiarazione di funzionamento poteva essere intesa come una valutazione soggettiva, non come una garanzia assoluta, indebolendo la prova del dolo fraudolento."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1694,
+            "attacker_base_score": 0.8137,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1273,
+            "damage_factor": 0.4,
+            "excess": 0.4236,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6926,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1544,
+            "attacker_base_score": 0.7348,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0897,
+            "damage_factor": 0.4,
+            "excess": 0.386,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7415,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.152,
+            "attacker_base_score": 0.7253,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0838,
+            "damage_factor": 0.4,
+            "excess": 0.3801,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7472,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0066,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7202,
+            "damage_factor": 0.4,
+            "excess": 0.0165,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7071,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.5134,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6649,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7037,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7087,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.544,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7311,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.7037,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.33039999999999997,
+        "base_score": 0.7037038108477283,
+        "cogency": 0.590448249712735,
+        "cogency_details": {
+          "argument_quality_score": 0.6244407527292111,
+          "coherence_score": 0.5564557466962591,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Secondo l’art. 1492 c.c., il compratore, di fronte a vizi della cosa venduta, può scegliere tra la risoluzione del contratto e la riduzione proporzionale del prezzo, scelta che resta revocabile finché non sia stata formulata in giudizio; pertanto la restituzione integrale del prezzo non è obbligatoria. Inoltre, la clausola “come visto”, se accettata dal compratore, può costituire una limitazione consensuale della garanzia, rendendo più congrua una riduzione del prezzo tenendo conto dei componenti mancanti e dell’inutilizzabilità residua. Il giudice può così quantificare il valore residuo del macchinario e disporre una riduzione proporzionale anziché la risoluzione totale.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7037038108477283,
+        "nesso_plausibility": 0.3733038108477283,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Per poter riconoscere il lucro cessante derivante dal fermo attività, il giudice deve avvalersi di prova documentale certa che dimostri la reale perdita di reddito, come previsto dall’art. 2056 c.c., il quale richiede la quantificazione del danno mediante equo apprezzamento basato su dati oggettivi (es. contratti, fatture, previsioni di produzione). L’assenza di tali documenti rende il danno patrimoniale ipotetico e non ammissibile a titolo di risarcimento. Pertanto, il compratore è tenuto a produrre la documentazione necessaria a dimostrare il nesso causale e l’entità del lucro cessante.",
+        "retrieved_norms": [
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5503501797969514,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5503501797969514
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per poter riconoscere il lucro cessante derivante dal fermo attività, il giudice deve avvalersi di prova documentale certa che dimostri la reale perdita di reddito, come previsto dall’art. 2056 c.c., il quale richiede la quantificazione del danno mediante equo apprezzamento basato su dati oggettivi (es. contratti, fatture, previsioni di produzione). L’assenza di tali documenti rende il danno patrimoniale ipotetico e non ammissibile a titolo di risarcimento. Pertanto, il compratore è tenuto a produrre la documentazione necessaria a dimostrare il nesso causale e l’entità del lucro cessante."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1622,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1141,
+            "damage_factor": 0.4,
+            "excess": 0.4054,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.724,
+            "reason": "active: derogation",
+            "target_base_score": 0.7087,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7144,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5126,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5979,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7087,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7037,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5402,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7311,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7087,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1622,
+        "base_score": 0.7087044894908627,
+        "cogency": 0.5529148868815142,
+        "cogency_details": {
+          "argument_quality_score": 0.6446700564640584,
+          "coherence_score": 0.46115971729897015,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Il danno patrimoniale da riconoscere comprende (i) la restituzione integrale del prezzo pagato, € 6.000, ai sensi dell’art. 1493 c.c.; (ii) gli interessi legali maturati dal giorno della consegna fino al pagamento, secondo l’art. 1224 c.c.; (iii) il lucro cessante per il periodo di fermo attività, da quantificare con equo apprezzamento in base all’art. 1223 c.c. e all’art. 2056 c.c.; (iv) le spese documentate sostenute per tentare la riparazione o per il trasporto, che rientrano nella responsabilità del venditore ex art. 1494 c.c.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7087044894908627,
+        "nesso_plausibility": 0.5465044894908627,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 7,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai fini dell’art. 40 c.p., la condizione sine qua non dell’evento lesivo è rappresentata dall’omissione del venditore di provvedere alla revisione promessa, poiché eliminando tale omissione il macchinario non sarebbe stato consegnato con i difetti preesistenti; pertanto il nesso causale è accertato con il test “but‑for”. Con riferimento all’art. 41 c.p., il danno non è stato prodotto da una causa sopravvenuta (il trasporto) che da sola fosse sufficiente a rendere il macchinario inutilizzabile, così da non interrompere il nesso di causalità, ma costituisce una concausa non sufficiente, perciò il rapporto di causalità rimane valido.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1224",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1294_art1224",
+            "title": "Danni nelle obbligazioni pecuniarie"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.47610007808802773,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.47610007808802773
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai fini dell’art. 40 c.p., la condizione sine qua non dell’evento lesivo è rappresentata dall’omissione del venditore di provvedere alla revisione promessa, poiché eliminando tale omissione il macchinario non sarebbe stato consegnato con i difetti preesistenti; pertanto il nesso causale è accertato con il test “but‑for”. Con riferimento all’art. 41 c.p., il danno non è stato prodotto da una causa sopravvenuta (il trasporto) che da sola fosse sufficiente a rendere il macchinario inutilizzabile, così da non interrompere il nesso di causalità, ma costituisce una concausa non sufficiente, perciò il rapporto di causalità rimane valido."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

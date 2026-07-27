@@ -1,0 +1,1671 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.04011968,
+      "attack_coverage_ratio": 0.6666666666666666,
+      "attack_coverage_score": 0.33433066666666666,
+      "attacks_avg": 0.38139999999999996,
+      "base_score_avg": 0.7812725052526499,
+      "cogency_avg": 0.6536991458194421,
+      "net_plausibility": 0.4293515719576624,
+      "net_plausibility_adjusted": 0.4293515719576624,
+      "net_plausibility_raw": 0.39987250525264983,
+      "norm_support_avg": 0.9041666666666666,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.17024981271979908,
+      "redundancy_penalty": 0.010640613294987443,
+      "semantics_avg": 0.7449869828005018
+    },
+    "pro": {
+      "attacks_avg": 0.13718,
+      "base_score_avg": 0.7700694188940121,
+      "cogency_avg": 0.6103695696161224,
+      "net_plausibility": 0.7700694188940121,
+      "net_plausibility_adjusted": 0.7700694188940121,
+      "net_plausibility_dialectical_raw": 0.6328894188940122,
+      "net_plausibility_intrinsic_raw": 0.7700694188940121,
+      "net_plausibility_raw": 0.7700694188940121,
+      "norm_support_avg": 0.9483154743307445,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.2380012917903359,
+      "redundancy_penalty": 0.05950032294758398,
+      "semantics_avg": 0.6921078609229252
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2461,
+            "attacker_base_score": 0.7822,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.3702,
+            "damage_factor": 0.4,
+            "excess": 0.6153,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8759,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1767,
+            "attacker_base_score": 0.8091,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1966,
+            "damage_factor": 0.4,
+            "excess": 0.4417,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.87,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1466,
+            "attacker_base_score": 0.7903,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1214,
+            "damage_factor": 0.4,
+            "excess": 0.3665,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8347,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.125,
+            "attacker_base_score": 0.7023,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0675,
+            "damage_factor": 0.4,
+            "excess": 0.3126,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8942,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1232,
+            "attacker_base_score": 0.7666,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0628,
+            "damage_factor": 0.4,
+            "excess": 0.3079,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8155,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4228,
+        "base_score": 0.7549239195088366,
+        "cogency": 0.6213644597137353,
+        "cogency_details": {
+          "argument_quality_score": 0.6711867047052609,
+          "coherence_score": 0.5715422147222099,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La normativa di cui all’art. 2‑bis della L. 241/1990 richiede la prova certa del nesso di causalità tra il ritardo amministrativo e il danno subito; la semplice constatazione della perdita di incarichi e dei costi sostenuti dal professionista non dimostra che tali perdite siano state direttamente determinate dall’inerzia dell’amministrazione. In assenza di perizie o evidenze che attestino che gli incarichi sarebbero stati ottenuti se il provvedimento fosse stato adottato entro il termine, il collegamento causale rimane incerto e, pertanto, non sussiste la condizione di danno ingiusto prevista dall’art. 2‑bis L. 241/1990.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7549239195088366,
+        "nesso_plausibility": 0.33212391950883663,
+        "norm_support": 0.8966666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.8966666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 6 della L. 241/1990 il responsabile del procedimento deve adottare ogni misura idonea a garantire un’istruttoria adeguata e sollecita, ma la normativa ammette la sospensione del termine quando sussiste un’impossibilità temporanea dovuta a carenza di personale, circostanza riconosciuta come causa oggettiva di proroga. Pertanto la carenza di personale e l’alto carico istruttorio, così come dichiarati dall’amministrazione, costituiscono un impedimento non imputabile a colpa dell’ente, escludendo la configurazione di responsabilità ex art. 2‑bis L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6994930497601644,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6994930497601644
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 6 della L. 241/1990 il responsabile del procedimento deve adottare ogni misura idonea a garantire un’istruttoria adeguata e sollecita, ma la normativa ammette la sospensione del termine quando sussiste un’impossibilità temporanea dovuta a carenza di personale, circostanza riconosciuta come causa oggettiva di proroga. Pertanto la carenza di personale e l’alto carico istruttorio, così come dichiarati dall’amministrazione, costituiscono un impedimento non imputabile a colpa dell’ente, escludendo la configurazione di responsabilità ex art. 2‑bis L. 241/1990."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1982,
+            "attacker_base_score": 0.7822,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.3031,
+            "damage_factor": 0.4,
+            "excess": 0.4955,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.833,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1418,
+            "attacker_base_score": 0.7666,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1621,
+            "damage_factor": 0.4,
+            "excess": 0.3544,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7579,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1195,
+            "attacker_base_score": 0.8091,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1063,
+            "damage_factor": 0.4,
+            "excess": 0.2986,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8043,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0631,
+            "attacker_base_score": 0.7023,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9654,
+            "damage_factor": 0.4,
+            "excess": 0.1578,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8087,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7903,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7413,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7817,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.33999999999999997,
+        "base_score": 0.8076210909964631,
+        "cogency": 0.6860338319251489,
+        "cogency_details": {
+          "argument_quality_score": 0.7553571743283141,
+          "coherence_score": 0.6167104895219837,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 2‑bis della L. 241/1990 il risarcimento è ammesso solo se il richiedente prova l’esistenza di un danno ingiusto, la colpa dell’amministrazione (dolosa o colposa) e un nesso di causalità certo tra ritardo e danno; la mera constatazione di perdita di incarichi e di spese sostenute, senza una perizia che dimostri che tali perdite non sarebbero avvenute anche in presenza di un provvedimento tempestivo, non soddisfa tale rigore probatorio. Inoltre, l’art. 20 L. 241/1990 prevede il risarcimento solo per danni derivanti da un provvedimento illegittimo o da un’inadempienza provata, mentre l’inerzia dell’amministrazione, se giustificata da carenza di personale, può escludere la responsabilità colposa, rendendo gravemente difficoltosa la prova richiesta. Pertanto, il professionista non ha ancora fornito la prova stringente di colpa, danno e causalità richiesta dalla normativa.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8076210909964631,
+        "nesso_plausibility": 0.4676210909964631,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La normativa di cui all’art. 2‑bis della L. 241/1990 richiede la prova certa del nesso di causalità tra il ritardo amministrativo e il danno subito; la semplice constatazione della perdita di incarichi e dei costi sostenuti dal professionista non dimostra che tali perdite siano state direttamente determinate dall’inerzia dell’amministrazione. In assenza di perizie o evidenze che attestino che gli incarichi sarebbero stati ottenuti se il provvedimento fosse stato adottato entro il termine, il collegamento causale rimane incerto e, pertanto, non sussiste la condizione di danno ingiusto prevista dall’art. 2‑bis L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7904809158408392,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7904809158408392
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "La normativa di cui all’art. 2‑bis della L. 241/1990 richiede la prova certa del nesso di causalità tra il ritardo amministrativo e il danno subito; la semplice constatazione della perdita di incarichi e dei costi sostenuti dal professionista non dimostra che tali perdite siano state direttamente determinate dall’inerzia dell’amministrazione. In assenza di perizie o evidenze che attestino che gli incarichi sarebbero stati ottenuti se il provvedimento fosse stato adottato entro il termine, il collegamento causale rimane incerto e, pertanto, non sussiste la condizione di danno ingiusto prevista dall’art. 2‑bis L. 241/1990."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1132,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0732,
+            "damage_factor": 0.4,
+            "excess": 0.2829,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7817,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7903,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1124,
+            "attacker_base_score": 0.7549,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0713,
+            "damage_factor": 0.4,
+            "excess": 0.281,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8347,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7903,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2256,
+        "base_score": 0.7902586136719397,
+        "cogency": 0.665555937215434,
+        "cogency_details": {
+          "argument_quality_score": 0.7139975554518203,
+          "coherence_score": 0.6171143189790479,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 2, comma 1, L. 241/1990, l’amministrazione è obbligata a concludere il procedimento avviato da istanza di parte mediante un provvedimento espresso entro il termine indicato nella comunicazione di avvio (o, in mancanza, entro il termine massimo previsto dalla legge); il decorso di tale termine senza alcun provvedimento né comunicazioni utili, come evidenziato dal caso in esame, costituisce una violazione del termine procedimentale previsto dall’art. 2 L. 241/1990.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7902586136719397,
+        "nesso_plausibility": 0.5646586136719397,
+        "norm_support": 0.9266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9266666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il professionista ha presentato domanda autorizzativa in data X, avviando il procedimento amministrativo che, secondo la comunicazione di avvio (art. 8 L. 241/1990), prevedeva la conclusione entro il termine fissato dalla legge. Il termine è scaduto senza che l’amministrazione abbia emesso alcun provvedimento espresso né comunicazioni utili; a seguito di ciò il richiedente ha inviato tre solleciti formali, allegando la documentazione attestante la perdita di incarichi e i costi aggiuntivi sostenuti durante il periodo di inerzia. L’amministrazione, in risposta, ha giustificato il ritardo invocando carenza di personale e un elevato carico istruttorio.",
+        "retrieved_norms": [
+          {
+            "articolo": "8",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7330838861354759,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7330838861354759
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Il professionista ha presentato domanda autorizzativa in data X, avviando il procedimento amministrativo che, secondo la comunicazione di avvio (art. 8 L. 241/1990), prevedeva la conclusione entro il termine fissato dalla legge. Il termine è scaduto senza che l’amministrazione abbia emesso alcun provvedimento espresso né comunicazioni utili; a seguito di ciò il richiedente ha inviato tre solleciti formali, allegando la documentazione attestante la perdita di incarichi e i costi aggiuntivi sostenuti durante il periodo di inerzia. L’amministrazione, in risposta, ha giustificato il ritardo invocando carenza di personale e un elevato carico istruttorio."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.112,
+            "attacker_base_score": 0.7549,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0466,
+            "damage_factor": 0.4,
+            "excess": 0.28,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8155,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7666,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7346,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7579,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7666,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.112,
+        "base_score": 0.7665968197163882,
+        "cogency": 0.5712510976657801,
+        "cogency_details": {
+          "argument_quality_score": 0.6500154095383124,
+          "coherence_score": 0.4924867857932479,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990 la responsabilità dell’amministrazione sussiste per violazione dolosa o colposa del termine di conclusione del procedimento; la mera carenza di personale o l’alto carico istruttorio, pur costituendo un elemento di difficoltà organizzativa, non configurano forza maggiore né escludono la colpevolezza, poiché il responsabile del procedimento, secondo l’art. 6 L. 241/1990, è tenuto ad adottare ogni misura idonea a garantire un’adeguata e sollecita istruttoria, anche mediante riorganizzazione delle risorse. Pertanto, la giustificazione fornita dall’amministrazione non esonera dal dovere di rispettare il termine e non elimina la possibilità di accertare la colpevolezza.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7665968197163882,
+        "nesso_plausibility": 0.6545968197163882,
+        "norm_support": 0.94125,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9375,
+          "citation_specificity_score": 0.75,
+          "final": 0.94125,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 2, comma 1, L. 241/1990, l’amministrazione è obbligata a concludere il procedimento avviato da istanza di parte mediante un provvedimento espresso entro il termine indicato nella comunicazione di avvio (o, in mancanza, entro il termine massimo previsto dalla legge); il decorso di tale termine senza alcun provvedimento né comunicazioni utili, come evidenziato dal caso in esame, costituisce una violazione del termine procedimentale previsto dall’art. 2 L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "6",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7290716347221803,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7290716347221803
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2, comma 1, L. 241/1990, l’amministrazione è obbligata a concludere il procedimento avviato da istanza di parte mediante un provvedimento espresso entro il termine indicato nella comunicazione di avvio (o, in mancanza, entro il termine massimo previsto dalla legge); il decorso di tale termine senza alcun provvedimento né comunicazioni utili, come evidenziato dal caso in esame, costituisce una violazione del termine procedimentale previsto dall’art. 2 L. 241/1990."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1781,
+            "attacker_base_score": 0.7549,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1476,
+            "damage_factor": 0.4,
+            "excess": 0.4453,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8942,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7023,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0326,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7837,
+            "damage_factor": 0.4,
+            "excess": 0.0815,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8087,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7023,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.2107,
+        "base_score": 0.7022522714798229,
+        "cogency": 0.568896366542736,
+        "cogency_details": {
+          "argument_quality_score": 0.6334893915521347,
+          "coherence_score": 0.5043033415333373,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990 il danno da ritardo è risarcibile solo se provato come ingiusto e direttamente collegato al mancato rispetto del termine; la documentazione prodotta dal professionista – i tre solleciti formali, le fatture attestanti la perdita di incarichi e le spese sostenute per attività sostitutive durante il periodo di inerzia – costituisce prova certa del danno patrimoniale effettivo e del nesso causale con il ritardo amministrativo. Pertanto, il danno è configurabile come ingiusto e risarcibile.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7022522714798229,
+        "nesso_plausibility": 0.49155227147982294,
+        "norm_support": 0.8736607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.8736607049870561,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 2‑bis L. 241/1990 la responsabilità dell’amministrazione sussiste per violazione dolosa o colposa del termine di conclusione del procedimento; la mera carenza di personale o l’alto carico istruttorio, pur costituendo un elemento di difficoltà organizzativa, non configurano forza maggiore né escludono la colpevolezza, poiché il responsabile del procedimento, secondo l’art. 6 L. 241/1990, è tenuto ad adottare ogni misura idonea a garantire un’adeguata e sollecita istruttoria, anche mediante riorganizzazione delle risorse. Pertanto, la giustificazione fornita dall’amministrazione non esonera dal dovere di rispettare il termine e non elimina la possibilità di accertare la colpevolezza.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "6",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6070635984072656,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6070635984072656
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2‑bis L. 241/1990 la responsabilità dell’amministrazione sussiste per violazione dolosa o colposa del termine di conclusione del procedimento; la mera carenza di personale o l’alto carico istruttorio, pur costituendo un elemento di difficoltà organizzativa, non configurano forza maggiore né escludono la colpevolezza, poiché il responsabile del procedimento, secondo l’art. 6 L. 241/1990, è tenuto ad adottare ogni misura idonea a garantire un’adeguata e sollecita istruttoria, anche mediante riorganizzazione delle risorse. Pertanto, la giustificazione fornita dall’amministrazione non esonera dal dovere di rispettare il termine e non elimina la possibilità di accertare la colpevolezza."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0101,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8073,
+            "damage_factor": 0.4,
+            "excess": 0.0252,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.833,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7822,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0045,
+            "attacker_base_score": 0.7549,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7935,
+            "damage_factor": 0.4,
+            "excess": 0.0113,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8759,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7822,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.014599999999999998,
+        "base_score": 0.7821642604457952,
+        "cogency": 0.6199384681680538,
+        "cogency_details": {
+          "argument_quality_score": 0.7214915192500588,
+          "coherence_score": 0.5183854170860486,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’Art. 2-bis L. 241/1990 l’amministrazione è tenuta al risarcimento del danno ingiusto cagionato dal mancato rispetto del termine di conclusione del procedimento, perciò il professionista può chiedere il rimborso delle perdite di incarichi e delle spese documentate sostenute durante l’inerzia. La giustificazione di carenza di personale non costituisce causa di forza maggiore escludente la responsabilità, poiché l’obbligo di concludere entro il termine è cogente (cfr. Art. 2 L. 241/1990). Inoltre, ai sensi dell’Art. 20 L. 241/1990 il silenzio dell’amministrazione non equivale a provvedimento di accoglimento, perciò il danno non è sanato dal silenzio ma è risarcibile.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7821642604457952,
+        "nesso_plausibility": 0.7675642604457953,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 2‑bis L. 241/1990 il danno da ritardo è risarcibile solo se provato come ingiusto e direttamente collegato al mancato rispetto del termine; la documentazione prodotta dal professionista – i tre solleciti formali, le fatture attestanti la perdita di incarichi e le spese sostenute per attività sostitutive durante il periodo di inerzia – costituisce prova certa del danno patrimoniale effettivo e del nesso causale con il ritardo amministrativo. Pertanto, il danno è configurabile come ingiusto e risarcibile.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2-bis",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_2_2-bis",
+            "title": "Conseguenze per il ritardo dell'amministrazione nella conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6539423999845967,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6539423999845967
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2‑bis L. 241/1990 il danno da ritardo è risarcibile solo se provato come ingiusto e direttamente collegato al mancato rispetto del termine; la documentazione prodotta dal professionista – i tre solleciti formali, le fatture attestanti la perdita di incarichi e le spese sostenute per attività sostitutive durante il periodo di inerzia – costituisce prova certa del danno patrimoniale effettivo e del nesso causale con il ritardo amministrativo. Pertanto, il danno è configurabile come ingiusto e risarcibile."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.123,
+            "attacker_base_score": 0.7549,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1165,
+            "damage_factor": 0.4,
+            "excess": 0.3074,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.87,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8091,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7795,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8043,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8091,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.123,
+        "base_score": 0.8090751291561148,
+        "cogency": 0.6262059784886083,
+        "cogency_details": {
+          "argument_quality_score": 0.7195153075859047,
+          "coherence_score": 0.532896649391312,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "In base all’art. 2‑bis L. 241/1990, l’onere di dimostrare l’assenza di colpevolezza grava sull’amministrazione, la quale deve provare che il ritardo è stato determinato da cause di forza maggiore; la semplice constatazione di carenza di personale, non documentata come tale, non esclude la responsabilità. Di conseguenza, il professionista, avendo documentato la perdita di incarichi e le spese sostenute, ha diritto a un indennizzo patrimoniale quantificato in base al danno ingiusto subito.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.8090751291561148,
+        "nesso_plausibility": 0.6860751291561148,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [
+          {
+            "bindingness": 0.4,
+            "confidence": 0.7,
+            "court": "Tribunale Amministrativo Regionale",
+            "delta": 0.0,
+            "link_match": "direct",
+            "precedent_id": "prec_121",
+            "recency": 0.9,
+            "similarity": 1.0,
+            "stance": 0.0,
+            "year": 2021
+          }
+        ],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’Art. 2-bis L. 241/1990 l’amministrazione è tenuta al risarcimento del danno ingiusto cagionato dal mancato rispetto del termine di conclusione del procedimento, perciò il professionista può chiedere il rimborso delle perdite di incarichi e delle spese documentate sostenute durante l’inerzia. La giustificazione di carenza di personale non costituisce causa di forza maggiore escludente la responsabilità, poiché l’obbligo di concludere entro il termine è cogente (cfr. Art. 2 L. 241/1990). Inoltre, ai sensi dell’Art. 20 L. 241/1990 il silenzio dell’amministrazione non equivale a provvedimento di accoglimento, perciò il danno non è sanato dal silenzio ma è risarcibile.",
+        "retrieved_norms": [
+          {
+            "articolo": "2-bis",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_2_2-bis",
+            "title": "Conseguenze per il ritardo dell'amministrazione nella conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7373777853651075,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7373777853651075
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’Art. 2-bis L. 241/1990 l’amministrazione è tenuta al risarcimento del danno ingiusto cagionato dal mancato rispetto del termine di conclusione del procedimento, perciò il professionista può chiedere il rimborso delle perdite di incarichi e delle spese documentate sostenute durante l’inerzia. La giustificazione di carenza di personale non costituisce causa di forza maggiore escludente la responsabilità, poiché l’obbligo di concludere entro il termine è cogente (cfr. Art. 2 L. 241/1990). Inoltre, ai sensi dell’Art. 20 L. 241/1990 il silenzio dell’amministrazione non equivale a provvedimento di accoglimento, perciò il danno non è sanato dal silenzio ma è risarcibile."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.4293515719576624,
+    "contra_adjusted": 0.4293515719576624,
+    "contra_raw": 0.39987250525264983,
+    "final": 0.34071784693634977,
+    "final_adjusted": 0.34071784693634977,
+    "final_raw": 0.3701969136413623,
+    "pro": 0.7700694188940121,
+    "pro_adjusted": 0.7700694188940121,
+    "pro_raw": 0.7700694188940121,
+    "pro_raw_dialectical": 0.6328894188940122,
+    "pro_raw_intrinsic": 0.7700694188940121,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8759,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2461
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.833,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1982
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8942,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1781
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.87,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1767
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8347,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1466
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7579,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1418
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.8942,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.125
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8155,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1232
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.87,
+        "target": "S5->S6",
+        "target_role": "support",
+        "value": 0.123
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8043,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1195
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.7671953381026259,
+              "axis_id": "AX1",
+              "axis_quality": 0.22632,
+              "link_ids": [
+                "S5->S6",
+                "S1->S2",
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7665968197163882,
+              "axis_id": "AX3",
+              "axis_quality": 0.112,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7821642604457952,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S4->S5"
+              ]
+            }
+          ],
+          "bonus": 0.04011968,
+          "coverage_ratio": 0.6666666666666666,
+          "enabled": true,
+          "quality_avg": 0.11277333333333334,
+          "wpcs": 0.33433066666666666
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7676699475615437,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.010640613294987443,
+          "redundancy_index": 0.17024981271979908
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7700277999354171,
+          "high_similarity_pair_ratio": 0.8,
+          "links_count": 5,
+          "pair_count": 10,
+          "penalty": 0.05950032294758398,
+          "redundancy_index": 0.2380012917903359
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2461,
+            "attacker_base_score": 0.7822,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.3702,
+            "damage_factor": 0.4,
+            "excess": 0.6153,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8759,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1767,
+            "attacker_base_score": 0.8091,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1966,
+            "damage_factor": 0.4,
+            "excess": 0.4417,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.87,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1466,
+            "attacker_base_score": 0.7903,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1214,
+            "damage_factor": 0.4,
+            "excess": 0.3665,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8347,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.125,
+            "attacker_base_score": 0.7023,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0675,
+            "damage_factor": 0.4,
+            "excess": 0.3126,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8942,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1232,
+            "attacker_base_score": 0.7666,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0628,
+            "damage_factor": 0.4,
+            "excess": 0.3079,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8155,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7549,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4228,
+        "base_score": 0.7549239195088366,
+        "cogency": 0.6213644597137353,
+        "cogency_details": {
+          "argument_quality_score": 0.6711867047052609,
+          "coherence_score": 0.5715422147222099,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La normativa di cui all’art. 2‑bis della L. 241/1990 richiede la prova certa del nesso di causalità tra il ritardo amministrativo e il danno subito; la semplice constatazione della perdita di incarichi e dei costi sostenuti dal professionista non dimostra che tali perdite siano state direttamente determinate dall’inerzia dell’amministrazione. In assenza di perizie o evidenze che attestino che gli incarichi sarebbero stati ottenuti se il provvedimento fosse stato adottato entro il termine, il collegamento causale rimane incerto e, pertanto, non sussiste la condizione di danno ingiusto prevista dall’art. 2‑bis L. 241/1990.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7549239195088366,
+        "nesso_plausibility": 0.33212391950883663,
+        "norm_support": 0.8966666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.8966666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 6 della L. 241/1990 il responsabile del procedimento deve adottare ogni misura idonea a garantire un’istruttoria adeguata e sollecita, ma la normativa ammette la sospensione del termine quando sussiste un’impossibilità temporanea dovuta a carenza di personale, circostanza riconosciuta come causa oggettiva di proroga. Pertanto la carenza di personale e l’alto carico istruttorio, così come dichiarati dall’amministrazione, costituiscono un impedimento non imputabile a colpa dell’ente, escludendo la configurazione di responsabilità ex art. 2‑bis L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6994930497601644,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6994930497601644
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 6 della L. 241/1990 il responsabile del procedimento deve adottare ogni misura idonea a garantire un’istruttoria adeguata e sollecita, ma la normativa ammette la sospensione del termine quando sussiste un’impossibilità temporanea dovuta a carenza di personale, circostanza riconosciuta come causa oggettiva di proroga. Pertanto la carenza di personale e l’alto carico istruttorio, così come dichiarati dall’amministrazione, costituiscono un impedimento non imputabile a colpa dell’ente, escludendo la configurazione di responsabilità ex art. 2‑bis L. 241/1990."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1982,
+            "attacker_base_score": 0.7822,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.3031,
+            "damage_factor": 0.4,
+            "excess": 0.4955,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.833,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1418,
+            "attacker_base_score": 0.7666,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1621,
+            "damage_factor": 0.4,
+            "excess": 0.3544,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7579,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1195,
+            "attacker_base_score": 0.8091,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1063,
+            "damage_factor": 0.4,
+            "excess": 0.2986,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8043,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0631,
+            "attacker_base_score": 0.7023,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9654,
+            "damage_factor": 0.4,
+            "excess": 0.1578,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8087,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7903,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7413,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7817,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.33999999999999997,
+        "base_score": 0.8076210909964631,
+        "cogency": 0.6860338319251489,
+        "cogency_details": {
+          "argument_quality_score": 0.7553571743283141,
+          "coherence_score": 0.6167104895219837,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 2‑bis della L. 241/1990 il risarcimento è ammesso solo se il richiedente prova l’esistenza di un danno ingiusto, la colpa dell’amministrazione (dolosa o colposa) e un nesso di causalità certo tra ritardo e danno; la mera constatazione di perdita di incarichi e di spese sostenute, senza una perizia che dimostri che tali perdite non sarebbero avvenute anche in presenza di un provvedimento tempestivo, non soddisfa tale rigore probatorio. Inoltre, l’art. 20 L. 241/1990 prevede il risarcimento solo per danni derivanti da un provvedimento illegittimo o da un’inadempienza provata, mentre l’inerzia dell’amministrazione, se giustificata da carenza di personale, può escludere la responsabilità colposa, rendendo gravemente difficoltosa la prova richiesta. Pertanto, il professionista non ha ancora fornito la prova stringente di colpa, danno e causalità richiesta dalla normativa.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8076210909964631,
+        "nesso_plausibility": 0.4676210909964631,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La normativa di cui all’art. 2‑bis della L. 241/1990 richiede la prova certa del nesso di causalità tra il ritardo amministrativo e il danno subito; la semplice constatazione della perdita di incarichi e dei costi sostenuti dal professionista non dimostra che tali perdite siano state direttamente determinate dall’inerzia dell’amministrazione. In assenza di perizie o evidenze che attestino che gli incarichi sarebbero stati ottenuti se il provvedimento fosse stato adottato entro il termine, il collegamento causale rimane incerto e, pertanto, non sussiste la condizione di danno ingiusto prevista dall’art. 2‑bis L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7904809158408392,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7904809158408392
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "La normativa di cui all’art. 2‑bis della L. 241/1990 richiede la prova certa del nesso di causalità tra il ritardo amministrativo e il danno subito; la semplice constatazione della perdita di incarichi e dei costi sostenuti dal professionista non dimostra che tali perdite siano state direttamente determinate dall’inerzia dell’amministrazione. In assenza di perizie o evidenze che attestino che gli incarichi sarebbero stati ottenuti se il provvedimento fosse stato adottato entro il termine, il collegamento causale rimane incerto e, pertanto, non sussiste la condizione di danno ingiusto prevista dall’art. 2‑bis L. 241/1990."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1781,
+            "attacker_base_score": 0.7549,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1476,
+            "damage_factor": 0.4,
+            "excess": 0.4453,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8942,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7023,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0326,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7837,
+            "damage_factor": 0.4,
+            "excess": 0.0815,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8087,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7023,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.2107,
+        "base_score": 0.7022522714798229,
+        "cogency": 0.568896366542736,
+        "cogency_details": {
+          "argument_quality_score": 0.6334893915521347,
+          "coherence_score": 0.5043033415333373,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990 il danno da ritardo è risarcibile solo se provato come ingiusto e direttamente collegato al mancato rispetto del termine; la documentazione prodotta dal professionista – i tre solleciti formali, le fatture attestanti la perdita di incarichi e le spese sostenute per attività sostitutive durante il periodo di inerzia – costituisce prova certa del danno patrimoniale effettivo e del nesso causale con il ritardo amministrativo. Pertanto, il danno è configurabile come ingiusto e risarcibile.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7022522714798229,
+        "nesso_plausibility": 0.49155227147982294,
+        "norm_support": 0.8736607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.8736607049870561,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 2‑bis L. 241/1990 la responsabilità dell’amministrazione sussiste per violazione dolosa o colposa del termine di conclusione del procedimento; la mera carenza di personale o l’alto carico istruttorio, pur costituendo un elemento di difficoltà organizzativa, non configurano forza maggiore né escludono la colpevolezza, poiché il responsabile del procedimento, secondo l’art. 6 L. 241/1990, è tenuto ad adottare ogni misura idonea a garantire un’adeguata e sollecita istruttoria, anche mediante riorganizzazione delle risorse. Pertanto, la giustificazione fornita dall’amministrazione non esonera dal dovere di rispettare il termine e non elimina la possibilità di accertare la colpevolezza.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "6",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6070635984072656,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6070635984072656
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2‑bis L. 241/1990 la responsabilità dell’amministrazione sussiste per violazione dolosa o colposa del termine di conclusione del procedimento; la mera carenza di personale o l’alto carico istruttorio, pur costituendo un elemento di difficoltà organizzativa, non configurano forza maggiore né escludono la colpevolezza, poiché il responsabile del procedimento, secondo l’art. 6 L. 241/1990, è tenuto ad adottare ogni misura idonea a garantire un’adeguata e sollecita istruttoria, anche mediante riorganizzazione delle risorse. Pertanto, la giustificazione fornita dall’amministrazione non esonera dal dovere di rispettare il termine e non elimina la possibilità di accertare la colpevolezza."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

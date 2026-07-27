@@ -1,0 +1,163 @@
+{
+  "claim": "Un soggetto entra di notte in un appartamento forzando una finestra e sottrae gioielli e denaro contante. Viene identificato tramite impronte sulla finestra e immagini delle telecamere condominiali. La difesa sostiene che l'immobile apparisse disabitato e che il valore di parte dei beni fosse modesto, chiedendo qualificazione meno grave. L'accusa evidenzia effrazione, orario notturno e introduzione in privata dimora. Si chiede di qualificare il reato e verificare la portata delle circostanze aggravanti contestate.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "Il soggetto ha commesso furto in abitazione ai sensi dell’art. 624‑bis c.p., aggravato per violenza sulla cosa (forzatura della finestra) ai sensi dell’art. 625 c.p., comma 2, e per motivi futili (ingresso notturno in domicilio presumibilmente vuoto) ai sensi dell’art. 61 c.p., n. 1. Le attenuanti invocate dalla difesa (valore modesto del bottino e presunta disabitazione) non possono prevalere sulle aggravanti configurate, perciò la pena è aumentata di un terzo‑un mezzo, collocandosi nell’intervallo da circa 5 a 10 anni di reclusione, senza superare il massimo di 10 anni previsto per il furto in abitazione aggravato.",
+  "routing": {
+    "additional_causal_types": [
+      "PEN_PROPERTY_QUALIFICATION",
+      "PEN_COLPA_GRADATION"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 624 c.p.",
+          "role": "Furto"
+        },
+        {
+          "ref": "Art. 624-bis c.p.",
+          "role": "Furto in abitazione"
+        },
+        {
+          "ref": "Art. 625 c.p.",
+          "role": "Circostanze aggravanti del furto"
+        },
+        {
+          "ref": "Art. 133 c.p.",
+          "role": "Criteri di commisurazione della pena"
+        },
+        {
+          "ref": "Art. 61 c.p.",
+          "role": "Circostanze aggravanti comuni"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 646 c.p.",
+          "role": "Appropriazione indebita"
+        },
+        {
+          "ref": "Art. 640 c.p.",
+          "role": "Truffa"
+        },
+        {
+          "ref": "Art. 42 c.p.",
+          "role": "Responsabilità per dolo/colpa"
+        }
+      ]
+    },
+    "causal_type_id": "PEN_PROPERTY_QUALIFICATION",
+    "claim": "Un soggetto entra di notte in un appartamento forzando una finestra e sottrae gioielli e denaro contante. Viene identificato tramite impronte sulla finestra e immagini delle telecamere condominiali. La difesa sostiene che l'immobile apparisse disabitato e che il valore di parte dei beni fosse modesto, chiedendo qualificazione meno grave. L'accusa evidenzia effrazione, orario notturno e introduzione in privata dimora. Si chiede di qualificare il reato e verificare la portata delle circostanze aggravanti contestate.",
+    "domain": "PENALE",
+    "principle_tests": [
+      {
+        "description": "Controlla confini tra fattispecie patrimoniali contigue",
+        "id": "OFFENCE_BOUNDARY",
+        "name": "Confini di fattispecie"
+      },
+      {
+        "description": "Verifica prova di dolo specifico o profitto ingiusto richiesti",
+        "id": "SUBJECTIVE_PROOF",
+        "name": "Prova dell'elemento soggettivo"
+      },
+      {
+        "description": "Valuta grado della colpa, prevedibilità ed evitabilità in concreto",
+        "id": "BLAMEWORTHINESS_SCALE",
+        "name": "Scala della rimproverabilità"
+      },
+      {
+        "description": "Distingue apporti individuali nei fatti colposi plurisoggettivi",
+        "id": "INDIVIDUALIZATION",
+        "name": "Individualizzazione della responsabilità"
+      }
+    ],
+    "theory_id": "T_PEN_PATRIMONIALI"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "624",
+      "libro": "CP Libro II",
+      "score": 0.9815535299664739,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_844_624",
+      "testo": "Chiunque s'impossessa della cosa mobile altrui, sottraendola a chi la detiene, al fine di trarne profitto per sé o per altri, è punito con la reclusione da sei mesi a tre anni e con la multa da lire trecentomila a un milione. Agli effetti della legge penale, si considera cosa mobile anche l'energia elettrica e ogni altra energia che abbia un valore economico. ((Il delitto è punibile a querela della persona offesa. Si procede, tuttavia, d'ufficio se la persona offesa è incapace, per età o per infermità, ovvero se ricorre taluna delle circostanze di cui all'articolo 625, numeri 7, salvo che il fatto sia commesso su cose esposte alla pubblica fede, e 7-bis).)) (7)",
+      "titolo": "Furto"
+    },
+    {
+      "articolo": "585",
+      "libro": "CP Libro II",
+      "score": 0.8960293873752369,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_745_585",
+      "testo": "Nei casi previsti dagli articoli 582, 583, 583-bis, 583-quinquies e 584, la pena è aumentata da un terzo alla metà, se concorre alcuna delle circostanze aggravanti previste dall'articolo 576, ed è aumentata fino a un terzo, se concorre alcuna delle circostanze aggravanti previste dall'articolo 577, ovvero se il fatto è commesso con armi o con sostanze corrosive, ovvero da persona travisata o da più persone riunite. Agli effetti della legge penale, per armi s'intendono: 1° quelle da sparo e tutte le altre la cui destinazione naturale è l'offesa alla persona; 2° tutti gli strumenti atti ad offendere, dei quali è dalla legge vietato il porto in modo assoluto, ovvero senza giustificato motivo. Sono assimilate alle armi le materie esplodenti e i gas asfissianti o accecanti. ((Nei casi di cui al primo comma, quando il fatto è commesso come atto di odio o di discriminazione o di prevaricazione o come atto di controllo o possesso o dominio in quanto donna, o in relazione al rifiuto della donna di instaurare o mantenere un rapporto affettivo o come atto di limitazione delle sue libertà individuali, la pena è aumentata da un terzo alla metà)) .",
+      "titolo": "Circostanze aggravanti"
+    },
+    {
+      "articolo": "518-septiesdecies",
+      "libro": "CP Libro II",
+      "score": 0.8698828575814646,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_659_518-septiesdecies",
+      "testo": "((La pena è diminuita di un terzo quando un reato previsto dal presente titolo cagioni un danno di speciale tenuità ovvero comporti un lucro di speciale tenuità quando anche l'evento dannoso o pericoloso sia di speciale tenuità. La pena è diminuita da un terzo a due terzi nei confronti di chi abbia consentito l'individuazione dei correi o abbia fatto assicurare le prove del reato o si sia efficacemente adoperato per evitare che l'attività delittuosa fosse portata a conseguenze ulteriori o abbia recuperato o fatto recuperare i beni culturali oggetto del delitto.))",
+      "titolo": "Circostanze attenuanti"
+    },
+    {
+      "articolo": "624-bis",
+      "libro": "CP Libro II",
+      "score": 0.8496343111535098,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_845_624-bis",
+      "testo": "Chiunque si impossessa della cosa mobile altrui, sottraendola a chi la detiene, al fine di trarne profitto per sé o per altri, mediante introduzione in un edificio o in altro luogo destinato in tutto o in parte a privata dimora o nelle pertinenze di essa, è punito con la reclusione da quattro a sette anni e con la multa da euro 927 a euro 1.500. Alla stessa pena di cui al primo comma soggiace chi si impossessa della cosa mobile altrui, sottraendola a chi la detiene, al fine di trarne profitto per sé o per altri, strappandola di mano o di dosso alla persona. La pena è della reclusione da cinque a dieci anni e della multa da euro 1.000 a euro 2.500 se il reato è aggravato da una o più delle circostanze previste nel primo comma dell'articolo 625 ovvero se ricorre una o più delle circostanze indicate all'articolo 61. Le circostanze attenuanti, diverse da quelle previste dagli articoli 98 e 625-bis, concorrenti con una o più delle circostanze aggravanti di cui all'articolo 625, non possono essere ritenute equivalenti o prevalenti rispetto a queste e le diminuzioni di pena si operano sulla quantità della stessa risultante dall'aumento conseguente alle predette circostanze aggravanti. ((385))",
+      "titolo": "Furto in abitazione e furto con strappo"
+    },
+    {
+      "articolo": "518-sexiesdecies",
+      "libro": "CP Libro II",
+      "score": 0.837031272701355,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_658_518-sexiesdecies",
+      "testo": "((La pena è aumentata da un terzo alla metà quando un reato previsto dal presente titolo: 1) cagiona un danno di rilevante gravità; 2) è commesso nell'esercizio di un'attività professionale, commerciale, bancaria o finanziaria; 3) è commesso da un pubblico ufficiale o da un incaricato di pubblico servizio, preposto alla conservazione o alla tutela di beni culturali mobili o immobili; 4) è commesso nell'ambito dell'associazione per delinquere di cui all'articolo 416. Se i reati previsti dal presente titolo sono commessi nell'esercizio di un'attività professionale o commerciale, si applicano la pena accessoria di cui all'articolo 30 e la pubblicazione della sentenza penale di condanna ai sensi dell'articolo 36.))",
+      "titolo": "Circostanze aggravanti"
+    },
+    {
+      "articolo": "625",
+      "libro": "CP Libro II",
+      "score": 0.6669791743765608,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_846_625",
+      "testo": "La pena per il fatto previsto dall'articolo 624 è della reclusione da uno a sei anni e della multa da lire mille a diecimila: ((277)) 1° NUMERO SOPPRESSO DALLA L. 26 MARZO 2001, N. 128 ; 2° se il colpevole usa violenza sulle cose o si vale di un qualsiasi mezzo fraudolento; 3° se il colpevole porta in dosso armi o narcotici, senza farne uso; 4° se il fatto è commesso con destrezza; 5° se il fatto è commesso da tre o più persone, ovvero anche da una sola, che sia travisata o simuli la qualità di pubblico ufficiale o d'incaricato di un pubblico servizio; 6° se il fatto è commesso sul bagaglio dei viaggiatori in ogni specie di veicoli, nelle stazioni, negli scali o banchine, negli alberghi o in altri esercizi ove si somministrano cibi o bevande; 7° se il fatto è commesso su cose esistenti in uffici o stabilimenti pubblici, o sottoposte a sequestro o a pignoramento, o esposte per necessità o per consuetudine o per destinazione alla pubblica fede, o destinate a pubblico servizio o a pubblica utilità, difesa o reverenza; 7-bis) se il fatto è commesso su componenti metalliche o altro materiale sottratto ad infrastrutture destinate all'erogazione di energia, di servizi di trasporto, di telecomunicazioni o di altri servizi pubblici e gestite da soggetti pubblici o da privati in regime di concessione pubblica; 8° se il fatto è commesso su tre o più capi di bestiame raccolti in gregge o in mandria, ovvero su animali bovini o equini, anche non raccolti in mandria; 8-bis) se il fatto è commesso all'interno di mezzi di pubblico trasporto; 8-ter) se il fatto è commesso nei confronti di persona che si trovi nell'atto di fruire ovvero che abbia appena fruito dei servizi di istituti di credito, uffici postali o sportelli automatici adibiti al prelievo di denaro. Se concorrono due o più delle circostanze prevedute dai numeri precedenti, ovvero se una di tali circostanze concorre con altra fra quelle indicate nell'articolo 61, la pena è della reclusione da tre a dieci anni e della multa da lire duemila a quindicimila. (7)",
+      "titolo": "Circostanze aggravanti"
+    },
+    {
+      "articolo": "425",
+      "libro": "CP Libro II",
+      "score": 0.5821373402852593,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_516_425",
+      "testo": "Nei casi preveduti dagli articoli 423 e 424, la pena è aumentata se il fatto è commesso: (172) 1° su edifici pubblici o destinati a uso pubblico, su monumenti, cimiteri e loro dipendenze; 2° su edifici abitati o destinati a uso di abitazione, su impianti industriali o cantieri, ((su aziende agricole,)) o su miniere, cave, sorgenti, o su acquedotti o altri manufatti destinati a raccogliere e condurre le acque; 3° su navi o altri edifici natanti, o su aeromobili; 4° su scali ferroviari o marittimi, o aeroscali, magazzini generali o altri depositi di merci o derrate, o su ammassi o depositi di materie esplodenti, infiammabili o combustibili; 5° NUMERO ABROGATO DAL D.L. 4 AGOSTO 2000, N. 220 , CONVERTITO CON MODIFICAZIONI DALLA L. 6 OTTOBRE 2000, N. 275 . (172) (7)",
+      "titolo": "Circostanze aggravanti"
+    },
+    {
+      "articolo": "61",
+      "libro": "CP Libro I",
+      "score": 0.6247440178074569,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_69_61",
+      "testo": "Aggravano il reato, quando non ne sono elementi costitutivi o circostanze aggravanti speciali, le circostanze seguenti: 1° l'avere agito per motivi abietti o futili; 2° l'aver commesso il reato per eseguirne od occultarne un altro, ovvero per conseguire o assicurare a sé o ad altri il prodotto o il profitto o il prezzo ovvero la impunità di un altro reato; 3° l'avere, nei delitti colposi, agito nonostante la previsione dell'evento; 4° l'avere adoperato sevizie, o l'aver agito con crudeltà verso le persone; 5) l'avere profittato di circostanze di tempo, di luogo o di persona, anche in riferimento all'età, tali da ostacolare la pubblica o privata difesa; 6° l'avere il colpevole commesso il reato durante il tempo, in cui si è sottratto volontariamente alla esecuzione di un mandato o di un ordine di arresto o di cattura o di carcerazione, spedito per un precedente reato; 7° l'avere, nei delitti contro il patrimonio, o che comunque offendono il patrimonio, ovvero nei delitti determinati da motivi di lucro, cagionato alla persona offesa dal reato un danno patrimoniale di rilevante gravità; 8° l'avere aggravato o tentato di aggravare le conseguenze del delitto commesso; 9° l'avere commesso il fatto con abuso dei poteri, o con violazione dei doveri inerenti a una pubblica funzione o a un pubblico servizio, ovvero alla qualità di ministro di un culto; 10° l'avere commesso il fatto contro un pubblico ufficiale o una persona incaricata di un pubblico servizio, o rivestita della qualità di ministro del culto cattolico o di un culto ammesso nello Stato, ovvero contro un agente diplomatico o consolare di uno Stato estero, nell'atto o a causa dell'adempimento delle funzioni o del servizio; 11° l'avere commesso il fatto con abuso di autorità o di relazioni domestiche, ovvero con abuso di relazioni di ufficio, di prestazione d'opera, di coabitazione, o di ospitalità. 11-bis. l'avere il colpevole commesso il fatto mentre si trova illegalmente sul territorio nazionale.(217) (223) 11-ter) l'aver commesso un delitto contro la persona ai danni di un soggetto minore all'interno o nelle adiacenze di istituti di istruzione o di formazione. 11-quater. l'avere il colpevole commesso un delitto non colposo durante il periodo in cui era ammesso ad una misura alternativa alla detenzione in carcere. 11-quinquies) l'avere, nei delitti non colposi contro la vita e l'incolumità individuale e contro la libertà personale, commesso il fatto in presenza o in danno di un minore di anni diciotto ovvero in danno di persona in stato di gravidanza. 11-sexies) l'avere, nei delitti non colposi, commesso il fatto in danno di persone ricoverate presso strutture sanitarie o presso strutture sociosanitarie residenziali o semiresidenziali, pubbliche o private, ovvero presso strutture socio-educative. 11-septies) l'avere commesso il fatto in occasione o a causa di manifestazioni sportive o durante i trasferimenti da o verso i luoghi in cui si svolgono dette manifestazioni. 11-octies) l'avere agito, nei delitti commessi con violenza o minaccia, in danno degli esercenti le professioni sanitarie e socio-sanitarie nonché di chiunque svolga attività ausiliarie di cura, assistenza sanitaria o soccorso, funzionali allo svolgimento di dette professioni, a causa o nell'esercizio di tali professioni o attività. 11-novies) l'avere agito, nei delitti commessi con violenza o minaccia, in danno di un dirigente scolastico o di un membro del personale docente, educativo, amministrativo, tecnico o ausiliario della scuola, a causa o nell'esercizio delle loro funzioni. 11-decies) l'avere, nei delitti non colposi contro la vita e l'incolumità pubblica e individuale, contro la libertà personale e contro il patrimonio, o che comunque offendono il patrimonio commesso il fatto all'interno o nelle immediate adiacenze delle stazioni ferroviarie e delle metropolitane o all'interno dei convogli adibiti al trasporto di passeggeri. ((11-undecies) l'avere commesso il fatto mediante l'impiego di sistemi di intelligenza artificiale, quando gli stessi, per la loro natura o per le modalità di utilizzo, abbiano costituito mezzo insidioso, ovvero quando il loro impiego abbia comunque ostacolato la pubblica o la privata difesa, ovvero aggravato le conseguenze del reato)) .",
+      "titolo": "Circostanze aggravanti comuni"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

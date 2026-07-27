@@ -1,0 +1,2674 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 4,
+      "attack_coverage_bonus": 0.0272814,
+      "attack_coverage_ratio": 0.5,
+      "attack_coverage_score": 0.22734500000000002,
+      "attacks_avg": 0.416225,
+      "base_score_avg": 0.7374896413091957,
+      "cogency_avg": 0.612626618631422,
+      "net_plausibility": 0.3090523795606514,
+      "net_plausibility_adjusted": 0.3090523795606514,
+      "net_plausibility_raw": 0.32126464130919574,
+      "norm_support_avg": 0.8722727515714304,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.21063286265890332,
+      "redundancy_penalty": 0.03949366174854437,
+      "semantics_avg": 0.6826418503039898
+    },
+    "pro": {
+      "attacks_avg": 0.07235714285714286,
+      "base_score_avg": 0.7840166331984265,
+      "cogency_avg": 0.6301693930967668,
+      "net_plausibility": 0.7840166331984265,
+      "net_plausibility_adjusted": 0.7840166331984265,
+      "net_plausibility_dialectical_raw": 0.7116594903412837,
+      "net_plausibility_intrinsic_raw": 0.7840166331984265,
+      "net_plausibility_raw": 0.7840166331984265,
+      "norm_support_avg": 0.9545385137588013,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.16363927447122223,
+      "redundancy_penalty": 0.04090981861780556,
+      "semantics_avg": 0.7105013658862533
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.213,
+            "attacker_base_score": 0.8054,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2643,
+            "damage_factor": 0.4,
+            "excess": 0.5325,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7849,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1847,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1937,
+            "damage_factor": 0.4,
+            "excess": 0.4619,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7521,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1482,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1022,
+            "damage_factor": 0.4,
+            "excess": 0.3704,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7567,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7086,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6824,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8024,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8315,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.622,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7124,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8557,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7043,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.765,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "boosted_attack": 0.6981,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7604,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3977,
+        "base_score": 0.7318180827836449,
+        "cogency": 0.618189539648729,
+        "cogency_details": {
+          "argument_quality_score": 0.657680236631547,
+          "coherence_score": 0.5786988426659111,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Nel valutare la responsabilità penale ex art. 646 c.p. è necessario dimostrare che la falsa dichiarazione del mediatore sia la causa necessaria dell’annullamento del preliminare; tuttavia il venditore poteva dichiarare inefficace il contratto per altre ragioni, quali proprie violazioni contrattuali o la volontà di recedere, elementi che non dipendono dal comportamento del mediatore. Di conseguenza, l’assenza di prova certa del nesso causale rende incerta la connessione tra il reato di appropriazione indebita e il danno civile subito dal promissario acquirente.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7318180827836449,
+        "nesso_plausibility": 0.3341180827836449,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare, oltre ogni ragionevole dubbio, l’intenzione di appropriarsi in modo definitivo della somma ricevuta; la mera ritenuta temporanea dell’acconto per esigenze personali, come sostenuto dal mediatore, non dimostra tale dolo, ma può configurare solo una inadempienza contrattuale. In assenza di prove concrete dell’intento di profitto ingiusto, la soglia probatoria penale non è superata, sebbene la responsabilità civile possa comunque sussistere sulla base della colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7837255478640162,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7837255478640162
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare, oltre ogni ragionevole dubbio, l’intenzione di appropriarsi in modo definitivo della somma ricevuta; la mera ritenuta temporanea dell’acconto per esigenze personali, come sostenuto dal mediatore, non dimostra tale dolo, ma può configurare solo una inadempienza contrattuale. In assenza di prove concrete dell’intento di profitto ingiusto, la soglia probatoria penale non è superata, sebbene la responsabilità civile possa comunque sussistere sulla base della colpa."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2067,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2833,
+            "damage_factor": 0.4,
+            "excess": 0.5168,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8086,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1867,
+            "attacker_base_score": 0.765,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "boosted_attack": 1.2332,
+            "damage_factor": 0.4,
+            "excess": 0.4667,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8059,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.142,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1214,
+            "damage_factor": 0.4,
+            "excess": 0.355,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7699,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0189,
+            "attacker_base_score": 0.8054,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.8137,
+            "damage_factor": 0.4,
+            "excess": 0.0472,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.842,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7086,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6518,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7665,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8315,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8557,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.39339999999999997,
+        "base_score": 0.7664842498157423,
+        "cogency": 0.6203196493375044,
+        "cogency_details": {
+          "argument_quality_score": 0.698634855206143,
+          "coherence_score": 0.5420044434688658,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Per invocare l’art. 1218 c.c. occorre dimostrare l’esistenza di un’obbligazione contrattuale specifica del mediatore nei confronti del promissario acquirente; tuttavia dal fatto che il mediatore ha semplicemente ricevuto l’acconto per trasferirlo al venditore non deriva alcun contratto di prestazione diretto con l’acquirente, ma solo un rapporto di mediazione o di mandato eventualmente verso il venditore. In assenza di tale rapporto contrattuale diretto, la responsabilità per inadempimento non può essere qualificata ai sensi dell’art. 1218 c.c., che richiede la prova autonoma dell’obbligazione contrattuale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7664842498157423,
+        "nesso_plausibility": 0.3730842498157423,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Nel valutare la responsabilità penale ex art. 646 c.p. è necessario dimostrare che la falsa dichiarazione del mediatore sia la causa necessaria dell’annullamento del preliminare; tuttavia il venditore poteva dichiarare inefficace il contratto per altre ragioni, quali proprie violazioni contrattuali o la volontà di recedere, elementi che non dipendono dal comportamento del mediatore. Di conseguenza, l’assenza di prova certa del nesso causale rende incerta la connessione tra il reato di appropriazione indebita e il danno civile subito dal promissario acquirente.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7297469100655617,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7297469100655617
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Nel valutare la responsabilità penale ex art. 646 c.p. è necessario dimostrare che la falsa dichiarazione del mediatore sia la causa necessaria dell’annullamento del preliminare; tuttavia il venditore poteva dichiarare inefficace il contratto per altre ragioni, quali proprie violazioni contrattuali o la volontà di recedere, elementi che non dipendono dal comportamento del mediatore. Di conseguenza, l’assenza di prova certa del nesso causale rende incerta la connessione tra il reato di appropriazione indebita e il danno civile subito dal promissario acquirente."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2701,
+            "attacker_base_score": 0.8557,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.4215,
+            "damage_factor": 0.4,
+            "excess": 0.6751,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8306,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1762,
+            "attacker_base_score": 0.8054,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1869,
+            "damage_factor": 0.4,
+            "excess": 0.4405,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7368,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1373,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0897,
+            "damage_factor": 0.4,
+            "excess": 0.3434,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7481,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0152,
+            "attacker_base_score": 0.8315,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.7843,
+            "damage_factor": 0.4,
+            "excess": 0.0379,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7086,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6322,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7435,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.765,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          }
+        ],
+        "attacks_sum": 0.44630000000000003,
+        "base_score": 0.7463621239476038,
+        "cogency": 0.6198639280098024,
+        "cogency_details": {
+          "argument_quality_score": 0.7169872752244302,
+          "coherence_score": 0.5227405807951747,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Per ottenere il risarcimento per la perdita dell’opportunità negoziale il promissario acquirente deve provare in via autonoma, ai sensi dell’art. 1223 c.c., l’effettivo danno patrimoniale subito, quantificandone il valore economico concreto e diretto. L’esistenza di una mera “perdita di occasione” non è di per sé sufficiente: occorre dimostrare con perizia o documentazione il prezzo di vendita che il compratore avrebbe potuto ottenere e la probabilità di conclusione del contratto. In assenza di tali elementi probatori la domanda di risarcimento per perdita di opportunità resta priva di fondamento.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7463621239476038,
+        "nesso_plausibility": 0.3000621239476038,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Per invocare l’art. 1218 c.c. occorre dimostrare l’esistenza di un’obbligazione contrattuale specifica del mediatore nei confronti del promissario acquirente; tuttavia dal fatto che il mediatore ha semplicemente ricevuto l’acconto per trasferirlo al venditore non deriva alcun contratto di prestazione diretto con l’acquirente, ma solo un rapporto di mediazione o di mandato eventualmente verso il venditore. In assenza di tale rapporto contrattuale diretto, la responsabilità per inadempimento non può essere qualificata ai sensi dell’art. 1218 c.c., che richiede la prova autonoma dell’obbligazione contrattuale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.663128878499469,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.663128878499469
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per invocare l’art. 1218 c.c. occorre dimostrare l’esistenza di un’obbligazione contrattuale specifica del mediatore nei confronti del promissario acquirente; tuttavia dal fatto che il mediatore ha semplicemente ricevuto l’acconto per trasferirlo al venditore non deriva alcun contratto di prestazione diretto con l’acquirente, ma solo un rapporto di mediazione o di mandato eventualmente verso il venditore. In assenza di tale rapporto contrattuale diretto, la responsabilità per inadempimento non può essere qualificata ai sensi dell’art. 1218 c.c., che richiede la prova autonoma dell’obbligazione contrattuale."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2292,
+            "attacker_base_score": 0.8557,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2783,
+            "damage_factor": 0.4,
+            "excess": 0.573,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.747,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1983,
+            "attacker_base_score": 0.8054,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.201,
+            "damage_factor": 0.4,
+            "excess": 0.4957,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7456,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1004,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9562,
+            "damage_factor": 0.4,
+            "excess": 0.2509,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6565,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7086,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6033,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7095,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8315,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.6866,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6882,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.765,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          }
+        ],
+        "attacks_sum": 0.4275,
+        "base_score": 0.7052941086897918,
+        "cogency": 0.5921333575296523,
+        "cogency_details": {
+          "argument_quality_score": 0.6350370714215358,
+          "coherence_score": 0.5492296436377689,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Nel procedimento penale, l’art. 185 c.p. impone al reo la restituzione del valore del bene con gli interessi legali, senza prevedere alcun tasso contrattuale; pertanto, la quantificazione dell’interesse nella fase civile non può superare tale limite, poiché le due procedure sono autonome e il principio di separazione dei rami del diritto esclude l’applicazione di tassi più gravosi decisi in sede penale. Di conseguenza, il mediatore è tenuto a restituire l’acconto con gli interessi legali determinati dall’art. 185 c.p., ma non è soggetto a ulteriori oneri di interesse contrattuale nella domanda civile.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7052941086897918,
+        "nesso_plausibility": 0.2777941086897918,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Per ottenere il risarcimento per la perdita dell’opportunità negoziale il promissario acquirente deve provare in via autonoma, ai sensi dell’art. 1223 c.c., l’effettivo danno patrimoniale subito, quantificandone il valore economico concreto e diretto. L’esistenza di una mera “perdita di occasione” non è di per sé sufficiente: occorre dimostrare con perizia o documentazione il prezzo di vendita che il compratore avrebbe potuto ottenere e la probabilità di conclusione del contratto. In assenza di tali elementi probatori la domanda di risarcimento per perdita di opportunità resta priva di fondamento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5539660647869123,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5539660647869123
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per ottenere il risarcimento per la perdita dell’opportunità negoziale il promissario acquirente deve provare in via autonoma, ai sensi dell’art. 1223 c.c., l’effettivo danno patrimoniale subito, quantificandone il valore economico concreto e diretto. L’esistenza di una mera “perdita di occasione” non è di per sé sufficiente: occorre dimostrare con perizia o documentazione il prezzo di vendita che il compratore avrebbe potuto ottenere e la probabilità di conclusione del contratto. In assenza di tali elementi probatori la domanda di risarcimento per perdita di opportunità resta priva di fondamento."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0939,
+            "attacker_base_score": 0.7464,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9433,
+            "damage_factor": 0.4,
+            "excess": 0.2347,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7435,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7086,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0568,
+            "attacker_base_score": 0.7053,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8507,
+            "damage_factor": 0.4,
+            "excess": 0.142,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7095,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7086,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7318,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7047,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8024,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7086,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.705,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7665,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7086,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1507,
+        "base_score": 0.7086467272226519,
+        "cogency": 0.6541671758705151,
+        "cogency_details": {
+          "argument_quality_score": 0.6779425187807255,
+          "coherence_score": 0.6303918329603047,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il comportamento del mediatore integra tutti gli elementi dell’art. 646 c.p. – ha avuto il possesso della somma ricevuta a titolo di deposito, ne ha trattenuto l’uso per esigenze personali e ha procurato a sé un ingiusto profitto, configurando così appropriazione indebita; la falsa comunicazione al venditore, pur costituendo un raggiro, non è indispensabile per l’inquadramento del reato, il quale si fonda sulla sottrazione del denaro già in suo possesso.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7086467272226519,
+        "nesso_plausibility": 0.5579467272226519,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il mediatore immobiliare ha ricevuto dal promissario acquirente una somma destinata a costituire acconto da versare al venditore, ma ha trattenuta la somma per esigenze personali e ha comunicato falsamente al venditore che il pagamento era stato effettuato. Il venditore, constatata l’assenza del versamento, ha dichiarato inefficace il contratto preliminare per mancato pagamento, facendo venire a conoscenza del cliente la violazione. Il cliente ha quindi sporto querela penale e avviato un’azione civile per la restituzione dell’acconto, per i danni derivanti dalla perdita dell’opportunità negoziale e per i costi accessori. Il mediatore sostiene che la trattenuta fosse temporanea e che il cliente non abbia subito pregiudizi definitivi.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6705100597722531,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6705100597722531
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il mediatore immobiliare ha ricevuto dal promissario acquirente una somma destinata a costituire acconto da versare al venditore, ma ha trattenuta la somma per esigenze personali e ha comunicato falsamente al venditore che il pagamento era stato effettuato. Il venditore, constatata l’assenza del versamento, ha dichiarato inefficace il contratto preliminare per mancato pagamento, facendo venire a conoscenza del cliente la violazione. Il cliente ha quindi sporto querela penale e avviato un’azione civile per la restituzione dell’acconto, per i danni derivanti dalla perdita dell’opportunità negoziale e per i costi accessori. Il mediatore sostiene che la trattenuta fosse temporanea e che il cliente non abbia subito pregiudizi definitivi."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0884,
+            "attacker_base_score": 0.7464,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9492,
+            "damage_factor": 0.4,
+            "excess": 0.2209,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7481,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7283,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7318,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6645,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7567,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7283,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7081,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7699,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7283,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7053,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.4862,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6565,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7283,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.0884,
+        "base_score": 0.7283152551296757,
+        "cogency": 0.55065981820358,
+        "cogency_details": {
+          "argument_quality_score": 0.6426128231825314,
+          "coherence_score": 0.45870681322462853,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 40 c.p., la condotta omissiva del mediatore – il trattenere l’acconto e dichiarare falsamente al venditore il suo versamento – costituisce la condizione sine qua non dell’evento dannoso, ovvero la dichiarazione di inefficacia del preliminare per mancato pagamento; infatti, se il mediatore avesse effettuato il versamento o comunicato correttamente l’avvenuto pagamento, il venditore non avrebbe avuto motivo di ritenere il preliminare non adempiuto e quindi non lo avrebbe dichiarato inefficace. Non sussiste alcuna causa sopravvenuta da sola sufficiente a produrre tale dichiarazione, perciò il nesso causale tra l’omissione del mediatore e la perdita del preliminare è soddisfatto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7283152551296757,
+        "nesso_plausibility": 0.6399152551296756,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il comportamento del mediatore integra tutti gli elementi dell’art. 646 c.p. – ha avuto il possesso della somma ricevuta a titolo di deposito, ne ha trattenuto l’uso per esigenze personali e ha procurato a sé un ingiusto profitto, configurando così appropriazione indebita; la falsa comunicazione al venditore, pur costituendo un raggiro, non è indispensabile per l’inquadramento del reato, il quale si fonda sulla sottrazione del denaro già in suo possesso.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6721767589125976,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6721767589125976
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il comportamento del mediatore integra tutti gli elementi dell’art. 646 c.p. – ha avuto il possesso della somma ricevuta a titolo di deposito, ne ha trattenuto l’uso per esigenze personali e ha procurato a sé un ingiusto profitto, configurando così appropriazione indebita; la falsa comunicazione al venditore, pur costituendo un raggiro, non è indispensabile per l’inquadramento del reato, il quale si fonda sulla sottrazione del denaro già in suo possesso."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0663,
+            "attacker_base_score": 0.7464,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9973,
+            "damage_factor": 0.4,
+            "excess": 0.1658,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8315,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7318,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6256,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7124,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8315,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7053,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5096,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6882,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.8315,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.0663,
+        "base_score": 0.8314918812356961,
+        "cogency": 0.6933767846915976,
+        "cogency_details": {
+          "argument_quality_score": 0.6969304747331411,
+          "coherence_score": 0.6898230946500541,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1218 c.c., il mediatore, in qualità di debitore della prestazione di trasferimento dell’acconto al venditore, ha violato l’obbligo contrattuale non dimostrando alcuna impossibilità a eseguire il pagamento, poiché la trattenuta è stata motivata da esigenze personali proprie e non da cause a lui non imputabili; pertanto sussiste l’inadempimento. Tale inadempimento genera il diritto del promissario acquirente a ottenere il risarcimento del danno patrimoniale subito, comprensivo della perdita dell’opportunità negoziale e dei costi accessori, ai sensi dell’art. 1218 c.c. e dell’art. 1223 c.c. (danno immediato e diretto).",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.8314918812356961,
+        "nesso_plausibility": 0.765191881235696,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 40 c.p., la condotta omissiva del mediatore – il trattenere l’acconto e dichiarare falsamente al venditore il suo versamento – costituisce la condizione sine qua non dell’evento dannoso, ovvero la dichiarazione di inefficacia del preliminare per mancato pagamento; infatti, se il mediatore avesse effettuato il versamento o comunicato correttamente l’avvenuto pagamento, il venditore non avrebbe avuto motivo di ritenere il preliminare non adempiuto e quindi non lo avrebbe dichiarato inefficace. Non sussiste alcuna causa sopravvenuta da sola sufficiente a produrre tale dichiarazione, perciò il nesso causale tra l’omissione del mediatore e la perdita del preliminare è soddisfatto.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.744929486094056,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.744929486094056
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 40 c.p., la condotta omissiva del mediatore – il trattenere l’acconto e dichiarare falsamente al venditore il suo versamento – costituisce la condizione sine qua non dell’evento dannoso, ovvero la dichiarazione di inefficacia del preliminare per mancato pagamento; infatti, se il mediatore avesse effettuato il versamento o comunicato correttamente l’avvenuto pagamento, il venditore non avrebbe avuto motivo di ritenere il preliminare non adempiuto e quindi non lo avrebbe dichiarato inefficace. Non sussiste alcuna causa sopravvenuta da sola sufficiente a produrre tale dichiarazione, perciò il nesso causale tra l’omissione del mediatore e la perdita del preliminare è soddisfatto."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0793,
+            "attacker_base_score": 0.7464,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0539,
+            "damage_factor": 0.4,
+            "excess": 0.1983,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8306,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8557,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.07,
+            "attacker_base_score": 0.7318,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0308,
+            "damage_factor": 0.4,
+            "excess": 0.1751,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7043,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.016,
+            "attacker_base_score": 0.7053,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8956,
+            "damage_factor": 0.4,
+            "excess": 0.04,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.747,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8557,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          }
+        ],
+        "attacks_sum": 0.1493,
+        "base_score": 0.8556629927665276,
+        "cogency": 0.6629265824956663,
+        "cogency_details": {
+          "argument_quality_score": 0.6985390371170861,
+          "coherence_score": 0.6273141278742465,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 2043 c.c. il comportamento del mediatore, consistente nella trattenuta dell’acconto e nella falsa comunicazione dell’avvenuto pagamento, costituisce fatto illecito che ha cagionato al promissario acquirente un danno patrimoniale, ossia la perdita della possibilità di concludere la compravendita e le spese accessorie sostenute; tale danno è risarcibile perché è conseguenza immediata e diretta della condotta illecita, come previsto dall’art. 1223 c.c., che estende il risarcimento anche al mancato guadagno derivante dalla perdita dell’occasione negoziale.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.8556629927665276,
+        "nesso_plausibility": 0.7063629927665276,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1218 c.c., il mediatore, in qualità di debitore della prestazione di trasferimento dell’acconto al venditore, ha violato l’obbligo contrattuale non dimostrando alcuna impossibilità a eseguire il pagamento, poiché la trattenuta è stata motivata da esigenze personali proprie e non da cause a lui non imputabili; pertanto sussiste l’inadempimento. Tale inadempimento genera il diritto del promissario acquirente a ottenere il risarcimento del danno patrimoniale subito, comprensivo della perdita dell’opportunità negoziale e dei costi accessori, ai sensi dell’art. 1218 c.c. e dell’art. 1223 c.c. (danno immediato e diretto).",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8559500600594259,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8559500600594259
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1218 c.c., il mediatore, in qualità di debitore della prestazione di trasferimento dell’acconto al venditore, ha violato l’obbligo contrattuale non dimostrando alcuna impossibilità a eseguire il pagamento, poiché la trattenuta è stata motivata da esigenze personali proprie e non da cause a lui non imputabili; pertanto sussiste l’inadempimento. Tale inadempimento genera il diritto del promissario acquirente a ottenere il risarcimento del danno patrimoniale subito, comprensivo della perdita dell’opportunità negoziale e dei costi accessori, ai sensi dell’art. 1218 c.c. e dell’art. 1223 c.c. (danno immediato e diretto)."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7318,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6605,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7521,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7936,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7437,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8086,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7936,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7464,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7053,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7935726560650693,
+        "cogency": 0.5870092138225345,
+        "cogency_details": {
+          "argument_quality_score": 0.6696146928610157,
+          "coherence_score": 0.5044037347840531,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 185 c.p., il mediatore, avendo commesso il reato di appropriazione indebita (art. 646 c.p.) o di truffa (art. 640 c.p.), è tenuto a restituire al promissario acquirente l’intero importo dell’acconto trattenuto, con gli interessi legali, e a risarcire il danno patrimoniale subito dal venditore per la perdita della conclusione del preliminare; tale obbligo di restituzione e risarcimento è autonomo rispetto alla responsabilità penale ma si fonda sul medesimo fatto illecito, garantendo così la coesistenza delle sanzioni penali con la riparazione civile del danno.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7935726560650693,
+        "nesso_plausibility": 0.7935726560650693,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’art. 2043 c.c. il comportamento del mediatore, consistente nella trattenuta dell’acconto e nella falsa comunicazione dell’avvenuto pagamento, costituisce fatto illecito che ha cagionato al promissario acquirente un danno patrimoniale, ossia la perdita della possibilità di concludere la compravendita e le spese accessorie sostenute; tale danno è risarcibile perché è conseguenza immediata e diretta della condotta illecita, come previsto dall’art. 1223 c.c., che estende il risarcimento anche al mancato guadagno derivante dalla perdita dell’occasione negoziale.",
+        "retrieved_norms": [
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7248996397276966,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7248996397276966
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2043 c.c. il comportamento del mediatore, consistente nella trattenuta dell’acconto e nella falsa comunicazione dell’avvenuto pagamento, costituisce fatto illecito che ha cagionato al promissario acquirente un danno patrimoniale, ossia la perdita della possibilità di concludere la compravendita e le spese accessorie sostenute; tale danno è risarcibile perché è conseguenza immediata e diretta della condotta illecita, come previsto dall’art. 1223 c.c., che estende il risarcimento anche al mancato guadagno derivante dalla perdita dell’occasione negoziale."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0518,
+            "attacker_base_score": 0.7464,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9349,
+            "damage_factor": 0.4,
+            "excess": 0.1295,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7368,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8054,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7318,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6893,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7849,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8054,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7744,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.842,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8054,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7053,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.631,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7456,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8054,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0518,
+        "base_score": 0.8053779540355522,
+        "cogency": 0.6596219366837757,
+        "cogency_details": {
+          "argument_quality_score": 0.6609497604341307,
+          "coherence_score": 0.6582941129334208,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "Secondo l’art. 41 c.p., la concorrenza di cause non esclude il nesso di causalità se la condotta del reo resta una condizione necessaria dell’evento. L’argomento del mediatore, secondo cui la trattenuta sarebbe stata temporanea e non avrebbe provocato un pregiudizio definitivo, non costituisce una causa sopravvenuta da sola sufficiente a far decadere il nesso, poiché l’annullamento del preliminare è stato determinato dall’assenza del versamento dell’acconto, evento che non si sarebbe verificato se il mediatore avesse adempiuto al suo obbligo di trasferimento. Pertanto, la sua omissione rimane una causa equivalente ai sensi del comma 1 dell’art. 41 c.p., mantenendo il rapporto di causalità necessario per l’attribuzione della responsabilità penale e civile.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.8053779540355522,
+        "nesso_plausibility": 0.7535779540355523,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Ai sensi dell’art. 185 c.p., il mediatore, avendo commesso il reato di appropriazione indebita (art. 646 c.p.) o di truffa (art. 640 c.p.), è tenuto a restituire al promissario acquirente l’intero importo dell’acconto trattenuto, con gli interessi legali, e a risarcire il danno patrimoniale subito dal venditore per la perdita della conclusione del preliminare; tale obbligo di restituzione e risarcimento è autonomo rispetto alla responsabilità penale ma si fonda sul medesimo fatto illecito, garantendo così la coesistenza delle sanzioni penali con la riparazione civile del danno.",
+        "retrieved_norms": [
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6916379101013985,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6916379101013985
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 185 c.p., il mediatore, avendo commesso il reato di appropriazione indebita (art. 646 c.p.) o di truffa (art. 640 c.p.), è tenuto a restituire al promissario acquirente l’intero importo dell’acconto trattenuto, con gli interessi legali, e a risarcire il danno patrimoniale subito dal venditore per la perdita della conclusione del preliminare; tale obbligo di restituzione e risarcimento è autonomo rispetto alla responsabilità penale ma si fonda sul medesimo fatto illecito, garantendo così la coesistenza delle sanzioni penali con la riparazione civile del danno."
+      },
+      {
+        "argument_id": "chain_7",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7318,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6678,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7604,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.765,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7413,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8059,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.765,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7464,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7053,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.765048965933813,
+        "cogency": 0.603424239909698,
+        "cogency_details": {
+          "argument_quality_score": 0.6682163036066204,
+          "coherence_score": 0.5386321762127755,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S8",
+        "conclusion_text": "In base al principio di separazione dei binari (TRACK_SEPARATION), il promissario acquirente può esercitare simultaneamente l’azione penale per appropriazione indebita (art. 646 c.p.) o truffa (art. 640 c.p.) e l’azione civile di restituzione e risarcimento (art. 185 c.p., art. 1218 c.c., art. 2043 c.c.), poiché le due procedure sono autonome e non si escludono a vicenda; la responsabilità civile, però, è limitata al rimborso dell’acconto trattenuto più il danno patrimoniale dimostrato ai sensi dell’art. 1223 c.c. Inoltre, la condotta del mediatore integra il reato di consulenza infedele (art. 380 c.p.), rafforzando la configurazione penale senza pregiudicare la pretesa risarcitoria civile.",
+        "libro": "",
+        "link_id": "S7->S8",
+        "nesso_intrinsic": 0.765048965933813,
+        "nesso_plausibility": 0.765048965933813,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 8,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 9,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S7"
+        ],
+        "premise_text": "Secondo l’art. 41 c.p., la concorrenza di cause non esclude il nesso di causalità se la condotta del reo resta una condizione necessaria dell’evento. L’argomento del mediatore, secondo cui la trattenuta sarebbe stata temporanea e non avrebbe provocato un pregiudizio definitivo, non costituisce una causa sopravvenuta da sola sufficiente a far decadere il nesso, poiché l’annullamento del preliminare è stato determinato dall’assenza del versamento dell’acconto, evento che non si sarebbe verificato se il mediatore avesse adempiuto al suo obbligo di trasferimento. Pertanto, la sua omissione rimane una causa equivalente ai sensi del comma 1 dell’art. 41 c.p., mantenendo il rapporto di causalità necessario per l’attribuzione della responsabilità penale e civile.",
+        "retrieved_norms": [
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "380",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_453_380",
+            "title": "Patrocinio o consulenza infedele"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6134056465363453,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6134056465363453
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 41 c.p., la concorrenza di cause non esclude il nesso di causalità se la condotta del reo resta una condizione necessaria dell’evento. L’argomento del mediatore, secondo cui la trattenuta sarebbe stata temporanea e non avrebbe provocato un pregiudizio definitivo, non costituisce una causa sopravvenuta da sola sufficiente a far decadere il nesso, poiché l’annullamento del preliminare è stato determinato dall’assenza del versamento dell’acconto, evento che non si sarebbe verificato se il mediatore avesse adempiuto al suo obbligo di trasferimento. Pertanto, la sua omissione rimane una causa equivalente ai sensi del comma 1 dell’art. 41 c.p., mantenendo il rapporto di causalità necessario per l’attribuzione della responsabilità penale e civile."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.3090523795606514,
+    "contra_adjusted": 0.3090523795606514,
+    "contra_raw": 0.32126464130919574,
+    "final": 0.4749642536377751,
+    "final_adjusted": 0.4749642536377751,
+    "final_raw": 0.4627519918892308,
+    "pro": 0.7840166331984265,
+    "pro_adjusted": 0.7840166331984265,
+    "pro_raw": 0.7840166331984265,
+    "pro_raw_dialectical": 0.7116594903412837,
+    "pro_raw_intrinsic": 0.7840166331984265,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8306,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.2701
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.747,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.2292
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7849,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.213
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8086,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2067
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7456,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.1983
+      },
+      {
+        "attacker": "S7->S8",
+        "attacker_role": "support",
+        "overlap": 0.8059,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1867
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.7521,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1847
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7368,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1762
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7567,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1482
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7699,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.142
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S7->S8",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 4,
+          "axis_details": [
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7086467272226519,
+              "axis_id": "AX4",
+              "axis_quality": 0.0939,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.8022606962992422,
+              "axis_id": "AX1",
+              "axis_quality": 0.0884,
+              "link_ids": [
+                "S4->S5",
+                "S3->S4",
+                "S5->S6",
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.8053779540355522,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S6->S7"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.765048965933813,
+              "axis_id": "AX3",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S7->S8"
+              ]
+            }
+          ],
+          "bonus": 0.0272814,
+          "coverage_ratio": 0.5,
+          "enabled": true,
+          "quality_avg": 0.045575000000000004,
+          "wpcs": 0.22734500000000002
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7362144731553794,
+          "high_similarity_pair_ratio": 0.5,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.03949366174854437,
+          "redundancy_index": 0.21063286265890332
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7381969462256277,
+          "high_similarity_pair_ratio": 0.6666666666666666,
+          "links_count": 7,
+          "pair_count": 21,
+          "penalty": 0.04090981861780556,
+          "redundancy_index": 0.16363927447122223
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2292,
+            "attacker_base_score": 0.8557,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2783,
+            "damage_factor": 0.4,
+            "excess": 0.573,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.747,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1983,
+            "attacker_base_score": 0.8054,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.201,
+            "damage_factor": 0.4,
+            "excess": 0.4957,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7456,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1004,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9562,
+            "damage_factor": 0.4,
+            "excess": 0.2509,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6565,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7086,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6033,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7095,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8315,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.6866,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6882,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7053,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.765,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          }
+        ],
+        "attacks_sum": 0.4275,
+        "base_score": 0.7052941086897918,
+        "cogency": 0.5921333575296523,
+        "cogency_details": {
+          "argument_quality_score": 0.6350370714215358,
+          "coherence_score": 0.5492296436377689,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Nel procedimento penale, l’art. 185 c.p. impone al reo la restituzione del valore del bene con gli interessi legali, senza prevedere alcun tasso contrattuale; pertanto, la quantificazione dell’interesse nella fase civile non può superare tale limite, poiché le due procedure sono autonome e il principio di separazione dei rami del diritto esclude l’applicazione di tassi più gravosi decisi in sede penale. Di conseguenza, il mediatore è tenuto a restituire l’acconto con gli interessi legali determinati dall’art. 185 c.p., ma non è soggetto a ulteriori oneri di interesse contrattuale nella domanda civile.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7052941086897918,
+        "nesso_plausibility": 0.2777941086897918,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Per ottenere il risarcimento per la perdita dell’opportunità negoziale il promissario acquirente deve provare in via autonoma, ai sensi dell’art. 1223 c.c., l’effettivo danno patrimoniale subito, quantificandone il valore economico concreto e diretto. L’esistenza di una mera “perdita di occasione” non è di per sé sufficiente: occorre dimostrare con perizia o documentazione il prezzo di vendita che il compratore avrebbe potuto ottenere e la probabilità di conclusione del contratto. In assenza di tali elementi probatori la domanda di risarcimento per perdita di opportunità resta priva di fondamento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5539660647869123,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5539660647869123
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per ottenere il risarcimento per la perdita dell’opportunità negoziale il promissario acquirente deve provare in via autonoma, ai sensi dell’art. 1223 c.c., l’effettivo danno patrimoniale subito, quantificandone il valore economico concreto e diretto. L’esistenza di una mera “perdita di occasione” non è di per sé sufficiente: occorre dimostrare con perizia o documentazione il prezzo di vendita che il compratore avrebbe potuto ottenere e la probabilità di conclusione del contratto. In assenza di tali elementi probatori la domanda di risarcimento per perdita di opportunità resta priva di fondamento."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2701,
+            "attacker_base_score": 0.8557,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.4215,
+            "damage_factor": 0.4,
+            "excess": 0.6751,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8306,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1762,
+            "attacker_base_score": 0.8054,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1869,
+            "damage_factor": 0.4,
+            "excess": 0.4405,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7368,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1373,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0897,
+            "damage_factor": 0.4,
+            "excess": 0.3434,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7481,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0152,
+            "attacker_base_score": 0.8315,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.7843,
+            "damage_factor": 0.4,
+            "excess": 0.0379,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7086,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6322,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7435,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7464,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.765,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          }
+        ],
+        "attacks_sum": 0.44630000000000003,
+        "base_score": 0.7463621239476038,
+        "cogency": 0.6198639280098024,
+        "cogency_details": {
+          "argument_quality_score": 0.7169872752244302,
+          "coherence_score": 0.5227405807951747,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Per ottenere il risarcimento per la perdita dell’opportunità negoziale il promissario acquirente deve provare in via autonoma, ai sensi dell’art. 1223 c.c., l’effettivo danno patrimoniale subito, quantificandone il valore economico concreto e diretto. L’esistenza di una mera “perdita di occasione” non è di per sé sufficiente: occorre dimostrare con perizia o documentazione il prezzo di vendita che il compratore avrebbe potuto ottenere e la probabilità di conclusione del contratto. In assenza di tali elementi probatori la domanda di risarcimento per perdita di opportunità resta priva di fondamento.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7463621239476038,
+        "nesso_plausibility": 0.3000621239476038,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Per invocare l’art. 1218 c.c. occorre dimostrare l’esistenza di un’obbligazione contrattuale specifica del mediatore nei confronti del promissario acquirente; tuttavia dal fatto che il mediatore ha semplicemente ricevuto l’acconto per trasferirlo al venditore non deriva alcun contratto di prestazione diretto con l’acquirente, ma solo un rapporto di mediazione o di mandato eventualmente verso il venditore. In assenza di tale rapporto contrattuale diretto, la responsabilità per inadempimento non può essere qualificata ai sensi dell’art. 1218 c.c., che richiede la prova autonoma dell’obbligazione contrattuale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.663128878499469,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.663128878499469
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Per invocare l’art. 1218 c.c. occorre dimostrare l’esistenza di un’obbligazione contrattuale specifica del mediatore nei confronti del promissario acquirente; tuttavia dal fatto che il mediatore ha semplicemente ricevuto l’acconto per trasferirlo al venditore non deriva alcun contratto di prestazione diretto con l’acquirente, ma solo un rapporto di mediazione o di mandato eventualmente verso il venditore. In assenza di tale rapporto contrattuale diretto, la responsabilità per inadempimento non può essere qualificata ai sensi dell’art. 1218 c.c., che richiede la prova autonoma dell’obbligazione contrattuale."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.213,
+            "attacker_base_score": 0.8054,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2643,
+            "damage_factor": 0.4,
+            "excess": 0.5325,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7849,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1847,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1937,
+            "damage_factor": 0.4,
+            "excess": 0.4619,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7521,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1482,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1022,
+            "damage_factor": 0.4,
+            "excess": 0.3704,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7567,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7086,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6824,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8024,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8315,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.622,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7124,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8557,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7043,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.765,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "boosted_attack": 0.6981,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7604,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7318,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3977,
+        "base_score": 0.7318180827836449,
+        "cogency": 0.618189539648729,
+        "cogency_details": {
+          "argument_quality_score": 0.657680236631547,
+          "coherence_score": 0.5786988426659111,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Nel valutare la responsabilità penale ex art. 646 c.p. è necessario dimostrare che la falsa dichiarazione del mediatore sia la causa necessaria dell’annullamento del preliminare; tuttavia il venditore poteva dichiarare inefficace il contratto per altre ragioni, quali proprie violazioni contrattuali o la volontà di recedere, elementi che non dipendono dal comportamento del mediatore. Di conseguenza, l’assenza di prova certa del nesso causale rende incerta la connessione tra il reato di appropriazione indebita e il danno civile subito dal promissario acquirente.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7318180827836449,
+        "nesso_plausibility": 0.3341180827836449,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare, oltre ogni ragionevole dubbio, l’intenzione di appropriarsi in modo definitivo della somma ricevuta; la mera ritenuta temporanea dell’acconto per esigenze personali, come sostenuto dal mediatore, non dimostra tale dolo, ma può configurare solo una inadempienza contrattuale. In assenza di prove concrete dell’intento di profitto ingiusto, la soglia probatoria penale non è superata, sebbene la responsabilità civile possa comunque sussistere sulla base della colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7837255478640162,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7837255478640162
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare, oltre ogni ragionevole dubbio, l’intenzione di appropriarsi in modo definitivo della somma ricevuta; la mera ritenuta temporanea dell’acconto per esigenze personali, come sostenuto dal mediatore, non dimostra tale dolo, ma può configurare solo una inadempienza contrattuale. In assenza di prove concrete dell’intento di profitto ingiusto, la soglia probatoria penale non è superata, sebbene la responsabilità civile possa comunque sussistere sulla base della colpa."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

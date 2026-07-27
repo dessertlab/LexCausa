@@ -1,0 +1,1364 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 1,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.030419880000000003,
+      "attack_coverage_ratio": 0.5,
+      "attack_coverage_score": 0.25349900000000003,
+      "attacks_avg": 0.3718333333333333,
+      "base_score_avg": 0.5815307108520473,
+      "cogency_avg": 0.5802188023567938,
+      "net_plausibility": 0.24011725751871402,
+      "net_plausibility_adjusted": 0.24011725751871402,
+      "net_plausibility_raw": 0.209697377518714,
+      "norm_support_avg": 0.5854960255469263,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.5775555330874623
+    },
+    "pro": {
+      "attacks_avg": 0.148,
+      "base_score_avg": 0.7295628786534955,
+      "cogency_avg": 0.6272015548754691,
+      "net_plausibility": 0.7295628786534955,
+      "net_plausibility_adjusted": 0.7295628786534955,
+      "net_plausibility_dialectical_raw": 0.5815628786534955,
+      "net_plausibility_intrinsic_raw": 0.7295628786534955,
+      "net_plausibility_raw": 0.7295628786534955,
+      "norm_support_avg": 0.8284767670995552,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.5757805262615842,
+      "redundancy_penalty": 0.07197256578269802,
+      "semantics_avg": 0.7000390178367755
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2301,
+            "attacker_base_score": 0.721,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2095,
+            "damage_factor": 0.4,
+            "excess": 0.5752,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8387,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6342,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0792,
+            "attacker_base_score": 0.6955,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.8323,
+            "damage_factor": 0.4,
+            "excess": 0.1981,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7039,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6342,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0314,
+            "attacker_base_score": 0.7721,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7127,
+            "damage_factor": 0.4,
+            "excess": 0.0785,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8791,
+            "reason": "capped: top-K overflow (rank > 2), original=active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.6342,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3093,
+        "base_score": 0.6342157382456753,
+        "cogency": 0.5674614528715243,
+        "cogency_details": {
+          "argument_quality_score": 0.6258866463556477,
+          "coherence_score": 0.5090362593874009,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 21‑quinquies L. 241/1990, l’indennizzo è spettante solo se il danno è dimostrato come conseguenza diretta e certa del provvedimento revocatorio; la mera esistenza di investimenti non recuperabili non costituisce di per sé prova del nesso causale. In assenza di una perizia che accerti l’impossibilità di riutilizzare o di trasferire tali investimenti, il danno potrebbe derivare anche da cause concorrenti non imputabili all’amministrazione, indebolendo così la certezza del legame causale.",
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6342157382456753,
+        "nesso_plausibility": 0.3249157382456753,
+        "norm_support": 0.7266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.7266666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.2833333333333333
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1, comma 1, della L. 241/1990 l’attività amministrativa deve perseguire l’interesse pubblico con criteri di efficacia ed economicità; in caso di riorganizzazione del servizio pubblico, la continuità dell’autorizzazione concessa può ostacolare l’attuazione del nuovo assetto, rendendo necessario un intervento immediato. La sospensione o la revoca con effetto immediato, prevista dall’art. 21‑quater L. 241/1990, è ammissibile quando è l’unica modalità per garantire la tempestiva realizzazione del nuovo interesse pubblico, poiché un periodo transitorio più lungo comporterebbe un danno maggiore al pubblico interesse che l’amministrazione è tenuta a tutelare. Pertanto, la cessazione immediata non è per sua natura sproporzionata, ma rappresenta il mezzo meno gravoso per assicurare la riorganizzazione del servizio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.577702119058505,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.577702119058505
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 1, comma 1, della L. 241/1990 l’attività amministrativa deve perseguire l’interesse pubblico con criteri di efficacia ed economicità; in caso di riorganizzazione del servizio pubblico, la continuità dell’autorizzazione concessa può ostacolare l’attuazione del nuovo assetto, rendendo necessario un intervento immediato. La sospensione o la revoca con effetto immediato, prevista dall’art. 21‑quater L. 241/1990, è ammissibile quando è l’unica modalità per garantire la tempestiva realizzazione del nuovo interesse pubblico, poiché un periodo transitorio più lungo comporterebbe un danno maggiore al pubblico interesse che l’amministrazione è tenuta a tutelare. Pertanto, la cessazione immediata non è per sua natura sproporzionata, ma rappresenta il mezzo meno gravoso per assicurare la riorganizzazione del servizio."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2515,
+            "attacker_base_score": 0.7721,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1608,
+            "damage_factor": 0.4,
+            "excess": 0.6286,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7517,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.5321,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2316,
+            "attacker_base_score": 0.6955,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1111,
+            "damage_factor": 0.4,
+            "excess": 0.579,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7988,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.5321,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1828,
+            "attacker_base_score": 0.721,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.989,
+            "damage_factor": 0.4,
+            "excess": 0.4569,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8068,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.5321,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4831,
+        "base_score": 0.532108908388336,
+        "cogency": 0.5570653909944143,
+        "cogency_details": {
+          "argument_quality_score": 0.6217073037998083,
+          "coherence_score": 0.4924234781890203,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990 l’indennizzo per la revoca è limitato al rimborso delle spese debitamente documentate e al danno ingiusto provato, mentre il lucro cessante può essere riconosciuto solo se dimostrato con evidenza certa; in assenza di tale prova il risarcimento non può includere il pregiudizio patrimoniale non documentato. Pertanto, l’indennizzo spettante al privato deve essere calcolato esclusivamente sulle spese effettivamente documentate sostenute.",
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.532108908388336,
+        "nesso_plausibility": 0.04900890838833605,
+        "norm_support": 0.5161607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.5161607049870561,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 21‑quinquies L. 241/1990, l’indennizzo è spettante solo se il danno è dimostrato come conseguenza diretta e certa del provvedimento revocatorio; la mera esistenza di investimenti non recuperabili non costituisce di per sé prova del nesso causale. In assenza di una perizia che accerti l’impossibilità di riutilizzare o di trasferire tali investimenti, il danno potrebbe derivare anche da cause concorrenti non imputabili all’amministrazione, indebolendo così la certezza del legame causale.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5284166969839643,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5284166969839643
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 21‑quinquies L. 241/1990, l’indennizzo è spettante solo se il danno è dimostrato come conseguenza diretta e certa del provvedimento revocatorio; la mera esistenza di investimenti non recuperabili non costituisce di per sé prova del nesso causale. In assenza di una perizia che accerti l’impossibilità di riutilizzare o di trasferire tali investimenti, il danno potrebbe derivare anche da cause concorrenti non imputabili all’amministrazione, indebolendo così la certezza del legame causale."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.6955,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0234,
+            "damage_factor": 0.4,
+            "excess": 0.4451,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7357,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.5783,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1451,
+            "attacker_base_score": 0.7721,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.941,
+            "damage_factor": 0.4,
+            "excess": 0.3628,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7169,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.5783,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.721,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.5592,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7386,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.5783,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3231,
+        "base_score": 0.5782674859221306,
+        "cogency": 0.6161295632044428,
+        "cogency_details": {
+          "argument_quality_score": 0.6292234050162984,
+          "coherence_score": 0.6030357213925872,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990, l’onere della prova del danno ingiusto resta a carico del privato, il quale deve dimostrare l’entità del pregiudizio subito; la dimostrazione che la soluzione transitoria abbia eliminato integralmente tale pregiudizio non è a carico dell’amministrazione. Inoltre, l’art. 1, comma 1, della L. 241/1990 impone all’amministrazione di motivare la misura in termini di proporzionalità, ma non di provare la totale assenza di danno. Di conseguenza, l’eventuale riduzione dell’indennizzo dipende dalla mancata prova del danno da parte del richiedente, non da una presunta inadempienza probatoria dell’ente revocante.",
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.5782674859221306,
+        "nesso_plausibility": 0.2551674859221306,
+        "norm_support": 0.5136607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.6123724356957945,
+          "citation_specificity_score": 0.0,
+          "final": 0.5136607049870561,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.2833333333333333
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990 l’indennizzo per la revoca è limitato al rimborso delle spese debitamente documentate e al danno ingiusto provato, mentre il lucro cessante può essere riconosciuto solo se dimostrato con evidenza certa; in assenza di tale prova il risarcimento non può includere il pregiudizio patrimoniale non documentato. Pertanto, l’indennizzo spettante al privato deve essere calcolato esclusivamente sulle spese effettivamente documentate sostenute.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "1",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6265477832199176,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6265477832199176
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990 l’indennizzo per la revoca è limitato al rimborso delle spese debitamente documentate e al danno ingiusto provato, mentre il lucro cessante può essere riconosciuto solo se dimostrato con evidenza certa; in assenza di tale prova il risarcimento non può includere il pregiudizio patrimoniale non documentato. Pertanto, l’indennizzo spettante al privato deve essere calcolato esclusivamente sulle spese effettivamente documentate sostenute."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1372,
+            "attacker_base_score": 0.6342,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.115,
+            "damage_factor": 0.4,
+            "excess": 0.3429,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8791,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7721,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0228,
+            "attacker_base_score": 0.5783,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8292,
+            "damage_factor": 0.4,
+            "excess": 0.057,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7169,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7721,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.5321,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6799,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7517,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7721,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.15999999999999998,
+        "base_score": 0.7721264733908731,
+        "cogency": 0.7033976000304959,
+        "cogency_details": {
+          "argument_quality_score": 0.6820546660014829,
+          "coherence_score": 0.7247405340595089,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 1 L. 241/1990 l’amministrazione deve agire secondo i criteri di economicità, efficacia, imparzialità, trasparenza e, soprattutto, di proporzionalità; la revoca di un provvedimento deve quindi essere idonea a perseguire l’interesse pubblico, necessaria e non più gravosa di quanto strettamente richiesto. Nel caso in esame, il nuovo assetto di servizio costituisce un interesse pubblico concreto, ma la cessazione immediata dell’attività, senza un periodo transitorio adeguato a compensare gli investimenti già sostenuti (personale, impianti, canoni), appare sproporzionata rispetto al danno patrimoniale subito dal privato, violando il bilanciamento tra interesse pubblico e affidamento legittimo. Di conseguenza, la misura risulta incompatibile con il principio di proporzionalità sancito dall’art. 1 L. 241/1990, salvo prova che la soluzione transitoria proposta sia effettivamente sufficiente a mitigare integralmente il pregiudizio.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7721264733908731,
+        "nesso_plausibility": 0.6121264733908731,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nel caso in esame l’ente pubblico ha revocato, con effetto immediato, un atto amministrativo precedentemente favorevole a seguito di una riorganizzazione del servizio che costituisce un nuovo assetto di interesse pubblico. Il soggetto privato, sulla base dell’autorizzazione originaria, aveva già sostenuto investimenti non recuperabili (personale, impianti, canoni). L’amministrazione ha offerto una soluzione transitoria limitata, mentre il privato contesta la proporzionalità della misura e chiede l’indennizzo pieno del pregiudizio subito.",
+        "retrieved_norms": [
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8328787895063432,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8328787895063432
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Nel caso in esame l’ente pubblico ha revocato, con effetto immediato, un atto amministrativo precedentemente favorevole a seguito di una riorganizzazione del servizio che costituisce un nuovo assetto di interesse pubblico. Il soggetto privato, sulla base dell’autorizzazione originaria, aveva già sostenuto investimenti non recuperabili (personale, impianti, canoni). L’amministrazione ha offerto una soluzione transitoria limitata, mentre il privato contesta la proporzionalità della misura e chiede l’indennizzo pieno del pregiudizio subito."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1371,
+            "attacker_base_score": 0.6342,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0638,
+            "damage_factor": 0.4,
+            "excess": 0.3428,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8387,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.721,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0533,
+            "attacker_base_score": 0.5783,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8542,
+            "damage_factor": 0.4,
+            "excess": 0.1332,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7386,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.721,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0035,
+            "attacker_base_score": 0.5321,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7298,
+            "damage_factor": 0.4,
+            "excess": 0.0088,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8068,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.721,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.19390000000000002,
+        "base_score": 0.7210498825426871,
+        "cogency": 0.5870228114522003,
+        "cogency_details": {
+          "argument_quality_score": 0.6615281397288427,
+          "coherence_score": 0.5125174831755579,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se, da sola, è sufficiente a produrre l’evento dannoso. Nel caso di specie la revoca dell’autorizzazione, disposta per la riorganizzazione del servizio, è l’unica ragione della cessazione immediata dell’attività e della perdita degli investimenti sostenuti dal privato; non sussiste alcun altro evento autonomamente sufficiente a determinare il danno. Pertanto il nesso causale tra la revoca e il pregiudizio patrimoniale è pienamente configurato ai sensi dell’art. 41 c.p.",
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7210498825426871,
+        "nesso_plausibility": 0.527149882542687,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 1 L. 241/1990 l’amministrazione deve agire secondo i criteri di economicità, efficacia, imparzialità, trasparenza e, soprattutto, di proporzionalità; la revoca di un provvedimento deve quindi essere idonea a perseguire l’interesse pubblico, necessaria e non più gravosa di quanto strettamente richiesto. Nel caso in esame, il nuovo assetto di servizio costituisce un interesse pubblico concreto, ma la cessazione immediata dell’attività, senza un periodo transitorio adeguato a compensare gli investimenti già sostenuti (personale, impianti, canoni), appare sproporzionata rispetto al danno patrimoniale subito dal privato, violando il bilanciamento tra interesse pubblico e affidamento legittimo. Di conseguenza, la misura risulta incompatibile con il principio di proporzionalità sancito dall’art. 1 L. 241/1990, salvo prova che la soluzione transitoria proposta sia effettivamente sufficiente a mitigare integralmente il pregiudizio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6115958570406821,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6115958570406821
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 1 L. 241/1990 l’amministrazione deve agire secondo i criteri di economicità, efficacia, imparzialità, trasparenza e, soprattutto, di proporzionalità; la revoca di un provvedimento deve quindi essere idonea a perseguire l’interesse pubblico, necessaria e non più gravosa di quanto strettamente richiesto. Nel caso in esame, il nuovo assetto di servizio costituisce un interesse pubblico concreto, ma la cessazione immediata dell’attività, senza un periodo transitorio adeguato a compensare gli investimenti già sostenuti (personale, impianti, canoni), appare sproporzionata rispetto al danno patrimoniale subito dal privato, violando il bilanciamento tra interesse pubblico e affidamento legittimo. Di conseguenza, la misura risulta incompatibile con il principio di proporzionalità sancito dall’art. 1 L. 241/1990, salvo prova che la soluzione transitoria proposta sia effettivamente sufficiente a mitigare integralmente il pregiudizio."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.079,
+            "attacker_base_score": 0.6342,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8929,
+            "damage_factor": 0.4,
+            "excess": 0.1974,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7039,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6955,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0111,
+            "attacker_base_score": 0.5783,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7232,
+            "damage_factor": 0.4,
+            "excess": 0.0277,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7357,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6955,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.5321,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5101,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7988,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6955,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0901,
+        "base_score": 0.6955122800269262,
+        "cogency": 0.5911842531437115,
+        "cogency_details": {
+          "argument_quality_score": 0.6540151019428035,
+          "coherence_score": 0.5283534043446195,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 21‑quinquies L. 241/1990, l’indennizzo per la revoca deve comprendere (i) il rimborso delle spese documentate sostenute dal privato per l’avvio dell’attività (personale, impianti, canoni) valutate al loro valore corrente di mercato, (ii) il lucro cessante, cioè la perdita di reddito atteso, calcolata con criteri di prudenza sulla base di previsioni realistiche di guadagno, e (iii) una eventuale riduzione proporzionale dell’indennizzo qualora la soluzione transitoria offerta dall’amministrazione attenui parte del danno subito.",
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.6955122800269262,
+        "nesso_plausibility": 0.6054122800269263,
+        "norm_support": 0.803660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.803660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.6666666666666666
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se, da sola, è sufficiente a produrre l’evento dannoso. Nel caso di specie la revoca dell’autorizzazione, disposta per la riorganizzazione del servizio, è l’unica ragione della cessazione immediata dell’attività e della perdita degli investimenti sostenuti dal privato; non sussiste alcun altro evento autonomamente sufficiente a determinare il danno. Pertanto il nesso causale tra la revoca e il pregiudizio patrimoniale è pienamente configurato ai sensi dell’art. 41 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6556424069633012,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6556424069633012
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se, da sola, è sufficiente a produrre l’evento dannoso. Nel caso di specie la revoca dell’autorizzazione, disposta per la riorganizzazione del servizio, è l’unica ragione della cessazione immediata dell’attività e della perdita degli investimenti sostenuti dal privato; non sussiste alcun altro evento autonomamente sufficiente a determinare il danno. Pertanto il nesso causale tra la revoca e il pregiudizio patrimoniale è pienamente configurato ai sensi dell’art. 41 c.p."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.24011725751871402,
+    "contra_adjusted": 0.24011725751871402,
+    "contra_raw": 0.209697377518714,
+    "final": 0.4894456211347814,
+    "final_adjusted": 0.4894456211347814,
+    "final_raw": 0.5198655011347815,
+    "pro": 0.7295628786534955,
+    "pro_adjusted": 0.7295628786534955,
+    "pro_raw": 0.7295628786534955,
+    "pro_raw_dialectical": 0.5815628786534955,
+    "pro_raw_intrinsic": 0.7295628786534955,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7517,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2515
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7988,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2316
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8387,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2301
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8068,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1828
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7357,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.178
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7169,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1451
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8791,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1372
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8387,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1371
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7039,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.0792
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7039,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.079
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 1,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7465881779667801,
+              "axis_id": "AX1",
+              "axis_quality": 0.17833,
+              "link_ids": [
+                "S1->S2",
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.6955122800269262,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S3->S4"
+              ]
+            }
+          ],
+          "bonus": 0.030419880000000003,
+          "coverage_ratio": 0.5,
+          "enabled": true,
+          "quality_avg": 0.089165,
+          "wpcs": 0.25349900000000003
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.668356332532445,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7051911672271657,
+          "high_similarity_pair_ratio": 0.3333333333333333,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.07197256578269802,
+          "redundancy_index": 0.5757805262615842
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2515,
+            "attacker_base_score": 0.7721,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1608,
+            "damage_factor": 0.4,
+            "excess": 0.6286,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7517,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.5321,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2316,
+            "attacker_base_score": 0.6955,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1111,
+            "damage_factor": 0.4,
+            "excess": 0.579,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7988,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.5321,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1828,
+            "attacker_base_score": 0.721,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.989,
+            "damage_factor": 0.4,
+            "excess": 0.4569,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8068,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.5321,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4831,
+        "base_score": 0.532108908388336,
+        "cogency": 0.5570653909944143,
+        "cogency_details": {
+          "argument_quality_score": 0.6217073037998083,
+          "coherence_score": 0.4924234781890203,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990 l’indennizzo per la revoca è limitato al rimborso delle spese debitamente documentate e al danno ingiusto provato, mentre il lucro cessante può essere riconosciuto solo se dimostrato con evidenza certa; in assenza di tale prova il risarcimento non può includere il pregiudizio patrimoniale non documentato. Pertanto, l’indennizzo spettante al privato deve essere calcolato esclusivamente sulle spese effettivamente documentate sostenute.",
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.532108908388336,
+        "nesso_plausibility": 0.04900890838833605,
+        "norm_support": 0.5161607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.5161607049870561,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 21‑quinquies L. 241/1990, l’indennizzo è spettante solo se il danno è dimostrato come conseguenza diretta e certa del provvedimento revocatorio; la mera esistenza di investimenti non recuperabili non costituisce di per sé prova del nesso causale. In assenza di una perizia che accerti l’impossibilità di riutilizzare o di trasferire tali investimenti, il danno potrebbe derivare anche da cause concorrenti non imputabili all’amministrazione, indebolendo così la certezza del legame causale.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5284166969839643,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5284166969839643
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 21‑quinquies L. 241/1990, l’indennizzo è spettante solo se il danno è dimostrato come conseguenza diretta e certa del provvedimento revocatorio; la mera esistenza di investimenti non recuperabili non costituisce di per sé prova del nesso causale. In assenza di una perizia che accerti l’impossibilità di riutilizzare o di trasferire tali investimenti, il danno potrebbe derivare anche da cause concorrenti non imputabili all’amministrazione, indebolendo così la certezza del legame causale."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.6955,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0234,
+            "damage_factor": 0.4,
+            "excess": 0.4451,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7357,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.5783,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1451,
+            "attacker_base_score": 0.7721,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.941,
+            "damage_factor": 0.4,
+            "excess": 0.3628,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7169,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.5783,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.721,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.5592,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7386,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.5783,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3231,
+        "base_score": 0.5782674859221306,
+        "cogency": 0.6161295632044428,
+        "cogency_details": {
+          "argument_quality_score": 0.6292234050162984,
+          "coherence_score": 0.6030357213925872,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990, l’onere della prova del danno ingiusto resta a carico del privato, il quale deve dimostrare l’entità del pregiudizio subito; la dimostrazione che la soluzione transitoria abbia eliminato integralmente tale pregiudizio non è a carico dell’amministrazione. Inoltre, l’art. 1, comma 1, della L. 241/1990 impone all’amministrazione di motivare la misura in termini di proporzionalità, ma non di provare la totale assenza di danno. Di conseguenza, l’eventuale riduzione dell’indennizzo dipende dalla mancata prova del danno da parte del richiedente, non da una presunta inadempienza probatoria dell’ente revocante.",
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.5782674859221306,
+        "nesso_plausibility": 0.2551674859221306,
+        "norm_support": 0.5136607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.6123724356957945,
+          "citation_specificity_score": 0.0,
+          "final": 0.5136607049870561,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.2833333333333333
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990 l’indennizzo per la revoca è limitato al rimborso delle spese debitamente documentate e al danno ingiusto provato, mentre il lucro cessante può essere riconosciuto solo se dimostrato con evidenza certa; in assenza di tale prova il risarcimento non può includere il pregiudizio patrimoniale non documentato. Pertanto, l’indennizzo spettante al privato deve essere calcolato esclusivamente sulle spese effettivamente documentate sostenute.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "1",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6265477832199176,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6265477832199176
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 21‑quinquies della L. 241/1990 l’indennizzo per la revoca è limitato al rimborso delle spese debitamente documentate e al danno ingiusto provato, mentre il lucro cessante può essere riconosciuto solo se dimostrato con evidenza certa; in assenza di tale prova il risarcimento non può includere il pregiudizio patrimoniale non documentato. Pertanto, l’indennizzo spettante al privato deve essere calcolato esclusivamente sulle spese effettivamente documentate sostenute."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2301,
+            "attacker_base_score": 0.721,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2095,
+            "damage_factor": 0.4,
+            "excess": 0.5752,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8387,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6342,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0792,
+            "attacker_base_score": 0.6955,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.8323,
+            "damage_factor": 0.4,
+            "excess": 0.1981,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7039,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6342,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0314,
+            "attacker_base_score": 0.7721,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7127,
+            "damage_factor": 0.4,
+            "excess": 0.0785,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8791,
+            "reason": "capped: top-K overflow (rank > 2), original=active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.6342,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3093,
+        "base_score": 0.6342157382456753,
+        "cogency": 0.5674614528715243,
+        "cogency_details": {
+          "argument_quality_score": 0.6258866463556477,
+          "coherence_score": 0.5090362593874009,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 21‑quinquies L. 241/1990, l’indennizzo è spettante solo se il danno è dimostrato come conseguenza diretta e certa del provvedimento revocatorio; la mera esistenza di investimenti non recuperabili non costituisce di per sé prova del nesso causale. In assenza di una perizia che accerti l’impossibilità di riutilizzare o di trasferire tali investimenti, il danno potrebbe derivare anche da cause concorrenti non imputabili all’amministrazione, indebolendo così la certezza del legame causale.",
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6342157382456753,
+        "nesso_plausibility": 0.3249157382456753,
+        "norm_support": 0.7266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.7266666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.2833333333333333
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1, comma 1, della L. 241/1990 l’attività amministrativa deve perseguire l’interesse pubblico con criteri di efficacia ed economicità; in caso di riorganizzazione del servizio pubblico, la continuità dell’autorizzazione concessa può ostacolare l’attuazione del nuovo assetto, rendendo necessario un intervento immediato. La sospensione o la revoca con effetto immediato, prevista dall’art. 21‑quater L. 241/1990, è ammissibile quando è l’unica modalità per garantire la tempestiva realizzazione del nuovo interesse pubblico, poiché un periodo transitorio più lungo comporterebbe un danno maggiore al pubblico interesse che l’amministrazione è tenuta a tutelare. Pertanto, la cessazione immediata non è per sua natura sproporzionata, ma rappresenta il mezzo meno gravoso per assicurare la riorganizzazione del servizio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "21",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.577702119058505,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.577702119058505
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 1, comma 1, della L. 241/1990 l’attività amministrativa deve perseguire l’interesse pubblico con criteri di efficacia ed economicità; in caso di riorganizzazione del servizio pubblico, la continuità dell’autorizzazione concessa può ostacolare l’attuazione del nuovo assetto, rendendo necessario un intervento immediato. La sospensione o la revoca con effetto immediato, prevista dall’art. 21‑quater L. 241/1990, è ammissibile quando è l’unica modalità per garantire la tempestiva realizzazione del nuovo interesse pubblico, poiché un periodo transitorio più lungo comporterebbe un danno maggiore al pubblico interesse che l’amministrazione è tenuta a tutelare. Pertanto, la cessazione immediata non è per sua natura sproporzionata, ma rappresenta il mezzo meno gravoso per assicurare la riorganizzazione del servizio."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

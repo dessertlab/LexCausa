@@ -1,0 +1,34 @@
+[2026-03-06T19:34:05.153308] Pipeline log - Setup B
+Claim: Un mediatore immobiliare riceve dal promissario acquirente una somma da trasferire al venditore a titolo di acconto, ma la trattiene per esigenze personali e comunica falsamente che il pagamento e' av
+======================================================================
+Status: ok
+Duration: 1044.02s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 9
+  Arguments: 1
+  Causal type: PEN_PROPERTY_QUALIFICATION
+
+[COUNTER]
+  Chain steps: 4
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.776158905702127
+  Net contra: 0.33409816359896893
+  Net final: 0.44206074210315804
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

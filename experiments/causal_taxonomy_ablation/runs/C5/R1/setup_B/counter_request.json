@@ -1,0 +1,154 @@
+{
+  "claim": "Una societa di logistica stipula un contratto di fornitura con termine essenziale e penale di 8.000 euro per ogni giorno di ritardo. Il fornitore consegna con 12 giorni di ritardo, ma il committente accetta e utilizza ugualmente le forniture per non interrompere il servizio. Il committente pretende l'intera penale (96.000 euro) e ulteriori danni commerciali da contratti persi con terzi; il fornitore deduce che la clausola sia manifestamente eccessiva, che l'inadempimento sia stato solo parziale e che 4 giorni di ritardo dipendano da sciopero portuale. Le parti discutono anche se il contratto contenga o meno una clausola espressa di cumulabilita tra penale e danno ulteriore. Si chiede di valutare limiti di cumulo, criteri di riduzione equitativa e impatto dell'accettazione tardiva della prestazione.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "La clausola penale è valida, ma, ai sensi dell’art. 1384 c.c., il giudice deve ridurla equamente limitandola ai soli 8 giorni di ritardo imputabili al fornitore, escludendo i 4 giorni di sciopero portuale di forza maggiore, per un ammontare di € 64.000. In assenza di una disposizione contrattuale di cumulabilità, l’art. 1383 c.c. vieta il cumulo della penale con ulteriori danni commerciali, i quali potranno essere richiesti solo se dimostrati e non coperti dalla penale. L’accettazione tardiva della prestazione costituisce rinuncia implicita a ulteriori pretese per i giorni già ricevuti, ma non estingue il diritto alla penale ridotta.",
+  "routing": {
+    "additional_causal_types": [
+      "CIV_CONTRACT_REMEDIES"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 1457 c.c.",
+          "role": "Termine essenziale"
+        },
+        {
+          "ref": "Art. 1382 c.c.",
+          "role": "Clausola penale"
+        },
+        {
+          "ref": "Art. 1384 c.c.",
+          "role": "Riduzione equitativa della penale"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 1218 c.c.",
+          "role": "Responsabilità del debitore per inadempimento"
+        }
+      ]
+    },
+    "causal_type_id": "CIV_CONTRACT_REMEDIES",
+    "claim": "Una societa di logistica stipula un contratto di fornitura con termine essenziale e penale di 8.000 euro per ogni giorno di ritardo. Il fornitore consegna con 12 giorni di ritardo, ma il committente accetta e utilizza ugualmente le forniture per non interrompere il servizio. Il committente pretende l'intera penale (96.000 euro) e ulteriori danni commerciali da contratti persi con terzi; il fornitore deduce che la clausola sia manifestamente eccessiva, che l'inadempimento sia stato solo parziale e che 4 giorni di ritardo dipendano da sciopero portuale. Le parti discutono anche se il contratto contenga o meno una clausola espressa di cumulabilita tra penale e danno ulteriore. Si chiede di valutare limiti di cumulo, criteri di riduzione equitativa e impatto dell'accettazione tardiva della prestazione.",
+    "domain": "CIVILE",
+    "principle_tests": [
+      {
+        "description": "Verifica se l'inadempimento supera la soglia di non scarsa importanza",
+        "id": "BREACH_SERIOUSNESS",
+        "name": "Gravità dell'inadempimento"
+      },
+      {
+        "description": "Controlla compatibilità e limiti tra risoluzione, caparra, penale e risarcimento",
+        "id": "REMEDY_COMPATIBILITY",
+        "name": "Compatibilità tra rimedi"
+      }
+    ],
+    "theory_id": "T_CIV_REMEDIES"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "art1457",
+      "libro": "CC Libro IV",
+      "score": 0.9842066883473816,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1527_art1457",
+      "testo": "Se il termine fissato per la prestazione di una delle parti deve considerarsi essenziale nell'interesse dell'altra, questa, salvo patto o uso contrario, se vuole esigerne l'esecuzione nonostante la scadenza del termine, deve darne notizia all'altra parte entro tre giorni. In mancanza, il contratto s'intende risoluto di diritto anche se non è stata espressamente pattuita la risoluzione.",
+      "titolo": "Termine essenziale per una delle parti"
+    },
+    {
+      "articolo": "art1382",
+      "libro": "CC Libro IV",
+      "score": 0.9513200730405246,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1452_art1382",
+      "testo": "La clausola, con cui si conviene che, in caso d'inadempimento o di ritardo nell'adempimento, uno dei contraenti è tenuto a una determinata prestazione, ha l'effetto di limitare il risarcimento alla prestazione promessa, se non è stata convenuta la risarcibilità del danno ulteriore. La penale è dovuta indipendentemente dalla prova del danno.",
+      "titolo": "Effetti della clausola penale"
+    },
+    {
+      "articolo": "art1384",
+      "libro": "CC Libro IV",
+      "score": 0.9356456309275228,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1454_art1384",
+      "testo": "La penale può essere diminuita equamente dal giudice, se l'obbligazione principale è stata eseguita in parte ovvero se l'ammontare della penale è manifestamente eccessivo, avuto sempre riguardo all'interesse che il creditore aveva all'adempimento.",
+      "titolo": "Riduzione della penale"
+    },
+    {
+      "articolo": "art1341",
+      "libro": "CC Libro IV",
+      "score": 0.8557105879830298,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1411_art1341",
+      "testo": "Le condizioni generali di contratto predisposte da uno dei contraenti sono efficaci nei confronti dell'altro, se al momento della conclusione del contratto questi le ha conosciute o avrebbe dovuto conoscerle usando l'ordinaria diligenza. In ogni caso non hanno effetto, se non sono specificamente approvate per iscritto, le condizioni che stabiliscono, a favore di colui che le ha predisposte, limitazioni di responsabilità, facoltà di recedere dal contratto o di sospenderne l'esecuzione, ovvero sanciscono a carico dell'altro contraente decadenze, limitazioni alla facoltà di opporre eccezioni, restrizioni alla libertà contrattuale nei rapporti coi terzi, tacita proroga o rinnovazione del contratto, clausole compromissorie o deroghe alla competenza dell'autorità giudiziaria.",
+      "titolo": "Condizioni generali di contratto"
+    },
+    {
+      "articolo": "art1322",
+      "libro": "CC Libro IV",
+      "score": 0.7293541223139484,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1392_art1322",
+      "testo": "Le parti possono liberamente determinare il contenuto del contratto nei limiti imposti dalla legge e dalle norme corporative. Le parti possono anche concludere contratti che non appartengano ai tipi aventi una disciplina particolare, purché siano diretti a realizzare interessi meritevoli di tutela secondo l'ordinamento giuridico.",
+      "titolo": "Autonomia contrattuale"
+    },
+    {
+      "articolo": "art1383",
+      "libro": "CC Libro IV",
+      "score": 0.713394495412844,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1453_art1383",
+      "testo": "Il creditore non può domandare insieme la prestazione principale e la penale, se questa non è stata stipulata per il semplice ritardo.",
+      "titolo": "Divieto di cumulo"
+    },
+    {
+      "articolo": "art1181",
+      "libro": "CC Libro IV",
+      "score": 0.7018348623853211,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1251_art1181",
+      "testo": "Il creditore può rifiutare un adempimento parziale anche se la prestazione è divisibile, salvo che la legge o gli usi dispongano diversamente.",
+      "titolo": "Adempimento parziale"
+    },
+    {
+      "articolo": "art1226",
+      "libro": "CC Libro IV",
+      "score": 0.7001834862385322,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1296_art1226",
+      "testo": "Se il danno non può essere provato nel suo preciso ammontare, è liquidato dal giudice con valutazione equitativa.",
+      "titolo": "Valutazione equitativa del danno"
+    },
+    {
+      "articolo": "art1370",
+      "libro": "CC Libro IV",
+      "score": 0.6479459649875174,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1440_art1370",
+      "testo": "Le clausole inserite nelle condizioni generali di contratto o in moduli o formulari predisposti da uno dei contraenti s'interpretano, nel dubbio, a favore dell'altro.",
+      "titolo": "Interpretazione contro l'autore della clausola"
+    },
+    {
+      "articolo": "art1349",
+      "libro": "CC Libro IV",
+      "score": 0.6343563431407087,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1419_art1349",
+      "testo": "Se la determinazione della prestazione dedotta in contratto è deferita a un terzo e non risulta che le parti vollero rimettersi al suo mero arbitrio, il terzo deve procedere con equo apprezzamento. Se manca la determinazione del terzo o se questa è manifestamente iniqua o erronea, la determinazione è fatta dal giudice. La determinazione rimessa al mero arbitrio del terzo non si può impugnare se non provando la sua mala fede. Se manca la determinazione del terzo e le parti non si accordano per sostituirlo, il contratto è nullo. Nel determinare la prestazione il terzo deve tener conto anche delle condizioni generali della produzione a cui il contratto eventualmente abbia riferimento.",
+      "titolo": "Determinazione dell'oggetto"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

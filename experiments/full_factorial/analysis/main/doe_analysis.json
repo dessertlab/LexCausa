@@ -1,0 +1,1152 @@
+{
+  "summary": {
+    "total_runs": 1320,
+    "completed_runs": 1320,
+    "failed_runs": 0,
+    "reasoner_models": [
+      "gpt_oss_120b",
+      "llama_3_3_70b"
+    ],
+    "counter_models": [
+      "gpt_oss_120b",
+      "llama_3_3_70b"
+    ],
+    "domains": [
+      "AMMINISTRATIVO",
+      "CIVILE",
+      "MISTO",
+      "PENALE"
+    ],
+    "responses_analyzed": [
+      "aqa_plausibility",
+      "aqa_cogency",
+      "aqa_norm_support",
+      "aqa_semantics",
+      "citation_accuracy",
+      "total_tokens"
+    ]
+  },
+  "anova": {
+    "aqa_plausibility": {
+      "response": "aqa_plausibility",
+      "grand_mean": 0.2027249003701558,
+      "sst": 107.10378866662968,
+      "error": {
+        "ss": 97.5276967280568,
+        "df": 1314,
+        "ms": 0.07422199142165661
+      },
+      "effects": {
+        "reasoner": {
+          "ss": 5.068933491387829,
+          "df": 1,
+          "ms": 5.068933491387829,
+          "F": 68.29422647246308,
+          "p_value": 3.4053784180148724e-16,
+          "eta_squared": 0.04732730330544465
+        },
+        "counter": {
+          "ss": 1.252605416741335,
+          "df": 1,
+          "ms": 1.252605416741335,
+          "F": 16.87647276432208,
+          "p_value": 4.235909926875683e-05,
+          "eta_squared": 0.01169524843458324
+        },
+        "reasoner_x_counter": {
+          "ss": 0.002277377606804576,
+          "df": 1,
+          "ms": 0.002277377606804576,
+          "F": 0.03068332664192137,
+          "p_value": 0.8609757398940232,
+          "eta_squared": 2.12632777528825e-05
+        },
+        "paradigm": {
+          "ss": 3.252275652836918,
+          "df": 2,
+          "ms": 1.626137826418459,
+          "F": 21.90911069982396,
+          "p_value": 4.367193521823197e-10,
+          "eta_squared": 0.030365645261718265
+        }
+      },
+      "assumptions": {
+        "homoscedasticity_levene": {
+          "statistic": 2.013929316389101,
+          "p_value": 0.11014774015641558,
+          "homoscedastic": true
+        }
+      }
+    },
+    "aqa_cogency": {
+      "response": "aqa_cogency",
+      "grand_mean": 0.6426412670427993,
+      "sst": 11.445214436839844,
+      "error": {
+        "ss": 7.1501114510462855,
+        "df": 1314,
+        "ms": 0.005441485122561861
+      },
+      "effects": {
+        "reasoner": {
+          "ss": 2.139642444691478,
+          "df": 1,
+          "ms": 2.139642444691478,
+          "F": 393.2092795439144,
+          "p_value": 9.226717150205742e-77,
+          "eta_squared": 0.18694647064054992
+        },
+        "counter": {
+          "ss": 0.001946631635747244,
+          "df": 1,
+          "ms": 0.001946631635747244,
+          "F": 0.3577390348226784,
+          "p_value": 0.5498676800597279,
+          "eta_squared": 0.0001700825831171348
+        },
+        "reasoner_x_counter": {
+          "ss": 0.000872029054556987,
+          "df": 1,
+          "ms": 0.000872029054556987,
+          "F": 0.1602557086743323,
+          "p_value": 0.6889862738527184,
+          "eta_squared": 7.619158726726e-05
+        },
+        "paradigm": {
+          "ss": 2.1526418804117764,
+          "df": 2,
+          "ms": 1.0763209402058882,
+          "F": 197.79911475695707,
+          "p_value": 8.049296589910419e-76,
+          "eta_squared": 0.18808226724724833
+        }
+      },
+      "assumptions": {
+        "homoscedasticity_levene": {
+          "statistic": 3.73313864121153,
+          "p_value": 0.010910227733911234,
+          "homoscedastic": false
+        }
+      }
+    },
+    "aqa_norm_support": {
+      "response": "aqa_norm_support",
+      "grand_mean": 0.9269764273712656,
+      "sst": 7.685480198403721,
+      "error": {
+        "ss": 7.120766858987051,
+        "df": 1314,
+        "ms": 0.005419152860720739
+      },
+      "effects": {
+        "reasoner": {
+          "ss": 0.554824469406215,
+          "df": 1,
+          "ms": 0.554824469406215,
+          "F": 102.38214046843186,
+          "p_value": 3.165960081493489e-23,
+          "eta_squared": 0.07219125611974804
+        },
+        "counter": {
+          "ss": 0.00029615810822001897,
+          "df": 1,
+          "ms": 0.00029615810822001897,
+          "F": 0.054650259151507015,
+          "p_value": 0.815196889950476,
+          "eta_squared": 3.853475652458661e-05
+        },
+        "reasoner_x_counter": {
+          "ss": 0.00037126916487463724,
+          "df": 1,
+          "ms": 0.00037126916487463724,
+          "F": 0.06851055403247272,
+          "p_value": 0.7935589065469152,
+          "eta_squared": 4.830786825158304e-05
+        },
+        "paradigm": {
+          "ss": 0.009221442737360842,
+          "df": 2,
+          "ms": 0.004610721368680421,
+          "F": 0.8508195814331029,
+          "p_value": 0.42729990957719316,
+          "eta_squared": 0.0011998525140011604
+        }
+      },
+      "assumptions": {
+        "homoscedasticity_levene": {
+          "statistic": 4.4571535185646525,
+          "p_value": 0.004013801811075951,
+          "homoscedastic": false
+        }
+      }
+    },
+    "aqa_semantics": {
+      "response": "aqa_semantics",
+      "grand_mean": 0.7413925695632163,
+      "sst": 15.337111836893692,
+      "error": {
+        "ss": 11.473605704138166,
+        "df": 1314,
+        "ms": 0.008731815604366944
+      },
+      "effects": {
+        "reasoner": {
+          "ss": 2.8281410656885457,
+          "df": 1,
+          "ms": 2.8281410656885457,
+          "F": 323.8892337893782,
+          "p_value": 6.689520527121449e-65,
+          "eta_squared": 0.18439854229173727
+        },
+        "counter": {
+          "ss": 0.0055867326621937205,
+          "df": 1,
+          "ms": 0.0055867326621937205,
+          "F": 0.6398134036865931,
+          "p_value": 0.4239229525723735,
+          "eta_squared": 0.00036426236710061257
+        },
+        "reasoner_x_counter": {
+          "ss": 1.3340983155037123e-05,
+          "df": 1,
+          "ms": 1.3340983155037123e-05,
+          "F": 0.0015278590111734664,
+          "p_value": 0.9688262957991502,
+          "eta_squared": 8.69849766821492e-07
+        },
+        "paradigm": {
+          "ss": 1.0297649934216322,
+          "df": 2,
+          "ms": 0.5148824967108161,
+          "F": 58.96625856978859,
+          "p_value": 2.9925311465498833e-25,
+          "eta_squared": 0.06714204110740814
+        }
+      },
+      "assumptions": {
+        "homoscedasticity_levene": {
+          "statistic": 1.648081880489494,
+          "p_value": 0.17647977017010436,
+          "homoscedastic": true
+        }
+      }
+    },
+    "citation_accuracy": {
+      "response": "citation_accuracy",
+      "grand_mean": 0.960784978909979,
+      "sst": 44.73289932933071,
+      "error": {
+        "ss": 44.20099951024787,
+        "df": 1314,
+        "ms": 0.033638507998666564
+      },
+      "effects": {
+        "reasoner": {
+          "ss": 0.00039826782296645036,
+          "df": 1,
+          "ms": 0.00039826782296645036,
+          "F": 0.01183963994426381,
+          "p_value": 0.9133697183454502,
+          "eta_squared": 8.903241885448546e-06
+        },
+        "counter": {
+          "ss": 0.49124768758310033,
+          "df": 1,
+          "ms": 0.49124768758310033,
+          "F": 14.603729975258519,
+          "p_value": 0.00013885224069351006,
+          "eta_squared": 0.010981798518501045
+        },
+        "reasoner_x_counter": {
+          "ss": 0.036773351807177446,
+          "df": 1,
+          "ms": 0.036773351807177446,
+          "F": 1.0931921180521784,
+          "p_value": 0.295957316855695,
+          "eta_squared": 0.0008220650205667689
+        },
+        "paradigm": {
+          "ss": 0.003480511869591519,
+          "df": 2,
+          "ms": 0.0017402559347957595,
+          "F": 0.051734040489094926,
+          "p_value": 0.9495833175102021,
+          "eta_squared": 7.780653438015359e-05
+        }
+      },
+      "assumptions": {
+        "homoscedasticity_levene": {
+          "statistic": 5.243810943632031,
+          "p_value": 0.0013413209131746436,
+          "homoscedastic": false
+        }
+      }
+    },
+    "total_tokens": {
+      "response": "total_tokens",
+      "grand_mean": 10939.603787878788,
+      "sst": 46455573273.78106,
+      "error": {
+        "ss": 21930895862.318184,
+        "df": 1314,
+        "ms": 16690179.499481114
+      },
+      "effects": {
+        "reasoner": {
+          "ss": 5438268580.01894,
+          "df": 1,
+          "ms": 5438268580.01894,
+          "F": 325.83643454451834,
+          "p_value": 3.0573498252014978e-65,
+          "eta_squared": 0.11706385685887619
+        },
+        "counter": {
+          "ss": 3571120678.491667,
+          "df": 1,
+          "ms": 3571120678.491667,
+          "F": 213.96538477028906,
+          "p_value": 5.2724970065755295e-45,
+          "eta_squared": 0.07687173845526867
+        },
+        "reasoner_x_counter": {
+          "ss": 78443625.92803001,
+          "df": 1,
+          "ms": 78443625.92803001,
+          "F": 4.699986955231295,
+          "p_value": 0.03034187879251078,
+          "eta_squared": 0.0016885729827448412
+        },
+        "paradigm": {
+          "ss": 15436844527.024239,
+          "df": 2,
+          "ms": 7718422263.512119,
+          "F": 462.4529211175997,
+          "p_value": 8.782434253769504e-153,
+          "eta_squared": 0.33229262797057335
+        }
+      },
+      "assumptions": {
+        "homoscedasticity_levene": {
+          "statistic": 41.22525114408509,
+          "p_value": 1.8386493400998376e-25,
+          "homoscedastic": false
+        }
+      }
+    }
+  },
+  "pairwise_friedman": {
+    "reasoner_model": {
+      "aqa_plausibility": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "aqa_cogency": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "aqa_norm_support": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "aqa_semantics": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "citation_accuracy": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "total_tokens": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      }
+    },
+    "counter_model": {
+      "aqa_plausibility": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "aqa_cogency": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "aqa_norm_support": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "aqa_semantics": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "citation_accuracy": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      },
+      "total_tokens": {
+        "error": "friedman failed: At least 3 samples must be given for Friedman test, got 2."
+      }
+    },
+    "paradigm": {
+      "aqa_plausibility": {
+        "factor": "paradigm",
+        "response": "aqa_plausibility",
+        "n_blocks": 22,
+        "levels": [
+          "plan_then_execute",
+          "single_call",
+          "stepwise"
+        ],
+        "level_means": {
+          "plan_then_execute": 0.27058920328065583,
+          "single_call": 0.15324941979374918,
+          "stepwise": 0.1843360780360623
+        },
+        "friedman": {
+          "chi2": 8.272727272727252,
+          "p_value": 0.01598085818548357,
+          "rejected": true
+        },
+        "dunn_holm": {
+          "mean_rank": {
+            "plan_then_execute": 2.5,
+            "single_call": 1.7272727272727273,
+            "stepwise": 1.7727272727272727
+          },
+          "p_matrix": [
+            [
+              1.0,
+              0.0311,
+              0.0317
+            ],
+            [
+              0.0311,
+              1.0,
+              0.8802
+            ],
+            [
+              0.0317,
+              0.8802,
+              1.0
+            ]
+          ],
+          "win_tie_loss": {
+            "levels": [
+              "plan_then_execute",
+              "single_call",
+              "stepwise"
+            ],
+            "matrix": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0
+              ]
+            ]
+          },
+          "tally": {
+            "plan_then_execute": {
+              "wins": 2,
+              "losses": 0,
+              "ties": 0
+            },
+            "single_call": {
+              "wins": 0,
+              "losses": 1,
+              "ties": 1
+            },
+            "stepwise": {
+              "wins": 0,
+              "losses": 1,
+              "ties": 1
+            }
+          }
+        }
+      },
+      "aqa_cogency": {
+        "factor": "paradigm",
+        "response": "aqa_cogency",
+        "n_blocks": 22,
+        "levels": [
+          "plan_then_execute",
+          "single_call",
+          "stepwise"
+        ],
+        "level_means": {
+          "plan_then_execute": 0.6469449681943945,
+          "single_call": 0.5911711381889463,
+          "stepwise": 0.689807694745057
+        },
+        "friedman": {
+          "chi2": 25.181818181818187,
+          "p_value": 3.4028096807605926e-06,
+          "rejected": true
+        },
+        "dunn_holm": {
+          "mean_rank": {
+            "plan_then_execute": 1.6818181818181819,
+            "single_call": 1.4545454545454546,
+            "stepwise": 2.8636363636363638
+          },
+          "p_matrix": [
+            [
+              1.0,
+              0.451,
+              0.0002
+            ],
+            [
+              0.451,
+              1.0,
+              0.0
+            ],
+            [
+              0.0002,
+              0.0,
+              1.0
+            ]
+          ],
+          "win_tie_loss": {
+            "levels": [
+              "plan_then_execute",
+              "single_call",
+              "stepwise"
+            ],
+            "matrix": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          "tally": {
+            "plan_then_execute": {
+              "wins": 0,
+              "losses": 1,
+              "ties": 1
+            },
+            "single_call": {
+              "wins": 0,
+              "losses": 1,
+              "ties": 1
+            },
+            "stepwise": {
+              "wins": 2,
+              "losses": 0,
+              "ties": 0
+            }
+          }
+        }
+      },
+      "aqa_norm_support": {
+        "factor": "paradigm",
+        "response": "aqa_norm_support",
+        "n_blocks": 22,
+        "levels": [
+          "plan_then_execute",
+          "single_call",
+          "stepwise"
+        ],
+        "level_means": {
+          "plan_then_execute": 0.9268180645005925,
+          "single_call": 0.9238214005414406,
+          "stepwise": 0.930289817071764
+        },
+        "friedman": {
+          "chi2": 2.818181818181813,
+          "p_value": 0.24436533250890063,
+          "rejected": false
+        }
+      },
+      "aqa_semantics": {
+        "factor": "paradigm",
+        "response": "aqa_semantics",
+        "n_blocks": 22,
+        "levels": [
+          "plan_then_execute",
+          "single_call",
+          "stepwise"
+        ],
+        "level_means": {
+          "plan_then_execute": 0.7096224843334998,
+          "single_call": 0.7369506902296586,
+          "stepwise": 0.7776045341264907
+        },
+        "friedman": {
+          "chi2": 26.54545454545456,
+          "p_value": 1.7207896515969803e-06,
+          "rejected": true
+        },
+        "dunn_holm": {
+          "mean_rank": {
+            "plan_then_execute": 1.2727272727272727,
+            "single_call": 1.9090909090909092,
+            "stepwise": 2.8181818181818183
+          },
+          "p_matrix": [
+            [
+              1.0,
+              0.0348,
+              0.0
+            ],
+            [
+              0.0348,
+              1.0,
+              0.0051
+            ],
+            [
+              0.0,
+              0.0051,
+              1.0
+            ]
+          ],
+          "win_tie_loss": {
+            "levels": [
+              "plan_then_execute",
+              "single_call",
+              "stepwise"
+            ],
+            "matrix": [
+              [
+                0,
+                -1,
+                -1
+              ],
+              [
+                1,
+                0,
+                -1
+              ],
+              [
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          "tally": {
+            "plan_then_execute": {
+              "wins": 0,
+              "losses": 2,
+              "ties": 0
+            },
+            "single_call": {
+              "wins": 1,
+              "losses": 1,
+              "ties": 0
+            },
+            "stepwise": {
+              "wins": 2,
+              "losses": 0,
+              "ties": 0
+            }
+          }
+        }
+      },
+      "citation_accuracy": {
+        "factor": "paradigm",
+        "response": "citation_accuracy",
+        "n_blocks": 22,
+        "levels": [
+          "plan_then_execute",
+          "single_call",
+          "stepwise"
+        ],
+        "level_means": {
+          "plan_then_execute": 0.9606060606060606,
+          "single_call": 0.9588917332667332,
+          "stepwise": 0.962857142857143
+        },
+        "friedman": {
+          "chi2": 5.999999999999984,
+          "p_value": 0.04978706836786434,
+          "rejected": true
+        },
+        "dunn_holm": {
+          "mean_rank": {
+            "plan_then_execute": 2.1363636363636362,
+            "single_call": 1.6590909090909092,
+            "stepwise": 2.2045454545454546
+          },
+          "p_matrix": [
+            [
+              1.0,
+              0.2269,
+              0.8211
+            ],
+            [
+              0.2269,
+              1.0,
+              0.2113
+            ],
+            [
+              0.8211,
+              0.2113,
+              1.0
+            ]
+          ],
+          "win_tie_loss": {
+            "levels": [
+              "plan_then_execute",
+              "single_call",
+              "stepwise"
+            ],
+            "matrix": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "tally": {
+            "plan_then_execute": {
+              "wins": 0,
+              "losses": 0,
+              "ties": 2
+            },
+            "single_call": {
+              "wins": 0,
+              "losses": 0,
+              "ties": 2
+            },
+            "stepwise": {
+              "wins": 0,
+              "losses": 0,
+              "ties": 2
+            }
+          }
+        }
+      },
+      "total_tokens": {
+        "factor": "paradigm",
+        "response": "total_tokens",
+        "n_blocks": 22,
+        "levels": [
+          "plan_then_execute",
+          "single_call",
+          "stepwise"
+        ],
+        "level_means": {
+          "plan_then_execute": 11933.647727272728,
+          "single_call": 6343.706818181818,
+          "stepwise": 14541.456818181823
+        },
+        "friedman": {
+          "chi2": 40.363636363636374,
+          "p_value": 1.718492847309365e-09,
+          "rejected": true
+        },
+        "dunn_holm": {
+          "mean_rank": {
+            "plan_then_execute": 2.090909090909091,
+            "single_call": 1.0,
+            "stepwise": 2.909090909090909
+          },
+          "p_matrix": [
+            [
+              1.0,
+              0.0006,
+              0.0067
+            ],
+            [
+              0.0006,
+              1.0,
+              0.0
+            ],
+            [
+              0.0067,
+              0.0,
+              1.0
+            ]
+          ],
+          "win_tie_loss": {
+            "levels": [
+              "plan_then_execute",
+              "single_call",
+              "stepwise"
+            ],
+            "matrix": [
+              [
+                0,
+                -1,
+                1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                -1,
+                -1,
+                0
+              ]
+            ]
+          },
+          "tally": {
+            "plan_then_execute": {
+              "wins": 1,
+              "losses": 1,
+              "ties": 0
+            },
+            "single_call": {
+              "wins": 2,
+              "losses": 0,
+              "ties": 0
+            },
+            "stepwise": {
+              "wins": 0,
+              "losses": 2,
+              "ties": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "paradigm_summary": {
+    "plan_then_execute": {
+      "n": 440,
+      "aqa_plausibility_mean": 0.2705892032806559,
+      "aqa_plausibility_std": 0.30328037470820757,
+      "aqa_cogency_mean": 0.6469449681943946,
+      "aqa_cogency_std": 0.04992443595669097,
+      "aqa_norm_support_mean": 0.9268180645005925,
+      "aqa_norm_support_std": 0.07300491774930301,
+      "aqa_semantics_mean": 0.7096224843334998,
+      "aqa_semantics_std": 0.07344283844467969,
+      "citation_accuracy_mean": 0.9606060606060607,
+      "citation_accuracy_std": 0.19312044510099768,
+      "fidelity_mean": 0.9960164709028344,
+      "fidelity_std": 0.02235787858690572,
+      "total_tokens_mean": 11933.647727272728,
+      "total_tokens_std": 5623.400080115469,
+      "abstention_rate": 0.20227272727272727
+    },
+    "single_call": {
+      "n": 440,
+      "aqa_plausibility_mean": 0.15324941979374912,
+      "aqa_plausibility_std": 0.2554863555611062,
+      "aqa_cogency_mean": 0.5911711381889464,
+      "aqa_cogency_std": 0.11604430533183797,
+      "aqa_norm_support_mean": 0.9238214005414405,
+      "aqa_norm_support_std": 0.07193734725213141,
+      "aqa_semantics_mean": 0.7369506902296588,
+      "aqa_semantics_std": 0.14079980510140938,
+      "citation_accuracy_mean": 0.9588917332667333,
+      "citation_accuracy_std": 0.1714423855064325,
+      "fidelity_mean": 0.9893847047193538,
+      "fidelity_std": 0.045234293084091916,
+      "total_tokens_mean": 6343.706818181819,
+      "total_tokens_std": 3294.8151375823486,
+      "abstention_rate": 0.04090909090909091
+    },
+    "stepwise": {
+      "n": 440,
+      "aqa_plausibility_mean": 0.18433607803606233,
+      "aqa_plausibility_std": 0.28162305907775487,
+      "aqa_cogency_mean": 0.689807694745057,
+      "aqa_cogency_std": 0.07217244030215605,
+      "aqa_norm_support_mean": 0.930289817071764,
+      "aqa_norm_support_std": 0.08355287605620734,
+      "aqa_semantics_mean": 0.7776045341264906,
+      "aqa_semantics_std": 0.08586228311544417,
+      "citation_accuracy_mean": 0.9628571428571429,
+      "citation_accuracy_std": 0.1876201984059572,
+      "fidelity_mean": 0.9972040040322127,
+      "fidelity_std": 0.017597635649625534,
+      "total_tokens_mean": 14541.456818181818,
+      "total_tokens_std": 5308.414189753489,
+      "abstention_rate": 0.11818181818181818
+    }
+  },
+  "model_class_contrast": {
+    "aqa_plausibility": {
+      "factor": "reasoner_class",
+      "response": "aqa_plausibility",
+      "n_claims": 22,
+      "levels": {
+        "positive": "reasoning",
+        "negative": "instruction_tuned"
+      },
+      "means": {
+        "reasoning": 0.14075635084832763,
+        "instruction_tuned": 0.26469344989198396
+      },
+      "statistic": 0.0,
+      "p_value": 4.76837158203125e-07,
+      "significant": true,
+      "better": "instruction_tuned"
+    },
+    "aqa_cogency": {
+      "factor": "reasoner_class",
+      "response": "aqa_cogency",
+      "n_claims": 22,
+      "levels": {
+        "positive": "reasoning",
+        "negative": "instruction_tuned"
+      },
+      "means": {
+        "reasoning": 0.602380352423551,
+        "instruction_tuned": 0.6829021816620474
+      },
+      "statistic": 0.0,
+      "p_value": 4.76837158203125e-07,
+      "significant": true,
+      "better": "instruction_tuned"
+    },
+    "aqa_norm_support": {
+      "factor": "reasoner_class",
+      "response": "aqa_norm_support",
+      "n_claims": 22,
+      "levels": {
+        "positive": "reasoning",
+        "negative": "instruction_tuned"
+      },
+      "means": {
+        "reasoning": 0.9064746818911367,
+        "instruction_tuned": 0.9474781728513946
+      },
+      "statistic": 16.0,
+      "p_value": 8.058547973632812e-05,
+      "significant": true,
+      "better": "instruction_tuned"
+    },
+    "aqa_semantics": {
+      "factor": "reasoner_class",
+      "response": "aqa_semantics",
+      "n_claims": 22,
+      "levels": {
+        "positive": "reasoning",
+        "negative": "instruction_tuned"
+      },
+      "means": {
+        "reasoning": 0.6951050862618949,
+        "instruction_tuned": 0.7876800528645377
+      },
+      "statistic": 0.0,
+      "p_value": 4.76837158203125e-07,
+      "significant": true,
+      "better": "instruction_tuned"
+    },
+    "citation_accuracy": {
+      "factor": "reasoner_class",
+      "response": "citation_accuracy",
+      "n_claims": 22,
+      "levels": {
+        "positive": "reasoning",
+        "negative": "instruction_tuned"
+      },
+      "means": {
+        "reasoning": 0.9613342675842674,
+        "instruction_tuned": 0.96023569023569
+      },
+      "statistic": 65.0,
+      "p_value": 0.5832052801046206,
+      "significant": false,
+      "better": "tie"
+    },
+    "total_tokens": {
+      "factor": "reasoner_class",
+      "response": "total_tokens",
+      "n_claims": 22,
+      "levels": {
+        "positive": "reasoning",
+        "negative": "instruction_tuned"
+      },
+      "means": {
+        "reasoning": 12969.357575757575,
+        "instruction_tuned": 8909.849999999999
+      },
+      "statistic": 0.0,
+      "p_value": 4.76837158203125e-07,
+      "significant": true,
+      "better": "instruction_tuned"
+    }
+  },
+  "planning_wilcoxon": {
+    "aqa_plausibility": {
+      "factor": "planning",
+      "response": "aqa_plausibility",
+      "n_claims": 22,
+      "levels": {
+        "positive": "True",
+        "negative": "False"
+      },
+      "means": {
+        "True": 0.27058920328065583,
+        "False": 0.16879274891490573
+      },
+      "statistic": 41.0,
+      "p_value": 0.004151344299316406,
+      "significant": true,
+      "better": "True"
+    },
+    "aqa_cogency": {
+      "factor": "planning",
+      "response": "aqa_cogency",
+      "n_claims": 22,
+      "levels": {
+        "positive": "True",
+        "negative": "False"
+      },
+      "means": {
+        "True": 0.6469449681943945,
+        "False": 0.6404894164670017
+      },
+      "statistic": 106.0,
+      "p_value": 0.5235109329223633,
+      "significant": false,
+      "better": "tie"
+    },
+    "aqa_norm_support": {
+      "factor": "planning",
+      "response": "aqa_norm_support",
+      "n_claims": 22,
+      "levels": {
+        "positive": "True",
+        "negative": "False"
+      },
+      "means": {
+        "True": 0.9268180645005925,
+        "False": 0.9270556088066023
+      },
+      "statistic": 122.0,
+      "p_value": 0.898735523223877,
+      "significant": false,
+      "better": "tie"
+    },
+    "aqa_semantics": {
+      "factor": "planning",
+      "response": "aqa_semantics",
+      "n_claims": 22,
+      "levels": {
+        "positive": "True",
+        "negative": "False"
+      },
+      "means": {
+        "True": 0.7096224843334998,
+        "False": 0.7572776121780748
+      },
+      "statistic": 16.0,
+      "p_value": 8.058547973632812e-05,
+      "significant": true,
+      "better": "False"
+    },
+    "citation_accuracy": {
+      "factor": "planning",
+      "response": "citation_accuracy",
+      "n_claims": 22,
+      "levels": {
+        "positive": "True",
+        "negative": "False"
+      },
+      "means": {
+        "True": 0.9606060606060606,
+        "False": 0.9608744380619382
+      },
+      "statistic": 53.0,
+      "p_value": 0.26453690504087946,
+      "significant": false,
+      "better": "tie"
+    },
+    "total_tokens": {
+      "factor": "planning",
+      "response": "total_tokens",
+      "n_claims": 22,
+      "levels": {
+        "positive": "True",
+        "negative": "False"
+      },
+      "means": {
+        "True": 11933.647727272728,
+        "False": 10442.581818181818
+      },
+      "statistic": 41.0,
+      "p_value": 0.004151344299316406,
+      "significant": true,
+      "better": "False"
+    }
+  },
+  "citation_faithfulness": {
+    "overall": {
+      "accuracy_mean": 0.960784978909979,
+      "accuracy_std": 0.18415822738522974,
+      "accuracy_ci_95": [
+        0.9509456319143819,
+        0.9700695282726534
+      ],
+      "n": 1320,
+      "repair_rate": 0.904051534158332
+    },
+    "by_class": {
+      "instruction_tuned": {
+        "accuracy_mean": 0.9602356902356901,
+        "accuracy_std": 0.18734523008645998,
+        "accuracy_ci_95": [
+          0.945949585137085,
+          0.9737011634199134
+        ],
+        "n": 660,
+        "repair_rate": 0.9117749218478638
+      },
+      "reasoning": {
+        "accuracy_mean": 0.9613342675842675,
+        "accuracy_std": 0.18105559655904102,
+        "accuracy_ci_95": [
+          0.946410052910053,
+          0.9745115312927811
+        ],
+        "n": 660,
+        "repair_rate": 0.8966887417218543
+      }
+    }
+  },
+  "token_cost_analysis": {
+    "instruction_tuned": {
+      "tokens_per_run_mean": 8909.85,
+      "tokens_per_run_median": 8157.5,
+      "tokens_per_quality_point": 33661.01429270703,
+      "reasoning_tokens_ratio": 0.45435210367279927
+    },
+    "reasoning": {
+      "tokens_per_run_mean": 12969.357575757576,
+      "tokens_per_run_median": 11817.0,
+      "tokens_per_quality_point": 92140.47890267301,
+      "reasoning_tokens_ratio": 0.5943531699894951
+    }
+  },
+  "model_class_summary": {
+    "instruction_tuned": {
+      "aqa_plausibility_mean": 0.2646934498919839,
+      "aqa_plausibility_std": 0.2763037389175901,
+      "reasoning_steps_mean": 8.218181818181819,
+      "n": 660
+    },
+    "reasoning": {
+      "aqa_plausibility_mean": 0.14075635084832766,
+      "aqa_plausibility_std": 0.28015907003097057,
+      "reasoning_steps_mean": 8.365151515151515,
+      "n": 660
+    }
+  }
+}

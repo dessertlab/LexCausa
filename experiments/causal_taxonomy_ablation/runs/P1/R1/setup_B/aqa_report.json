@@ -1,0 +1,928 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 0,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.0,
+      "attack_coverage_ratio": 0.0,
+      "attack_coverage_score": 0.0,
+      "attacks_avg": 0.11465,
+      "base_score_avg": 0.78435489104127,
+      "cogency_avg": 0.6830831521165667,
+      "net_plausibility": 0.6517040133317602,
+      "net_plausibility_adjusted": 0.6517040133317602,
+      "net_plausibility_raw": 0.66970489104127,
+      "norm_support_avg": 0.8408847981558047,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.2880140433521563,
+      "redundancy_penalty": 0.01800087770950977,
+      "semantics_avg": 0.8102534204799268
+    },
+    "pro": {
+      "attacks_avg": 0.06395,
+      "base_score_avg": 0.6817744040730112,
+      "cogency_avg": 0.6011807172597704,
+      "net_plausibility": 0.6817744040730112,
+      "net_plausibility_adjusted": 0.6817744040730112,
+      "net_plausibility_dialectical_raw": 0.6178244040730111,
+      "net_plausibility_intrinsic_raw": 0.6817744040730112,
+      "net_plausibility_raw": 0.6817744040730112,
+      "norm_support_avg": 0.7781088913245535,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.06770601804155943,
+      "redundancy_penalty": 0.004231626127597464,
+      "semantics_avg": 0.6339221078841952
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1255,
+            "attacker_base_score": 0.6686,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0752,
+            "damage_factor": 0.4,
+            "excess": 0.3138,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8041,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7613,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.695,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6705,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8039,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7613,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1255,
+        "base_score": 0.7613257567532357,
+        "cogency": 0.679104229227073,
+        "cogency_details": {
+          "argument_quality_score": 0.731596623000465,
+          "coherence_score": 0.626611835453681,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La fattispecie descritta non dimostra la presenza di un “ingiusto profitto” ai sensi dell’art. 646 c.p., poiché l’amministratore ha qualificato i bonifici come un prestito ponte, integralmente restituito con interessi legali, il che indica un’obbligazione di restituzione e quindi un profitto legittimo e non ingiusto. L’esistenza di un accordo di rimborso, seppur verbale, rende impossibile provare che l’amministratore si sia appropriato del denaro altrui per un guadagno indebito, requisito essenziale per la configurazione del reato di appropriazione indebita.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7613257567532357,
+        "nesso_plausibility": 0.6358257567532357,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare il dolo, cioè la volontà di appropriarsi del denaro altrui per un ingiusto profitto; la convinzione dell’amministratore di agire su una presunta autorizzazione verbale dei soci, seppur non verbalizzata, elimina tale elemento soggettivo, poiché egli ha ritenuto legittimo il trasferimento e lo ha restituito con interessi, dimostrando l’assenza di intento fraudolento. L’assenza di prova concreta del rifiuto di tale autorizzazione da parte dei soci rende incerto il requisito di dolo, perciò la responsabilità penale non è dimostrata.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.8211697715176409,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8211697715176409
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare il dolo, cioè la volontà di appropriarsi del denaro altrui per un ingiusto profitto; la convinzione dell’amministratore di agire su una presunta autorizzazione verbale dei soci, seppur non verbalizzata, elimina tale elemento soggettivo, poiché egli ha ritenuto legittimo il trasferimento e lo ha restituito con interessi, dimostrando l’assenza di intento fraudolento. L’assenza di prova concreta del rifiuto di tale autorizzazione da parte dei soci rende incerto il requisito di dolo, perciò la responsabilità penale non è dimostrata."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1038,
+            "attacker_base_score": 0.6686,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0669,
+            "damage_factor": 0.4,
+            "excess": 0.2596,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7979,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.8074,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.695,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6928,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8307,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8074,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1038,
+        "base_score": 0.8073840253293043,
+        "cogency": 0.6870620750060603,
+        "cogency_details": {
+          "argument_quality_score": 0.6970761338267895,
+          "coherence_score": 0.6770480161853312,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Poiché i € 45.000 sono stati integralmente restituiti con gli interessi legali entro otto mesi, la posizione patrimoniale della società è tornata al livello antecedente i bonifici, così da non sussistere alcun danno patrimoniale concreto, elemento essenziale per l’art. 646 c.p.; la restituzione completa estingue il danno e, di conseguenza, elimina la circostanza aggravante del profitto ingiusto (art. 646 c.p.; art. 518‑septiesdecies c.p.). Inoltre, l’assenza di un danno residuo rende impossibile configurare l’appropriazione indebita, poiché il reato richiede la presenza di un danno patrimoniale effettivo. Pertanto, non sussistono gli elementi aggravanti necessari a sostenere la responsabilità penale dell’amministratore.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8073840253293043,
+        "nesso_plausibility": 0.7035840253293043,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La fattispecie descritta non dimostra la presenza di un “ingiusto profitto” ai sensi dell’art. 646 c.p., poiché l’amministratore ha qualificato i bonifici come un prestito ponte, integralmente restituito con interessi legali, il che indica un’obbligazione di restituzione e quindi un profitto legittimo e non ingiusto. L’esistenza di un accordo di rimborso, seppur verbale, rende impossibile provare che l’amministratore si sia appropriato del denaro altrui per un guadagno indebito, requisito essenziale per la configurazione del reato di appropriazione indebita.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7993370694422127,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7993370694422127
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La fattispecie descritta non dimostra la presenza di un “ingiusto profitto” ai sensi dell’art. 646 c.p., poiché l’amministratore ha qualificato i bonifici come un prestito ponte, integralmente restituito con interessi legali, il che indica un’obbligazione di restituzione e quindi un profitto legittimo e non ingiusto. L’esistenza di un accordo di rimborso, seppur verbale, rende impossibile provare che l’amministratore si sia appropriato del denaro altrui per un guadagno indebito, requisito essenziale per la configurazione del reato di appropriazione indebita."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0439,
+            "attacker_base_score": 0.8074,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8048,
+            "damage_factor": 0.4,
+            "excess": 0.1098,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8307,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.695,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0158,
+            "attacker_base_score": 0.7613,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7345,
+            "damage_factor": 0.4,
+            "excess": 0.0395,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8039,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.695,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0597,
+        "base_score": 0.6949711184833568,
+        "cogency": 0.6121093480095419,
+        "cogency_details": {
+          "argument_quality_score": 0.6263964938416938,
+          "coherence_score": 0.5978222021773899,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 646 c.p., l’appropriazione indebita richiede il possesso materiale del denaro altrui da parte del soggetto e l’utilizzo di tale denaro, senza titolo legittimo, per procurare a sé o a terzi un profitto ingiusto; l’amministratore unico, esercitando il potere di firma, ha disporre i € 45.000 dal conto della s.r.l. senza alcuna deliberazione scritta dei soci, configurando così un possesso fiduciario privo di legittimazione; il trasferimento verso i suoi creditori personali rappresenta l’uso del denaro per un profitto personale, soddisfacendo i requisiti dell’art. 646 c.p.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6949711184833568,
+        "nesso_plausibility": 0.6352711184833568,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Durante il controllo contabile della s.r.l. sono stati individuati sei bonifici, per un importo complessivo di € 45.000, effettuati dal conto corrente sociale verso creditori personali dell’amministratore unico; l’amministratore sostiene che tali trasferimenti fossero un “prestito ponte” autorizzato verbalmente da due soci e che l’intero importo sia stato restituito dopo otto mesi, con l’applicazione degli interessi legali. I soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e sottolineando che, nello stesso periodo, la società ha subito ritardi nei pagamenti a fornitori strategici. La difesa dell’amministratore argomenta l’assenza di danno finale per la restituzione avvenuta e solleva dubbi sulla prova dell’elemento soggettivo del reato.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6669825251689093,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6669825251689093
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Durante il controllo contabile della s.r.l. sono stati individuati sei bonifici, per un importo complessivo di € 45.000, effettuati dal conto corrente sociale verso creditori personali dell’amministratore unico; l’amministratore sostiene che tali trasferimenti fossero un “prestito ponte” autorizzato verbalmente da due soci e che l’intero importo sia stato restituito dopo otto mesi, con l’applicazione degli interessi legali. I soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e sottolineando che, nello stesso periodo, la società ha subito ritardi nei pagamenti a fornitori strategici. La difesa dell’amministratore argomenta l’assenza di danno finale per la restituzione avvenuta e solleva dubbi sulla prova dell’elemento soggettivo del reato."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0418,
+            "attacker_base_score": 0.8074,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7731,
+            "damage_factor": 0.4,
+            "excess": 0.1045,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7979,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6686,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0264,
+            "attacker_base_score": 0.7613,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7346,
+            "damage_factor": 0.4,
+            "excess": 0.066,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8041,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6686,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0682,
+        "base_score": 0.6685776896626654,
+        "cogency": 0.5902520865099989,
+        "cogency_details": {
+          "argument_quality_score": 0.6082892840202831,
+          "coherence_score": 0.5722148889997148,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La disciplina delle s.r.l. prevede che ogni operazione di finanziamento a favore dell’amministratore debba essere deliberata dall’assemblea dei soci con le maggioranze previste dallo statuto e iscritta nei libri sociali; l’assenza di una deliberazione scritta e di una verbalizzazione rende l’atto ultra vires e privo di efficacia giuridica. La presunta autorizzazione verbale di due soci, non supportata da un quorum né da una registrazione formale, non soddisfa tali requisiti e pertanto non può costituire titolo valido per il trasferimento di € 45.000 dal conto sociale. Di conseguenza i bonifici effettuati dall’amministratore non sono coperti da una decisione societaria legittima, ma configurano un prelievo non autorizzato.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6685776896626654,
+        "nesso_plausibility": 0.6003776896626654,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 646 c.p., l’appropriazione indebita richiede il possesso materiale del denaro altrui da parte del soggetto e l’utilizzo di tale denaro, senza titolo legittimo, per procurare a sé o a terzi un profitto ingiusto; l’amministratore unico, esercitando il potere di firma, ha disporre i € 45.000 dal conto della s.r.l. senza alcuna deliberazione scritta dei soci, configurando così un possesso fiduciario privo di legittimazione; il trasferimento verso i suoi creditori personali rappresenta l’uso del denaro per un profitto personale, soddisfacendo i requisiti dell’art. 646 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.600861690599481,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.600861690599481
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 646 c.p., l’appropriazione indebita richiede il possesso materiale del denaro altrui da parte del soggetto e l’utilizzo di tale denaro, senza titolo legittimo, per procurare a sé o a terzi un profitto ingiusto; l’amministratore unico, esercitando il potere di firma, ha disporre i € 45.000 dal conto della s.r.l. senza alcuna deliberazione scritta dei soci, configurando così un possesso fiduciario privo di legittimazione; il trasferimento verso i suoi creditori personali rappresenta l’uso del denaro per un profitto personale, soddisfacendo i requisiti dell’art. 646 c.p."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.6517040133317602,
+    "contra_adjusted": 0.6517040133317602,
+    "contra_raw": 0.66970489104127,
+    "final": 0.030070390741250952,
+    "final_adjusted": 0.030070390741250952,
+    "final_raw": 0.012069513031741197,
+    "pro": 0.6817744040730112,
+    "pro_adjusted": 0.6817744040730112,
+    "pro_raw": 0.6817744040730112,
+    "pro_raw_dialectical": 0.6178244040730111,
+    "pro_raw_intrinsic": 0.6817744040730112,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8041,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1255
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7979,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1038
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8307,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.0439
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7979,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.0418
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8041,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.0264
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8039,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.0158
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 0,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.6949711184833568,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.6685776896626654,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S2->S3"
+              ]
+            }
+          ],
+          "bonus": 0.0,
+          "coverage_ratio": 0.0,
+          "enabled": true,
+          "quality_avg": 0.0,
+          "wpcs": 0.0
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.8006439321386037,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.01800087770950977,
+          "redundancy_index": 0.2880140433521563
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7389576850516366,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.004231626127597464,
+          "redundancy_index": 0.06770601804155943
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0418,
+            "attacker_base_score": 0.8074,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7731,
+            "damage_factor": 0.4,
+            "excess": 0.1045,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7979,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6686,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0264,
+            "attacker_base_score": 0.7613,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7346,
+            "damage_factor": 0.4,
+            "excess": 0.066,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8041,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6686,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0682,
+        "base_score": 0.6685776896626654,
+        "cogency": 0.5902520865099989,
+        "cogency_details": {
+          "argument_quality_score": 0.6082892840202831,
+          "coherence_score": 0.5722148889997148,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La disciplina delle s.r.l. prevede che ogni operazione di finanziamento a favore dell’amministratore debba essere deliberata dall’assemblea dei soci con le maggioranze previste dallo statuto e iscritta nei libri sociali; l’assenza di una deliberazione scritta e di una verbalizzazione rende l’atto ultra vires e privo di efficacia giuridica. La presunta autorizzazione verbale di due soci, non supportata da un quorum né da una registrazione formale, non soddisfa tali requisiti e pertanto non può costituire titolo valido per il trasferimento di € 45.000 dal conto sociale. Di conseguenza i bonifici effettuati dall’amministratore non sono coperti da una decisione societaria legittima, ma configurano un prelievo non autorizzato.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6685776896626654,
+        "nesso_plausibility": 0.6003776896626654,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 646 c.p., l’appropriazione indebita richiede il possesso materiale del denaro altrui da parte del soggetto e l’utilizzo di tale denaro, senza titolo legittimo, per procurare a sé o a terzi un profitto ingiusto; l’amministratore unico, esercitando il potere di firma, ha disporre i € 45.000 dal conto della s.r.l. senza alcuna deliberazione scritta dei soci, configurando così un possesso fiduciario privo di legittimazione; il trasferimento verso i suoi creditori personali rappresenta l’uso del denaro per un profitto personale, soddisfacendo i requisiti dell’art. 646 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.600861690599481,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.600861690599481
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 646 c.p., l’appropriazione indebita richiede il possesso materiale del denaro altrui da parte del soggetto e l’utilizzo di tale denaro, senza titolo legittimo, per procurare a sé o a terzi un profitto ingiusto; l’amministratore unico, esercitando il potere di firma, ha disporre i € 45.000 dal conto della s.r.l. senza alcuna deliberazione scritta dei soci, configurando così un possesso fiduciario privo di legittimazione; il trasferimento verso i suoi creditori personali rappresenta l’uso del denaro per un profitto personale, soddisfacendo i requisiti dell’art. 646 c.p."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0439,
+            "attacker_base_score": 0.8074,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8048,
+            "damage_factor": 0.4,
+            "excess": 0.1098,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8307,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.695,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0158,
+            "attacker_base_score": 0.7613,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7345,
+            "damage_factor": 0.4,
+            "excess": 0.0395,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8039,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.695,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0597,
+        "base_score": 0.6949711184833568,
+        "cogency": 0.6121093480095419,
+        "cogency_details": {
+          "argument_quality_score": 0.6263964938416938,
+          "coherence_score": 0.5978222021773899,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 646 c.p., l’appropriazione indebita richiede il possesso materiale del denaro altrui da parte del soggetto e l’utilizzo di tale denaro, senza titolo legittimo, per procurare a sé o a terzi un profitto ingiusto; l’amministratore unico, esercitando il potere di firma, ha disporre i € 45.000 dal conto della s.r.l. senza alcuna deliberazione scritta dei soci, configurando così un possesso fiduciario privo di legittimazione; il trasferimento verso i suoi creditori personali rappresenta l’uso del denaro per un profitto personale, soddisfacendo i requisiti dell’art. 646 c.p.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6949711184833568,
+        "nesso_plausibility": 0.6352711184833568,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Durante il controllo contabile della s.r.l. sono stati individuati sei bonifici, per un importo complessivo di € 45.000, effettuati dal conto corrente sociale verso creditori personali dell’amministratore unico; l’amministratore sostiene che tali trasferimenti fossero un “prestito ponte” autorizzato verbalmente da due soci e che l’intero importo sia stato restituito dopo otto mesi, con l’applicazione degli interessi legali. I soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e sottolineando che, nello stesso periodo, la società ha subito ritardi nei pagamenti a fornitori strategici. La difesa dell’amministratore argomenta l’assenza di danno finale per la restituzione avvenuta e solleva dubbi sulla prova dell’elemento soggettivo del reato.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6669825251689093,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6669825251689093
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Durante il controllo contabile della s.r.l. sono stati individuati sei bonifici, per un importo complessivo di € 45.000, effettuati dal conto corrente sociale verso creditori personali dell’amministratore unico; l’amministratore sostiene che tali trasferimenti fossero un “prestito ponte” autorizzato verbalmente da due soci e che l’intero importo sia stato restituito dopo otto mesi, con l’applicazione degli interessi legali. I soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e sottolineando che, nello stesso periodo, la società ha subito ritardi nei pagamenti a fornitori strategici. La difesa dell’amministratore argomenta l’assenza di danno finale per la restituzione avvenuta e solleva dubbi sulla prova dell’elemento soggettivo del reato."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1255,
+            "attacker_base_score": 0.6686,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0752,
+            "damage_factor": 0.4,
+            "excess": 0.3138,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8041,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7613,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.695,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6705,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8039,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7613,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1255,
+        "base_score": 0.7613257567532357,
+        "cogency": 0.679104229227073,
+        "cogency_details": {
+          "argument_quality_score": 0.731596623000465,
+          "coherence_score": 0.626611835453681,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La fattispecie descritta non dimostra la presenza di un “ingiusto profitto” ai sensi dell’art. 646 c.p., poiché l’amministratore ha qualificato i bonifici come un prestito ponte, integralmente restituito con interessi legali, il che indica un’obbligazione di restituzione e quindi un profitto legittimo e non ingiusto. L’esistenza di un accordo di rimborso, seppur verbale, rende impossibile provare che l’amministratore si sia appropriato del denaro altrui per un guadagno indebito, requisito essenziale per la configurazione del reato di appropriazione indebita.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7613257567532357,
+        "nesso_plausibility": 0.6358257567532357,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare il dolo, cioè la volontà di appropriarsi del denaro altrui per un ingiusto profitto; la convinzione dell’amministratore di agire su una presunta autorizzazione verbale dei soci, seppur non verbalizzata, elimina tale elemento soggettivo, poiché egli ha ritenuto legittimo il trasferimento e lo ha restituito con interessi, dimostrando l’assenza di intento fraudolento. L’assenza di prova concreta del rifiuto di tale autorizzazione da parte dei soci rende incerto il requisito di dolo, perciò la responsabilità penale non è dimostrata.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.8211697715176409,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8211697715176409
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare il dolo, cioè la volontà di appropriarsi del denaro altrui per un ingiusto profitto; la convinzione dell’amministratore di agire su una presunta autorizzazione verbale dei soci, seppur non verbalizzata, elimina tale elemento soggettivo, poiché egli ha ritenuto legittimo il trasferimento e lo ha restituito con interessi, dimostrando l’assenza di intento fraudolento. L’assenza di prova concreta del rifiuto di tale autorizzazione da parte dei soci rende incerto il requisito di dolo, perciò la responsabilità penale non è dimostrata."
+      }
+    ]
+  },
+  "verdict": "uncertain",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

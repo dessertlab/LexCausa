@@ -1,0 +1,2147 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 0,
+      "attack_coverage_axes_total": 5,
+      "attack_coverage_bonus": 0.0,
+      "attack_coverage_ratio": 0.0,
+      "attack_coverage_score": 0.0,
+      "attacks_avg": 0.322175,
+      "base_score_avg": 0.7137494637170323,
+      "cogency_avg": 0.5847016272260137,
+      "net_plausibility": 0.35530476764304,
+      "net_plausibility_adjusted": 0.35530476764304,
+      "net_plausibility_raw": 0.39157446371703225,
+      "norm_support_avg": 0.927745528740292,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.1934383790612922,
+      "redundancy_penalty": 0.03626969607399229,
+      "semantics_avg": 0.5574692135103712
+    },
+    "pro": {
+      "attacks_avg": 0.01512,
+      "base_score_avg": 0.7488774191117782,
+      "cogency_avg": 0.5911583630351684,
+      "net_plausibility": 0.7488774191117782,
+      "net_plausibility_adjusted": 0.7488774191117782,
+      "net_plausibility_dialectical_raw": 0.7337574191117782,
+      "net_plausibility_intrinsic_raw": 0.7488774191117782,
+      "net_plausibility_raw": 0.7488774191117782,
+      "norm_support_avg": 0.9807321409974111,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.174601449293889,
+      "redundancy_penalty": 0.04365036232347225,
+      "semantics_avg": 0.5974568460075437
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1501,
+            "attacker_base_score": 0.7768,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1323,
+            "damage_factor": 0.4,
+            "excess": 0.3752,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7288,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7571,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1442,
+            "attacker_base_score": 0.7978,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1175,
+            "damage_factor": 0.4,
+            "excess": 0.3604,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7004,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7571,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.094,
+            "attacker_base_score": 0.7467,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.992,
+            "damage_factor": 0.4,
+            "excess": 0.2349,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6643,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7571,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0556,
+            "attacker_base_score": 0.703,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.896,
+            "damage_factor": 0.4,
+            "excess": 0.1389,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6373,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7571,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7201,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.2943,
+        "base_score": 0.7571008438163396,
+        "cogency": 0.6503501800091025,
+        "cogency_details": {
+          "argument_quality_score": 0.7602568215858692,
+          "coherence_score": 0.540443538432336,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 640 c.p. il reato di truffa richiede la presenza di dolo specifico, ossia la consapevole volontà di ingannare l’acquirente, requisito confermato anche dall’art. 1439 c.c.; il semplice fatto che il chilometraggio dichiarato fosse errato non è sufficiente a provare tale intenzione, soprattutto se il concessionario si è limitato a riportare i dati contenuti nella documentazione ricevuta dal precedente proprietario, dimostrando così l’assenza di conoscenza della manomissione e di volontà fraudolenta.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7571008438163396,
+        "nesso_plausibility": 0.46280084381633957,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare il reato di truffa ex art. 640 c.p. è necessario provare l’esistenza di artifizi o raggiri che abbiano indotto l’acquirente in errore; la semplice discrepanza tra i 60 000 km dichiarati e i più di 180 000 km accertati non costituisce, di per sé, prova di tali artifizi, poiché il concessionario può aver basato la dichiarazione sulla documentazione ricevuta dal precedente proprietario, senza consapevolezza della manipolazione. In mancanza di elementi che dimostrino la volontà consapevole del venditore di ingannare, non è soddisfatto il requisito di inganno richiesto dall’art. 640 c.p. né il dolo previsto dall’art. 1439 c.c., perciò la truffa non risulta provata.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1439",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1509_art1439",
+            "title": "Dolo"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1439",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1509_art1439",
+            "title": "Dolo"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6684383593959551,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6684383593959551
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Per configurare il reato di truffa ex art. 640 c.p. è necessario provare l’esistenza di artifizi o raggiri che abbiano indotto l’acquirente in errore; la semplice discrepanza tra i 60 000 km dichiarati e i più di 180 000 km accertati non costituisce, di per sé, prova di tali artifizi, poiché il concessionario può aver basato la dichiarazione sulla documentazione ricevuta dal precedente proprietario, senza consapevolezza della manipolazione. In mancanza di elementi che dimostrino la volontà consapevole del venditore di ingannare, non è soddisfatto il requisito di inganno richiesto dall’art. 640 c.p. né il dolo previsto dall’art. 1439 c.c., perciò la truffa non risulta provata."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1533,
+            "attacker_base_score": 0.7768,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0977,
+            "damage_factor": 0.4,
+            "excess": 0.3832,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7066,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1396,
+            "attacker_base_score": 0.7467,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0635,
+            "damage_factor": 0.4,
+            "excess": 0.349,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7122,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1302,
+            "attacker_base_score": 0.7978,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0399,
+            "damage_factor": 0.4,
+            "excess": 0.3255,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6517,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0518,
+            "attacker_base_score": 0.703,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8439,
+            "damage_factor": 0.4,
+            "excess": 0.1294,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6002,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7201,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.2929,
+        "base_score": 0.7144712054028171,
+        "cogency": 0.5861618344466073,
+        "cogency_details": {
+          "argument_quality_score": 0.6839518897789361,
+          "coherence_score": 0.48837177911427854,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 640 c.p., la truffa si configura solo quando, mediante artifizi o raggiri, l’autore induce il soggetto in errore; la mera omissione di un fatto pregresso, senza una dichiarazione falsa o un inganno attivo, non soddisfa il requisito del raggiro. Nel caso di specie il concessionario non ha fornito alcuna informazione falsa sul sinistro strutturale, limitandosi a non menzionarlo, perciò manca il dolo di inganno necessario a integrare il reato di truffa.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7144712054028171,
+        "nesso_plausibility": 0.42157120540281706,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 640 c.p. il reato di truffa richiede la presenza di dolo specifico, ossia la consapevole volontà di ingannare l’acquirente, requisito confermato anche dall’art. 1439 c.c.; il semplice fatto che il chilometraggio dichiarato fosse errato non è sufficiente a provare tale intenzione, soprattutto se il concessionario si è limitato a riportare i dati contenuti nella documentazione ricevuta dal precedente proprietario, dimostrando così l’assenza di conoscenza della manomissione e di volontà fraudolenta.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1439",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1509_art1439",
+            "title": "Dolo"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5905279102467084,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5905279102467084
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 640 c.p. il reato di truffa richiede la presenza di dolo specifico, ossia la consapevole volontà di ingannare l’acquirente, requisito confermato anche dall’art. 1439 c.c.; il semplice fatto che il chilometraggio dichiarato fosse errato non è sufficiente a provare tale intenzione, soprattutto se il concessionario si è limitato a riportare i dati contenuti nella documentazione ricevuta dal precedente proprietario, dimostrando così l’assenza di conoscenza della manomissione e di volontà fraudolenta."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1978,
+            "attacker_base_score": 0.7768,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1476,
+            "damage_factor": 0.4,
+            "excess": 0.4944,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7387,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1431,
+            "attacker_base_score": 0.7978,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0108,
+            "damage_factor": 0.4,
+            "excess": 0.3577,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6335,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1258,
+            "attacker_base_score": 0.7467,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9676,
+            "damage_factor": 0.4,
+            "excess": 0.3144,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6479,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0605,
+            "attacker_base_score": 0.703,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8045,
+            "damage_factor": 0.4,
+            "excess": 0.1514,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5722,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7201,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.3409,
+        "base_score": 0.6531604569133254,
+        "cogency": 0.5418479671098727,
+        "cogency_details": {
+          "argument_quality_score": 0.6896379229095637,
+          "coherence_score": 0.39405801131018164,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1490 c.c. il vizio occulta è quello che il venditore, pur avendone conoscenza, non ha comunicato perché non è immediatamente rilevabile dall’acquirente; il chilometraggio, tuttavia, è un dato oggettivo e verificabile al momento della consegna, e il concessionario disponeva della documentazione fornita dal precedente proprietario, perciò il difetto non può essere qualificato come “occulto” ma come elemento noto o facilmente accertabile; di conseguenza la garanzia per vizi occulti non si attiva, in quanto il venditore non può sostenere di non aver avuto la possibilità di verificare il reale conteggio dei chilometri.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.6531604569133254,
+        "nesso_plausibility": 0.3122604569133254,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Secondo l’art. 640 c.p., la truffa si configura solo quando, mediante artifizi o raggiri, l’autore induce il soggetto in errore; la mera omissione di un fatto pregresso, senza una dichiarazione falsa o un inganno attivo, non soddisfa il requisito del raggiro. Nel caso di specie il concessionario non ha fornito alcuna informazione falsa sul sinistro strutturale, limitandosi a non menzionarlo, perciò manca il dolo di inganno necessario a integrare il reato di truffa.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.43047261595180386,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.43047261595180386
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 640 c.p., la truffa si configura solo quando, mediante artifizi o raggiri, l’autore induce il soggetto in errore; la mera omissione di un fatto pregresso, senza una dichiarazione falsa o un inganno attivo, non soddisfa il requisito del raggiro. Nel caso di specie il concessionario non ha fornito alcuna informazione falsa sul sinistro strutturale, limitandosi a non menzionarlo, perciò manca il dolo di inganno necessario a integrare il reato di truffa."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2088,
+            "attacker_base_score": 0.7768,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2522,
+            "damage_factor": 0.4,
+            "excess": 0.5219,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.806,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1518,
+            "attacker_base_score": 0.7201,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1097,
+            "damage_factor": 0.4,
+            "excess": 0.3795,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7705,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1493,
+            "attacker_base_score": 0.7978,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1034,
+            "damage_factor": 0.4,
+            "excess": 0.3732,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6915,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0846,
+            "attacker_base_score": 0.7467,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9417,
+            "damage_factor": 0.4,
+            "excess": 0.2115,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6306,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0681,
+            "attacker_base_score": 0.703,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.9005,
+            "damage_factor": 0.4,
+            "excess": 0.1702,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6404,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.36060000000000003,
+        "base_score": 0.730265348735647,
+        "cogency": 0.5604465273384723,
+        "cogency_details": {
+          "argument_quality_score": 0.6788168458945071,
+          "coherence_score": 0.44207620878243764,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Secondo l’art. 1564 c.c., la risoluzione è ammessa solo quando l’inadempimento è di notevole importanza e rende impossibile la prosecuzione del rapporto di fiducia; nel caso in esame il difetto, pur grave, è limitato al chilometraggio e al sinistro non dichiarato, elementi che possono essere quantificati economicamente e compensati mediante una riduzione del prezzo, in coerenza con il principio di proporzionalità sancito dall’art. 1493 c.c., il quale prevede che, qualora il compratore decida di mantenere la cosa, il venditore debba restituire il prezzo al netto della riduzione determinata dal vizio. Pertanto, la misura più adeguata è la diminuzione proporzionale del corrispettivo, anziché la risoluzione totale del contratto.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.730265348735647,
+        "nesso_plausibility": 0.36966534873564694,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1490 c.c. il vizio occulta è quello che il venditore, pur avendone conoscenza, non ha comunicato perché non è immediatamente rilevabile dall’acquirente; il chilometraggio, tuttavia, è un dato oggettivo e verificabile al momento della consegna, e il concessionario disponeva della documentazione fornita dal precedente proprietario, perciò il difetto non può essere qualificato come “occulto” ma come elemento noto o facilmente accertabile; di conseguenza la garanzia per vizi occulti non si attiva, in quanto il venditore non può sostenere di non aver avuto la possibilità di verificare il reale conteggio dei chilometri.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5404379684470175,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5404379684470175
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1490 c.c. il vizio occulta è quello che il venditore, pur avendone conoscenza, non ha comunicato perché non è immediatamente rilevabile dall’acquirente; il chilometraggio, tuttavia, è un dato oggettivo e verificabile al momento della consegna, e il concessionario disponeva della documentazione fornita dal precedente proprietario, perciò il difetto non può essere qualificato come “occulto” ma come elemento noto o facilmente accertabile; di conseguenza la garanzia per vizi occulti non si attiva, in quanto il venditore non può sostenere di non aver avuto la possibilità di verificare il reale conteggio dei chilometri."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0145,
+            "attacker_base_score": 0.7303,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7829,
+            "damage_factor": 0.4,
+            "excess": 0.0362,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6306,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7467,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7571,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6035,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6643,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7467,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7145,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6106,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7122,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7467,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6532,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5078,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6479,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7467,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0145,
+        "base_score": 0.7466575847195603,
+        "cogency": 0.5561420929530451,
+        "cogency_details": {
+          "argument_quality_score": 0.6972628968405681,
+          "coherence_score": 0.41502128906552205,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il danno patrimoniale dell’acquirente (perdita di valore del veicolo, spese di fermo e restituzione del prezzo) si verifica solo perché il concessionario ha fornito il chilometraggio falsificato e ha occultato il sinistro strutturale; in assenza di tali artifici l’acquirente non avrebbe concluso il contratto né subito il danno (test del “but‑for” di cui all’art. 40 c.p.). Eventuali cause successive, come l’usura ordinaria del veicolo, non sono state da sole sufficienti a produrre il danno, perciò, secondo l’art. 41 c.p., il nesso di causalità rimane valido.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7466575847195603,
+        "nesso_plausibility": 0.7321575847195604,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il concessionario, nell’esercizio della propria attività commerciale, ha presentato all’acquirente il veicolo indicandone falsamente il chilometraggio (60.000 km) e ha omesso di comunicare il sinistro strutturale, comportamenti che costituiscono gli artifizi o raggiri idonei a indurre in errore l’acquirente, requisito essenziale della truffa di cui all’art. 640 c.p. ; tali condotte hanno procurato al concessionario un ingiusto profitto a danno dell’acquirente, configurando così la fattispecie penale di truffa.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5993831894454894,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5993831894454894
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il concessionario, nell’esercizio della propria attività commerciale, ha presentato all’acquirente il veicolo indicandone falsamente il chilometraggio (60.000 km) e ha omesso di comunicare il sinistro strutturale, comportamenti che costituiscono gli artifizi o raggiri idonei a indurre in errore l’acquirente, requisito essenziale della truffa di cui all’art. 640 c.p. ; tali condotte hanno procurato al concessionario un ingiusto profitto a danno dell’acquirente, configurando così la fattispecie penale di truffa."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7571,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7145,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6532,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7303,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6752,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7705,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7201,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7201356854563962,
+        "cogency": 0.5410002870248201,
+        "cogency_details": {
+          "argument_quality_score": 0.6683483017217341,
+          "coherence_score": 0.413652272327906,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1490 c.c., il concessionario ha violato l’obbligo di garanzia perché ha occultato due vizi occulti della cosa venduta: (i) il chilometraggio reale, superiore a 180 000 km, falsificato a 60 000 km, e (ii) il sinistro strutturale pregresso non dichiarato, entrambi difformi dalla qualità e dal valore che il compratore legittimamente si aspettava. Tali vizi, essendo non visibili al momento della consegna e non dichiarati dal venditore, rendono il veicolo inidoneo all’uso a cui è destinato e ne diminuiscono apprezzabilmente il valore, configurando così una violazione della garanzia per vizi della cosa venduta. La responsabilità del concessionario sussiste in quanto la mancata comunicazione è avvenuta in mala fede, escludendo ogni possibile limitazione contrattuale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7201356854563962,
+        "nesso_plausibility": 0.7201356854563962,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il danno patrimoniale dell’acquirente (perdita di valore del veicolo, spese di fermo e restituzione del prezzo) si verifica solo perché il concessionario ha fornito il chilometraggio falsificato e ha occultato il sinistro strutturale; in assenza di tali artifici l’acquirente non avrebbe concluso il contratto né subito il danno (test del “but‑for” di cui all’art. 40 c.p.). Eventuali cause successive, come l’usura ordinaria del veicolo, non sono state da sole sufficienti a produrre il danno, perciò, secondo l’art. 41 c.p., il nesso di causalità rimane valido.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5261186644965002,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5261186644965002
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_penale",
+        "text": "Il danno patrimoniale dell’acquirente (perdita di valore del veicolo, spese di fermo e restituzione del prezzo) si verifica solo perché il concessionario ha fornito il chilometraggio falsificato e ha occultato il sinistro strutturale; in assenza di tali artifici l’acquirente non avrebbe concluso il contratto né subito il danno (test del “but‑for” di cui all’art. 40 c.p.). Eventuali cause successive, come l’usura ordinaria del veicolo, non sono state da sole sufficienti a produrre il danno, perciò, secondo l’art. 41 c.p., il nesso di causalità rimane valido."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7571,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6621,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7288,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7768,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7145,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6058,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7066,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7768,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6532,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.579,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7387,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7768,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7303,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7063,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.806,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7768,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7767747604869458,
+        "cogency": 0.6586585348008394,
+        "cogency_details": {
+          "argument_quality_score": 0.6523377606766229,
+          "coherence_score": 0.6649793089250559,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1564 c.c., il compratore può chiedere la risoluzione del contratto quando l’inadempimento del venditore è di notevole importanza e lede la fiducia nell’esecuzione delle successive prestazioni; la dichiarazione fraudolenta del chilometraggio (60 000 km) e l’omissione del sinistro strutturale costituiscono vizi che diminuiscono apprezzabilmente il valore del veicolo e lo rendono non conforme all’uso a cui è destinato, configurando quindi un inadempimento di notevole importanza; di conseguenza il compratore ha diritto a domandare la risoluzione ex art. 1564 c.c., con restituzione del prezzo e delle spese sostenute.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7767747604869458,
+        "nesso_plausibility": 0.7767747604869458,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1490 c.c., il concessionario ha violato l’obbligo di garanzia perché ha occultato due vizi occulti della cosa venduta: (i) il chilometraggio reale, superiore a 180 000 km, falsificato a 60 000 km, e (ii) il sinistro strutturale pregresso non dichiarato, entrambi difformi dalla qualità e dal valore che il compratore legittimamente si aspettava. Tali vizi, essendo non visibili al momento della consegna e non dichiarati dal venditore, rendono il veicolo inidoneo all’uso a cui è destinato e ne diminuiscono apprezzabilmente il valore, configurando così una violazione della garanzia per vizi della cosa venduta. La responsabilità del concessionario sussiste in quanto la mancata comunicazione è avvenuta in mala fede, escludendo ogni possibile limitazione contrattuale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7257097268395722,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7257097268395722
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1490 c.c., il concessionario ha violato l’obbligo di garanzia perché ha occultato due vizi occulti della cosa venduta: (i) il chilometraggio reale, superiore a 180 000 km, falsificato a 60 000 km, e (ii) il sinistro strutturale pregresso non dichiarato, entrambi difformi dalla qualità e dal valore che il compratore legittimamente si aspettava. Tali vizi, essendo non visibili al momento della consegna e non dichiarati dal venditore, rendono il veicolo inidoneo all’uso a cui è destinato e ne diminuiscono apprezzabilmente il valore, configurando così una violazione della garanzia per vizi della cosa venduta. La responsabilità del concessionario sussiste in quanto la mancata comunicazione è avvenuta in mala fede, escludendo ogni possibile limitazione contrattuale."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0243,
+            "attacker_base_score": 0.7303,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8585,
+            "damage_factor": 0.4,
+            "excess": 0.0607,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6915,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7978,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7571,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6363,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7004,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7978,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7145,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5588,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6517,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7978,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6532,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.4965,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6335,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7978,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0243,
+        "base_score": 0.7978284945443045,
+        "cogency": 0.6543388322064991,
+        "cogency_details": {
+          "argument_quality_score": 0.7065063289460152,
+          "coherence_score": 0.6021713354669831,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 1493 c.c., il concessionario è tenuto a restituire all’acquirente l’intero prezzo di acquisto del veicolo, oltre a rimborsare integralmente le spese documentate sostenute per la perizia tecnica, il fermo del veicolo e ogni altro onere direttamente connesso alla compravendita; ai sensi dell’art. 1218 c.c., il venditore deve inoltre risarcire il danno patrimoniale derivante dalla diminuzione del valore di mercato del mezzo, quantificabile mediante perizia comparativa che tenga conto del chilometraggio reale (oltre 180 000 km) e del sinistro strutturale occultato.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7978284945443045,
+        "nesso_plausibility": 0.7735284945443045,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1564 c.c., il compratore può chiedere la risoluzione del contratto quando l’inadempimento del venditore è di notevole importanza e lede la fiducia nell’esecuzione delle successive prestazioni; la dichiarazione fraudolenta del chilometraggio (60 000 km) e l’omissione del sinistro strutturale costituiscono vizi che diminuiscono apprezzabilmente il valore del veicolo e lo rendono non conforme all’uso a cui è destinato, configurando quindi un inadempimento di notevole importanza; di conseguenza il compratore ha diritto a domandare la risoluzione ex art. 1564 c.c., con restituzione del prezzo e delle spese sostenute.",
+        "retrieved_norms": [
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6717561496078491,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6717561496078491
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1564 c.c., il compratore può chiedere la risoluzione del contratto quando l’inadempimento del venditore è di notevole importanza e lede la fiducia nell’esecuzione delle successive prestazioni; la dichiarazione fraudolenta del chilometraggio (60 000 km) e l’omissione del sinistro strutturale costituiscono vizi che diminuiscono apprezzabilmente il valore del veicolo e lo rendono non conforme all’uso a cui è destinato, configurando quindi un inadempimento di notevole importanza; di conseguenza il compratore ha diritto a domandare la risoluzione ex art. 1564 c.c., con restituzione del prezzo e delle spese sostenute."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0368,
+            "attacker_base_score": 0.7303,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7951,
+            "damage_factor": 0.4,
+            "excess": 0.0921,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6404,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.703,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7571,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.579,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6373,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.703,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7145,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5146,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6002,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.703,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6532,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.4485,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5722,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.703,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0368,
+        "base_score": 0.7029905703516838,
+        "cogency": 0.5456520681906385,
+        "cogency_details": {
+          "argument_quality_score": 0.6473405848984404,
+          "coherence_score": 0.4439635514828367,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 185 c.p., il reato di frode (art. 640 c.p.) commesso dal concessionario comporta l’obbligo di restituzione del prezzo pagato e di risarcimento di tutti i danni patrimoniali e non patrimoniali subiti dall’acquirente; tale obbligo di restituzione e risarcimento si integra con le disposizioni civili di cui agli artt. 1493 e 1218 c.c., consentendo al giudice penale di imporre direttamente la stessa somma che il compratore potrà esigere in sede civile. In pratica, la condanna penale per frode produce un effetto restitutivo che soddisfa integralmente la domanda di risoluzione contrattuale, restituzione del prezzo e risarcimento delle spese di fermo veicolo avanzate dal compratore. Pertanto, la responsabilità penale non esclude, ma rafforza, il diritto del compratore a ottenere la completa compensazione prevista dal diritto civile.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7029905703516838,
+        "nesso_plausibility": 0.6661905703516837,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’art. 1493 c.c., il concessionario è tenuto a restituire all’acquirente l’intero prezzo di acquisto del veicolo, oltre a rimborsare integralmente le spese documentate sostenute per la perizia tecnica, il fermo del veicolo e ogni altro onere direttamente connesso alla compravendita; ai sensi dell’art. 1218 c.c., il venditore deve inoltre risarcire il danno patrimoniale derivante dalla diminuzione del valore di mercato del mezzo, quantificabile mediante perizia comparativa che tenga conto del chilometraggio reale (oltre 180 000 km) e del sinistro strutturale occultato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.46431649964830746,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.46431649964830746
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 1493 c.c., il concessionario è tenuto a restituire all’acquirente l’intero prezzo di acquisto del veicolo, oltre a rimborsare integralmente le spese documentate sostenute per la perizia tecnica, il fermo del veicolo e ogni altro onere direttamente connesso alla compravendita; ai sensi dell’art. 1218 c.c., il venditore deve inoltre risarcire il danno patrimoniale derivante dalla diminuzione del valore di mercato del mezzo, quantificabile mediante perizia comparativa che tenga conto del chilometraggio reale (oltre 180 000 km) e del sinistro strutturale occultato."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.35530476764304,
+    "contra_adjusted": 0.35530476764304,
+    "contra_raw": 0.39157446371703225,
+    "final": 0.3935726514687382,
+    "final_adjusted": 0.3935726514687382,
+    "final_raw": 0.35730295539474594,
+    "pro": 0.7488774191117782,
+    "pro_adjusted": 0.7488774191117782,
+    "pro_raw": 0.7488774191117782,
+    "pro_raw_dialectical": 0.7337574191117782,
+    "pro_raw_intrinsic": 0.7488774191117782,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.806,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.2088
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7387,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1978
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7066,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1533
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7705,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.1518
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7288,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1501
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.6915,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.1493
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.7004,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1442
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.6335,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1431
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7122,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1396
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.6517,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1302
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 0,
+          "axes_total": 5,
+          "axis_details": [
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7978284945443045,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7767747604869458,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7466575847195603,
+              "axis_id": "AX3",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7201356854563962,
+              "axis_id": "AX4",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7029905703516838,
+              "axis_id": "AX5",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S5->S6"
+              ]
+            }
+          ],
+          "bonus": 0.0,
+          "coverage_ratio": 0.0,
+          "enabled": true,
+          "quality_avg": 0.0,
+          "wpcs": 0.0
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7162701596234013,
+          "high_similarity_pair_ratio": 0.6666666666666666,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.03626969607399229,
+          "redundancy_index": 0.1934383790612922
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.6456126154909299,
+          "high_similarity_pair_ratio": 0.3,
+          "links_count": 5,
+          "pair_count": 10,
+          "penalty": 0.04365036232347225,
+          "redundancy_index": 0.174601449293889
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1978,
+            "attacker_base_score": 0.7768,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1476,
+            "damage_factor": 0.4,
+            "excess": 0.4944,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7387,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1431,
+            "attacker_base_score": 0.7978,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0108,
+            "damage_factor": 0.4,
+            "excess": 0.3577,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6335,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1258,
+            "attacker_base_score": 0.7467,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9676,
+            "damage_factor": 0.4,
+            "excess": 0.3144,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6479,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0605,
+            "attacker_base_score": 0.703,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8045,
+            "damage_factor": 0.4,
+            "excess": 0.1514,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5722,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6532,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7201,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.3409,
+        "base_score": 0.6531604569133254,
+        "cogency": 0.5418479671098727,
+        "cogency_details": {
+          "argument_quality_score": 0.6896379229095637,
+          "coherence_score": 0.39405801131018164,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1490 c.c. il vizio occulta è quello che il venditore, pur avendone conoscenza, non ha comunicato perché non è immediatamente rilevabile dall’acquirente; il chilometraggio, tuttavia, è un dato oggettivo e verificabile al momento della consegna, e il concessionario disponeva della documentazione fornita dal precedente proprietario, perciò il difetto non può essere qualificato come “occulto” ma come elemento noto o facilmente accertabile; di conseguenza la garanzia per vizi occulti non si attiva, in quanto il venditore non può sostenere di non aver avuto la possibilità di verificare il reale conteggio dei chilometri.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.6531604569133254,
+        "nesso_plausibility": 0.3122604569133254,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Secondo l’art. 640 c.p., la truffa si configura solo quando, mediante artifizi o raggiri, l’autore induce il soggetto in errore; la mera omissione di un fatto pregresso, senza una dichiarazione falsa o un inganno attivo, non soddisfa il requisito del raggiro. Nel caso di specie il concessionario non ha fornito alcuna informazione falsa sul sinistro strutturale, limitandosi a non menzionarlo, perciò manca il dolo di inganno necessario a integrare il reato di truffa.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.43047261595180386,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.43047261595180386
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 640 c.p., la truffa si configura solo quando, mediante artifizi o raggiri, l’autore induce il soggetto in errore; la mera omissione di un fatto pregresso, senza una dichiarazione falsa o un inganno attivo, non soddisfa il requisito del raggiro. Nel caso di specie il concessionario non ha fornito alcuna informazione falsa sul sinistro strutturale, limitandosi a non menzionarlo, perciò manca il dolo di inganno necessario a integrare il reato di truffa."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2088,
+            "attacker_base_score": 0.7768,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2522,
+            "damage_factor": 0.4,
+            "excess": 0.5219,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.806,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1518,
+            "attacker_base_score": 0.7201,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1097,
+            "damage_factor": 0.4,
+            "excess": 0.3795,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7705,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1493,
+            "attacker_base_score": 0.7978,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1034,
+            "damage_factor": 0.4,
+            "excess": 0.3732,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6915,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0846,
+            "attacker_base_score": 0.7467,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9417,
+            "damage_factor": 0.4,
+            "excess": 0.2115,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6306,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0681,
+            "attacker_base_score": 0.703,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.9005,
+            "damage_factor": 0.4,
+            "excess": 0.1702,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6404,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7303,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.36060000000000003,
+        "base_score": 0.730265348735647,
+        "cogency": 0.5604465273384723,
+        "cogency_details": {
+          "argument_quality_score": 0.6788168458945071,
+          "coherence_score": 0.44207620878243764,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Secondo l’art. 1564 c.c., la risoluzione è ammessa solo quando l’inadempimento è di notevole importanza e rende impossibile la prosecuzione del rapporto di fiducia; nel caso in esame il difetto, pur grave, è limitato al chilometraggio e al sinistro non dichiarato, elementi che possono essere quantificati economicamente e compensati mediante una riduzione del prezzo, in coerenza con il principio di proporzionalità sancito dall’art. 1493 c.c., il quale prevede che, qualora il compratore decida di mantenere la cosa, il venditore debba restituire il prezzo al netto della riduzione determinata dal vizio. Pertanto, la misura più adeguata è la diminuzione proporzionale del corrispettivo, anziché la risoluzione totale del contratto.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.730265348735647,
+        "nesso_plausibility": 0.36966534873564694,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1490 c.c. il vizio occulta è quello che il venditore, pur avendone conoscenza, non ha comunicato perché non è immediatamente rilevabile dall’acquirente; il chilometraggio, tuttavia, è un dato oggettivo e verificabile al momento della consegna, e il concessionario disponeva della documentazione fornita dal precedente proprietario, perciò il difetto non può essere qualificato come “occulto” ma come elemento noto o facilmente accertabile; di conseguenza la garanzia per vizi occulti non si attiva, in quanto il venditore non può sostenere di non aver avuto la possibilità di verificare il reale conteggio dei chilometri.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5404379684470175,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5404379684470175
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1490 c.c. il vizio occulta è quello che il venditore, pur avendone conoscenza, non ha comunicato perché non è immediatamente rilevabile dall’acquirente; il chilometraggio, tuttavia, è un dato oggettivo e verificabile al momento della consegna, e il concessionario disponeva della documentazione fornita dal precedente proprietario, perciò il difetto non può essere qualificato come “occulto” ma come elemento noto o facilmente accertabile; di conseguenza la garanzia per vizi occulti non si attiva, in quanto il venditore non può sostenere di non aver avuto la possibilità di verificare il reale conteggio dei chilometri."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1533,
+            "attacker_base_score": 0.7768,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0977,
+            "damage_factor": 0.4,
+            "excess": 0.3832,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7066,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1396,
+            "attacker_base_score": 0.7467,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0635,
+            "damage_factor": 0.4,
+            "excess": 0.349,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7122,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1302,
+            "attacker_base_score": 0.7978,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0399,
+            "damage_factor": 0.4,
+            "excess": 0.3255,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6517,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0518,
+            "attacker_base_score": 0.703,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8439,
+            "damage_factor": 0.4,
+            "excess": 0.1294,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6002,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7145,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7201,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.2929,
+        "base_score": 0.7144712054028171,
+        "cogency": 0.5861618344466073,
+        "cogency_details": {
+          "argument_quality_score": 0.6839518897789361,
+          "coherence_score": 0.48837177911427854,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 640 c.p., la truffa si configura solo quando, mediante artifizi o raggiri, l’autore induce il soggetto in errore; la mera omissione di un fatto pregresso, senza una dichiarazione falsa o un inganno attivo, non soddisfa il requisito del raggiro. Nel caso di specie il concessionario non ha fornito alcuna informazione falsa sul sinistro strutturale, limitandosi a non menzionarlo, perciò manca il dolo di inganno necessario a integrare il reato di truffa.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7144712054028171,
+        "nesso_plausibility": 0.42157120540281706,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 640 c.p. il reato di truffa richiede la presenza di dolo specifico, ossia la consapevole volontà di ingannare l’acquirente, requisito confermato anche dall’art. 1439 c.c.; il semplice fatto che il chilometraggio dichiarato fosse errato non è sufficiente a provare tale intenzione, soprattutto se il concessionario si è limitato a riportare i dati contenuti nella documentazione ricevuta dal precedente proprietario, dimostrando così l’assenza di conoscenza della manomissione e di volontà fraudolenta.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1439",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1509_art1439",
+            "title": "Dolo"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5905279102467084,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5905279102467084
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 640 c.p. il reato di truffa richiede la presenza di dolo specifico, ossia la consapevole volontà di ingannare l’acquirente, requisito confermato anche dall’art. 1439 c.c.; il semplice fatto che il chilometraggio dichiarato fosse errato non è sufficiente a provare tale intenzione, soprattutto se il concessionario si è limitato a riportare i dati contenuti nella documentazione ricevuta dal precedente proprietario, dimostrando così l’assenza di conoscenza della manomissione e di volontà fraudolenta."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

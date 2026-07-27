@@ -1,0 +1,211 @@
+{
+  "claim": "Un contratto a prestazioni corrispettive fissava un termine essenziale al 30 giugno, con penale giornaliera e milestone intermedie. La parte debitrice consegna con 40 giorni di ritardo e solo il 60% delle prestazioni promesse. Il creditore sospende il pagamento del saldo, dichiara la volonta di risolvere e chiede danni per costi sostitutivi, perdita di clienti e perdita di chance commerciale. La controparte eccepisce causa non imputabile (ritardi del subfornitore e blocco logistico per sciopero), sostiene che il creditore avesse tollerato il ritardo con comunicazioni interlocutorie e contesta i danni come mediati o non provati. Si chiede di verificare gravita dell'inadempimento, legittimita dell'eccezione di inadempimento, efficacia della risoluzione e perimetro dei danni risarcibili.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "Il ritardo di 40 giorni e la consegna parziale del 60 % configurano un inadempimento di non scarsa importanza di un termine essenziale (art. 1457 c.c.), perciò il creditore è legittimato ad invocare l’eccezione di inadempimento (art. 1460 c.c.) e a risolvere il contratto (art. 1453 c.c.) con efficacia, avendo comunicato la risoluzione entro i termini di legge (art. 1517 c.c.). L’eccezione di causa non imputabile del debitore è inammissibile, poiché non ha provato l’impossibilità della prestazione (art. 1218 c.c.); di conseguenza la penale giornaliera resta esigibile, seppur ridotta in proporzione all’esecuzione parziale (art. 1384 c.c.), e il creditore può ottenere il risarcimento dei costi di esecuzione sostitutiva e della perdita di clientela, mentre la perdita di chance è risarcibile solo se debitamente provata e limitata al danno prevedibile (art. 1225 c.c.), evitando il cumulo illecito con la penale (art. 1383 c.c.).",
+  "routing": {
+    "additional_causal_types": [
+      "CIV_CONTRACT_REMEDIES"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 1455 c.c.",
+          "role": "Non scarsa importanza dell'inadempimento"
+        },
+        {
+          "ref": "Art. 1457 c.c.",
+          "role": "Termine essenziale"
+        },
+        {
+          "ref": "Art. 1460 c.c.",
+          "role": "Eccezione di inadempimento"
+        },
+        {
+          "ref": "Art. 1382 c.c.",
+          "role": "Clausola penale"
+        },
+        {
+          "ref": "Art. 1384 c.c.",
+          "role": "Riduzione equitativa della penale"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 1218 c.c.",
+          "role": "Responsabilità del debitore per inadempimento"
+        },
+        {
+          "ref": "Art. 1453 c.c.",
+          "role": "Risoluzione per inadempimento e cumulo con risarcimento"
+        }
+      ]
+    },
+    "causal_type_id": "CIV_CONTRACT_REMEDIES",
+    "claim": "Un contratto a prestazioni corrispettive fissava un termine essenziale al 30 giugno, con penale giornaliera e milestone intermedie. La parte debitrice consegna con 40 giorni di ritardo e solo il 60% delle prestazioni promesse. Il creditore sospende il pagamento del saldo, dichiara la volonta di risolvere e chiede danni per costi sostitutivi, perdita di clienti e perdita di chance commerciale. La controparte eccepisce causa non imputabile (ritardi del subfornitore e blocco logistico per sciopero), sostiene che il creditore avesse tollerato il ritardo con comunicazioni interlocutorie e contesta i danni come mediati o non provati. Si chiede di verificare gravita dell'inadempimento, legittimita dell'eccezione di inadempimento, efficacia della risoluzione e perimetro dei danni risarcibili.",
+    "domain": "CIVILE",
+    "principle_tests": [
+      {
+        "description": "Verifica se l'inadempimento supera la soglia di non scarsa importanza",
+        "id": "BREACH_SERIOUSNESS",
+        "name": "Gravità dell'inadempimento"
+      },
+      {
+        "description": "Controlla compatibilità e limiti tra risoluzione, caparra, penale e risarcimento",
+        "id": "REMEDY_COMPATIBILITY",
+        "name": "Compatibilità tra rimedi"
+      }
+    ],
+    "theory_id": "T_CIV_REMEDIES"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "art1457",
+      "libro": "CC Libro IV",
+      "score": 0.9761207736800391,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1527_art1457",
+      "testo": "Se il termine fissato per la prestazione di una delle parti deve considerarsi essenziale nell'interesse dell'altra, questa, salvo patto o uso contrario, se vuole esigerne l'esecuzione nonostante la scadenza del termine, deve darne notizia all'altra parte entro tre giorni. In mancanza, il contratto s'intende risoluto di diritto anche se non è stata espressamente pattuita la risoluzione.",
+      "titolo": "Termine essenziale per una delle parti"
+    },
+    {
+      "articolo": "art1517",
+      "libro": "CC Libro IV",
+      "score": 0.8791823949005919,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1592_art1517",
+      "testo": "La risoluzione ha luogo di diritto a favore del contraente che, prima della scadenza del termine stabilito, abbia offerto all'altro, nelle forme di uso, la consegna della cosa o il pagamento del prezzo, se l'altra parte non adempie la propria obbligazione. La risoluzione di diritto ha luogo pure a favore del venditore, se, alla scadenza del termine stabilito per la consegna, il compratore, la cui obbligazione di pagare il prezzo non sia scaduta, non si presenta per ricevere la cosa preventivamente offerta, ovvero non l'accetta. Il contraente che intende valersi della risoluzione disposta dal presente articolo deve darne comunicazione all'altra parte entro otto giorni dalla scadenza del termine; in mancanza di tale comunicazione, si osservano le disposizioni generali sulla risoluzione per inadempimento.",
+      "titolo": "Risoluzione di diritto"
+    },
+    {
+      "articolo": "art1382",
+      "libro": "CC Libro IV",
+      "score": 0.8490875094855062,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1452_art1382",
+      "testo": "La clausola, con cui si conviene che, in caso d'inadempimento o di ritardo nell'adempimento, uno dei contraenti è tenuto a una determinata prestazione, ha l'effetto di limitare il risarcimento alla prestazione promessa, se non è stata convenuta la risarcibilità del danno ulteriore. La penale è dovuta indipendentemente dalla prova del danno.",
+      "titolo": "Effetti della clausola penale"
+    },
+    {
+      "articolo": "art1453",
+      "libro": "CC Libro IV",
+      "score": 0.8413640916679315,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1523_art1453",
+      "testo": "Nei contratti con prestazioni corrispettive, quando uno dei contraenti non adempie le sue obbligazioni, l'altro può a sua scelta chiedere l'adempimento o la risoluzione del contratto, salvo, in ogni caso, il risarcimento del danno. La risoluzione può essere domandata anche quando il giudizio è stato promosso per ottenere l'adempimento; ma non può più chiedersi l'adempimento quando è stata domandata la risoluzione. Dalla data della domanda di risoluzione l'inadempiente non può più adempiere la propria obbligazione.",
+      "titolo": "Risolubilità del contratto per inadempimento"
+    },
+    {
+      "articolo": "art1460",
+      "libro": "CC Libro IV",
+      "score": 0.7959028346908147,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1530_art1460",
+      "testo": "Nei contratti con prestazioni corrispettive, ciascuno dei contraenti può rifiutarsi di adempiere la sua obbligazione, se l'altro non adempie o non offre di adempiere contemporaneamente la propria, salvo che termini diversi per l'adempimento siano stati stabiliti dalle parti o risultino dalla natura del contratto. Tuttavia non può rifiutarsi l'esecuzione se, avuto riguardo alle circostanze, il rifiuto è contrario alla buona fede.",
+      "titolo": "Eccezione d'inadempimento"
+    },
+    {
+      "articolo": "art1458",
+      "libro": "CC Libro IV",
+      "score": 0.7372181514645623,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1528_art1458",
+      "testo": "La risoluzione del contratto per inadempimento ha effetto retroattivo tra le parti, salvo il caso di contratti ad esecuzione continuata o periodica, riguardo ai quali l'effetto della risoluzione non si estende alle prestazioni già eseguite. La risoluzione, anche se è stata espressamente pattuita, non pregiudica i diritti acquistati dai terzi, salvi gli effetti della trascrizione della domanda di risoluzione.",
+      "titolo": "Effetti della risoluzione"
+    },
+    {
+      "articolo": "art1384",
+      "libro": "CC Libro IV",
+      "score": 0.7137572317498863,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1454_art1384",
+      "testo": "La penale può essere diminuita equamente dal giudice, se l'obbligazione principale è stata eseguita in parte ovvero se l'ammontare della penale è manifestamente eccessivo, avuto sempre riguardo all'interesse che il creditore aveva all'adempimento.",
+      "titolo": "Riduzione della penale"
+    },
+    {
+      "articolo": "art1218",
+      "libro": "CC Libro IV",
+      "score": 0.7030383973288816,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1288_art1218",
+      "testo": "Il debitore che non esegue esattamente la prestazione dovuta è tenuto al risarcimento del danno, se non prova che l'inadempimento o il ritardo è stato determinato da impossibilità della prestazione derivante da causa a lui non imputabile.",
+      "titolo": "Responsabilità del debitore"
+    },
+    {
+      "articolo": "art1223",
+      "libro": "CC Libro IV",
+      "score": 0.693562482926089,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1293_art1223",
+      "testo": "Il risarcimento del danno per l'inadempimento o per il ritardo deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta.",
+      "titolo": "Risarcimento del danno"
+    },
+    {
+      "articolo": "art1225",
+      "libro": "CC Libro IV",
+      "score": 0.69017064804978,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1295_art1225",
+      "testo": "Se l'inadempimento o il ritardo non dipende da dolo del debitore, il risarcimento è limitato al danno che poteva prevedersi nel tempo in cui è sorta l'obbligazione.",
+      "titolo": "Prevedibilità del danno"
+    },
+    {
+      "articolo": "art1564",
+      "libro": "CC Libro IV",
+      "score": 0.6574291698285022,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1647_art1564",
+      "testo": "In caso d'inadempimento di una delle parti relativo a singole prestazioni, l'altra può chiedere la risoluzione del contratto, se l'inadempimento ha una notevole importanza ed è tale da menomare la fiducia nell'esattezza dei successivi adempimenti.",
+      "titolo": "Risoluzione del contratto"
+    },
+    {
+      "articolo": "art1383",
+      "libro": "CC Libro IV",
+      "score": 0.5701818181818182,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1453_art1383",
+      "testo": "Il creditore non può domandare insieme la prestazione principale e la penale, se questa non è stata stipulata per il semplice ritardo.",
+      "titolo": "Divieto di cumulo"
+    },
+    {
+      "articolo": "art1227",
+      "libro": "CC Libro IV",
+      "score": 0.5183426923660648,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1297_art1227",
+      "testo": "Se il fatto colposo del creditore ha concorso a cagionare il danno, il risarcimento è diminuito secondo la gravità della colpa e l'entità delle conseguenze che ne sono derivate. Il risarcimento non è dovuto per i danni che il creditore avrebbe potuto evitare usando l'ordinaria diligenza.",
+      "titolo": "Concorso del fatto colposo del creditore"
+    },
+    {
+      "articolo": "art1226",
+      "libro": "CC Libro IV",
+      "score": 0.5157818181818182,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1296_art1226",
+      "testo": "Se il danno non può essere provato nel suo preciso ammontare, è liquidato dal giudice con valutazione equitativa.",
+      "titolo": "Valutazione equitativa del danno"
+    },
+    {
+      "articolo": "art1184",
+      "libro": "CC Libro IV",
+      "score": 0.5131636363636364,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1254_art1184",
+      "testo": "Se per l'adempimento è fissato un termine, questo si presume a favore del debitore, qualora non risulti stabilito a favore del creditore o di entrambi.",
+      "titolo": "Termine"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

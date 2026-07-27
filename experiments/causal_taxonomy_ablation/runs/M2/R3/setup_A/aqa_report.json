@@ -1,0 +1,1970 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 0,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.0,
+      "attack_coverage_ratio": 0.0,
+      "attack_coverage_score": 0.0,
+      "attacks_avg": 0.3257,
+      "base_score_avg": 0.7364759511898967,
+      "cogency_avg": 0.5944633685077789,
+      "net_plausibility": 0.4068751668120242,
+      "net_plausibility_adjusted": 0.4068751668120242,
+      "net_plausibility_raw": 0.41077595118989674,
+      "norm_support_avg": 0.8408847981558047,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.062412550045961336,
+      "redundancy_penalty": 0.0039007843778725835,
+      "semantics_avg": 0.7392767379174705
+    },
+    "pro": {
+      "attacks_avg": 0.0096875,
+      "base_score_avg": 0.8230789915463468,
+      "cogency_avg": 0.6570631530724257,
+      "net_plausibility": 0.8230789915463468,
+      "net_plausibility_adjusted": 0.8230789915463468,
+      "net_plausibility_dialectical_raw": 0.8133914915463467,
+      "net_plausibility_intrinsic_raw": 0.8230789915463468,
+      "net_plausibility_raw": 0.8230789915463468,
+      "norm_support_avg": 0.9602211995389511,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.25763810563752854,
+      "redundancy_penalty": 0.06440952640938213,
+      "semantics_avg": 0.8062385526967953
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2108,
+            "attacker_base_score": 0.8304,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.3136,
+            "damage_factor": 0.4,
+            "excess": 0.5271,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.791,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7865,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1822,
+            "attacker_base_score": 0.825,
+            "attacker_link_id": "S8->S9",
+            "attacker_role": "support",
+            "boosted_attack": 1.242,
+            "damage_factor": 0.4,
+            "excess": 0.4555,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7527,
+            "reason": "active: derogation",
+            "target_base_score": 0.7865,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1769,
+            "attacker_base_score": 0.8395,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "boosted_attack": 1.2289,
+            "damage_factor": 0.4,
+            "excess": 0.4423,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7319,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation",
+            "target_base_score": 0.7865,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0317,
+            "attacker_base_score": 0.8693,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.8658,
+            "damage_factor": 0.4,
+            "excess": 0.0793,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8299,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7865,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7421,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7107,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.798,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7865,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8815,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8052,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.393,
+        "base_score": 0.7865167700653803,
+        "cogency": 0.6521576191226979,
+        "cogency_details": {
+          "argument_quality_score": 0.7169845809006808,
+          "coherence_score": 0.5873306573447148,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Per configurare l’infedeltà patrimoniale ex art. 2634 c.c. occorre provare che l’amministratore abbia agito in conflitto di interessi e con l’intento di procurare a sé o a terzi un ingiusto profitto mediante atti di disposizione dei beni del condominio; i fatti noti, tuttavia, si limitano a un utilizzo temporaneo dei fondi con successiva restituzione parziale, senza evidenza di un vantaggio patrimoniale definitivo né di un conflitto di interessi, perciò l’elemento soggettivo richiesto dall’articolo risulta non accertato.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7865167700653803,
+        "nesso_plausibility": 0.39351677006538033,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare che, pur avendo il possesso dei fondi, l’amministratore abbia agito con dolo specifico di appropriarseli per un ingiusto profitto, intendendo privare il condominio in modo permanente. La circostanza dichiarata dall’amministratore – utilizzo temporaneo dei versamenti per far fronte a uscite urgenti e successivo reintegro parziale delle somme – introduce un dubbio rilevante sull’esistenza di tale intento, poiché il comportamento può essere ricondotto a una mera gestione difforme o a una gestione di liquidità, non a una volontà di appropriarsi definitivamente del denaro. In assenza di prova concreta dell’intenzione di trattenere le somme a titolo definitivo e di profitto ingiusto, l’elemento soggettivo del reato risulta non soddisfatto, perciò la qualificazione ex art. 646 c.p. resta contestabile.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.764684007779162,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.764684007779162
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare che, pur avendo il possesso dei fondi, l’amministratore abbia agito con dolo specifico di appropriarseli per un ingiusto profitto, intendendo privare il condominio in modo permanente. La circostanza dichiarata dall’amministratore – utilizzo temporaneo dei versamenti per far fronte a uscite urgenti e successivo reintegro parziale delle somme – introduce un dubbio rilevante sull’esistenza di tale intento, poiché il comportamento può essere ricondotto a una mera gestione difforme o a una gestione di liquidità, non a una volontà di appropriarsi definitivamente del denaro. In assenza di prova concreta dell’intenzione di trattenere le somme a titolo definitivo e di profitto ingiusto, l’elemento soggettivo del reato risulta non soddisfatto, perciò la qualificazione ex art. 646 c.p. resta contestabile."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2584,
+            "attacker_base_score": 0.8693,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3324,
+            "damage_factor": 0.4,
+            "excess": 0.6459,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7663,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6864,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7421,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6625,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7439,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6864,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8304,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8815,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8052,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8395,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.825,
+            "attacker_link_id": "S8->S9",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs delitti)"
+          }
+        ],
+        "attacks_sum": 0.2584,
+        "base_score": 0.6864351323144131,
+        "cogency": 0.5367691178928599,
+        "cogency_details": {
+          "argument_quality_score": 0.5898654458621246,
+          "coherence_score": 0.4836727899235951,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il danno patrimoniale è riconducibile al ritardo nei pagamenti, che deriva dalla violazione dell’obbligo contrattuale di corretta amministrazione, non da un fatto illecito autonomo dell’amministratore; pertanto il nesso causale richiesto per la responsabilità extracontrattuale non si configura. Di conseguenza, la responsabilità, se sussiste, deve essere valutata nell’ambito contrattuale e non in quello extracontrattuale.",
+        "libro": "CC Libro V",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6864351323144131,
+        "nesso_plausibility": 0.4280351323144131,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Per configurare l’infedeltà patrimoniale ex art. 2634 c.c. occorre provare che l’amministratore abbia agito in conflitto di interessi e con l’intento di procurare a sé o a terzi un ingiusto profitto mediante atti di disposizione dei beni del condominio; i fatti noti, tuttavia, si limitano a un utilizzo temporaneo dei fondi con successiva restituzione parziale, senza evidenza di un vantaggio patrimoniale definitivo né di un conflitto di interessi, perciò l’elemento soggettivo richiesto dall’articolo risulta non accertato.",
+        "retrieved_norms": [
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7138694680557791,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7138694680557791
+        },
+        "severity_category": "lavoro",
+        "source": "codice_civile",
+        "text": "Per configurare l’infedeltà patrimoniale ex art. 2634 c.c. occorre provare che l’amministratore abbia agito in conflitto di interessi e con l’intento di procurare a sé o a terzi un ingiusto profitto mediante atti di disposizione dei beni del condominio; i fatti noti, tuttavia, si limitano a un utilizzo temporaneo dei fondi con successiva restituzione parziale, senza evidenza di un vantaggio patrimoniale definitivo né di un conflitto di interessi, perciò l’elemento soggettivo richiesto dall’articolo risulta non accertato."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0044,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7532,
+            "damage_factor": 0.4,
+            "excess": 0.011,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.798,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7421,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6128,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7439,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7421,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0044,
+        "base_score": 0.7421329268066358,
+        "cogency": 0.6422258522124635,
+        "cogency_details": {
+          "argument_quality_score": 0.6489185522871801,
+          "coherence_score": 0.6355331521377471,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti descritti – utilizzo da parte dell’amministratore di somme versate dai condomini per spese personali, versamento su conto non dedicato al condominio e assenza di giustificativi – si configurano tutti gli elementi dell’art. 646 c.p.: possesso del denaro in virtù del ruolo di amministratore, sua appropriazione per profitto ingiusto e volontario, e conseguente danno per i condomini, perciò il comportamento è penalmente qualificabile come appropriazione indebita (art. 646 c.p.).",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7421329268066358,
+        "nesso_plausibility": 0.7377329268066358,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Dal reclamo emergono i seguenti fatti: l’amministratore di condominio ha impiegato somme versate dai condomini per spese di natura personale, ha ritardato i pagamenti ai fornitori generando interessi di mora, e ha effettuato alcuni versamenti su un conto non dedicato al condominio senza fornire giustificativi per numerose operazioni; i condomini hanno promosso un’azione civile di risarcimento e hanno presentato querela penale; l’amministratore, in difesa, sostiene di aver temporaneamente coperto uscite urgenti e di aver successivamente reintegrato parte delle somme sottratte.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7940720487102508,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7940720487102508
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Dal reclamo emergono i seguenti fatti: l’amministratore di condominio ha impiegato somme versate dai condomini per spese di natura personale, ha ritardato i pagamenti ai fornitori generando interessi di mora, e ha effettuato alcuni versamenti su un conto non dedicato al condominio senza fornire giustificativi per numerose operazioni; i condomini hanno promosso un’azione civile di risarcimento e hanno presentato querela penale; l’amministratore, in difesa, sostiene di aver temporaneamente coperto uscite urgenti e di aver successivamente reintegrato parte delle somme sottratte."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0731,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.052,
+            "damage_factor": 0.4,
+            "excess": 0.1827,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7663,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8693,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7833,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8299,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8693,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0731,
+        "base_score": 0.8693476597312351,
+        "cogency": 0.7215181820277905,
+        "cogency_details": {
+          "argument_quality_score": 0.7403041921289446,
+          "coherence_score": 0.7027321719266364,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Alla luce dei fatti – utilizzo consapevole da parte dell’amministratore di somme versate dai condomini per spese personali, versamento su conto non dedicato e assenza di giustificativi – si può ritenere presente il dolo previsto dall’art. 42 c.p., poiché l’amministratore ha agito con coscienza e volontà di procurare a sé un ingiusto profitto, prevedendo la lesione patrimoniale del condominio; in mancanza di prova di una mera negligenza, l’elemento psicologico richiesto dall’art. 43 c.p. (evento previsto e voluto) risulta soddisfatto, configurando così il reato di appropriazione indebita ex art. 646 c.p. con dolo.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8693476597312351,
+        "nesso_plausibility": 0.7962476597312351,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Alla luce dei fatti descritti – utilizzo da parte dell’amministratore di somme versate dai condomini per spese personali, versamento su conto non dedicato al condominio e assenza di giustificativi – si configurano tutti gli elementi dell’art. 646 c.p.: possesso del denaro in virtù del ruolo di amministratore, sua appropriazione per profitto ingiusto e volontario, e conseguente danno per i condomini, perciò il comportamento è penalmente qualificabile come appropriazione indebita (art. 646 c.p.).",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "42",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8429740170763266,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8429740170763266
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Alla luce dei fatti descritti – utilizzo da parte dell’amministratore di somme versate dai condomini per spese personali, versamento su conto non dedicato al condominio e assenza di giustificativi – si configurano tutti gli elementi dell’art. 646 c.p.: possesso del denaro in virtù del ruolo di amministratore, sua appropriazione per profitto ingiusto e volontario, e conseguente danno per i condomini, perciò il comportamento è penalmente qualificabile come appropriazione indebita (art. 646 c.p.)."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7466,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.791,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8304,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs lavoro)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.830361447083588,
+        "cogency": 0.6505396959833967,
+        "cogency_details": {
+          "argument_quality_score": 0.7267585439343522,
+          "coherence_score": 0.5743208480324412,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Alla luce dei fatti, l’amministratore, in qualità di soggetto incaricato della gestione patrimoniale del condominio, ha disposto le somme versate dai condomini a proprio vantaggio personale, configurando un “atto di disposizione dei beni” in conflitto con l’interesse condominiale previsto dall’art. 2634 c.c.; tale condotta, finalizzata a procurare a sé un ingiusto profitto e a cagionare un danno patrimoniale al condominio, soddisfa i requisiti dell’infedeltà patrimoniale. Inoltre, l’utilizzo di un conto non dedicato al condominio e la mancata produzione di giustificativi rafforzano la dimostrazione del conflitto di interessi e dell’intento di appropriarsi indebitamente dei fondi. Pertanto, la fattispecie di infedeltà patrimoniale appare perseguibile penalmente ai sensi dell’art. 2634 c.c.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.830361447083588,
+        "nesso_plausibility": 0.830361447083588,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Alla luce dei fatti – utilizzo consapevole da parte dell’amministratore di somme versate dai condomini per spese personali, versamento su conto non dedicato e assenza di giustificativi – si può ritenere presente il dolo previsto dall’art. 42 c.p., poiché l’amministratore ha agito con coscienza e volontà di procurare a sé un ingiusto profitto, prevedendo la lesione patrimoniale del condominio; in mancanza di prova di una mera negligenza, l’elemento psicologico richiesto dall’art. 43 c.p. (evento previsto e voluto) risulta soddisfatto, configurando così il reato di appropriazione indebita ex art. 646 c.p. con dolo.",
+        "retrieved_norms": [
+          {
+            "articolo": "42",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          },
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7839984609618964,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7839984609618964
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Alla luce dei fatti – utilizzo consapevole da parte dell’amministratore di somme versate dai condomini per spese personali, versamento su conto non dedicato e assenza di giustificativi – si può ritenere presente il dolo previsto dall’art. 42 c.p., poiché l’amministratore ha agito con coscienza e volontà di procurare a sé un ingiusto profitto, prevedendo la lesione patrimoniale del condominio; in mancanza di prova di una mera negligenza, l’elemento psicologico richiesto dall’art. 43 c.p. (evento previsto e voluto) risulta soddisfatto, configurando così il reato di appropriazione indebita ex art. 646 c.p. con dolo."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs lavoro)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7916371103636517,
+        "cogency": 0.6676333691993195,
+        "cogency_details": {
+          "argument_quality_score": 0.6737850513472599,
+          "coherence_score": 0.6614816870513792,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "L’amministratore, in virtù del mandato di gestione conferitogli dal condominio, è tenuto ad eseguire esattamente la prestazione dovuta, ossia la corretta amministrazione delle somme versate dai condomini; il suo utilizzo di tali fondi per spese personali, il ritardo nei pagamenti ai fornitori e la mancanza di giustificativi configurano una violazione dell’obbligo contrattuale di diligenza e di corretta destinazione delle risorse. Ai sensi dell’art. 1218 c.c., il debitore che non adempie esattamente la prestazione è tenuto al risarcimento del danno, salvo prova di impossibilità non imputabile, e pertanto l’amministratore è responsabile contrattualmente per i danni subiti dal condominio e dai singoli condomini.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7916371103636517,
+        "nesso_plausibility": 0.7916371103636517,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Alla luce dei fatti, l’amministratore, in qualità di soggetto incaricato della gestione patrimoniale del condominio, ha disposto le somme versate dai condomini a proprio vantaggio personale, configurando un “atto di disposizione dei beni” in conflitto con l’interesse condominiale previsto dall’art. 2634 c.c.; tale condotta, finalizzata a procurare a sé un ingiusto profitto e a cagionare un danno patrimoniale al condominio, soddisfa i requisiti dell’infedeltà patrimoniale. Inoltre, l’utilizzo di un conto non dedicato al condominio e la mancata produzione di giustificativi rafforzano la dimostrazione del conflitto di interessi e dell’intento di appropriarsi indebitamente dei fondi. Pertanto, la fattispecie di infedeltà patrimoniale appare perseguibile penalmente ai sensi dell’art. 2634 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          },
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7662760586967782,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7662760586967782
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Alla luce dei fatti, l’amministratore, in qualità di soggetto incaricato della gestione patrimoniale del condominio, ha disposto le somme versate dai condomini a proprio vantaggio personale, configurando un “atto di disposizione dei beni” in conflitto con l’interesse condominiale previsto dall’art. 2634 c.c.; tale condotta, finalizzata a procurare a sé un ingiusto profitto e a cagionare un danno patrimoniale al condominio, soddisfa i requisiti dell’infedeltà patrimoniale. Inoltre, l’utilizzo di un conto non dedicato al condominio e la mancata produzione di giustificativi rafforzano la dimostrazione del conflitto di interessi e dell’intento di appropriarsi indebitamente dei fondi. Pertanto, la fattispecie di infedeltà patrimoniale appare perseguibile penalmente ai sensi dell’art. 2634 c.c."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs lavoro)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.88145761543087,
+        "cogency": 0.7064149807494557,
+        "cogency_details": {
+          "argument_quality_score": 0.7052948218930203,
+          "coherence_score": 0.7075351396058912,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "L'uso indebito dei fondi condominiali da parte dell'amministratore integra il requisito dell'art. 2043 c.c. di un fatto illecito, poiché l'azione (impiego per spese personali) o l'omissione (ritardo nei pagamenti) è contraria al diritto e provoca un danno patrimoniale al condominio, comprensivo degli interessi di mora maturati. Tale danno è imputabile all'amministratore in via extracontrattuale, poiché la responsabilità non deriva dal mancato adempimento di un obbligo contrattuale ma dalla violazione di un dovere di diligenza previsto dall'ordinamento, e pertanto il condominio può chiedere il risarcimento ai sensi dell'art. 2043 c.c. (e dell'art. 1223 c.c. per la quantificazione).",
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.88145761543087,
+        "nesso_plausibility": 0.88145761543087,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "L’amministratore, in virtù del mandato di gestione conferitogli dal condominio, è tenuto ad eseguire esattamente la prestazione dovuta, ossia la corretta amministrazione delle somme versate dai condomini; il suo utilizzo di tali fondi per spese personali, il ritardo nei pagamenti ai fornitori e la mancanza di giustificativi configurano una violazione dell’obbligo contrattuale di diligenza e di corretta destinazione delle risorse. Ai sensi dell’art. 1218 c.c., il debitore che non adempie esattamente la prestazione è tenuto al risarcimento del danno, salvo prova di impossibilità non imputabile, e pertanto l’amministratore è responsabile contrattualmente per i danni subiti dal condominio e dai singoli condomini.",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.898443737353444,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.898443737353444
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "L’amministratore, in virtù del mandato di gestione conferitogli dal condominio, è tenuto ad eseguire esattamente la prestazione dovuta, ossia la corretta amministrazione delle somme versate dai condomini; il suo utilizzo di tali fondi per spese personali, il ritardo nei pagamenti ai fornitori e la mancanza di giustificativi configurano una violazione dell’obbligo contrattuale di diligenza e di corretta destinazione delle risorse. Ai sensi dell’art. 1218 c.c., il debitore che non adempie esattamente la prestazione è tenuto al risarcimento del danno, salvo prova di impossibilità non imputabile, e pertanto l’amministratore è responsabile contrattualmente per i danni subiti dal condominio e dai singoli condomini."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs lavoro)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.8051912386183366,
+        "cogency": 0.6080941373681055,
+        "cogency_details": {
+          "argument_quality_score": 0.6539936018540374,
+          "coherence_score": 0.5621946728821734,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "Ai sensi dell’art. 185 c.p., ogni reato – tra cui l’appropriazione indebita configurata dall’amministratore – comporta l’obbligo di restituzione delle somme indebitamente prelevate e il risarcimento dei danni patrimoniali subiti dal condominio e dai singoli condomini, comprensivi degli interessi di mora e di eventuali perdite conseguenti; tale obbligo sussiste autonomamente dalla azione civile ma può essere domandato contestualmente al procedimento penale.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.8051912386183366,
+        "nesso_plausibility": 0.8051912386183366,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "L'uso indebito dei fondi condominiali da parte dell'amministratore integra il requisito dell'art. 2043 c.c. di un fatto illecito, poiché l'azione (impiego per spese personali) o l'omissione (ritardo nei pagamenti) è contraria al diritto e provoca un danno patrimoniale al condominio, comprensivo degli interessi di mora maturati. Tale danno è imputabile all'amministratore in via extracontrattuale, poiché la responsabilità non deriva dal mancato adempimento di un obbligo contrattuale ma dalla violazione di un dovere di diligenza previsto dall'ordinamento, e pertanto il condominio può chiedere il risarcimento ai sensi dell'art. 2043 c.c. (e dell'art. 1223 c.c. per la quantificazione).",
+        "retrieved_norms": [
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7425433246930165,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7425433246930165
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "L'uso indebito dei fondi condominiali da parte dell'amministratore integra il requisito dell'art. 2043 c.c. di un fatto illecito, poiché l'azione (impiego per spese personali) o l'omissione (ritardo nei pagamenti) è contraria al diritto e provoca un danno patrimoniale al condominio, comprensivo degli interessi di mora maturati. Tale danno è imputabile all'amministratore in via extracontrattuale, poiché la responsabilità non deriva dal mancato adempimento di un obbligo contrattuale ma dalla violazione di un dovere di diligenza previsto dall'ordinamento, e pertanto il condominio può chiedere il risarcimento ai sensi dell'art. 2043 c.c. (e dell'art. 1223 c.c. per la quantificazione)."
+      },
+      {
+        "argument_id": "chain_7",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6908,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7319,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8395,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs lavoro)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.8394814166850743,
+        "cogency": 0.6248536033770943,
+        "cogency_details": {
+          "argument_quality_score": 0.614426361918962,
+          "coherence_score": 0.6352808448352265,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S8",
+        "conclusion_text": "In base al principio TRACK_SEPARATION, l’azione penale per appropriazione indebita (art. 646 c.p.) e l’azione civile di risarcimento (art. 185 c.p., art. 2043 c.c.) si svolgono su binari distinti: la prima mira alla punizione e alla confisca, la seconda alla restituzione e al risarcimento del danno. Tuttavia, per il principio CUMULABILITY_LIMITS, i condomini non possono ottenere una duplice indennità per lo stesso pregiudizio; il risarcimento civile dovrà essere limitato al valore effettivamente sottratto più gli interessi di mora, escludendo eventuali sanzioni penali o confische già disposte. Pertanto, le pretese civili sono ammissibili e cumulabili con il procedimento penale, purché il loro ammontare non superi la perdita patrimoniale subita, evitando così una sovrapposizione di benefici economici.",
+        "libro": "",
+        "link_id": "S7->S8",
+        "nesso_intrinsic": 0.8394814166850743,
+        "nesso_plausibility": 0.8394814166850743,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S7"
+        ],
+        "premise_text": "Ai sensi dell’art. 185 c.p., ogni reato – tra cui l’appropriazione indebita configurata dall’amministratore – comporta l’obbligo di restituzione delle somme indebitamente prelevate e il risarcimento dei danni patrimoniali subiti dal condominio e dai singoli condomini, comprensivi degli interessi di mora e di eventuali perdite conseguenti; tale obbligo sussiste autonomamente dalla azione civile ma può essere domandato contestualmente al procedimento penale.",
+        "retrieved_norms": [
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8400844522398199,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8400844522398199
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 185 c.p., ogni reato – tra cui l’appropriazione indebita configurata dall’amministratore – comporta l’obbligo di restituzione delle somme indebitamente prelevate e il risarcimento dei danni patrimoniali subiti dal condominio e dai singoli condomini, comprensivi degli interessi di mora e di eventuali perdite conseguenti; tale obbligo sussiste autonomamente dalla azione civile ma può essere domandato contestualmente al procedimento penale."
+      },
+      {
+        "argument_id": "chain_8",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7104,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7527,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.825,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs lavoro)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.8250225176513831,
+        "cogency": 0.6352254036617799,
+        "cogency_details": {
+          "argument_quality_score": 0.6020367465705679,
+          "coherence_score": 0.6684140607529918,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S9",
+        "conclusion_text": "In virtù dell’attività professionale di amministratore, l’uso indebito dei fondi condominiali integra le circostanze aggravanti previste dall’art. 275‑sexies c.p., perciò la condanna penale comporterebbe la confisca obbligatoria del profitto illecito e dei beni correlati ai sensi dell’art. 275‑octies c.p.; parallelamente, la responsabilità civile dell’amministratore si fonda sia sull’inadempimento contrattuale (art. 1218 c.c.) sia sul fatto illecito (art. 2043 c.c.), con diritto del condominio al risarcimento del danno emergente e del lucro cessante secondo l’art. 1223 c.c.; infine, la violazione dell’obbligo fiduciario dell’amministratore è punibile anche ai sensi dell’art. 2634 c.c., che prevede una pena detentiva e la possibilità di querela della parte offesa.",
+        "libro": "",
+        "link_id": "S8->S9",
+        "nesso_intrinsic": 0.8250225176513831,
+        "nesso_plausibility": 0.8250225176513831,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 8,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 9,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S8"
+        ],
+        "premise_text": "In base al principio TRACK_SEPARATION, l’azione penale per appropriazione indebita (art. 646 c.p.) e l’azione civile di risarcimento (art. 185 c.p., art. 2043 c.c.) si svolgono su binari distinti: la prima mira alla punizione e alla confisca, la seconda alla restituzione e al risarcimento del danno. Tuttavia, per il principio CUMULABILITY_LIMITS, i condomini non possono ottenere una duplice indennità per lo stesso pregiudizio; il risarcimento civile dovrà essere limitato al valore effettivamente sottratto più gli interessi di mora, escludendo eventuali sanzioni penali o confische già disposte. Pertanto, le pretese civili sono ammissibili e cumulabili con il procedimento penale, purché il loro ammontare non superi la perdita patrimoniale subita, evitando così una sovrapposizione di benefici economici.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "275",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "275",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7815163218428304,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7815163218428304
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "In base al principio TRACK_SEPARATION, l’azione penale per appropriazione indebita (art. 646 c.p.) e l’azione civile di risarcimento (art. 185 c.p., art. 2043 c.c.) si svolgono su binari distinti: la prima mira alla punizione e alla confisca, la seconda alla restituzione e al risarcimento del danno. Tuttavia, per il principio CUMULABILITY_LIMITS, i condomini non possono ottenere una duplice indennità per lo stesso pregiudizio; il risarcimento civile dovrà essere limitato al valore effettivamente sottratto più gli interessi di mora, escludendo eventuali sanzioni penali o confische già disposte. Pertanto, le pretese civili sono ammissibili e cumulabili con il procedimento penale, purché il loro ammontare non superi la perdita patrimoniale subita, evitando così una sovrapposizione di benefici economici."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.4068751668120242,
+    "contra_adjusted": 0.4068751668120242,
+    "contra_raw": 0.41077595118989674,
+    "final": 0.4162038247343226,
+    "final_adjusted": 0.4162038247343226,
+    "final_raw": 0.41230304035645005,
+    "pro": 0.8230789915463468,
+    "pro_adjusted": 0.8230789915463468,
+    "pro_raw": 0.8230789915463468,
+    "pro_raw_dialectical": 0.8133914915463467,
+    "pro_raw_intrinsic": 0.8230789915463468,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7663,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2584
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.791,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2108
+      },
+      {
+        "attacker": "S8->S9",
+        "attacker_role": "support",
+        "overlap": 0.7527,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1822
+      },
+      {
+        "attacker": "S7->S8",
+        "attacker_role": "support",
+        "overlap": 0.7319,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1769
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7663,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.0731
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8299,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.0317
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.798,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.0044
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S7->S8",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S8->S9",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro V",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "lavoro",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 0,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.8200213330057194,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S5->S6",
+                "S2->S3",
+                "S3->S4",
+                "S6->S7",
+                "S4->S5",
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.8322519671682287,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S7->S8",
+                "S8->S9"
+              ]
+            }
+          ],
+          "bonus": 0.0,
+          "coverage_ratio": 0.0,
+          "enabled": true,
+          "quality_avg": 0.0,
+          "wpcs": 0.0
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7374755140128691,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0039007843778725835,
+          "redundancy_index": 0.062412550045961336
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7762677268859616,
+          "high_similarity_pair_ratio": 0.8214285714285714,
+          "links_count": 8,
+          "pair_count": 28,
+          "penalty": 0.06440952640938213,
+          "redundancy_index": 0.25763810563752854
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2108,
+            "attacker_base_score": 0.8304,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.3136,
+            "damage_factor": 0.4,
+            "excess": 0.5271,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.791,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7865,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1822,
+            "attacker_base_score": 0.825,
+            "attacker_link_id": "S8->S9",
+            "attacker_role": "support",
+            "boosted_attack": 1.242,
+            "damage_factor": 0.4,
+            "excess": 0.4555,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7527,
+            "reason": "active: derogation",
+            "target_base_score": 0.7865,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1769,
+            "attacker_base_score": 0.8395,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "boosted_attack": 1.2289,
+            "damage_factor": 0.4,
+            "excess": 0.4423,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7319,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation",
+            "target_base_score": 0.7865,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0317,
+            "attacker_base_score": 0.8693,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.8658,
+            "damage_factor": 0.4,
+            "excess": 0.0793,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8299,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7865,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7421,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7107,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.798,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7865,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8815,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8052,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.393,
+        "base_score": 0.7865167700653803,
+        "cogency": 0.6521576191226979,
+        "cogency_details": {
+          "argument_quality_score": 0.7169845809006808,
+          "coherence_score": 0.5873306573447148,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Per configurare l’infedeltà patrimoniale ex art. 2634 c.c. occorre provare che l’amministratore abbia agito in conflitto di interessi e con l’intento di procurare a sé o a terzi un ingiusto profitto mediante atti di disposizione dei beni del condominio; i fatti noti, tuttavia, si limitano a un utilizzo temporaneo dei fondi con successiva restituzione parziale, senza evidenza di un vantaggio patrimoniale definitivo né di un conflitto di interessi, perciò l’elemento soggettivo richiesto dall’articolo risulta non accertato.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7865167700653803,
+        "nesso_plausibility": 0.39351677006538033,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare che, pur avendo il possesso dei fondi, l’amministratore abbia agito con dolo specifico di appropriarseli per un ingiusto profitto, intendendo privare il condominio in modo permanente. La circostanza dichiarata dall’amministratore – utilizzo temporaneo dei versamenti per far fronte a uscite urgenti e successivo reintegro parziale delle somme – introduce un dubbio rilevante sull’esistenza di tale intento, poiché il comportamento può essere ricondotto a una mera gestione difforme o a una gestione di liquidità, non a una volontà di appropriarsi definitivamente del denaro. In assenza di prova concreta dell’intenzione di trattenere le somme a titolo definitivo e di profitto ingiusto, l’elemento soggettivo del reato risulta non soddisfatto, perciò la qualificazione ex art. 646 c.p. resta contestabile.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.764684007779162,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.764684007779162
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Per configurare il reato di appropriazione indebita ex art. 646 c.p. è necessario provare che, pur avendo il possesso dei fondi, l’amministratore abbia agito con dolo specifico di appropriarseli per un ingiusto profitto, intendendo privare il condominio in modo permanente. La circostanza dichiarata dall’amministratore – utilizzo temporaneo dei versamenti per far fronte a uscite urgenti e successivo reintegro parziale delle somme – introduce un dubbio rilevante sull’esistenza di tale intento, poiché il comportamento può essere ricondotto a una mera gestione difforme o a una gestione di liquidità, non a una volontà di appropriarsi definitivamente del denaro. In assenza di prova concreta dell’intenzione di trattenere le somme a titolo definitivo e di profitto ingiusto, l’elemento soggettivo del reato risulta non soddisfatto, perciò la qualificazione ex art. 646 c.p. resta contestabile."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2584,
+            "attacker_base_score": 0.8693,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3324,
+            "damage_factor": 0.4,
+            "excess": 0.6459,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7663,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6864,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7421,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6625,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7439,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6864,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8304,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8815,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8052,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8395,
+            "attacker_link_id": "S7->S8",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.825,
+            "attacker_link_id": "S8->S9",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (lavoro vs delitti)"
+          }
+        ],
+        "attacks_sum": 0.2584,
+        "base_score": 0.6864351323144131,
+        "cogency": 0.5367691178928599,
+        "cogency_details": {
+          "argument_quality_score": 0.5898654458621246,
+          "coherence_score": 0.4836727899235951,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il danno patrimoniale è riconducibile al ritardo nei pagamenti, che deriva dalla violazione dell’obbligo contrattuale di corretta amministrazione, non da un fatto illecito autonomo dell’amministratore; pertanto il nesso causale richiesto per la responsabilità extracontrattuale non si configura. Di conseguenza, la responsabilità, se sussiste, deve essere valutata nell’ambito contrattuale e non in quello extracontrattuale.",
+        "libro": "CC Libro V",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6864351323144131,
+        "nesso_plausibility": 0.4280351323144131,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Per configurare l’infedeltà patrimoniale ex art. 2634 c.c. occorre provare che l’amministratore abbia agito in conflitto di interessi e con l’intento di procurare a sé o a terzi un ingiusto profitto mediante atti di disposizione dei beni del condominio; i fatti noti, tuttavia, si limitano a un utilizzo temporaneo dei fondi con successiva restituzione parziale, senza evidenza di un vantaggio patrimoniale definitivo né di un conflitto di interessi, perciò l’elemento soggettivo richiesto dall’articolo risulta non accertato.",
+        "retrieved_norms": [
+          {
+            "articolo": "2634",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2880_art2634",
+            "title": "Infedeltà patrimoniale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7138694680557791,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7138694680557791
+        },
+        "severity_category": "lavoro",
+        "source": "codice_civile",
+        "text": "Per configurare l’infedeltà patrimoniale ex art. 2634 c.c. occorre provare che l’amministratore abbia agito in conflitto di interessi e con l’intento di procurare a sé o a terzi un ingiusto profitto mediante atti di disposizione dei beni del condominio; i fatti noti, tuttavia, si limitano a un utilizzo temporaneo dei fondi con successiva restituzione parziale, senza evidenza di un vantaggio patrimoniale definitivo né di un conflitto di interessi, perciò l’elemento soggettivo richiesto dall’articolo risulta non accertato."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0044,
+            "attacker_base_score": 0.7865,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7532,
+            "damage_factor": 0.4,
+            "excess": 0.011,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.798,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7421,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6864,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6128,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7439,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7421,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0044,
+        "base_score": 0.7421329268066358,
+        "cogency": 0.6422258522124635,
+        "cogency_details": {
+          "argument_quality_score": 0.6489185522871801,
+          "coherence_score": 0.6355331521377471,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti descritti – utilizzo da parte dell’amministratore di somme versate dai condomini per spese personali, versamento su conto non dedicato al condominio e assenza di giustificativi – si configurano tutti gli elementi dell’art. 646 c.p.: possesso del denaro in virtù del ruolo di amministratore, sua appropriazione per profitto ingiusto e volontario, e conseguente danno per i condomini, perciò il comportamento è penalmente qualificabile come appropriazione indebita (art. 646 c.p.).",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7421329268066358,
+        "nesso_plausibility": 0.7377329268066358,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Dal reclamo emergono i seguenti fatti: l’amministratore di condominio ha impiegato somme versate dai condomini per spese di natura personale, ha ritardato i pagamenti ai fornitori generando interessi di mora, e ha effettuato alcuni versamenti su un conto non dedicato al condominio senza fornire giustificativi per numerose operazioni; i condomini hanno promosso un’azione civile di risarcimento e hanno presentato querela penale; l’amministratore, in difesa, sostiene di aver temporaneamente coperto uscite urgenti e di aver successivamente reintegrato parte delle somme sottratte.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7940720487102508,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7940720487102508
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Dal reclamo emergono i seguenti fatti: l’amministratore di condominio ha impiegato somme versate dai condomini per spese di natura personale, ha ritardato i pagamenti ai fornitori generando interessi di mora, e ha effettuato alcuni versamenti su un conto non dedicato al condominio senza fornire giustificativi per numerose operazioni; i condomini hanno promosso un’azione civile di risarcimento e hanno presentato querela penale; l’amministratore, in difesa, sostiene di aver temporaneamente coperto uscite urgenti e di aver successivamente reintegrato parte delle somme sottratte."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

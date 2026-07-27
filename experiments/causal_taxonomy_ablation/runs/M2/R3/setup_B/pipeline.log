@@ -1,0 +1,34 @@
+[2026-03-06T17:21:55.642619] Pipeline log - Setup B
+Claim: L'amministratore di condominio usa somme versate dai condomini per spese personali, ritardando pagamenti ai fornitori e generando interessi di mora. Alcuni pagamenti risultano girati su conto non dedi
+======================================================================
+Status: ok
+Duration: 1228.31s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 10
+  Arguments: 1
+  Causal type: MIXED_PEN_CIV_CONCURRENCE
+
+[COUNTER]
+  Chain steps: 5
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.8230789915463468
+  Net contra: 0.3787243345368804
+  Net final: 0.44435465700946636
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

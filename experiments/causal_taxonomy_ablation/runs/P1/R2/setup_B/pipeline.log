@@ -1,0 +1,34 @@
+[2026-03-03T18:36:25.870692] Pipeline log - Setup B
+Claim: Durante un controllo contabile in una s.r.l. emerge che l'amministratore unico ha disposto 6 bonifici per complessivi 45.000 euro dal conto sociale verso propri creditori personali. Egli sostiene che 
+======================================================================
+Status: ok
+Duration: 1073.74s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 7
+  Arguments: 1
+  Causal type: PEN_PROPERTY_QUALIFICATION
+
+[COUNTER]
+  Chain steps: 4
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7502615551627023
+  Net contra: 0.39084842012710114
+  Net final: 0.3594131350356012
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

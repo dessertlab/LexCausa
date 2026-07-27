@@ -1,0 +1,1598 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 3,
+      "attack_coverage_axes_total": 4,
+      "attack_coverage_bonus": 0.0477351,
+      "attack_coverage_ratio": 0.75,
+      "attack_coverage_score": 0.39779250000000005,
+      "attacks_avg": 0.1543,
+      "base_score_avg": 0.7398940194821493,
+      "cogency_avg": 0.5757443255474022,
+      "net_plausibility": 0.6198939560277604,
+      "net_plausibility_adjusted": 0.6198939560277604,
+      "net_plausibility_raw": 0.5855940194821492,
+      "norm_support_avg": 0.903660704987056,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.21496261527022037,
+      "redundancy_penalty": 0.013435163454388773,
+      "semantics_avg": 0.6856881327436872
+    },
+    "pro": {
+      "attacks_avg": 0.1415,
+      "base_score_avg": 0.7594138618095272,
+      "cogency_avg": 0.6168976356863833,
+      "net_plausibility": 0.7594138618095272,
+      "net_plausibility_adjusted": 0.7594138618095272,
+      "net_plausibility_dialectical_raw": 0.6179138618095271,
+      "net_plausibility_intrinsic_raw": 0.7594138618095272,
+      "net_plausibility_raw": 0.7594138618095272,
+      "norm_support_avg": 0.9247470191601946,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.1594436922211964,
+      "redundancy_penalty": 0.0398609230552991,
+      "semantics_avg": 0.681485878131781
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1633,
+            "attacker_base_score": 0.6858,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1556,
+            "damage_factor": 0.4,
+            "excess": 0.4083,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8425,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1453,
+            "attacker_base_score": 0.8087,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1104,
+            "damage_factor": 0.4,
+            "excess": 0.3631,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8076,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1303,
+            "attacker_base_score": 0.7654,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.073,
+            "damage_factor": 0.4,
+            "excess": 0.3258,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8246,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0382,
+            "attacker_base_score": 0.7739,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.8426,
+            "damage_factor": 0.4,
+            "excess": 0.0954,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9073,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.745,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.6468,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8269,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7777,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.8651,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.3086,
+        "base_score": 0.7472184649849115,
+        "cogency": 0.6004986645907451,
+        "cogency_details": {
+          "argument_quality_score": 0.6927132668858734,
+          "coherence_score": 0.5082840622956168,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La morosità diffusa non può escludere la custodia della terrazza da parte del condominio, perché l’art. 2051 c.c. impone la responsabilità per i danni cagionati dalle cose in custodia a prescindere dal rispetto degli obblighi di pagamento dei singoli condomini; la copertura è una cosa comune, non di uso esclusivo del proprietario dell’ultimo piano. Di conseguenza, la mancanza di cassa dovuta alla morosità non sospende né attenua il vincolo di custodia né l’obbligo di risarcimento verso il terzo danneggiato.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7472184649849115,
+        "nesso_plausibility": 0.4386184649849115,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 1123 c.c. la ripartizione delle spese interne riguarda esclusivamente le quote di partecipazione alle spese di conservazione e di godimento delle parti comuni e non può influire sull’obbligo di risarcimento verso un terzo, che deriva dall’art. 2051 c.c. in virtù della custodia della terrazza. Pertanto, anche se il condominio dovesse poi suddividere internamente i costi di eventuali lavori, tale riparto non può ridurre l’importo di € 8.500 dovuto al condomino danneggiato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6853486120428853,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6853486120428853
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1123 c.c. la ripartizione delle spese interne riguarda esclusivamente le quote di partecipazione alle spese di conservazione e di godimento delle parti comuni e non può influire sull’obbligo di risarcimento verso un terzo, che deriva dall’art. 2051 c.c. in virtù della custodia della terrazza. Pertanto, anche se il condominio dovesse poi suddividere internamente i costi di eventuali lavori, tale riparto non può ridurre l’importo di € 8.500 dovuto al condomino danneggiato."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7739,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.745,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8087,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7654,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6858,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7777,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs proprieta)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7325695739793869,
+        "cogency": 0.5509899865040593,
+        "cogency_details": {
+          "argument_quality_score": 0.6134027143192704,
+          "coherence_score": 0.4885772586888481,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La perizia che individua anche lavori privati del proprietario dell’ultimo piano non fornisce una prova certa del nesso causale fra tali interventi e le infiltrazioni; ai sensi dell’art. 1227 c.c., il risarcimento può essere diminuito solo se il concorso del fatto colposo è dimostrato in modo concreto, pertanto la quota da sottrarre al condominio resta indeterminata finché non venga accertata con una perizia tecnica specifica.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7325695739793869,
+        "nesso_plausibility": 0.7325695739793869,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La morosità diffusa non può escludere la custodia della terrazza da parte del condominio, perché l’art. 2051 c.c. impone la responsabilità per i danni cagionati dalle cose in custodia a prescindere dal rispetto degli obblighi di pagamento dei singoli condomini; la copertura è una cosa comune, non di uso esclusivo del proprietario dell’ultimo piano. Di conseguenza, la mancanza di cassa dovuta alla morosità non sospende né attenua il vincolo di custodia né l’obbligo di risarcimento verso il terzo danneggiato.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6860276534444891,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6860276534444891
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La morosità diffusa non può escludere la custodia della terrazza da parte del condominio, perché l’art. 2051 c.c. impone la responsabilità per i danni cagionati dalle cose in custodia a prescindere dal rispetto degli obblighi di pagamento dei singoli condomini; la copertura è una cosa comune, non di uso esclusivo del proprietario dell’ultimo piano. Di conseguenza, la mancanza di cassa dovuta alla morosità non sospende né attenua il vincolo di custodia né l’obbligo di risarcimento verso il terzo danneggiato."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1514,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1525,
+            "damage_factor": 0.4,
+            "excess": 0.3785,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9073,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7739,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.1514,
+        "base_score": 0.7739460125985866,
+        "cogency": 0.6246691410724158,
+        "cogency_details": {
+          "argument_quality_score": 0.627155710601015,
+          "coherence_score": 0.6221825715438165,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La giurisprudenza interpreta la custodia prevista dall’art. 2051 c.c. come l’esercizio del potere di gestione su una cosa di proprietà comune; la terrazza di copertura, essendo parte comune indivisa ai sensi dell’art. 1118 c.c.L'amministratore deve eseguire «le deliberazioni dell'assemblea, convocarla annualmente per l'approvazione del rendiconto condominiale» e curare l'osservanza del regolamento di condominio, disciplinare l'uso delle cose comuni e la fruizione dei servizi nell'interesse comune. Inoltre, deve riscuotere i contributi ed erogare le spese occorrenti per la manutenzione ordinaria delle parti comuni dell'edificio e per l'esercizio dei servizi comuni, compiere gli atti conservativi relativi alle parti comuni dell'edificio ed eseguire gli adempimenti fiscali. L'amministratore deve anche curare la tenuta del registro di anagrafe condominiale, del registro dei verbali delle assemblee, del registro di nomina e revoca dell'amministratore e del registro di contabilità. Deve conservare tutta la documentazione inerente alla propria gestione e fornire al condomino che ne faccia richiesta attestazione relativa allo stato dei pagamenti degli oneri condominiali e delle eventuali liti in corso. Infine, l'amministratore deve redigere il rendiconto condominiale annuale della gestione e convocare l'assemblea per la relativa approvazione entro centottanta giorni. (art. 1130 c.c.), perciò il condominio esercita la custodia sia della struttura sia dell’impermeabilizzazione. Tale qualificazione di custodia sussiste indipendentemente dal fatto che la manutenzione sia stata effettivamente eseguita, poiché la titolarità della cosa rimane collettiva. (c.c. art. 2051, art. 1118, art. 1130)",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7739460125985866,
+        "nesso_plausibility": 0.6225460125985867,
+        "norm_support": 0.9124999999999999,
+        "norm_support_details": {
+          "citation_count": 6,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.9124999999999999,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Si ricostruiscono i fatti così disposti: il condomino ha subito infiltrazioni nell’appartamento con danni a soffitto, pareti e arredi quantificati in € 8.500; due perizie hanno individuato la causa nella terrazza di copertura, una imputando la vetusta impermeabilizzazione condominiale, l’altra rilevando anche lavori privati eseguiti anni prima dal proprietario dell’ultimo piano; l’assemblea aveva deliberato una manutenzione straordinaria della terrazza, mai eseguita per morosità diffusa e mancanza di cassa, e il danneggiato pretende il risarcimento integrale, mentre amministratore e alcuni condomini attribuiscono la responsabilità esclusiva ai morosi o al singolo proprietario che utilizza la terrazza.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1118",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1184_art1118",
+            "title": "Diritti dei partecipanti sulle parti comuni"
+          },
+          {
+            "articolo": "1130",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1118",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1184_art1118",
+            "title": "Diritti dei partecipanti sulle parti comuni"
+          },
+          {
+            "articolo": "1130",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7384842342562062,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7384842342562062
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Si ricostruiscono i fatti così disposti: il condomino ha subito infiltrazioni nell’appartamento con danni a soffitto, pareti e arredi quantificati in € 8.500; due perizie hanno individuato la causa nella terrazza di copertura, una imputando la vetusta impermeabilizzazione condominiale, l’altra rilevando anche lavori privati eseguiti anni prima dal proprietario dell’ultimo piano; l’assemblea aveva deliberato una manutenzione straordinaria della terrazza, mai eseguita per morosità diffusa e mancanza di cassa, e il danneggiato pretende il risarcimento integrale, mentre amministratore e alcuni condomini attribuiscono la responsabilità esclusiva ai morosi o al singolo proprietario che utilizza la terrazza."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1222,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0504,
+            "damage_factor": 0.4,
+            "excess": 0.3054,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8269,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.745,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.1222,
+        "base_score": 0.7449853169496737,
+        "cogency": 0.6012708761523302,
+        "cogency_details": {
+          "argument_quality_score": 0.6416971420611088,
+          "coherence_score": 0.5608446102435515,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1227 c.c., il risarcimento spettante al danneggiato è ridotto nella misura in cui il suo stesso comportamento colposo ha concorso a provocare il danno; pertanto, occorre dimostrare che il condomino non ha omesso di segnalare o di adottare misure di mitigazione per escludere tale riduzione. Contestualmente, la perizia che evidenzia lavori privati eseguiti dal proprietario dell’ultimo piano introduce un ulteriore elemento causale indipendente, per il quale tale proprietario può essere ritenuto responsabile in solido per la quota di danno attribuibile ai suoi interventi, salvo prova della loro conformità e assenza di nesso con la rottura dell’impermeabilizzazione. Di conseguenza, il condominio potrà chiedere al proprietario dell’ultimo piano una quota di contributo proporzionale al nesso causale accertato.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7449853169496737,
+        "nesso_plausibility": 0.6227853169496738,
+        "norm_support": 0.9249999999999998,
+        "norm_support_details": {
+          "citation_count": 7,
+          "citation_count_score": 1.0,
+          "citation_score": 0.8928571428571428,
+          "citation_specificity_score": 0.5714285714285714,
+          "final": 0.9249999999999998,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La giurisprudenza interpreta la custodia prevista dall’art. 2051 c.c. come l’esercizio del potere di gestione su una cosa di proprietà comune; la terrazza di copertura, essendo parte comune indivisa ai sensi dell’art. 1118 c.c.L'amministratore deve eseguire «le deliberazioni dell'assemblea, convocarla annualmente per l'approvazione del rendiconto condominiale» e curare l'osservanza del regolamento di condominio, disciplinare l'uso delle cose comuni e la fruizione dei servizi nell'interesse comune. Inoltre, deve riscuotere i contributi ed erogare le spese occorrenti per la manutenzione ordinaria delle parti comuni dell'edificio e per l'esercizio dei servizi comuni, compiere gli atti conservativi relativi alle parti comuni dell'edificio ed eseguire gli adempimenti fiscali. L'amministratore deve anche curare la tenuta del registro di anagrafe condominiale, del registro dei verbali delle assemblee, del registro di nomina e revoca dell'amministratore e del registro di contabilità. Deve conservare tutta la documentazione inerente alla propria gestione e fornire al condomino che ne faccia richiesta attestazione relativa allo stato dei pagamenti degli oneri condominiali e delle eventuali liti in corso. Infine, l'amministratore deve redigere il rendiconto condominiale annuale della gestione e convocare l'assemblea per la relativa approvazione entro centottanta giorni. (art. 1130 c.c.), perciò il condominio esercita la custodia sia della struttura sia dell’impermeabilizzazione. Tale qualificazione di custodia sussiste indipendentemente dal fatto che la manutenzione sia stata effettivamente eseguita, poiché la titolarità della cosa rimane collettiva. (c.c. art. 2051, art. 1118, art. 1130)",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1118",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1184_art1118",
+            "title": "Diritti dei partecipanti sulle parti comuni"
+          },
+          {
+            "articolo": "1130",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1118",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1184_art1118",
+            "title": "Diritti dei partecipanti sulle parti comuni"
+          },
+          {
+            "articolo": "1130",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6486801803465826,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6486801803465826
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "La giurisprudenza interpreta la custodia prevista dall’art. 2051 c.c. come l’esercizio del potere di gestione su una cosa di proprietà comune; la terrazza di copertura, essendo parte comune indivisa ai sensi dell’art. 1118 c.c.L'amministratore deve eseguire «le deliberazioni dell'assemblea, convocarla annualmente per l'approvazione del rendiconto condominiale» e curare l'osservanza del regolamento di condominio, disciplinare l'uso delle cose comuni e la fruizione dei servizi nell'interesse comune. Inoltre, deve riscuotere i contributi ed erogare le spese occorrenti per la manutenzione ordinaria delle parti comuni dell'edificio e per l'esercizio dei servizi comuni, compiere gli atti conservativi relativi alle parti comuni dell'edificio ed eseguire gli adempimenti fiscali. L'amministratore deve anche curare la tenuta del registro di anagrafe condominiale, del registro dei verbali delle assemblee, del registro di nomina e revoca dell'amministratore e del registro di contabilità. Deve conservare tutta la documentazione inerente alla propria gestione e fornire al condomino che ne faccia richiesta attestazione relativa allo stato dei pagamenti degli oneri condominiali e delle eventuali liti in corso. Infine, l'amministratore deve redigere il rendiconto condominiale annuale della gestione e convocare l'assemblea per la relativa approvazione entro centottanta giorni. (art. 1130 c.c.), perciò il condominio esercita la custodia sia della struttura sia dell’impermeabilizzazione. Tale qualificazione di custodia sussiste indipendentemente dal fatto che la manutenzione sia stata effettivamente eseguita, poiché la titolarità della cosa rimane collettiva. (c.c. art. 2051, art. 1118, art. 1130)"
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1593,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.207,
+            "damage_factor": 0.4,
+            "excess": 0.3983,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.8076,
+            "reason": "active: derogation",
+            "target_base_score": 0.8087,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.1593,
+        "base_score": 0.8087122762192949,
+        "cogency": 0.7138894914584607,
+        "cogency_details": {
+          "argument_quality_score": 0.7243866186325398,
+          "coherence_score": 0.7033923642843816,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione e per la manutenzione straordinaria delle parti comuni, come l’impermeabilizzazione della terrazza, sono a carico di tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione; la morosità di alcuni condomini non esclude l’obbligo di contribuire, il credito del danneggiato potendo essere escusso nei loro confronti mediante azioni esecutive. Qualora il danno sia in parte imputabile a lavori privati eseguiti dal proprietario dell’ultimo piano, la sua quota di partecipazione può essere ridotta proporzionalmente al grado di concorso, mentre la quota residua è ripartita tra gli altri condomini secondo le loro quote di proprietà.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.8087122762192949,
+        "nesso_plausibility": 0.6494122762192949,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1227 c.c., il risarcimento spettante al danneggiato è ridotto nella misura in cui il suo stesso comportamento colposo ha concorso a provocare il danno; pertanto, occorre dimostrare che il condomino non ha omesso di segnalare o di adottare misure di mitigazione per escludere tale riduzione. Contestualmente, la perizia che evidenzia lavori privati eseguiti dal proprietario dell’ultimo piano introduce un ulteriore elemento causale indipendente, per il quale tale proprietario può essere ritenuto responsabile in solido per la quota di danno attribuibile ai suoi interventi, salvo prova della loro conformità e assenza di nesso con la rottura dell’impermeabilizzazione. Di conseguenza, il condominio potrà chiedere al proprietario dell’ultimo piano una quota di contributo proporzionale al nesso causale accertato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7769371559564476,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7769371559564476
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1227 c.c., il risarcimento spettante al danneggiato è ridotto nella misura in cui il suo stesso comportamento colposo ha concorso a provocare il danno; pertanto, occorre dimostrare che il condomino non ha omesso di segnalare o di adottare misure di mitigazione per escludere tale riduzione. Contestualmente, la perizia che evidenzia lavori privati eseguiti dal proprietario dell’ultimo piano introduce un ulteriore elemento causale indipendente, per il quale tale proprietario può essere ritenuto responsabile in solido per la quota di danno attribuibile ai suoi interventi, salvo prova della loro conformità e assenza di nesso con la rottura dell’impermeabilizzazione. Di conseguenza, il condominio potrà chiedere al proprietario dell’ultimo piano una quota di contributo proporzionale al nesso causale accertato."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1868,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2323,
+            "damage_factor": 0.4,
+            "excess": 0.4669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8246,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7654,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.1868,
+        "base_score": 0.765405968263947,
+        "cogency": 0.5942838679131772,
+        "cogency_details": {
+          "argument_quality_score": 0.6148526531818319,
+          "coherence_score": 0.5737150826445225,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 1130 c.c., l’amministratore è tenuto a eseguire le deliberazioni dell’assemblea, compresa l’attuazione dei lavori di manutenzione straordinaria deliberati, e a curare l’osservanza del regolamento condominiale; la sua mancata azione, dovuta alla mancata riscossione dei contributi dei morosi e all’assenza di un fondo speciale, costituisce una colpa nell’esercizio delle funzioni amministrative e lo rende responsabile in solido con il condominio per il danno cagionato dalle infiltrazioni, salvo prova del caso fortuito.",
+        "libro": "CC Libro III",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.765405968263947,
+        "nesso_plausibility": 0.5786059682639471,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione e per la manutenzione straordinaria delle parti comuni, come l’impermeabilizzazione della terrazza, sono a carico di tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione; la morosità di alcuni condomini non esclude l’obbligo di contribuire, il credito del danneggiato potendo essere escusso nei loro confronti mediante azioni esecutive. Qualora il danno sia in parte imputabile a lavori privati eseguiti dal proprietario dell’ultimo piano, la sua quota di partecipazione può essere ridotta proporzionalmente al grado di concorso, mentre la quota residua è ripartita tra gli altri condomini secondo le loro quote di proprietà.",
+        "retrieved_norms": [
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "1130",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7521884196505717,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7521884196505717
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione e per la manutenzione straordinaria delle parti comuni, come l’impermeabilizzazione della terrazza, sono a carico di tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione; la morosità di alcuni condomini non esclude l’obbligo di contribuire, il credito del danneggiato potendo essere escusso nei loro confronti mediante azioni esecutive. Qualora il danno sia in parte imputabile a lavori privati eseguiti dal proprietario dell’ultimo piano, la sua quota di partecipazione può essere ridotta proporzionalmente al grado di concorso, mentre la quota residua è ripartita tra gli altri condomini secondo le loro quote di proprietà."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2293,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2591,
+            "damage_factor": 0.4,
+            "excess": 0.5733,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8425,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6858,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.2293,
+        "base_score": 0.6857823074806509,
+        "cogency": 0.5615409142831091,
+        "cogency_details": {
+          "argument_quality_score": 0.6224483843436956,
+          "coherence_score": 0.5006334442225226,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà essere determinato sulla base del valore dei danni effettivamente subiti, cioè la somma dei costi di riparazione del soffitto, delle pareti e degli arredi, quantificata in € 8.500; il giudice potrà integrare tale importo con gli interessi legali dal giorno del sinistro fino al pagamento, ma non potrà aggiungere ulteriori somme per lucro cessante o danni morali in assenza di prova specifica.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.6857823074806509,
+        "nesso_plausibility": 0.45648230748065094,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’art. 1130 c.c., l’amministratore è tenuto a eseguire le deliberazioni dell’assemblea, compresa l’attuazione dei lavori di manutenzione straordinaria deliberati, e a curare l’osservanza del regolamento condominiale; la sua mancata azione, dovuta alla mancata riscossione dei contributi dei morosi e all’assenza di un fondo speciale, costituisce una colpa nell’esercizio delle funzioni amministrative e lo rende responsabile in solido con il condominio per il danno cagionato dalle infiltrazioni, salvo prova del caso fortuito.",
+        "retrieved_norms": [
+          {
+            "articolo": "1130",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5195191706696527,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5195191706696527
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1130 c.c., l’amministratore è tenuto a eseguire le deliberazioni dell’assemblea, compresa l’attuazione dei lavori di manutenzione straordinaria deliberati, e a curare l’osservanza del regolamento condominiale; la sua mancata azione, dovuta alla mancata riscossione dei contributi dei morosi e all’assenza di un fondo speciale, costituisce una colpa nell’esercizio delle funzioni amministrative e lo rende responsabile in solido con il condominio per il danno cagionato dalle infiltrazioni, salvo prova del caso fortuito."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.8651,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7776512893450094,
+        "cogency": 0.605731523238807,
+        "cogency_details": {
+          "argument_quality_score": 0.6227848475840346,
+          "coherence_score": 0.5886781988935794,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "In base a quanto emerso, il condominio, in qualità di custode della terrazza e dell’impermeabilizzazione comune, è tenuto a risarcire integralmente il danno di € 8.500 ai sensi dell’art. 2051 c.c.; tuttavia, il contributo colposo dei lavori privati effettuati dal proprietario dell’ultimo piano, riconosciuto dalla perizia, costituisce concorso causale che, secondo l’art. 1227 c.c., determina una diminuzione proporzionale della responsabilità condominiale. Il riparto interno dell’onere, previsto dall’art. 1123 c.c., deve essere effettuato tra tutti i condomini in proporzione al valore delle rispettive unità, ma i condomini morosi, che non hanno versato i contributi per la manutenzione straordinaria deliberata, possono essere esclusi dalla quota di riparto per la mancata partecipazione al fondo comune, salvo diversa convenzione.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.7776512893450094,
+        "nesso_plausibility": 0.7776512893450094,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà essere determinato sulla base del valore dei danni effettivamente subiti, cioè la somma dei costi di riparazione del soffitto, delle pareti e degli arredi, quantificata in € 8.500; il giudice potrà integrare tale importo con gli interessi legali dal giorno del sinistro fino al pagamento, ma non potrà aggiungere ulteriori somme per lucro cessante o danni morali in assenza di prova specifica.",
+        "retrieved_norms": [
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6531061079112246,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6531061079112246
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà essere determinato sulla base del valore dei danni effettivamente subiti, cioè la somma dei costi di riparazione del soffitto, delle pareti e degli arredi, quantificata in € 8.500; il giudice potrà integrare tale importo con gli interessi legali dal giorno del sinistro fino al pagamento, ma non potrà aggiungere ulteriori somme per lucro cessante o danni morali in assenza di prova specifica."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.6198939560277604,
+    "contra_adjusted": 0.6198939560277604,
+    "contra_raw": 0.5855940194821492,
+    "final": 0.13951990578176676,
+    "final_adjusted": 0.13951990578176676,
+    "final_raw": 0.17381984232737802,
+    "pro": 0.7594138618095272,
+    "pro_adjusted": 0.7594138618095272,
+    "pro_raw": 0.7594138618095272,
+    "pro_raw_dialectical": 0.6179138618095271,
+    "pro_raw_intrinsic": 0.7594138618095272,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8425,
+        "target": "S5->S6",
+        "target_role": "support",
+        "value": 0.2293
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8246,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1868
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8425,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1633
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8076,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1593
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.9073,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1514
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.8076,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1453
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8246,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1303
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8269,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1222
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.9073,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.0382
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro III",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "proprieta",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 3,
+          "axes_total": 4,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7153838122151623,
+              "axis_id": "AX4",
+              "axis_quality": 0.26596,
+              "link_ids": [
+                "S2->S3",
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.787059122241621,
+              "axis_id": "AX1",
+              "axis_quality": 0.23459,
+              "link_ids": [
+                "S3->S4",
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7739460125985866,
+              "axis_id": "AX3",
+              "axis_quality": 0.1514,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7776512893450094,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S6->S7"
+              ]
+            }
+          ],
+          "bonus": 0.0477351,
+          "coverage_ratio": 0.75,
+          "enabled": true,
+          "quality_avg": 0.1629875,
+          "wpcs": 0.39779250000000005
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7801895322756617,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.013435163454388773,
+          "redundancy_index": 0.21496261527022037
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7172200858395765,
+          "high_similarity_pair_ratio": 0.4666666666666667,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.0398609230552991,
+          "redundancy_index": 0.1594436922211964
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1633,
+            "attacker_base_score": 0.6858,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1556,
+            "damage_factor": 0.4,
+            "excess": 0.4083,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8425,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1453,
+            "attacker_base_score": 0.8087,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1104,
+            "damage_factor": 0.4,
+            "excess": 0.3631,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8076,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1303,
+            "attacker_base_score": 0.7654,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.073,
+            "damage_factor": 0.4,
+            "excess": 0.3258,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8246,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0382,
+            "attacker_base_score": 0.7739,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.8426,
+            "damage_factor": 0.4,
+            "excess": 0.0954,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9073,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.745,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.6468,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8269,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7472,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7777,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.8651,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.3086,
+        "base_score": 0.7472184649849115,
+        "cogency": 0.6004986645907451,
+        "cogency_details": {
+          "argument_quality_score": 0.6927132668858734,
+          "coherence_score": 0.5082840622956168,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La morosità diffusa non può escludere la custodia della terrazza da parte del condominio, perché l’art. 2051 c.c. impone la responsabilità per i danni cagionati dalle cose in custodia a prescindere dal rispetto degli obblighi di pagamento dei singoli condomini; la copertura è una cosa comune, non di uso esclusivo del proprietario dell’ultimo piano. Di conseguenza, la mancanza di cassa dovuta alla morosità non sospende né attenua il vincolo di custodia né l’obbligo di risarcimento verso il terzo danneggiato.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7472184649849115,
+        "nesso_plausibility": 0.4386184649849115,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 1123 c.c. la ripartizione delle spese interne riguarda esclusivamente le quote di partecipazione alle spese di conservazione e di godimento delle parti comuni e non può influire sull’obbligo di risarcimento verso un terzo, che deriva dall’art. 2051 c.c. in virtù della custodia della terrazza. Pertanto, anche se il condominio dovesse poi suddividere internamente i costi di eventuali lavori, tale riparto non può ridurre l’importo di € 8.500 dovuto al condomino danneggiato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6853486120428853,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6853486120428853
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1123 c.c. la ripartizione delle spese interne riguarda esclusivamente le quote di partecipazione alle spese di conservazione e di godimento delle parti comuni e non può influire sull’obbligo di risarcimento verso un terzo, che deriva dall’art. 2051 c.c. in virtù della custodia della terrazza. Pertanto, anche se il condominio dovesse poi suddividere internamente i costi di eventuali lavori, tale riparto non può ridurre l’importo di € 8.500 dovuto al condomino danneggiato."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2293,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2591,
+            "damage_factor": 0.4,
+            "excess": 0.5733,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8425,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6858,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.2293,
+        "base_score": 0.6857823074806509,
+        "cogency": 0.5615409142831091,
+        "cogency_details": {
+          "argument_quality_score": 0.6224483843436956,
+          "coherence_score": 0.5006334442225226,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà essere determinato sulla base del valore dei danni effettivamente subiti, cioè la somma dei costi di riparazione del soffitto, delle pareti e degli arredi, quantificata in € 8.500; il giudice potrà integrare tale importo con gli interessi legali dal giorno del sinistro fino al pagamento, ma non potrà aggiungere ulteriori somme per lucro cessante o danni morali in assenza di prova specifica.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.6857823074806509,
+        "nesso_plausibility": 0.45648230748065094,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’art. 1130 c.c., l’amministratore è tenuto a eseguire le deliberazioni dell’assemblea, compresa l’attuazione dei lavori di manutenzione straordinaria deliberati, e a curare l’osservanza del regolamento condominiale; la sua mancata azione, dovuta alla mancata riscossione dei contributi dei morosi e all’assenza di un fondo speciale, costituisce una colpa nell’esercizio delle funzioni amministrative e lo rende responsabile in solido con il condominio per il danno cagionato dalle infiltrazioni, salvo prova del caso fortuito.",
+        "retrieved_norms": [
+          {
+            "articolo": "1130",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5195191706696527,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5195191706696527
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1130 c.c., l’amministratore è tenuto a eseguire le deliberazioni dell’assemblea, compresa l’attuazione dei lavori di manutenzione straordinaria deliberati, e a curare l’osservanza del regolamento condominiale; la sua mancata azione, dovuta alla mancata riscossione dei contributi dei morosi e all’assenza di un fondo speciale, costituisce una colpa nell’esercizio delle funzioni amministrative e lo rende responsabile in solido con il condominio per il danno cagionato dalle infiltrazioni, salvo prova del caso fortuito."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1868,
+            "attacker_base_score": 0.7472,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2323,
+            "damage_factor": 0.4,
+            "excess": 0.4669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8246,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7654,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (proprieta vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.1868,
+        "base_score": 0.765405968263947,
+        "cogency": 0.5942838679131772,
+        "cogency_details": {
+          "argument_quality_score": 0.6148526531818319,
+          "coherence_score": 0.5737150826445225,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 1130 c.c., l’amministratore è tenuto a eseguire le deliberazioni dell’assemblea, compresa l’attuazione dei lavori di manutenzione straordinaria deliberati, e a curare l’osservanza del regolamento condominiale; la sua mancata azione, dovuta alla mancata riscossione dei contributi dei morosi e all’assenza di un fondo speciale, costituisce una colpa nell’esercizio delle funzioni amministrative e lo rende responsabile in solido con il condominio per il danno cagionato dalle infiltrazioni, salvo prova del caso fortuito.",
+        "libro": "CC Libro III",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.765405968263947,
+        "nesso_plausibility": 0.5786059682639471,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione e per la manutenzione straordinaria delle parti comuni, come l’impermeabilizzazione della terrazza, sono a carico di tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione; la morosità di alcuni condomini non esclude l’obbligo di contribuire, il credito del danneggiato potendo essere escusso nei loro confronti mediante azioni esecutive. Qualora il danno sia in parte imputabile a lavori privati eseguiti dal proprietario dell’ultimo piano, la sua quota di partecipazione può essere ridotta proporzionalmente al grado di concorso, mentre la quota residua è ripartita tra gli altri condomini secondo le loro quote di proprietà.",
+        "retrieved_norms": [
+          {
+            "articolo": "1123",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1191_art1123",
+            "title": "Ripartizione delle spese"
+          },
+          {
+            "articolo": "1130",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1198_art1130",
+            "title": "Attribuzioni dell'amministratore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7521884196505717,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7521884196505717
+        },
+        "severity_category": "proprieta",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1123 c.c., le spese necessarie per la conservazione e per la manutenzione straordinaria delle parti comuni, come l’impermeabilizzazione della terrazza, sono a carico di tutti i condomini in proporzione al valore delle rispettive unità, salvo diversa convenzione; la morosità di alcuni condomini non esclude l’obbligo di contribuire, il credito del danneggiato potendo essere escusso nei loro confronti mediante azioni esecutive. Qualora il danno sia in parte imputabile a lavori privati eseguiti dal proprietario dell’ultimo piano, la sua quota di partecipazione può essere ridotta proporzionalmente al grado di concorso, mentre la quota residua è ripartita tra gli altri condomini secondo le loro quote di proprietà."
+      }
+    ]
+  },
+  "verdict": "uncertain",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

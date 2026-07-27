@@ -1,0 +1,34 @@
+[2026-03-02T14:24:50.660942] Pipeline log - Setup B
+Claim: Un imprenditore acquista un macchinario industriale per 150.000 euro con garanzia scritta di resa pari a 500 unita/ora (+/- 2%). Nel contratto sono previsti collaudo iniziale, manuale operativo obblig
+======================================================================
+Status: ok
+Duration: 1228.45s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 8
+  Arguments: 1
+  Causal type: CIV_SALE_DEFECTS
+
+[COUNTER]
+  Chain steps: 5
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7763524942222012
+  Net contra: 0.4065296168049284
+  Net final: 0.3698228774172728
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

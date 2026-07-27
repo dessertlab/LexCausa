@@ -1,0 +1,34 @@
+[2026-03-02T20:08:29.617678] Pipeline log - Setup B
+Claim: Nel preliminare di vendita immobiliare l'acquirente versa 30.000 euro a titolo di caparra confirmatoria, con rogito fissato entro 4 mesi. A 20 giorni dal rogito il venditore comunica che non intende p
+======================================================================
+Status: ok
+Duration: 1040.89s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 8
+  Arguments: 1
+  Causal type: CIV_CONTRACT_REMEDIES
+
+[COUNTER]
+  Chain steps: 4
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7375443266811031
+  Net contra: 0.47912899790854063
+  Net final: 0.2584153287725625
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

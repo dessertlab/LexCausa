@@ -1,0 +1,1847 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 3,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.05897904,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.49149200000000004,
+      "attacks_avg": 0.3987,
+      "base_score_avg": 0.7215494794488252,
+      "cogency_avg": 0.6279721866904214,
+      "net_plausibility": 0.3818285194488252,
+      "net_plausibility_adjusted": 0.3818285194488252,
+      "net_plausibility_raw": 0.3228494794488252,
+      "norm_support_avg": 0.8825000000000001,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.6005260781389958
+    },
+    "pro": {
+      "attacks_avg": 0.13249999999999998,
+      "base_score_avg": 0.7495862719493261,
+      "cogency_avg": 0.5971656813789451,
+      "net_plausibility": 0.7495862719493261,
+      "net_plausibility_adjusted": 0.7495862719493261,
+      "net_plausibility_dialectical_raw": 0.6170862719493263,
+      "net_plausibility_intrinsic_raw": 0.7495862719493261,
+      "net_plausibility_raw": 0.7495862719493261,
+      "norm_support_avg": 0.8826785683290187,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.1862903264047639,
+      "redundancy_penalty": 0.046572581601190974,
+      "semantics_avg": 0.7245504673467842
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2119,
+            "attacker_base_score": 0.7489,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2483,
+            "damage_factor": 0.4,
+            "excess": 0.5298,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8334,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1251,
+            "attacker_base_score": 0.7424,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0312,
+            "damage_factor": 0.4,
+            "excess": 0.3127,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6945,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0892,
+            "attacker_base_score": 0.777,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.9416,
+            "damage_factor": 0.4,
+            "excess": 0.2231,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7128,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0101,
+            "attacker_base_score": 0.6502,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.7437,
+            "damage_factor": 0.4,
+            "excess": 0.0253,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6728,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.735,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6608,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7493,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.844,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.6017,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.679,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.33699999999999997,
+        "base_score": 0.7184673836795701,
+        "cogency": 0.6222931283118291,
+        "cogency_details": {
+          "argument_quality_score": 0.7045915849240404,
+          "coherence_score": 0.539994671699618,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 3, comma 1, L. 241/1990 richiede che il provvedimento indichi i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, ma non impone una descrizione esaustiva di tutti gli elementi istruttori; è sufficiente che la motivazione rimandi a un principio di diritto chiaramente identificabile e al fatto che il provvedimento risulti illegittimo. L’espressione “ripristino della legalità” individua, in modo sintetico ma inequivocabile, il motivo di fatto (l’esistenza di un vizio originario dell’atto) e la ragione giuridica (la necessità di sanare una violazione normativa), soddisfacendo così i requisiti di motivazione previsti dall’art. 3 L. 241/1990.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7184673836795701,
+        "nesso_plausibility": 0.3814673836795701,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "L’art. 21‑novies L. 241/1990 dispone che l’annullamento d’ufficio debba avvenire “entro un termine ragionevole, comunque non superiore a sei mesi” dal momento dell’adozione del provvedimento, ma il concetto di termine ragionevole è valutato tenendo conto della complessità dell’istruttoria e della necessità di accertare eventuali vizi originari; così il limite di sei mesi è indicativo e non rigido. In casi in cui la verifica del difetto originario richieda approfondimenti tecnici o l’emersione di fatti sopravvenuti, la giurisprudenza ha riconosciuto la possibilità di superare il periodo di sei mesi, purché l’amministrazione dimostri che l’allungamento è stato indispensabile per una corretta valutazione di interesse pubblico. Di conseguenza, l’annullamento effettuato dopo più di due anni può rientrare nel “termine ragionevole” se l’amministrazione prova che la complessità del caso ha legittimamente richiesto un iter più lungo.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5570425950645158,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5570425950645158
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 21‑novies L. 241/1990 dispone che l’annullamento d’ufficio debba avvenire “entro un termine ragionevole, comunque non superiore a sei mesi” dal momento dell’adozione del provvedimento, ma il concetto di termine ragionevole è valutato tenendo conto della complessità dell’istruttoria e della necessità di accertare eventuali vizi originari; così il limite di sei mesi è indicativo e non rigido. In casi in cui la verifica del difetto originario richieda approfondimenti tecnici o l’emersione di fatti sopravvenuti, la giurisprudenza ha riconosciuto la possibilità di superare il periodo di sei mesi, purché l’amministrazione dimostri che l’allungamento è stato indispensabile per una corretta valutazione di interesse pubblico. Di conseguenza, l’annullamento effettuato dopo più di due anni può rientrare nel “termine ragionevole” se l’amministrazione prova che la complessità del caso ha legittimamente richiesto un iter più lungo."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.3239,
+            "attacker_base_score": 0.844,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.5344,
+            "damage_factor": 0.4,
+            "excess": 0.8098,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.909,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1365,
+            "attacker_base_score": 0.7424,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0658,
+            "damage_factor": 0.4,
+            "excess": 0.3412,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8445,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1319,
+            "attacker_base_score": 0.777,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.0545,
+            "damage_factor": 0.4,
+            "excess": 0.3299,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7983,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1289,
+            "attacker_base_score": 0.7489,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0469,
+            "damage_factor": 0.4,
+            "excess": 0.3223,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8223,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0675,
+            "attacker_base_score": 0.6502,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8933,
+            "damage_factor": 0.4,
+            "excess": 0.1687,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6869,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.735,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6659,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.755,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.46040000000000003,
+        "base_score": 0.7246315752180803,
+        "cogency": 0.6336512450690137,
+        "cogency_details": {
+          "argument_quality_score": 0.7556779116916643,
+          "coherence_score": 0.5116245784463631,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 21‑quinquies della L. 241/1990, la scoperta di un vizio originario dell’atto autorizzativo può costituire un mutamento della situazione di fatto che legittima la revoca del provvedimento; tuttavia, la norma richiede che tale mutamento sia collegato a un interesse pubblico sopravvenuto, il che comporta una valutazione di rilevanza e non la semplice constatazione del difetto. Di conseguenza, l’amministrazione deve dimostrare che il vizio incide in modo significativo sull’interesse pubblico, altrimenti la revoca rischia di violare il principio di affidamento. In assenza di tale dimostrazione, la mera segnalazione del difetto non è sufficiente a giustificare l’annullamento tardivo.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7246315752180803,
+        "nesso_plausibility": 0.2642315752180803,
+        "norm_support": 0.8533333333333334,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.8333333333333334,
+          "citation_specificity_score": 0.3333333333333333,
+          "final": 0.8533333333333334,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 3, comma 1, L. 241/1990 richiede che il provvedimento indichi i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, ma non impone una descrizione esaustiva di tutti gli elementi istruttori; è sufficiente che la motivazione rimandi a un principio di diritto chiaramente identificabile e al fatto che il provvedimento risulti illegittimo. L’espressione “ripristino della legalità” individua, in modo sintetico ma inequivocabile, il motivo di fatto (l’esistenza di un vizio originario dell’atto) e la ragione giuridica (la necessità di sanare una violazione normativa), soddisfacendo così i requisiti di motivazione previsti dall’art. 3 L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6440095612134759,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6440095612134759
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 3, comma 1, L. 241/1990 richiede che il provvedimento indichi i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, ma non impone una descrizione esaustiva di tutti gli elementi istruttori; è sufficiente che la motivazione rimandi a un principio di diritto chiaramente identificabile e al fatto che il provvedimento risulti illegittimo. L’espressione “ripristino della legalità” individua, in modo sintetico ma inequivocabile, il motivo di fatto (l’esistenza di un vizio originario dell’atto) e la ragione giuridica (la necessità di sanare una violazione normativa), soddisfacendo così i requisiti di motivazione previsti dall’art. 3 L. 241/1990."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.078,
+            "attacker_base_score": 0.7246,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9301,
+            "damage_factor": 0.4,
+            "excess": 0.1951,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.755,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.735,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0721,
+            "attacker_base_score": 0.7185,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9151,
+            "damage_factor": 0.4,
+            "excess": 0.1801,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7493,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.735,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1501,
+        "base_score": 0.7349904880333847,
+        "cogency": 0.6082453450309124,
+        "cogency_details": {
+          "argument_quality_score": 0.5774576824103518,
+          "coherence_score": 0.6390330076514732,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’annullamento operato più di due anni dopo l’emissione del titolo autorizzativo non rientra nel termine “ragionevole, comunque non superiore a sei mesi” previsto dal comma 1 dell’Art. 21‑novies L. 241/1990, che disciplina l’annullamento d’ufficio dei provvedimenti illegittimi; tale limite temporale è inderogabile salvo che il provvedimento sia revocato ex Art. 21‑quinquies L. 241/1990 per sopravvenienze di pubblico interesse, circostanza non dimostrata nella motivazione generica dell’amministrazione.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7349904880333847,
+        "nesso_plausibility": 0.5848904880333847,
+        "norm_support": 0.858660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.858660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "La società ha ricevuto un titolo amministrativo favorevole, ha avviato i lavori e ha sostenuto costi rilevanti in base all’autorizzazione concessa; successivamente, a distanza di oltre due anni dal rilascio del titolo, l’amministrazione ha disposto l’annullamento d’ufficio con motivazione generica di “ripristino della legalità”. L’annullamento è stato effettuato in autotutela senza una specifica valutazione dell’interesse pubblico attuale né l’indicazione di ragioni di urgenza concreta. La società, facendo valere l’affidamento consolidato, la buona‑fede e l’investimento ormai irreversibile, contesta la legittimità dell’intervento amministrativo.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6968420084309621,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6968420084309621
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "La società ha ricevuto un titolo amministrativo favorevole, ha avviato i lavori e ha sostenuto costi rilevanti in base all’autorizzazione concessa; successivamente, a distanza di oltre due anni dal rilascio del titolo, l’amministrazione ha disposto l’annullamento d’ufficio con motivazione generica di “ripristino della legalità”. L’annullamento è stato effettuato in autotutela senza una specifica valutazione dell’interesse pubblico attuale né l’indicazione di ragioni di urgenza concreta. La società, facendo valere l’affidamento consolidato, la buona‑fede e l’investimento ormai irreversibile, contesta la legittimità dell’intervento amministrativo."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1076,
+            "attacker_base_score": 0.7185,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0179,
+            "damage_factor": 0.4,
+            "excess": 0.2691,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8334,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7489,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7246,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7151,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8223,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7489,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1076,
+        "base_score": 0.7488880019410868,
+        "cogency": 0.5484206956512593,
+        "cogency_details": {
+          "argument_quality_score": 0.6338331180156213,
+          "coherence_score": 0.4630082732868973,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione; la dicitura generica “ripristino della legalità” adottata dall’amministrazione non specifica né i fatti concreti né la valutazione dell’interesse pubblico attuale, violando quindi il requisito di motivazione espressa e, per estensione, il principio di trasparenza e imparzialità sancito dall’art. 1 L. 241/1990.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7488880019410868,
+        "nesso_plausibility": 0.6412880019410868,
+        "norm_support": 0.985,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 0.985,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’annullamento operato più di due anni dopo l’emissione del titolo autorizzativo non rientra nel termine “ragionevole, comunque non superiore a sei mesi” previsto dal comma 1 dell’Art. 21‑novies L. 241/1990, che disciplina l’annullamento d’ufficio dei provvedimenti illegittimi; tale limite temporale è inderogabile salvo che il provvedimento sia revocato ex Art. 21‑quinquies L. 241/1990 per sopravvenienze di pubblico interesse, circostanza non dimostrata nella motivazione generica dell’amministrazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6345393108190301,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6345393108190301
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’annullamento operato più di due anni dopo l’emissione del titolo autorizzativo non rientra nel termine “ragionevole, comunque non superiore a sei mesi” previsto dal comma 1 dell’Art. 21‑novies L. 241/1990, che disciplina l’annullamento d’ufficio dei provvedimenti illegittimi; tale limite temporale è inderogabile salvo che il provvedimento sia revocato ex Art. 21‑quinquies L. 241/1990 per sopravvenienze di pubblico interesse, circostanza non dimostrata nella motivazione generica dell’amministrazione."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7185,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8293,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.679,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.844,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7246,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6917,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.909,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.844,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.8439753244788923,
+        "cogency": 0.6828893932998297,
+        "cogency_details": {
+          "argument_quality_score": 0.7461156462065064,
+          "coherence_score": 0.6196631403931531,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 21‑quinquies L. 241/1990 la revoca di un provvedimento di autorizzazione è ammessa solo per “sopravvenuti motivi di pubblico interesse” o per mutamenti di fatto non prevedibili al momento dell’adozione, i quali devono essere espressamente indicati e giustificati nella motivazione (art. 3 L. 241/1990). Nel caso in esame l’amministrazione, a più di due anni dall’autorizzazione, si limita a richiamare un vizio originario e a invocare genericamente il “ripristino della legalità”, senza specificare alcuna urgenza concreta né descrivere un mutamento di fatto attuale, perciò non adempie ai requisiti di esplicitazione dell’interesse pubblico richiesti dall’art. 21‑quinquies. Di conseguenza, il vizio originario dell’atto, da solo, non è sufficiente a giustificare la revoca tardiva.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.8439753244788923,
+        "nesso_plausibility": 0.8439753244788923,
+        "norm_support": 0.95625,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9375,
+          "citation_specificity_score": 0.75,
+          "final": 0.95625,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione; la dicitura generica “ripristino della legalità” adottata dall’amministrazione non specifica né i fatti concreti né la valutazione dell’interesse pubblico attuale, violando quindi il requisito di motivazione espressa e, per estensione, il principio di trasparenza e imparzialità sancito dall’art. 1 L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8553616882964781,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8553616882964781
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione; la dicitura generica “ripristino della legalità” adottata dall’amministrazione non specifica né i fatti concreti né la valutazione dell’interesse pubblico attuale, violando quindi il requisito di motivazione espressa e, per estensione, il principio di trasparenza e imparzialità sancito dall’art. 1 L. 241/1990."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1926,
+            "attacker_base_score": 0.7246,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2238,
+            "damage_factor": 0.4,
+            "excess": 0.4814,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8445,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7424,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1022,
+            "attacker_base_score": 0.7185,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9979,
+            "damage_factor": 0.4,
+            "excess": 0.2555,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6945,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7424,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.2948,
+        "base_score": 0.7424366156303154,
+        "cogency": 0.5851310455677661,
+        "cogency_details": {
+          "argument_quality_score": 0.6410827649912458,
+          "coherence_score": 0.5291793261442864,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Nel bilanciamento tra l’interesse pubblico attuale e l’affidamento consolidato, la giurisprudenza (cfr. “Poteri di revoca di una autorizzazione alla coltivazione per sopravvenienze”) impone che l’amministrazione espliciti le ragioni concrete di urgenza e provi la proporzionalità della misura rispetto al danno ingente subito dal privato; in mancanza di tale motivazione, l’annullamento tardivo appare sproporzionato rispetto all’investimento irreversibile della società, principio ribadito anche nella sentenza “Annullamento regionale del permesso di costruire ex art. 39, t.u. edilizia n. 327 del 2001”.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7424366156303154,
+        "nesso_plausibility": 0.44763661563031537,
+        "norm_support": 0.8825,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8825,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 21‑quinquies L. 241/1990 la revoca di un provvedimento di autorizzazione è ammessa solo per “sopravvenuti motivi di pubblico interesse” o per mutamenti di fatto non prevedibili al momento dell’adozione, i quali devono essere espressamente indicati e giustificati nella motivazione (art. 3 L. 241/1990). Nel caso in esame l’amministrazione, a più di due anni dall’autorizzazione, si limita a richiamare un vizio originario e a invocare genericamente il “ripristino della legalità”, senza specificare alcuna urgenza concreta né descrivere un mutamento di fatto attuale, perciò non adempie ai requisiti di esplicitazione dell’interesse pubblico richiesti dall’art. 21‑quinquies. Di conseguenza, il vizio originario dell’atto, da solo, non è sufficiente a giustificare la revoca tardiva.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "39",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7129910065332852,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7129910065332852
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 21‑quinquies L. 241/1990 la revoca di un provvedimento di autorizzazione è ammessa solo per “sopravvenuti motivi di pubblico interesse” o per mutamenti di fatto non prevedibili al momento dell’adozione, i quali devono essere espressamente indicati e giustificati nella motivazione (art. 3 L. 241/1990). Nel caso in esame l’amministrazione, a più di due anni dall’autorizzazione, si limita a richiamare un vizio originario e a invocare genericamente il “ripristino della legalità”, senza specificare alcuna urgenza concreta né descrivere un mutamento di fatto attuale, perciò non adempie ai requisiti di esplicitazione dell’interesse pubblico richiesti dall’art. 21‑quinquies. Di conseguenza, il vizio originario dell’atto, da solo, non è sufficiente a giustificare la revoca tardiva."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1266,
+            "attacker_base_score": 0.7185,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9668,
+            "damage_factor": 0.4,
+            "excess": 0.3166,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6728,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6502,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0784,
+            "attacker_base_score": 0.7246,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8462,
+            "damage_factor": 0.4,
+            "excess": 0.1959,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6869,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6502,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.205,
+        "base_score": 0.6502303273748017,
+        "cogency": 0.5756414320645384,
+        "cogency_details": {
+          "argument_quality_score": 0.5968125330984485,
+          "coherence_score": 0.5544703310306283,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990, la violazione del termine ragionevole di sei mesi per l’annullamento d’ufficio comporta la responsabilità dell’amministrazione per danno ingiusto, purché il privato dimostri il nesso causale tra il ritardo e le spese sostenute; la società, avendo investito in modo irreversibile sulla base del titolo autorizzativo, può quindi chiedere il risarcimento integrale dei costi già sostenuti, oltre agli interessi legali, poiché il ritardo appare colposo e non giustificato da cause di forza maggiore.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.6502303273748017,
+        "nesso_plausibility": 0.4452303273748017,
+        "norm_support": 0.6436607049870562,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.6436607049870562,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.425
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [
+          {
+            "bindingness": 1.0,
+            "confidence": 0.7,
+            "court": "Consiglio di Stato",
+            "delta": 0.0,
+            "link_match": "direct",
+            "precedent_id": "prec_125",
+            "recency": 0.88,
+            "similarity": 1.0,
+            "stance": 0.0,
+            "year": 2020
+          },
+          {
+            "bindingness": 1.0,
+            "confidence": 0.7,
+            "court": "Consiglio di Stato",
+            "delta": 0.0,
+            "link_match": "direct",
+            "precedent_id": "prec_129",
+            "recency": 0.88,
+            "similarity": 1.0,
+            "stance": 0.0,
+            "year": 2020
+          }
+        ],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Nel bilanciamento tra l’interesse pubblico attuale e l’affidamento consolidato, la giurisprudenza (cfr. “Poteri di revoca di una autorizzazione alla coltivazione per sopravvenienze”) impone che l’amministrazione espliciti le ragioni concrete di urgenza e provi la proporzionalità della misura rispetto al danno ingente subito dal privato; in mancanza di tale motivazione, l’annullamento tardivo appare sproporzionato rispetto all’investimento irreversibile della società, principio ribadito anche nella sentenza “Annullamento regionale del permesso di costruire ex art. 39, t.u. edilizia n. 327 del 2001”.",
+        "retrieved_norms": [
+          {
+            "articolo": "39",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7335787192020591,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7335787192020591
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Nel bilanciamento tra l’interesse pubblico attuale e l’affidamento consolidato, la giurisprudenza (cfr. “Poteri di revoca di una autorizzazione alla coltivazione per sopravvenienze”) impone che l’amministrazione espliciti le ragioni concrete di urgenza e provi la proporzionalità della misura rispetto al danno ingente subito dal privato; in mancanza di tale motivazione, l’annullamento tardivo appare sproporzionato rispetto all’investimento irreversibile della società, principio ribadito anche nella sentenza “Annullamento regionale del permesso di costruire ex art. 39, t.u. edilizia n. 327 del 2001”."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0375,
+            "attacker_base_score": 0.7185,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8707,
+            "damage_factor": 0.4,
+            "excess": 0.0937,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7128,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.777,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7246,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6942,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7983,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.777,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0375,
+        "base_score": 0.7769968742374767,
+        "cogency": 0.5826661766593644,
+        "cogency_details": {
+          "argument_quality_score": 0.6397307685099589,
+          "coherence_score": 0.5256015848087697,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "La tesi centrale è che l’annullamento operato oltre i sei mesi previsti dall’art. 21‑novies L. 241/1990 è ingiustificato, poiché la motivazione generica di “ripristino della legalità” viola l’obbligo di motivazione di cui all’art. 3 L. 241/1990 e non dimostra una concreta valutazione dell’interesse pubblico attuale né un adeguato bilanciamento con l’affidamento consolidato del privato; di conseguenza, l’atto è annullabile per eccesso di potere e, ai sensi dell’art. 2‑bis L. 241/1990, la società ha diritto al risarcimento dei danni ingiusti subiti per gli investimenti ormai irreversibili.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.7769968742374767,
+        "nesso_plausibility": 0.7394968742374767,
+        "norm_support": 0.97,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 0.97,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Ai sensi dell’art. 2‑bis L. 241/1990, la violazione del termine ragionevole di sei mesi per l’annullamento d’ufficio comporta la responsabilità dell’amministrazione per danno ingiusto, purché il privato dimostri il nesso causale tra il ritardo e le spese sostenute; la società, avendo investito in modo irreversibile sulla base del titolo autorizzativo, può quindi chiedere il risarcimento integrale dei costi già sostenuti, oltre agli interessi legali, poiché il ritardo appare colposo e non giustificato da cause di forza maggiore.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.713990070798891,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.713990070798891
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2‑bis L. 241/1990, la violazione del termine ragionevole di sei mesi per l’annullamento d’ufficio comporta la responsabilità dell’amministrazione per danno ingiusto, purché il privato dimostri il nesso causale tra il ritardo e le spese sostenute; la società, avendo investito in modo irreversibile sulla base del titolo autorizzativo, può quindi chiedere il risarcimento integrale dei costi già sostenuti, oltre agli interessi legali, poiché il ritardo appare colposo e non giustificato da cause di forza maggiore."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.3818285194488252,
+    "contra_adjusted": 0.3818285194488252,
+    "contra_raw": 0.3228494794488252,
+    "final": 0.36775775250050097,
+    "final_adjusted": 0.36775775250050097,
+    "final_raw": 0.42673679250050095,
+    "pro": 0.7495862719493261,
+    "pro_adjusted": 0.7495862719493261,
+    "pro_raw": 0.7495862719493261,
+    "pro_raw_dialectical": 0.6170862719493263,
+    "pro_raw_intrinsic": 0.7495862719493261,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.909,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.3239
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8334,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2119
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8445,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1926
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8445,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1365
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7983,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1319
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8223,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1289
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.6728,
+        "target": "S5->S6",
+        "target_role": "support",
+        "value": 0.1266
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.6945,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1251
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8334,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1076
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.6945,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1022
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 3,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7738008093808642,
+              "axis_id": "AX1",
+              "axis_quality": 0.22326,
+              "link_ids": [
+                "S3->S4",
+                "S4->S5",
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.6502303273748017,
+              "axis_id": "AX3",
+              "axis_quality": 0.1266,
+              "link_ids": [
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7629424380892817,
+              "axis_id": "AX2",
+              "axis_quality": 0.1076,
+              "link_ids": [
+                "S6->S7",
+                "S2->S3"
+              ]
+            }
+          ],
+          "bonus": 0.05897904,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.15248666666666666,
+          "wpcs": 0.49149200000000004
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.5922633657922868,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7634774990225197,
+          "high_similarity_pair_ratio": 0.8666666666666667,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.046572581601190974,
+          "redundancy_index": 0.1862903264047639
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.3239,
+            "attacker_base_score": 0.844,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.5344,
+            "damage_factor": 0.4,
+            "excess": 0.8098,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.909,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1365,
+            "attacker_base_score": 0.7424,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0658,
+            "damage_factor": 0.4,
+            "excess": 0.3412,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8445,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1319,
+            "attacker_base_score": 0.777,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.0545,
+            "damage_factor": 0.4,
+            "excess": 0.3299,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7983,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1289,
+            "attacker_base_score": 0.7489,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0469,
+            "damage_factor": 0.4,
+            "excess": 0.3223,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8223,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0675,
+            "attacker_base_score": 0.6502,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8933,
+            "damage_factor": 0.4,
+            "excess": 0.1687,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6869,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.735,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6659,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.755,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7246,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.46040000000000003,
+        "base_score": 0.7246315752180803,
+        "cogency": 0.6336512450690137,
+        "cogency_details": {
+          "argument_quality_score": 0.7556779116916643,
+          "coherence_score": 0.5116245784463631,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 21‑quinquies della L. 241/1990, la scoperta di un vizio originario dell’atto autorizzativo può costituire un mutamento della situazione di fatto che legittima la revoca del provvedimento; tuttavia, la norma richiede che tale mutamento sia collegato a un interesse pubblico sopravvenuto, il che comporta una valutazione di rilevanza e non la semplice constatazione del difetto. Di conseguenza, l’amministrazione deve dimostrare che il vizio incide in modo significativo sull’interesse pubblico, altrimenti la revoca rischia di violare il principio di affidamento. In assenza di tale dimostrazione, la mera segnalazione del difetto non è sufficiente a giustificare l’annullamento tardivo.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7246315752180803,
+        "nesso_plausibility": 0.2642315752180803,
+        "norm_support": 0.8533333333333334,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.8333333333333334,
+          "citation_specificity_score": 0.3333333333333333,
+          "final": 0.8533333333333334,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 3, comma 1, L. 241/1990 richiede che il provvedimento indichi i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, ma non impone una descrizione esaustiva di tutti gli elementi istruttori; è sufficiente che la motivazione rimandi a un principio di diritto chiaramente identificabile e al fatto che il provvedimento risulti illegittimo. L’espressione “ripristino della legalità” individua, in modo sintetico ma inequivocabile, il motivo di fatto (l’esistenza di un vizio originario dell’atto) e la ragione giuridica (la necessità di sanare una violazione normativa), soddisfacendo così i requisiti di motivazione previsti dall’art. 3 L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6440095612134759,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6440095612134759
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 3, comma 1, L. 241/1990 richiede che il provvedimento indichi i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, ma non impone una descrizione esaustiva di tutti gli elementi istruttori; è sufficiente che la motivazione rimandi a un principio di diritto chiaramente identificabile e al fatto che il provvedimento risulti illegittimo. L’espressione “ripristino della legalità” individua, in modo sintetico ma inequivocabile, il motivo di fatto (l’esistenza di un vizio originario dell’atto) e la ragione giuridica (la necessità di sanare una violazione normativa), soddisfacendo così i requisiti di motivazione previsti dall’art. 3 L. 241/1990."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2119,
+            "attacker_base_score": 0.7489,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2483,
+            "damage_factor": 0.4,
+            "excess": 0.5298,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8334,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1251,
+            "attacker_base_score": 0.7424,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0312,
+            "damage_factor": 0.4,
+            "excess": 0.3127,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6945,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0892,
+            "attacker_base_score": 0.777,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.9416,
+            "damage_factor": 0.4,
+            "excess": 0.2231,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7128,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0101,
+            "attacker_base_score": 0.6502,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.7437,
+            "damage_factor": 0.4,
+            "excess": 0.0253,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6728,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.735,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6608,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7493,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.844,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.6017,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.679,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7185,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.33699999999999997,
+        "base_score": 0.7184673836795701,
+        "cogency": 0.6222931283118291,
+        "cogency_details": {
+          "argument_quality_score": 0.7045915849240404,
+          "coherence_score": 0.539994671699618,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 3, comma 1, L. 241/1990 richiede che il provvedimento indichi i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, ma non impone una descrizione esaustiva di tutti gli elementi istruttori; è sufficiente che la motivazione rimandi a un principio di diritto chiaramente identificabile e al fatto che il provvedimento risulti illegittimo. L’espressione “ripristino della legalità” individua, in modo sintetico ma inequivocabile, il motivo di fatto (l’esistenza di un vizio originario dell’atto) e la ragione giuridica (la necessità di sanare una violazione normativa), soddisfacendo così i requisiti di motivazione previsti dall’art. 3 L. 241/1990.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7184673836795701,
+        "nesso_plausibility": 0.3814673836795701,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "L’art. 21‑novies L. 241/1990 dispone che l’annullamento d’ufficio debba avvenire “entro un termine ragionevole, comunque non superiore a sei mesi” dal momento dell’adozione del provvedimento, ma il concetto di termine ragionevole è valutato tenendo conto della complessità dell’istruttoria e della necessità di accertare eventuali vizi originari; così il limite di sei mesi è indicativo e non rigido. In casi in cui la verifica del difetto originario richieda approfondimenti tecnici o l’emersione di fatti sopravvenuti, la giurisprudenza ha riconosciuto la possibilità di superare il periodo di sei mesi, purché l’amministrazione dimostri che l’allungamento è stato indispensabile per una corretta valutazione di interesse pubblico. Di conseguenza, l’annullamento effettuato dopo più di due anni può rientrare nel “termine ragionevole” se l’amministrazione prova che la complessità del caso ha legittimamente richiesto un iter più lungo.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5570425950645158,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5570425950645158
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 21‑novies L. 241/1990 dispone che l’annullamento d’ufficio debba avvenire “entro un termine ragionevole, comunque non superiore a sei mesi” dal momento dell’adozione del provvedimento, ma il concetto di termine ragionevole è valutato tenendo conto della complessità dell’istruttoria e della necessità di accertare eventuali vizi originari; così il limite di sei mesi è indicativo e non rigido. In casi in cui la verifica del difetto originario richieda approfondimenti tecnici o l’emersione di fatti sopravvenuti, la giurisprudenza ha riconosciuto la possibilità di superare il periodo di sei mesi, purché l’amministrazione dimostri che l’allungamento è stato indispensabile per una corretta valutazione di interesse pubblico. Di conseguenza, l’annullamento effettuato dopo più di due anni può rientrare nel “termine ragionevole” se l’amministrazione prova che la complessità del caso ha legittimamente richiesto un iter più lungo."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1266,
+            "attacker_base_score": 0.7185,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9668,
+            "damage_factor": 0.4,
+            "excess": 0.3166,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6728,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6502,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0784,
+            "attacker_base_score": 0.7246,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8462,
+            "damage_factor": 0.4,
+            "excess": 0.1959,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6869,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6502,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.205,
+        "base_score": 0.6502303273748017,
+        "cogency": 0.5756414320645384,
+        "cogency_details": {
+          "argument_quality_score": 0.5968125330984485,
+          "coherence_score": 0.5544703310306283,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990, la violazione del termine ragionevole di sei mesi per l’annullamento d’ufficio comporta la responsabilità dell’amministrazione per danno ingiusto, purché il privato dimostri il nesso causale tra il ritardo e le spese sostenute; la società, avendo investito in modo irreversibile sulla base del titolo autorizzativo, può quindi chiedere il risarcimento integrale dei costi già sostenuti, oltre agli interessi legali, poiché il ritardo appare colposo e non giustificato da cause di forza maggiore.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.6502303273748017,
+        "nesso_plausibility": 0.4452303273748017,
+        "norm_support": 0.6436607049870562,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.6436607049870562,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.425
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [
+          {
+            "bindingness": 1.0,
+            "confidence": 0.7,
+            "court": "Consiglio di Stato",
+            "delta": 0.0,
+            "link_match": "direct",
+            "precedent_id": "prec_125",
+            "recency": 0.88,
+            "similarity": 1.0,
+            "stance": 0.0,
+            "year": 2020
+          },
+          {
+            "bindingness": 1.0,
+            "confidence": 0.7,
+            "court": "Consiglio di Stato",
+            "delta": 0.0,
+            "link_match": "direct",
+            "precedent_id": "prec_129",
+            "recency": 0.88,
+            "similarity": 1.0,
+            "stance": 0.0,
+            "year": 2020
+          }
+        ],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Nel bilanciamento tra l’interesse pubblico attuale e l’affidamento consolidato, la giurisprudenza (cfr. “Poteri di revoca di una autorizzazione alla coltivazione per sopravvenienze”) impone che l’amministrazione espliciti le ragioni concrete di urgenza e provi la proporzionalità della misura rispetto al danno ingente subito dal privato; in mancanza di tale motivazione, l’annullamento tardivo appare sproporzionato rispetto all’investimento irreversibile della società, principio ribadito anche nella sentenza “Annullamento regionale del permesso di costruire ex art. 39, t.u. edilizia n. 327 del 2001”.",
+        "retrieved_norms": [
+          {
+            "articolo": "39",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7335787192020591,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7335787192020591
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Nel bilanciamento tra l’interesse pubblico attuale e l’affidamento consolidato, la giurisprudenza (cfr. “Poteri di revoca di una autorizzazione alla coltivazione per sopravvenienze”) impone che l’amministrazione espliciti le ragioni concrete di urgenza e provi la proporzionalità della misura rispetto al danno ingente subito dal privato; in mancanza di tale motivazione, l’annullamento tardivo appare sproporzionato rispetto all’investimento irreversibile della società, principio ribadito anche nella sentenza “Annullamento regionale del permesso di costruire ex art. 39, t.u. edilizia n. 327 del 2001”."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

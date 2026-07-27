@@ -1,0 +1,1424 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 3,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.057839999999999996,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.482,
+      "attacks_avg": 0.30565,
+      "base_score_avg": 0.6693696295138611,
+      "cogency_avg": 0.5393650202028774,
+      "net_plausibility": 0.4215596295138612,
+      "net_plausibility_adjusted": 0.4215596295138612,
+      "net_plausibility_raw": 0.3637196295138612,
+      "norm_support_avg": 0.903660704987056,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.4869861381939188
+    },
+    "pro": {
+      "attacks_avg": 0.14232499999999998,
+      "base_score_avg": 0.7088400598822442,
+      "cogency_avg": 0.5720884227411466,
+      "net_plausibility": 0.7088400598822442,
+      "net_plausibility_adjusted": 0.7088400598822442,
+      "net_plausibility_dialectical_raw": 0.5665150598822442,
+      "net_plausibility_intrinsic_raw": 0.7088400598822442,
+      "net_plausibility_raw": 0.7088400598822442,
+      "norm_support_avg": 0.8722727515714304,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.13150573582829075,
+      "redundancy_penalty": 0.024657325467804518,
+      "semantics_avg": 0.6276814414377601
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.189,
+            "attacker_base_score": 0.7097,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1705,
+            "damage_factor": 0.4,
+            "excess": 0.4726,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8247,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1468,
+            "attacker_base_score": 0.7166,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0648,
+            "damage_factor": 0.4,
+            "excess": 0.3669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.743,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.103,
+            "attacker_base_score": 0.7214,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9554,
+            "damage_factor": 0.4,
+            "excess": 0.2575,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.779,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6876,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6399,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7755,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3358,
+        "base_score": 0.6979028205102022,
+        "cogency": 0.579449803036225,
+        "cogency_details": {
+          "argument_quality_score": 0.6377701056758828,
+          "coherence_score": 0.5211295003965671,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 614 c.p. punisce l’introduzione “contro la volontà espressa o tacita” del soggetto che ha il diritto di escludere l’ingresso; la detenzione delle chiavi da parte del proprietario, unitamente al consueto potere di ispezione e di tutela del bene locato previsto dal contratto di locazione, può essere interpretata come manifestazione di volontà tacita del conduttore di consentire l’accesso, soprattutto in assenza di una manifestazione contraria, perciò l’ingresso del proprietario non si configura come violazione di domicilio. (art. 614 c.p.)",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6979028205102022,
+        "nesso_plausibility": 0.36210282051020226,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "La sostituzione della serratura, pur effettuata senza il consenso del conduttore, non integra il reato di violenza sulle cose previsto dall’art. 392 c.p., il quale punisce chi provoca “danno, trasformazione o mutazione della destinazione” della cosa; la mera rimozione e installazione di una nuova serratura non comporta alcun danno materiale né una mutazione della natura dell’oggetto. Di conseguenza, l’elemento oggettivo richiesto dall’art. 392 c.p. risulta assente, escludendo la configurazione del reato di violenza sulle cose.",
+        "retrieved_norms": [
+          {
+            "articolo": "392",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_473_392",
+            "title": "Esercizio arbitrario delle proprie ragioni con violenza sulle cose"
+          },
+          {
+            "articolo": "392",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_473_392",
+            "title": "Esercizio arbitrario delle proprie ragioni con violenza sulle cose"
+          },
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          },
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5420119920150415,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5420119920150415
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La sostituzione della serratura, pur effettuata senza il consenso del conduttore, non integra il reato di violenza sulle cose previsto dall’art. 392 c.p., il quale punisce chi provoca “danno, trasformazione o mutazione della destinazione” della cosa; la mera rimozione e installazione di una nuova serratura non comporta alcun danno materiale né una mutazione della natura dell’oggetto. Di conseguenza, l’elemento oggettivo richiesto dall’art. 392 c.p. risulta assente, escludendo la configurazione del reato di violenza sulle cose."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1554,
+            "attacker_base_score": 0.7097,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0293,
+            "damage_factor": 0.4,
+            "excess": 0.3885,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7252,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1133,
+            "attacker_base_score": 0.7214,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9241,
+            "damage_factor": 0.4,
+            "excess": 0.2833,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7535,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0068,
+            "attacker_base_score": 0.7166,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6578,
+            "damage_factor": 0.4,
+            "excess": 0.017,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.765,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6876,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6108,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7403,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.27549999999999997,
+        "base_score": 0.6408364385175201,
+        "cogency": 0.49928023736952976,
+        "cogency_details": {
+          "argument_quality_score": 0.6842731844869082,
+          "coherence_score": 0.31428729025215124,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Per l’art. 635 c.p. il reato di danneggiamento richiede la prova certa che il soggetto abbia distrutto, disperso, deteriorato o reso inservibili le cose altrui; spetta al denunciante dimostrare l’effettivo danno mediante inventario o perizia, ma la mancanza di un inventario completo impedisce di accertare la quantità e la natura del presunto danno, perciò non sussiste l’elemento materiale del reato. In assenza di tale prova, la condotta del proprietario non può essere qualificata ai sensi dell’art. 635 c.p.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6408364385175201,
+        "nesso_plausibility": 0.3653364385175202,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 614 c.p. punisce l’introduzione “contro la volontà espressa o tacita” del soggetto che ha il diritto di escludere l’ingresso; la detenzione delle chiavi da parte del proprietario, unitamente al consueto potere di ispezione e di tutela del bene locato previsto dal contratto di locazione, può essere interpretata come manifestazione di volontà tacita del conduttore di consentire l’accesso, soprattutto in assenza di una manifestazione contraria, perciò l’ingresso del proprietario non si configura come violazione di domicilio. (art. 614 c.p.)",
+        "retrieved_norms": [
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          },
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          },
+          {
+            "articolo": "635",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_859_635",
+            "title": "Danneggiamento"
+          },
+          {
+            "articolo": "635",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_859_635",
+            "title": "Danneggiamento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.4319602843727961,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.4319602843727961
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "L’art. 614 c.p. punisce l’introduzione “contro la volontà espressa o tacita” del soggetto che ha il diritto di escludere l’ingresso; la detenzione delle chiavi da parte del proprietario, unitamente al consueto potere di ispezione e di tutela del bene locato previsto dal contratto di locazione, può essere interpretata come manifestazione di volontà tacita del conduttore di consentire l’accesso, soprattutto in assenza di una manifestazione contraria, perciò l’ingresso del proprietario non si configura come violazione di domicilio. (art. 614 c.p.)"
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.093,
+            "attacker_base_score": 0.6979,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9201,
+            "damage_factor": 0.4,
+            "excess": 0.2325,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7755,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6876,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0475,
+            "attacker_base_score": 0.6408,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8064,
+            "damage_factor": 0.4,
+            "excess": 0.1188,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7403,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6876,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1405,
+        "base_score": 0.6876420086713019,
+        "cogency": 0.6244088455923262,
+        "cogency_details": {
+          "argument_quality_score": 0.6275720818449125,
+          "coherence_score": 0.6212456093397399,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il proprietario, pur avendo le chiavi, si è introdotto nell’appartamento del conduttore durante la sua assenza e, senza il suo consenso, ha sostituito la serratura e ha trasferito i beni mobili in un box; tali comportamenti configurano l’introduzione e la permanenza nel luogo di dimora altrui contro la volontà espressa o tacita del titolare, punibili ai sensi dell’art. 614 c.p. Inoltre, la sostituzione della serratura costituisce violenza sulle cose, fattore che, secondo lo stesso articolo, comporta l’aumento della pena da due a sei anni.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6876420086713019,
+        "nesso_plausibility": 0.5471420086713019,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Si rilevano i seguenti elementi fattuali rilevanti ai fini penali: il conduttore è in mora da sette mesi; il proprietario, in possesso delle chiavi, si introduce nell’immobile durante l’assenza dell’inquilino, sostituisce la serratura e trasferisce i beni mobili dell’inquilino in un box, senza alcun inventario e con alcuni oggetti risultanti danneggiati; l’inquilino ha sporto denuncia per violazione di domicilio, violenza privata e sottrazione dei beni, mentre il proprietario sostiene di aver agito per tutelare un credito certo, a seguito di ripetuti solleciti e dell’avvio di un procedimento di sfratto non ancora definito.",
+        "retrieved_norms": [
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6302526615459417,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6302526615459417
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Si rilevano i seguenti elementi fattuali rilevanti ai fini penali: il conduttore è in mora da sette mesi; il proprietario, in possesso delle chiavi, si introduce nell’immobile durante l’assenza dell’inquilino, sostituisce la serratura e trasferisce i beni mobili dell’inquilino in un box, senza alcun inventario e con alcuni oggetti risultanti danneggiati; l’inquilino ha sporto denuncia per violazione di domicilio, violenza privata e sottrazione dei beni, mentre il proprietario sostiene di aver agito per tutelare un credito certo, a seguito di ripetuti solleciti e dell’avvio di un procedimento di sfratto non ancora definito."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1075,
+            "attacker_base_score": 0.6979,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9784,
+            "damage_factor": 0.4,
+            "excess": 0.2687,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8247,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7097,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6408,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5577,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7252,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7097,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1075,
+        "base_score": 0.7096817269179014,
+        "cogency": 0.5315018980594021,
+        "cogency_details": {
+          "argument_quality_score": 0.6325454957678508,
+          "coherence_score": 0.4304583003509534,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 51 c.p., l’esercizio di un diritto o l’adempimento di un dovere imposto da norma o ordine legittimo esclude la punibilità solo se l’azione è conforme ai limiti previsti dalla legge; il credito locativo, per quanto certo, non autorizza il proprietario a introdursi nell’immobile, a cambiare la serratura e a sottrarre i beni senza provvedimento giudiziale di sfratto, poiché la disciplina civile impone il ricorso al giudice per l’esecuzione forzata del diritto di proprietà o di possesso; di conseguenza, la condotta del proprietario non rientra nella giustificazione prevista dall’art. 51 c.p. e resta punibile.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7096817269179014,
+        "nesso_plausibility": 0.6021817269179014,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il proprietario, pur avendo le chiavi, si è introdotto nell’appartamento del conduttore durante la sua assenza e, senza il suo consenso, ha sostituito la serratura e ha trasferito i beni mobili in un box; tali comportamenti configurano l’introduzione e la permanenza nel luogo di dimora altrui contro la volontà espressa o tacita del titolare, punibili ai sensi dell’art. 614 c.p. Inoltre, la sostituzione della serratura costituisce violenza sulle cose, fattore che, secondo lo stesso articolo, comporta l’aumento della pena da due a sei anni.",
+        "retrieved_norms": [
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          },
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6292229183508612,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6292229183508612
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il proprietario, pur avendo le chiavi, si è introdotto nell’appartamento del conduttore durante la sua assenza e, senza il suo consenso, ha sostituito la serratura e ha trasferito i beni mobili in un box; tali comportamenti configurano l’introduzione e la permanenza nel luogo di dimora altrui contro la volontà espressa o tacita del titolare, punibili ai sensi dell’art. 614 c.p. Inoltre, la sostituzione della serratura costituisce violenza sulle cose, fattore che, secondo lo stesso articolo, comporta l’aumento della pena da due a sei anni."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1464,
+            "attacker_base_score": 0.6979,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0874,
+            "damage_factor": 0.4,
+            "excess": 0.3659,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.779,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7214,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6408,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5794,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7535,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7214,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1464,
+        "base_score": 0.7214484350059368,
+        "cogency": 0.5672979830151301,
+        "cogency_details": {
+          "argument_quality_score": 0.6349933903167739,
+          "coherence_score": 0.49960257571348626,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Nel caso in esame, per configurare il reato di violenza privata ex art. 610 c.p. è necessario che, mediante violenza o minaccia, il soggetto costringa la vittima a fare, tollerare o omettere qualcosa; il proprietario, pur introducendosi nell’appartamento e sostituendo la serratura, non ha esercitato alcuna violenza o minaccia diretta nei confronti dell’inquilino né lo ha costretto a compiere o a tollerare alcun comportamento, limitandosi a un atto di violenza sulle cose compiuto in assenza del conduttore. Di conseguenza, gli elementi oggettivi richiesti dall’art. 610 c.p. non sono presenti.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7214484350059368,
+        "nesso_plausibility": 0.5750484350059368,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Secondo l’art. 51 c.p., l’esercizio di un diritto o l’adempimento di un dovere imposto da norma o ordine legittimo esclude la punibilità solo se l’azione è conforme ai limiti previsti dalla legge; il credito locativo, per quanto certo, non autorizza il proprietario a introdursi nell’immobile, a cambiare la serratura e a sottrarre i beni senza provvedimento giudiziale di sfratto, poiché la disciplina civile impone il ricorso al giudice per l’esecuzione forzata del diritto di proprietà o di possesso; di conseguenza, la condotta del proprietario non rientra nella giustificazione prevista dall’art. 51 c.p. e resta punibile.",
+        "retrieved_norms": [
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "610",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_812_610",
+            "title": "Violenza privata"
+          },
+          {
+            "articolo": "610",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_812_610",
+            "title": "Violenza privata"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6326491936885849,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6326491936885849
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 51 c.p., l’esercizio di un diritto o l’adempimento di un dovere imposto da norma o ordine legittimo esclude la punibilità solo se l’azione è conforme ai limiti previsti dalla legge; il credito locativo, per quanto certo, non autorizza il proprietario a introdursi nell’immobile, a cambiare la serratura e a sottrarre i beni senza provvedimento giudiziale di sfratto, poiché la disciplina civile impone il ricorso al giudice per l’esecuzione forzata del diritto di proprietà o di possesso; di conseguenza, la condotta del proprietario non rientra nella giustificazione prevista dall’art. 51 c.p. e resta punibile."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1282,
+            "attacker_base_score": 0.6979,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.037,
+            "damage_factor": 0.4,
+            "excess": 0.3205,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.743,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7166,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0467,
+            "attacker_base_score": 0.6408,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8334,
+            "damage_factor": 0.4,
+            "excess": 0.1168,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.765,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7166,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1749,
+        "base_score": 0.7165880689338364,
+        "cogency": 0.5651449642977279,
+        "cogency_details": {
+          "argument_quality_score": 0.6650458120028313,
+          "coherence_score": 0.4652441165926244,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Il danno arrecato ai beni mobili dell’inquilino durante il loro spostamento nel box può rientrare nella fattispecie dell’art. 635 c.p. solo se il danneggiamento è stato prodotto mediante violenza alla persona o minaccia, requisiti che dal fatto narrato non risultano presenti; pertanto, in assenza di violenza o minaccia, la condotta non configura il reato di danneggiamento, ma può dar luogo a responsabilità civile per danno patrimoniale derivante dalla violazione di domicilio.",
+        "libro": "CP Libro II",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7165880689338364,
+        "nesso_plausibility": 0.5416880689338364,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Nel caso in esame, per configurare il reato di violenza privata ex art. 610 c.p. è necessario che, mediante violenza o minaccia, il soggetto costringa la vittima a fare, tollerare o omettere qualcosa; il proprietario, pur introducendosi nell’appartamento e sostituendo la serratura, non ha esercitato alcuna violenza o minaccia diretta nei confronti dell’inquilino né lo ha costretto a compiere o a tollerare alcun comportamento, limitandosi a un atto di violenza sulle cose compiuto in assenza del conduttore. Di conseguenza, gli elementi oggettivi richiesti dall’art. 610 c.p. non sono presenti.",
+        "retrieved_norms": [
+          {
+            "articolo": "610",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_812_610",
+            "title": "Violenza privata"
+          },
+          {
+            "articolo": "610",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_812_610",
+            "title": "Violenza privata"
+          },
+          {
+            "articolo": "635",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_859_635",
+            "title": "Danneggiamento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6186009921656523,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6186009921656523
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Nel caso in esame, per configurare il reato di violenza privata ex art. 610 c.p. è necessario che, mediante violenza o minaccia, il soggetto costringa la vittima a fare, tollerare o omettere qualcosa; il proprietario, pur introducendosi nell’appartamento e sostituendo la serratura, non ha esercitato alcuna violenza o minaccia diretta nei confronti dell’inquilino né lo ha costretto a compiere o a tollerare alcun comportamento, limitandosi a un atto di violenza sulle cose compiuto in assenza del conduttore. Di conseguenza, gli elementi oggettivi richiesti dall’art. 610 c.p. non sono presenti."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.4215596295138612,
+    "contra_adjusted": 0.4215596295138612,
+    "contra_raw": 0.3637196295138612,
+    "final": 0.28728043036838297,
+    "final_adjusted": 0.28728043036838297,
+    "final_raw": 0.34512043036838297,
+    "pro": 0.7088400598822442,
+    "pro_adjusted": 0.7088400598822442,
+    "pro_raw": 0.7088400598822442,
+    "pro_raw_dialectical": 0.5665150598822442,
+    "pro_raw_intrinsic": 0.7088400598822442,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8247,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.189
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7252,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1554
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.743,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1468
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.779,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1464
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.743,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1282
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7535,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1133
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8247,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1075
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.779,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.103
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7755,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.093
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7403,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.0475
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 3,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7045452218386193,
+              "axis_id": "AX1",
+              "axis_quality": 0.1743,
+              "link_ids": [
+                "S3->S4",
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7165880689338364,
+              "axis_id": "AX2",
+              "axis_quality": 0.1282,
+              "link_ids": [
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7096817269179014,
+              "axis_id": "AX3",
+              "axis_quality": 0.1075,
+              "link_ids": [
+                "S2->S3"
+              ]
+            }
+          ],
+          "bonus": 0.057839999999999996,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.13666666666666666,
+          "wpcs": 0.482
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.6926577784434771,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.731515165584395,
+          "high_similarity_pair_ratio": 0.6666666666666666,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.024657325467804518,
+          "redundancy_index": 0.13150573582829075
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.189,
+            "attacker_base_score": 0.7097,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1705,
+            "damage_factor": 0.4,
+            "excess": 0.4726,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8247,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1468,
+            "attacker_base_score": 0.7166,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0648,
+            "damage_factor": 0.4,
+            "excess": 0.3669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.743,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.103,
+            "attacker_base_score": 0.7214,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9554,
+            "damage_factor": 0.4,
+            "excess": 0.2575,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.779,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6876,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6399,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7755,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6979,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3358,
+        "base_score": 0.6979028205102022,
+        "cogency": 0.579449803036225,
+        "cogency_details": {
+          "argument_quality_score": 0.6377701056758828,
+          "coherence_score": 0.5211295003965671,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 614 c.p. punisce l’introduzione “contro la volontà espressa o tacita” del soggetto che ha il diritto di escludere l’ingresso; la detenzione delle chiavi da parte del proprietario, unitamente al consueto potere di ispezione e di tutela del bene locato previsto dal contratto di locazione, può essere interpretata come manifestazione di volontà tacita del conduttore di consentire l’accesso, soprattutto in assenza di una manifestazione contraria, perciò l’ingresso del proprietario non si configura come violazione di domicilio. (art. 614 c.p.)",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6979028205102022,
+        "nesso_plausibility": 0.36210282051020226,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "La sostituzione della serratura, pur effettuata senza il consenso del conduttore, non integra il reato di violenza sulle cose previsto dall’art. 392 c.p., il quale punisce chi provoca “danno, trasformazione o mutazione della destinazione” della cosa; la mera rimozione e installazione di una nuova serratura non comporta alcun danno materiale né una mutazione della natura dell’oggetto. Di conseguenza, l’elemento oggettivo richiesto dall’art. 392 c.p. risulta assente, escludendo la configurazione del reato di violenza sulle cose.",
+        "retrieved_norms": [
+          {
+            "articolo": "392",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_473_392",
+            "title": "Esercizio arbitrario delle proprie ragioni con violenza sulle cose"
+          },
+          {
+            "articolo": "392",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_473_392",
+            "title": "Esercizio arbitrario delle proprie ragioni con violenza sulle cose"
+          },
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          },
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5420119920150415,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5420119920150415
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La sostituzione della serratura, pur effettuata senza il consenso del conduttore, non integra il reato di violenza sulle cose previsto dall’art. 392 c.p., il quale punisce chi provoca “danno, trasformazione o mutazione della destinazione” della cosa; la mera rimozione e installazione di una nuova serratura non comporta alcun danno materiale né una mutazione della natura dell’oggetto. Di conseguenza, l’elemento oggettivo richiesto dall’art. 392 c.p. risulta assente, escludendo la configurazione del reato di violenza sulle cose."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1554,
+            "attacker_base_score": 0.7097,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0293,
+            "damage_factor": 0.4,
+            "excess": 0.3885,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7252,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1133,
+            "attacker_base_score": 0.7214,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9241,
+            "damage_factor": 0.4,
+            "excess": 0.2833,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7535,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0068,
+            "attacker_base_score": 0.7166,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6578,
+            "damage_factor": 0.4,
+            "excess": 0.017,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.765,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6876,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6108,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7403,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6408,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.27549999999999997,
+        "base_score": 0.6408364385175201,
+        "cogency": 0.49928023736952976,
+        "cogency_details": {
+          "argument_quality_score": 0.6842731844869082,
+          "coherence_score": 0.31428729025215124,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Per l’art. 635 c.p. il reato di danneggiamento richiede la prova certa che il soggetto abbia distrutto, disperso, deteriorato o reso inservibili le cose altrui; spetta al denunciante dimostrare l’effettivo danno mediante inventario o perizia, ma la mancanza di un inventario completo impedisce di accertare la quantità e la natura del presunto danno, perciò non sussiste l’elemento materiale del reato. In assenza di tale prova, la condotta del proprietario non può essere qualificata ai sensi dell’art. 635 c.p.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6408364385175201,
+        "nesso_plausibility": 0.3653364385175202,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 614 c.p. punisce l’introduzione “contro la volontà espressa o tacita” del soggetto che ha il diritto di escludere l’ingresso; la detenzione delle chiavi da parte del proprietario, unitamente al consueto potere di ispezione e di tutela del bene locato previsto dal contratto di locazione, può essere interpretata come manifestazione di volontà tacita del conduttore di consentire l’accesso, soprattutto in assenza di una manifestazione contraria, perciò l’ingresso del proprietario non si configura come violazione di domicilio. (art. 614 c.p.)",
+        "retrieved_norms": [
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          },
+          {
+            "articolo": "614",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_821_614",
+            "title": "Violazione di domicilio"
+          },
+          {
+            "articolo": "635",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_859_635",
+            "title": "Danneggiamento"
+          },
+          {
+            "articolo": "635",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_859_635",
+            "title": "Danneggiamento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.4319602843727961,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.4319602843727961
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "L’art. 614 c.p. punisce l’introduzione “contro la volontà espressa o tacita” del soggetto che ha il diritto di escludere l’ingresso; la detenzione delle chiavi da parte del proprietario, unitamente al consueto potere di ispezione e di tutela del bene locato previsto dal contratto di locazione, può essere interpretata come manifestazione di volontà tacita del conduttore di consentire l’accesso, soprattutto in assenza di una manifestazione contraria, perciò l’ingresso del proprietario non si configura come violazione di domicilio. (art. 614 c.p.)"
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1282,
+            "attacker_base_score": 0.6979,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.037,
+            "damage_factor": 0.4,
+            "excess": 0.3205,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.743,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7166,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0467,
+            "attacker_base_score": 0.6408,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8334,
+            "damage_factor": 0.4,
+            "excess": 0.1168,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.765,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7166,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1749,
+        "base_score": 0.7165880689338364,
+        "cogency": 0.5651449642977279,
+        "cogency_details": {
+          "argument_quality_score": 0.6650458120028313,
+          "coherence_score": 0.4652441165926244,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Il danno arrecato ai beni mobili dell’inquilino durante il loro spostamento nel box può rientrare nella fattispecie dell’art. 635 c.p. solo se il danneggiamento è stato prodotto mediante violenza alla persona o minaccia, requisiti che dal fatto narrato non risultano presenti; pertanto, in assenza di violenza o minaccia, la condotta non configura il reato di danneggiamento, ma può dar luogo a responsabilità civile per danno patrimoniale derivante dalla violazione di domicilio.",
+        "libro": "CP Libro II",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7165880689338364,
+        "nesso_plausibility": 0.5416880689338364,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Nel caso in esame, per configurare il reato di violenza privata ex art. 610 c.p. è necessario che, mediante violenza o minaccia, il soggetto costringa la vittima a fare, tollerare o omettere qualcosa; il proprietario, pur introducendosi nell’appartamento e sostituendo la serratura, non ha esercitato alcuna violenza o minaccia diretta nei confronti dell’inquilino né lo ha costretto a compiere o a tollerare alcun comportamento, limitandosi a un atto di violenza sulle cose compiuto in assenza del conduttore. Di conseguenza, gli elementi oggettivi richiesti dall’art. 610 c.p. non sono presenti.",
+        "retrieved_norms": [
+          {
+            "articolo": "610",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_812_610",
+            "title": "Violenza privata"
+          },
+          {
+            "articolo": "610",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_812_610",
+            "title": "Violenza privata"
+          },
+          {
+            "articolo": "635",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_859_635",
+            "title": "Danneggiamento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6186009921656523,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6186009921656523
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Nel caso in esame, per configurare il reato di violenza privata ex art. 610 c.p. è necessario che, mediante violenza o minaccia, il soggetto costringa la vittima a fare, tollerare o omettere qualcosa; il proprietario, pur introducendosi nell’appartamento e sostituendo la serratura, non ha esercitato alcuna violenza o minaccia diretta nei confronti dell’inquilino né lo ha costretto a compiere o a tollerare alcun comportamento, limitandosi a un atto di violenza sulle cose compiuto in assenza del conduttore. Di conseguenza, gli elementi oggettivi richiesti dall’art. 610 c.p. non sono presenti."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

@@ -1,0 +1,1471 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.062227920000000006,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.5185660000000001,
+      "attacks_avg": 0.41176666666666667,
+      "base_score_avg": 0.7130005402623246,
+      "cogency_avg": 0.6104387064883018,
+      "net_plausibility": 0.328656029290382,
+      "net_plausibility_adjusted": 0.328656029290382,
+      "net_plausibility_raw": 0.3012338735956579,
+      "norm_support_avg": 0.7845535683290187,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.27844611444220707,
+      "redundancy_penalty": 0.034805764305275884,
+      "semantics_avg": 0.7201583366140883
+    },
+    "pro": {
+      "attacks_avg": 0.2813,
+      "base_score_avg": 0.7484575808460349,
+      "cogency_avg": 0.614953539731081,
+      "net_plausibility": 0.7484575808460349,
+      "net_plausibility_adjusted": 0.7484575808460349,
+      "net_plausibility_dialectical_raw": 0.4671575808460348,
+      "net_plausibility_intrinsic_raw": 0.7484575808460349,
+      "net_plausibility_raw": 0.7484575808460349,
+      "norm_support_avg": 0.8928869016623521,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.20068665860458648,
+      "redundancy_penalty": 0.02508583232557331,
+      "semantics_avg": 0.6893891942058988
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.209,
+            "attacker_base_score": 0.7854,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2695,
+            "damage_factor": 0.4,
+            "excess": 0.5226,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8082,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.747,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1851,
+            "attacker_base_score": 0.7525,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2097,
+            "damage_factor": 0.4,
+            "excess": 0.4627,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8038,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.747,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1444,
+            "attacker_base_score": 0.7074,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.108,
+            "damage_factor": 0.4,
+            "excess": 0.3611,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7832,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.747,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.3941,
+        "base_score": 0.7469673449474239,
+        "cogency": 0.62524908657197,
+        "cogency_details": {
+          "argument_quality_score": 0.6602345372049128,
+          "coherence_score": 0.5902636359390271,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990 il risarcimento è ammesso solo se l’interessato dimostra in modo certo il nesso di causalità tra il ritardo amministrativo e il danno subito; la mera constatazione che il ritardo è coinciso con la perdita dei contratti non costituisce prova sufficiente, in assenza di una perizia o di documentazione che escluda altre cause concorrenti.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7469673449474239,
+        "nesso_plausibility": 0.3528673449474239,
+        "norm_support": 0.8825,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8825,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 20 L. 241/1990 il silenzio‑assenso si verifica solo quando, entro il termine di conclusione fissato dall’art. 8, l’amministrazione non comunica alcun provvedimento di diniego; tuttavia, l’art. 10‑bis impone che, prima di adottare un provvedimento negativo, l’amministrazione debba notificare tempestivamente i motivi ostativi e concedere al richiedente dieci giorni per osservazioni. Poiché nel caso di specie l’ente non ha inviato alcuna comunicazione di ostacolo né ha richiesto integrazioni, non sussiste il presupposto per l’applicazione del silenzio‑assenso, il quale non può produrre un accoglimento tacito in assenza di tale comunicazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6879753965861098,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6879753965861098
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 20 L. 241/1990 il silenzio‑assenso si verifica solo quando, entro il termine di conclusione fissato dall’art. 8, l’amministrazione non comunica alcun provvedimento di diniego; tuttavia, l’art. 10‑bis impone che, prima di adottare un provvedimento negativo, l’amministrazione debba notificare tempestivamente i motivi ostativi e concedere al richiedente dieci giorni per osservazioni. Poiché nel caso di specie l’ente non ha inviato alcuna comunicazione di ostacolo né ha richiesto integrazioni, non sussiste il presupposto per l’applicazione del silenzio‑assenso, il quale non può produrre un accoglimento tacito in assenza di tale comunicazione."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2211,
+            "attacker_base_score": 0.7854,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2209,
+            "damage_factor": 0.4,
+            "excess": 0.5527,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7772,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6682,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1711,
+            "attacker_base_score": 0.7074,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0961,
+            "damage_factor": 0.4,
+            "excess": 0.4278,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7747,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6682,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1237,
+            "attacker_base_score": 0.7525,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9776,
+            "damage_factor": 0.4,
+            "excess": 0.3094,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7641,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6682,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3922,
+        "base_score": 0.668219017764045,
+        "cogency": 0.5810435651386544,
+        "cogency_details": {
+          "argument_quality_score": 0.645773902832731,
+          "coherence_score": 0.5163132274445779,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 10‑bis L. 241/1990 l’amministrazione, prima di adottare un provvedimento negativo o di prolungare il termine per la conclusione, è tenuta a comunicare tempestivamente i motivi ostativi e, di conseguenza, a provare l’esistenza di verifiche intersettoriali effettivamente pendenti; pertanto l’onere della prova ricade sull’ente, il quale deve produrre documentazione attestante che tali verifiche siano state avviate e non ancora concluse, altrimenti non sussiste alcun giustificato motivo per l’inerzia. (cfr. art. 10‑bis L. 241/1990).",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.668219017764045,
+        "nesso_plausibility": 0.276019017764045,
+        "norm_support": 0.688660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.688660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.2833333333333333
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 2‑bis L. 241/1990 il risarcimento è ammesso solo se l’interessato dimostra in modo certo il nesso di causalità tra il ritardo amministrativo e il danno subito; la mera constatazione che il ritardo è coinciso con la perdita dei contratti non costituisce prova sufficiente, in assenza di una perizia o di documentazione che escluda altre cause concorrenti.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7281388874254208,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7281388874254208
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2‑bis L. 241/1990 il risarcimento è ammesso solo se l’interessato dimostra in modo certo il nesso di causalità tra il ritardo amministrativo e il danno subito; la mera constatazione che il ritardo è coinciso con la perdita dei contratti non costituisce prova sufficiente, in assenza di una perizia o di documentazione che escluda altre cause concorrenti."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2394,
+            "attacker_base_score": 0.7854,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.3223,
+            "damage_factor": 0.4,
+            "excess": 0.5985,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8418,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7238,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2096,
+            "attacker_base_score": 0.7525,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2478,
+            "damage_factor": 0.4,
+            "excess": 0.524,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.829,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7238,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0865,
+            "attacker_base_score": 0.7074,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9401,
+            "damage_factor": 0.4,
+            "excess": 0.2163,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7818,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7238,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.449,
+        "base_score": 0.7238152580755047,
+        "cogency": 0.625023467754281,
+        "cogency_details": {
+          "argument_quality_score": 0.724190846723794,
+          "coherence_score": 0.5258560887847679,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 20, comma 1, L. 241/1990 il silenzio dell’amministrazione produce accoglimento solo quando, entro il termine di conclusione comunicato, essa non comunica alcun provvedimento di diniego né motivi ostativi; nel caso di specie, l’amministrazione non ha nemmeno comunicato i motivi ostativi né ha richiesto integrazioni, perciò il silenzio è qualificato e non genera alcun provvedimento di accoglimento (art. 10‑bis, L. 241/1990). Di conseguenza, l’art. 2‑bis L. 241/1990 non si applica, poiché l’esclusione per silenzio qualificato preclude la responsabilità per danno patrimoniale.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7238152580755047,
+        "nesso_plausibility": 0.2748152580755047,
+        "norm_support": 0.7825,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.7825,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.5666666666666667
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 10‑bis L. 241/1990 l’amministrazione, prima di adottare un provvedimento negativo o di prolungare il termine per la conclusione, è tenuta a comunicare tempestivamente i motivi ostativi e, di conseguenza, a provare l’esistenza di verifiche intersettoriali effettivamente pendenti; pertanto l’onere della prova ricade sull’ente, il quale deve produrre documentazione attestante che tali verifiche siano state avviate e non ancora concluse, altrimenti non sussiste alcun giustificato motivo per l’inerzia. (cfr. art. 10‑bis L. 241/1990).",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "20",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7443607258307346,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7443607258307346
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 10‑bis L. 241/1990 l’amministrazione, prima di adottare un provvedimento negativo o di prolungare il termine per la conclusione, è tenuta a comunicare tempestivamente i motivi ostativi e, di conseguenza, a provare l’esistenza di verifiche intersettoriali effettivamente pendenti; pertanto l’onere della prova ricade sull’ente, il quale deve produrre documentazione attestante che tali verifiche siano state avviate e non ancora concluse, altrimenti non sussiste alcun giustificato motivo per l’inerzia. (cfr. art. 10‑bis L. 241/1990)."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1688,
+            "attacker_base_score": 0.747,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2074,
+            "damage_factor": 0.4,
+            "excess": 0.4219,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8082,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7854,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1002,
+            "attacker_base_score": 0.7238,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0358,
+            "damage_factor": 0.4,
+            "excess": 0.2504,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8418,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7854,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.039,
+            "attacker_base_score": 0.6682,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8829,
+            "damage_factor": 0.4,
+            "excess": 0.0975,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7772,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7854,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.269,
+        "base_score": 0.7854337854803618,
+        "cogency": 0.6768424529764144,
+        "cogency_details": {
+          "argument_quality_score": 0.7036787863105066,
+          "coherence_score": 0.6500061196423222,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’amministrazione, pur avendo ricevuto l’istanza completa, non ha inviato alcuna comunicazione dei motivi ostativi né ha richiesto integrazioni istruttorie, violando l’obbligo di cui all’art. 10‑bis L. 241/1990, che prevede la comunicazione tempestiva dei motivi di diniego e la sospensione dei termini procedimentali. In assenza di tale comunicazione, il silenzio dell’amministrazione, per quanto previsto dall’art. 20 L. 241/1990, equivale a provvedimento di accoglimento dell’istanza, a meno che la legge disponga diversamente. Pertanto, l’inattività amministrativa non solo ha omesso l’adempimento dell’art. 10‑bis, ma ha anche prodotto l’effetto giuridico del silenzio‑assenso previsto dall’art. 20.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7854337854803618,
+        "nesso_plausibility": 0.5164337854803618,
+        "norm_support": 0.8825,
+        "norm_support_details": {
+          "citation_count": 6,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8825,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 2 della L. 241/1990, l’amministrazione è tenuta a concludere il procedimento avviato su istanza di parte mediante l’adozione di un provvedimento espresso entro il termine fissato nella comunicazione di avvio (art. 8), che per le istanze ordinarie è generalmente di 30 giorni salvo diversa disciplina. Nel caso in esame l’impresa ha presentato istanza completa e, decorso il termine legale previsto, non ha ricevuto alcun provvedimento né comunicazione dei motivi ostativi, configurando così la violazione dell’obbligo di conclusione entro il termine stabilito.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "20",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7646034986247915,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7646034986247915
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2 della L. 241/1990, l’amministrazione è tenuta a concludere il procedimento avviato su istanza di parte mediante l’adozione di un provvedimento espresso entro il termine fissato nella comunicazione di avvio (art. 8), che per le istanze ordinarie è generalmente di 30 giorni salvo diversa disciplina. Nel caso in esame l’impresa ha presentato istanza completa e, decorso il termine legale previsto, non ha ricevuto alcun provvedimento né comunicazione dei motivi ostativi, configurando così la violazione dell’obbligo di conclusione entro il termine stabilito."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1793,
+            "attacker_base_score": 0.747,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2008,
+            "damage_factor": 0.4,
+            "excess": 0.4482,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8038,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7525,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.179,
+            "attacker_base_score": 0.7238,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2002,
+            "damage_factor": 0.4,
+            "excess": 0.4476,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.829,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7525,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0462,
+            "attacker_base_score": 0.6682,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.868,
+            "damage_factor": 0.4,
+            "excess": 0.1155,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7641,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7525,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.35829999999999995,
+        "base_score": 0.752542081310233,
+        "cogency": 0.5919052750741466,
+        "cogency_details": {
+          "argument_quality_score": 0.6301994773603896,
+          "coherence_score": 0.5536110727879036,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 11 L. 241/1990 il “potere sostitutivo” è una facoltà attribuita all’amministrazione, la quale può concludere, d’accordo con l’interessato, un provvedimento sostitutivo del provvedimento finale, ma tale accordo è efficace solo se adottato dall’amministrazione stessa; pertanto la mera attivazione da parte dell’impresa di un canale interno non produce alcun provvedimento espresso né sospende il termine di conclusione del procedimento. In mancanza di un accordo formalmente stipulato dall’amministrazione, il potere sostitutivo resta inattivo e l’onere di concludere il procedimento rimane integralmente a carico dell’ente, il quale deve comunque adottare un provvedimento espresso entro i termini di legge.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.752542081310233,
+        "nesso_plausibility": 0.3942420813102331,
+        "norm_support": 0.915,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9,
+          "citation_specificity_score": 0.6,
+          "final": 0.915,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’amministrazione, pur avendo ricevuto l’istanza completa, non ha inviato alcuna comunicazione dei motivi ostativi né ha richiesto integrazioni istruttorie, violando l’obbligo di cui all’art. 10‑bis L. 241/1990, che prevede la comunicazione tempestiva dei motivi di diniego e la sospensione dei termini procedimentali. In assenza di tale comunicazione, il silenzio dell’amministrazione, per quanto previsto dall’art. 20 L. 241/1990, equivale a provvedimento di accoglimento dell’istanza, a meno che la legge disponga diversamente. Pertanto, l’inattività amministrativa non solo ha omesso l’adempimento dell’art. 10‑bis, ma ha anche prodotto l’effetto giuridico del silenzio‑assenso previsto dall’art. 20.",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "20",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "11",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_14_11",
+            "title": "Accordi integrativi o sostitutivi del provvedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6965683292932969,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6965683292932969
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’amministrazione, pur avendo ricevuto l’istanza completa, non ha inviato alcuna comunicazione dei motivi ostativi né ha richiesto integrazioni istruttorie, violando l’obbligo di cui all’art. 10‑bis L. 241/1990, che prevede la comunicazione tempestiva dei motivi di diniego e la sospensione dei termini procedimentali. In assenza di tale comunicazione, il silenzio dell’amministrazione, per quanto previsto dall’art. 20 L. 241/1990, equivale a provvedimento di accoglimento dell’istanza, a meno che la legge disponga diversamente. Pertanto, l’inattività amministrativa non solo ha omesso l’adempimento dell’art. 10‑bis, ma ha anche prodotto l’effetto giuridico del silenzio‑assenso previsto dall’art. 20."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1148,
+            "attacker_base_score": 0.747,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9945,
+            "damage_factor": 0.4,
+            "excess": 0.2871,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7832,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7074,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1018,
+            "attacker_base_score": 0.7238,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.962,
+            "damage_factor": 0.4,
+            "excess": 0.2546,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7818,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7074,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0691,
+            "attacker_base_score": 0.6682,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.88,
+            "damage_factor": 0.4,
+            "excess": 0.1726,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7747,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception",
+            "target_base_score": 0.7074,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.21660000000000001,
+        "base_score": 0.7073968757475095,
+        "cogency": 0.576112891142682,
+        "cogency_details": {
+          "argument_quality_score": 0.6231224919348108,
+          "coherence_score": 0.5291032903505531,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990 l’amministrazione è tenuta al risarcimento del danno ingiusto cagionato dall’inosservanza del termine di conclusione del procedimento, a condizione che l’impresa dimostri (i) l’esistenza del danno patrimoniale – qui rappresentato dalla perdita dei contratti e dalla mancata avvio dell’attività programmata – e (ii) il nesso causale tra tale danno e il ritardo amministrativo (DELAY_DAMAGE_PROOF); la documentazione contrattuale e le comunicazioni di sollecito costituiscono prova sufficiente a soddisfare tali requisiti.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7073968757475095,
+        "nesso_plausibility": 0.4907968757475095,
+        "norm_support": 0.881160704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.881160704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.925
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 11 L. 241/1990 il “potere sostitutivo” è una facoltà attribuita all’amministrazione, la quale può concludere, d’accordo con l’interessato, un provvedimento sostitutivo del provvedimento finale, ma tale accordo è efficace solo se adottato dall’amministrazione stessa; pertanto la mera attivazione da parte dell’impresa di un canale interno non produce alcun provvedimento espresso né sospende il termine di conclusione del procedimento. In mancanza di un accordo formalmente stipulato dall’amministrazione, il potere sostitutivo resta inattivo e l’onere di concludere il procedimento rimane integralmente a carico dell’ente, il quale deve comunque adottare un provvedimento espresso entro i termini di legge.",
+        "retrieved_norms": [
+          {
+            "articolo": "11",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_14_11",
+            "title": "Accordi integrativi o sostitutivi del provvedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.606995754699608,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.606995754699608
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 11 L. 241/1990 il “potere sostitutivo” è una facoltà attribuita all’amministrazione, la quale può concludere, d’accordo con l’interessato, un provvedimento sostitutivo del provvedimento finale, ma tale accordo è efficace solo se adottato dall’amministrazione stessa; pertanto la mera attivazione da parte dell’impresa di un canale interno non produce alcun provvedimento espresso né sospende il termine di conclusione del procedimento. In mancanza di un accordo formalmente stipulato dall’amministrazione, il potere sostitutivo resta inattivo e l’onere di concludere il procedimento rimane integralmente a carico dell’ente, il quale deve comunque adottare un provvedimento espresso entro i termini di legge."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.328656029290382,
+    "contra_adjusted": 0.328656029290382,
+    "contra_raw": 0.3012338735956579,
+    "final": 0.41980155155565285,
+    "final_adjusted": 0.41980155155565285,
+    "final_raw": 0.44722370725037697,
+    "pro": 0.7484575808460349,
+    "pro_adjusted": 0.7484575808460349,
+    "pro_raw": 0.7484575808460349,
+    "pro_raw_dialectical": 0.4671575808460348,
+    "pro_raw_intrinsic": 0.7484575808460349,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8418,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.2394
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7772,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2211
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.829,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.2096
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8082,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.209
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8038,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1851
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8038,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1793
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.829,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.179
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7747,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1711
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8082,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1688
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7832,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1444
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.7689879333952974,
+              "axis_id": "AX1",
+              "axis_quality": 0.24988,
+              "link_ids": [
+                "S1->S2",
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7073968757475095,
+              "axis_id": "AX2",
+              "axis_quality": 0.14534,
+              "link_ids": [
+                "S3->S4"
+              ]
+            }
+          ],
+          "bonus": 0.062227920000000006,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.19761,
+          "wpcs": 0.5185660000000001
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.797964912043818,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.034805764305275884,
+          "redundancy_index": 0.27844611444220707
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7761922644092842,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.02508583232557331,
+          "redundancy_index": 0.20068665860458648
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2394,
+            "attacker_base_score": 0.7854,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.3223,
+            "damage_factor": 0.4,
+            "excess": 0.5985,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8418,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7238,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2096,
+            "attacker_base_score": 0.7525,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2478,
+            "damage_factor": 0.4,
+            "excess": 0.524,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.829,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7238,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0865,
+            "attacker_base_score": 0.7074,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9401,
+            "damage_factor": 0.4,
+            "excess": 0.2163,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7818,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7238,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.449,
+        "base_score": 0.7238152580755047,
+        "cogency": 0.625023467754281,
+        "cogency_details": {
+          "argument_quality_score": 0.724190846723794,
+          "coherence_score": 0.5258560887847679,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 20, comma 1, L. 241/1990 il silenzio dell’amministrazione produce accoglimento solo quando, entro il termine di conclusione comunicato, essa non comunica alcun provvedimento di diniego né motivi ostativi; nel caso di specie, l’amministrazione non ha nemmeno comunicato i motivi ostativi né ha richiesto integrazioni, perciò il silenzio è qualificato e non genera alcun provvedimento di accoglimento (art. 10‑bis, L. 241/1990). Di conseguenza, l’art. 2‑bis L. 241/1990 non si applica, poiché l’esclusione per silenzio qualificato preclude la responsabilità per danno patrimoniale.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7238152580755047,
+        "nesso_plausibility": 0.2748152580755047,
+        "norm_support": 0.7825,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.7825,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.5666666666666667
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 10‑bis L. 241/1990 l’amministrazione, prima di adottare un provvedimento negativo o di prolungare il termine per la conclusione, è tenuta a comunicare tempestivamente i motivi ostativi e, di conseguenza, a provare l’esistenza di verifiche intersettoriali effettivamente pendenti; pertanto l’onere della prova ricade sull’ente, il quale deve produrre documentazione attestante che tali verifiche siano state avviate e non ancora concluse, altrimenti non sussiste alcun giustificato motivo per l’inerzia. (cfr. art. 10‑bis L. 241/1990).",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "20",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7443607258307346,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7443607258307346
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 10‑bis L. 241/1990 l’amministrazione, prima di adottare un provvedimento negativo o di prolungare il termine per la conclusione, è tenuta a comunicare tempestivamente i motivi ostativi e, di conseguenza, a provare l’esistenza di verifiche intersettoriali effettivamente pendenti; pertanto l’onere della prova ricade sull’ente, il quale deve produrre documentazione attestante che tali verifiche siano state avviate e non ancora concluse, altrimenti non sussiste alcun giustificato motivo per l’inerzia. (cfr. art. 10‑bis L. 241/1990)."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2211,
+            "attacker_base_score": 0.7854,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2209,
+            "damage_factor": 0.4,
+            "excess": 0.5527,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7772,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6682,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1711,
+            "attacker_base_score": 0.7074,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0961,
+            "damage_factor": 0.4,
+            "excess": 0.4278,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7747,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6682,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1237,
+            "attacker_base_score": 0.7525,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9776,
+            "damage_factor": 0.4,
+            "excess": 0.3094,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7641,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6682,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3922,
+        "base_score": 0.668219017764045,
+        "cogency": 0.5810435651386544,
+        "cogency_details": {
+          "argument_quality_score": 0.645773902832731,
+          "coherence_score": 0.5163132274445779,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 10‑bis L. 241/1990 l’amministrazione, prima di adottare un provvedimento negativo o di prolungare il termine per la conclusione, è tenuta a comunicare tempestivamente i motivi ostativi e, di conseguenza, a provare l’esistenza di verifiche intersettoriali effettivamente pendenti; pertanto l’onere della prova ricade sull’ente, il quale deve produrre documentazione attestante che tali verifiche siano state avviate e non ancora concluse, altrimenti non sussiste alcun giustificato motivo per l’inerzia. (cfr. art. 10‑bis L. 241/1990).",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.668219017764045,
+        "nesso_plausibility": 0.276019017764045,
+        "norm_support": 0.688660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.688660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.2833333333333333
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 2‑bis L. 241/1990 il risarcimento è ammesso solo se l’interessato dimostra in modo certo il nesso di causalità tra il ritardo amministrativo e il danno subito; la mera constatazione che il ritardo è coinciso con la perdita dei contratti non costituisce prova sufficiente, in assenza di una perizia o di documentazione che escluda altre cause concorrenti.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7281388874254208,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7281388874254208
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2‑bis L. 241/1990 il risarcimento è ammesso solo se l’interessato dimostra in modo certo il nesso di causalità tra il ritardo amministrativo e il danno subito; la mera constatazione che il ritardo è coinciso con la perdita dei contratti non costituisce prova sufficiente, in assenza di una perizia o di documentazione che escluda altre cause concorrenti."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.209,
+            "attacker_base_score": 0.7854,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2695,
+            "damage_factor": 0.4,
+            "excess": 0.5226,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8082,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.747,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1851,
+            "attacker_base_score": 0.7525,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2097,
+            "damage_factor": 0.4,
+            "excess": 0.4627,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8038,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.747,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1444,
+            "attacker_base_score": 0.7074,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.108,
+            "damage_factor": 0.4,
+            "excess": 0.3611,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7832,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.747,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.3941,
+        "base_score": 0.7469673449474239,
+        "cogency": 0.62524908657197,
+        "cogency_details": {
+          "argument_quality_score": 0.6602345372049128,
+          "coherence_score": 0.5902636359390271,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 2‑bis L. 241/1990 il risarcimento è ammesso solo se l’interessato dimostra in modo certo il nesso di causalità tra il ritardo amministrativo e il danno subito; la mera constatazione che il ritardo è coinciso con la perdita dei contratti non costituisce prova sufficiente, in assenza di una perizia o di documentazione che escluda altre cause concorrenti.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7469673449474239,
+        "nesso_plausibility": 0.3528673449474239,
+        "norm_support": 0.8825,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8825,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 20 L. 241/1990 il silenzio‑assenso si verifica solo quando, entro il termine di conclusione fissato dall’art. 8, l’amministrazione non comunica alcun provvedimento di diniego; tuttavia, l’art. 10‑bis impone che, prima di adottare un provvedimento negativo, l’amministrazione debba notificare tempestivamente i motivi ostativi e concedere al richiedente dieci giorni per osservazioni. Poiché nel caso di specie l’ente non ha inviato alcuna comunicazione di ostacolo né ha richiesto integrazioni, non sussiste il presupposto per l’applicazione del silenzio‑assenso, il quale non può produrre un accoglimento tacito in assenza di tale comunicazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6879753965861098,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6879753965861098
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 20 L. 241/1990 il silenzio‑assenso si verifica solo quando, entro il termine di conclusione fissato dall’art. 8, l’amministrazione non comunica alcun provvedimento di diniego; tuttavia, l’art. 10‑bis impone che, prima di adottare un provvedimento negativo, l’amministrazione debba notificare tempestivamente i motivi ostativi e concedere al richiedente dieci giorni per osservazioni. Poiché nel caso di specie l’ente non ha inviato alcuna comunicazione di ostacolo né ha richiesto integrazioni, non sussiste il presupposto per l’applicazione del silenzio‑assenso, il quale non può produrre un accoglimento tacito in assenza di tale comunicazione."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

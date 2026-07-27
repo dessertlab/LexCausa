@@ -1,0 +1,993 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.0583104,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.48592,
+      "attacks_avg": 0.37895,
+      "base_score_avg": 0.7448345469136166,
+      "cogency_avg": 0.5716047431925406,
+      "net_plausibility": 0.4241949469136166,
+      "net_plausibility_adjusted": 0.4241949469136166,
+      "net_plausibility_raw": 0.3658845469136166,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.5778437465195146
+    },
+    "pro": {
+      "attacks_avg": 0.1432,
+      "base_score_avg": 0.7831685573863779,
+      "cogency_avg": 0.6087179396927338,
+      "net_plausibility": 0.7831685573863779,
+      "net_plausibility_adjusted": 0.7831685573863779,
+      "net_plausibility_dialectical_raw": 0.6399685573863779,
+      "net_plausibility_intrinsic_raw": 0.7831685573863779,
+      "net_plausibility_raw": 0.7831685573863779,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.6685105849285258
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2566,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3955,
+            "damage_factor": 0.4,
+            "excess": 0.6414,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8514,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7541,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1634,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1627,
+            "damage_factor": 0.4,
+            "excess": 0.4086,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7784,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7541,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.42,
+        "base_score": 0.754146615823636,
+        "cogency": 0.5833092621990691,
+        "cogency_details": {
+          "argument_quality_score": 0.6569884525225147,
+          "coherence_score": 0.5096300718756235,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1218 c.c., il creditore può domandare il risarcimento solo se dimostra il danno subito e il nesso causale diretto tra l’inadempimento e le perdite. La pretesa di danni commerciali per contratti persi, quindi, resta priva di fondamento finché non venga fornita prova concreta del collegamento tra il ritardo di 12 giorni e tali perdite. Inoltre, l’art. 1226 c.c. prevede la liquidazione equitativa solo quando il danno è stato effettivamente accertato, il che esclude la quantificazione automatica di danni aggiuntivi non dimostrati.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.754146615823636,
+        "nesso_plausibility": 0.334146615823636,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1384 c.c., la penale è riducibile quando l’ammontare risulta manifestamente eccessivo rispetto all’interesse del creditore; nel caso in esame €8.000 al giorno, per un totale di €96.000, supera di gran lunga il danno effettivamente subito, poiché la merce è stata comunque accettata e utilizzata, limitando il pregiudizio a un semplice ritardo operativo. Pertanto la penale appare sproporzionata e deve essere adeguata al reale danno, in quanto la disciplina delle penali non consente importi punitivi privi di corrispondenza con il danno effettivo.",
+        "retrieved_norms": [
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1226",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1296_art1226",
+            "title": "Valutazione equitativa del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5971794572130507,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5971794572130507
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1384 c.c., la penale è riducibile quando l’ammontare risulta manifestamente eccessivo rispetto all’interesse del creditore; nel caso in esame €8.000 al giorno, per un totale di €96.000, supera di gran lunga il danno effettivamente subito, poiché la merce è stata comunque accettata e utilizzata, limitando il pregiudizio a un semplice ritardo operativo. Pertanto la penale appare sproporzionata e deve essere adeguata al reale danno, in quanto la disciplina delle penali non consente importi punitivi privi di corrispondenza con il danno effettivo."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1886,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.207,
+            "damage_factor": 0.4,
+            "excess": 0.4714,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7364,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7355,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1493,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1088,
+            "damage_factor": 0.4,
+            "excess": 0.3733,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7423,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7355,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.3379,
+        "base_score": 0.7355224780035973,
+        "cogency": 0.5599002241860123,
+        "cogency_details": {
+          "argument_quality_score": 0.6412994740577145,
+          "coherence_score": 0.47850097431431005,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’accettazione della merce, seppur avvenuta con ritardo, costituisce un atto di accettazione dell’adempimento parziale e, secondo l’art. 1181 c.c., una volta che il creditore ha accettato la prestazione non può più pretendere la penale per la parte già fruita. Inoltre, ai sensi dell’art. 1457 c.c., il committente doveva comunicare entro tre giorni l’intenzione di risolvere per inadempimento del termine essenziale; l’accettazione tardiva equivale a tacita rinuncia a tale opposizione, riducendo così la gravità della violazione e l’esigibilità della penale.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7355224780035973,
+        "nesso_plausibility": 0.3976224780035973,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1218 c.c., il creditore può domandare il risarcimento solo se dimostra il danno subito e il nesso causale diretto tra l’inadempimento e le perdite. La pretesa di danni commerciali per contratti persi, quindi, resta priva di fondamento finché non venga fornita prova concreta del collegamento tra il ritardo di 12 giorni e tali perdite. Inoltre, l’art. 1226 c.c. prevede la liquidazione equitativa solo quando il danno è stato effettivamente accertato, il che esclude la quantificazione automatica di danni aggiuntivi non dimostrati.",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1226",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1296_art1226",
+            "title": "Valutazione equitativa del danno"
+          },
+          {
+            "articolo": "1181",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1251_art1181",
+            "title": "Adempimento parziale"
+          },
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5585080358259786,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5585080358259786
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1218 c.c., il creditore può domandare il risarcimento solo se dimostra il danno subito e il nesso causale diretto tra l’inadempimento e le perdite. La pretesa di danni commerciali per contratti persi, quindi, resta priva di fondamento finché non venga fornita prova concreta del collegamento tra il ritardo di 12 giorni e tali perdite. Inoltre, l’art. 1226 c.c. prevede la liquidazione equitativa solo quando il danno è stato effettivamente accertato, il che esclude la quantificazione automatica di danni aggiuntivi non dimostrati."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1005,
+            "attacker_base_score": 0.7541,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.998,
+            "damage_factor": 0.4,
+            "excess": 0.2512,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7784,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7468,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7355,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6552,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7423,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7468,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1005,
+        "base_score": 0.7468270835503943,
+        "cogency": 0.6021196478464339,
+        "cogency_details": {
+          "argument_quality_score": 0.6730447322221372,
+          "coherence_score": 0.5311945634707305,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7468270835503943,
+        "nesso_plausibility": 0.6463270835503943,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il contratto di fornitura prevede espressamente che il termine di consegna sia “essenziale” nell’interesse della società di logistica, pertanto, ai sensi dell’art. 1457 c.c., tale scadenza è qualificata come termine essenziale e la sua violazione consente al committente di risolvere il contratto di diritto se non comunica al fornitore, entro tre giorni, la volontà di esigere comunque l’esecuzione. La presenza di questa clausola implica che il ritardo di 12 giorni costituisce una violazione di un obbligo essenziale, attivando le conseguenze previste dall’articolo citato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5539706306548803,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5539706306548803
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il contratto di fornitura prevede espressamente che il termine di consegna sia “essenziale” nell’interesse della società di logistica, pertanto, ai sensi dell’art. 1457 c.c., tale scadenza è qualificata come termine essenziale e la sua violazione consente al committente di risolvere il contratto di diritto se non comunica al fornitore, entro tre giorni, la volontà di esigere comunque l’esecuzione. La presenza di questa clausola implica che il ritardo di 12 giorni costituisce una violazione di un obbligo essenziale, attivando le conseguenze previste dall’articolo citato."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1859,
+            "attacker_base_score": 0.7541,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2842,
+            "damage_factor": 0.4,
+            "excess": 0.4647,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8514,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7355,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.65,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7364,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1859,
+        "base_score": 0.8195100312223615,
+        "cogency": 0.6153162315390338,
+        "cogency_details": {
+          "argument_quality_score": 0.6693243422350612,
+          "coherence_score": 0.5613081208430064,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1384 c.c. la penale è riducibile equamente quando risulta manifestamente eccessiva, tenuto conto dell’interesse del creditore e dell’eventuale adempimento parziale del debitore; considerando che il ritardo imputabile al fornitore è di otto giorni (i quattro giorni di sciopero portuale non gli sono riconducibili) e che il committente ha comunque accettato le forniture, la somma di € 96.000 appare sproporzionata rispetto al danno effettivo e può essere ridotta dal giudice in misura proporzionale al ritardo effettivamente colposo.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8195100312223615,
+        "nesso_plausibility": 0.6336100312223616,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7830505392021714,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7830505392021714
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.4241949469136166,
+    "contra_adjusted": 0.4241949469136166,
+    "contra_raw": 0.3658845469136166,
+    "final": 0.35897361047276133,
+    "final_adjusted": 0.35897361047276133,
+    "final_raw": 0.4172840104727613,
+    "pro": 0.7831685573863779,
+    "pro_adjusted": 0.7831685573863779,
+    "pro_raw": 0.7831685573863779,
+    "pro_raw_dialectical": 0.6399685573863779,
+    "pro_raw_intrinsic": 0.7831685573863779,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8514,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2566
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7364,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1886
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8514,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1859
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7784,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1634
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7423,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1493
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7784,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1005
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.8195100312223615,
+              "axis_id": "AX1",
+              "axis_quality": 0.1859,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7468270835503943,
+              "axis_id": "AX2",
+              "axis_quality": 0.1005,
+              "link_ids": [
+                "S1->S2"
+              ]
+            }
+          ],
+          "bonus": 0.0583104,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.1432,
+          "wpcs": 0.48592
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.646591193522504,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.5806016143853964,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2566,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3955,
+            "damage_factor": 0.4,
+            "excess": 0.6414,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8514,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7541,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1634,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1627,
+            "damage_factor": 0.4,
+            "excess": 0.4086,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7784,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7541,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.42,
+        "base_score": 0.754146615823636,
+        "cogency": 0.5833092621990691,
+        "cogency_details": {
+          "argument_quality_score": 0.6569884525225147,
+          "coherence_score": 0.5096300718756235,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1218 c.c., il creditore può domandare il risarcimento solo se dimostra il danno subito e il nesso causale diretto tra l’inadempimento e le perdite. La pretesa di danni commerciali per contratti persi, quindi, resta priva di fondamento finché non venga fornita prova concreta del collegamento tra il ritardo di 12 giorni e tali perdite. Inoltre, l’art. 1226 c.c. prevede la liquidazione equitativa solo quando il danno è stato effettivamente accertato, il che esclude la quantificazione automatica di danni aggiuntivi non dimostrati.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.754146615823636,
+        "nesso_plausibility": 0.334146615823636,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1384 c.c., la penale è riducibile quando l’ammontare risulta manifestamente eccessivo rispetto all’interesse del creditore; nel caso in esame €8.000 al giorno, per un totale di €96.000, supera di gran lunga il danno effettivamente subito, poiché la merce è stata comunque accettata e utilizzata, limitando il pregiudizio a un semplice ritardo operativo. Pertanto la penale appare sproporzionata e deve essere adeguata al reale danno, in quanto la disciplina delle penali non consente importi punitivi privi di corrispondenza con il danno effettivo.",
+        "retrieved_norms": [
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1226",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1296_art1226",
+            "title": "Valutazione equitativa del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5971794572130507,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5971794572130507
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1384 c.c., la penale è riducibile quando l’ammontare risulta manifestamente eccessivo rispetto all’interesse del creditore; nel caso in esame €8.000 al giorno, per un totale di €96.000, supera di gran lunga il danno effettivamente subito, poiché la merce è stata comunque accettata e utilizzata, limitando il pregiudizio a un semplice ritardo operativo. Pertanto la penale appare sproporzionata e deve essere adeguata al reale danno, in quanto la disciplina delle penali non consente importi punitivi privi di corrispondenza con il danno effettivo."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1886,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.207,
+            "damage_factor": 0.4,
+            "excess": 0.4714,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7364,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7355,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1493,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1088,
+            "damage_factor": 0.4,
+            "excess": 0.3733,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7423,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7355,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.3379,
+        "base_score": 0.7355224780035973,
+        "cogency": 0.5599002241860123,
+        "cogency_details": {
+          "argument_quality_score": 0.6412994740577145,
+          "coherence_score": 0.47850097431431005,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’accettazione della merce, seppur avvenuta con ritardo, costituisce un atto di accettazione dell’adempimento parziale e, secondo l’art. 1181 c.c., una volta che il creditore ha accettato la prestazione non può più pretendere la penale per la parte già fruita. Inoltre, ai sensi dell’art. 1457 c.c., il committente doveva comunicare entro tre giorni l’intenzione di risolvere per inadempimento del termine essenziale; l’accettazione tardiva equivale a tacita rinuncia a tale opposizione, riducendo così la gravità della violazione e l’esigibilità della penale.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7355224780035973,
+        "nesso_plausibility": 0.3976224780035973,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1218 c.c., il creditore può domandare il risarcimento solo se dimostra il danno subito e il nesso causale diretto tra l’inadempimento e le perdite. La pretesa di danni commerciali per contratti persi, quindi, resta priva di fondamento finché non venga fornita prova concreta del collegamento tra il ritardo di 12 giorni e tali perdite. Inoltre, l’art. 1226 c.c. prevede la liquidazione equitativa solo quando il danno è stato effettivamente accertato, il che esclude la quantificazione automatica di danni aggiuntivi non dimostrati.",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1226",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1296_art1226",
+            "title": "Valutazione equitativa del danno"
+          },
+          {
+            "articolo": "1181",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1251_art1181",
+            "title": "Adempimento parziale"
+          },
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5585080358259786,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5585080358259786
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1218 c.c., il creditore può domandare il risarcimento solo se dimostra il danno subito e il nesso causale diretto tra l’inadempimento e le perdite. La pretesa di danni commerciali per contratti persi, quindi, resta priva di fondamento finché non venga fornita prova concreta del collegamento tra il ritardo di 12 giorni e tali perdite. Inoltre, l’art. 1226 c.c. prevede la liquidazione equitativa solo quando il danno è stato effettivamente accertato, il che esclude la quantificazione automatica di danni aggiuntivi non dimostrati."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1859,
+            "attacker_base_score": 0.7541,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2842,
+            "damage_factor": 0.4,
+            "excess": 0.4647,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8514,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7355,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.65,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7364,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1859,
+        "base_score": 0.8195100312223615,
+        "cogency": 0.6153162315390338,
+        "cogency_details": {
+          "argument_quality_score": 0.6693243422350612,
+          "coherence_score": 0.5613081208430064,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1384 c.c. la penale è riducibile equamente quando risulta manifestamente eccessiva, tenuto conto dell’interesse del creditore e dell’eventuale adempimento parziale del debitore; considerando che il ritardo imputabile al fornitore è di otto giorni (i quattro giorni di sciopero portuale non gli sono riconducibili) e che il committente ha comunque accettato le forniture, la somma di € 96.000 appare sproporzionata rispetto al danno effettivo e può essere ridotta dal giudice in misura proporzionale al ritardo effettivamente colposo.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8195100312223615,
+        "nesso_plausibility": 0.6336100312223616,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7830505392021714,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7830505392021714
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

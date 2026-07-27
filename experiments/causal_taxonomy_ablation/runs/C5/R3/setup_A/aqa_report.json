@@ -1,0 +1,1343 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.06776364,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.564697,
+      "attacks_avg": 0.42857500000000004,
+      "base_score_avg": 0.8008749828972794,
+      "cogency_avg": 0.6483712446432843,
+      "net_plausibility": 0.387860446829252,
+      "net_plausibility_adjusted": 0.387860446829252,
+      "net_plausibility_raw": 0.3722999828972794,
+      "norm_support_avg": 0.951830352493528,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.27841693902947945,
+      "redundancy_penalty": 0.05220317606802739,
+      "semantics_avg": 0.752104895022943
+    },
+    "pro": {
+      "attacks_avg": 0.41600000000000004,
+      "base_score_avg": 0.7831685573863779,
+      "cogency_avg": 0.6087179396927338,
+      "net_plausibility": 0.7831685573863779,
+      "net_plausibility_adjusted": 0.7831685573863779,
+      "net_plausibility_dialectical_raw": 0.3671685573863779,
+      "net_plausibility_intrinsic_raw": 0.7831685573863779,
+      "net_plausibility_raw": 0.7831685573863779,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.6685105849285258
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.225,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3291,
+            "damage_factor": 0.4,
+            "excess": 0.5626,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8109,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.202,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2714,
+            "damage_factor": 0.4,
+            "excess": 0.5049,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8512,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.42700000000000005,
+        "base_score": 0.7664709565073174,
+        "cogency": 0.5938689324260225,
+        "cogency_details": {
+          "argument_quality_score": 0.6318635454860763,
+          "coherence_score": 0.5558743193659685,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 1382 c.c. la penale è dovuta indipendentemente dalla prova del danno e, salvo diversa pattuizione, limita il risarcimento al valore pattuito; pertanto il suo ammontare non è soggetto a verifica di proporzionalità rispetto al danno effettivo. Inoltre, l’art. 1384 c.c. prevede la riduzione solo quando la penale è “manifestamente eccessiva” rispetto all’interesse del creditore; la somma di € 8.000 al giorno è stata concordata per tutelare l’interruzione di un servizio logistico, un interesse di natura essenziale che giustifica un valore elevato della penale. Di conseguenza, la clausola non appare manifestamente sproporzionata e non sussiste motivo di riduzione.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7664709565073174,
+        "nesso_plausibility": 0.3394709565073174,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 1457 c.c., il creditore deve dare notizia al debitore entro tre giorni dalla scadenza per far valere la risoluzione per inadempimento di un termine essenziale; poiché il committente ha accettato e utilizzato le forniture senza inviare tale comunicazione, ha rinunciato implicitamente alla qualificazione del termine come essenziale, perciò il ritardo di 12 giorni non può essere automaticamente considerato violazione di un termine essenziale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6277009225983691,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6277009225983691
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1457 c.c., il creditore deve dare notizia al debitore entro tre giorni dalla scadenza per far valere la risoluzione per inadempimento di un termine essenziale; poiché il committente ha accettato e utilizzato le forniture senza inviare tale comunicazione, ha rinunciato implicitamente alla qualificazione del termine come essenziale, perciò il ritardo di 12 giorni non può essere automaticamente considerato violazione di un termine essenziale."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2756,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.513,
+            "damage_factor": 0.4,
+            "excess": 0.689,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9231,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.824,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1539,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2088,
+            "damage_factor": 0.4,
+            "excess": 0.3849,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8093,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.824,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.4295,
+        "base_score": 0.823984133130205,
+        "cogency": 0.6920030646912481,
+        "cogency_details": {
+          "argument_quality_score": 0.7316590476952489,
+          "coherence_score": 0.6523470816872472,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 1382 c.c., la penale limita il risarcimento “se non è stata convenuta la risarcibilità del danno ulteriore”; dunque, in assenza di una clausola espressa che escluda il risarcimento, il creditore può legittimamente chiedere sia la penale sia i danni commerciali subiti. La mancanza di una disposizione contrattuale di esclusione del cumulo non impedisce, quindi, al committente di domandare la penale e, parallelamente, il risarcimento per le perdite contrattuali.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.823984133130205,
+        "nesso_plausibility": 0.39448413313020503,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 1382 c.c. la penale è dovuta indipendentemente dalla prova del danno e, salvo diversa pattuizione, limita il risarcimento al valore pattuito; pertanto il suo ammontare non è soggetto a verifica di proporzionalità rispetto al danno effettivo. Inoltre, l’art. 1384 c.c. prevede la riduzione solo quando la penale è “manifestamente eccessiva” rispetto all’interesse del creditore; la somma di € 8.000 al giorno è stata concordata per tutelare l’interruzione di un servizio logistico, un interesse di natura essenziale che giustifica un valore elevato della penale. Di conseguenza, la clausola non appare manifestamente sproporzionata e non sussiste motivo di riduzione.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.849729772426694,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.849729772426694
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1382 c.c. la penale è dovuta indipendentemente dalla prova del danno e, salvo diversa pattuizione, limita il risarcimento al valore pattuito; pertanto il suo ammontare non è soggetto a verifica di proporzionalità rispetto al danno effettivo. Inoltre, l’art. 1384 c.c. prevede la riduzione solo quando la penale è “manifestamente eccessiva” rispetto all’interesse del creditore; la somma di € 8.000 al giorno è stata concordata per tutelare l’interruzione di un servizio logistico, un interesse di natura essenziale che giustifica un valore elevato della penale. Di conseguenza, la clausola non appare manifestamente sproporzionata e non sussiste motivo di riduzione."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2659,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.4591,
+            "damage_factor": 0.4,
+            "excess": 0.6647,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8902,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7944,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1752,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2323,
+            "damage_factor": 0.4,
+            "excess": 0.4379,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.825,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7944,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.44110000000000005,
+        "base_score": 0.7944009341594729,
+        "cogency": 0.6612023470809563,
+        "cogency_details": {
+          "argument_quality_score": 0.7343300714685308,
+          "coherence_score": 0.5880746226933817,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "L’accettazione tardiva delle forniture non estingue la penale perché, ai sensi dell’art. 1382 c.c., la clausola penale costituisce un’obbligazione autonoma e separata dall’esecuzione della prestazione principale, la cui esigibilità non dipende dalla volontà del creditore di accettare o rifiutare il bene; in assenza di una rinuncia espressa, l’accettazione non equivale a una novazione né a una remissione del debito (art. 1181 c.c.). Pertanto il committente può legittimamente pretendere la penale anche se ha utilizzato le merci nonostante il ritardo.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7944009341594729,
+        "nesso_plausibility": 0.35330093415947283,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Secondo l’art. 1382 c.c., la penale limita il risarcimento “se non è stata convenuta la risarcibilità del danno ulteriore”; dunque, in assenza di una clausola espressa che escluda il risarcimento, il creditore può legittimamente chiedere sia la penale sia i danni commerciali subiti. La mancanza di una disposizione contrattuale di esclusione del cumulo non impedisce, quindi, al committente di domandare la penale e, parallelamente, il risarcimento per le perdite contrattuali.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1181",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1251_art1181",
+            "title": "Adempimento parziale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7819198268012121,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7819198268012121
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1382 c.c., la penale limita il risarcimento “se non è stata convenuta la risarcibilità del danno ulteriore”; dunque, in assenza di una clausola espressa che escluda il risarcimento, il creditore può legittimamente chiedere sia la penale sia i danni commerciali subiti. La mancanza di una disposizione contrattuale di esclusione del cumulo non impedisce, quindi, al committente di domandare la penale e, parallelamente, il risarcimento per le perdite contrattuali."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2603,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.4694,
+            "damage_factor": 0.4,
+            "excess": 0.6508,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8965,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8186,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1564,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2097,
+            "damage_factor": 0.4,
+            "excess": 0.3911,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8099,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8186,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.41669999999999996,
+        "base_score": 0.8186439077921221,
+        "cogency": 0.6464106343749104,
+        "cogency_details": {
+          "argument_quality_score": 0.7247067505483944,
+          "coherence_score": 0.5681145182014264,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 1383 c.c. il divieto di cumulo riguarda esclusivamente la possibilità di pretendere simultaneamente la prestazione principale e la penale quando la penale non è stata pattuita per il semplice ritardo; poiché la penale di € 8.000 al giorno è espressamente legata al ritardo, tale divieto non si estende al cumulo con il risarcimento di danni commerciali aggiuntivi. Di conseguenza, in assenza di una clausola che renda la penale sostitutiva, il committente può legittimamente chiedere sia la penale sia i danni ulteriori.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.8186439077921221,
+        "nesso_plausibility": 0.4019439077921222,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "L’accettazione tardiva delle forniture non estingue la penale perché, ai sensi dell’art. 1382 c.c., la clausola penale costituisce un’obbligazione autonoma e separata dall’esecuzione della prestazione principale, la cui esigibilità non dipende dalla volontà del creditore di accettare o rifiutare il bene; in assenza di una rinuncia espressa, l’accettazione non equivale a una novazione né a una remissione del debito (art. 1181 c.c.). Pertanto il committente può legittimamente pretendere la penale anche se ha utilizzato le merci nonostante il ritardo.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1181",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1251_art1181",
+            "title": "Adempimento parziale"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7490690582654969,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7490690582654969
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "L’accettazione tardiva delle forniture non estingue la penale perché, ai sensi dell’art. 1382 c.c., la clausola penale costituisce un’obbligazione autonoma e separata dall’esecuzione della prestazione principale, la cui esigibilità non dipende dalla volontà del creditore di accettare o rifiutare il bene; in assenza di una rinuncia espressa, l’accettazione non equivale a una novazione né a una remissione del debito (art. 1181 c.c.). Pertanto il committente può legittimamente pretendere la penale anche se ha utilizzato le merci nonostante il ritardo."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.147,
+            "attacker_base_score": 0.7944,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1142,
+            "damage_factor": 0.4,
+            "excess": 0.3674,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.825,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7468,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1449,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1091,
+            "damage_factor": 0.4,
+            "excess": 0.3623,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8512,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7468,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.824,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.8093,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8186,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.8099,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.2919,
+        "base_score": 0.7468270835503943,
+        "cogency": 0.6021196478464339,
+        "cogency_details": {
+          "argument_quality_score": 0.6730447322221372,
+          "coherence_score": 0.5311945634707305,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7468270835503943,
+        "nesso_plausibility": 0.4549270835503943,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il contratto di fornitura prevede espressamente che il termine di consegna sia “essenziale” nell’interesse della società di logistica, pertanto, ai sensi dell’art. 1457 c.c., tale scadenza è qualificata come termine essenziale e la sua violazione consente al committente di risolvere il contratto di diritto se non comunica al fornitore, entro tre giorni, la volontà di esigere comunque l’esecuzione. La presenza di questa clausola implica che il ritardo di 12 giorni costituisce una violazione di un obbligo essenziale, attivando le conseguenze previste dall’articolo citato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5539706306548803,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5539706306548803
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il contratto di fornitura prevede espressamente che il termine di consegna sia “essenziale” nell’interesse della società di logistica, pertanto, ai sensi dell’art. 1457 c.c., tale scadenza è qualificata come termine essenziale e la sua violazione consente al committente di risolvere il contratto di diritto se non comunica al fornitore, entro tre giorni, la volontà di esigere comunque l’esecuzione. La presenza di questa clausola implica che il ritardo di 12 giorni costituisce una violazione di un obbligo essenziale, attivando le conseguenze previste dall’articolo citato."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2807,
+            "attacker_base_score": 0.824,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.5212,
+            "damage_factor": 0.4,
+            "excess": 0.7017,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9231,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2594,
+            "attacker_base_score": 0.8186,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.4679,
+            "damage_factor": 0.4,
+            "excess": 0.6484,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8965,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2379,
+            "attacker_base_score": 0.7944,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.4144,
+            "damage_factor": 0.4,
+            "excess": 0.5949,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8902,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0948,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0566,
+            "damage_factor": 0.4,
+            "excess": 0.2371,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8109,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.5401,
+        "base_score": 0.8195100312223615,
+        "cogency": 0.6153162315390338,
+        "cogency_details": {
+          "argument_quality_score": 0.6693243422350612,
+          "coherence_score": 0.5613081208430064,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1384 c.c. la penale è riducibile equamente quando risulta manifestamente eccessiva, tenuto conto dell’interesse del creditore e dell’eventuale adempimento parziale del debitore; considerando che il ritardo imputabile al fornitore è di otto giorni (i quattro giorni di sciopero portuale non gli sono riconducibili) e che il committente ha comunque accettato le forniture, la somma di € 96.000 appare sproporzionata rispetto al danno effettivo e può essere ridotta dal giudice in misura proporzionale al ritardo effettivamente colposo.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8195100312223615,
+        "nesso_plausibility": 0.2794100312223615,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7830505392021714,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7830505392021714
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.387860446829252,
+    "contra_adjusted": 0.387860446829252,
+    "contra_raw": 0.3722999828972794,
+    "final": 0.3953081105571259,
+    "final_adjusted": 0.3953081105571259,
+    "final_raw": 0.4108685744890985,
+    "pro": 0.7831685573863779,
+    "pro_adjusted": 0.7831685573863779,
+    "pro_raw": 0.7831685573863779,
+    "pro_raw_dialectical": 0.3671685573863779,
+    "pro_raw_intrinsic": 0.7831685573863779,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.9231,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.2807
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.9231,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2756
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8902,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.2659
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8965,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.2603
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "contra",
+        "overlap": 0.8965,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.2594
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.8902,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.2379
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8109,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.225
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8512,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.202
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.825,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1752
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8099,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.1564
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.8195100312223615,
+              "axis_id": "AX1",
+              "axis_quality": 0.35852,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7468270835503943,
+              "axis_id": "AX2",
+              "axis_quality": 0.19047,
+              "link_ids": [
+                "S1->S2"
+              ]
+            }
+          ],
+          "bonus": 0.06776364,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.274495,
+          "wpcs": 0.564697
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7979567429282542,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.05220317606802739,
+          "redundancy_index": 0.27841693902947945
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.5806016143853964,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2807,
+            "attacker_base_score": 0.824,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.5212,
+            "damage_factor": 0.4,
+            "excess": 0.7017,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9231,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2594,
+            "attacker_base_score": 0.8186,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.4679,
+            "damage_factor": 0.4,
+            "excess": 0.6484,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8965,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2379,
+            "attacker_base_score": 0.7944,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.4144,
+            "damage_factor": 0.4,
+            "excess": 0.5949,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8902,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0948,
+            "attacker_base_score": 0.7665,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0566,
+            "damage_factor": 0.4,
+            "excess": 0.2371,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8109,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8195,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.5401,
+        "base_score": 0.8195100312223615,
+        "cogency": 0.6153162315390338,
+        "cogency_details": {
+          "argument_quality_score": 0.6693243422350612,
+          "coherence_score": 0.5613081208430064,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1384 c.c. la penale è riducibile equamente quando risulta manifestamente eccessiva, tenuto conto dell’interesse del creditore e dell’eventuale adempimento parziale del debitore; considerando che il ritardo imputabile al fornitore è di otto giorni (i quattro giorni di sciopero portuale non gli sono riconducibili) e che il committente ha comunque accettato le forniture, la somma di € 96.000 appare sproporzionata rispetto al danno effettivo e può essere ridotta dal giudice in misura proporzionale al ritardo effettivamente colposo.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8195100312223615,
+        "nesso_plausibility": 0.2794100312223615,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7830505392021714,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7830505392021714
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1382 c.c. la penale di € 8.000 al giorno limita il risarcimento al solo ammontare pattuito, salvo che le parti abbiano convenuto espressamente la risarcibilità di danno ulteriore; in assenza di tale clausola il creditore non può pretendere né la penale né un risarcimento aggiuntivo per lo stesso inadempimento. Inoltre, l’art. 1383 c.c. vieta il cumulo della prestazione principale con la penale quando la penale è stata stabilita solo per il ritardo, perciò il committente non può simultaneamente esigere la consegna tardiva e la penale salvo diversa pattuizione."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.225,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3291,
+            "damage_factor": 0.4,
+            "excess": 0.5626,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8109,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.202,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2714,
+            "damage_factor": 0.4,
+            "excess": 0.5049,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8512,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7665,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.42700000000000005,
+        "base_score": 0.7664709565073174,
+        "cogency": 0.5938689324260225,
+        "cogency_details": {
+          "argument_quality_score": 0.6318635454860763,
+          "coherence_score": 0.5558743193659685,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 1382 c.c. la penale è dovuta indipendentemente dalla prova del danno e, salvo diversa pattuizione, limita il risarcimento al valore pattuito; pertanto il suo ammontare non è soggetto a verifica di proporzionalità rispetto al danno effettivo. Inoltre, l’art. 1384 c.c. prevede la riduzione solo quando la penale è “manifestamente eccessiva” rispetto all’interesse del creditore; la somma di € 8.000 al giorno è stata concordata per tutelare l’interruzione di un servizio logistico, un interesse di natura essenziale che giustifica un valore elevato della penale. Di conseguenza, la clausola non appare manifestamente sproporzionata e non sussiste motivo di riduzione.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7664709565073174,
+        "nesso_plausibility": 0.3394709565073174,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 1457 c.c., il creditore deve dare notizia al debitore entro tre giorni dalla scadenza per far valere la risoluzione per inadempimento di un termine essenziale; poiché il committente ha accettato e utilizzato le forniture senza inviare tale comunicazione, ha rinunciato implicitamente alla qualificazione del termine come essenziale, perciò il ritardo di 12 giorni non può essere automaticamente considerato violazione di un termine essenziale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6277009225983691,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6277009225983691
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1457 c.c., il creditore deve dare notizia al debitore entro tre giorni dalla scadenza per far valere la risoluzione per inadempimento di un termine essenziale; poiché il committente ha accettato e utilizzato le forniture senza inviare tale comunicazione, ha rinunciato implicitamente alla qualificazione del termine come essenziale, perciò il ritardo di 12 giorni non può essere automaticamente considerato violazione di un termine essenziale."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2659,
+            "attacker_base_score": 0.8195,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.4591,
+            "damage_factor": 0.4,
+            "excess": 0.6647,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8902,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7944,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1752,
+            "attacker_base_score": 0.7468,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2323,
+            "damage_factor": 0.4,
+            "excess": 0.4379,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.825,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7944,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.44110000000000005,
+        "base_score": 0.7944009341594729,
+        "cogency": 0.6612023470809563,
+        "cogency_details": {
+          "argument_quality_score": 0.7343300714685308,
+          "coherence_score": 0.5880746226933817,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "L’accettazione tardiva delle forniture non estingue la penale perché, ai sensi dell’art. 1382 c.c., la clausola penale costituisce un’obbligazione autonoma e separata dall’esecuzione della prestazione principale, la cui esigibilità non dipende dalla volontà del creditore di accettare o rifiutare il bene; in assenza di una rinuncia espressa, l’accettazione non equivale a una novazione né a una remissione del debito (art. 1181 c.c.). Pertanto il committente può legittimamente pretendere la penale anche se ha utilizzato le merci nonostante il ritardo.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7944009341594729,
+        "nesso_plausibility": 0.35330093415947283,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Secondo l’art. 1382 c.c., la penale limita il risarcimento “se non è stata convenuta la risarcibilità del danno ulteriore”; dunque, in assenza di una clausola espressa che escluda il risarcimento, il creditore può legittimamente chiedere sia la penale sia i danni commerciali subiti. La mancanza di una disposizione contrattuale di esclusione del cumulo non impedisce, quindi, al committente di domandare la penale e, parallelamente, il risarcimento per le perdite contrattuali.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1181",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1251_art1181",
+            "title": "Adempimento parziale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7819198268012121,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7819198268012121
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1382 c.c., la penale limita il risarcimento “se non è stata convenuta la risarcibilità del danno ulteriore”; dunque, in assenza di una clausola espressa che escluda il risarcimento, il creditore può legittimamente chiedere sia la penale sia i danni commerciali subiti. La mancanza di una disposizione contrattuale di esclusione del cumulo non impedisce, quindi, al committente di domandare la penale e, parallelamente, il risarcimento per le perdite contrattuali."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

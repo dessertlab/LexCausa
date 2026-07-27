@@ -1,0 +1,155 @@
+{
+  "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "Alla luce dell’art. 437 c.p. e dell’art. 590 c.p., la condotta omissiva del preposto (mancata imposizione dei DPI) e l’azione colposa dell’operaio (rimozione dei fissaggi) costituiscono colpa penale, entrambe condizioni sine qua non del crollo del ponteggio ai sensi dell’art. 40 c.p. L’argomento di fatalità o imprevedibilità è respinto dall’art. 41 c.p. e dalla giurisprudenza sull’art. 43 c.p., poiché le violazioni hanno reso prevedibile l’evento. Pertanto, in virtù dell’art. 113 c.p., dell’art. 61 c.p. e dell’art. 254 c.p., sussiste responsabilità penale cumulativa del datore di lavoro, del preposto e dell’operaio per lesioni personali gravi colpose, con aggravanti per prevedibilità e cooperazione colposa.",
+  "routing": {
+    "additional_causal_types": [
+      "PEN_COLPA_GRADATION",
+      "PEN_FACTUAL",
+      "PEN_INTERVENING"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 61 c.p.",
+          "role": "Circostanze aggravanti comuni"
+        },
+        {
+          "ref": "Art. 113 c.p.",
+          "role": "Cooperazione nel delitto colposo"
+        },
+        {
+          "ref": "Art. 41 c.p.",
+          "role": "Concorso di cause e cause sopravvenute, da leggere sistematicamente con Art. 40 c.p."
+        },
+        {
+          "ref": "Art. 43 c.p.",
+          "role": "Elemento soggettivo (colpa/dolo). Rilevante per causalità colposa, non definisce il nesso in sé"
+        },
+        {
+          "ref": "Art. 40 c.p.",
+          "role": "Base del nesso, letto sistematicamente con Art. 41 c.p."
+        },
+        {
+          "ref": "Art. 43 c.p.",
+          "role": "Prevedibilità/colpa: utile per valutare la rilevanza della causa sopravvenuta nel fatto colposo"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 42 c.p.",
+          "role": "Responsabilità per dolo/colpa"
+        },
+        {
+          "ref": "Art. 43 c.p.",
+          "role": "Elemento soggettivo della colpa"
+        },
+        {
+          "ref": "Art. 40 c.p.",
+          "role": "Fondamento del nesso condotta (azione/omissione) -> evento"
+        },
+        {
+          "ref": "Art. 41 c.p.",
+          "role": "Concorso di cause e interruzione del nesso per causa sopravvenuta da sola sufficiente"
+        }
+      ]
+    },
+    "causal_type_id": "PEN_COLPA_GRADATION",
+    "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+    "domain": "PENALE",
+    "principle_tests": [
+      {
+        "description": "Valuta grado della colpa, prevedibilità ed evitabilità in concreto",
+        "id": "BLAMEWORTHINESS_SCALE",
+        "name": "Scala della rimproverabilità"
+      },
+      {
+        "description": "Distingue apporti individuali nei fatti colposi plurisoggettivi",
+        "id": "INDIVIDUALIZATION",
+        "name": "Individualizzazione della responsabilità"
+      },
+      {
+        "description": "Se eliminando mentalmente la condotta l’evento non si verifica, la condotta è condizione dell’evento",
+        "id": "BUT_FOR",
+        "name": "Conditio sine qua non (controfattuale)"
+      },
+      {
+        "description": "Quando il nesso non è deterministico, si usa una regola scientifica/empirica per supportare il controfattuale",
+        "id": "COVERING_LAW",
+        "name": "Legge di copertura (scientifico-probabilistica quando necessario)"
+      },
+      {
+        "description": "Le concause non escludono il nesso se la condotta resta condizione dell’evento",
+        "id": "EQUIVALENCE",
+        "name": "Equivalenza delle condizioni (41.1)"
+      },
+      {
+        "description": "Una causa sopravvenuta rompe il nesso se è autonomamente sufficiente a produrre l’evento",
+        "id": "SOLE_SUFFICIENT_CAUSE",
+        "name": "Causa sopravvenuta da sola sufficiente (41.2)"
+      }
+    ],
+    "theory_id": "T_PEN_COLPA_GRADAZIONE"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "437",
+      "libro": "CP Libro II",
+      "score": 0.9892403631801505,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_530_437",
+      "testo": "Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque anni. Se dal fatto deriva un disastro o un infortunio, la pena è della reclusione da tre a dieci anni. ((7))",
+      "titolo": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+    },
+    {
+      "articolo": "589",
+      "libro": "CP Libro II",
+      "score": 0.9350897328881469,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_750_589",
+      "testo": "Chiunque cagiona per colpa la morte di una persona è punito con la reclusione da sei mesi a cinque anni. Se il fatto è commesso con violazione delle norme per la prevenzione degli infortuni sul lavoro la pena è della reclusione da due a sette anni. ((Se il fatto è commesso nell'esercizio abusivo di una professione per la quale è richiesta una speciale abilitazione dello Stato o di un'arte sanitaria, la pena è della reclusione da tre a dieci anni)) . COMMA ABROGATO DALLA L. 23 MARZO 2016, N. 41 . Nel caso di morte di più persone, ovvero di morte di una o più persone e di lesioni di una o più persone, si applica la pena che dovrebbe infliggersi per la più grave delle violazioni commesse aumentata fino al triplo, ma la pena non può superare gli anni quindici.",
+      "titolo": "Omicidio colposo"
+    },
+    {
+      "articolo": "254",
+      "libro": "CP Libro II",
+      "score": 0.885665386672398,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_276_254",
+      "testo": "Quando l'esecuzione del delitto preveduto dall'articolo precedente è stata resa possibile, o soltanto agevolata, per colpa di chi era in possesso o aveva la custodia o la vigilanza delle cose ivi indicate, questi è punito con la reclusione da uno a cinque anni.",
+      "titolo": "Agevolazione colposa"
+    },
+    {
+      "articolo": "590",
+      "libro": "CP Libro II",
+      "score": 0.6628480726360302,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_753_590",
+      "testo": "Chiunque cagiona ad altri per colpa una lesione personale è punito con la reclusione fino a tre mesi o con la multa fino a lire duecentomila. Se la lesione è grave la pena è della reclusione da uno a sei mesi o della multa da lire ottantamila a quattrocentomila; se è gravissima, della reclusione da tre mesi a due anni o della multa da lire duecentomila a ottocentomila. Se i fatti di cui al secondo comma sono commessi con violazione delle norme per la prevenzione degli infortuni sul lavoro la pena per le lesioni gravi è della reclusione da tre mesi a un anno o della multa da euro 500 a euro 2.000 e la pena per le lesioni gravissime è della reclusione da uno a tre anni. PERIODO SOPPRESSO DALLA L. 23 MARZO 2016, N. 41 . ((Se i fatti di cui al secondo comma sono commessi nell'esercizio abusivo di una professione per la quale è richiesta una speciale abilitazione dello Stato o di un'arte sanitaria, la pena per lesioni gravi è della reclusione da sei mesi a due anni e la pena per lesioni gravissime è della reclusione da un anno e sei mesi a quattro anni)) . Nel caso di lesioni di più persone si applica la pena che dovrebbe infliggersi per la più grave delle violazioni commesse, aumentata fino al triplo; ma la pena della reclusione non può superare gli anni cinque. Il delitto è punibile a querela della persona offesa, salvo nei casi previsti nel primo e secondo capoverso, limitatamente ai fatti commessi con violazione delle norme per la prevenzione degli infortuni sul lavoro o relative all'igiene del lavoro o che abbiano determinato una malattia professionale.",
+      "titolo": "Lesioni personali colpose"
+    },
+    {
+      "articolo": "452",
+      "libro": "CP Libro II",
+      "score": 0.3554511995118045,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_545_452",
+      "testo": "Chiunque commette, per colpa, alcuno dei fatti preveduti dagli articoli 438 e 439 è punito: 1° con la reclusione da tre a dodici anni, nei casi per i quali le dette disposizioni stabiliscono la pena di morte; ((5)) 2° con la reclusione da uno a cinque anni, nei casi per i quali esse stabiliscono l'ergastolo; 3° con la reclusione da sei mesi a tre anni, nel caso in cui l'articolo 439 stabilisce la pena della reclusione. Quando sia commesso per colpa alcuno dei fatti preveduti dagli articoli 440, 441, 442, 443, 444 e 445 si applicano le pene ivi rispettivamente stabilite ridotte da un terzo a un sesto.",
+      "titolo": "Delitti colposi contro la salute pubblica"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

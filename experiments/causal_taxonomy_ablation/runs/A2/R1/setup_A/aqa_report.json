@@ -1,0 +1,1677 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.06689604,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.557467,
+      "attacks_avg": 0.4644,
+      "base_score_avg": 0.7531769664576022,
+      "cogency_avg": 0.6009435779485724,
+      "net_plausibility": 0.3180843832245563,
+      "net_plausibility_adjusted": 0.3180843832245563,
+      "net_plausibility_raw": 0.28877696645760226,
+      "norm_support_avg": 0.8820833333333333,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.6014179717287352,
+      "redundancy_penalty": 0.03758862323304595,
+      "semantics_avg": 0.733535199132324
+    },
+    "pro": {
+      "attacks_avg": 0.2831,
+      "base_score_avg": 0.7459975294829875,
+      "cogency_avg": 0.6053793192270792,
+      "net_plausibility": 0.7459975294829875,
+      "net_plausibility_adjusted": 0.7459975294829875,
+      "net_plausibility_dialectical_raw": 0.46289752948298746,
+      "net_plausibility_intrinsic_raw": 0.7459975294829875,
+      "net_plausibility_raw": 0.7459975294829875,
+      "norm_support_avg": 0.8928333333333333,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.3609423440979711,
+      "redundancy_penalty": 0.09023558602449278,
+      "semantics_avg": 0.6908346679384346
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2406,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.389,
+            "damage_factor": 0.4,
+            "excess": 0.6015,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8751,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7875,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1545,
+            "attacker_base_score": 0.6995,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1739,
+            "damage_factor": 0.4,
+            "excess": 0.3864,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8391,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7875,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0935,
+            "attacker_base_score": 0.726,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0213,
+            "damage_factor": 0.4,
+            "excess": 0.2337,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8274,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7875,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0719,
+            "attacker_base_score": 0.798,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.9672,
+            "damage_factor": 0.4,
+            "excess": 0.1796,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7129,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7875,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7128,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6677,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7806,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7875,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3951,
+        "base_score": 0.787548564397428,
+        "cogency": 0.6311508105087589,
+        "cogency_details": {
+          "argument_quality_score": 0.6115443716097663,
+          "coherence_score": 0.6507572494077514,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 10‑bis L. 241/1990 richiede soltanto che l’amministrazione, prima di adottare il provvedimento negativo, comunichi i motivi ostativi, senza imporre la descrizione puntuale di ogni singola carenza; la semplice indicazione “carenza requisiti”, in quanto riferita ai requisiti espressamente previsti dal bando, è sufficiente a informare l’impresa dei motivi di rigetto e a consentirle di presentare osservazioni entro i dieci giorni, garantendo così l’interlocuzione endoprocedimentale prevista dalla norma. (art. 10‑bis L. 241/1990)",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.787548564397428,
+        "nesso_plausibility": 0.39244856439742803,
+        "norm_support": 0.8966666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.8966666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il rigetto, pur espresso con la formula generica “carenza requisiti”, rientra nella fattispecie prevista dal comma 2 dell’art. 3 della L. 241/1990, che esclude l’obbligo di motivazione per provvedimenti a contenuto generale; inoltre, ai sensi dell’art. 2, comma 1, l’amministrazione può concludere il procedimento con provvedimento espresso in forma semplificata, la cui motivazione può limitarsi a un sintetico riferimento al requisito mancante.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7984555152604454,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7984555152604454
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Il rigetto, pur espresso con la formula generica “carenza requisiti”, rientra nella fattispecie prevista dal comma 2 dell’art. 3 della L. 241/1990, che esclude l’obbligo di motivazione per provvedimenti a contenuto generale; inoltre, ai sensi dell’art. 2, comma 1, l’amministrazione può concludere il procedimento con provvedimento espresso in forma semplificata, la cui motivazione può limitarsi a un sintetico riferimento al requisito mancante."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2971,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.4617,
+            "damage_factor": 0.4,
+            "excess": 0.7428,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9209,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2366,
+            "attacker_base_score": 0.726,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.3104,
+            "damage_factor": 0.4,
+            "excess": 0.5916,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9024,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1858,
+            "attacker_base_score": 0.6995,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1834,
+            "damage_factor": 0.4,
+            "excess": 0.4646,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8458,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1557,
+            "attacker_base_score": 0.798,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.108,
+            "damage_factor": 0.4,
+            "excess": 0.3892,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8167,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7128,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6368,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.8509,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.7188,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.5337,
+        "base_score": 0.7188053685177764,
+        "cogency": 0.570736345388386,
+        "cogency_details": {
+          "argument_quality_score": 0.641354481499754,
+          "coherence_score": 0.5001182092770179,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 21‑octies L. 241/1990, la violazione di una norma procedurale – come l’omissione del preavviso di rigetto previsto dall’art. 10‑bis – comporta esclusivamente l’annullabilità del provvedimento, poiché non manca alcun elemento essenziale del provvedimento stesso, requisito necessario per la nullità ex art. 21‑septies; di conseguenza il rigetto non è nullo ma annullabile, con possibilità di impugnazione ma non di inefficacia automatica.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7188053685177764,
+        "nesso_plausibility": 0.18510536851777648,
+        "norm_support": 0.8674999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8674999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 10‑bis L. 241/1990 richiede soltanto che l’amministrazione, prima di adottare il provvedimento negativo, comunichi i motivi ostativi, senza imporre la descrizione puntuale di ogni singola carenza; la semplice indicazione “carenza requisiti”, in quanto riferita ai requisiti espressamente previsti dal bando, è sufficiente a informare l’impresa dei motivi di rigetto e a consentirle di presentare osservazioni entro i dieci giorni, garantendo così l’interlocuzione endoprocedimentale prevista dalla norma. (art. 10‑bis L. 241/1990)",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6686148830042025,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6686148830042025
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 10‑bis L. 241/1990 richiede soltanto che l’amministrazione, prima di adottare il provvedimento negativo, comunichi i motivi ostativi, senza imporre la descrizione puntuale di ogni singola carenza; la semplice indicazione “carenza requisiti”, in quanto riferita ai requisiti espressamente previsti dal bando, è sufficiente a informare l’impresa dei motivi di rigetto e a consentirle di presentare osservazioni entro i dieci giorni, garantendo così l’interlocuzione endoprocedimentale prevista dalla norma. (art. 10‑bis L. 241/1990)"
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2067,
+            "attacker_base_score": 0.7875,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2295,
+            "damage_factor": 0.4,
+            "excess": 0.5167,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7806,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7128,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7188,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6422,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8509,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7128,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.2067,
+        "base_score": 0.7127839907820614,
+        "cogency": 0.5750401549751274,
+        "cogency_details": {
+          "argument_quality_score": 0.6423931536889088,
+          "coherence_score": 0.507687156261346,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 10‑bis L. 241/1990, nei procedimenti ad istanza di parte – come il conferimento di un contributo pubblico – l’amministrazione, prima di adottare un provvedimento negativo, è tenuta a comunicare tempestivamente i motivi ostativi, sospendendo i termini e concedendo all’istante dieci giorni per presentare osservazioni; pertanto, il rigetto formulato con la sola dicitura “carenza requisiti” senza alcun preavviso di rigetto viola espressamente tale disposizione.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7127839907820614,
+        "nesso_plausibility": 0.5060839907820615,
+        "norm_support": 0.8674999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8674999999999999,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Per valutare la conformità al termine di conclusione previsto dall’art. 2 della L. 241/1990 occorre individuare la data di avvio del procedimento, cioè la data di ricezione della PEC contenente l’istanza, e la data di adozione del provvedimento di rigetto. Poiché nella narrazione dei fatti non sono indicati tali termini, non è possibile accertare se il termine fissato dall’art. 2 sia stato rispettato né se sussista la fattispecie di ritardo soggetta a risarcimento ex art. 2‑bis. Pertanto è necessario richiedere all’amministrazione le copie della ricevuta di protocollazione e del provvedimento per verificare l’eventuale violazione dei termini.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6442398142984106,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6442398142984106
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Per valutare la conformità al termine di conclusione previsto dall’art. 2 della L. 241/1990 occorre individuare la data di avvio del procedimento, cioè la data di ricezione della PEC contenente l’istanza, e la data di adozione del provvedimento di rigetto. Poiché nella narrazione dei fatti non sono indicati tali termini, non è possibile accertare se il termine fissato dall’art. 2 sia stato rispettato né se sussista la fattispecie di ritardo soggetta a risarcimento ex art. 2‑bis. Pertanto è necessario richiedere all’amministrazione le copie della ricevuta di protocollazione e del provvedimento per verificare l’eventuale violazione dei termini."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2339,
+            "attacker_base_score": 0.7875,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.3784,
+            "damage_factor": 0.4,
+            "excess": 0.5848,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8751,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7936,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2121,
+            "attacker_base_score": 0.7188,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.3239,
+            "damage_factor": 0.4,
+            "excess": 0.5303,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9209,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7936,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.446,
+        "base_score": 0.7936010449724458,
+        "cogency": 0.6686140418922322,
+        "cogency_details": {
+          "argument_quality_score": 0.7241345080934698,
+          "coherence_score": 0.6130935756909947,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 21‑octies della L. 241/1990, l’omissione del preavviso di rigetto rende annullabile il provvedimento negativo, soprattutto quando si tratta di provvedimenti discrezionali di concessione di contributi. Nel caso in esame l’amministrazione ha comunicato il rigetto con la sola dicitura “carenza requisiti”, senza inviare il preavviso previsto dall’art. 10‑bis né indicare puntualmente i profili ostativi, violando così il requisito di preavviso e la possibilità di osservazione dell’interessato. La giurisprudenza sul “Criterio di applicazione dell’art. 21 octies, l. n. 241 del 1990 nel caso di omissione del preavviso di rigetto con riferimento all’adozione di provvedimenti discrezionali” conferma che tale omissione comporta l’annullabilità del provvedimento. Pertanto il rigetto è viziato da difetto di forma sostanziale ai sensi dell’art. 21‑octies L. 241/1990.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7936010449724458,
+        "nesso_plausibility": 0.34760104497244576,
+        "norm_support": 0.8674999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8674999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 10‑bis L. 241/1990, nei procedimenti ad istanza di parte – come il conferimento di un contributo pubblico – l’amministrazione, prima di adottare un provvedimento negativo, è tenuta a comunicare tempestivamente i motivi ostativi, sospendendo i termini e concedendo all’istante dieci giorni per presentare osservazioni; pertanto, il rigetto formulato con la sola dicitura “carenza requisiti” senza alcun preavviso di rigetto viola espressamente tale disposizione.",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21-octies",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_38_21-octies",
+            "title": "Annullabilità del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8200561080159207,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8200561080159207
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 10‑bis L. 241/1990, nei procedimenti ad istanza di parte – come il conferimento di un contributo pubblico – l’amministrazione, prima di adottare un provvedimento negativo, è tenuta a comunicare tempestivamente i motivi ostativi, sospendendo i termini e concedendo all’istante dieci giorni per presentare osservazioni; pertanto, il rigetto formulato con la sola dicitura “carenza requisiti” senza alcun preavviso di rigetto viola espressamente tale disposizione."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1527,
+            "attacker_base_score": 0.7875,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1078,
+            "damage_factor": 0.4,
+            "excess": 0.3818,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8274,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.726,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.021,
+            "attacker_base_score": 0.7188,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7784,
+            "damage_factor": 0.4,
+            "excess": 0.0524,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9024,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.726,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1737,
+        "base_score": 0.7260244256135517,
+        "cogency": 0.6037784665287877,
+        "cogency_details": {
+          "argument_quality_score": 0.6798145876589647,
+          "coherence_score": 0.5277423453986109,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento negativo deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, specificando i requisiti mancanti in relazione all’istruttoria svolta; la formula generica “carenza requisiti” adottata dall’amministrazione, priva di indicazione puntuale dei profili ostativi contestati, non soddisfa tale obbligo di motivazione e risulta quindi insufficiente ai sensi del predetto articolo.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7260244256135517,
+        "nesso_plausibility": 0.5523244256135518,
+        "norm_support": 0.8825,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8825,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [
+          {
+            "bindingness": 1.0,
+            "confidence": 0.7,
+            "court": "Consiglio di Stato",
+            "delta": 0.0,
+            "link_match": "direct",
+            "precedent_id": "prec_149",
+            "recency": 0.92,
+            "similarity": 1.0,
+            "stance": 0.0,
+            "year": 2022
+          }
+        ],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Secondo l’art. 21‑octies della L. 241/1990, l’omissione del preavviso di rigetto rende annullabile il provvedimento negativo, soprattutto quando si tratta di provvedimenti discrezionali di concessione di contributi. Nel caso in esame l’amministrazione ha comunicato il rigetto con la sola dicitura “carenza requisiti”, senza inviare il preavviso previsto dall’art. 10‑bis né indicare puntualmente i profili ostativi, violando così il requisito di preavviso e la possibilità di osservazione dell’interessato. La giurisprudenza sul “Criterio di applicazione dell’art. 21 octies, l. n. 241 del 1990 nel caso di omissione del preavviso di rigetto con riferimento all’adozione di provvedimenti discrezionali” conferma che tale omissione comporta l’annullabilità del provvedimento. Pertanto il rigetto è viziato da difetto di forma sostanziale ai sensi dell’art. 21‑octies L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21-octies",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_38_21-octies",
+            "title": "Annullabilità del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6396362855163849,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6396362855163849
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 21‑octies della L. 241/1990, l’omissione del preavviso di rigetto rende annullabile il provvedimento negativo, soprattutto quando si tratta di provvedimenti discrezionali di concessione di contributi. Nel caso in esame l’amministrazione ha comunicato il rigetto con la sola dicitura “carenza requisiti”, senza inviare il preavviso previsto dall’art. 10‑bis né indicare puntualmente i profili ostativi, violando così il requisito di preavviso e la possibilità di osservazione dell’interessato. La giurisprudenza sul “Criterio di applicazione dell’art. 21 octies, l. n. 241 del 1990 nel caso di omissione del preavviso di rigetto con riferimento all’adozione di provvedimenti discrezionali” conferma che tale omissione comporta l’annullabilità del provvedimento. Pertanto il rigetto è viziato da difetto di forma sostanziale ai sensi dell’art. 21‑octies L. 241/1990."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2066,
+            "attacker_base_score": 0.7188,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.216,
+            "damage_factor": 0.4,
+            "excess": 0.5165,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8458,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6995,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1695,
+            "attacker_base_score": 0.7875,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1234,
+            "damage_factor": 0.4,
+            "excess": 0.4238,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8391,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6995,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3761,
+        "base_score": 0.6995383701706437,
+        "cogency": 0.5484198929905051,
+        "cogency_details": {
+          "argument_quality_score": 0.644349630244447,
+          "coherence_score": 0.45249015573656304,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "L’assenza del preavviso di rigetto previsto dall’art. 10‑bis L. 241/1990 ha impedito l’avvio del termine di dieci giorni entro il quale l’impresa poteva presentare osservazioni e documenti integrativi, perciò non si è verificata la sospensione dei termini di conclusione del procedimento prevista dal medesimo articolo; la privazione di tale possibilità di difesa costituisce una violazione del diritto di interlocuzione endoprocedimentale sancito dall’art. 10‑bis.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.6995383701706437,
+        "nesso_plausibility": 0.3234383701706437,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento negativo deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, specificando i requisiti mancanti in relazione all’istruttoria svolta; la formula generica “carenza requisiti” adottata dall’amministrazione, priva di indicazione puntuale dei profili ostativi contestati, non soddisfa tale obbligo di motivazione e risulta quindi insufficiente ai sensi del predetto articolo.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5678191186894179,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5678191186894179
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento negativo deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, specificando i requisiti mancanti in relazione all’istruttoria svolta; la formula generica “carenza requisiti” adottata dall’amministrazione, priva di indicazione puntuale dei profili ostativi contestati, non soddisfa tale obbligo di motivazione e risulta quindi insufficiente ai sensi del predetto articolo."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1504,
+            "attacker_base_score": 0.7188,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1741,
+            "damage_factor": 0.4,
+            "excess": 0.3761,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8167,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.798,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0626,
+            "attacker_base_score": 0.7875,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9545,
+            "damage_factor": 0.4,
+            "excess": 0.1564,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7129,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.798,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.21300000000000002,
+        "base_score": 0.7980398158762348,
+        "cogency": 0.6310440397487438,
+        "cogency_details": {
+          "argument_quality_score": 0.6923587754088892,
+          "coherence_score": 0.5697293040885985,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Alla luce dell’omessa comunicazione dei motivi ostativi prevista dall’art. 10‑bis L. 241/1990, il provvedimento di rigetto, pur essendo discrezionale, risulta annullabile ai sensi dell’art. 21‑octies L. 241/1990, poiché privo del preavviso obbligatorio. Inoltre, il ritardo nella conclusione del procedimento, attestato dal superamento dei termini fissati dall’art. 2 L. 241/1990, configura il danno ingiusto per l’impresa, rendendo ammissibile la domanda di risarcimento ex art. 2‑bis L. 241/1990. Pertanto, la tesi principale è che il rigetto debba essere annullato e l’amministrazione condannata al risarcimento del danno patrimoniale subito.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7980398158762348,
+        "nesso_plausibility": 0.5850398158762349,
+        "norm_support": 0.9349999999999999,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.95,
+          "citation_specificity_score": 0.8,
+          "final": 0.9349999999999999,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "L’assenza del preavviso di rigetto previsto dall’art. 10‑bis L. 241/1990 ha impedito l’avvio del termine di dieci giorni entro il quale l’impresa poteva presentare osservazioni e documenti integrativi, perciò non si è verificata la sospensione dei termini di conclusione del procedimento prevista dal medesimo articolo; la privazione di tale possibilità di difesa costituisce una violazione del diritto di interlocuzione endoprocedimentale sancito dall’art. 10‑bis.",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.782422013172039,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.782422013172039
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’assenza del preavviso di rigetto previsto dall’art. 10‑bis L. 241/1990 ha impedito l’avvio del termine di dieci giorni entro il quale l’impresa poteva presentare osservazioni e documenti integrativi, perciò non si è verificata la sospensione dei termini di conclusione del procedimento prevista dal medesimo articolo; la privazione di tale possibilità di difesa costituisce una violazione del diritto di interlocuzione endoprocedimentale sancito dall’art. 10‑bis."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.3180843832245563,
+    "contra_adjusted": 0.3180843832245563,
+    "contra_raw": 0.28877696645760226,
+    "final": 0.4279131462584312,
+    "final_adjusted": 0.4279131462584312,
+    "final_raw": 0.4572205630253852,
+    "pro": 0.7459975294829875,
+    "pro_adjusted": 0.7459975294829875,
+    "pro_raw": 0.7459975294829875,
+    "pro_raw_dialectical": 0.46289752948298746,
+    "pro_raw_intrinsic": 0.7459975294829875,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.9209,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2971
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8751,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2406
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.9024,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2366
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8751,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.2339
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.9209,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.2121
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7806,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.2067
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8458,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.2066
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8458,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1858
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8391,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1695
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8167,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1557
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 6,
+              "axis_base_avg": 0.7543009141582191,
+              "axis_id": "AX1",
+              "axis_quality": 0.31819000000000003,
+              "link_ids": [
+                "S5->S6",
+                "S2->S3",
+                "S3->S4",
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7127839907820614,
+              "axis_id": "AX2",
+              "axis_quality": 0.2067,
+              "link_ids": [
+                "S1->S2"
+              ]
+            }
+          ],
+          "bonus": 0.06689604,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.26244500000000004,
+          "wpcs": 0.557467
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.8883970320840459,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.03758862323304595,
+          "redundancy_index": 0.6014179717287352
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7764434667675453,
+          "high_similarity_pair_ratio": 0.7,
+          "links_count": 5,
+          "pair_count": 10,
+          "penalty": 0.09023558602449278,
+          "redundancy_index": 0.3609423440979711
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2971,
+            "attacker_base_score": 0.7936,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.4617,
+            "damage_factor": 0.4,
+            "excess": 0.7428,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9209,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2366,
+            "attacker_base_score": 0.726,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.3104,
+            "damage_factor": 0.4,
+            "excess": 0.5916,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9024,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1858,
+            "attacker_base_score": 0.6995,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1834,
+            "damage_factor": 0.4,
+            "excess": 0.4646,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8458,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1557,
+            "attacker_base_score": 0.798,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.108,
+            "damage_factor": 0.4,
+            "excess": 0.3892,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8167,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7188,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7128,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6368,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.8509,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.7188,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.5337,
+        "base_score": 0.7188053685177764,
+        "cogency": 0.570736345388386,
+        "cogency_details": {
+          "argument_quality_score": 0.641354481499754,
+          "coherence_score": 0.5001182092770179,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 21‑octies L. 241/1990, la violazione di una norma procedurale – come l’omissione del preavviso di rigetto previsto dall’art. 10‑bis – comporta esclusivamente l’annullabilità del provvedimento, poiché non manca alcun elemento essenziale del provvedimento stesso, requisito necessario per la nullità ex art. 21‑septies; di conseguenza il rigetto non è nullo ma annullabile, con possibilità di impugnazione ma non di inefficacia automatica.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7188053685177764,
+        "nesso_plausibility": 0.18510536851777648,
+        "norm_support": 0.8674999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8674999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 10‑bis L. 241/1990 richiede soltanto che l’amministrazione, prima di adottare il provvedimento negativo, comunichi i motivi ostativi, senza imporre la descrizione puntuale di ogni singola carenza; la semplice indicazione “carenza requisiti”, in quanto riferita ai requisiti espressamente previsti dal bando, è sufficiente a informare l’impresa dei motivi di rigetto e a consentirle di presentare osservazioni entro i dieci giorni, garantendo così l’interlocuzione endoprocedimentale prevista dalla norma. (art. 10‑bis L. 241/1990)",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6686148830042025,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6686148830042025
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 10‑bis L. 241/1990 richiede soltanto che l’amministrazione, prima di adottare il provvedimento negativo, comunichi i motivi ostativi, senza imporre la descrizione puntuale di ogni singola carenza; la semplice indicazione “carenza requisiti”, in quanto riferita ai requisiti espressamente previsti dal bando, è sufficiente a informare l’impresa dei motivi di rigetto e a consentirle di presentare osservazioni entro i dieci giorni, garantendo così l’interlocuzione endoprocedimentale prevista dalla norma. (art. 10‑bis L. 241/1990)"
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2066,
+            "attacker_base_score": 0.7188,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.216,
+            "damage_factor": 0.4,
+            "excess": 0.5165,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8458,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6995,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1695,
+            "attacker_base_score": 0.7875,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1234,
+            "damage_factor": 0.4,
+            "excess": 0.4238,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8391,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6995,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3761,
+        "base_score": 0.6995383701706437,
+        "cogency": 0.5484198929905051,
+        "cogency_details": {
+          "argument_quality_score": 0.644349630244447,
+          "coherence_score": 0.45249015573656304,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "L’assenza del preavviso di rigetto previsto dall’art. 10‑bis L. 241/1990 ha impedito l’avvio del termine di dieci giorni entro il quale l’impresa poteva presentare osservazioni e documenti integrativi, perciò non si è verificata la sospensione dei termini di conclusione del procedimento prevista dal medesimo articolo; la privazione di tale possibilità di difesa costituisce una violazione del diritto di interlocuzione endoprocedimentale sancito dall’art. 10‑bis.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.6995383701706437,
+        "nesso_plausibility": 0.3234383701706437,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento negativo deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, specificando i requisiti mancanti in relazione all’istruttoria svolta; la formula generica “carenza requisiti” adottata dall’amministrazione, priva di indicazione puntuale dei profili ostativi contestati, non soddisfa tale obbligo di motivazione e risulta quindi insufficiente ai sensi del predetto articolo.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5678191186894179,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5678191186894179
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione di un provvedimento negativo deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, specificando i requisiti mancanti in relazione all’istruttoria svolta; la formula generica “carenza requisiti” adottata dall’amministrazione, priva di indicazione puntuale dei profili ostativi contestati, non soddisfa tale obbligo di motivazione e risulta quindi insufficiente ai sensi del predetto articolo."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2339,
+            "attacker_base_score": 0.7875,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.3784,
+            "damage_factor": 0.4,
+            "excess": 0.5848,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8751,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7936,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2121,
+            "attacker_base_score": 0.7188,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.3239,
+            "damage_factor": 0.4,
+            "excess": 0.5303,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.9209,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7936,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.446,
+        "base_score": 0.7936010449724458,
+        "cogency": 0.6686140418922322,
+        "cogency_details": {
+          "argument_quality_score": 0.7241345080934698,
+          "coherence_score": 0.6130935756909947,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Secondo l’art. 21‑octies della L. 241/1990, l’omissione del preavviso di rigetto rende annullabile il provvedimento negativo, soprattutto quando si tratta di provvedimenti discrezionali di concessione di contributi. Nel caso in esame l’amministrazione ha comunicato il rigetto con la sola dicitura “carenza requisiti”, senza inviare il preavviso previsto dall’art. 10‑bis né indicare puntualmente i profili ostativi, violando così il requisito di preavviso e la possibilità di osservazione dell’interessato. La giurisprudenza sul “Criterio di applicazione dell’art. 21 octies, l. n. 241 del 1990 nel caso di omissione del preavviso di rigetto con riferimento all’adozione di provvedimenti discrezionali” conferma che tale omissione comporta l’annullabilità del provvedimento. Pertanto il rigetto è viziato da difetto di forma sostanziale ai sensi dell’art. 21‑octies L. 241/1990.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7936010449724458,
+        "nesso_plausibility": 0.34760104497244576,
+        "norm_support": 0.8674999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8674999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 10‑bis L. 241/1990, nei procedimenti ad istanza di parte – come il conferimento di un contributo pubblico – l’amministrazione, prima di adottare un provvedimento negativo, è tenuta a comunicare tempestivamente i motivi ostativi, sospendendo i termini e concedendo all’istante dieci giorni per presentare osservazioni; pertanto, il rigetto formulato con la sola dicitura “carenza requisiti” senza alcun preavviso di rigetto viola espressamente tale disposizione.",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21-octies",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_38_21-octies",
+            "title": "Annullabilità del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8200561080159207,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8200561080159207
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 10‑bis L. 241/1990, nei procedimenti ad istanza di parte – come il conferimento di un contributo pubblico – l’amministrazione, prima di adottare un provvedimento negativo, è tenuta a comunicare tempestivamente i motivi ostativi, sospendendo i termini e concedendo all’istante dieci giorni per presentare osservazioni; pertanto, il rigetto formulato con la sola dicitura “carenza requisiti” senza alcun preavviso di rigetto viola espressamente tale disposizione."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

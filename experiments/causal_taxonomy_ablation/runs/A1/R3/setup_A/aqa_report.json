@@ -1,0 +1,1807 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 3,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.05992128,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.499344,
+      "attacks_avg": 0.39080000000000004,
+      "base_score_avg": 0.7542995804361674,
+      "cogency_avg": 0.6048285552641703,
+      "net_plausibility": 0.4085463885852181,
+      "net_plausibility_adjusted": 0.4085463885852181,
+      "net_plausibility_raw": 0.36349958043616737,
+      "norm_support_avg": 0.9264583333333334,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.23799154961518915,
+      "redundancy_penalty": 0.014874471850949322,
+      "semantics_avg": 0.6742256017452766
+    },
+    "pro": {
+      "attacks_avg": 0.12243333333333334,
+      "base_score_avg": 0.7636767489747555,
+      "cogency_avg": 0.6053809820440482,
+      "net_plausibility": 0.7636767489747555,
+      "net_plausibility_adjusted": 0.7636767489747555,
+      "net_plausibility_dialectical_raw": 0.6412434156414221,
+      "net_plausibility_intrinsic_raw": 0.7636767489747555,
+      "net_plausibility_raw": 0.7636767489747555,
+      "norm_support_avg": 0.9406795619422871,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.216623371386921,
+      "redundancy_penalty": 0.05415584284673025,
+      "semantics_avg": 0.6859687652820873
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2009,
+            "attacker_base_score": 0.769,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2828,
+            "damage_factor": 0.4,
+            "excess": 0.5023,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.834,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1806,
+            "attacker_base_score": 0.7836,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2321,
+            "damage_factor": 0.4,
+            "excess": 0.4516,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7862,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1651,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1934,
+            "damage_factor": 0.4,
+            "excess": 0.4129,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7537,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1307,
+            "attacker_base_score": 0.6931,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1073,
+            "damage_factor": 0.4,
+            "excess": 0.3268,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7988,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0117,
+            "attacker_base_score": 0.7862,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.8098,
+            "damage_factor": 0.4,
+            "excess": 0.0293,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8584,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7585,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.7171,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7879,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3815,
+        "base_score": 0.7804909860684781,
+        "cogency": 0.6207588734358251,
+        "cogency_details": {
+          "argument_quality_score": 0.6680047821376845,
+          "coherence_score": 0.5735129647339656,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, la pertinenza dei documenti presentati; nel caso in esame l’amministrazione ha ritenuto i presupposti già accertati dai sopralluoghi, perciò i verbali, le certificazioni e le diffide non sono risultati pertinenti e non hanno potuto influire sulla decisione finale. La mera produzione di tali atti, pur prevista dall’art. 10 L. 241/1990, non comporta alcun obbligo di attribuzione di valore decisivo se l’amministrazione, nella motivazione, non li richiama tra i fatti accertati. Di conseguenza, non sussiste alcun nesso causale tra i documenti del privato e la revoca dell’autorizzazione.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7804909860684781,
+        "nesso_plausibility": 0.3989909860684781,
+        "norm_support": 0.92625,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9375,
+          "citation_specificity_score": 0.75,
+          "final": 0.92625,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 7 della L. 241/1990 la comunicazione di avvio è obbligatoria salvo ragioni di impedimento, tra cui esigenze di celerità del procedimento; la revoca dell’autorizzazione, essendo vincolata a sopralluoghi già effettuati e finalizzata a tutelare l’interesse pubblico, rientra in tale eccezione. Pertanto, la mancata notifica non costituisce un vizio essenziale ai sensi dell’art. 21‑octies L. 241/1990, che prevede l’annullabilità solo per violazioni di legge o difetti che incidano sulla sostanza della decisione.",
+        "retrieved_norms": [
+          {
+            "articolo": "7",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_9_7",
+            "title": "Comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7458777467924351,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7458777467924351
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 7 della L. 241/1990 la comunicazione di avvio è obbligatoria salvo ragioni di impedimento, tra cui esigenze di celerità del procedimento; la revoca dell’autorizzazione, essendo vincolata a sopralluoghi già effettuati e finalizzata a tutelare l’interesse pubblico, rientra in tale eccezione. Pertanto, la mancata notifica non costituisce un vizio essenziale ai sensi dell’art. 21‑octies L. 241/1990, che prevede l’annullabilità solo per violazioni di legge o difetti che incidano sulla sostanza della decisione."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2288,
+            "attacker_base_score": 0.7585,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3002,
+            "damage_factor": 0.4,
+            "excess": 0.572,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8571,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1713,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1563,
+            "damage_factor": 0.4,
+            "excess": 0.4282,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7303,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1537,
+            "attacker_base_score": 0.7862,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1125,
+            "damage_factor": 0.4,
+            "excess": 0.3844,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8323,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1299,
+            "attacker_base_score": 0.769,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0528,
+            "damage_factor": 0.4,
+            "excess": 0.3247,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8053,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1195,
+            "attacker_base_score": 0.7836,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.0267,
+            "damage_factor": 0.4,
+            "excess": 0.2986,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7707,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0958,
+            "attacker_base_score": 0.6931,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9676,
+            "damage_factor": 0.4,
+            "excess": 0.2395,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8213,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4001,
+        "base_score": 0.7281081748038567,
+        "cogency": 0.5888982370925155,
+        "cogency_details": {
+          "argument_quality_score": 0.6976111734251358,
+          "coherence_score": 0.4801853007598953,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La motivazione del provvedimento di revoca individua chiaramente i presupposti di fatto, ossia i sopralluoghi già effettuati che hanno accertato la sussistenza dei motivi di revoca, e le ragioni giuridiche, cioè il carattere vincolante dell’autorizzazione, soddisfacendo così i requisiti di cui all’art. 3 L. 241/1990, che richiede solo l’indicazione dei fatti e delle ragioni giuridiche pertinenti all’istruttoria. L’assenza di un riferimento puntuale ai documenti prodotti dal privato non inficia la validità della motivazione, poiché tali documenti non sono stati ritenuti determinanti per la decisione finale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7281081748038567,
+        "nesso_plausibility": 0.3280081748038567,
+        "norm_support": 0.9266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9266666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, la pertinenza dei documenti presentati; nel caso in esame l’amministrazione ha ritenuto i presupposti già accertati dai sopralluoghi, perciò i verbali, le certificazioni e le diffide non sono risultati pertinenti e non hanno potuto influire sulla decisione finale. La mera produzione di tali atti, pur prevista dall’art. 10 L. 241/1990, non comporta alcun obbligo di attribuzione di valore decisivo se l’amministrazione, nella motivazione, non li richiama tra i fatti accertati. Di conseguenza, non sussiste alcun nesso causale tra i documenti del privato e la revoca dell’autorizzazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6025734566981179,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6025734566981179
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, la pertinenza dei documenti presentati; nel caso in esame l’amministrazione ha ritenuto i presupposti già accertati dai sopralluoghi, perciò i verbali, le certificazioni e le diffide non sono risultati pertinenti e non hanno potuto influire sulla decisione finale. La mera produzione di tali atti, pur prevista dall’art. 10 L. 241/1990, non comporta alcun obbligo di attribuzione di valore decisivo se l’amministrazione, nella motivazione, non li richiama tra i fatti accertati. Di conseguenza, non sussiste alcun nesso causale tra i documenti del privato e la revoca dell’autorizzazione."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1467,
+            "attacker_base_score": 0.7805,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0599,
+            "damage_factor": 0.4,
+            "excess": 0.3669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7988,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6931,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0098,
+            "attacker_base_score": 0.7281,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7176,
+            "damage_factor": 0.4,
+            "excess": 0.0245,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8213,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6931,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1565,
+        "base_score": 0.6930644296103248,
+        "cogency": 0.5849940251802569,
+        "cogency_details": {
+          "argument_quality_score": 0.6462075570320502,
+          "coherence_score": 0.5237804933284635,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La motivazione del provvedimento di revoca, ai sensi dell’art. 3 L. 241/1990, deve indicare i presupposti di fatto e le ragioni giuridiche su cui si fonda la decisione; nel caso in esame la motivazione si limita a richiamare i sopralluoghi d’ufficio come elemento probatorio, senza menzionare né valutare i verbali, le certificazioni e le diffide presentati dal privato, i quali costituiscono fatti decisivi per la controversia, perciò risulta incompleta e non conforme al requisito di motivazione previsto dalla norma.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6930644296103248,
+        "nesso_plausibility": 0.5365644296103248,
+        "norm_support": 0.881160704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.881160704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.925
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il Comune ha avviato la procedura di revoca dell’autorizzazione commerciale senza inviare alcuna comunicazione di avvio al soggetto interessato, violando così l’obbligo di notifica previsto dall’art. 7 della L. 241/1990, che richiede la comunicazione dell’avvio salvo giustificate esigenze di celerità, le quali non risultano evidenti nel caso di specie.",
+        "retrieved_norms": [
+          {
+            "articolo": "7",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_9_7",
+            "title": "Comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.550339800204751,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.550339800204751
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Il Comune ha avviato la procedura di revoca dell’autorizzazione commerciale senza inviare alcuna comunicazione di avvio al soggetto interessato, violando così l’obbligo di notifica previsto dall’art. 7 della L. 241/1990, che richiede la comunicazione dell’avvio salvo giustificate esigenze di celerità, le quali non risultano evidenti nel caso di specie."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1148,
+            "attacker_base_score": 0.7805,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0454,
+            "damage_factor": 0.4,
+            "excess": 0.2869,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7879,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7585,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7281,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7489,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8571,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7585,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1148,
+        "base_score": 0.7584814150442215,
+        "cogency": 0.5470701243848799,
+        "cogency_details": {
+          "argument_quality_score": 0.6200221928625642,
+          "coherence_score": 0.4741180559071957,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La revoca dell’autorizzazione commerciale, essendo un provvedimento amministrativo a efficacia durevole, è soggetta al principio di vincolatività di cui all’art. 21‑quinquies L. 241/1990, per cui l’organo che l’ha emanata non può modificarne il contenuto senza una nuova decisione motivata. Tuttavia, l’art. 21‑octies L. 241/1990 prevede che un provvedimento è annullabile per violazione di norme sul procedimento, salvo che, per la sua natura vincolata, risulti palese che il contenuto dispositivo non avrebbe potuto essere diverso; la mancata comunicazione di avvio, pur configurando un vizio procedimentale, non esclude l’annullabilità se la valutazione tecnica non univoca tra gli uffici avrebbe potuto condurre a una decisione diversa. Pertanto, la revoca può essere ritenuta vincolata, ma resta suscettibile di annullamento qualora il giudice accerti che il vizio di mancata notifica ha influito sulla determinazione del provvedimento.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7584814150442215,
+        "nesso_plausibility": 0.6436814150442215,
+        "norm_support": 0.97,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 0.97,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La motivazione del provvedimento di revoca, ai sensi dell’art. 3 L. 241/1990, deve indicare i presupposti di fatto e le ragioni giuridiche su cui si fonda la decisione; nel caso in esame la motivazione si limita a richiamare i sopralluoghi d’ufficio come elemento probatorio, senza menzionare né valutare i verbali, le certificazioni e le diffide presentati dal privato, i quali costituiscono fatti decisivi per la controversia, perciò risulta incompleta e non conforme al requisito di motivazione previsto dalla norma.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6878679257625254,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6878679257625254
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "La motivazione del provvedimento di revoca, ai sensi dell’art. 3 L. 241/1990, deve indicare i presupposti di fatto e le ragioni giuridiche su cui si fonda la decisione; nel caso in esame la motivazione si limita a richiamare i sopralluoghi d’ufficio come elemento probatorio, senza menzionare né valutare i verbali, le certificazioni e le diffide presentati dal privato, i quali costituiscono fatti decisivi per la controversia, perciò risulta incompleta e non conforme al requisito di motivazione previsto dalla norma."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0834,
+            "attacker_base_score": 0.7805,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0001,
+            "damage_factor": 0.4,
+            "excess": 0.2084,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7537,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7916,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7281,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6381,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7303,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7916,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0834,
+        "base_score": 0.7916413670304245,
+        "cogency": 0.6264873904855102,
+        "cogency_details": {
+          "argument_quality_score": 0.6501057994896121,
+          "coherence_score": 0.6028689814814083,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "L’art. 17 L. 241/1990 impone al responsabile del procedimento di acquisire e valutare in modo coerente le valutazioni tecniche necessarie, garantendo che l’istruttoria non presenti contraddizioni tra gli uffici. Dal fascicolo risulta, tuttavia, la presenza di valutazioni istruttorie discordanti tra le diverse unità organizzative, il che indica una mancata uniformità nella ricostruzione dei fatti tecnici e una possibile violazione dell’obbligo di coerenza istruttoria previsto dal citato articolo. Tale incoerenza può indebolire la fondatezza dei presupposti di fatto alla base della revoca.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7916413670304245,
+        "nesso_plausibility": 0.7082413670304245,
+        "norm_support": 0.97,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 0.97,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "La revoca dell’autorizzazione commerciale, essendo un provvedimento amministrativo a efficacia durevole, è soggetta al principio di vincolatività di cui all’art. 21‑quinquies L. 241/1990, per cui l’organo che l’ha emanata non può modificarne il contenuto senza una nuova decisione motivata. Tuttavia, l’art. 21‑octies L. 241/1990 prevede che un provvedimento è annullabile per violazione di norme sul procedimento, salvo che, per la sua natura vincolata, risulti palese che il contenuto dispositivo non avrebbe potuto essere diverso; la mancata comunicazione di avvio, pur configurando un vizio procedimentale, non esclude l’annullabilità se la valutazione tecnica non univoca tra gli uffici avrebbe potuto condurre a una decisione diversa. Pertanto, la revoca può essere ritenuta vincolata, ma resta suscettibile di annullamento qualora il giudice accerti che il vizio di mancata notifica ha influito sulla determinazione del provvedimento.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "17",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7189838329492381,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7189838329492381
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "La revoca dell’autorizzazione commerciale, essendo un provvedimento amministrativo a efficacia durevole, è soggetta al principio di vincolatività di cui all’art. 21‑quinquies L. 241/1990, per cui l’organo che l’ha emanata non può modificarne il contenuto senza una nuova decisione motivata. Tuttavia, l’art. 21‑octies L. 241/1990 prevede che un provvedimento è annullabile per violazione di norme sul procedimento, salvo che, per la sua natura vincolata, risulti palese che il contenuto dispositivo non avrebbe potuto essere diverso; la mancata comunicazione di avvio, pur configurando un vizio procedimentale, non esclude l’annullabilità se la valutazione tecnica non univoca tra gli uffici avrebbe potuto condurre a una decisione diversa. Pertanto, la revoca può essere ritenuta vincolata, ma resta suscettibile di annullamento qualora il giudice accerti che il vizio di mancata notifica ha influito sulla determinazione del provvedimento."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1411,
+            "attacker_base_score": 0.7805,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1389,
+            "damage_factor": 0.4,
+            "excess": 0.3527,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8584,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7862,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7281,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7272,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8323,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7862,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1411,
+        "base_score": 0.7862071007921765,
+        "cogency": 0.6140564353466902,
+        "cogency_details": {
+          "argument_quality_score": 0.6506088785288997,
+          "coherence_score": 0.5775039921644806,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "La mancata comunicazione di avvio del procedimento, prevista dall’art. 7 L. 241/1990, ha impedito al privato di esercitare il diritto di presentare le proprie memorie e i documenti (verbali, certificazioni, diffide) prima dell’adozione del provvedimento, in violazione dell’obbligo di preavviso di rigetto di cui all’art. 10‑bis L. 241/1990; tale omissione ha quindi leso il principio del contraddittorio e le garanzie partecipative garantite dalla normativa.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7862071007921765,
+        "nesso_plausibility": 0.6451071007921765,
+        "norm_support": 0.985,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 0.985,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "L’art. 17 L. 241/1990 impone al responsabile del procedimento di acquisire e valutare in modo coerente le valutazioni tecniche necessarie, garantendo che l’istruttoria non presenti contraddizioni tra gli uffici. Dal fascicolo risulta, tuttavia, la presenza di valutazioni istruttorie discordanti tra le diverse unità organizzative, il che indica una mancata uniformità nella ricostruzione dei fatti tecnici e una possibile violazione dell’obbligo di coerenza istruttoria previsto dal citato articolo. Tale incoerenza può indebolire la fondatezza dei presupposti di fatto alla base della revoca.",
+        "retrieved_norms": [
+          {
+            "articolo": "17",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          },
+          {
+            "articolo": "7",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_9_7",
+            "title": "Comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.693300567293898,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.693300567293898
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 17 L. 241/1990 impone al responsabile del procedimento di acquisire e valutare in modo coerente le valutazioni tecniche necessarie, garantendo che l’istruttoria non presenti contraddizioni tra gli uffici. Dal fascicolo risulta, tuttavia, la presenza di valutazioni istruttorie discordanti tra le diverse unità organizzative, il che indica una mancata uniformità nella ricostruzione dei fatti tecnici e una possibile violazione dell’obbligo di coerenza istruttoria previsto dal citato articolo. Tale incoerenza può indebolire la fondatezza dei presupposti di fatto alla base della revoca."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.135,
+            "attacker_base_score": 0.7805,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1066,
+            "damage_factor": 0.4,
+            "excess": 0.3376,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.834,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.769,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7281,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7036,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8053,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.769,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.135,
+        "base_score": 0.7690428802611151,
+        "cogency": 0.6006562109716904,
+        "cogency_details": {
+          "argument_quality_score": 0.6967416251758045,
+          "coherence_score": 0.5045707967675763,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Secondo l’art. 21‑octies L. 241/1990, il vizio di mancata comunicazione di avvio è annullabile quando è idoneo a influire sul contenuto del provvedimento finale; poiché il privato ha prodotto verbali, certificazioni e diffide che l’amministrazione non ha considerato, e le valutazioni tecniche risultano non univoche, è plausibile che tali documenti avrebbero potuto modificare la constatazione dei presupposti di revoca. Pertanto il vizio procedimentale non è di mera formalità, ma ha una incidenza concreta sull’esito della revoca, rendendola suscettibile di annullamento ai sensi dell’art. 21‑octies.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7690428802611151,
+        "nesso_plausibility": 0.6340428802611151,
+        "norm_support": 0.92625,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9375,
+          "citation_specificity_score": 0.75,
+          "final": 0.92625,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "La mancata comunicazione di avvio del procedimento, prevista dall’art. 7 L. 241/1990, ha impedito al privato di esercitare il diritto di presentare le proprie memorie e i documenti (verbali, certificazioni, diffide) prima dell’adozione del provvedimento, in violazione dell’obbligo di preavviso di rigetto di cui all’art. 10‑bis L. 241/1990; tale omissione ha quindi leso il principio del contraddittorio e le garanzie partecipative garantite dalla normativa.",
+        "retrieved_norms": [
+          {
+            "articolo": "7",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_9_7",
+            "title": "Comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.72782005656536,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.72782005656536
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "La mancata comunicazione di avvio del procedimento, prevista dall’art. 7 L. 241/1990, ha impedito al privato di esercitare il diritto di presentare le proprie memorie e i documenti (verbali, certificazioni, diffide) prima dell’adozione del provvedimento, in violazione dell’obbligo di preavviso di rigetto di cui all’art. 10‑bis L. 241/1990; tale omissione ha quindi leso il principio del contraddittorio e le garanzie partecipative garantite dalla normativa."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1038,
+            "attacker_base_score": 0.7805,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0431,
+            "damage_factor": 0.4,
+            "excess": 0.2595,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7862,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7836,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7281,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6734,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7707,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7836,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1038,
+        "base_score": 0.7836233011102705,
+        "cogency": 0.6590217058952617,
+        "cogency_details": {
+          "argument_quality_score": 0.7760406924776785,
+          "coherence_score": 0.5420027193128449,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "La tesi principale è che la revoca dell’autorizzazione commerciale è annullabile perché la mancata comunicazione di avvio del procedimento ha violato le garanzie partecipative di cui all’art. 7 L. 241/1990, e tale vizio non può essere considerato “palese” o “innocuo” alla luce delle valutazioni tecniche discordanti tra gli uffici, perciò l’amministrazione non ha dimostrato che il provvedimento fosse vincolato e che il contenuto non potesse diversamente risultare; di conseguenza, ai sensi dell’art. 21‑octies L. 241/1990, il vizio è idoneo a produrre l’effetto invalidante sul provvedimento di revoca.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.7836233011102705,
+        "nesso_plausibility": 0.6798233011102705,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Secondo l’art. 21‑octies L. 241/1990, il vizio di mancata comunicazione di avvio è annullabile quando è idoneo a influire sul contenuto del provvedimento finale; poiché il privato ha prodotto verbali, certificazioni e diffide che l’amministrazione non ha considerato, e le valutazioni tecniche risultano non univoche, è plausibile che tali documenti avrebbero potuto modificare la constatazione dei presupposti di revoca. Pertanto il vizio procedimentale non è di mera formalità, ma ha una incidenza concreta sull’esito della revoca, rendendola suscettibile di annullamento ai sensi dell’art. 21‑octies.",
+        "retrieved_norms": [
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "7",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_9_7",
+            "title": "Comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7375004089167511,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7375004089167511
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 21‑octies L. 241/1990, il vizio di mancata comunicazione di avvio è annullabile quando è idoneo a influire sul contenuto del provvedimento finale; poiché il privato ha prodotto verbali, certificazioni e diffide che l’amministrazione non ha considerato, e le valutazioni tecniche risultano non univoche, è plausibile che tali documenti avrebbero potuto modificare la constatazione dei presupposti di revoca. Pertanto il vizio procedimentale non è di mera formalità, ma ha una incidenza concreta sull’esito della revoca, rendendola suscettibile di annullamento ai sensi dell’art. 21‑octies."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.4085463885852181,
+    "contra_adjusted": 0.4085463885852181,
+    "contra_raw": 0.36349958043616737,
+    "final": 0.3551303603895374,
+    "final_adjusted": 0.3551303603895374,
+    "final_raw": 0.4001771685385881,
+    "pro": 0.7636767489747555,
+    "pro_adjusted": 0.7636767489747555,
+    "pro_raw": 0.7636767489747555,
+    "pro_raw_dialectical": 0.6412434156414221,
+    "pro_raw_intrinsic": 0.7636767489747555,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8571,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2288
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.834,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2009
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7862,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1806
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7303,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1713
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7537,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1651
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8323,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1537
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7988,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1467
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8584,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1411
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.834,
+        "target": "S5->S6",
+        "target_role": "support",
+        "value": 0.135
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7988,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1307
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 3,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 3,
+              "axis_base_avg": 0.7477290705616569,
+              "axis_id": "AX1",
+              "axis_quality": 0.18947999999999998,
+              "link_ids": [
+                "S3->S4",
+                "S2->S3",
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7763330906856928,
+              "axis_id": "AX3",
+              "axis_quality": 0.16614,
+              "link_ids": [
+                "S6->S7",
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7862071007921765,
+              "axis_id": "AX2",
+              "axis_quality": 0.1411,
+              "link_ids": [
+                "S4->S5"
+              ]
+            }
+          ],
+          "bonus": 0.05992128,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.16557333333333332,
+          "wpcs": 0.499344
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7866376338922529,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.014874471850949322,
+          "redundancy_index": 0.23799154961518915
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.75805977695504,
+          "high_similarity_pair_ratio": 0.8,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.05415584284673025,
+          "redundancy_index": 0.216623371386921
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2288,
+            "attacker_base_score": 0.7585,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3002,
+            "damage_factor": 0.4,
+            "excess": 0.572,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8571,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1713,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1563,
+            "damage_factor": 0.4,
+            "excess": 0.4282,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7303,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1537,
+            "attacker_base_score": 0.7862,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1125,
+            "damage_factor": 0.4,
+            "excess": 0.3844,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8323,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1299,
+            "attacker_base_score": 0.769,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0528,
+            "damage_factor": 0.4,
+            "excess": 0.3247,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8053,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1195,
+            "attacker_base_score": 0.7836,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.0267,
+            "damage_factor": 0.4,
+            "excess": 0.2986,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7707,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0958,
+            "attacker_base_score": 0.6931,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9676,
+            "damage_factor": 0.4,
+            "excess": 0.2395,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8213,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7281,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4001,
+        "base_score": 0.7281081748038567,
+        "cogency": 0.5888982370925155,
+        "cogency_details": {
+          "argument_quality_score": 0.6976111734251358,
+          "coherence_score": 0.4801853007598953,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La motivazione del provvedimento di revoca individua chiaramente i presupposti di fatto, ossia i sopralluoghi già effettuati che hanno accertato la sussistenza dei motivi di revoca, e le ragioni giuridiche, cioè il carattere vincolante dell’autorizzazione, soddisfacendo così i requisiti di cui all’art. 3 L. 241/1990, che richiede solo l’indicazione dei fatti e delle ragioni giuridiche pertinenti all’istruttoria. L’assenza di un riferimento puntuale ai documenti prodotti dal privato non inficia la validità della motivazione, poiché tali documenti non sono stati ritenuti determinanti per la decisione finale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7281081748038567,
+        "nesso_plausibility": 0.3280081748038567,
+        "norm_support": 0.9266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9266666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Secondo l’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, la pertinenza dei documenti presentati; nel caso in esame l’amministrazione ha ritenuto i presupposti già accertati dai sopralluoghi, perciò i verbali, le certificazioni e le diffide non sono risultati pertinenti e non hanno potuto influire sulla decisione finale. La mera produzione di tali atti, pur prevista dall’art. 10 L. 241/1990, non comporta alcun obbligo di attribuzione di valore decisivo se l’amministrazione, nella motivazione, non li richiama tra i fatti accertati. Di conseguenza, non sussiste alcun nesso causale tra i documenti del privato e la revoca dell’autorizzazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6025734566981179,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6025734566981179
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, la pertinenza dei documenti presentati; nel caso in esame l’amministrazione ha ritenuto i presupposti già accertati dai sopralluoghi, perciò i verbali, le certificazioni e le diffide non sono risultati pertinenti e non hanno potuto influire sulla decisione finale. La mera produzione di tali atti, pur prevista dall’art. 10 L. 241/1990, non comporta alcun obbligo di attribuzione di valore decisivo se l’amministrazione, nella motivazione, non li richiama tra i fatti accertati. Di conseguenza, non sussiste alcun nesso causale tra i documenti del privato e la revoca dell’autorizzazione."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2009,
+            "attacker_base_score": 0.769,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2828,
+            "damage_factor": 0.4,
+            "excess": 0.5023,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.834,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1806,
+            "attacker_base_score": 0.7836,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2321,
+            "damage_factor": 0.4,
+            "excess": 0.4516,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7862,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1651,
+            "attacker_base_score": 0.7916,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1934,
+            "damage_factor": 0.4,
+            "excess": 0.4129,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7537,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1307,
+            "attacker_base_score": 0.6931,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1073,
+            "damage_factor": 0.4,
+            "excess": 0.3268,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7988,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0117,
+            "attacker_base_score": 0.7862,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.8098,
+            "damage_factor": 0.4,
+            "excess": 0.0293,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8584,
+            "reason": "capped: top-K overflow (rank > 2), original=active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7585,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.7171,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7879,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7805,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3815,
+        "base_score": 0.7804909860684781,
+        "cogency": 0.6207588734358251,
+        "cogency_details": {
+          "argument_quality_score": 0.6680047821376845,
+          "coherence_score": 0.5735129647339656,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Secondo l’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, la pertinenza dei documenti presentati; nel caso in esame l’amministrazione ha ritenuto i presupposti già accertati dai sopralluoghi, perciò i verbali, le certificazioni e le diffide non sono risultati pertinenti e non hanno potuto influire sulla decisione finale. La mera produzione di tali atti, pur prevista dall’art. 10 L. 241/1990, non comporta alcun obbligo di attribuzione di valore decisivo se l’amministrazione, nella motivazione, non li richiama tra i fatti accertati. Di conseguenza, non sussiste alcun nesso causale tra i documenti del privato e la revoca dell’autorizzazione.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7804909860684781,
+        "nesso_plausibility": 0.3989909860684781,
+        "norm_support": 0.92625,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9375,
+          "citation_specificity_score": 0.75,
+          "final": 0.92625,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 7 della L. 241/1990 la comunicazione di avvio è obbligatoria salvo ragioni di impedimento, tra cui esigenze di celerità del procedimento; la revoca dell’autorizzazione, essendo vincolata a sopralluoghi già effettuati e finalizzata a tutelare l’interesse pubblico, rientra in tale eccezione. Pertanto, la mancata notifica non costituisce un vizio essenziale ai sensi dell’art. 21‑octies L. 241/1990, che prevede l’annullabilità solo per violazioni di legge o difetti che incidano sulla sostanza della decisione.",
+        "retrieved_norms": [
+          {
+            "articolo": "7",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_9_7",
+            "title": "Comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7458777467924351,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7458777467924351
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Secondo l’art. 7 della L. 241/1990 la comunicazione di avvio è obbligatoria salvo ragioni di impedimento, tra cui esigenze di celerità del procedimento; la revoca dell’autorizzazione, essendo vincolata a sopralluoghi già effettuati e finalizzata a tutelare l’interesse pubblico, rientra in tale eccezione. Pertanto, la mancata notifica non costituisce un vizio essenziale ai sensi dell’art. 21‑octies L. 241/1990, che prevede l’annullabilità solo per violazioni di legge o difetti che incidano sulla sostanza della decisione."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1467,
+            "attacker_base_score": 0.7805,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0599,
+            "damage_factor": 0.4,
+            "excess": 0.3669,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7988,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6931,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0098,
+            "attacker_base_score": 0.7281,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7176,
+            "damage_factor": 0.4,
+            "excess": 0.0245,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8213,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6931,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1565,
+        "base_score": 0.6930644296103248,
+        "cogency": 0.5849940251802569,
+        "cogency_details": {
+          "argument_quality_score": 0.6462075570320502,
+          "coherence_score": 0.5237804933284635,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La motivazione del provvedimento di revoca, ai sensi dell’art. 3 L. 241/1990, deve indicare i presupposti di fatto e le ragioni giuridiche su cui si fonda la decisione; nel caso in esame la motivazione si limita a richiamare i sopralluoghi d’ufficio come elemento probatorio, senza menzionare né valutare i verbali, le certificazioni e le diffide presentati dal privato, i quali costituiscono fatti decisivi per la controversia, perciò risulta incompleta e non conforme al requisito di motivazione previsto dalla norma.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6930644296103248,
+        "nesso_plausibility": 0.5365644296103248,
+        "norm_support": 0.881160704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.881160704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.925
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il Comune ha avviato la procedura di revoca dell’autorizzazione commerciale senza inviare alcuna comunicazione di avvio al soggetto interessato, violando così l’obbligo di notifica previsto dall’art. 7 della L. 241/1990, che richiede la comunicazione dell’avvio salvo giustificate esigenze di celerità, le quali non risultano evidenti nel caso di specie.",
+        "retrieved_norms": [
+          {
+            "articolo": "7",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_9_7",
+            "title": "Comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.550339800204751,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.550339800204751
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Il Comune ha avviato la procedura di revoca dell’autorizzazione commerciale senza inviare alcuna comunicazione di avvio al soggetto interessato, violando così l’obbligo di notifica previsto dall’art. 7 della L. 241/1990, che richiede la comunicazione dell’avvio salvo giustificate esigenze di celerità, le quali non risultano evidenti nel caso di specie."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

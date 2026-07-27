@@ -1,0 +1,1860 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 1,
+      "attack_coverage_axes_total": 4,
+      "attack_coverage_bonus": 0.01521786,
+      "attack_coverage_ratio": 0.25,
+      "attack_coverage_score": 0.1268155,
+      "attacks_avg": 0.41375,
+      "base_score_avg": 0.7669255642384114,
+      "cogency_avg": 0.6209716633859201,
+      "net_plausibility": 0.36839342423841137,
+      "net_plausibility_adjusted": 0.36839342423841137,
+      "net_plausibility_raw": 0.35317556423841134,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.6021135507421178
+    },
+    "pro": {
+      "attacks_avg": 0.08846666666666668,
+      "base_score_avg": 0.7525588880052206,
+      "cogency_avg": 0.6066019324419529,
+      "net_plausibility": 0.7525588880052206,
+      "net_plausibility_adjusted": 0.7525588880052206,
+      "net_plausibility_dialectical_raw": 0.664092221338554,
+      "net_plausibility_intrinsic_raw": 0.7525588880052206,
+      "net_plausibility_raw": 0.7525588880052206,
+      "norm_support_avg": 0.9513514818874255,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.2925081442218735,
+      "redundancy_penalty": 0.07312703605546837,
+      "semantics_avg": 0.6334590517255485
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2142,
+            "attacker_base_score": 0.7793,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.276,
+            "damage_factor": 0.4,
+            "excess": 0.5356,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8187,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.175,
+            "attacker_base_score": 0.789,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1779,
+            "damage_factor": 0.4,
+            "excess": 0.4375,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7465,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1666,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.157,
+            "damage_factor": 0.4,
+            "excess": 0.4165,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7861,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1456,
+            "attacker_base_score": 0.6787,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1046,
+            "damage_factor": 0.4,
+            "excess": 0.3641,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8138,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1211,
+            "attacker_base_score": 0.7736,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0431,
+            "damage_factor": 0.4,
+            "excess": 0.3027,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6742,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0763,
+            "attacker_base_score": 0.759,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.9312,
+            "damage_factor": 0.4,
+            "excess": 0.1907,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7217,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3892,
+        "base_score": 0.740453818730286,
+        "cogency": 0.5857582092780468,
+        "cogency_details": {
+          "argument_quality_score": 0.6859818088766269,
+          "coherence_score": 0.48553460967946666,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il creditore, per ottenere il risarcimento dei danni per perdita di clienti e perdita di chance, deve dimostrare che tali perdite siano conseguenza diretta e immediata del ritardo e della prestazione parziale, come previsto dall’art. 1223 c.c.; tuttavia la parte debitrice ha contestato la causalità e non è stata prodotta alcuna prova concreta del nesso. Inoltre, secondo l’art. 1225 c.c., il danno deve essere prevedibile al momento della stipula del contratto, requisito che risulta non soddisfatto in assenza di evidenze che la perdita di clienti o di chance fosse ragionevolmente prevedibile. Pertanto, la quantificazione di tali danni resta incerta e non ammissibile.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.740453818730286,
+        "nesso_plausibility": 0.35125381873028605,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nonostante il termine fosse dichiarato essenziale, l’esecuzione parziale del 60 % e la previsione di milestone intermedie indicano che il contratto contemplava una soddisfazione graduale dell’obbligazione, perciò la violazione non raggiunge la soglia di “notevole importanza” richiesta dall’art. 1564 c.c. per la risoluzione; la parziale adempienza preserva comunque la fiducia dell’altra parte nella prosecuzione del rapporto. Inoltre, le comunicazioni interlocutorie del creditore, che hanno tollerato il ritardo, configurano un comportamento di buona fede che, ai sensi dell’art. 1460 c.c., attenua la gravità dell’inadempimento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1460",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1530_art1460",
+            "title": "Eccezione d'inadempimento"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5490878531562402,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5490878531562402
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Nonostante il termine fosse dichiarato essenziale, l’esecuzione parziale del 60 % e la previsione di milestone intermedie indicano che il contratto contemplava una soddisfazione graduale dell’obbligazione, perciò la violazione non raggiunge la soglia di “notevole importanza” richiesta dall’art. 1564 c.c. per la risoluzione; la parziale adempienza preserva comunque la fiducia dell’altra parte nella prosecuzione del rapporto. Inoltre, le comunicazioni interlocutorie del creditore, che hanno tollerato il ritardo, configurano un comportamento di buona fede che, ai sensi dell’art. 1460 c.c., attenua la gravità dell’inadempimento."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2274,
+            "attacker_base_score": 0.789,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.3619,
+            "damage_factor": 0.4,
+            "excess": 0.5685,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8631,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2109,
+            "attacker_base_score": 0.7736,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.3207,
+            "damage_factor": 0.4,
+            "excess": 0.5273,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8536,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0917,
+            "attacker_base_score": 0.759,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0226,
+            "damage_factor": 0.4,
+            "excess": 0.2292,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7925,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception",
+            "target_base_score": 0.7934,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0862,
+            "attacker_base_score": 0.6787,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.009,
+            "damage_factor": 0.4,
+            "excess": 0.2156,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7434,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0729,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9758,
+            "damage_factor": 0.4,
+            "excess": 0.1824,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.663,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7793,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.5259,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6427,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.4383,
+        "base_score": 0.7933973097465367,
+        "cogency": 0.6561851174937934,
+        "cogency_details": {
+          "argument_quality_score": 0.726622590556143,
+          "coherence_score": 0.5857476444314439,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1383 c.c., il creditore non può contemporaneamente domandare la penale giornaliera e il risarcimento dei danni per la medesima violazione contrattuale; la penale è una forma di risarcimento sostitutivo. Inoltre, l’art. 1384 c.c. dispone che la penale sia diminuita equamente quando l’obbligazione principale è stata eseguita in parte, come nel caso in cui il debitore abbia consegnato solo il 60 % della prestazione. Di conseguenza, la penale giornaliera deve essere ridotta proporzionalmente all’esecuzione parziale e non può essere cumulata con i danni per costi sostitutivi, perdita di clienti e perdita di chance, i quali già compensano il pregiudizio subito.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7933973097465367,
+        "nesso_plausibility": 0.35509730974653664,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il creditore, per ottenere il risarcimento dei danni per perdita di clienti e perdita di chance, deve dimostrare che tali perdite siano conseguenza diretta e immediata del ritardo e della prestazione parziale, come previsto dall’art. 1223 c.c.; tuttavia la parte debitrice ha contestato la causalità e non è stata prodotta alcuna prova concreta del nesso. Inoltre, secondo l’art. 1225 c.c., il danno deve essere prevedibile al momento della stipula del contratto, requisito che risulta non soddisfatto in assenza di evidenze che la perdita di clienti o di chance fosse ragionevolmente prevedibile. Pertanto, la quantificazione di tali danni resta incerta e non ammissibile.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6551392483279954,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6551392483279954
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il creditore, per ottenere il risarcimento dei danni per perdita di clienti e perdita di chance, deve dimostrare che tali perdite siano conseguenza diretta e immediata del ritardo e della prestazione parziale, come previsto dall’art. 1223 c.c.; tuttavia la parte debitrice ha contestato la causalità e non è stata prodotta alcuna prova concreta del nesso. Inoltre, secondo l’art. 1225 c.c., il danno deve essere prevedibile al momento della stipula del contratto, requisito che risulta non soddisfatto in assenza di evidenze che la perdita di clienti o di chance fosse ragionevolmente prevedibile. Pertanto, la quantificazione di tali danni resta incerta e non ammissibile."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1383,
+            "attacker_base_score": 0.7405,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0244,
+            "damage_factor": 0.4,
+            "excess": 0.3457,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8138,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6787,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0116,
+            "attacker_base_score": 0.7934,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7077,
+            "damage_factor": 0.4,
+            "excess": 0.0291,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7434,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6787,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1499,
+        "base_score": 0.6786648691918092,
+        "cogency": 0.5972882230177228,
+        "cogency_details": {
+          "argument_quality_score": 0.6683706609735085,
+          "coherence_score": 0.526205785061937,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il ritardo di 40 giorni rispetto al termine essenziale del 30 giugno, unitamente alla consegna di solo il 60 % della prestazione, compromette in modo determinante la realizzazione dell’intero progetto, poiché la scadenza era fissata per consentire al creditore di adempiere a proprie obbligazioni successive. Tale inadempimento supera la soglia di scarsa importanza prevista dall’art. 1455 c.c., che richiede che l’inadempimento abbia una notevole importanza per l’interesse dell’altra parte.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6786648691918092,
+        "nesso_plausibility": 0.5287648691918092,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il debitore ha violato il contratto perché ha consegnato la prestazione con un ritardo di quaranta giorni rispetto al termine essenziale fissato al 30 giugno e, oltre al ritardo, ha adempiuto solo al sessanta per cento dell’oggetto contrattuale pattuito. Tale inadempimento riguarda sia la tempestività sia la quantità della prestazione, elementi essenziali del rapporto a prestazioni corrispettive.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6274494858555699,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6274494858555699
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il debitore ha violato il contratto perché ha consegnato la prestazione con un ritardo di quaranta giorni rispetto al termine essenziale fissato al 30 giugno e, oltre al ritardo, ha adempiuto solo al sessanta per cento dell’oggetto contrattuale pattuito. Tale inadempimento riguarda sia la tempestività sia la quantità della prestazione, elementi essenziali del rapporto a prestazioni corrispettive."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1005,
+            "attacker_base_score": 0.7405,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0306,
+            "damage_factor": 0.4,
+            "excess": 0.2513,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8187,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7793,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7934,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6119,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6427,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7793,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1005,
+        "base_score": 0.7792788670646371,
+        "cogency": 0.6448397059198736,
+        "cogency_details": {
+          "argument_quality_score": 0.684593081949958,
+          "coherence_score": 0.6050863298897893,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il ritardo di 40 giorni rispetto al termine fissato come essenziale (30 giugno) configura una violazione di una clausola essenziale ai sensi dell’art. 1457 c.c.; pertanto, il creditore può esercitare il diritto di risoluzione previsto dall’art. 1453 c.c. scegliendo la risoluzione anziché l’adempimento. Ai sensi dell’art. 1457, la risoluzione si perfeziona automaticamente se il creditore, entro tre giorni dal superamento del termine, comunica la volontà di risolvere, condizione che risulta soddisfatta dalla dichiarazione di risoluzione inviata dal creditore. Di conseguenza, la risoluzione è valida e produce gli effetti retroattivi previsti dall’art. 1458 c.c.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7792788670646371,
+        "nesso_plausibility": 0.6787788670646371,
+        "norm_support": 0.9649999999999999,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.95,
+          "citation_specificity_score": 0.8,
+          "final": 0.9649999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il ritardo di 40 giorni rispetto al termine essenziale del 30 giugno, unitamente alla consegna di solo il 60 % della prestazione, compromette in modo determinante la realizzazione dell’intero progetto, poiché la scadenza era fissata per consentire al creditore di adempiere a proprie obbligazioni successive. Tale inadempimento supera la soglia di scarsa importanza prevista dall’art. 1455 c.c., che richiede che l’inadempimento abbia una notevole importanza per l’interesse dell’altra parte.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          },
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1453",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1523_art1453",
+            "title": "Risolubilità del contratto per inadempimento"
+          },
+          {
+            "articolo": "1457",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1458",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1528_art1458",
+            "title": "Effetti della risoluzione"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6660898509622503,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6660898509622503
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il ritardo di 40 giorni rispetto al termine essenziale del 30 giugno, unitamente alla consegna di solo il 60 % della prestazione, compromette in modo determinante la realizzazione dell’intero progetto, poiché la scadenza era fissata per consentire al creditore di adempiere a proprie obbligazioni successive. Tale inadempimento supera la soglia di scarsa importanza prevista dall’art. 1455 c.c., che richiede che l’inadempimento abbia una notevole importanza per l’interesse dell’altra parte."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1014,
+            "attacker_base_score": 0.7405,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9895,
+            "damage_factor": 0.4,
+            "excess": 0.2536,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7861,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7359,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7934,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6312,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.663,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7359,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1014,
+        "base_score": 0.7358912713863142,
+        "cogency": 0.58738916754695,
+        "cogency_details": {
+          "argument_quality_score": 0.6401030785575323,
+          "coherence_score": 0.5346752565363677,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "L’eccezione d’inadempimento è ammissibile solo se l’inadempimento dell’altra parte è dovuto a cause non imputabili al debitore, come previsto dall’art. 1460 c.c., e il rifiuto di adempiere non deve violare la buona fede. I ritardi del subfornitore e il blocco logistico per sciopero, pur essendo eventi esterni, possono escludere la responsabilità del debitore solo se egli dimostra l’impossibilità di eseguire la prestazione e l’assenza di alternative ragionevoli; in mancanza di tale prova l’eccezione risulta inammissibile. Di conseguenza, salvo prova concreta dell’impossibilità, l’eccezione di non‑imputabilità non può essere accolta.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7358912713863142,
+        "nesso_plausibility": 0.6344912713863141,
+        "norm_support": 0.9649999999999999,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.95,
+          "citation_specificity_score": 0.8,
+          "final": 0.9649999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Il ritardo di 40 giorni rispetto al termine fissato come essenziale (30 giugno) configura una violazione di una clausola essenziale ai sensi dell’art. 1457 c.c.; pertanto, il creditore può esercitare il diritto di risoluzione previsto dall’art. 1453 c.c. scegliendo la risoluzione anziché l’adempimento. Ai sensi dell’art. 1457, la risoluzione si perfeziona automaticamente se il creditore, entro tre giorni dal superamento del termine, comunica la volontà di risolvere, condizione che risulta soddisfatta dalla dichiarazione di risoluzione inviata dal creditore. Di conseguenza, la risoluzione è valida e produce gli effetti retroattivi previsti dall’art. 1458 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "1457",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1453",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1523_art1453",
+            "title": "Risolubilità del contratto per inadempimento"
+          },
+          {
+            "articolo": "1457",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1527_art1457",
+            "title": "Termine essenziale per una delle parti"
+          },
+          {
+            "articolo": "1458",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1528_art1458",
+            "title": "Effetti della risoluzione"
+          },
+          {
+            "articolo": "1460",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1530_art1460",
+            "title": "Eccezione d'inadempimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.578915070407431,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.578915070407431
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il ritardo di 40 giorni rispetto al termine fissato come essenziale (30 giugno) configura una violazione di una clausola essenziale ai sensi dell’art. 1457 c.c.; pertanto, il creditore può esercitare il diritto di risoluzione previsto dall’art. 1453 c.c. scegliendo la risoluzione anziché l’adempimento. Ai sensi dell’art. 1457, la risoluzione si perfeziona automaticamente se il creditore, entro tre giorni dal superamento del termine, comunica la volontà di risolvere, condizione che risulta soddisfatta dalla dichiarazione di risoluzione inviata dal creditore. Di conseguenza, la risoluzione è valida e produce gli effetti retroattivi previsti dall’art. 1458 c.c."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0598,
+            "attacker_base_score": 0.7405,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9084,
+            "damage_factor": 0.4,
+            "excess": 0.1494,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7217,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.759,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7934,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6602,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7925,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.759,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.0598,
+        "base_score": 0.7589934994373893,
+        "cogency": 0.5892992412551797,
+        "cogency_details": {
+          "argument_quality_score": 0.6057680405431211,
+          "coherence_score": 0.5728304419672384,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "La clausola penale giornaliera è valida e dovuta indipendentemente dalla prova del danno ai sensi dell’art. 1382 c.c., ma il giudice può ridurla equamente qualora l’ammontare risulti manifestamente eccessivo rispetto all’interesse del creditore o se la prestazione è stata eseguita in parte, come previsto dall’art. 1384 c.c.; pertanto, la penale può essere diminuita nella misura necessaria a tenere conto del fatto che il debitore ha adempiuto solo al 60 % della prestazione e che il valore giornaliero fissato potrebbe risultare sproporzionato rispetto al danno effettivamente subito.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7589934994373893,
+        "nesso_plausibility": 0.6991934994373893,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "L’eccezione d’inadempimento è ammissibile solo se l’inadempimento dell’altra parte è dovuto a cause non imputabili al debitore, come previsto dall’art. 1460 c.c., e il rifiuto di adempiere non deve violare la buona fede. I ritardi del subfornitore e il blocco logistico per sciopero, pur essendo eventi esterni, possono escludere la responsabilità del debitore solo se egli dimostra l’impossibilità di eseguire la prestazione e l’assenza di alternative ragionevoli; in mancanza di tale prova l’eccezione risulta inammissibile. Di conseguenza, salvo prova concreta dell’impossibilità, l’eccezione di non‑imputabilità non può essere accolta.",
+        "retrieved_norms": [
+          {
+            "articolo": "1460",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1530_art1460",
+            "title": "Eccezione d'inadempimento"
+          },
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6073457568694509,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6073457568694509
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "L’eccezione d’inadempimento è ammissibile solo se l’inadempimento dell’altra parte è dovuto a cause non imputabili al debitore, come previsto dall’art. 1460 c.c., e il rifiuto di adempiere non deve violare la buona fede. I ritardi del subfornitore e il blocco logistico per sciopero, pur essendo eventi esterni, possono escludere la responsabilità del debitore solo se egli dimostra l’impossibilità di eseguire la prestazione e l’assenza di alternative ragionevoli; in mancanza di tale prova l’eccezione risulta inammissibile. Di conseguenza, salvo prova concreta dell’impossibilità, l’eccezione di non‑imputabilità non può essere accolta."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0301,
+            "attacker_base_score": 0.7405,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8487,
+            "damage_factor": 0.4,
+            "excess": 0.0751,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6742,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7736,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0157,
+            "attacker_base_score": 0.7934,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8127,
+            "damage_factor": 0.4,
+            "excess": 0.0391,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8536,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7736,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.045799999999999993,
+        "base_score": 0.7735736397385212,
+        "cogency": 0.6217036664425123,
+        "cogency_details": {
+          "argument_quality_score": 0.6460019561811767,
+          "coherence_score": 0.5974053767038479,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 1218 c.c. il debitore è tenuto al risarcimento del danno patrimoniale subito dal creditore per l’inadempimento, salvo prova di impossibilità non imputabile; tale danno comprende (i) i costi effettivamente sostenuti per l’acquisto di una prestazione sostitutiva, (ii) la perdita concreta di clienti già acquisiti, e (iii) la perdita della possibilità commerciale (loss of chance), la quale è risarcibile solo nella misura in cui la probabilità di successo era certa o quantificabile al momento della stipula e risultava prevedibile (art. 1223 c.c.). Tuttavia, secondo l’art. 1225 c.c., il risarcimento è limitato al danno prevedibile al tempo della conclusione del contratto, escludendo così spese o opportunità non dimostrabili o non prevedibili al momento dell’accordo.",
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7735736397385212,
+        "nesso_plausibility": 0.7277736397385213,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "La clausola penale giornaliera è valida e dovuta indipendentemente dalla prova del danno ai sensi dell’art. 1382 c.c., ma il giudice può ridurla equamente qualora l’ammontare risulti manifestamente eccessivo rispetto all’interesse del creditore o se la prestazione è stata eseguita in parte, come previsto dall’art. 1384 c.c.; pertanto, la penale può essere diminuita nella misura necessaria a tenere conto del fatto che il debitore ha adempiuto solo al 60 % della prestazione e che il valore giornaliero fissato potrebbe risultare sproporzionato rispetto al danno effettivamente subito.",
+        "retrieved_norms": [
+          {
+            "articolo": "1382",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1452_art1382",
+            "title": "Effetti della clausola penale"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6235417993525582,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6235417993525582
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La clausola penale giornaliera è valida e dovuta indipendentemente dalla prova del danno ai sensi dell’art. 1382 c.c., ma il giudice può ridurla equamente qualora l’ammontare risulti manifestamente eccessivo rispetto all’interesse del creditore o se la prestazione è stata eseguita in parte, come previsto dall’art. 1384 c.c.; pertanto, la penale può essere diminuita nella misura necessaria a tenere conto del fatto che il debitore ha adempiuto solo al 60 % della prestazione e che il valore giornaliero fissato potrebbe risultare sproporzionato rispetto al danno effettivamente subito."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0603,
+            "attacker_base_score": 0.7405,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9397,
+            "damage_factor": 0.4,
+            "excess": 0.1507,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7465,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.789,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0131,
+            "attacker_base_score": 0.7934,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8218,
+            "damage_factor": 0.4,
+            "excess": 0.0328,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8631,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.789,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.07339999999999999,
+        "base_score": 0.788951181212653,
+        "cogency": 0.5990915904694791,
+        "cogency_details": {
+          "argument_quality_score": 0.636094082546411,
+          "coherence_score": 0.5620890983925474,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "In base all’art. 1383 c.c., il creditore non può domandare contemporaneamente la prestazione principale e la penale, salvo che la penale sia stata pattuita esclusivamente per il ritardo; dunque, scegliendo la risoluzione del contratto non potrà far valere la penale giornaliera, ma potrà comunque chiedere il risarcimento dei danni effettivamente subiti (costi sostitutivi, perdita di clienti e di chance), a condizione che tali danni non siano già coperti dalla penale. Viceversa, se il creditore intende far valere la penale, dovrà rinunciare alla domanda di risoluzione e ai danni relativi allo stesso ritardo, potendo richiedere solo le somme non coperte dalla penale. Questo principio garantisce la compatibilità dei rimedi evitando il cumulo illegittimo di prestazione, penale e risarcimento.",
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.788951181212653,
+        "nesso_plausibility": 0.7155511812126529,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Ai sensi dell’art. 1218 c.c. il debitore è tenuto al risarcimento del danno patrimoniale subito dal creditore per l’inadempimento, salvo prova di impossibilità non imputabile; tale danno comprende (i) i costi effettivamente sostenuti per l’acquisto di una prestazione sostitutiva, (ii) la perdita concreta di clienti già acquisiti, e (iii) la perdita della possibilità commerciale (loss of chance), la quale è risarcibile solo nella misura in cui la probabilità di successo era certa o quantificabile al momento della stipula e risultava prevedibile (art. 1223 c.c.). Tuttavia, secondo l’art. 1225 c.c., il risarcimento è limitato al danno prevedibile al tempo della conclusione del contratto, escludendo così spese o opportunità non dimostrabili o non prevedibili al momento dell’accordo.",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6974123469060307,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6974123469060307
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1218 c.c. il debitore è tenuto al risarcimento del danno patrimoniale subito dal creditore per l’inadempimento, salvo prova di impossibilità non imputabile; tale danno comprende (i) i costi effettivamente sostenuti per l’acquisto di una prestazione sostitutiva, (ii) la perdita concreta di clienti già acquisiti, e (iii) la perdita della possibilità commerciale (loss of chance), la quale è risarcibile solo nella misura in cui la probabilità di successo era certa o quantificabile al momento della stipula e risultava prevedibile (art. 1223 c.c.). Tuttavia, secondo l’art. 1225 c.c., il risarcimento è limitato al danno prevedibile al tempo della conclusione del contratto, escludendo così spese o opportunità non dimostrabili o non prevedibili al momento dell’accordo."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.36839342423841137,
+    "contra_adjusted": 0.36839342423841137,
+    "contra_raw": 0.35317556423841134,
+    "final": 0.38416546376680927,
+    "final_adjusted": 0.38416546376680927,
+    "final_raw": 0.3993833237668093,
+    "pro": 0.7525588880052206,
+    "pro_adjusted": 0.7525588880052206,
+    "pro_raw": 0.7525588880052206,
+    "pro_raw_dialectical": 0.664092221338554,
+    "pro_raw_intrinsic": 0.7525588880052206,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.8631,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2274
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8187,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2142
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8536,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2109
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7465,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.175
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7861,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1666
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8138,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1456
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8138,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1383
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.6742,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1211
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7861,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1014
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8187,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1005
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 1,
+          "axes_total": 4,
+          "axis_details": [
+            {
+              "active_attacks": 3,
+              "axis_base_avg": 0.7312783358809202,
+              "axis_id": "AX2",
+              "axis_quality": 0.17877,
+              "link_ids": [
+                "S2->S3",
+                "S3->S4",
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.788951181212653,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S6->S7"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7735736397385212,
+              "axis_id": "AX3",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7589934994373893,
+              "axis_id": "AX4",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S4->S5"
+              ]
+            }
+          ],
+          "bonus": 0.01521786,
+          "coverage_ratio": 0.25,
+          "enabled": true,
+          "quality_avg": 0.0446925,
+          "wpcs": 0.1268155
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.6507063933502851,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7011469218876202,
+          "high_similarity_pair_ratio": 0.2,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.07312703605546837,
+          "redundancy_index": 0.2925081442218735
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2142,
+            "attacker_base_score": 0.7793,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.276,
+            "damage_factor": 0.4,
+            "excess": 0.5356,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8187,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.175,
+            "attacker_base_score": 0.789,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1779,
+            "damage_factor": 0.4,
+            "excess": 0.4375,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7465,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1666,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.157,
+            "damage_factor": 0.4,
+            "excess": 0.4165,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7861,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1456,
+            "attacker_base_score": 0.6787,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1046,
+            "damage_factor": 0.4,
+            "excess": 0.3641,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8138,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1211,
+            "attacker_base_score": 0.7736,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0431,
+            "damage_factor": 0.4,
+            "excess": 0.3027,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6742,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0763,
+            "attacker_base_score": 0.759,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.9312,
+            "damage_factor": 0.4,
+            "excess": 0.1907,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7217,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7405,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3892,
+        "base_score": 0.740453818730286,
+        "cogency": 0.5857582092780468,
+        "cogency_details": {
+          "argument_quality_score": 0.6859818088766269,
+          "coherence_score": 0.48553460967946666,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il creditore, per ottenere il risarcimento dei danni per perdita di clienti e perdita di chance, deve dimostrare che tali perdite siano conseguenza diretta e immediata del ritardo e della prestazione parziale, come previsto dall’art. 1223 c.c.; tuttavia la parte debitrice ha contestato la causalità e non è stata prodotta alcuna prova concreta del nesso. Inoltre, secondo l’art. 1225 c.c., il danno deve essere prevedibile al momento della stipula del contratto, requisito che risulta non soddisfatto in assenza di evidenze che la perdita di clienti o di chance fosse ragionevolmente prevedibile. Pertanto, la quantificazione di tali danni resta incerta e non ammissibile.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.740453818730286,
+        "nesso_plausibility": 0.35125381873028605,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nonostante il termine fosse dichiarato essenziale, l’esecuzione parziale del 60 % e la previsione di milestone intermedie indicano che il contratto contemplava una soddisfazione graduale dell’obbligazione, perciò la violazione non raggiunge la soglia di “notevole importanza” richiesta dall’art. 1564 c.c. per la risoluzione; la parziale adempienza preserva comunque la fiducia dell’altra parte nella prosecuzione del rapporto. Inoltre, le comunicazioni interlocutorie del creditore, che hanno tollerato il ritardo, configurano un comportamento di buona fede che, ai sensi dell’art. 1460 c.c., attenua la gravità dell’inadempimento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1460",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1530_art1460",
+            "title": "Eccezione d'inadempimento"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5490878531562402,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5490878531562402
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Nonostante il termine fosse dichiarato essenziale, l’esecuzione parziale del 60 % e la previsione di milestone intermedie indicano che il contratto contemplava una soddisfazione graduale dell’obbligazione, perciò la violazione non raggiunge la soglia di “notevole importanza” richiesta dall’art. 1564 c.c. per la risoluzione; la parziale adempienza preserva comunque la fiducia dell’altra parte nella prosecuzione del rapporto. Inoltre, le comunicazioni interlocutorie del creditore, che hanno tollerato il ritardo, configurano un comportamento di buona fede che, ai sensi dell’art. 1460 c.c., attenua la gravità dell’inadempimento."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2274,
+            "attacker_base_score": 0.789,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.3619,
+            "damage_factor": 0.4,
+            "excess": 0.5685,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8631,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2109,
+            "attacker_base_score": 0.7736,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.3207,
+            "damage_factor": 0.4,
+            "excess": 0.5273,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8536,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0917,
+            "attacker_base_score": 0.759,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0226,
+            "damage_factor": 0.4,
+            "excess": 0.2292,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7925,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception",
+            "target_base_score": 0.7934,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0862,
+            "attacker_base_score": 0.6787,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.009,
+            "damage_factor": 0.4,
+            "excess": 0.2156,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7434,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0729,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9758,
+            "damage_factor": 0.4,
+            "excess": 0.1824,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.663,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7793,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.5259,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6427,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7934,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.4383,
+        "base_score": 0.7933973097465367,
+        "cogency": 0.6561851174937934,
+        "cogency_details": {
+          "argument_quality_score": 0.726622590556143,
+          "coherence_score": 0.5857476444314439,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1383 c.c., il creditore non può contemporaneamente domandare la penale giornaliera e il risarcimento dei danni per la medesima violazione contrattuale; la penale è una forma di risarcimento sostitutivo. Inoltre, l’art. 1384 c.c. dispone che la penale sia diminuita equamente quando l’obbligazione principale è stata eseguita in parte, come nel caso in cui il debitore abbia consegnato solo il 60 % della prestazione. Di conseguenza, la penale giornaliera deve essere ridotta proporzionalmente all’esecuzione parziale e non può essere cumulata con i danni per costi sostitutivi, perdita di clienti e perdita di chance, i quali già compensano il pregiudizio subito.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7933973097465367,
+        "nesso_plausibility": 0.35509730974653664,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il creditore, per ottenere il risarcimento dei danni per perdita di clienti e perdita di chance, deve dimostrare che tali perdite siano conseguenza diretta e immediata del ritardo e della prestazione parziale, come previsto dall’art. 1223 c.c.; tuttavia la parte debitrice ha contestato la causalità e non è stata prodotta alcuna prova concreta del nesso. Inoltre, secondo l’art. 1225 c.c., il danno deve essere prevedibile al momento della stipula del contratto, requisito che risulta non soddisfatto in assenza di evidenze che la perdita di clienti o di chance fosse ragionevolmente prevedibile. Pertanto, la quantificazione di tali danni resta incerta e non ammissibile.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1383",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1453_art1383",
+            "title": "Divieto di cumulo"
+          },
+          {
+            "articolo": "1384",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1454_art1384",
+            "title": "Riduzione della penale"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6551392483279954,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6551392483279954
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il creditore, per ottenere il risarcimento dei danni per perdita di clienti e perdita di chance, deve dimostrare che tali perdite siano conseguenza diretta e immediata del ritardo e della prestazione parziale, come previsto dall’art. 1223 c.c.; tuttavia la parte debitrice ha contestato la causalità e non è stata prodotta alcuna prova concreta del nesso. Inoltre, secondo l’art. 1225 c.c., il danno deve essere prevedibile al momento della stipula del contratto, requisito che risulta non soddisfatto in assenza di evidenze che la perdita di clienti o di chance fosse ragionevolmente prevedibile. Pertanto, la quantificazione di tali danni resta incerta e non ammissibile."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1383,
+            "attacker_base_score": 0.7405,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0244,
+            "damage_factor": 0.4,
+            "excess": 0.3457,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8138,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6787,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0116,
+            "attacker_base_score": 0.7934,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7077,
+            "damage_factor": 0.4,
+            "excess": 0.0291,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7434,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6787,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1499,
+        "base_score": 0.6786648691918092,
+        "cogency": 0.5972882230177228,
+        "cogency_details": {
+          "argument_quality_score": 0.6683706609735085,
+          "coherence_score": 0.526205785061937,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il ritardo di 40 giorni rispetto al termine essenziale del 30 giugno, unitamente alla consegna di solo il 60 % della prestazione, compromette in modo determinante la realizzazione dell’intero progetto, poiché la scadenza era fissata per consentire al creditore di adempiere a proprie obbligazioni successive. Tale inadempimento supera la soglia di scarsa importanza prevista dall’art. 1455 c.c., che richiede che l’inadempimento abbia una notevole importanza per l’interesse dell’altra parte.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6786648691918092,
+        "nesso_plausibility": 0.5287648691918092,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il debitore ha violato il contratto perché ha consegnato la prestazione con un ritardo di quaranta giorni rispetto al termine essenziale fissato al 30 giugno e, oltre al ritardo, ha adempiuto solo al sessanta per cento dell’oggetto contrattuale pattuito. Tale inadempimento riguarda sia la tempestività sia la quantità della prestazione, elementi essenziali del rapporto a prestazioni corrispettive.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6274494858555699,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6274494858555699
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il debitore ha violato il contratto perché ha consegnato la prestazione con un ritardo di quaranta giorni rispetto al termine essenziale fissato al 30 giugno e, oltre al ritardo, ha adempiuto solo al sessanta per cento dell’oggetto contrattuale pattuito. Tale inadempimento riguarda sia la tempestività sia la quantità della prestazione, elementi essenziali del rapporto a prestazioni corrispettive."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

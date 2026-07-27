@@ -1,0 +1,34 @@
+[2026-03-02T18:13:47.862962] Pipeline log - Setup B
+Claim: Un condomino subisce infiltrazioni nel proprio appartamento con danni a soffitto, pareti e arredi quantificati in 8.500 euro. Due perizie collocano la causa nella terrazza di copertura, ma divergono s
+======================================================================
+Status: ok
+Duration: 585.25s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 8
+  Arguments: 1
+  Causal type: CIV_CUSTODY_DAMAGE
+
+[COUNTER]
+  Chain steps: 4
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: uncertain
+  Net pro: 0.7594138618095272
+  Net contra: 0.6198939560277604
+  Net final: 0.13951990578176676
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

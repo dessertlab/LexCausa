@@ -1,0 +1,34 @@
+[2026-03-06T00:00:46.164149] Pipeline log - Setup B
+Claim: Un venditore online incassa 6.000 euro per un macchinario dichiarato funzionante, ma consegna un bene inutilizzabile e con componenti mancanti. Dalle chat emerge che il venditore conosceva da settiman
+======================================================================
+Status: ok
+Duration: 1251.84s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 8
+  Arguments: 1
+  Causal type: MIXED_PEN_CIV_CONCURRENCE
+
+[COUNTER]
+  Chain steps: 6
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7611207757047782
+  Net contra: 0.5490056151730364
+  Net final: 0.21211516053174184
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

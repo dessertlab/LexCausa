@@ -1,0 +1,1692 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 3,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.06686016,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.557168,
+      "attacks_avg": 0.31789999999999996,
+      "base_score_avg": 0.7773031476605579,
+      "cogency_avg": 0.6116112490896736,
+      "net_plausibility": 0.5043669860773946,
+      "net_plausibility_adjusted": 0.5043669860773946,
+      "net_plausibility_raw": 0.4594031476605578,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.35034114533061106,
+      "redundancy_penalty": 0.02189632158316319,
+      "semantics_avg": 0.6460659097788523
+    },
+    "pro": {
+      "attacks_avg": 0.28625000000000006,
+      "base_score_avg": 0.7323781828968473,
+      "cogency_avg": 0.5975724276748876,
+      "net_plausibility": 0.7323781828968473,
+      "net_plausibility_adjusted": 0.7323781828968473,
+      "net_plausibility_dialectical_raw": 0.4461281828968473,
+      "net_plausibility_intrinsic_raw": 0.7323781828968473,
+      "net_plausibility_raw": 0.7323781828968473,
+      "norm_support_avg": 0.9148485010476203,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.2259392960034671,
+      "redundancy_penalty": 0.056484824000866775,
+      "semantics_avg": 0.6238901805844431
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1599,
+            "attacker_base_score": 0.7449,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1882,
+            "damage_factor": 0.4,
+            "excess": 0.3997,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7975,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7885,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1498,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.163,
+            "damage_factor": 0.4,
+            "excess": 0.3744,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7558,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7885,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.147,
+            "attacker_base_score": 0.7645,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1561,
+            "damage_factor": 0.4,
+            "excess": 0.3676,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7561,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7885,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0965,
+            "attacker_base_score": 0.7632,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0298,
+            "damage_factor": 0.4,
+            "excess": 0.2413,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7937,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7885,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0861,
+            "attacker_base_score": 0.6352,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0038,
+            "damage_factor": 0.4,
+            "excess": 0.2153,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7902,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7885,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0506,
+            "attacker_base_score": 0.717,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.915,
+            "damage_factor": 0.4,
+            "excess": 0.1265,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7507,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7885,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3097,
+        "base_score": 0.7885241239723767,
+        "cogency": 0.6407031135442796,
+        "cogency_details": {
+          "argument_quality_score": 0.6546156345757994,
+          "coherence_score": 0.6267905925127596,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Poiché l’autore ha invocato il diritto di critica e ha allegato email interne a sostegno di parte delle accuse, la condotta risulta giustificata ai sensi dell’art. 51 c.p.; in tal caso l’aggravante prevista dall’art. 61 c.p. per l’uso del mezzo telematico non si configura, poiché tale aggravante si applica solo quando l’offesa è priva di qualsiasi giustificazione. Di conseguenza, la fattispecie può essere qualificata al massimo come diffamazione semplice ex art. 595 c.p., senza l’incremento di pena legato al mezzo di pubblicità.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7885241239723767,
+        "nesso_plausibility": 0.4788241239723767,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Le affermazioni contenute nel post, sebbene indichino presunti illeciti, sono formulate come valutazioni soggettive e giudizi di merito sull’attività dell’ex datore, rientrando così nella disciplina dell’art. 51 c.p., che esclude la punibilità per esercizio del diritto di critica; pertanto, non si configura l’attribuzione di un fatto determinato soggetto alla prova della verità prevista dall’art. 596 c.p., ma una legittima denuncia di interesse pubblico.",
+        "retrieved_norms": [
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "595",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_765_595",
+            "title": "Diffamazione"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6543772996969761,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6543772996969761
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Le affermazioni contenute nel post, sebbene indichino presunti illeciti, sono formulate come valutazioni soggettive e giudizi di merito sull’attività dell’ex datore, rientrando così nella disciplina dell’art. 51 c.p., che esclude la punibilità per esercizio del diritto di critica; pertanto, non si configura l’attribuzione di un fatto determinato soggetto alla prova della verità prevista dall’art. 596 c.p., ma una legittima denuncia di interesse pubblico."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1679,
+            "attacker_base_score": 0.717,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1859,
+            "damage_factor": 0.4,
+            "excess": 0.4198,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8269,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7661,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1582,
+            "attacker_base_score": 0.7449,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1616,
+            "damage_factor": 0.4,
+            "excess": 0.3955,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7797,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7661,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1357,
+            "attacker_base_score": 0.7632,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1052,
+            "damage_factor": 0.4,
+            "excess": 0.3391,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8518,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7661,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0836,
+            "attacker_base_score": 0.6352,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9751,
+            "damage_factor": 0.4,
+            "excess": 0.209,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7675,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7661,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0715,
+            "attacker_base_score": 0.7645,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9449,
+            "damage_factor": 0.4,
+            "excess": 0.1788,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7271,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7661,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7694,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6798,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7363,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7661,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3261,
+        "base_score": 0.7660821713487389,
+        "cogency": 0.5825193846350676,
+        "cogency_details": {
+          "argument_quality_score": 0.6391457218222455,
+          "coherence_score": 0.5258930474478896,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Le email interne allegate dal convenuto, pur costituendo indizi di una possibile irregolarità, non dimostrano in modo certo la commissione del reato di evasione fiscale né la volontà di eludere le imposte; ai sensi dell’art. 596 c.p., la scusa della verità è ammessa solo quando il fatto attribuito è provato in modo completo e incontrovertibile. Pertanto, la mera insinuazione contenuta nelle comunicazioni non soddisfa l’onere probatorio richiesto per escludere la punibilità della parte relativa all’accusa di evasione fiscale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7660821713487389,
+        "nesso_plausibility": 0.4399821713487389,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Poiché l’autore ha invocato il diritto di critica e ha allegato email interne a sostegno di parte delle accuse, la condotta risulta giustificata ai sensi dell’art. 51 c.p.; in tal caso l’aggravante prevista dall’art. 61 c.p. per l’uso del mezzo telematico non si configura, poiché tale aggravante si applica solo quando l’offesa è priva di qualsiasi giustificazione. Di conseguenza, la fattispecie può essere qualificata al massimo come diffamazione semplice ex art. 595 c.p., senza l’incremento di pena legato al mezzo di pubblicità.",
+        "retrieved_norms": [
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "595",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_765_595",
+            "title": "Diffamazione"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6377545198607284,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6377545198607284
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Poiché l’autore ha invocato il diritto di critica e ha allegato email interne a sostegno di parte delle accuse, la condotta risulta giustificata ai sensi dell’art. 51 c.p.; in tal caso l’aggravante prevista dall’art. 61 c.p. per l’uso del mezzo telematico non si configura, poiché tale aggravante si applica solo quando l’offesa è priva di qualsiasi giustificazione. Di conseguenza, la fattispecie può essere qualificata al massimo come diffamazione semplice ex art. 595 c.p., senza l’incremento di pena legato al mezzo di pubblicità."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0975,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0131,
+            "damage_factor": 0.4,
+            "excess": 0.2437,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7558,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7694,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0758,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.959,
+            "damage_factor": 0.4,
+            "excess": 0.1896,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7363,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7694,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1733,
+        "base_score": 0.7693952671324127,
+        "cogency": 0.7043084940827676,
+        "cogency_details": {
+          "argument_quality_score": 0.7207300326522956,
+          "coherence_score": 0.6878869555132396,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il post pubblicato dall’ex dipendente sul social network, diffuso a più persone, contiene l’attribuzione di fatti determinati (evasione fiscale, sfruttamento, mobbing) al datore di lavoro, configurando così l’offesa alla reputazione di cui all’art. 595 c.p.; pertanto la condotta integra gli elementi costitutivi del reato di diffamazione, in quanto la comunicazione è avvenuta mediante un mezzo di pubblicità (la rete sociale) e ha raggiunto un pubblico più ampio rispetto a un singolo interlocutore.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7693952671324127,
+        "nesso_plausibility": 0.5960952671324127,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il fatto contestato consiste nella pubblicazione, da parte di un ex dipendente, di un post su un social network in cui vengono avanzate accuse dettagliate nei confronti del precedente datore di lavoro, tra cui evasione fiscale, sfruttamento e mobbing, post che è stato diffuso a un ampio pubblico e ha generato numerose ricondivisioni. Il datore ha presentato querela per diffamazione aggravata sostenendo che la diffusione del post ha determinato una perdita di clienti. L’autore del post ha invocato il diritto di critica e la verità dei fatti, allegando alcune email interne e messaggi di colleghi a supporto di parte delle accuse, mentre altre affermazioni sono state formulate in modo assertivo senza alcun riscontro documentale.",
+        "retrieved_norms": [
+          {
+            "articolo": "595",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_765_595",
+            "title": "Diffamazione"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8228638745925366,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8228638745925366
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il fatto contestato consiste nella pubblicazione, da parte di un ex dipendente, di un post su un social network in cui vengono avanzate accuse dettagliate nei confronti del precedente datore di lavoro, tra cui evasione fiscale, sfruttamento e mobbing, post che è stato diffuso a un ampio pubblico e ha generato numerose ricondivisioni. Il datore ha presentato querela per diffamazione aggravata sostenendo che la diffusione del post ha determinato una perdita di clienti. L’autore del post ha invocato il diritto di critica e la verità dei fatti, allegando alcune email interne e messaggi di colleghi a supporto di parte delle accuse, mentre altre affermazioni sono state formulate in modo assertivo senza alcun riscontro documentale."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0996,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0136,
+            "damage_factor": 0.4,
+            "excess": 0.2491,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7561,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7645,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.073,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9469,
+            "damage_factor": 0.4,
+            "excess": 0.1824,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7271,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7645,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.17259999999999998,
+        "base_score": 0.7644969822612663,
+        "cogency": 0.6303740695331468,
+        "cogency_details": {
+          "argument_quality_score": 0.6508114210823396,
+          "coherence_score": 0.6099367179839541,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il fatto è stato compiuto mediante la pubblicazione su un social network, strumento informatico di ampia diffusione, che rientra tra le circostanze aggravanti previste dall’art. 61 c.p., comma 1, n. 11, per l’uso di mezzi di comunicazione telematici. Tale modalità ha consentito la rapida e molteplice diffusione del contenuto, incrementando l’offesa alla reputazione del datore. Pertanto, l’aggravante telematica si configura ai sensi dell’art. 61 c.p.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7644969822612663,
+        "nesso_plausibility": 0.5918969822612663,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il post pubblicato dall’ex dipendente sul social network, diffuso a più persone, contiene l’attribuzione di fatti determinati (evasione fiscale, sfruttamento, mobbing) al datore di lavoro, configurando così l’offesa alla reputazione di cui all’art. 595 c.p.; pertanto la condotta integra gli elementi costitutivi del reato di diffamazione, in quanto la comunicazione è avvenuta mediante un mezzo di pubblicità (la rete sociale) e ha raggiunto un pubblico più ampio rispetto a un singolo interlocutore.",
+        "retrieved_norms": [
+          {
+            "articolo": "595",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_765_595",
+            "title": "Diffamazione"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7130682646883328,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7130682646883328
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il post pubblicato dall’ex dipendente sul social network, diffuso a più persone, contiene l’attribuzione di fatti determinati (evasione fiscale, sfruttamento, mobbing) al datore di lavoro, configurando così l’offesa alla reputazione di cui all’art. 595 c.p.; pertanto la condotta integra gli elementi costitutivi del reato di diffamazione, in quanto la comunicazione è avvenuta mediante un mezzo di pubblicità (la rete sociale) e ha raggiunto un pubblico più ampio rispetto a un singolo interlocutore."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1696,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0592,
+            "damage_factor": 0.4,
+            "excess": 0.424,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7902,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6352,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1458,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9996,
+            "damage_factor": 0.4,
+            "excess": 0.3644,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7675,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6352,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3154,
+        "base_score": 0.635202712528347,
+        "cogency": 0.48909145139405685,
+        "cogency_details": {
+          "argument_quality_score": 0.6031837553448152,
+          "coherence_score": 0.37499914744329854,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 51 c.p., l’esercizio del diritto di critica è esclusivo dalla punibilità solo quando la manifestazione rientra nell’ambito di un diritto riconosciuto (es. libertà di espressione) e non supera i limiti posti dalla verità dei fatti e dall’interesse pubblico; pertanto, le affermazioni supportate da mail interne e messaggi di colleghi possono essere ricondotte a un legittimo esercizio di critica, mentre le accuse formulate in modo assertivo senza alcun riscontro documentale non trovano copertura dalla scriminante e restano punibili.",
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.635202712528347,
+        "nesso_plausibility": 0.319802712528347,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Il fatto è stato compiuto mediante la pubblicazione su un social network, strumento informatico di ampia diffusione, che rientra tra le circostanze aggravanti previste dall’art. 61 c.p., comma 1, n. 11, per l’uso di mezzi di comunicazione telematici. Tale modalità ha consentito la rapida e molteplice diffusione del contenuto, incrementando l’offesa alla reputazione del datore. Pertanto, l’aggravante telematica si configura ai sensi dell’art. 61 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.42336998371769186,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.42336998371769186
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Il fatto è stato compiuto mediante la pubblicazione su un social network, strumento informatico di ampia diffusione, che rientra tra le circostanze aggravanti previste dall’art. 61 c.p., comma 1, n. 11, per l’uso di mezzi di comunicazione telematici. Tale modalità ha consentito la rapida e molteplice diffusione del contenuto, incrementando l’offesa alla reputazione del datore. Pertanto, l’aggravante telematica si configura ai sensi dell’art. 61 c.p."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2168,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.3051,
+            "damage_factor": 0.4,
+            "excess": 0.5419,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8518,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7632,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1954,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2517,
+            "damage_factor": 0.4,
+            "excess": 0.4885,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7937,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7632,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.4122,
+        "base_score": 0.7632165995698352,
+        "cogency": 0.655833357796646,
+        "cogency_details": {
+          "argument_quality_score": 0.6667261865746407,
+          "coherence_score": 0.6449405290186513,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Secondo l’art. 596 c.p., la prova della verità del fatto attribuito è ammessa nel procedimento penale; pertanto, per le accuse di evasione fiscale le e‑mail interne prodotte costituiscono indizi sufficienti a far presumere la verità del fatto, consentendo al convenuto di avvalersi della scriminante di verità. Per le accuse di sfruttamento e mobbing, i messaggi di colleghi non forniscono una prova certa della realtà dei fatti, così che la difesa di verità non può essere invocata e la condotta rimane punibile. La mancanza di prova della verità per le affermazioni non supportate rende inefficace l’applicazione dell’art. 596 c.p. e non esclude la responsabilità penale.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7632165995698352,
+        "nesso_plausibility": 0.3510165995698352,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 51 c.p., l’esercizio del diritto di critica è esclusivo dalla punibilità solo quando la manifestazione rientra nell’ambito di un diritto riconosciuto (es. libertà di espressione) e non supera i limiti posti dalla verità dei fatti e dall’interesse pubblico; pertanto, le affermazioni supportate da mail interne e messaggi di colleghi possono essere ricondotte a un legittimo esercizio di critica, mentre le accuse formulate in modo assertivo senza alcun riscontro documentale non trovano copertura dalla scriminante e restano punibili.",
+        "retrieved_norms": [
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6833410341200635,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6833410341200635
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 51 c.p., l’esercizio del diritto di critica è esclusivo dalla punibilità solo quando la manifestazione rientra nell’ambito di un diritto riconosciuto (es. libertà di espressione) e non supera i limiti posti dalla verità dei fatti e dall’interesse pubblico; pertanto, le affermazioni supportate da mail interne e messaggi di colleghi possono essere ricondotte a un legittimo esercizio di critica, mentre le accuse formulate in modo assertivo senza alcun riscontro documentale non trovano copertura dalla scriminante e restano punibili."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1867,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1838,
+            "damage_factor": 0.4,
+            "excess": 0.4668,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7507,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.717,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.144,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0769,
+            "damage_factor": 0.4,
+            "excess": 0.3599,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8269,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.717,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3307,
+        "base_score": 0.7170453210841397,
+        "cogency": 0.5159908752443854,
+        "cogency_details": {
+          "argument_quality_score": 0.6254801668860742,
+          "coherence_score": 0.40650158360269645,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "In base all’art. 61 c.p., l’uso del social network come mezzo di ampia diffusione e il danno patrimoniale di “relevante gravità” derivante dalla perdita di clienti costituiscono circostanze aggravanti; secondo l’art. 133 c.p., il giudice deve valutare la gravità del reato tenendo conto della natura dell’offesa, del mezzo telematico impiegato e del danno economico subito, collocando la pena nella fascia più alta prevista per la diffamazione col mezzo di stampa (reclusione da sei mesi a tre anni), con eventuale modulazione in funzione dell’intensità del dolo.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7170453210841397,
+        "nesso_plausibility": 0.38634532108413966,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Secondo l’art. 596 c.p., la prova della verità del fatto attribuito è ammessa nel procedimento penale; pertanto, per le accuse di evasione fiscale le e‑mail interne prodotte costituiscono indizi sufficienti a far presumere la verità del fatto, consentendo al convenuto di avvalersi della scriminante di verità. Per le accuse di sfruttamento e mobbing, i messaggi di colleghi non forniscono una prova certa della realtà dei fatti, così che la difesa di verità non può essere invocata e la condotta rimane punibile. La mancanza di prova della verità per le affermazioni non supportate rende inefficace l’applicazione dell’art. 596 c.p. e non esclude la responsabilità penale.",
+        "retrieved_norms": [
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "133",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5408268617027469,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5408268617027469
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 596 c.p., la prova della verità del fatto attribuito è ammessa nel procedimento penale; pertanto, per le accuse di evasione fiscale le e‑mail interne prodotte costituiscono indizi sufficienti a far presumere la verità del fatto, consentendo al convenuto di avvalersi della scriminante di verità. Per le accuse di sfruttamento e mobbing, i messaggi di colleghi non forniscono una prova certa della realtà dei fatti, così che la difesa di verità non può essere invocata e la condotta rimane punibile. La mancanza di prova della verità per le affermazioni non supportate rende inefficace l’applicazione dell’art. 596 c.p. e non esclude la responsabilità penale."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2051,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2578,
+            "damage_factor": 0.4,
+            "excess": 0.5129,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7975,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7449,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1082,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0154,
+            "damage_factor": 0.4,
+            "excess": 0.2705,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7797,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7449,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3133,
+        "base_score": 0.7449122148050831,
+        "cogency": 0.5898363179983233,
+        "cogency_details": {
+          "argument_quality_score": 0.6835021389871851,
+          "coherence_score": 0.4961704970094614,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "La tesi centrale è che, ai sensi dell’art. 51 c.p., l’esercizio del diritto di critica esclude la punibilità solo per le singole affermazioni dimostrate veritiere e pertinenti a un interesse pubblico, mentre le accuse non corroborate rimangono soggette a responsabilità penale; pertanto il giudice dovrà distinguere, per ciascun elemento del post, la difesa di verità prevista dall’art. 596 c.p. e, laddove assente, applicare la sanzione prevista dall’art. 595 c.p. con l’aggravante telematica dell’art. 61 c.p.; infine, il bilanciamento tra reputazione del datore e libertà di espressione, valutato con il test RIGHTS_BALANCE, impone una pena proporzionata, tenendo conto della rilevanza dell’interesse pubblico e della buona fede dell’autore, così da giungere a una condanna parziale o a una pena attenuata in base alla gravità complessiva del reato.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.7449122148050831,
+        "nesso_plausibility": 0.43161221480508305,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "In base all’art. 61 c.p., l’uso del social network come mezzo di ampia diffusione e il danno patrimoniale di “relevante gravità” derivante dalla perdita di clienti costituiscono circostanze aggravanti; secondo l’art. 133 c.p., il giudice deve valutare la gravità del reato tenendo conto della natura dell’offesa, del mezzo telematico impiegato e del danno economico subito, collocando la pena nella fascia più alta prevista per la diffamazione col mezzo di stampa (reclusione da sei mesi a tre anni), con eventuale modulazione in funzione dell’intensità del dolo.",
+        "retrieved_norms": [
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "133",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          },
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "595",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_765_595",
+            "title": "Diffamazione"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5598710646852869,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5598710646852869
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "In base all’art. 61 c.p., l’uso del social network come mezzo di ampia diffusione e il danno patrimoniale di “relevante gravità” derivante dalla perdita di clienti costituiscono circostanze aggravanti; secondo l’art. 133 c.p., il giudice deve valutare la gravità del reato tenendo conto della natura dell’offesa, del mezzo telematico impiegato e del danno economico subito, collocando la pena nella fascia più alta prevista per la diffamazione col mezzo di stampa (reclusione da sei mesi a tre anni), con eventuale modulazione in funzione dell’intensità del dolo."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.5043669860773946,
+    "contra_adjusted": 0.5043669860773946,
+    "contra_raw": 0.4594031476605578,
+    "final": 0.2280111968194527,
+    "final_adjusted": 0.2280111968194527,
+    "final_raw": 0.2729750352362895,
+    "pro": 0.7323781828968473,
+    "pro_adjusted": 0.7323781828968473,
+    "pro_raw": 0.7323781828968473,
+    "pro_raw_dialectical": 0.4461281828968473,
+    "pro_raw_intrinsic": 0.7323781828968473,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8518,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.2168
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7975,
+        "target": "S6->S7",
+        "target_role": "support",
+        "value": 0.2051
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7937,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1954
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7507,
+        "target": "S5->S6",
+        "target_role": "support",
+        "value": 0.1867
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7902,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1696
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8269,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1679
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7975,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1599
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7797,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1582
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7558,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1498
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7561,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.147
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 3,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.7657029496545048,
+              "axis_id": "AX1",
+              "axis_quality": 0.28538,
+              "link_ids": [
+                "S1->S2",
+                "S2->S3",
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.690057463666715,
+              "axis_id": "AX2",
+              "axis_quality": 0.27055999999999997,
+              "link_ids": [
+                "S6->S7",
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7170453210841397,
+              "axis_id": "AX3",
+              "axis_quality": 0.2299,
+              "link_ids": [
+                "S5->S6"
+              ]
+            }
+          ],
+          "bonus": 0.06686016,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.26194666666666666,
+          "wpcs": 0.557168
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.8180955206925711,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.02189632158316319,
+          "redundancy_index": 0.35034114533061106
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.719839988732264,
+          "high_similarity_pair_ratio": 0.5333333333333333,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.056484824000866775,
+          "redundancy_index": 0.2259392960034671
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1696,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0592,
+            "damage_factor": 0.4,
+            "excess": 0.424,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7902,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6352,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1458,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9996,
+            "damage_factor": 0.4,
+            "excess": 0.3644,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7675,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6352,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3154,
+        "base_score": 0.635202712528347,
+        "cogency": 0.48909145139405685,
+        "cogency_details": {
+          "argument_quality_score": 0.6031837553448152,
+          "coherence_score": 0.37499914744329854,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 51 c.p., l’esercizio del diritto di critica è esclusivo dalla punibilità solo quando la manifestazione rientra nell’ambito di un diritto riconosciuto (es. libertà di espressione) e non supera i limiti posti dalla verità dei fatti e dall’interesse pubblico; pertanto, le affermazioni supportate da mail interne e messaggi di colleghi possono essere ricondotte a un legittimo esercizio di critica, mentre le accuse formulate in modo assertivo senza alcun riscontro documentale non trovano copertura dalla scriminante e restano punibili.",
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.635202712528347,
+        "nesso_plausibility": 0.319802712528347,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Il fatto è stato compiuto mediante la pubblicazione su un social network, strumento informatico di ampia diffusione, che rientra tra le circostanze aggravanti previste dall’art. 61 c.p., comma 1, n. 11, per l’uso di mezzi di comunicazione telematici. Tale modalità ha consentito la rapida e molteplice diffusione del contenuto, incrementando l’offesa alla reputazione del datore. Pertanto, l’aggravante telematica si configura ai sensi dell’art. 61 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.42336998371769186,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.42336998371769186
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Il fatto è stato compiuto mediante la pubblicazione su un social network, strumento informatico di ampia diffusione, che rientra tra le circostanze aggravanti previste dall’art. 61 c.p., comma 1, n. 11, per l’uso di mezzi di comunicazione telematici. Tale modalità ha consentito la rapida e molteplice diffusione del contenuto, incrementando l’offesa alla reputazione del datore. Pertanto, l’aggravante telematica si configura ai sensi dell’art. 61 c.p."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2168,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.3051,
+            "damage_factor": 0.4,
+            "excess": 0.5419,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8518,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7632,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1954,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2517,
+            "damage_factor": 0.4,
+            "excess": 0.4885,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7937,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7632,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.4122,
+        "base_score": 0.7632165995698352,
+        "cogency": 0.655833357796646,
+        "cogency_details": {
+          "argument_quality_score": 0.6667261865746407,
+          "coherence_score": 0.6449405290186513,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Secondo l’art. 596 c.p., la prova della verità del fatto attribuito è ammessa nel procedimento penale; pertanto, per le accuse di evasione fiscale le e‑mail interne prodotte costituiscono indizi sufficienti a far presumere la verità del fatto, consentendo al convenuto di avvalersi della scriminante di verità. Per le accuse di sfruttamento e mobbing, i messaggi di colleghi non forniscono una prova certa della realtà dei fatti, così che la difesa di verità non può essere invocata e la condotta rimane punibile. La mancanza di prova della verità per le affermazioni non supportate rende inefficace l’applicazione dell’art. 596 c.p. e non esclude la responsabilità penale.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7632165995698352,
+        "nesso_plausibility": 0.3510165995698352,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 51 c.p., l’esercizio del diritto di critica è esclusivo dalla punibilità solo quando la manifestazione rientra nell’ambito di un diritto riconosciuto (es. libertà di espressione) e non supera i limiti posti dalla verità dei fatti e dall’interesse pubblico; pertanto, le affermazioni supportate da mail interne e messaggi di colleghi possono essere ricondotte a un legittimo esercizio di critica, mentre le accuse formulate in modo assertivo senza alcun riscontro documentale non trovano copertura dalla scriminante e restano punibili.",
+        "retrieved_norms": [
+          {
+            "articolo": "51",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_57_51",
+            "title": "Esercizio di un diritto o adempimento di un dovere"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6833410341200635,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6833410341200635
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 51 c.p., l’esercizio del diritto di critica è esclusivo dalla punibilità solo quando la manifestazione rientra nell’ambito di un diritto riconosciuto (es. libertà di espressione) e non supera i limiti posti dalla verità dei fatti e dall’interesse pubblico; pertanto, le affermazioni supportate da mail interne e messaggi di colleghi possono essere ricondotte a un legittimo esercizio di critica, mentre le accuse formulate in modo assertivo senza alcun riscontro documentale non trovano copertura dalla scriminante e restano punibili."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1867,
+            "attacker_base_score": 0.7885,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1838,
+            "damage_factor": 0.4,
+            "excess": 0.4668,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7507,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.717,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.144,
+            "attacker_base_score": 0.7661,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0769,
+            "damage_factor": 0.4,
+            "excess": 0.3599,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8269,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.717,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3307,
+        "base_score": 0.7170453210841397,
+        "cogency": 0.5159908752443854,
+        "cogency_details": {
+          "argument_quality_score": 0.6254801668860742,
+          "coherence_score": 0.40650158360269645,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "In base all’art. 61 c.p., l’uso del social network come mezzo di ampia diffusione e il danno patrimoniale di “relevante gravità” derivante dalla perdita di clienti costituiscono circostanze aggravanti; secondo l’art. 133 c.p., il giudice deve valutare la gravità del reato tenendo conto della natura dell’offesa, del mezzo telematico impiegato e del danno economico subito, collocando la pena nella fascia più alta prevista per la diffamazione col mezzo di stampa (reclusione da sei mesi a tre anni), con eventuale modulazione in funzione dell’intensità del dolo.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7170453210841397,
+        "nesso_plausibility": 0.38634532108413966,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Secondo l’art. 596 c.p., la prova della verità del fatto attribuito è ammessa nel procedimento penale; pertanto, per le accuse di evasione fiscale le e‑mail interne prodotte costituiscono indizi sufficienti a far presumere la verità del fatto, consentendo al convenuto di avvalersi della scriminante di verità. Per le accuse di sfruttamento e mobbing, i messaggi di colleghi non forniscono una prova certa della realtà dei fatti, così che la difesa di verità non può essere invocata e la condotta rimane punibile. La mancanza di prova della verità per le affermazioni non supportate rende inefficace l’applicazione dell’art. 596 c.p. e non esclude la responsabilità penale.",
+        "retrieved_norms": [
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "596",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_766_596",
+            "title": "Esclusione della prova liberatoria"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "133",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5408268617027469,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5408268617027469
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 596 c.p., la prova della verità del fatto attribuito è ammessa nel procedimento penale; pertanto, per le accuse di evasione fiscale le e‑mail interne prodotte costituiscono indizi sufficienti a far presumere la verità del fatto, consentendo al convenuto di avvalersi della scriminante di verità. Per le accuse di sfruttamento e mobbing, i messaggi di colleghi non forniscono una prova certa della realtà dei fatti, così che la difesa di verità non può essere invocata e la condotta rimane punibile. La mancanza di prova della verità per le affermazioni non supportate rende inefficace l’applicazione dell’art. 596 c.p. e non esclude la responsabilità penale."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

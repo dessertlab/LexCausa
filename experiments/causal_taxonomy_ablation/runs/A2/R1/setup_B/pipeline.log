@@ -1,0 +1,34 @@
+[2026-03-07T18:48:23.672061] Pipeline log - Setup B
+Claim: Un'impresa presenta istanza per contributo pubblico con documentazione completa e cronologia PEC regolare. L'amministrazione rigetta con formula generica ("carenza requisiti") senza preavviso di riget
+======================================================================
+Status: ok
+Duration: 1483.99s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 6
+  Arguments: 1
+  Causal type: AMM_DELAY_REMEDIES
+
+[COUNTER]
+  Chain steps: 3
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7459975294829875
+  Net contra: 0.4420843108204616
+  Net final: 0.30391321866252585
+  Counter gate: label=OPPOSING_STRONG, abstain=False

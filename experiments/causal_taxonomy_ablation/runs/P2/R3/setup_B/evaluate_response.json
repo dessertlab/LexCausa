@@ -1,0 +1,2746 @@
+{
+  "aqa_report": {
+    "chain_scores": {
+      "contra": {
+        "attack_coverage_axes_covered": 0,
+        "attack_coverage_axes_total": 2,
+        "attack_coverage_bonus": 0.0,
+        "attack_coverage_ratio": 0.0,
+        "attack_coverage_score": 0.0,
+        "attacks_avg": 0.0998,
+        "base_score_avg": 0.753354575999839,
+        "cogency_avg": 0.58745362612293,
+        "net_plausibility": 0.6535545759998389,
+        "net_plausibility_adjusted": 0.6535545759998389,
+        "net_plausibility_raw": 0.6535545759998389,
+        "norm_support_avg": 0.951830352493528,
+        "precedent_delta_avg": 0.0,
+        "redundancy_index": 0.0,
+        "redundancy_penalty": 0.0,
+        "semantics_avg": 0.654621157218496
+      },
+      "pro": {
+        "attacks_avg": 0.06795000000000001,
+        "base_score_avg": 0.7516252718450331,
+        "cogency_avg": 0.6682971659459966,
+        "net_plausibility": 0.7516252718450331,
+        "net_plausibility_adjusted": 0.7516252718450331,
+        "net_plausibility_dialectical_raw": 0.6836752718450332,
+        "net_plausibility_intrinsic_raw": 0.7516252718450331,
+        "net_plausibility_raw": 0.7516252718450331,
+        "norm_support_avg": 0.8408847981558047,
+        "precedent_delta_avg": 0.0,
+        "reasoner_plausibility_locked": true,
+        "redundancy_index": 0.013465709872310341,
+        "redundancy_penalty": 0.0008416068670193963,
+        "semantics_avg": 0.715940675996374
+      }
+    },
+    "enabled": true,
+    "links": {
+      "contra": [
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1996,
+              "attacker_base_score": 0.7459,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "support",
+              "boosted_attack": 1.2171,
+              "damage_factor": 0.4,
+              "excess": 0.4991,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.8159,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.7181,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7574,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "support",
+              "boosted_attack": 0.6957,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7654,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7181,
+              "type_multiplier": 1.2
+            }
+          ],
+          "attacks_sum": 0.1996,
+          "base_score": 0.7180851450315263,
+          "cogency": 0.532920323183518,
+          "cogency_details": {
+            "argument_quality_score": 0.6738102312932068,
+            "coherence_score": 0.3920304150738291,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.",
+          "libro": "CP Libro I",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.7180851450315263,
+          "nesso_plausibility": 0.5184851450315263,
+          "norm_support": 1.0,
+          "norm_support_details": {
+            "citation_count": 3,
+            "citation_count_score": 1.0,
+            "citation_score": 1.0,
+            "citation_specificity_score": 1.0,
+            "final": 1.0,
+            "retrieved_norms_count": 3,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "90",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_101_90",
+              "title": "Stati emotivi o passionali"
+            }
+          ],
+          "role": "counter",
+          "rule_id": "",
+          "semantics": 0.5273634935882364,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.5273634935882364
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale."
+        },
+        {
+          "argument_id": "chain_2",
+          "attacks_received": [
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7574,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "support",
+              "boosted_attack": 0.6253,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.688,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7886,
+              "type_multiplier": 1.2
+            },
+            {
+              "attack_type": "general_opposition",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7459,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "support",
+              "boosted_attack": 0.5378,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.6866,
+              "reason": "active: general_opposition [NLI-bypass]",
+              "target_base_score": 0.7886,
+              "type_multiplier": 1.05
+            }
+          ],
+          "attacks_sum": 0,
+          "base_score": 0.7886240069681516,
+          "cogency": 0.6419869290623419,
+          "cogency_details": {
+            "argument_quality_score": 0.7171229026421453,
+            "coherence_score": 0.5668509554825385,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S3",
+          "conclusion_text": "L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa.",
+          "libro": "CP Libro I",
+          "link_id": "S2->S3",
+          "nesso_intrinsic": 0.7886240069681516,
+          "nesso_plausibility": 0.7886240069681516,
+          "norm_support": 0.903660704987056,
+          "norm_support_details": {
+            "citation_count": 2,
+            "citation_count_score": 0.816496580927726,
+            "citation_score": 0.8623724356957945,
+            "citation_specificity_score": 1.0,
+            "final": 0.903660704987056,
+            "retrieved_norms_count": 4,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S2"
+          ],
+          "premise_text": "Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.",
+          "retrieved_norms": [
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "90",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_101_90",
+              "title": "Stati emotivi o passionali"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "90",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_101_90",
+              "title": "Stati emotivi o passionali"
+            }
+          ],
+          "role": "counter",
+          "rule_id": "",
+          "semantics": 0.7818788208487556,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.7818788208487556
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve."
+        }
+      ],
+      "pro": [
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.066,
+              "attacker_base_score": 0.7886,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 0.9224,
+              "damage_factor": 0.4,
+              "excess": 0.165,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.688,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.7574,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7181,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.6596,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7654,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7574,
+              "type_multiplier": 1.2
+            }
+          ],
+          "attacks_sum": 0.066,
+          "base_score": 0.7573786064741633,
+          "cogency": 0.7004188615958608,
+          "cogency_details": {
+            "argument_quality_score": 0.7297276496722768,
+            "coherence_score": 0.6711100735194447,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+          "libro": "CP Libro I",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.7573786064741633,
+          "nesso_plausibility": 0.6913786064741634,
+          "norm_support": 0.7781088913245535,
+          "norm_support_details": {
+            "citation_count": 1,
+            "citation_count_score": 0.5773502691896257,
+            "citation_score": 0.6830127018922193,
+            "citation_specificity_score": 1.0,
+            "final": 0.7781088913245535,
+            "retrieved_norms_count": 1,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.7866979715519455,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.7866979715519455
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+        },
+        {
+          "argument_id": "chain_2",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.0699,
+              "attacker_base_score": 0.7886,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 0.9206,
+              "damage_factor": 0.4,
+              "excess": 0.1747,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.6866,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.7459,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7181,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.7031,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.8159,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7459,
+              "type_multiplier": 1.2
+            }
+          ],
+          "attacks_sum": 0.0699,
+          "base_score": 0.7458719372159028,
+          "cogency": 0.6361754702961324,
+          "cogency_details": {
+            "argument_quality_score": 0.6723495294947288,
+            "coherence_score": 0.600001411097536,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S3",
+          "conclusion_text": "Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.",
+          "libro": "CP Libro I",
+          "link_id": "S2->S3",
+          "nesso_intrinsic": 0.7458719372159028,
+          "nesso_plausibility": 0.6759719372159029,
+          "norm_support": 0.903660704987056,
+          "norm_support_details": {
+            "citation_count": 2,
+            "citation_count_score": 0.816496580927726,
+            "citation_score": 0.8623724356957945,
+            "citation_specificity_score": 1.0,
+            "final": 0.903660704987056,
+            "retrieved_norms_count": 3,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S2"
+          ],
+          "premise_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.6451833804408026,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6451833804408026
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”."
+        }
+      ]
+    },
+    "net_plausibility": {
+      "contra": 0.6535545759998389,
+      "contra_adjusted": 0.6535545759998389,
+      "contra_raw": 0.6535545759998389,
+      "final": 0.09807069584519423,
+      "final_adjusted": 0.09807069584519423,
+      "final_raw": 0.09807069584519423,
+      "pro": 0.7516252718450331,
+      "pro_adjusted": 0.7516252718450331,
+      "pro_raw": 0.7516252718450331,
+      "pro_raw_dialectical": 0.6836752718450332,
+      "pro_raw_intrinsic": 0.7516252718450331,
+      "uses_adjusted_score": true
+    },
+    "notes": {
+      "attacks_enabled": true,
+      "dominant_attacks": [
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "support",
+          "overlap": 0.8159,
+          "target": "S1->S2",
+          "target_role": "counter",
+          "value": 0.1996
+        },
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "contra",
+          "overlap": 0.6866,
+          "target": "S2->S3",
+          "target_role": "support",
+          "value": 0.0699
+        },
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "contra",
+          "overlap": 0.688,
+          "target": "S1->S2",
+          "target_role": "support",
+          "value": 0.066
+        }
+      ],
+      "precedent_swings": [],
+      "severity_debug": [
+        {
+          "libro": "CP Libro I",
+          "link_id": "S1->S2",
+          "role": "support",
+          "severity_category": "generale",
+          "source": "codice_penale"
+        },
+        {
+          "libro": "CP Libro I",
+          "link_id": "S2->S3",
+          "role": "support",
+          "severity_category": "generale",
+          "source": "codice_penale"
+        },
+        {
+          "libro": "CP Libro I",
+          "link_id": "S1->S2",
+          "role": "counter",
+          "severity_category": "generale",
+          "source": "codice_penale"
+        },
+        {
+          "libro": "CP Libro I",
+          "link_id": "S2->S3",
+          "role": "counter",
+          "severity_category": "generale",
+          "source": "codice_penale"
+        }
+      ],
+      "structural_adjustments": {
+        "contra": {
+          "attack_coverage": {
+            "axes_covered": 0,
+            "axes_total": 2,
+            "axis_details": [
+              {
+                "active_attacks": 0,
+                "axis_base_avg": 0.7573786064741633,
+                "axis_id": "AX1",
+                "axis_quality": 0.0,
+                "link_ids": [
+                  "S1->S2"
+                ]
+              },
+              {
+                "active_attacks": 0,
+                "axis_base_avg": 0.7458719372159028,
+                "axis_id": "AX2",
+                "axis_quality": 0.0,
+                "link_ids": [
+                  "S2->S3"
+                ]
+              }
+            ],
+            "bonus": 0.0,
+            "coverage_ratio": 0.0,
+            "enabled": true,
+            "quality_avg": 0.0,
+            "wpcs": 0.0
+          },
+          "redundancy": {
+            "avg_pair_similarity": 0.6200487325779414,
+            "high_similarity_pair_ratio": 0.0,
+            "links_count": 2,
+            "pair_count": 1,
+            "penalty": 0.0,
+            "redundancy_index": 0.0
+          }
+        },
+        "enabled": true,
+        "pro": {
+          "redundancy": {
+            "avg_pair_similarity": 0.7237703987642469,
+            "high_similarity_pair_ratio": 1.0,
+            "links_count": 2,
+            "pair_count": 1,
+            "penalty": 0.0008416068670193963,
+            "redundancy_index": 0.013465709872310341
+          }
+        },
+        "reasoner_plausibility_locked": true,
+        "verdict_uses_adjusted_score": true
+      },
+      "weakest_links": [
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1996,
+              "attacker_base_score": 0.7459,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "support",
+              "boosted_attack": 1.2171,
+              "damage_factor": 0.4,
+              "excess": 0.4991,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.8159,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.7181,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7574,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "support",
+              "boosted_attack": 0.6957,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7654,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7181,
+              "type_multiplier": 1.2
+            }
+          ],
+          "attacks_sum": 0.1996,
+          "base_score": 0.7180851450315263,
+          "cogency": 0.532920323183518,
+          "cogency_details": {
+            "argument_quality_score": 0.6738102312932068,
+            "coherence_score": 0.3920304150738291,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.",
+          "libro": "CP Libro I",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.7180851450315263,
+          "nesso_plausibility": 0.5184851450315263,
+          "norm_support": 1.0,
+          "norm_support_details": {
+            "citation_count": 3,
+            "citation_count_score": 1.0,
+            "citation_score": 1.0,
+            "citation_specificity_score": 1.0,
+            "final": 1.0,
+            "retrieved_norms_count": 3,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "90",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_101_90",
+              "title": "Stati emotivi o passionali"
+            }
+          ],
+          "role": "counter",
+          "rule_id": "",
+          "semantics": 0.5273634935882364,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.5273634935882364
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale."
+        },
+        {
+          "argument_id": "chain_2",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.0699,
+              "attacker_base_score": 0.7886,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 0.9206,
+              "damage_factor": 0.4,
+              "excess": 0.1747,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.6866,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.7459,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7181,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.7031,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.8159,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7459,
+              "type_multiplier": 1.2
+            }
+          ],
+          "attacks_sum": 0.0699,
+          "base_score": 0.7458719372159028,
+          "cogency": 0.6361754702961324,
+          "cogency_details": {
+            "argument_quality_score": 0.6723495294947288,
+            "coherence_score": 0.600001411097536,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S3",
+          "conclusion_text": "Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.",
+          "libro": "CP Libro I",
+          "link_id": "S2->S3",
+          "nesso_intrinsic": 0.7458719372159028,
+          "nesso_plausibility": 0.6759719372159029,
+          "norm_support": 0.903660704987056,
+          "norm_support_details": {
+            "citation_count": 2,
+            "citation_count_score": 0.816496580927726,
+            "citation_score": 0.8623724356957945,
+            "citation_specificity_score": 1.0,
+            "final": 0.903660704987056,
+            "retrieved_norms_count": 3,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S2"
+          ],
+          "premise_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.6451833804408026,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6451833804408026
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”."
+        },
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.066,
+              "attacker_base_score": 0.7886,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 0.9224,
+              "damage_factor": 0.4,
+              "excess": 0.165,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.688,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.7574,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.7181,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.6596,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7654,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7574,
+              "type_multiplier": 1.2
+            }
+          ],
+          "attacks_sum": 0.066,
+          "base_score": 0.7573786064741633,
+          "cogency": 0.7004188615958608,
+          "cogency_details": {
+            "argument_quality_score": 0.7297276496722768,
+            "coherence_score": 0.6711100735194447,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+          "libro": "CP Libro I",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.7573786064741633,
+          "nesso_plausibility": 0.6913786064741634,
+          "norm_support": 0.7781088913245535,
+          "norm_support_details": {
+            "citation_count": 1,
+            "citation_count_score": 0.5773502691896257,
+            "citation_score": 0.6830127018922193,
+            "citation_specificity_score": 1.0,
+            "final": 0.7781088913245535,
+            "retrieved_norms_count": 1,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.7866979715519455,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.7866979715519455
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+        }
+      ]
+    },
+    "verdict": "uncertain",
+    "weights": {
+      "alpha": 0.3,
+      "beta": 0.4,
+      "gamma": 0.3
+    }
+  },
+  "aqa_report_file": {
+    "absolute_path": "LexCausa\\logs\\aqa_reports\\20260304_144949_Un_automobilista_percorre_un_tratto_con_limite_90_km_h_a_cir_aqa_report.json",
+    "relative_path": "logs\\aqa_reports\\20260304_144949_Un_automobilista_percorre_un_tratto_con_limite_90_km_h_a_cir_aqa_report.json"
+  },
+  "claim": "Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della moglie e urgenza di rientrare in ospedale. Le perizie tecniche indicano che a velocita regolare l'evento non si sarebbe verificato; i rilievi attestano fondo stradale asciutto, buona visibilita e assenza di guasti al veicolo. La difesa insiste su riduzione della rimproverabilita soggettiva e contesta l'automatismo tra violazione del limite e massimo disvalore della colpa. Si chiede di verificare responsabilita penale, nesso causale e incidenza dell'urgenza familiare sulla graduazione della colpa e sul trattamento sanzionatorio.",
+  "confidence": 0.09807069584519423,
+  "consistency_report": {
+    "counter_reasoner": {
+      "agent": "counter_reasoner",
+      "citation_checks": [
+        {
+          "citation": "Art. 40 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        },
+        {
+          "citation": "Art. 41 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        },
+        {
+          "citation": "Art. 90 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Gli stati emotivi o passionali non escludono né diminuiscono l'imputabilità.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Gli stati emotivi o passionali non escludono né diminuiscono l'imputabilità.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        }
+      ],
+      "dropped_citations": 0,
+      "invalid_citations": 0,
+      "issues": [
+        "Art. 40: no text cited in response, repaired with DB text",
+        "Art. 41: no text cited in response, repaired with DB text",
+        "Art. 90: no text cited in response, repaired with DB text"
+      ],
+      "relevance_gate_dropped_citations": 0,
+      "repaired_citations": 3,
+      "text_matches": 0,
+      "text_mismatches": 3,
+      "total_citations": 3,
+      "valid_citations": 3
+    },
+    "counter_reasoner_gate": {
+      "abstain": false,
+      "checked": true,
+      "counter_steps": 3,
+      "label": "OPPOSING_LIMITATIVE",
+      "reason": "",
+      "reasoner_steps": 3
+    },
+    "reasoner": {
+      "agent": "reasoner",
+      "citation_checks": [
+        {
+          "citation": "Art. 40 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        },
+        {
+          "citation": "Art. 41 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        }
+      ],
+      "dropped_citations": 0,
+      "invalid_citations": 0,
+      "issues": [
+        "Art. 40: no text cited in response, repaired with DB text",
+        "Art. 41: no text cited in response, repaired with DB text"
+      ],
+      "relevance_gate_dropped_citations": 0,
+      "repaired_citations": 2,
+      "text_matches": 0,
+      "text_mismatches": 2,
+      "total_citations": 2,
+      "valid_citations": 2
+    }
+  },
+  "counter_reasoner_gate": {
+    "abstain": false,
+    "checked": true,
+    "counter_steps": 3,
+    "label": "OPPOSING_LIMITATIVE",
+    "reason": "",
+    "reasoner_steps": 3
+  },
+  "dialectical_tree": {
+    "counter": {
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                },
+                {
+                  "articolo": "90",
+                  "label": "Art. 90 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_101_90",
+                  "title": "Stati emotivi o passionali"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  },
+                  {
+                    "articolo": "90",
+                    "label": "Art. 90 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_101_90",
+                    "title": "Stati emotivi o passionali"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  },
+                  {
+                    "articolo": "90",
+                    "label": "Art. 90 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_101_90",
+                    "title": "Stati emotivi o passionali"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 40 c.p. - Art. 41 c.p. - Art. 90 c.p.",
+              "type": "norm"
+            }
+          ],
+          "role": "counter",
+          "rule": {
+            "id": "A1.R1",
+            "text": "L'analisi giuridica dimostra che La soglia di prevedibilità può non risultare raggiunta con sufficiente certezza.; Il contesto di urgenza può ridurre rimproverabilità e grado della colpa.; Le circostanze aggravanti possono non risultare concretamente integrate.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della moglie e urgenza di rientrare in ospedale. Le perizie tecniche indicano che a velocita regolare l'evento non si sarebbe verificato; i rilievi attestano fondo stradale asciutto, buona visibilita e assenza di guasti al veicolo. La difesa insiste su riduzione della rimproverabilita soggettiva e contesta l'automatismo tra violazione del limite e massimo disvalore della colpa. Si chiede di verificare responsabilita penale, nesso causale e incidenza dell'urgenza familiare sulla graduazione della colpa e sul trattamento sanzionatorio.",
+      "metadata": {
+        "attack_source": "taxonomy",
+        "causal_type_id": "PEN_INTERVENING",
+        "conclusion_point_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "conclusion_points_count": 6,
+        "selected_attack_by_step": [
+          {
+            "attack_id": "foreseeability_threshold_not_met_with_certainty",
+            "attack_ids": [
+              "foreseeability_threshold_not_met_with_certainty"
+            ],
+            "step": 1
+          },
+          {
+            "attack_id": "emergency_context_reduces_blameworthiness",
+            "attack_ids": [
+              "emergency_context_reduces_blameworthiness"
+            ],
+            "step": 2
+          },
+          {
+            "attack_id": "aggravating_circumstances_not_integrated",
+            "attack_ids": [
+              "aggravating_circumstances_not_integrated"
+            ],
+            "step": 3
+          }
+        ],
+        "selected_attack_id": "foreseeability_threshold_not_met_with_certainty",
+        "selected_attack_ids": [
+          "foreseeability_threshold_not_met_with_certainty",
+          "emergency_context_reduces_blameworthiness",
+          "aggravating_circumstances_not_integrated"
+        ],
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa Alternativa**: La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n- Art. 90 c.p.\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che La soglia di prevedibilità può non risultare raggiunta con sufficiente certezza.; Il contesto di urgenza può ridurre rimproverabilità e grado della colpa.; Le circostanze aggravanti possono non risultare concretamente integrate.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena.\n\n**Catena di ragionamento**:\n1. La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale.\n2. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n3. L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "90",
+                "label": "Art. 90 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_101_90",
+                "title": "Stati emotivi o passionali"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "90",
+                "label": "Art. 90 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_101_90",
+                "title": "Stati emotivi o passionali"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S4",
+          "text": "Precedents: none found."
+        }
+      ],
+      "role": "counter",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "589-bis",
+            "label": "Art. 589-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_751_589-bis",
+            "title": "Omicidio stradale o nautico"
+          },
+          {
+            "articolo": "575",
+            "label": "Art. 575 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_730_575",
+            "title": "Omicidio"
+          },
+          {
+            "articolo": "590-bis",
+            "label": "Art. 590-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_754_590-bis",
+            "title": "Lesioni personali stradali o nautiche gravi o gravissime"
+          },
+          {
+            "articolo": "449",
+            "label": "Art. 449 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_542_449",
+            "title": "Delitti colposi di danno"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "90",
+            "label": "Art. 90 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          }
+        ]
+      }
+    },
+    "reasoner": {
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Alla luce dell’art. 40 c.p., la violazione del limite di velocità (140 km/h) è la condizione di pericolosità che, in assenza di altre cause, ha determinato la perdita di controllo e la morte, soddisfacendo il requisito di causalità “but‑for”. L’emotività dell’automobilista, pur grave, non costituisce una causa sopravvenuta da sola sufficiente ai sensi dell’art. 41 c.p. e non può attenuare la sua responsabilità. Pertanto, l’automobilista è penalmente responsabile di omicidio colposo per violazione dell’art. 40 c.p., con la relativa graduazione di colpa grave."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa. Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”. Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 40 c.p. - Art. 41 c.p.",
+              "type": "norm"
+            }
+          ],
+          "role": "support",
+          "rule": {
+            "id": "A1.R1",
+            "text": "La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della moglie e urgenza di rientrare in ospedale. Le perizie tecniche indicano che a velocita regolare l'evento non si sarebbe verificato; i rilievi attestano fondo stradale asciutto, buona visibilita e assenza di guasti al veicolo. La difesa insiste su riduzione della rimproverabilita soggettiva e contesta l'automatismo tra violazione del limite e massimo disvalore della colpa. Si chiede di verificare responsabilita penale, nesso causale e incidenza dell'urgenza familiare sulla graduazione della colpa e sul trattamento sanzionatorio.",
+      "metadata": {
+        "causal_type_id": "PEN_INTERVENING",
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa**: Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa. Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”. Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 40 c.p., la violazione del limite di velocità (140 km/h) è la condizione di pericolosità che, in assenza di altre cause, ha determinato la perdita di controllo e la morte, soddisfacendo il requisito di causalità “but‑for”. L’emotività dell’automobilista, pur grave, non costituisce una causa sopravvenuta da sola sufficiente ai sensi dell’art. 41 c.p. e non può attenuare la sua responsabilità. Pertanto, l’automobilista è penalmente responsabile di omicidio colposo per violazione dell’art. 40 c.p., con la relativa graduazione di colpa grave.\n\n**Catena di ragionamento**:\n1. Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.\n2. Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.\n3. Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S4",
+          "text": "Precedents: none found."
+        }
+      ],
+      "role": "support",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "589-bis",
+            "label": "Art. 589-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_751_589-bis",
+            "title": "Omicidio stradale o nautico"
+          },
+          {
+            "articolo": "575",
+            "label": "Art. 575 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_730_575",
+            "title": "Omicidio"
+          },
+          {
+            "articolo": "590-bis",
+            "label": "Art. 590-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_754_590-bis",
+            "title": "Lesioni personali stradali o nautiche gravi o gravissime"
+          },
+          {
+            "articolo": "449",
+            "label": "Art. 449 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_542_449",
+            "title": "Delitti colposi di danno"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "90",
+            "label": "Art. 90 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "45",
+            "label": "Art. 45 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_51_45",
+            "title": "Caso fortuito o forza maggiore"
+          },
+          {
+            "articolo": "54",
+            "label": "Art. 54 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_60_54",
+            "title": "Stato di necessità"
+          },
+          {
+            "articolo": "42",
+            "label": "Art. 42 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "61",
+            "label": "Art. 61 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "62-bis",
+            "label": "Art. 62-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_72_62-bis",
+            "title": "Circostanze attenuanti generiche"
+          },
+          {
+            "articolo": "133",
+            "label": "Art. 133 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          }
+        ]
+      }
+    },
+    "repaired_counter": {
+      "_repair_metadata": {
+        "total_dropped": 0,
+        "total_repaired": 3
+      },
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                },
+                {
+                  "articolo": "90",
+                  "label": "Art. 90 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_101_90",
+                  "title": "Stati emotivi o passionali"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  },
+                  {
+                    "articolo": "90",
+                    "label": "Art. 90 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_101_90",
+                    "title": "Stati emotivi o passionali"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…», In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p., il quale dispone che «Gli stati emotivi o passionali non escludono né diminuiscono l'imputabilità.», riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  },
+                  {
+                    "articolo": "90",
+                    "label": "Art. 90 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_101_90",
+                    "title": "Stati emotivi o passionali"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 40 c.p. - Art. 41 c.p. - Art. 90 c.p.",
+              "type": "norm"
+            }
+          ],
+          "role": "counter",
+          "rule": {
+            "id": "A1.R1",
+            "text": "L'analisi giuridica dimostra che La soglia di prevedibilità può non risultare raggiunta con sufficiente certezza.; Il contesto di urgenza può ridurre rimproverabilità e grado della colpa.; Le circostanze aggravanti possono non risultare concretamente integrate.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della moglie e urgenza di rientrare in ospedale. Le perizie tecniche indicano che a velocita regolare l'evento non si sarebbe verificato; i rilievi attestano fondo stradale asciutto, buona visibilita e assenza di guasti al veicolo. La difesa insiste su riduzione della rimproverabilita soggettiva e contesta l'automatismo tra violazione del limite e massimo disvalore della colpa. Si chiede di verificare responsabilita penale, nesso causale e incidenza dell'urgenza familiare sulla graduazione della colpa e sul trattamento sanzionatorio.",
+      "metadata": {
+        "attack_source": "taxonomy",
+        "causal_type_id": "PEN_INTERVENING",
+        "conclusion_point_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "conclusion_points_count": 6,
+        "selected_attack_by_step": [
+          {
+            "attack_id": "foreseeability_threshold_not_met_with_certainty",
+            "attack_ids": [
+              "foreseeability_threshold_not_met_with_certainty"
+            ],
+            "step": 1
+          },
+          {
+            "attack_id": "emergency_context_reduces_blameworthiness",
+            "attack_ids": [
+              "emergency_context_reduces_blameworthiness"
+            ],
+            "step": 2
+          },
+          {
+            "attack_id": "aggravating_circumstances_not_integrated",
+            "attack_ids": [
+              "aggravating_circumstances_not_integrated"
+            ],
+            "step": 3
+          }
+        ],
+        "selected_attack_id": "foreseeability_threshold_not_met_with_certainty",
+        "selected_attack_ids": [
+          "foreseeability_threshold_not_met_with_certainty",
+          "emergency_context_reduces_blameworthiness",
+          "aggravating_circumstances_not_integrated"
+        ],
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa Alternativa**: La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…», In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p., il quale dispone che «Gli stati emotivi o passionali non escludono né diminuiscono l'imputabilità.», riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n- Art. 90 c.p.\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che La soglia di prevedibilità può non risultare raggiunta con sufficiente certezza.; Il contesto di urgenza può ridurre rimproverabilità e grado della colpa.; Le circostanze aggravanti possono non risultare concretamente integrate.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena.\n\n**Catena di ragionamento**:\n1. La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale.\n2. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n3. L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "90",
+                "label": "Art. 90 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_101_90",
+                "title": "Stati emotivi o passionali"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "90",
+                "label": "Art. 90 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_101_90",
+                "title": "Stati emotivi o passionali"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa."
+        }
+      ],
+      "role": "counter",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "589-bis",
+            "label": "Art. 589-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_751_589-bis",
+            "title": "Omicidio stradale o nautico"
+          },
+          {
+            "articolo": "575",
+            "label": "Art. 575 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_730_575",
+            "title": "Omicidio"
+          },
+          {
+            "articolo": "590-bis",
+            "label": "Art. 590-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_754_590-bis",
+            "title": "Lesioni personali stradali o nautiche gravi o gravissime"
+          },
+          {
+            "articolo": "449",
+            "label": "Art. 449 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_542_449",
+            "title": "Delitti colposi di danno"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "90",
+            "label": "Art. 90 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          }
+        ]
+      }
+    },
+    "repaired_reasoner": {
+      "_repair_metadata": {
+        "total_dropped": 0,
+        "total_repaired": 2
+      },
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Alla luce dell’art. 40 c.p., la violazione del limite di velocità (140 km/h) è la condizione di pericolosità che, in assenza di altre cause, ha determinato la perdita di controllo e la morte, soddisfacendo il requisito di causalità “but‑for”. L’emotività dell’automobilista, pur grave, non costituisce una causa sopravvenuta da sola sufficiente ai sensi dell’art. 41 c.p. e non può attenuare la sua responsabilità. Pertanto, l’automobilista è penalmente responsabile di omicidio colposo per violazione dell’art. 40 c.p., con la relativa graduazione di colpa grave."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…», la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 40 c.p. - Art. 41 c.p.",
+              "type": "norm"
+            }
+          ],
+          "role": "support",
+          "rule": {
+            "id": "A1.R1",
+            "text": "La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della moglie e urgenza di rientrare in ospedale. Le perizie tecniche indicano che a velocita regolare l'evento non si sarebbe verificato; i rilievi attestano fondo stradale asciutto, buona visibilita e assenza di guasti al veicolo. La difesa insiste su riduzione della rimproverabilita soggettiva e contesta l'automatismo tra violazione del limite e massimo disvalore della colpa. Si chiede di verificare responsabilita penale, nesso causale e incidenza dell'urgenza familiare sulla graduazione della colpa e sul trattamento sanzionatorio.",
+      "metadata": {
+        "causal_type_id": "PEN_INTERVENING",
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa**: Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…», la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 40 c.p., la violazione del limite di velocità (140 km/h) è la condizione di pericolosità che, in assenza di altre cause, ha determinato la perdita di controllo e la morte, soddisfacendo il requisito di causalità “but‑for”. L’emotività dell’automobilista, pur grave, non costituisce una causa sopravvenuta da sola sufficiente ai sensi dell’art. 41 c.p. e non può attenuare la sua responsabilità. Pertanto, l’automobilista è penalmente responsabile di omicidio colposo per violazione dell’art. 40 c.p., con la relativa graduazione di colpa grave.\n\n**Catena di ragionamento**:\n1. Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.\n2. Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.\n3. Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p."
+        }
+      ],
+      "role": "support",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "589-bis",
+            "label": "Art. 589-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_751_589-bis",
+            "title": "Omicidio stradale o nautico"
+          },
+          {
+            "articolo": "575",
+            "label": "Art. 575 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_730_575",
+            "title": "Omicidio"
+          },
+          {
+            "articolo": "590-bis",
+            "label": "Art. 590-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_754_590-bis",
+            "title": "Lesioni personali stradali o nautiche gravi o gravissime"
+          },
+          {
+            "articolo": "449",
+            "label": "Art. 449 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_542_449",
+            "title": "Delitti colposi di danno"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "90",
+            "label": "Art. 90 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "45",
+            "label": "Art. 45 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_51_45",
+            "title": "Caso fortuito o forza maggiore"
+          },
+          {
+            "articolo": "54",
+            "label": "Art. 54 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_60_54",
+            "title": "Stato di necessità"
+          },
+          {
+            "articolo": "42",
+            "label": "Art. 42 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "61",
+            "label": "Art. 61 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "62-bis",
+            "label": "Art. 62-bis c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_72_62-bis",
+            "title": "Circostanze attenuanti generiche"
+          },
+          {
+            "articolo": "133",
+            "label": "Art. 133 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          }
+        ]
+      }
+    },
+    "schema": "aspic_ir_bundle_v1"
+  },
+  "polished_response": "",
+  "repaired_aspic_files": {
+    "counter_reasoner": {
+      "absolute_path": "LexCausa\\logs\\aspic_repairs\\20260304_144949_Un_automobilista_percorre_un_tratto_con_limite_90_km_h_a_cir_counter_reasoner_repaired_aspic_ir.json",
+      "relative_path": "logs\\aspic_repairs\\20260304_144949_Un_automobilista_percorre_un_tratto_con_limite_90_km_h_a_cir_counter_reasoner_repaired_aspic_ir.json"
+    },
+    "reasoner": {
+      "absolute_path": "LexCausa\\logs\\aspic_repairs\\20260304_144949_Un_automobilista_percorre_un_tratto_con_limite_90_km_h_a_cir_reasoner_repaired_aspic_ir.json",
+      "relative_path": "logs\\aspic_repairs\\20260304_144949_Un_automobilista_percorre_un_tratto_con_limite_90_km_h_a_cir_reasoner_repaired_aspic_ir.json"
+    }
+  },
+  "repaired_counter_aspic_ir": {
+    "_repair_metadata": {
+      "total_dropped": 0,
+      "total_repaired": 3
+    },
+    "arguments": [
+      {
+        "conclusion": {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "90",
+                "label": "Art. 90 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_101_90",
+                "title": "Stati emotivi o passionali"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "A1.C1",
+          "text": "Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena."
+        },
+        "id": "A1",
+        "premises": [
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                },
+                {
+                  "articolo": "90",
+                  "label": "Art. 90 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_101_90",
+                  "title": "Stati emotivi o passionali"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P1",
+            "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…», In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p., il quale dispone che «Gli stati emotivi o passionali non escludono né diminuiscono l'imputabilità.», riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.",
+            "type": "premise"
+          },
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                },
+                {
+                  "articolo": "90",
+                  "label": "Art. 90 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_101_90",
+                  "title": "Stati emotivi o passionali"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P2",
+            "text": "- Art. 40 c.p. - Art. 41 c.p. - Art. 90 c.p.",
+            "type": "norm"
+          }
+        ],
+        "role": "counter",
+        "rule": {
+          "id": "A1.R1",
+          "text": "L'analisi giuridica dimostra che La soglia di prevedibilità può non risultare raggiunta con sufficiente certezza.; Il contesto di urgenza può ridurre rimproverabilità e grado della colpa.; Le circostanze aggravanti possono non risultare concretamente integrate.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.",
+          "type": "defeasible"
+        }
+      }
+    ],
+    "claim": "Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della moglie e urgenza di rientrare in ospedale. Le perizie tecniche indicano che a velocita regolare l'evento non si sarebbe verificato; i rilievi attestano fondo stradale asciutto, buona visibilita e assenza di guasti al veicolo. La difesa insiste su riduzione della rimproverabilita soggettiva e contesta l'automatismo tra violazione del limite e massimo disvalore della colpa. Si chiede di verificare responsabilita penale, nesso causale e incidenza dell'urgenza familiare sulla graduazione della colpa e sul trattamento sanzionatorio.",
+    "metadata": {
+      "attack_source": "taxonomy",
+      "causal_type_id": "PEN_INTERVENING",
+      "conclusion_point_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "conclusion_points_count": 6,
+      "selected_attack_by_step": [
+        {
+          "attack_id": "foreseeability_threshold_not_met_with_certainty",
+          "attack_ids": [
+            "foreseeability_threshold_not_met_with_certainty"
+          ],
+          "step": 1
+        },
+        {
+          "attack_id": "emergency_context_reduces_blameworthiness",
+          "attack_ids": [
+            "emergency_context_reduces_blameworthiness"
+          ],
+          "step": 2
+        },
+        {
+          "attack_id": "aggravating_circumstances_not_integrated",
+          "attack_ids": [
+            "aggravating_circumstances_not_integrated"
+          ],
+          "step": 3
+        }
+      ],
+      "selected_attack_id": "foreseeability_threshold_not_met_with_certainty",
+      "selected_attack_ids": [
+        "foreseeability_threshold_not_met_with_certainty",
+        "emergency_context_reduces_blameworthiness",
+        "aggravating_circumstances_not_integrated"
+      ],
+      "theory_id": "T_CONDIZIONALISTICA"
+    },
+    "precedent_links": [],
+    "precedent_nodes": [],
+    "raw_response": "**Premessa Alternativa**: La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…», In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p., il quale dispone che «Gli stati emotivi o passionali non escludono né diminuiscono l'imputabilità.», riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n- Art. 90 c.p.\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che La soglia di prevedibilità può non risultare raggiunta con sufficiente certezza.; Il contesto di urgenza può ridurre rimproverabilità e grado della colpa.; Le circostanze aggravanti possono non risultare concretamente integrate.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena.\n\n**Catena di ragionamento**:\n1. La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale.\n2. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n3. L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa.\n",
+    "reasoning_chain": [
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "40",
+              "label": "Art. 40 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S1",
+        "text": "La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "41",
+              "label": "Art. 41 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "90",
+              "label": "Art. 90 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_101_90",
+              "title": "Stati emotivi o passionali"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S2",
+        "text": "Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "41",
+              "label": "Art. 41 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "90",
+              "label": "Art. 90 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_101_90",
+              "title": "Stati emotivi o passionali"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S3",
+        "text": "L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa."
+      }
+    ],
+    "role": "counter",
+    "schema": "aspic_ir_v1",
+    "sources": {
+      "precedents": [],
+      "statutes": [
+        {
+          "articolo": "589",
+          "label": "Art. 589 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_750_589",
+          "title": "Omicidio colposo"
+        },
+        {
+          "articolo": "589-bis",
+          "label": "Art. 589-bis c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_751_589-bis",
+          "title": "Omicidio stradale o nautico"
+        },
+        {
+          "articolo": "575",
+          "label": "Art. 575 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_730_575",
+          "title": "Omicidio"
+        },
+        {
+          "articolo": "590-bis",
+          "label": "Art. 590-bis c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_754_590-bis",
+          "title": "Lesioni personali stradali o nautiche gravi o gravissime"
+        },
+        {
+          "articolo": "449",
+          "label": "Art. 449 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_542_449",
+          "title": "Delitti colposi di danno"
+        },
+        {
+          "articolo": "41",
+          "label": "Art. 41 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_47_41",
+          "title": "Concorso di cause"
+        },
+        {
+          "articolo": "40",
+          "label": "Art. 40 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_46_40",
+          "title": "Rapporto di causalità"
+        },
+        {
+          "articolo": "43",
+          "label": "Art. 43 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_49_43",
+          "title": "Elemento psicologico del reato"
+        },
+        {
+          "articolo": "90",
+          "label": "Art. 90 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_101_90",
+          "title": "Stati emotivi o passionali"
+        }
+      ]
+    }
+  },
+  "repaired_counter_chain": "**Premessa Alternativa**: La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…», In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p., il quale dispone che «Gli stati emotivi o passionali non escludono né diminuiscono l'imputabilità.», riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n- Art. 90 c.p.\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che La soglia di prevedibilità può non risultare raggiunta con sufficiente certezza.; Il contesto di urgenza può ridurre rimproverabilità e grado della colpa.; Le circostanze aggravanti possono non risultare concretamente integrate.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena.\n\n**Catena di ragionamento**:\n1. La perizia tecnica, pur attestando che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo fosse inevitabile; la normativa richiede che la conseguenza dannosa sia una conseguenza certa dell’azione per configurare il nesso di causalità di cui all’art. 40 c.p. In assenza di prova certa dell’imprevedibilità della perdita di aderenza, il test del “but‑for” resta dubbioso, indebolendo la tesi secondo cui la velocità eccessiva costituisce la causa determinante dell’evento mortale.\n2. Considerata l’urgenza di rientrare in ospedale per il parto in corso della moglie, lo stato emotivo grave del conducente costituisce circostanza attenuante ai sensi dell’art. 41 c.p., che prevede la riduzione della gravità della colpa quando il soggetto agisce sotto pressione personale estrema. Pur non escludendo l’imputabilità, l’art. 90 c.p. riconosce che gli stati emotivi non diminuiscono la responsabilità penale, ma la giurisprudenza consente di tenerne conto nella valutazione della colpa per modulare la pena, potendo così abbassare la qualificazione da colpa grave a lieve.\n3. L’art. 41 c.p. prevede la riduzione della gravità della colpa quando sussistono circostanze attenuanti, tra cui lo stato emotivo grave e l’urgenza familiare, mentre l’art. 90 c.p. riconosce che tali stati non escludono la responsabilità ma possono attenuarla; di conseguenza, l’eccesso di velocità, pur configurando un’aggravante, deve essere valutato congiuntamente alle attenuanti per rispettare il principio di proporzionalità della pena. La mancata integrazione di tali fattori comporterebbe una sanzione eccessivamente gravosa.\n",
+  "repaired_reasoner_aspic_ir": {
+    "_repair_metadata": {
+      "total_dropped": 0,
+      "total_repaired": 2
+    },
+    "arguments": [
+      {
+        "conclusion": {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              },
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "A1.C1",
+          "text": "Alla luce dell’art. 40 c.p., la violazione del limite di velocità (140 km/h) è la condizione di pericolosità che, in assenza di altre cause, ha determinato la perdita di controllo e la morte, soddisfacendo il requisito di causalità “but‑for”. L’emotività dell’automobilista, pur grave, non costituisce una causa sopravvenuta da sola sufficiente ai sensi dell’art. 41 c.p. e non può attenuare la sua responsabilità. Pertanto, l’automobilista è penalmente responsabile di omicidio colposo per violazione dell’art. 40 c.p., con la relativa graduazione di colpa grave."
+        },
+        "id": "A1",
+        "premises": [
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P1",
+            "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…», la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.",
+            "type": "premise"
+          },
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P2",
+            "text": "- Art. 40 c.p. - Art. 41 c.p.",
+            "type": "norm"
+          }
+        ],
+        "role": "support",
+        "rule": {
+          "id": "A1.R1",
+          "text": "La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.",
+          "type": "defeasible"
+        }
+      }
+    ],
+    "claim": "Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della moglie e urgenza di rientrare in ospedale. Le perizie tecniche indicano che a velocita regolare l'evento non si sarebbe verificato; i rilievi attestano fondo stradale asciutto, buona visibilita e assenza di guasti al veicolo. La difesa insiste su riduzione della rimproverabilita soggettiva e contesta l'automatismo tra violazione del limite e massimo disvalore della colpa. Si chiede di verificare responsabilita penale, nesso causale e incidenza dell'urgenza familiare sulla graduazione della colpa e sul trattamento sanzionatorio.",
+    "metadata": {
+      "causal_type_id": "PEN_INTERVENING",
+      "theory_id": "T_CONDIZIONALISTICA"
+    },
+    "precedent_links": [],
+    "precedent_nodes": [],
+    "raw_response": "**Premessa**: Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…», la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 40 c.p., la violazione del limite di velocità (140 km/h) è la condizione di pericolosità che, in assenza di altre cause, ha determinato la perdita di controllo e la morte, soddisfacendo il requisito di causalità “but‑for”. L’emotività dell’automobilista, pur grave, non costituisce una causa sopravvenuta da sola sufficiente ai sensi dell’art. 41 c.p. e non può attenuare la sua responsabilità. Pertanto, l’automobilista è penalmente responsabile di omicidio colposo per violazione dell’art. 40 c.p., con la relativa graduazione di colpa grave.\n\n**Catena di ragionamento**:\n1. Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.\n2. Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.\n3. Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n",
+    "reasoning_chain": [
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [],
+          "unknown_statutes": []
+        },
+        "id": "S1",
+        "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "40",
+              "label": "Art. 40 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S2",
+        "text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "41",
+              "label": "Art. 41 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S3",
+        "text": "Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p."
+      }
+    ],
+    "role": "support",
+    "schema": "aspic_ir_v1",
+    "sources": {
+      "precedents": [],
+      "statutes": [
+        {
+          "articolo": "589",
+          "label": "Art. 589 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_750_589",
+          "title": "Omicidio colposo"
+        },
+        {
+          "articolo": "589-bis",
+          "label": "Art. 589-bis c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_751_589-bis",
+          "title": "Omicidio stradale o nautico"
+        },
+        {
+          "articolo": "575",
+          "label": "Art. 575 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_730_575",
+          "title": "Omicidio"
+        },
+        {
+          "articolo": "590-bis",
+          "label": "Art. 590-bis c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_754_590-bis",
+          "title": "Lesioni personali stradali o nautiche gravi o gravissime"
+        },
+        {
+          "articolo": "449",
+          "label": "Art. 449 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_542_449",
+          "title": "Delitti colposi di danno"
+        },
+        {
+          "articolo": "40",
+          "label": "Art. 40 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_46_40",
+          "title": "Rapporto di causalità"
+        },
+        {
+          "articolo": "41",
+          "label": "Art. 41 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_47_41",
+          "title": "Concorso di cause"
+        },
+        {
+          "articolo": "43",
+          "label": "Art. 43 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_49_43",
+          "title": "Elemento psicologico del reato"
+        },
+        {
+          "articolo": "90",
+          "label": "Art. 90 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_101_90",
+          "title": "Stati emotivi o passionali"
+        },
+        {
+          "articolo": "45",
+          "label": "Art. 45 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_51_45",
+          "title": "Caso fortuito o forza maggiore"
+        },
+        {
+          "articolo": "54",
+          "label": "Art. 54 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_60_54",
+          "title": "Stato di necessità"
+        },
+        {
+          "articolo": "42",
+          "label": "Art. 42 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_48_42",
+          "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+        },
+        {
+          "articolo": "61",
+          "label": "Art. 61 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_69_61",
+          "title": "Circostanze aggravanti comuni"
+        },
+        {
+          "articolo": "62-bis",
+          "label": "Art. 62-bis c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_72_62-bis",
+          "title": "Circostanze attenuanti generiche"
+        },
+        {
+          "articolo": "133",
+          "label": "Art. 133 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_145_133",
+          "title": "Gravità del reato: valutazione agli effetti della pena"
+        }
+      ]
+    }
+  },
+  "repaired_reasoner_chain": "**Premessa**: Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…», la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n\n**Norma**:\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 40 c.p., la violazione del limite di velocità (140 km/h) è la condizione di pericolosità che, in assenza di altre cause, ha determinato la perdita di controllo e la morte, soddisfacendo il requisito di causalità “but‑for”. L’emotività dell’automobilista, pur grave, non costituisce una causa sopravvenuta da sola sufficiente ai sensi dell’art. 41 c.p. e non può attenuare la sua responsabilità. Pertanto, l’automobilista è penalmente responsabile di omicidio colposo per violazione dell’art. 40 c.p., con la relativa graduazione di colpa grave.\n\n**Catena di ragionamento**:\n1. Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.\n2. Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.\n3. Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso **dopo** la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.\n",
+  "summary": "## Analisi di Consistenza\n\n### Reasoner\n- Citazioni valide: 2/2\n- Testo verificato: 0 match / 2 verificati\n- Citazioni riparate: 2\n- Problemi: 2\n\n### Counter-Reasoner\n- Citazioni valide: 3/3\n- Testo verificato: 0 match / 3 verificati\n- Citazioni riparate: 3\n- Problemi: 3\n",
+  "winning_side": "undecided",
+  "winning_side_canonical": "undecided"
+}

@@ -1,0 +1,1574 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 4,
+      "attack_coverage_axes_total": 4,
+      "attack_coverage_bonus": 0.05954052,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.49617100000000003,
+      "attacks_avg": 0.35705,
+      "base_score_avg": 0.7858835797386573,
+      "cogency_avg": 0.5976752420614219,
+      "net_plausibility": 0.487620787582663,
+      "net_plausibility_adjusted": 0.487620787582663,
+      "net_plausibility_raw": 0.4288335797386573,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.012052994495909129,
+      "redundancy_penalty": 0.0007533121559943206,
+      "semantics_avg": 0.6886033570674357
+    },
+    "pro": {
+      "attacks_avg": 0.21239999999999998,
+      "base_score_avg": 0.7257644885282938,
+      "cogency_avg": 0.6068741564538345,
+      "net_plausibility": 0.7257644885282938,
+      "net_plausibility_adjusted": 0.7257644885282938,
+      "net_plausibility_dialectical_raw": 0.5133644885282937,
+      "net_plausibility_intrinsic_raw": 0.7257644885282938,
+      "net_plausibility_raw": 0.7257644885282938,
+      "norm_support_avg": 0.8978182012571443,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.18612685759900574,
+      "redundancy_penalty": 0.046531714399751435,
+      "semantics_avg": 0.6152498702976189
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1766,
+            "attacker_base_score": 0.7809,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2217,
+            "damage_factor": 0.4,
+            "excess": 0.4414,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7823,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1736,
+            "attacker_base_score": 0.7873,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2144,
+            "damage_factor": 0.4,
+            "excess": 0.434,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7713,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1227,
+            "attacker_base_score": 0.7282,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0872,
+            "damage_factor": 0.4,
+            "excess": 0.3068,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7465,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1135,
+            "attacker_base_score": 0.6875,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0641,
+            "damage_factor": 0.4,
+            "excess": 0.2837,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7739,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.645,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5724,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7395,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3502,
+        "base_score": 0.7803732464234193,
+        "cogency": 0.5860244772536973,
+        "cogency_details": {
+          "argument_quality_score": 0.5850700191926897,
+          "coherence_score": 0.586978935314705,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1223 c.c., il risarcimento deve coprire soltanto la perdita subita come conseguenza immediata e diretta dell’inadempimento; le spese notarili, tecniche e di istruttoria mutuo richieste dal compratore non sono state provate come direttamente riconducibili al rifiuto del venditore, perciò la loro esigibilità risulta eccessiva e non giustificata dal danno effettivo.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7803732464234193,
+        "nesso_plausibility": 0.4301732464234193,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1455 c.c., la risoluzione del contratto è ammessa solo se l’inadempimento ha una certa importanza per l’altra parte; la decisione del venditore di accettare un’offerta più vantaggiosa non costituisce una violazione essenziale dell’obbligazione principale di trasferire l’immobile, ma un comportamento contrario alla buona fede. Pertanto, pur configurandosi un inadempimento, la sua gravità risulta insufficiente per attivare l’art. 1385 c.c., che prevede il doppio della caparra, limitandosi la responsabilità alla semplice restituzione della somma versata.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          },
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6818863441577003,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6818863441577003
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1455 c.c., la risoluzione del contratto è ammessa solo se l’inadempimento ha una certa importanza per l’altra parte; la decisione del venditore di accettare un’offerta più vantaggiosa non costituisce una violazione essenziale dell’obbligazione principale di trasferire l’immobile, ma un comportamento contrario alla buona fede. Pertanto, pur configurandosi un inadempimento, la sua gravità risulta insufficiente per attivare l’art. 1385 c.c., che prevede il doppio della caparra, limitandosi la responsabilità alla semplice restituzione della somma versata."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1976,
+            "attacker_base_score": 0.7809,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2854,
+            "damage_factor": 0.4,
+            "excess": 0.494,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8231,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1663,
+            "attacker_base_score": 0.7873,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2071,
+            "damage_factor": 0.4,
+            "excess": 0.4157,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7666,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1061,
+            "attacker_base_score": 0.7282,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0567,
+            "damage_factor": 0.4,
+            "excess": 0.2653,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7255,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0918,
+            "attacker_base_score": 0.6875,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0208,
+            "damage_factor": 0.4,
+            "excess": 0.2294,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7424,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.645,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5739,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7414,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3639,
+        "base_score": 0.7913939130538953,
+        "cogency": 0.6093260068691464,
+        "cogency_details": {
+          "argument_quality_score": 0.6500104446367538,
+          "coherence_score": 0.568641569101539,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il rifiuto del venditore non può essere qualificato come inadempimento grave, perché il ritardo della banca, a cui egli fa riferimento, costituisce una causa di impossibilità non imputabile al venditore ai sensi dell’art. 1218 c.c.; pertanto l’inadempimento è di scarsa importanza e, secondo l’art. 1455 c.c., non giustifica la risoluzione con la perdita della caparra in duplice misura.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7913939130538953,
+        "nesso_plausibility": 0.4274939130538953,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1223 c.c., il risarcimento deve coprire soltanto la perdita subita come conseguenza immediata e diretta dell’inadempimento; le spese notarili, tecniche e di istruttoria mutuo richieste dal compratore non sono state provate come direttamente riconducibili al rifiuto del venditore, perciò la loro esigibilità risulta eccessiva e non giustificata dal danno effettivo.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6953203699771711,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6953203699771711
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1223 c.c., il risarcimento deve coprire soltanto la perdita subita come conseguenza immediata e diretta dell’inadempimento; le spese notarili, tecniche e di istruttoria mutuo richieste dal compratore non sono state provate come direttamente riconducibili al rifiuto del venditore, perciò la loro esigibilità risulta eccessiva e non giustificata dal danno effettivo."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1344,
+            "attacker_base_score": 0.7804,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9811,
+            "damage_factor": 0.4,
+            "excess": 0.336,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7395,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.645,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0236,
+            "attacker_base_score": 0.7914,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7041,
+            "damage_factor": 0.4,
+            "excess": 0.0591,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7414,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.645,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.158,
+        "base_score": 0.645017123604903,
+        "cogency": 0.5754627239276588,
+        "cogency_details": {
+          "argument_quality_score": 0.6679323589736181,
+          "coherence_score": 0.4829930888816997,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il rifiuto del venditore di concludere la vendita, comunicato a 20 giorni dal rogito fissato, costituisce un inadempimento della sua obbligazione principale di trasferire la proprietà dell’immobile, ovvero una prestazione di fondamentale importanza per l’acquirente; pertanto, ai sensi dell’art. 1455 c.c., l’inadempimento non può essere qualificato come di “scarsa importanza”.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.645017123604903,
+        "nesso_plausibility": 0.487017123604903,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il contratto preliminare di vendita immobiliare è stato stipulato con versamento da parte dell’acquirente di € 30.000 a titolo di caparra confirmatoria e con fissato il rogito entro quattro mesi dalla data di stipula; a venti giorni dalla scadenza del termine per il rogito il venditore comunica all’acquirente che non intende più concludere la vendita perché ha ricevuto un’offerta economicamente superiore; l’acquirente, in risposta, dichiara recesso e domanda il doppio della caparra versata, oltre al rimborso di € 7.800 relativi a spese notarili, tecniche e di istruttoria mutuo; il venditore, invece, sostiene che il mancato perfezionamento sia dovuto a ritardi della banca dell’acquirente e che, di conseguenza, sia tenuto solo alla restituzione della caparra.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5371158329892798,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5371158329892798
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il contratto preliminare di vendita immobiliare è stato stipulato con versamento da parte dell’acquirente di € 30.000 a titolo di caparra confirmatoria e con fissato il rogito entro quattro mesi dalla data di stipula; a venti giorni dalla scadenza del termine per il rogito il venditore comunica all’acquirente che non intende più concludere la vendita perché ha ricevuto un’offerta economicamente superiore; l’acquirente, in risposta, dichiara recesso e domanda il doppio della caparra versata, oltre al rimborso di € 7.800 relativi a spese notarili, tecniche e di istruttoria mutuo; il venditore, invece, sostiene che il mancato perfezionamento sia dovuto a ritardi della banca dell’acquirente e che, di conseguenza, sia tenuto solo alla restituzione della caparra."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1357,
+            "attacker_base_score": 0.7804,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0267,
+            "damage_factor": 0.4,
+            "excess": 0.3393,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7739,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6875,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1246,
+            "attacker_base_score": 0.7914,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9989,
+            "damage_factor": 0.4,
+            "excess": 0.3114,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7424,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6875,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2603,
+        "base_score": 0.6874527921776721,
+        "cogency": 0.5877717544017756,
+        "cogency_details": {
+          "argument_quality_score": 0.6390508511885121,
+          "coherence_score": 0.5364926576150392,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1385 c.c., poiché è il venditore ad aver ricevuto la caparra e a questo punto risulta inadempiente nella sua obbligazione principale di trasferire la proprietà, l’acquirente può recedere dal preliminare ed esigere il doppio della somma versata, ossia € 60.000, salvo che preferisca chiedere l’esecuzione o la risoluzione del contratto, in tal caso la caparra si limiterebbe a compensare il danno secondo le norme generali.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6874527921776721,
+        "nesso_plausibility": 0.4271527921776721,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il rifiuto del venditore di concludere la vendita, comunicato a 20 giorni dal rogito fissato, costituisce un inadempimento della sua obbligazione principale di trasferire la proprietà dell’immobile, ovvero una prestazione di fondamentale importanza per l’acquirente; pertanto, ai sensi dell’art. 1455 c.c., l’inadempimento non può essere qualificato come di “scarsa importanza”.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          },
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.49885661287439,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.49885661287439
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il rifiuto del venditore di concludere la vendita, comunicato a 20 giorni dal rogito fissato, costituisce un inadempimento della sua obbligazione principale di trasferire la proprietà dell’immobile, ovvero una prestazione di fondamentale importanza per l’acquirente; pertanto, ai sensi dell’art. 1455 c.c., l’inadempimento non può essere qualificato come di “scarsa importanza”."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1048,
+            "attacker_base_score": 0.7804,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9903,
+            "damage_factor": 0.4,
+            "excess": 0.2621,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7465,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7282,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0991,
+            "attacker_base_score": 0.7914,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9761,
+            "damage_factor": 0.4,
+            "excess": 0.2479,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7255,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7282,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2039,
+        "base_score": 0.7282140296656019,
+        "cogency": 0.6038950572256289,
+        "cogency_details": {
+          "argument_quality_score": 0.6486701241516575,
+          "coherence_score": 0.5591199902996002,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "L’art. 1218 c.c. prevede che il debitore risponda per l’inadempimento salvo provi che la mancata esecuzione sia dovuta a causa di forza maggiore o a impossibilità non a lui imputabile; il ritardo della banca dell’acquirente, pur essendo un evento esterno, grava sul compratore perché è legato alla sua capacità di pagamento e non esonera il venditore dall’obbligo di trasferire l’immobile entro il termine pattuito. Poiché il venditore non può attribuire a sé stesso la responsabilità della scelta della banca né dimostrare che la causa gli sia stata imposta, la sua difesa non integra i requisiti di esonero previsti dall’art. 1218 c.c.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7282140296656019,
+        "nesso_plausibility": 0.5243140296656019,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1385 c.c., poiché è il venditore ad aver ricevuto la caparra e a questo punto risulta inadempiente nella sua obbligazione principale di trasferire la proprietà, l’acquirente può recedere dal preliminare ed esigere il doppio della somma versata, ossia € 60.000, salvo che preferisca chiedere l’esecuzione o la risoluzione del contratto, in tal caso la caparra si limiterebbe a compensare il danno secondo le norme generali.",
+        "retrieved_norms": [
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6186041016769694,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6186041016769694
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1385 c.c., poiché è il venditore ad aver ricevuto la caparra e a questo punto risulta inadempiente nella sua obbligazione principale di trasferire la proprietà, l’acquirente può recedere dal preliminare ed esigere il doppio della somma versata, ossia € 60.000, salvo che preferisca chiedere l’esecuzione o la risoluzione del contratto, in tal caso la caparra si limiterebbe a compensare il danno secondo le norme generali."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1704,
+            "attacker_base_score": 0.7914,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2134,
+            "damage_factor": 0.4,
+            "excess": 0.4261,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7666,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7873,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1666,
+            "attacker_base_score": 0.7804,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2038,
+            "damage_factor": 0.4,
+            "excess": 0.4165,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7713,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7873,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.33699999999999997,
+        "base_score": 0.7872695031957201,
+        "cogency": 0.6077079368970386,
+        "cogency_details": {
+          "argument_quality_score": 0.6522779681665432,
+          "coherence_score": 0.5631379056275341,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Secondo l’art. 1385 c.c., se il venditore è inadempiente l’acquirente può recedere dal preliminare e pretendere il doppio della caparra; tuttavia, l’art. 1453 c.c. consente al creditore non inadempiente di scegliere, a sua discrezione, l’esecuzione o la risoluzione del contratto, con risarcimento del danno regolato dalle norme generali (artt. 1223‑1227 c.c.). Di conseguenza, il diritto al doppio della caparra è compatibile solo con la facoltà di recedere, mentre, optando per la risoluzione, il risarcimento dovrà essere quantificato secondo le disposizioni generali e la caparra non si trasforma automaticamente in doppio importo. Eventuali danni aggiuntivi, quali le spese notarili, tecniche e di istruttoria mutuo, possono essere richiesti in aggiunta al risarcimento previsto, a condizione che siano specificamente provati e non confliggano con la scelta del rimedio.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7872695031957201,
+        "nesso_plausibility": 0.4502695031957201,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "L’art. 1218 c.c. prevede che il debitore risponda per l’inadempimento salvo provi che la mancata esecuzione sia dovuta a causa di forza maggiore o a impossibilità non a lui imputabile; il ritardo della banca dell’acquirente, pur essendo un evento esterno, grava sul compratore perché è legato alla sua capacità di pagamento e non esonera il venditore dall’obbligo di trasferire l’immobile entro il termine pattuito. Poiché il venditore non può attribuire a sé stesso la responsabilità della scelta della banca né dimostrare che la causa gli sia stata imposta, la sua difesa non integra i requisiti di esonero previsti dall’art. 1218 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          },
+          {
+            "articolo": "1453",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1523_art1453",
+            "title": "Risolubilità del contratto per inadempimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6831904070886952,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6831904070886952
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "L’art. 1218 c.c. prevede che il debitore risponda per l’inadempimento salvo provi che la mancata esecuzione sia dovuta a causa di forza maggiore o a impossibilità non a lui imputabile; il ritardo della banca dell’acquirente, pur essendo un evento esterno, grava sul compratore perché è legato alla sua capacità di pagamento e non esonera il venditore dall’obbligo di trasferire l’immobile entro il termine pattuito. Poiché il venditore non può attribuire a sé stesso la responsabilità della scelta della banca né dimostrare che la causa gli sia stata imposta, la sua difesa non integra i requisiti di esonero previsti dall’art. 1218 c.c."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1028,
+            "attacker_base_score": 0.7804,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0378,
+            "damage_factor": 0.4,
+            "excess": 0.257,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7823,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7809,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7914,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6839,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8231,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7809,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1028,
+        "base_score": 0.7808689939975715,
+        "cogency": 0.6595333098170701,
+        "cogency_details": {
+          "argument_quality_score": 0.6863743366382207,
+          "coherence_score": 0.6326922829959195,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Il diritto del compratore al doppio della caparra è automatico ai sensi dell’art. 1385 c.c. non appena esercita il recesso per inadempimento del venditore; i costi notarili, tecnici e di istruttoria mutuo, invece, costituiscono un danno patrimoniale autonomo e la loro esigibilità dipende dalla prova, ai sensi degli artt. 1223 e 2056 c.c., che il compratore abbia sostenuto tali spese in conseguenza diretta e immediata della violazione contrattuale. In mancanza di tale prova, il giudice potrà riconoscere solo il doppio della caparra, mentre la quantificazione dei € 7.800 resta subordinata alla documentazione fornita.",
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7808689939975715,
+        "nesso_plausibility": 0.6780689939975715,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Secondo l’art. 1385 c.c., se il venditore è inadempiente l’acquirente può recedere dal preliminare e pretendere il doppio della caparra; tuttavia, l’art. 1453 c.c. consente al creditore non inadempiente di scegliere, a sua discrezione, l’esecuzione o la risoluzione del contratto, con risarcimento del danno regolato dalle norme generali (artt. 1223‑1227 c.c.). Di conseguenza, il diritto al doppio della caparra è compatibile solo con la facoltà di recedere, mentre, optando per la risoluzione, il risarcimento dovrà essere quantificato secondo le disposizioni generali e la caparra non si trasforma automaticamente in doppio importo. Eventuali danni aggiuntivi, quali le spese notarili, tecniche e di istruttoria mutuo, possono essere richiesti in aggiunta al risarcimento previsto, a condizione che siano specificamente provati e non confliggano con la scelta del rimedio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          },
+          {
+            "articolo": "1453",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1523_art1453",
+            "title": "Risolubilità del contratto per inadempimento"
+          },
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7384823968587602,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7384823968587602
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1385 c.c., se il venditore è inadempiente l’acquirente può recedere dal preliminare e pretendere il doppio della caparra; tuttavia, l’art. 1453 c.c. consente al creditore non inadempiente di scegliere, a sua discrezione, l’esecuzione o la risoluzione del contratto, con risarcimento del danno regolato dalle norme generali (artt. 1223‑1227 c.c.). Di conseguenza, il diritto al doppio della caparra è compatibile solo con la facoltà di recedere, mentre, optando per la risoluzione, il risarcimento dovrà essere quantificato secondo le disposizioni generali e la caparra non si trasforma automaticamente in doppio importo. Eventuali danni aggiuntivi, quali le spese notarili, tecniche e di istruttoria mutuo, possono essere richiesti in aggiunta al risarcimento previsto, a condizione che siano specificamente provati e non confliggano con la scelta del rimedio."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.487620787582663,
+    "contra_adjusted": 0.487620787582663,
+    "contra_raw": 0.4288335797386573,
+    "final": 0.2381437009456308,
+    "final_adjusted": 0.2381437009456308,
+    "final_raw": 0.29693090878963646,
+    "pro": 0.7257644885282938,
+    "pro_adjusted": 0.7257644885282938,
+    "pro_raw": 0.7257644885282938,
+    "pro_raw_dialectical": 0.5133644885282937,
+    "pro_raw_intrinsic": 0.7257644885282938,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8231,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1976
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.7823,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1766
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.7713,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1736
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7666,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1704
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7713,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1666
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.7666,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1663
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7739,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1357
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7395,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1344
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7424,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1246
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7465,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1227
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 4,
+          "axes_total": 4,
+          "axis_details": [
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.7577417664306609,
+              "axis_id": "AX1",
+              "axis_quality": 0.23085999999999998,
+              "link_ids": [
+                "S4->S5",
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.6874527921776721,
+              "axis_id": "AX3",
+              "axis_quality": 0.17307999999999998,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.645017123604903,
+              "axis_id": "AX4",
+              "axis_quality": 0.1344,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7808689939975715,
+              "axis_id": "AX2",
+              "axis_quality": 0.1028,
+              "link_ids": [
+                "S5->S6"
+              ]
+            }
+          ],
+          "bonus": 0.05954052,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.16028499999999998,
+          "wpcs": 0.49617100000000003
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7233748384588545,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0007533121559943206,
+          "redundancy_index": 0.012052994495909129
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7363613979527402,
+          "high_similarity_pair_ratio": 0.7,
+          "links_count": 5,
+          "pair_count": 10,
+          "penalty": 0.046531714399751435,
+          "redundancy_index": 0.18612685759900574
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1357,
+            "attacker_base_score": 0.7804,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0267,
+            "damage_factor": 0.4,
+            "excess": 0.3393,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7739,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6875,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1246,
+            "attacker_base_score": 0.7914,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9989,
+            "damage_factor": 0.4,
+            "excess": 0.3114,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7424,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6875,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2603,
+        "base_score": 0.6874527921776721,
+        "cogency": 0.5877717544017756,
+        "cogency_details": {
+          "argument_quality_score": 0.6390508511885121,
+          "coherence_score": 0.5364926576150392,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1385 c.c., poiché è il venditore ad aver ricevuto la caparra e a questo punto risulta inadempiente nella sua obbligazione principale di trasferire la proprietà, l’acquirente può recedere dal preliminare ed esigere il doppio della somma versata, ossia € 60.000, salvo che preferisca chiedere l’esecuzione o la risoluzione del contratto, in tal caso la caparra si limiterebbe a compensare il danno secondo le norme generali.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6874527921776721,
+        "nesso_plausibility": 0.4271527921776721,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il rifiuto del venditore di concludere la vendita, comunicato a 20 giorni dal rogito fissato, costituisce un inadempimento della sua obbligazione principale di trasferire la proprietà dell’immobile, ovvero una prestazione di fondamentale importanza per l’acquirente; pertanto, ai sensi dell’art. 1455 c.c., l’inadempimento non può essere qualificato come di “scarsa importanza”.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          },
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.49885661287439,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.49885661287439
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il rifiuto del venditore di concludere la vendita, comunicato a 20 giorni dal rogito fissato, costituisce un inadempimento della sua obbligazione principale di trasferire la proprietà dell’immobile, ovvero una prestazione di fondamentale importanza per l’acquirente; pertanto, ai sensi dell’art. 1455 c.c., l’inadempimento non può essere qualificato come di “scarsa importanza”."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1976,
+            "attacker_base_score": 0.7809,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2854,
+            "damage_factor": 0.4,
+            "excess": 0.494,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8231,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1663,
+            "attacker_base_score": 0.7873,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2071,
+            "damage_factor": 0.4,
+            "excess": 0.4157,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7666,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1061,
+            "attacker_base_score": 0.7282,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0567,
+            "damage_factor": 0.4,
+            "excess": 0.2653,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7255,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0918,
+            "attacker_base_score": 0.6875,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0208,
+            "damage_factor": 0.4,
+            "excess": 0.2294,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7424,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.645,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5739,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7414,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7914,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3639,
+        "base_score": 0.7913939130538953,
+        "cogency": 0.6093260068691464,
+        "cogency_details": {
+          "argument_quality_score": 0.6500104446367538,
+          "coherence_score": 0.568641569101539,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il rifiuto del venditore non può essere qualificato come inadempimento grave, perché il ritardo della banca, a cui egli fa riferimento, costituisce una causa di impossibilità non imputabile al venditore ai sensi dell’art. 1218 c.c.; pertanto l’inadempimento è di scarsa importanza e, secondo l’art. 1455 c.c., non giustifica la risoluzione con la perdita della caparra in duplice misura.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7913939130538953,
+        "nesso_plausibility": 0.4274939130538953,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1223 c.c., il risarcimento deve coprire soltanto la perdita subita come conseguenza immediata e diretta dell’inadempimento; le spese notarili, tecniche e di istruttoria mutuo richieste dal compratore non sono state provate come direttamente riconducibili al rifiuto del venditore, perciò la loro esigibilità risulta eccessiva e non giustificata dal danno effettivo.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1218",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1288_art1218",
+            "title": "Responsabilità del debitore"
+          },
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6953203699771711,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6953203699771711
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1223 c.c., il risarcimento deve coprire soltanto la perdita subita come conseguenza immediata e diretta dell’inadempimento; le spese notarili, tecniche e di istruttoria mutuo richieste dal compratore non sono state provate come direttamente riconducibili al rifiuto del venditore, perciò la loro esigibilità risulta eccessiva e non giustificata dal danno effettivo."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1766,
+            "attacker_base_score": 0.7809,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.2217,
+            "damage_factor": 0.4,
+            "excess": 0.4414,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7823,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1736,
+            "attacker_base_score": 0.7873,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2144,
+            "damage_factor": 0.4,
+            "excess": 0.434,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7713,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1227,
+            "attacker_base_score": 0.7282,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0872,
+            "damage_factor": 0.4,
+            "excess": 0.3068,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7465,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1135,
+            "attacker_base_score": 0.6875,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0641,
+            "damage_factor": 0.4,
+            "excess": 0.2837,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7739,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.645,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5724,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7395,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7804,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3502,
+        "base_score": 0.7803732464234193,
+        "cogency": 0.5860244772536973,
+        "cogency_details": {
+          "argument_quality_score": 0.5850700191926897,
+          "coherence_score": 0.586978935314705,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1223 c.c., il risarcimento deve coprire soltanto la perdita subita come conseguenza immediata e diretta dell’inadempimento; le spese notarili, tecniche e di istruttoria mutuo richieste dal compratore non sono state provate come direttamente riconducibili al rifiuto del venditore, perciò la loro esigibilità risulta eccessiva e non giustificata dal danno effettivo.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7803732464234193,
+        "nesso_plausibility": 0.4301732464234193,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1455 c.c., la risoluzione del contratto è ammessa solo se l’inadempimento ha una certa importanza per l’altra parte; la decisione del venditore di accettare un’offerta più vantaggiosa non costituisce una violazione essenziale dell’obbligazione principale di trasferire l’immobile, ma un comportamento contrario alla buona fede. Pertanto, pur configurandosi un inadempimento, la sua gravità risulta insufficiente per attivare l’art. 1385 c.c., che prevede il doppio della caparra, limitandosi la responsabilità alla semplice restituzione della somma versata.",
+        "retrieved_norms": [
+          {
+            "articolo": "1455",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1525_art1455",
+            "title": "Importanza dell'inadempimento"
+          },
+          {
+            "articolo": "1385",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1455_art1385",
+            "title": "Caparra confirmatoria"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6818863441577003,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6818863441577003
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1455 c.c., la risoluzione del contratto è ammessa solo se l’inadempimento ha una certa importanza per l’altra parte; la decisione del venditore di accettare un’offerta più vantaggiosa non costituisce una violazione essenziale dell’obbligazione principale di trasferire l’immobile, ma un comportamento contrario alla buona fede. Pertanto, pur configurandosi un inadempimento, la sua gravità risulta insufficiente per attivare l’art. 1385 c.c., che prevede il doppio della caparra, limitandosi la responsabilità alla semplice restituzione della somma versata."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

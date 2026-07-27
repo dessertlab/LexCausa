@@ -1,0 +1,1355 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 1,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.0280536,
+      "attack_coverage_ratio": 0.5,
+      "attack_coverage_score": 0.23378000000000002,
+      "attacks_avg": 0.12240000000000001,
+      "base_score_avg": 0.7692532077275119,
+      "cogency_avg": 0.6281232210688158,
+      "net_plausibility": 0.631973610202778,
+      "net_plausibility_adjusted": 0.631973610202778,
+      "net_plausibility_raw": 0.6468532077275121,
+      "norm_support_avg": 0.9034970191601945,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.22897705346524874,
+      "redundancy_penalty": 0.04293319752473414,
+      "semantics_avg": 0.7313914458092983
+    },
+    "pro": {
+      "attacks_avg": 0.0724,
+      "base_score_avg": 0.7241371855466467,
+      "cogency_avg": 0.6194318811401005,
+      "net_plausibility": 0.7241371855466467,
+      "net_plausibility_adjusted": 0.7241371855466467,
+      "net_plausibility_dialectical_raw": 0.6517371855466467,
+      "net_plausibility_intrinsic_raw": 0.7241371855466467,
+      "net_plausibility_raw": 0.7241371855466467,
+      "norm_support_avg": 0.85238777899561,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.10828687168308393,
+      "redundancy_penalty": 0.006767929480192746,
+      "semantics_avg": 0.6578416986879083
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1484,
+            "attacker_base_score": 0.6974,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1149,
+            "damage_factor": 0.4,
+            "excess": 0.3709,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7993,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.744,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7509,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6626,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7354,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.744,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1484,
+        "base_score": 0.743981915384156,
+        "cogency": 0.5656454179070356,
+        "cogency_details": {
+          "argument_quality_score": 0.6665481322484572,
+          "coherence_score": 0.464742703565614,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’urgenza di rientrare in ospedale per assistere la moglie in travaglio, unità allo stato emotivo di grave agitazione, costituisce una circostanza personale di estrema gravità che, pur non escludendo la responsabilità penale, può essere valutata come attenuante della colpevolezza ai sensi dell’art. 90 c.p., il quale prevede che gli stati emotivi non escludano l’imputabilità ma possano influire sulla gravità della colpa. Tale circostanza consente al giudice di ridurre la valutazione dell’imprudenza e, di conseguenza, di applicare una diminuzione della pena prevista per l’omicidio stradale colposo.",
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.743981915384156,
+        "nesso_plausibility": 0.5955819153841561,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nonostante la velocità eccessiva, la perizia non consente di affermare con certezza che il conducente potesse prevedere la morte dell’altro soggetto, requisito di certezza richiesto dall’art. 40 c.p. per il nesso causale; l’emergenza familiare e lo stato emotivo alterato introducono una significativa incertezza sulla capacità di valutare il rischio letale. Pertanto, il rapporto di causalità tra la violazione del limite di velocità e l’esito mortale non è dimostrato con la certezza prevista dalla norma.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "90",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.70941336005741,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.70941336005741
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Nonostante la velocità eccessiva, la perizia non consente di affermare con certezza che il conducente potesse prevedere la morte dell’altro soggetto, requisito di certezza richiesto dall’art. 40 c.p. per il nesso causale; l’emergenza familiare e lo stato emotivo alterato introducono una significativa incertezza sulla capacità di valutare il rischio letale. Pertanto, il rapporto di causalità tra la violazione del limite di velocità e l’esito mortale non è dimostrato con la certezza prevista dalla norma."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0666,
+            "attacker_base_score": 0.6974,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9151,
+            "damage_factor": 0.4,
+            "excess": 0.1665,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7718,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7486,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7509,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6396,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8112,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7486,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.0666,
+        "base_score": 0.7485736116275751,
+        "cogency": 0.6608019771363978,
+        "cogency_details": {
+          "argument_quality_score": 0.6755193741331508,
+          "coherence_score": 0.6460845801396449,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La decisione non ha integrato l’aggravante prevista per la violazione del limite di velocità di oltre il 30 % (art. 62 c.p.), nonostante il conducente abbia superato i 90 km/h percorrendo circa 140 km/h, né ha considerato la circostanza attenuante riconosciuta dall’art. 90 c.p. per lo stato emotivo grave e l’urgenza familiare, violando così il principio di personalizzazione della pena. Tale omissione costituisce un difetto procedurale nella determinazione della sanzione, poiché la mancata valutazione di entrambe le circostanze altera il corretto inquadramento sanzionatorio previsto dalla legge.",
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7485736116275751,
+        "nesso_plausibility": 0.6819736116275751,
+        "norm_support": 0.803660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.803660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.6666666666666666
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’urgenza di rientrare in ospedale per assistere la moglie in travaglio, unità allo stato emotivo di grave agitazione, costituisce una circostanza personale di estrema gravità che, pur non escludendo la responsabilità penale, può essere valutata come attenuante della colpevolezza ai sensi dell’art. 90 c.p., il quale prevede che gli stati emotivi non escludano l’imputabilità ma possano influire sulla gravità della colpa. Tale circostanza consente al giudice di ridurre la valutazione dell’imprudenza e, di conseguenza, di applicare una diminuzione della pena prevista per l’omicidio stradale colposo.",
+        "retrieved_norms": [
+          {
+            "articolo": "90",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "62",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": "codice_penale"
+          },
+          {
+            "articolo": "90",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7628957883061113,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7628957883061113
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "L’urgenza di rientrare in ospedale per assistere la moglie in travaglio, unità allo stato emotivo di grave agitazione, costituisce una circostanza personale di estrema gravità che, pur non escludendo la responsabilità penale, può essere valutata come attenuante della colpevolezza ai sensi dell’art. 90 c.p., il quale prevede che gli stati emotivi non escludano l’imputabilità ma possano influire sulla gravità della colpa. Tale circostanza consente al giudice di ridurre la valutazione dell’imprudenza e, di conseguenza, di applicare una diminuzione della pena prevista per l’omicidio stradale colposo."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1257,
+            "attacker_base_score": 0.6974,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1389,
+            "damage_factor": 0.4,
+            "excess": 0.3141,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8165,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8247,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7509,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.748,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8302,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8247,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1257,
+        "base_score": 0.8247305258195563,
+        "cogency": 0.6532201217599121,
+        "cogency_details": {
+          "argument_quality_score": 0.669774188931983,
+          "coherence_score": 0.636666054587841,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Pur riconoscendo la violazione del limite di velocità, la disciplina dell’art. 589‑bis richiede che la morte sia la conseguenza certa e prevedibile della violazione stessa; la perizia tecnica, sebbene affermi che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo e la morte fossero inevitabili, perciò il nesso causale richiesto dall’art. 40 c.p. resta dubbio. Di conseguenza, la condotta può essere inquadrata come omicidio colposo generico ex art. 589 c.p., dove la violazione del codice della strada costituisce una causa concorrente ma non l’elemento determinante del decesso.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.8247305258195563,
+        "nesso_plausibility": 0.6990305258195563,
+        "norm_support": 0.9649999999999999,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.95,
+          "citation_specificity_score": 0.8,
+          "final": 0.9649999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "La decisione non ha integrato l’aggravante prevista per la violazione del limite di velocità di oltre il 30 % (art. 62 c.p.), nonostante il conducente abbia superato i 90 km/h percorrendo circa 140 km/h, né ha considerato la circostanza attenuante riconosciuta dall’art. 90 c.p. per lo stato emotivo grave e l’urgenza familiare, violando così il principio di personalizzazione della pena. Tale omissione costituisce un difetto procedurale nella determinazione della sanzione, poiché la mancata valutazione di entrambe le circostanze altera il corretto inquadramento sanzionatorio previsto dalla legge.",
+        "retrieved_norms": [
+          {
+            "articolo": "62",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": "codice_penale"
+          },
+          {
+            "articolo": "90",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "589",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "589",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.8092149643052761,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8092149643052761
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La decisione non ha integrato l’aggravante prevista per la violazione del limite di velocità di oltre il 30 % (art. 62 c.p.), nonostante il conducente abbia superato i 90 km/h percorrendo circa 140 km/h, né ha considerato la circostanza attenuante riconosciuta dall’art. 90 c.p. per lo stato emotivo grave e l’urgenza familiare, violando così il principio di personalizzazione della pena. Tale omissione costituisce un difetto procedurale nella determinazione della sanzione, poiché la mancata valutazione di entrambe le circostanze altera il corretto inquadramento sanzionatorio previsto dalla legge."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1489,
+            "attacker_base_score": 0.6974,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1319,
+            "damage_factor": 0.4,
+            "excess": 0.3722,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8115,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7597,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7509,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6597,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8367,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7597,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1489,
+        "base_score": 0.7597267780787608,
+        "cogency": 0.6328253674719179,
+        "cogency_details": {
+          "argument_quality_score": 0.7126976084427479,
+          "coherence_score": 0.5529531265010879,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "L’emergenza familiare, con la moglie in travaglio, costituisce una circostanza personale di estrema gravità che, pur non escludendo la responsabilità penale, è espressamente prevista dall’art. 90 c.p. come elemento che può attenuare la colpevolezza soggettiva. Infatti, sebbene l’art. 90 affermi che gli stati emotivi non diminuiscono l’imputabilità, la stessa disposizione consente al giudice di valutare tali stati nella determinazione della gravità della colpa e, di conseguenza, di applicare una riduzione della pena. In presenza di una necessità urgente di raggiungere l’ospedale, la condotta dell’automobilista può essere qualificata come “imprudenza mitigata” piuttosto che come mera negligenza, giustificando una diminuzione della pena prevista dall’art. 589‑bis c.p. (es. riduzione al minimo della fascia di 2‑7 anni).",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7597267780787608,
+        "nesso_plausibility": 0.6108267780787607,
+        "norm_support": 0.9416666666666667,
+        "norm_support_details": {
+          "citation_count": 6,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9416666666666667,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Pur riconoscendo la violazione del limite di velocità, la disciplina dell’art. 589‑bis richiede che la morte sia la conseguenza certa e prevedibile della violazione stessa; la perizia tecnica, sebbene affermi che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo e la morte fossero inevitabili, perciò il nesso causale richiesto dall’art. 40 c.p. resta dubbio. Di conseguenza, la condotta può essere inquadrata come omicidio colposo generico ex art. 589 c.p., dove la violazione del codice della strada costituisce una causa concorrente ma non l’elemento determinante del decesso.",
+        "retrieved_norms": [
+          {
+            "articolo": "589",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "589",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "90",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "90",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "589",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6440416705683958,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6440416705683958
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Pur riconoscendo la violazione del limite di velocità, la disciplina dell’art. 589‑bis richiede che la morte sia la conseguenza certa e prevedibile della violazione stessa; la perizia tecnica, sebbene affermi che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo e la morte fossero inevitabili, perciò il nesso causale richiesto dall’art. 40 c.p. resta dubbio. Di conseguenza, la condotta può essere inquadrata come omicidio colposo generico ex art. 589 c.p., dove la violazione del codice della strada costituisce una causa concorrente ma non l’elemento determinante del decesso."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1126,
+            "attacker_base_score": 0.7486,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0324,
+            "damage_factor": 0.4,
+            "excess": 0.2815,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8112,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0048,
+            "attacker_base_score": 0.7597,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7628,
+            "damage_factor": 0.4,
+            "excess": 0.012,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8367,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.744,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6565,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7354,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8247,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7189,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8302,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1174,
+        "base_score": 0.7508614348649747,
+        "cogency": 0.6647844103020353,
+        "cogency_details": {
+          "argument_quality_score": 0.6753762622670654,
+          "coherence_score": 0.6541925583370053,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti descritti, la condotta del conducente integra il reato di omicidio colposo stradale previsto dall’art. 589-bis c.p., poiché ha cagionato la morte di una persona violando le norme sulla disciplina della circolazione stradale (eccesso di velocità rispetto al limite di 90 km/h). Tale fattispecie è punita con la reclusione da due a sette anni.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7508614348649747,
+        "nesso_plausibility": 0.6334614348649747,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il conducente, percorrendo un tratto di strada con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Al momento dell’incidente riferiva uno stato emotivo grave per complicazioni nel parto della moglie e l’urgenza di rientrare in ospedale. Le perizie tecniche hanno accertato che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e che, mantenuta la velocità regolare, l’evento non si sarebbe verificato. La difesa sostiene una riduzione della colpevolezza soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "589-bis",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_751_589-bis",
+            "title": "Omicidio stradale o nautico"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8006085174818092,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8006085174818092
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il conducente, percorrendo un tratto di strada con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Al momento dell’incidente riferiva uno stato emotivo grave per complicazioni nel parto della moglie e l’urgenza di rientrare in ospedale. Le perizie tecniche hanno accertato che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e che, mantenuta la velocità regolare, l’evento non si sarebbe verificato. La difesa sostiene una riduzione della colpevolezza soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.017,
+            "attacker_base_score": 0.7597,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7398,
+            "damage_factor": 0.4,
+            "excess": 0.0424,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8115,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6974,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0065,
+            "attacker_base_score": 0.744,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7136,
+            "damage_factor": 0.4,
+            "excess": 0.0162,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7993,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6974,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0039,
+            "attacker_base_score": 0.8247,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7071,
+            "damage_factor": 0.4,
+            "excess": 0.0096,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8165,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.6974,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7486,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6067,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7718,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.6974,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.0274,
+        "base_score": 0.6974129362283187,
+        "cogency": 0.5740793519781657,
+        "cogency_details": {
+          "argument_quality_score": 0.6255276470427867,
+          "coherence_score": 0.5226310569135447,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 41 c.p., la “causa sopravvenuta” che può interrompere il nesso è un evento esterno all’agente e, da solo, capace di produrre il risultato dannoso; lo stato emotivo del conducente e l’urgenza di rientrare in ospedale, pur influenzando la sua volontà, sono cause interne e non sono autonomamente sufficienti a provocare l’incidente, perciò non configurano una causa sopravvenuta da sola sufficiente. Tali elementi possono essere considerati cause concorrenti, ma l’art. 41, comma 1, prevede che le cause concorrenti non escludono il rapporto di causalità se la condotta dell’agente resta una condizione dell’evento. Di conseguenza, il nesso causale tra la velocità eccessiva e la morte rimane intatto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.6974129362283187,
+        "nesso_plausibility": 0.6700129362283187,
+        "norm_support": 0.9266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9266666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Alla luce dei fatti descritti, la condotta del conducente integra il reato di omicidio colposo stradale previsto dall’art. 589-bis c.p., poiché ha cagionato la morte di una persona violando le norme sulla disciplina della circolazione stradale (eccesso di velocità rispetto al limite di 90 km/h). Tale fattispecie è punita con la reclusione da due a sette anni.",
+        "retrieved_norms": [
+          {
+            "articolo": "589-bis",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_751_589-bis",
+            "title": "Omicidio stradale o nautico"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "41",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5150748798940076,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5150748798940076
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Alla luce dei fatti descritti, la condotta del conducente integra il reato di omicidio colposo stradale previsto dall’art. 589-bis c.p., poiché ha cagionato la morte di una persona violando le norme sulla disciplina della circolazione stradale (eccesso di velocità rispetto al limite di 90 km/h). Tale fattispecie è punita con la reclusione da due a sette anni."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.631973610202778,
+    "contra_adjusted": 0.631973610202778,
+    "contra_raw": 0.6468532077275121,
+    "final": 0.09216357534386876,
+    "final_adjusted": 0.09216357534386876,
+    "final_raw": 0.07728397781913465,
+    "pro": 0.7241371855466467,
+    "pro_adjusted": 0.7241371855466467,
+    "pro_raw": 0.7241371855466467,
+    "pro_raw_dialectical": 0.6517371855466467,
+    "pro_raw_intrinsic": 0.7241371855466467,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8115,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.1489
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7993,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1484
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8165,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1257
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8112,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1126
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7718,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.0666
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "contra",
+        "overlap": 0.8115,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.017
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7993,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.0065
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "contra",
+        "overlap": 0.8367,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.0048
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.8165,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.0039
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 1,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7508614348649747,
+              "axis_id": "AX1",
+              "axis_quality": 0.1126,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.6974129362283187,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S2->S3"
+              ]
+            }
+          ],
+          "bonus": 0.0280536,
+          "coverage_ratio": 0.5,
+          "enabled": true,
+          "quality_avg": 0.0563,
+          "wpcs": 0.23378000000000002
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7672325441585764,
+          "high_similarity_pair_ratio": 0.8333333333333334,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.04293319752473414,
+          "redundancy_index": 0.22897705346524874
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7503203240712635,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.006767929480192746,
+          "redundancy_index": 0.10828687168308393
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1484,
+            "attacker_base_score": 0.6974,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1149,
+            "damage_factor": 0.4,
+            "excess": 0.3709,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7993,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.744,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7509,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6626,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7354,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.744,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1484,
+        "base_score": 0.743981915384156,
+        "cogency": 0.5656454179070356,
+        "cogency_details": {
+          "argument_quality_score": 0.6665481322484572,
+          "coherence_score": 0.464742703565614,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’urgenza di rientrare in ospedale per assistere la moglie in travaglio, unità allo stato emotivo di grave agitazione, costituisce una circostanza personale di estrema gravità che, pur non escludendo la responsabilità penale, può essere valutata come attenuante della colpevolezza ai sensi dell’art. 90 c.p., il quale prevede che gli stati emotivi non escludano l’imputabilità ma possano influire sulla gravità della colpa. Tale circostanza consente al giudice di ridurre la valutazione dell’imprudenza e, di conseguenza, di applicare una diminuzione della pena prevista per l’omicidio stradale colposo.",
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.743981915384156,
+        "nesso_plausibility": 0.5955819153841561,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nonostante la velocità eccessiva, la perizia non consente di affermare con certezza che il conducente potesse prevedere la morte dell’altro soggetto, requisito di certezza richiesto dall’art. 40 c.p. per il nesso causale; l’emergenza familiare e lo stato emotivo alterato introducono una significativa incertezza sulla capacità di valutare il rischio letale. Pertanto, il rapporto di causalità tra la violazione del limite di velocità e l’esito mortale non è dimostrato con la certezza prevista dalla norma.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "90",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.70941336005741,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.70941336005741
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Nonostante la velocità eccessiva, la perizia non consente di affermare con certezza che il conducente potesse prevedere la morte dell’altro soggetto, requisito di certezza richiesto dall’art. 40 c.p. per il nesso causale; l’emergenza familiare e lo stato emotivo alterato introducono una significativa incertezza sulla capacità di valutare il rischio letale. Pertanto, il rapporto di causalità tra la violazione del limite di velocità e l’esito mortale non è dimostrato con la certezza prevista dalla norma."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1489,
+            "attacker_base_score": 0.6974,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1319,
+            "damage_factor": 0.4,
+            "excess": 0.3722,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8115,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7597,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7509,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6597,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8367,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7597,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1489,
+        "base_score": 0.7597267780787608,
+        "cogency": 0.6328253674719179,
+        "cogency_details": {
+          "argument_quality_score": 0.7126976084427479,
+          "coherence_score": 0.5529531265010879,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "L’emergenza familiare, con la moglie in travaglio, costituisce una circostanza personale di estrema gravità che, pur non escludendo la responsabilità penale, è espressamente prevista dall’art. 90 c.p. come elemento che può attenuare la colpevolezza soggettiva. Infatti, sebbene l’art. 90 affermi che gli stati emotivi non diminuiscono l’imputabilità, la stessa disposizione consente al giudice di valutare tali stati nella determinazione della gravità della colpa e, di conseguenza, di applicare una riduzione della pena. In presenza di una necessità urgente di raggiungere l’ospedale, la condotta dell’automobilista può essere qualificata come “imprudenza mitigata” piuttosto che come mera negligenza, giustificando una diminuzione della pena prevista dall’art. 589‑bis c.p. (es. riduzione al minimo della fascia di 2‑7 anni).",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7597267780787608,
+        "nesso_plausibility": 0.6108267780787607,
+        "norm_support": 0.9416666666666667,
+        "norm_support_details": {
+          "citation_count": 6,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9416666666666667,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Pur riconoscendo la violazione del limite di velocità, la disciplina dell’art. 589‑bis richiede che la morte sia la conseguenza certa e prevedibile della violazione stessa; la perizia tecnica, sebbene affermi che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo e la morte fossero inevitabili, perciò il nesso causale richiesto dall’art. 40 c.p. resta dubbio. Di conseguenza, la condotta può essere inquadrata come omicidio colposo generico ex art. 589 c.p., dove la violazione del codice della strada costituisce una causa concorrente ma non l’elemento determinante del decesso.",
+        "retrieved_norms": [
+          {
+            "articolo": "589",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "589",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "90",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "90",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_101_90",
+            "title": "Stati emotivi o passionali"
+          },
+          {
+            "articolo": "589",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6440416705683958,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6440416705683958
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Pur riconoscendo la violazione del limite di velocità, la disciplina dell’art. 589‑bis richiede che la morte sia la conseguenza certa e prevedibile della violazione stessa; la perizia tecnica, sebbene affermi che a velocità regolare l’incidente non si sarebbe verificato, non dimostra con certezza che a 140 km/h la perdita di controllo e la morte fossero inevitabili, perciò il nesso causale richiesto dall’art. 40 c.p. resta dubbio. Di conseguenza, la condotta può essere inquadrata come omicidio colposo generico ex art. 589 c.p., dove la violazione del codice della strada costituisce una causa concorrente ma non l’elemento determinante del decesso."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1126,
+            "attacker_base_score": 0.7486,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0324,
+            "damage_factor": 0.4,
+            "excess": 0.2815,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8112,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0048,
+            "attacker_base_score": 0.7597,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7628,
+            "damage_factor": 0.4,
+            "excess": 0.012,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8367,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.744,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6565,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7354,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8247,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7189,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8302,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7509,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1174,
+        "base_score": 0.7508614348649747,
+        "cogency": 0.6647844103020353,
+        "cogency_details": {
+          "argument_quality_score": 0.6753762622670654,
+          "coherence_score": 0.6541925583370053,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti descritti, la condotta del conducente integra il reato di omicidio colposo stradale previsto dall’art. 589-bis c.p., poiché ha cagionato la morte di una persona violando le norme sulla disciplina della circolazione stradale (eccesso di velocità rispetto al limite di 90 km/h). Tale fattispecie è punita con la reclusione da due a sette anni.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7508614348649747,
+        "nesso_plausibility": 0.6334614348649747,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il conducente, percorrendo un tratto di strada con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Al momento dell’incidente riferiva uno stato emotivo grave per complicazioni nel parto della moglie e l’urgenza di rientrare in ospedale. Le perizie tecniche hanno accertato che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e che, mantenuta la velocità regolare, l’evento non si sarebbe verificato. La difesa sostiene una riduzione della colpevolezza soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "589-bis",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_751_589-bis",
+            "title": "Omicidio stradale o nautico"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8006085174818092,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8006085174818092
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il conducente, percorrendo un tratto di strada con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Al momento dell’incidente riferiva uno stato emotivo grave per complicazioni nel parto della moglie e l’urgenza di rientrare in ospedale. Le perizie tecniche hanno accertato che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e che, mantenuta la velocità regolare, l’evento non si sarebbe verificato. La difesa sostiene una riduzione della colpevolezza soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+      }
+    ]
+  },
+  "verdict": "uncertain",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

@@ -1,0 +1,34 @@
+[2026-03-08T12:29:17.752446] Pipeline log - Setup B
+Claim: Una societa ottiene titolo favorevole, avvia i lavori e sostiene costi rilevanti su base autorizzativa. Dopo oltre due anni l'amministrazione annulla in autotutela con motivazione generica di ripristi
+======================================================================
+Status: ok
+Duration: 314.96s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 7
+  Arguments: 1
+  Causal type: AMM_AUTOTUTELA_BALANCE
+
+[COUNTER]
+  Chain steps: 3
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7499441117791422
+  Net contra: 0.0
+  Net final: 0.7499441117791422
+  Counter gate: label=AGREEING, abstain=True

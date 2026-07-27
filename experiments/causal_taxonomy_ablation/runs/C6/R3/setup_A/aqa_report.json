@@ -1,0 +1,1718 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 4,
+      "attack_coverage_bonus": 0.0285558,
+      "attack_coverage_ratio": 0.5,
+      "attack_coverage_score": 0.237965,
+      "attacks_avg": 0.40515,
+      "base_score_avg": 0.6904628087782034,
+      "cogency_avg": 0.6017253582552096,
+      "net_plausibility": 0.3069754520974566,
+      "net_plausibility_adjusted": 0.3069754520974566,
+      "net_plausibility_raw": 0.28531280877820336,
+      "norm_support_avg": 0.8408847981558047,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.11029050689194923,
+      "redundancy_penalty": 0.006893156680746827,
+      "semantics_avg": 0.5786376067977286
+    },
+    "pro": {
+      "attacks_avg": 0.05073333333333333,
+      "base_score_avg": 0.7312802140087555,
+      "cogency_avg": 0.5917536076004327,
+      "net_plausibility": 0.7312802140087555,
+      "net_plausibility_adjusted": 0.7312802140087555,
+      "net_plausibility_dialectical_raw": 0.6805468806754221,
+      "net_plausibility_intrinsic_raw": 0.7312802140087555,
+      "net_plausibility_raw": 0.7312802140087555,
+      "norm_support_avg": 0.8987919518787962,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.15647630818789374,
+      "redundancy_penalty": 0.039119077046973434,
+      "semantics_avg": 0.6474578365903574
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2015,
+            "attacker_base_score": 0.7815,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1594,
+            "damage_factor": 0.4,
+            "excess": 0.5037,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7418,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1805,
+            "attacker_base_score": 0.7711,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1069,
+            "damage_factor": 0.4,
+            "excess": 0.4512,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7177,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.176,
+            "attacker_base_score": 0.7362,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0956,
+            "damage_factor": 0.4,
+            "excess": 0.44,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7441,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1248,
+            "attacker_base_score": 0.6766,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9677,
+            "damage_factor": 0.4,
+            "excess": 0.312,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7151,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.086,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.8706,
+            "damage_factor": 0.4,
+            "excess": 0.215,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.738,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.077,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8482,
+            "damage_factor": 0.4,
+            "excess": 0.1925,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6851,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.382,
+        "base_score": 0.6556760784563236,
+        "cogency": 0.6025315177480396,
+        "cogency_details": {
+          "argument_quality_score": 0.6719574396547329,
+          "coherence_score": 0.5331055958413463,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Le testimonianze contrastanti e il verbale della polizia non forniscono una prova certa della violazione del dovere di diligenza da parte del manutentore; pertanto, ai sensi dell’art. 2051 c.c., la responsabilità per il danno non può essere imputata al custode senza che il danneggiato dimostri la sua colpa, gravando sull’attore l’onere della prova.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6556760784563236,
+        "nesso_plausibility": 0.2736760784563236,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nel contesto in esame non è stata dimostrata la prevedibilità dell’apertura del cancello né la ricorrenza di fuochi artificiali nella zona, elementi che il proprietario attribuisce al manutentore e a circostanze esterne; in assenza di prova che tali eventi fossero abituali o attesi, si può configurare un caso fortuito ai sensi dell’art. 2051 c.c., che esclude la responsabilità oggettiva per il danno cagionato dalla cosa in custodia. Pertanto la responsabilità del proprietario non può essere automaticamente affermata.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.545576888673634,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.545576888673634
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Nel contesto in esame non è stata dimostrata la prevedibilità dell’apertura del cancello né la ricorrenza di fuochi artificiali nella zona, elementi che il proprietario attribuisce al manutentore e a circostanze esterne; in assenza di prova che tali eventi fossero abituali o attesi, si può configurare un caso fortuito ai sensi dell’art. 2051 c.c., che esclude la responsabilità oggettiva per il danno cagionato dalla cosa in custodia. Pertanto la responsabilità del proprietario non può essere automaticamente affermata."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2256,
+            "attacker_base_score": 0.7815,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2893,
+            "damage_factor": 0.4,
+            "excess": 0.5641,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8249,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2027,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.232,
+            "damage_factor": 0.4,
+            "excess": 0.5068,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8458,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1515,
+            "attacker_base_score": 0.7362,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1039,
+            "damage_factor": 0.4,
+            "excess": 0.3786,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7497,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1392,
+            "attacker_base_score": 0.7711,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0733,
+            "damage_factor": 0.4,
+            "excess": 0.348,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.696,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1095,
+            "attacker_base_score": 0.6766,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9989,
+            "damage_factor": 0.4,
+            "excess": 0.2737,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7382,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0765,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.9166,
+            "damage_factor": 0.4,
+            "excess": 0.1914,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.777,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4283,
+        "base_score": 0.7252495391000832,
+        "cogency": 0.6009191987623796,
+        "cogency_details": {
+          "argument_quality_score": 0.6290818217046525,
+          "coherence_score": 0.5727565758201068,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La condotta del ciclista, seppur caratterizzata da alta velocità in discesa e dall’assenza di luci anteriori, non costituisce causa del morso subito, poiché l’aggressione è stata determinata esclusivamente dall’uscita del cane dal giardino, evento indipendente dalla modalità di percorrenza del ciclista. In base all’art. 1227 c.c., la diminuzione del risarcimento è ammessa solo se il fatto colposo del danneggiato ha concorso causalmente al danno; qui la velocità e la mancanza di illuminazione non hanno influito sulla fuga dell’animale né sul suo comportamento aggressivo, perciò non sussiste alcun nesso di causalità. Di conseguenza, non sussiste alcuna base per attribuire al ciclista una percentuale di colpa.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7252495391000832,
+        "nesso_plausibility": 0.29694953910008315,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Le testimonianze contrastanti e il verbale della polizia non forniscono una prova certa della violazione del dovere di diligenza da parte del manutentore; pertanto, ai sensi dell’art. 2051 c.c., la responsabilità per il danno non può essere imputata al custode senza che il danneggiato dimostri la sua colpa, gravando sull’attore l’onere della prova.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6116983249218231,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6116983249218231
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Le testimonianze contrastanti e il verbale della polizia non forniscono una prova certa della violazione del dovere di diligenza da parte del manutentore; pertanto, ai sensi dell’art. 2051 c.c., la responsabilità per il danno non può essere imputata al custode senza che il danneggiato dimostri la sua colpa, gravando sull’attore l’onere della prova."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1577,
+            "attacker_base_score": 0.7252,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0708,
+            "damage_factor": 0.4,
+            "excess": 0.3942,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7382,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6766,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0482,
+            "attacker_base_score": 0.6557,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7971,
+            "damage_factor": 0.4,
+            "excess": 0.1205,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7151,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6766,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2059,
+        "base_score": 0.6765765425023306,
+        "cogency": 0.6106504954680773,
+        "cogency_details": {
+          "argument_quality_score": 0.6420842299337295,
+          "coherence_score": 0.579216761002425,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 2052 c.c., il proprietario o il detentore dell’animale è tenuto al risarcimento per ogni danno cagionato dal cane anche quando l’animale è fuggito dal luogo di custodia, salvo che il proprietario provi l’esistenza di un caso fortuito che abbia reso inevitabile l’attacco; l’onere della prova grava sul proprietario (art. 2052 c.c.). Pertanto, la responsabilità dell’owner sussiste in via oggettiva finché non dimostri che i fuochi artificiali o l’apertura del cancello costituiscano un caso fortuito escludente la sua colpa.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6765765425023306,
+        "nesso_plausibility": 0.4706765425023306,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il cane di grossa taglia, normalmente mansueto, è uscito dal giardino perché il cancello è rimasto aperto, presumibilmente per negligenza del manutentore, ed ha aggredito un ciclista provocandogli fratture e danni alla bicicletta; il proprietario sostiene che l’animale sia stato spaventato da fuochi artificiali provenienti dalla zona. Il ciclista, in discesa ad alta velocità e privo di luci anteriori, è stato colpito dal cane; sono disponibili referti medici, verbale della polizia locale e testimonianze contrastanti sulla dinamica dell’incidente. Il proprietario invoca un concorso colposo del ciclista.",
+        "retrieved_norms": [
+          {
+            "articolo": "2052",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2141_art2052",
+            "title": "Danno cagionato da animali"
+          },
+          {
+            "articolo": "2052",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2141_art2052",
+            "title": "Danno cagionato da animali"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6071261244402867,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6071261244402867
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il cane di grossa taglia, normalmente mansueto, è uscito dal giardino perché il cancello è rimasto aperto, presumibilmente per negligenza del manutentore, ed ha aggredito un ciclista provocandogli fratture e danni alla bicicletta; il proprietario sostiene che l’animale sia stato spaventato da fuochi artificiali provenienti dalla zona. Il ciclista, in discesa ad alta velocità e privo di luci anteriori, è stato colpito dal cane; sono disponibili referti medici, verbale della polizia locale e testimonianze contrastanti sulla dinamica dell’incidente. Il proprietario invoca un concorso colposo del ciclista."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0954,
+            "attacker_base_score": 0.7252,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0095,
+            "damage_factor": 0.4,
+            "excess": 0.2384,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.696,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7711,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6557,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5647,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7177,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7711,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0954,
+        "base_score": 0.7710905910886214,
+        "cogency": 0.6352772165858117,
+        "cogency_details": {
+          "argument_quality_score": 0.6818956815596795,
+          "coherence_score": 0.5886587516119439,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1768 c.c., il custode dell’animale – in questo caso il proprietario, eventualmente co‑responsabile del manutentore che ha lasciato il cancello aperto – deve adottare nella custodia la diligenza del “buon padre di famiglia”, tenendo conto della pericolosità intrinseca di un cane di grossa taglia e del contesto (presenza di fuochi artificiali). Tale diligenza impone l’obbligo di verificare che tutti gli accessi al giardino siano chiusi e di adottare misure preventive adeguate (es. recinzioni rinforzate o sorveglianza) per evitare che l’animale possa fuggire e arrecare danni a terzi.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7710905910886214,
+        "nesso_plausibility": 0.6756905910886214,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 2052 c.c., il proprietario o il detentore dell’animale è tenuto al risarcimento per ogni danno cagionato dal cane anche quando l’animale è fuggito dal luogo di custodia, salvo che il proprietario provi l’esistenza di un caso fortuito che abbia reso inevitabile l’attacco; l’onere della prova grava sul proprietario (art. 2052 c.c.). Pertanto, la responsabilità dell’owner sussiste in via oggettiva finché non dimostri che i fuochi artificiali o l’apertura del cancello costituiscano un caso fortuito escludente la sua colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "2052",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2141_art2052",
+            "title": "Danno cagionato da animali"
+          },
+          {
+            "articolo": "2052",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2141_art2052",
+            "title": "Danno cagionato da animali"
+          },
+          {
+            "articolo": "1768",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1853_art1768",
+            "title": "Diligenza nella custodia"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7301438137268519,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7301438137268519
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2052 c.c., il proprietario o il detentore dell’animale è tenuto al risarcimento per ogni danno cagionato dal cane anche quando l’animale è fuggito dal luogo di custodia, salvo che il proprietario provi l’esistenza di un caso fortuito che abbia reso inevitabile l’attacco; l’onere della prova grava sul proprietario (art. 2052 c.c.). Pertanto, la responsabilità dell’owner sussiste in via oggettiva finché non dimostri che i fuochi artificiali o l’apertura del cancello costituiscano un caso fortuito escludente la sua colpa."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6557,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5854,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7441,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7362,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7252,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6524,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7497,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7362,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7362458088371069,
+        "cogency": 0.5928374318985419,
+        "cogency_details": {
+          "argument_quality_score": 0.6490679475967439,
+          "coherence_score": 0.53660691620034,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 2051 c.c., il caso fortuito può escludere la responsabilità del custode solo se l’evento è imprevedibile, non dipendente dalla sua attività e ha interrotto il nesso causale tra la cosa in custodia e il danno; i fuochi artificiali, pur essendo un evento esterno, risultano prevedibili in occasione di celebrazioni tipiche del periodo e, pertanto, non costituiscono caso fortuito che scagioni il proprietario dell’animale dal nesso causale con l’aggressione del ciclista.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7362458088371069,
+        "nesso_plausibility": 0.7362458088371069,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1768 c.c., il custode dell’animale – in questo caso il proprietario, eventualmente co‑responsabile del manutentore che ha lasciato il cancello aperto – deve adottare nella custodia la diligenza del “buon padre di famiglia”, tenendo conto della pericolosità intrinseca di un cane di grossa taglia e del contesto (presenza di fuochi artificiali). Tale diligenza impone l’obbligo di verificare che tutti gli accessi al giardino siano chiusi e di adottare misure preventive adeguate (es. recinzioni rinforzate o sorveglianza) per evitare che l’animale possa fuggire e arrecare danni a terzi.",
+        "retrieved_norms": [
+          {
+            "articolo": "1768",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1853_art1768",
+            "title": "Diligenza nella custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6564343242424064,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6564343242424064
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1768 c.c., il custode dell’animale – in questo caso il proprietario, eventualmente co‑responsabile del manutentore che ha lasciato il cancello aperto – deve adottare nella custodia la diligenza del “buon padre di famiglia”, tenendo conto della pericolosità intrinseca di un cane di grossa taglia e del contesto (presenza di fuochi artificiali). Tale diligenza impone l’obbligo di verificare che tutti gli accessi al giardino siano chiusi e di adottare misure preventive adeguate (es. recinzioni rinforzate o sorveglianza) per evitare che l’animale possa fuggire e arrecare danni a terzi."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6557,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5807,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.738,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6939,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7252,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6762,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.777,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6939,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.6939269407464986,
+        "cogency": 0.5764093619939252,
+        "cogency_details": {
+          "argument_quality_score": 0.6212224274416293,
+          "coherence_score": 0.5315962965462211,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Il ciclista, discendente a velocità elevata e privo di luci anteriori, ha violato le norme di circolazione e l’obbligo di adottare la diligenza del buon padre di famiglia, configurando un fatto colposo che ha concorso alla produzione del danno; ai sensi dell’art. 1227 c.c. il risarcimento dovrà essere diminuito in proporzione alla gravità della sua colpa e all’incidenza di tale condotta sulla lesione subita.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.6939269407464986,
+        "nesso_plausibility": 0.6939269407464986,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 2051 c.c., il caso fortuito può escludere la responsabilità del custode solo se l’evento è imprevedibile, non dipendente dalla sua attività e ha interrotto il nesso causale tra la cosa in custodia e il danno; i fuochi artificiali, pur essendo un evento esterno, risultano prevedibili in occasione di celebrazioni tipiche del periodo e, pertanto, non costituiscono caso fortuito che scagioni il proprietario dell’animale dal nesso causale con l’aggressione del ciclista.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5317995005116625,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5317995005116625
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2051 c.c., il caso fortuito può escludere la responsabilità del custode solo se l’evento è imprevedibile, non dipendente dalla sua attività e ha interrotto il nesso causale tra la cosa in custodia e il danno; i fuochi artificiali, pur essendo un evento esterno, risultano prevedibili in occasione di celebrazioni tipiche del periodo e, pertanto, non costituiscono caso fortuito che scagioni il proprietario dell’animale dal nesso causale con l’aggressione del ciclista."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0031,
+            "attacker_base_score": 0.7252,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7361,
+            "damage_factor": 0.4,
+            "excess": 0.0078,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8458,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7283,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6557,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.539,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6851,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7283,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0031,
+        "base_score": 0.7283161237856577,
+        "cogency": 0.5488050385246713,
+        "cogency_details": {
+          "argument_quality_score": 0.6227696254485395,
+          "coherence_score": 0.4748404516008031,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "In base all’art. 2055 c.c., se il danno è imputabile a più soggetti, tutti sono obbligati in solido al risarcimento; il manutentore, avendo lasciato il cancello aperto, ha concorso alla fuga del cane e quindi alla lesione del ciclista. Pertanto il proprietario dell’animale e il manutentore sono tenuti solidalmente al risarcimento, il soggetto che paga potrà esercitare regresso nei confronti dell’altro nella misura della rispettiva colpa.",
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7283161237856577,
+        "nesso_plausibility": 0.7252161237856577,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Il ciclista, discendente a velocità elevata e privo di luci anteriori, ha violato le norme di circolazione e l’obbligo di adottare la diligenza del buon padre di famiglia, configurando un fatto colposo che ha concorso alla produzione del danno; ai sensi dell’art. 1227 c.c. il risarcimento dovrà essere diminuito in proporzione alla gravità della sua colpa e all’incidenza di tale condotta sulla lesione subita.",
+        "retrieved_norms": [
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "2055",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2144_art2055",
+            "title": "Responsabilità solidale"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6740344341114464,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6740344341114464
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il ciclista, discendente a velocità elevata e privo di luci anteriori, ha violato le norme di circolazione e l’obbligo di adottare la diligenza del buon padre di famiglia, configurando un fatto colposo che ha concorso alla produzione del danno; ai sensi dell’art. 1227 c.c. il risarcimento dovrà essere diminuito in proporzione alla gravità della sua colpa e all’incidenza di tale condotta sulla lesione subita."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6557,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5836,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7418,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7815,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7252,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7179,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8249,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7815,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7815252770923179,
+        "cogency": 0.5865421011315688,
+        "cogency_details": {
+          "argument_quality_score": 0.6443128099756593,
+          "coherence_score": 0.5287713922874784,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà comprendere il danno emergente (spese mediche documentate, costo di riparazione o sostituzione della bicicletta) e il lucro cessante (eventuale perdita di reddito), oltre al danno non patrimoniale per le sofferenze fisiche subite, quantificati dal giudice con equo apprezzamento; tenuto conto del concorso colposo del ciclista, l’art. 1227 c.c. impone di ridurre la quota spettante al proprietario dell’animale nella misura proporzionale alla sua responsabilità (ad es., una riduzione del 30 %). L’ammontare finale sarà quindi la somma dei danni patrimoniali e non patrimoniali diminuita della percentuale di colpa attribuita al ciclista.",
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.7815252770923179,
+        "nesso_plausibility": 0.7815252770923179,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "In base all’art. 2055 c.c., se il danno è imputabile a più soggetti, tutti sono obbligati in solido al risarcimento; il manutentore, avendo lasciato il cancello aperto, ha concorso alla fuga del cane e quindi alla lesione del ciclista. Pertanto il proprietario dell’animale e il manutentore sono tenuti solidalmente al risarcimento, il soggetto che paga potrà esercitare regresso nei confronti dell’altro nella misura della rispettiva colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "2055",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2144_art2055",
+            "title": "Responsabilità solidale"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6852088225094906,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6852088225094906
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "In base all’art. 2055 c.c., se il danno è imputabile a più soggetti, tutti sono obbligati in solido al risarcimento; il manutentore, avendo lasciato il cancello aperto, ha concorso alla fuga del cane e quindi alla lesione del ciclista. Pertanto il proprietario dell’animale e il manutentore sono tenuti solidalmente al risarcimento, il soggetto che paga potrà esercitare regresso nei confronti dell’altro nella misura della rispettiva colpa."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.3069754520974566,
+    "contra_adjusted": 0.3069754520974566,
+    "contra_raw": 0.28531280877820336,
+    "final": 0.42430476191129896,
+    "final_adjusted": 0.42430476191129896,
+    "final_raw": 0.44596740523055217,
+    "pro": 0.7312802140087555,
+    "pro_adjusted": 0.7312802140087555,
+    "pro_raw": 0.7312802140087555,
+    "pro_raw_dialectical": 0.6805468806754221,
+    "pro_raw_intrinsic": 0.7312802140087555,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.8249,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2256
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8458,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2027
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7418,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2015
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7177,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1805
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7441,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.176
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7382,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1577
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7497,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1515
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.696,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1392
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7151,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1248
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7382,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1095
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 4,
+          "axis_details": [
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.6765765425023306,
+              "axis_id": "AX4",
+              "axis_quality": 0.1577,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.73250876591756,
+              "axis_id": "AX2",
+              "axis_quality": 0.0954,
+              "link_ids": [
+                "S2->S3",
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7549207004389877,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S6->S7",
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7362458088371069,
+              "axis_id": "AX3",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S3->S4"
+              ]
+            }
+          ],
+          "bonus": 0.0285558,
+          "coverage_ratio": 0.5,
+          "enabled": true,
+          "quality_avg": 0.063275,
+          "wpcs": 0.237965
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7508813419297458,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.006893156680746827,
+          "redundancy_index": 0.11029050689194923
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7437850324862955,
+          "high_similarity_pair_ratio": 0.7333333333333333,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.039119077046973434,
+          "redundancy_index": 0.15647630818789374
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2015,
+            "attacker_base_score": 0.7815,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1594,
+            "damage_factor": 0.4,
+            "excess": 0.5037,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7418,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1805,
+            "attacker_base_score": 0.7711,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1069,
+            "damage_factor": 0.4,
+            "excess": 0.4512,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7177,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.176,
+            "attacker_base_score": 0.7362,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0956,
+            "damage_factor": 0.4,
+            "excess": 0.44,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7441,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1248,
+            "attacker_base_score": 0.6766,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9677,
+            "damage_factor": 0.4,
+            "excess": 0.312,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7151,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.086,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.8706,
+            "damage_factor": 0.4,
+            "excess": 0.215,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.738,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.077,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.8482,
+            "damage_factor": 0.4,
+            "excess": 0.1925,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6851,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6557,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.382,
+        "base_score": 0.6556760784563236,
+        "cogency": 0.6025315177480396,
+        "cogency_details": {
+          "argument_quality_score": 0.6719574396547329,
+          "coherence_score": 0.5331055958413463,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Le testimonianze contrastanti e il verbale della polizia non forniscono una prova certa della violazione del dovere di diligenza da parte del manutentore; pertanto, ai sensi dell’art. 2051 c.c., la responsabilità per il danno non può essere imputata al custode senza che il danneggiato dimostri la sua colpa, gravando sull’attore l’onere della prova.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6556760784563236,
+        "nesso_plausibility": 0.2736760784563236,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nel contesto in esame non è stata dimostrata la prevedibilità dell’apertura del cancello né la ricorrenza di fuochi artificiali nella zona, elementi che il proprietario attribuisce al manutentore e a circostanze esterne; in assenza di prova che tali eventi fossero abituali o attesi, si può configurare un caso fortuito ai sensi dell’art. 2051 c.c., che esclude la responsabilità oggettiva per il danno cagionato dalla cosa in custodia. Pertanto la responsabilità del proprietario non può essere automaticamente affermata.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.545576888673634,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.545576888673634
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Nel contesto in esame non è stata dimostrata la prevedibilità dell’apertura del cancello né la ricorrenza di fuochi artificiali nella zona, elementi che il proprietario attribuisce al manutentore e a circostanze esterne; in assenza di prova che tali eventi fossero abituali o attesi, si può configurare un caso fortuito ai sensi dell’art. 2051 c.c., che esclude la responsabilità oggettiva per il danno cagionato dalla cosa in custodia. Pertanto la responsabilità del proprietario non può essere automaticamente affermata."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2256,
+            "attacker_base_score": 0.7815,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2893,
+            "damage_factor": 0.4,
+            "excess": 0.5641,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8249,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2027,
+            "attacker_base_score": 0.7283,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.232,
+            "damage_factor": 0.4,
+            "excess": 0.5068,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8458,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1515,
+            "attacker_base_score": 0.7362,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1039,
+            "damage_factor": 0.4,
+            "excess": 0.3786,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7497,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1392,
+            "attacker_base_score": 0.7711,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0733,
+            "damage_factor": 0.4,
+            "excess": 0.348,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.696,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1095,
+            "attacker_base_score": 0.6766,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9989,
+            "damage_factor": 0.4,
+            "excess": 0.2737,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7382,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0765,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.9166,
+            "damage_factor": 0.4,
+            "excess": 0.1914,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.777,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7252,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4283,
+        "base_score": 0.7252495391000832,
+        "cogency": 0.6009191987623796,
+        "cogency_details": {
+          "argument_quality_score": 0.6290818217046525,
+          "coherence_score": 0.5727565758201068,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La condotta del ciclista, seppur caratterizzata da alta velocità in discesa e dall’assenza di luci anteriori, non costituisce causa del morso subito, poiché l’aggressione è stata determinata esclusivamente dall’uscita del cane dal giardino, evento indipendente dalla modalità di percorrenza del ciclista. In base all’art. 1227 c.c., la diminuzione del risarcimento è ammessa solo se il fatto colposo del danneggiato ha concorso causalmente al danno; qui la velocità e la mancanza di illuminazione non hanno influito sulla fuga dell’animale né sul suo comportamento aggressivo, perciò non sussiste alcun nesso di causalità. Di conseguenza, non sussiste alcuna base per attribuire al ciclista una percentuale di colpa.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7252495391000832,
+        "nesso_plausibility": 0.29694953910008315,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Le testimonianze contrastanti e il verbale della polizia non forniscono una prova certa della violazione del dovere di diligenza da parte del manutentore; pertanto, ai sensi dell’art. 2051 c.c., la responsabilità per il danno non può essere imputata al custode senza che il danneggiato dimostri la sua colpa, gravando sull’attore l’onere della prova.",
+        "retrieved_norms": [
+          {
+            "articolo": "2051",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2140_art2051",
+            "title": "Danno cagionato da cosa in custodia"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6116983249218231,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6116983249218231
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Le testimonianze contrastanti e il verbale della polizia non forniscono una prova certa della violazione del dovere di diligenza da parte del manutentore; pertanto, ai sensi dell’art. 2051 c.c., la responsabilità per il danno non può essere imputata al custode senza che il danneggiato dimostri la sua colpa, gravando sull’attore l’onere della prova."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1577,
+            "attacker_base_score": 0.7252,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0708,
+            "damage_factor": 0.4,
+            "excess": 0.3942,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7382,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6766,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0482,
+            "attacker_base_score": 0.6557,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7971,
+            "damage_factor": 0.4,
+            "excess": 0.1205,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7151,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6766,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2059,
+        "base_score": 0.6765765425023306,
+        "cogency": 0.6106504954680773,
+        "cogency_details": {
+          "argument_quality_score": 0.6420842299337295,
+          "coherence_score": 0.579216761002425,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 2052 c.c., il proprietario o il detentore dell’animale è tenuto al risarcimento per ogni danno cagionato dal cane anche quando l’animale è fuggito dal luogo di custodia, salvo che il proprietario provi l’esistenza di un caso fortuito che abbia reso inevitabile l’attacco; l’onere della prova grava sul proprietario (art. 2052 c.c.). Pertanto, la responsabilità dell’owner sussiste in via oggettiva finché non dimostri che i fuochi artificiali o l’apertura del cancello costituiscano un caso fortuito escludente la sua colpa.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6765765425023306,
+        "nesso_plausibility": 0.4706765425023306,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il cane di grossa taglia, normalmente mansueto, è uscito dal giardino perché il cancello è rimasto aperto, presumibilmente per negligenza del manutentore, ed ha aggredito un ciclista provocandogli fratture e danni alla bicicletta; il proprietario sostiene che l’animale sia stato spaventato da fuochi artificiali provenienti dalla zona. Il ciclista, in discesa ad alta velocità e privo di luci anteriori, è stato colpito dal cane; sono disponibili referti medici, verbale della polizia locale e testimonianze contrastanti sulla dinamica dell’incidente. Il proprietario invoca un concorso colposo del ciclista.",
+        "retrieved_norms": [
+          {
+            "articolo": "2052",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2141_art2052",
+            "title": "Danno cagionato da animali"
+          },
+          {
+            "articolo": "2052",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2141_art2052",
+            "title": "Danno cagionato da animali"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6071261244402867,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6071261244402867
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il cane di grossa taglia, normalmente mansueto, è uscito dal giardino perché il cancello è rimasto aperto, presumibilmente per negligenza del manutentore, ed ha aggredito un ciclista provocandogli fratture e danni alla bicicletta; il proprietario sostiene che l’animale sia stato spaventato da fuochi artificiali provenienti dalla zona. Il ciclista, in discesa ad alta velocità e privo di luci anteriori, è stato colpito dal cane; sono disponibili referti medici, verbale della polizia locale e testimonianze contrastanti sulla dinamica dell’incidente. Il proprietario invoca un concorso colposo del ciclista."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

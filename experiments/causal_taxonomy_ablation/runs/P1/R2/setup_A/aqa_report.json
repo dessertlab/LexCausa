@@ -1,0 +1,1566 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.0387032,
+      "attack_coverage_ratio": 0.6666666666666666,
+      "attack_coverage_score": 0.3225266666666667,
+      "attacks_avg": 0.38580000000000003,
+      "base_score_avg": 0.7310590839419351,
+      "cogency_avg": 0.6825275317224753,
+      "net_plausibility": 0.38177407578953876,
+      "net_plausibility_adjusted": 0.38177407578953876,
+      "net_plausibility_raw": 0.345259083941935,
+      "norm_support_avg": 0.7908847981558047,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.03501133043834005,
+      "redundancy_penalty": 0.0021882081523962532,
+      "semantics_avg": 0.6998230172095683
+    },
+    "pro": {
+      "attacks_avg": 0.07078,
+      "base_score_avg": 0.7502615551627023,
+      "cogency_avg": 0.64113478350626,
+      "net_plausibility": 0.7502615551627023,
+      "net_plausibility_adjusted": 0.7502615551627023,
+      "net_plausibility_dialectical_raw": 0.6794815551627023,
+      "net_plausibility_intrinsic_raw": 0.7502615551627023,
+      "net_plausibility_raw": 0.7502615551627023,
+      "norm_support_avg": 0.8570860602597332,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.26106236999475063,
+      "redundancy_penalty": 0.06526559249868766,
+      "semantics_avg": 0.7169556533564367
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2476,
+            "attacker_base_score": 0.7812,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.357,
+            "damage_factor": 0.4,
+            "excess": 0.619,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8685,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1897,
+            "attacker_base_score": 0.7616,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2121,
+            "damage_factor": 0.4,
+            "excess": 0.4741,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7957,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1811,
+            "attacker_base_score": 0.7443,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1906,
+            "damage_factor": 0.4,
+            "excess": 0.4526,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7999,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1079,
+            "attacker_base_score": 0.7346,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0077,
+            "damage_factor": 0.4,
+            "excess": 0.2697,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8069,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0033,
+            "attacker_base_score": 0.7296,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7463,
+            "damage_factor": 0.4,
+            "excess": 0.0084,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8524,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.44060000000000005,
+        "base_score": 0.7379724441254136,
+        "cogency": 0.6663984165203489,
+        "cogency_details": {
+          "argument_quality_score": 0.7271951215773744,
+          "coherence_score": 0.6056017114633233,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "I sei bonifici di € 45 000, restituiti integralmente con interessi legali entro otto mesi, configurano un mutuo concesso dalla società ai creditori personali dell’amministratore e non un prelievo indebito, poiché l’operazione è stata accompagnata dall’obbligo di restituzione; ai sensi dell’art. 646 c.p., il reato di appropriazione indebita richiede la presenza di un ingiusto profitto, elemento che manca quando il denaro è destinato a un prestito da restituire; la restituzione con interessi dimostra l’assenza di profitto illecito, rendendo quindi inappropriata la qualificazione penale di appropriazione indebita.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7379724441254136,
+        "nesso_plausibility": 0.2973724441254136,
+        "norm_support": 0.803660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.803660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.6666666666666666
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Poiché l’amministratore ha agito credendo di disporre di un’autorizzazione verbale di due soci, non può essere riconosciuto il dolo specifico previsto dall’art. 42 c.p., che richiede la consapevolezza dell’illiceità del proprio operato; la buona fede fondata su un consenso verbale, anche se non formalizzato, esclude la volontà di procurare a sé o ad altri un ingiusto profitto. In assenza di prova certa che l’amministratore sapesse dell’inesistenza di una delibera valida, il requisito soggettivo del reato di appropriazione indebita (art. 646 c.p.) non è soddisfatto.",
+        "retrieved_norms": [
+          {
+            "articolo": "42",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": "codice_penale"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7219621239149548,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7219621239149548
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Poiché l’amministratore ha agito credendo di disporre di un’autorizzazione verbale di due soci, non può essere riconosciuto il dolo specifico previsto dall’art. 42 c.p., che richiede la consapevolezza dell’illiceità del proprio operato; la buona fede fondata su un consenso verbale, anche se non formalizzato, esclude la volontà di procurare a sé o ad altri un ingiusto profitto. In assenza di prova certa che l’amministratore sapesse dell’inesistenza di una delibera valida, il requisito soggettivo del reato di appropriazione indebita (art. 646 c.p.) non è soddisfatto."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2223,
+            "attacker_base_score": 0.7812,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2799,
+            "damage_factor": 0.4,
+            "excess": 0.5558,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8192,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1087,
+            "attacker_base_score": 0.7346,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.996,
+            "damage_factor": 0.4,
+            "excess": 0.2718,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7976,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7296,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7136,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7616,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.6853,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7498,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7443,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6292,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8051,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.331,
+        "base_score": 0.7241457237584564,
+        "cogency": 0.6986566469246015,
+        "cogency_details": {
+          "argument_quality_score": 0.7235223499387196,
+          "coherence_score": 0.6737909439104834,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il fatto che i bonifici siano stati effettuati senza deliberazione scritta non integra, di per sé, il reato di appropriazione indebita previsto dall’art. 646 c.p., poiché tale norma punisce chi si appropria di denaro altrui con l’intento di procurarsi un profitto ingiusto; la mera violazione dell’obbligo di verbalizzazione è una infrazione di natura amministrativa e di diritto societario, disciplinata dagli artt. 2477‑2479 c.c. e dalle norme sulla gestione fiduciaria, e non costituisce elemento costitutivo di appropriazione. Pertanto, l’assenza di una delibera formale può dar luogo a responsabilità civile per violazione dei doveri di amministratore, ma non a configurare il dolo richiesto dall’art. 646 c.p.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7241457237584564,
+        "nesso_plausibility": 0.3931457237584564,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "I sei bonifici di € 45 000, restituiti integralmente con interessi legali entro otto mesi, configurano un mutuo concesso dalla società ai creditori personali dell’amministratore e non un prelievo indebito, poiché l’operazione è stata accompagnata dall’obbligo di restituzione; ai sensi dell’art. 646 c.p., il reato di appropriazione indebita richiede la presenza di un ingiusto profitto, elemento che manca quando il denaro è destinato a un prestito da restituire; la restituzione con interessi dimostra l’assenza di profitto illecito, rendendo quindi inappropriata la qualificazione penale di appropriazione indebita.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6776839105041816,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6776839105041816
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "I sei bonifici di € 45 000, restituiti integralmente con interessi legali entro otto mesi, configurano un mutuo concesso dalla società ai creditori personali dell’amministratore e non un prelievo indebito, poiché l’operazione è stata accompagnata dall’obbligo di restituzione; ai sensi dell’art. 646 c.p., il reato di appropriazione indebita richiede la presenza di un ingiusto profitto, elemento che manca quando il denaro è destinato a un prestito da restituire; la restituzione con interessi dimostra l’assenza di profitto illecito, rendendo quindi inappropriata la qualificazione penale di appropriazione indebita."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1804,
+            "attacker_base_score": 0.7241,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1805,
+            "damage_factor": 0.4,
+            "excess": 0.4509,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7296,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0101,
+            "attacker_base_score": 0.738,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7549,
+            "damage_factor": 0.4,
+            "excess": 0.0253,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8524,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7296,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1905,
+        "base_score": 0.7295899474904232,
+        "cogency": 0.6715841317114704,
+        "cogency_details": {
+          "argument_quality_score": 0.6219885950484549,
+          "coherence_score": 0.7211796683744858,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La condotta dell’amministratore unico si configura ai sensi dell’art. 646 c.p. come appropriazione indebita, poiché, in virtù del possesso fiduciario dei fondi societari, ha disposto sei bonifici per € 45.000 verso creditori personali senza alcuna deliberazione formale o autorizzazione dei soci, procurandosi così un ingiusto profitto personale. Tale operazione, effettuata al di fuori delle norme statutarie e dell’obbligo di verbalizzazione, soddisfa gli elementi costitutivi dell’articolo citato.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7295899474904232,
+        "nesso_plausibility": 0.5390899474904232,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Si ricostruiscono i fatti essenziali: l’amministratore unico di una s.r.l. ha disposto sei bonifici per un totale di €45.000 dal conto sociale verso creditori personali, sostenendo che si trattasse di un “prestito ponte” autorizzato verbalmente da due soci e poi restituito integralmente dopo otto mesi con gli interessi legali; i soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e segnalando che, nello stesso periodo, la società ha pagato in ritardo fornitori strategici.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.722903838157202,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.722903838157202
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Si ricostruiscono i fatti essenziali: l’amministratore unico di una s.r.l. ha disposto sei bonifici per un totale di €45.000 dal conto sociale verso creditori personali, sostenendo che si trattasse di un “prestito ponte” autorizzato verbalmente da due soci e poi restituito integralmente dopo otto mesi con gli interessi legali; i soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e segnalando che, nello stesso periodo, la società ha pagato in ritardo fornitori strategici."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.738,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7691,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8685,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7812,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7241,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7118,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8192,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7812,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7812433532017531,
+        "cogency": 0.6340288696352341,
+        "cogency_details": {
+          "argument_quality_score": 0.6636988511252511,
+          "coherence_score": 0.604358888145217,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 42 c.p., il dolo si configura quando l’amministratore, consapevole dell’assenza di una deliberazione societaria valida – dato che non esiste alcuna verbalizzazione e i soci di minoranza negano l’autorizzazione – dispone i bonifici per realizzare un profitto personale, cioè il rimborso dei propri creditori, sapendo che tale operazione non è legittima. La pretesa di un “prestito ponte” autorizzato verbalmente da due soci, priva di prova documentale, non elimina la consapevolezza dell’illiceità della condotta, configurando così l’elemento soggettivo richiesto dall’art. 42 c.p. (dolo).",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7812433532017531,
+        "nesso_plausibility": 0.7812433532017531,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La condotta dell’amministratore unico si configura ai sensi dell’art. 646 c.p. come appropriazione indebita, poiché, in virtù del possesso fiduciario dei fondi societari, ha disposto sei bonifici per € 45.000 verso creditori personali senza alcuna deliberazione formale o autorizzazione dei soci, procurandosi così un ingiusto profitto personale. Tale operazione, effettuata al di fuori delle norme statutarie e dell’obbligo di verbalizzazione, soddisfa gli elementi costitutivi dell’articolo citato.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "42",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "42",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7652347010545348,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7652347010545348
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La condotta dell’amministratore unico si configura ai sensi dell’art. 646 c.p. come appropriazione indebita, poiché, in virtù del possesso fiduciario dei fondi societari, ha disposto sei bonifici per € 45.000 verso creditori personali senza alcuna deliberazione formale o autorizzazione dei soci, procurandosi così un ingiusto profitto personale. Tale operazione, effettuata al di fuori delle norme statutarie e dell’obbligo di verbalizzazione, soddisfa gli elementi costitutivi dell’articolo citato."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0645,
+            "attacker_base_score": 0.7241,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.923,
+            "damage_factor": 0.4,
+            "excess": 0.1614,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7498,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7616,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.738,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7047,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7957,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7616,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0645,
+        "base_score": 0.761633852291737,
+        "cogency": 0.5847370465189128,
+        "cogency_details": {
+          "argument_quality_score": 0.6648581478724053,
+          "coherence_score": 0.5046159451654203,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 40 c.p. il nesso causale tra i sei bonifici non autorizzati e i ritardi nei pagamenti ai fornitori sussiste, poiché la sottrazione di liquidità dal conto sociale ha determinato direttamente la mancanza di mezzi per adempiere alle obbligazioni creditorie. Secondo l’art. 41 c.p., la restituzione avvenuta otto mesi dopo non è una causa sopravvenuta da sola sufficiente a spezzare il nesso, in quanto il danno patrimoniale si era già verificato prima del rimborso e la successiva restituzione non ha annullato la carenza di disponibilità che ha prodotto i ritardi. Di conseguenza, la restituzione tardiva non interrompe il rapporto di causalità necessario per configurare il reato di appropriazione indebita.",
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.761633852291737,
+        "nesso_plausibility": 0.697133852291737,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 42 c.p., il dolo si configura quando l’amministratore, consapevole dell’assenza di una deliberazione societaria valida – dato che non esiste alcuna verbalizzazione e i soci di minoranza negano l’autorizzazione – dispone i bonifici per realizzare un profitto personale, cioè il rimborso dei propri creditori, sapendo che tale operazione non è legittima. La pretesa di un “prestito ponte” autorizzato verbalmente da due soci, priva di prova documentale, non elimina la consapevolezza dell’illiceità della condotta, configurando così l’elemento soggettivo richiesto dall’art. 42 c.p. (dolo).",
+        "retrieved_norms": [
+          {
+            "articolo": "42",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "42",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6207091277868773,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6207091277868773
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 42 c.p., il dolo si configura quando l’amministratore, consapevole dell’assenza di una deliberazione societaria valida – dato che non esiste alcuna verbalizzazione e i soci di minoranza negano l’autorizzazione – dispone i bonifici per realizzare un profitto personale, cioè il rimborso dei propri creditori, sapendo che tale operazione non è legittima. La pretesa di un “prestito ponte” autorizzato verbalmente da due soci, priva di prova documentale, non elimina la consapevolezza dell’illiceità della condotta, configurando così l’elemento soggettivo richiesto dall’art. 42 c.p. (dolo)."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.738,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7083,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7999,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7443,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7241,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6996,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8051,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7443,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7442547568635578,
+        "cogency": 0.6216176450805487,
+        "cogency_details": {
+          "argument_quality_score": 0.7041639622326544,
+          "coherence_score": 0.539071327928443,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "La restituzione integrale dei 45 000 euro con gli interessi legali, seppur tardiva, può costituire una circostanza attenuante di “restituzione del profitto” prevista dall’art. 518‑septiesdecies c.p., riducendo la gravità della pena; tuttavia, il ritardo nella restituzione ha aggravato il danno patrimoniale della società, poiché ha determinato il pagamento in ritardo ai fornitori strategici, configurando un danno concreto e non riparato al momento dell’evento. L’assenza di deliberazione formale dei soci, pur configurando una violazione delle norme societarie, non elimina la responsabilità penale per appropriazione indebita, ma può essere valutata come elemento aggravante di negligenza nella gestione societaria. In sintesi, la combinazione di restituzione tardiva (attenuante) e danno ai creditori terzi e mancata formalizzazione (aggravanti) dovrà essere ponderata dal giudice ai sensi dell’art. 518‑septiesdecies c.p. per determinare l’entità della pena.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7442547568635578,
+        "nesso_plausibility": 0.7442547568635578,
+        "norm_support": 0.8999999999999999,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 0.8999999999999999,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.6666666666666666
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 40 c.p. il nesso causale tra i sei bonifici non autorizzati e i ritardi nei pagamenti ai fornitori sussiste, poiché la sottrazione di liquidità dal conto sociale ha determinato direttamente la mancanza di mezzi per adempiere alle obbligazioni creditorie. Secondo l’art. 41 c.p., la restituzione avvenuta otto mesi dopo non è una causa sopravvenuta da sola sufficiente a spezzare il nesso, in quanto il danno patrimoniale si era già verificato prima del rimborso e la successiva restituzione non ha annullato la carenza di disponibilità che ha prodotto i ritardi. Di conseguenza, la restituzione tardiva non interrompe il rapporto di causalità necessario per configurare il reato di appropriazione indebita.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6592315444646439,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6592315444646439
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 40 c.p. il nesso causale tra i sei bonifici non autorizzati e i ritardi nei pagamenti ai fornitori sussiste, poiché la sottrazione di liquidità dal conto sociale ha determinato direttamente la mancanza di mezzi per adempiere alle obbligazioni creditorie. Secondo l’art. 41 c.p., la restituzione avvenuta otto mesi dopo non è una causa sopravvenuta da sola sufficiente a spezzare il nesso, in quanto il danno patrimoniale si era già verificato prima del rimborso e la successiva restituzione non ha annullato la carenza di disponibilità che ha prodotto i ritardi. Di conseguenza, la restituzione tardiva non interrompe il rapporto di causalità necessario per configurare il reato di appropriazione indebita."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0989,
+            "attacker_base_score": 0.7241,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9818,
+            "damage_factor": 0.4,
+            "excess": 0.2472,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7976,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7346,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.738,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7146,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8069,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7346,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.0989,
+        "base_score": 0.7345858659660405,
+        "cogency": 0.6937062245851338,
+        "cogency_details": {
+          "argument_quality_score": 0.7190446276183288,
+          "coherence_score": 0.6683678215519387,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "La condotta dell’amministratore si configura come delitto consumato al momento del versamento dei bonifici, poiché l’assenza di deliberazione societaria dimostra la mancanza di legittimazione a disporre del patrimonio sociale e quindi la presenza di dolo di appropriarsi indebitamente di denaro altrui; la successiva restituzione, per quanto integrale e con interessi, costituisce solo una circostanza attenuante di “restituzione del profitto” (art. 518‑septiesdecies c.p.) e non estingue la responsabilità penale né interrompe il nesso causale previsto dagli artt. 40 e 41 c.p. In conclusione, l’amministratore è penalmente responsabile per appropriazione indebita dolosa ai sensi dell’art. 646 c.p., con possibile riduzione della pena ma senza escludere la punibilità.",
+        "libro": "CP Libro II",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7345858659660405,
+        "nesso_plausibility": 0.6356858659660405,
+        "norm_support": 0.703660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.703660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.3333333333333333
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "La restituzione integrale dei 45 000 euro con gli interessi legali, seppur tardiva, può costituire una circostanza attenuante di “restituzione del profitto” prevista dall’art. 518‑septiesdecies c.p., riducendo la gravità della pena; tuttavia, il ritardo nella restituzione ha aggravato il danno patrimoniale della società, poiché ha determinato il pagamento in ritardo ai fornitori strategici, configurando un danno concreto e non riparato al momento dell’evento. L’assenza di deliberazione formale dei soci, pur configurando una violazione delle norme societarie, non elimina la responsabilità penale per appropriazione indebita, ma può essere valutata come elemento aggravante di negligenza nella gestione societaria. In sintesi, la combinazione di restituzione tardiva (attenuante) e danno ai creditori terzi e mancata formalizzazione (aggravanti) dovrà essere ponderata dal giudice ai sensi dell’art. 518‑septiesdecies c.p. per determinare l’entità della pena.",
+        "retrieved_norms": [
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8166990553189263,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8166990553189263
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La restituzione integrale dei 45 000 euro con gli interessi legali, seppur tardiva, può costituire una circostanza attenuante di “restituzione del profitto” prevista dall’art. 518‑septiesdecies c.p., riducendo la gravità della pena; tuttavia, il ritardo nella restituzione ha aggravato il danno patrimoniale della società, poiché ha determinato il pagamento in ritardo ai fornitori strategici, configurando un danno concreto e non riparato al momento dell’evento. L’assenza di deliberazione formale dei soci, pur configurando una violazione delle norme societarie, non elimina la responsabilità penale per appropriazione indebita, ma può essere valutata come elemento aggravante di negligenza nella gestione societaria. In sintesi, la combinazione di restituzione tardiva (attenuante) e danno ai creditori terzi e mancata formalizzazione (aggravanti) dovrà essere ponderata dal giudice ai sensi dell’art. 518‑septiesdecies c.p. per determinare l’entità della pena."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.38177407578953876,
+    "contra_adjusted": 0.38177407578953876,
+    "contra_raw": 0.345259083941935,
+    "final": 0.36848747937316356,
+    "final_adjusted": 0.36848747937316356,
+    "final_raw": 0.4050024712207673,
+    "pro": 0.7502615551627023,
+    "pro_adjusted": 0.7502615551627023,
+    "pro_raw": 0.7502615551627023,
+    "pro_raw_dialectical": 0.6794815551627023,
+    "pro_raw_intrinsic": 0.7502615551627023,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8685,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2476
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8192,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2223
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7957,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1897
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.7999,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1811
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8151,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1804
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.7976,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1087
+      },
+      {
+        "attacker": "S5->S6",
+        "attacker_role": "support",
+        "overlap": 0.8069,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1079
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7976,
+        "target": "S5->S6",
+        "target_role": "support",
+        "value": 0.0989
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7498,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.0645
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8524,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.0101
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7574890509946378,
+              "axis_id": "AX1",
+              "axis_quality": 0.1804,
+              "link_ids": [
+                "S2->S3",
+                "S3->S4",
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7345858659660405,
+              "axis_id": "AX3",
+              "axis_quality": 0.0989,
+              "link_ids": [
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7442547568635578,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S4->S5"
+              ]
+            }
+          ],
+          "bonus": 0.0387032,
+          "coverage_ratio": 0.6666666666666666,
+          "enabled": true,
+          "quality_avg": 0.0931,
+          "wpcs": 0.3225266666666667
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7298031725227352,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0021882081523962532,
+          "redundancy_index": 0.03501133043834005
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7211458139334439,
+          "high_similarity_pair_ratio": 0.5,
+          "links_count": 5,
+          "pair_count": 10,
+          "penalty": 0.06526559249868766,
+          "redundancy_index": 0.26106236999475063
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2476,
+            "attacker_base_score": 0.7812,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.357,
+            "damage_factor": 0.4,
+            "excess": 0.619,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8685,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1897,
+            "attacker_base_score": 0.7616,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2121,
+            "damage_factor": 0.4,
+            "excess": 0.4741,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7957,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1811,
+            "attacker_base_score": 0.7443,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1906,
+            "damage_factor": 0.4,
+            "excess": 0.4526,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7999,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1079,
+            "attacker_base_score": 0.7346,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.0077,
+            "damage_factor": 0.4,
+            "excess": 0.2697,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8069,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0033,
+            "attacker_base_score": 0.7296,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7463,
+            "damage_factor": 0.4,
+            "excess": 0.0084,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8524,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.738,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.44060000000000005,
+        "base_score": 0.7379724441254136,
+        "cogency": 0.6663984165203489,
+        "cogency_details": {
+          "argument_quality_score": 0.7271951215773744,
+          "coherence_score": 0.6056017114633233,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "I sei bonifici di € 45 000, restituiti integralmente con interessi legali entro otto mesi, configurano un mutuo concesso dalla società ai creditori personali dell’amministratore e non un prelievo indebito, poiché l’operazione è stata accompagnata dall’obbligo di restituzione; ai sensi dell’art. 646 c.p., il reato di appropriazione indebita richiede la presenza di un ingiusto profitto, elemento che manca quando il denaro è destinato a un prestito da restituire; la restituzione con interessi dimostra l’assenza di profitto illecito, rendendo quindi inappropriata la qualificazione penale di appropriazione indebita.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7379724441254136,
+        "nesso_plausibility": 0.2973724441254136,
+        "norm_support": 0.803660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.803660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.6666666666666666
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Poiché l’amministratore ha agito credendo di disporre di un’autorizzazione verbale di due soci, non può essere riconosciuto il dolo specifico previsto dall’art. 42 c.p., che richiede la consapevolezza dell’illiceità del proprio operato; la buona fede fondata su un consenso verbale, anche se non formalizzato, esclude la volontà di procurare a sé o ad altri un ingiusto profitto. In assenza di prova certa che l’amministratore sapesse dell’inesistenza di una delibera valida, il requisito soggettivo del reato di appropriazione indebita (art. 646 c.p.) non è soddisfatto.",
+        "retrieved_norms": [
+          {
+            "articolo": "42",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": "codice_penale"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7219621239149548,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7219621239149548
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Poiché l’amministratore ha agito credendo di disporre di un’autorizzazione verbale di due soci, non può essere riconosciuto il dolo specifico previsto dall’art. 42 c.p., che richiede la consapevolezza dell’illiceità del proprio operato; la buona fede fondata su un consenso verbale, anche se non formalizzato, esclude la volontà di procurare a sé o ad altri un ingiusto profitto. In assenza di prova certa che l’amministratore sapesse dell’inesistenza di una delibera valida, il requisito soggettivo del reato di appropriazione indebita (art. 646 c.p.) non è soddisfatto."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2223,
+            "attacker_base_score": 0.7812,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2799,
+            "damage_factor": 0.4,
+            "excess": 0.5558,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8192,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1087,
+            "attacker_base_score": 0.7346,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.996,
+            "damage_factor": 0.4,
+            "excess": 0.2718,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7976,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7296,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7136,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7616,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.6853,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7498,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7443,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6292,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8051,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7241,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.331,
+        "base_score": 0.7241457237584564,
+        "cogency": 0.6986566469246015,
+        "cogency_details": {
+          "argument_quality_score": 0.7235223499387196,
+          "coherence_score": 0.6737909439104834,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il fatto che i bonifici siano stati effettuati senza deliberazione scritta non integra, di per sé, il reato di appropriazione indebita previsto dall’art. 646 c.p., poiché tale norma punisce chi si appropria di denaro altrui con l’intento di procurarsi un profitto ingiusto; la mera violazione dell’obbligo di verbalizzazione è una infrazione di natura amministrativa e di diritto societario, disciplinata dagli artt. 2477‑2479 c.c. e dalle norme sulla gestione fiduciaria, e non costituisce elemento costitutivo di appropriazione. Pertanto, l’assenza di una delibera formale può dar luogo a responsabilità civile per violazione dei doveri di amministratore, ma non a configurare il dolo richiesto dall’art. 646 c.p.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7241457237584564,
+        "nesso_plausibility": 0.3931457237584564,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "I sei bonifici di € 45 000, restituiti integralmente con interessi legali entro otto mesi, configurano un mutuo concesso dalla società ai creditori personali dell’amministratore e non un prelievo indebito, poiché l’operazione è stata accompagnata dall’obbligo di restituzione; ai sensi dell’art. 646 c.p., il reato di appropriazione indebita richiede la presenza di un ingiusto profitto, elemento che manca quando il denaro è destinato a un prestito da restituire; la restituzione con interessi dimostra l’assenza di profitto illecito, rendendo quindi inappropriata la qualificazione penale di appropriazione indebita.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          },
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6776839105041816,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6776839105041816
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "I sei bonifici di € 45 000, restituiti integralmente con interessi legali entro otto mesi, configurano un mutuo concesso dalla società ai creditori personali dell’amministratore e non un prelievo indebito, poiché l’operazione è stata accompagnata dall’obbligo di restituzione; ai sensi dell’art. 646 c.p., il reato di appropriazione indebita richiede la presenza di un ingiusto profitto, elemento che manca quando il denaro è destinato a un prestito da restituire; la restituzione con interessi dimostra l’assenza di profitto illecito, rendendo quindi inappropriata la qualificazione penale di appropriazione indebita."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1804,
+            "attacker_base_score": 0.7241,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1805,
+            "damage_factor": 0.4,
+            "excess": 0.4509,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7296,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0101,
+            "attacker_base_score": 0.738,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7549,
+            "damage_factor": 0.4,
+            "excess": 0.0253,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8524,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7296,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1905,
+        "base_score": 0.7295899474904232,
+        "cogency": 0.6715841317114704,
+        "cogency_details": {
+          "argument_quality_score": 0.6219885950484549,
+          "coherence_score": 0.7211796683744858,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La condotta dell’amministratore unico si configura ai sensi dell’art. 646 c.p. come appropriazione indebita, poiché, in virtù del possesso fiduciario dei fondi societari, ha disposto sei bonifici per € 45.000 verso creditori personali senza alcuna deliberazione formale o autorizzazione dei soci, procurandosi così un ingiusto profitto personale. Tale operazione, effettuata al di fuori delle norme statutarie e dell’obbligo di verbalizzazione, soddisfa gli elementi costitutivi dell’articolo citato.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7295899474904232,
+        "nesso_plausibility": 0.5390899474904232,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Si ricostruiscono i fatti essenziali: l’amministratore unico di una s.r.l. ha disposto sei bonifici per un totale di €45.000 dal conto sociale verso creditori personali, sostenendo che si trattasse di un “prestito ponte” autorizzato verbalmente da due soci e poi restituito integralmente dopo otto mesi con gli interessi legali; i soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e segnalando che, nello stesso periodo, la società ha pagato in ritardo fornitori strategici.",
+        "retrieved_norms": [
+          {
+            "articolo": "646",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_883_646",
+            "title": "Appropriazione indebita"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.722903838157202,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.722903838157202
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Si ricostruiscono i fatti essenziali: l’amministratore unico di una s.r.l. ha disposto sei bonifici per un totale di €45.000 dal conto sociale verso creditori personali, sostenendo che si trattasse di un “prestito ponte” autorizzato verbalmente da due soci e poi restituito integralmente dopo otto mesi con gli interessi legali; i soci di minoranza contestano l’esistenza di qualsiasi deliberazione, evidenziando l’assenza di verbalizzazione e segnalando che, nello stesso periodo, la società ha pagato in ritardo fornitori strategici."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

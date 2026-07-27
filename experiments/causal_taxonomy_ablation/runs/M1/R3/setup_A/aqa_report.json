@@ -1,0 +1,1743 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 4,
+      "attack_coverage_bonus": 0.03083748,
+      "attack_coverage_ratio": 0.5,
+      "attack_coverage_score": 0.256979,
+      "attacks_avg": 0.19915,
+      "base_score_avg": 0.7788416350303128,
+      "cogency_avg": 0.6115605705403945,
+      "net_plausibility": 0.6080923065588074,
+      "net_plausibility_adjusted": 0.6080923065588074,
+      "net_plausibility_raw": 0.5796916350303127,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.038988935544085175,
+      "redundancy_penalty": 0.0024368084715053234,
+      "semantics_avg": 0.6512448795606482
+    },
+    "pro": {
+      "attacks_avg": 0.11886666666666668,
+      "base_score_avg": 0.7471492777989265,
+      "cogency_avg": 0.591473703564672,
+      "net_plausibility": 0.7471492777989265,
+      "net_plausibility_adjusted": 0.7471492777989265,
+      "net_plausibility_dialectical_raw": 0.6282826111322599,
+      "net_plausibility_intrinsic_raw": 0.7471492777989265,
+      "net_plausibility_raw": 0.7471492777989265,
+      "norm_support_avg": 0.951830352493528,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.1931648923059406,
+      "redundancy_penalty": 0.04829122307648515,
+      "semantics_avg": 0.6299167524403789
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "extinction",
+            "attack_value": 0.1366,
+            "attacker_base_score": 0.7271,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1536,
+            "damage_factor": 0.4,
+            "excess": 0.3416,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6897,
+            "reason": "active: extinction [NLI-bypass]",
+            "target_base_score": 0.812,
+            "type_multiplier": 2.3
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.046,
+            "attacker_base_score": 0.7203,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9271,
+            "damage_factor": 0.4,
+            "excess": 0.1151,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6435,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.812,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7422,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7292,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7228,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.4984,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6567,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.812,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7583,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.5084,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5963,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.812,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.18259999999999998,
+        "base_score": 0.8119605328832044,
+        "cogency": 0.64558353447948,
+        "cogency_details": {
+          "argument_quality_score": 0.7069481792043028,
+          "coherence_score": 0.5842188897546572,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1490 c.c., il venditore è tenuto a garantire l’assenza di vizi occulti e, in caso di contestazione, l’onere della prova della sua non conoscenza grava su di lui; pertanto spetta al venditore dimostrare che il macchinario era privo di difetti o che non ne era a conoscenza, non al compratore provare il contrario. Inoltre, l’art. 1494 c.c. prevede che il venditore risponde del danno salvo prova di aver ignorato il vizio senza colpa, rafforzando il ribaltamento dell’onere probatorio a suo carico.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.8119605328832044,
+        "nesso_plausibility": 0.6293605328832044,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "La clausola “come visto” non può escludere la garanzia per i vizi occulti, poiché l’art. 1490 c.c. prevede la responsabilità del venditore per difetti che rendono la cosa inidonea all’uso, salvo che il vizio fosse evidente al compratore; la consapevolezza del venditore dei difetti, dimostrata dalle chat, indica che il vizio era occulto e quindi non coperto dalla clausola. Inoltre, ai sensi dell’art. 1495 c.c. l’onere di provare l’assenza di dolo grava sul venditore, il quale non può avvalersi della clausola “come visto” per sottrarsi al rimedio della risoluzione del contratto.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.727618241797868,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.727618241797868
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La clausola “come visto” non può escludere la garanzia per i vizi occulti, poiché l’art. 1490 c.c. prevede la responsabilità del venditore per difetti che rendono la cosa inidonea all’uso, salvo che il vizio fosse evidente al compratore; la consapevolezza del venditore dei difetti, dimostrata dalle chat, indica che il vizio era occulto e quindi non coperto dalla clausola. Inoltre, ai sensi dell’art. 1495 c.c. l’onere di provare l’assenza di dolo grava sul venditore, il quale non può avvalersi della clausola “come visto” per sottrarsi al rimedio della risoluzione del contratto."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.127,
+            "attacker_base_score": 0.7203,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0632,
+            "damage_factor": 0.4,
+            "excess": 0.3175,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.738,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0887,
+            "attacker_base_score": 0.7271,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9676,
+            "damage_factor": 0.4,
+            "excess": 0.2219,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7827,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7422,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7303,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7228,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6129,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7066,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7583,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.6556,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7689,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.2157,
+        "base_score": 0.7457227371774212,
+        "cogency": 0.5775376066013089,
+        "cogency_details": {
+          "argument_quality_score": 0.7085679947641673,
+          "coherence_score": 0.44650721843845065,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c., il lucro cessante deve essere quantificato mediante prova certa dell’entità del danno patrimoniale subito; spetta al compratore dimostrare, con documentazione contabile o perizia, il reddito che il macchinario avrebbe prodotto. In assenza di tale evidenza, il giudice non può concedere un indennizzo basato su stime ipotetiche, ma è tenuto a limitare il risarcimento alle sole spese debitamente comprovate, come il prezzo pagato e gli eventuali costi di riparazione.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7457227371774212,
+        "nesso_plausibility": 0.5300227371774212,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1490 c.c., il venditore è tenuto a garantire l’assenza di vizi occulti e, in caso di contestazione, l’onere della prova della sua non conoscenza grava su di lui; pertanto spetta al venditore dimostrare che il macchinario era privo di difetti o che non ne era a conoscenza, non al compratore provare il contrario. Inoltre, l’art. 1494 c.c. prevede che il venditore risponde del danno salvo prova di aver ignorato il vizio senza colpa, rafforzando il ribaltamento dell’onere probatorio a suo carico.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5748715173234284,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5748715173234284
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1490 c.c., il venditore è tenuto a garantire l’assenza di vizi occulti e, in caso di contestazione, l’onere della prova della sua non conoscenza grava su di lui; pertanto spetta al venditore dimostrare che il macchinario era privo di difetti o che non ne era a conoscenza, non al compratore provare il contrario. Inoltre, l’art. 1494 c.c. prevede che il venditore risponde del danno salvo prova di aver ignorato il vizio senza colpa, rafforzando il ribaltamento dell’onere probatorio a suo carico."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1388,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0892,
+            "damage_factor": 0.4,
+            "excess": 0.347,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7303,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7422,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7292,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.1388,
+        "base_score": 0.7422042979984561,
+        "cogency": 0.6024200865845437,
+        "cogency_details": {
+          "argument_quality_score": 0.6081529682733456,
+          "coherence_score": 0.5966872048957419,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1495 c.c. il compratore deve denunciare i vizi al venditore entro otto giorni dalla scoperta del difetto, altrimenti decade dal diritto di garanzia; l’azione si prescrive comunque entro un anno dalla consegna. Pertanto, per valutare la validità della pretesa civile occorre accertare se l’acquirente abbia comunicato il vizio entro tale termine, elemento che al momento non risulta esplicitato nei fatti forniti. (Art. 1495 c.c.)",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7422042979984561,
+        "nesso_plausibility": 0.6034042979984561,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il macchinario è stato consegnato inutilizzabile e privo di componenti, non corrispondente alla dichiarazione di funzionante fornita dal venditore. Le chat dimostrano che il venditore era a conoscenza dei difetti da settimane e aveva promesso una revisione mai effettuata, configurando così un vizio che lo rende inidoneo all’uso a cui è destinato. Ai sensi dell’art. 1490 c.c., il venditore è tenuto a garantire l’assenza di vizi che rendano la cosa inidonea o ne diminuiscano il valore, pertanto il vizio è accertato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6667133000942354,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6667133000942354
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il macchinario è stato consegnato inutilizzabile e privo di componenti, non corrispondente alla dichiarazione di funzionante fornita dal venditore. Le chat dimostrano che il venditore era a conoscenza dei difetti da settimane e aveva promesso una revisione mai effettuata, configurando così un vizio che lo rende inidoneo all’uso a cui è destinato. Ai sensi dell’art. 1490 c.c., il venditore è tenuto a garantire l’assenza di vizi che rendano la cosa inidonea o ne diminuiscano il valore, pertanto il vizio è accertato."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.09,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9521,
+            "damage_factor": 0.4,
+            "excess": 0.2249,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6897,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7271,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6129,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7827,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7271,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.09,
+        "base_score": 0.7271467413311384,
+        "cogency": 0.5671792427669751,
+        "cogency_details": {
+          "argument_quality_score": 0.6027257644705205,
+          "coherence_score": 0.5316327210634297,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1492 c.c., il compratore, constatato che il macchinario consegnato è inutilizzabile e privo di componenti essenziali – difetto che supera i limiti di tolleranza e rende la cosa perita – può domandare la risoluzione del contratto, scelta che diventa irrevocabile con la domanda giudiziale; la riduzione del prezzo è esclusa perché il vizio rende la cosa inadatta al suo uso dichiarato.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7271467413311384,
+        "nesso_plausibility": 0.6371467413311385,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1495 c.c. il compratore deve denunciare i vizi al venditore entro otto giorni dalla scoperta del difetto, altrimenti decade dal diritto di garanzia; l’azione si prescrive comunque entro un anno dalla consegna. Pertanto, per valutare la validità della pretesa civile occorre accertare se l’acquirente abbia comunicato il vizio entro tale termine, elemento che al momento non risulta esplicitato nei fatti forniti. (Art. 1495 c.c.)",
+        "retrieved_norms": [
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6517622883540786,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6517622883540786
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1495 c.c. il compratore deve denunciare i vizi al venditore entro otto giorni dalla scoperta del difetto, altrimenti decade dal diritto di garanzia; l’azione si prescrive comunque entro un anno dalla consegna. Pertanto, per valutare la validità della pretesa civile occorre accertare se l’acquirente abbia comunicato il vizio entro tale termine, elemento che al momento non risulta esplicitato nei fatti forniti. (Art. 1495 c.c.)"
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1521,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1007,
+            "damage_factor": 0.4,
+            "excess": 0.3803,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.738,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7203,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.6435,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.1521,
+        "base_score": 0.7203435839679835,
+        "cogency": 0.5809048633016466,
+        "cogency_details": {
+          "argument_quality_score": 0.6220088687230028,
+          "coherence_score": 0.5398008578802904,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se è da sé sufficiente a produrre il danno. Nel caso in esame il vizio del macchinario – componenti mancanti e malfunzionamento – era già noto al venditore settimane prima della consegna, come dimostrano le chat, perciò il difetto esisteva antecedentemente al trasporto. Pertanto il trasporto non può essere considerato una causa da sola sufficiente, ma una causa concorrente che non spezza il nesso tra l’omissione dolosa del venditore e il danno subito dall’acquirente.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7203435839679835,
+        "nesso_plausibility": 0.5682435839679835,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1492 c.c., il compratore, constatato che il macchinario consegnato è inutilizzabile e privo di componenti essenziali – difetto che supera i limiti di tolleranza e rende la cosa perita – può domandare la risoluzione del contratto, scelta che diventa irrevocabile con la domanda giudiziale; la riduzione del prezzo è esclusa perché il vizio rende la cosa inadatta al suo uso dichiarato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6153594766088901,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6153594766088901
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1492 c.c., il compratore, constatato che il macchinario consegnato è inutilizzabile e privo di componenti essenziali – difetto che supera i limiti di tolleranza e rende la cosa perita – può domandare la risoluzione del contratto, scelta che diventa irrevocabile con la domanda giudiziale; la riduzione del prezzo è esclusa perché il vizio rende la cosa inadatta al suo uso dichiarato."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1374,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0664,
+            "damage_factor": 0.4,
+            "excess": 0.3436,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6567,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7228,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1324,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0538,
+            "damage_factor": 0.4,
+            "excess": 0.331,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7066,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7228,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.2698,
+        "base_score": 0.7228483874124504,
+        "cogency": 0.553857991938783,
+        "cogency_details": {
+          "argument_quality_score": 0.6350205162599794,
+          "coherence_score": 0.47269546761758674,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Alla luce dell’art. 43 c.p., il venditore ha agito con dolo perché, consapevole da settimane dei difetti e della mancanza di componenti del macchinario, ha deliberatamente promesso una revisione mai effettuata al fine di indurre l’acquirente al pagamento di € 6.000; tale condotta integra gli elementi psicologici del reato di truffa (art. 640 c.p.) in quanto finalizzata a procurare un ingiusto profitto. La consapevolezza del vizio e la volontà di occultarlo escludono la configurazione di caso fortuito o forza maggiore (art. 45 c.p.), rendendo il comportamento penalmente rilevante. Pertanto, oltre alla responsabilità civile, il venditore è perseguibile penalmente per dolo nella vendita fraudolenta.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7228483874124504,
+        "nesso_plausibility": 0.4530483874124504,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se è da sé sufficiente a produrre il danno. Nel caso in esame il vizio del macchinario – componenti mancanti e malfunzionamento – era già noto al venditore settimane prima della consegna, come dimostrano le chat, perciò il difetto esisteva antecedentemente al trasporto. Pertanto il trasporto non può essere considerato una causa da sola sufficiente, ma una causa concorrente che non spezza il nesso tra l’omissione dolosa del venditore e il danno subito dall’acquirente.",
+        "retrieved_norms": [
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "640",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": "codice_penale"
+          },
+          {
+            "articolo": "45",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_51_45",
+            "title": "Caso fortuito o forza maggiore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5223032994360515,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5223032994360515
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se è da sé sufficiente a produrre il danno. Nel caso in esame il vizio del macchinario – componenti mancanti e malfunzionamento – era già noto al venditore settimane prima della consegna, come dimostrano le chat, perciò il difetto esisteva antecedentemente al trasporto. Pertanto il trasporto non può essere considerato una causa da sola sufficiente, ma una causa concorrente che non spezza il nesso tra l’omissione dolosa del venditore e il danno subito dall’acquirente."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7583260661665907,
+        "cogency": 0.6188308296510899,
+        "cogency_details": {
+          "argument_quality_score": 0.6336646471147185,
+          "coherence_score": 0.6039970121874614,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà comprendere (i) la restituzione del prezzo pagato di € 6.000, (ii) il rimborso delle spese necessarie per la riparazione o la sostituzione delle parti mancanti, quantificate con perizia tecnica, e (iii) il lucro cessante derivante dal fermo attività, calcolato come differenza tra il reddito medio mensile normalmente prodotto dal macchinario e l’effettivo guadagno nullo nel periodo di inattività, rivalutato con gli interessi legali dal giorno del danno (art. 1223 c.c.). L’ammontare complessivo sarà determinato con equo apprezzamento del giudice secondo le disposizioni dell’art. 2056 c.c.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7583260661665907,
+        "nesso_plausibility": 0.7583260661665907,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Alla luce dell’art. 43 c.p., il venditore ha agito con dolo perché, consapevole da settimane dei difetti e della mancanza di componenti del macchinario, ha deliberatamente promesso una revisione mai effettuata al fine di indurre l’acquirente al pagamento di € 6.000; tale condotta integra gli elementi psicologici del reato di truffa (art. 640 c.p.) in quanto finalizzata a procurare un ingiusto profitto. La consapevolezza del vizio e la volontà di occultarlo escludono la configurazione di caso fortuito o forza maggiore (art. 45 c.p.), rendendo il comportamento penalmente rilevante. Pertanto, oltre alla responsabilità civile, il venditore è perseguibile penalmente per dolo nella vendita fraudolenta.",
+        "retrieved_norms": [
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "640",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": "codice_penale"
+          },
+          {
+            "articolo": "45",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_51_45",
+            "title": "Caso fortuito o forza maggiore"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5755893909042125,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5755893909042125
+        },
+        "severity_category": "delitti",
+        "source": "codice_civile",
+        "text": "Alla luce dell’art. 43 c.p., il venditore ha agito con dolo perché, consapevole da settimane dei difetti e della mancanza di componenti del macchinario, ha deliberatamente promesso una revisione mai effettuata al fine di indurre l’acquirente al pagamento di € 6.000; tale condotta integra gli elementi psicologici del reato di truffa (art. 640 c.p.) in quanto finalizzata a procurare un ingiusto profitto. La consapevolezza del vizio e la volontà di occultarlo escludono la configurazione di caso fortuito o forza maggiore (art. 45 c.p.), rendendo il comportamento penalmente rilevante. Pertanto, oltre alla responsabilità civile, il venditore è perseguibile penalmente per dolo nella vendita fraudolenta."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0625,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9683,
+            "damage_factor": 0.4,
+            "excess": 0.1563,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.5963,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.812,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.602,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7689,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.812,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.0625,
+        "base_score": 0.8120265899169399,
+        "cogency": 0.625649207144994,
+        "cogency_details": {
+          "argument_quality_score": 0.6970622069459782,
+          "coherence_score": 0.5542362073440098,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "In base all’art. 1490 c.c. il venditore è tenuto alla garanzia per i vizi, perciò l’acquirente può chiedere la risoluzione (art. 1492 c.c.) con restituzione del prezzo (art. 1493 c.c.) e il risarcimento del lucro cessante per il fermo attività (art. 2056 c.c.). La conoscenza del difetto e la promessa di revisione non effettuata configurano dolo, punibile ai sensi dell’art. 43 c.p., mentre la difesa sul trasporto non rompe il nesso causale perché, pur essendo una causa sopravvenuta, non è stata da sola sufficiente a produrre il danno (art. 41 c.p.). La responsabilità penale non estingue quella civile e, qualora il vettore fosse intervenuto, il venditore e il vettore risponderebbero solidalmente per il danno (art. 2055 c.c.), ma la colpa principale rimane del venditore, il quale non può escludere la garanzia per mala‑fede (art. 1490 c.c.).",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.8120265899169399,
+        "nesso_plausibility": 0.7495265899169399,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 8,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 11,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà comprendere (i) la restituzione del prezzo pagato di € 6.000, (ii) il rimborso delle spese necessarie per la riparazione o la sostituzione delle parti mancanti, quantificate con perizia tecnica, e (iii) il lucro cessante derivante dal fermo attività, calcolato come differenza tra il reddito medio mensile normalmente prodotto dal macchinario e l’effettivo guadagno nullo nel periodo di inattività, rivalutato con gli interessi legali dal giorno del danno (art. 1223 c.c.). L’ammontare complessivo sarà determinato con equo apprezzamento del giudice secondo le disposizioni dell’art. 2056 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "2055",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2144_art2055",
+            "title": "Responsabilità solidale"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7477727592448054,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7477727592448054
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2056 c.c., il risarcimento dovrà comprendere (i) la restituzione del prezzo pagato di € 6.000, (ii) il rimborso delle spese necessarie per la riparazione o la sostituzione delle parti mancanti, quantificate con perizia tecnica, e (iii) il lucro cessante derivante dal fermo attività, calcolato come differenza tra il reddito medio mensile normalmente prodotto dal macchinario e l’effettivo guadagno nullo nel periodo di inattività, rivalutato con gli interessi legali dal giorno del danno (art. 1223 c.c.). L’ammontare complessivo sarà determinato con equo apprezzamento del giudice secondo le disposizioni dell’art. 2056 c.c."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.6080923065588074,
+    "contra_adjusted": 0.6080923065588074,
+    "contra_raw": 0.5796916350303127,
+    "final": 0.13905697124011906,
+    "final_adjusted": 0.13905697124011906,
+    "final_raw": 0.16745764276861375,
+    "pro": 0.7471492777989265,
+    "pro_adjusted": 0.7471492777989265,
+    "pro_raw": 0.7471492777989265,
+    "pro_raw_dialectical": 0.6282826111322599,
+    "pro_raw_intrinsic": 0.7471492777989265,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.738,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1521
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7303,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1388
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.6567,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1374
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.6897,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1366
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7066,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1324
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.738,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.127
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.6897,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.09
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7827,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.0887
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.5963,
+        "target": "S6->S7",
+        "target_role": "support",
+        "value": 0.0625
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.6435,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.046
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 4,
+          "axis_details": [
+            {
+              "active_attacks": 3,
+              "axis_base_avg": 0.7298982077658595,
+              "axis_id": "AX3",
+              "axis_quality": 0.20274000000000003,
+              "link_ids": [
+                "S1->S2",
+                "S2->S3",
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7228483874124504,
+              "axis_id": "AX4",
+              "axis_quality": 0.17712,
+              "link_ids": [
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.8120265899169399,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S6->S7"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7583260661665907,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S5->S6"
+              ]
+            }
+          ],
+          "bonus": 0.03083748,
+          "coverage_ratio": 0.5,
+          "enabled": true,
+          "quality_avg": 0.09496500000000001,
+          "wpcs": 0.256979
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7309169019523438,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0024368084715053234,
+          "redundancy_index": 0.038988935544085175
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7117031011552946,
+          "high_similarity_pair_ratio": 0.4,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.04829122307648515,
+          "redundancy_index": 0.1931648923059406
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1374,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0664,
+            "damage_factor": 0.4,
+            "excess": 0.3436,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6567,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7228,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1324,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0538,
+            "damage_factor": 0.4,
+            "excess": 0.331,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7066,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7228,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.2698,
+        "base_score": 0.7228483874124504,
+        "cogency": 0.553857991938783,
+        "cogency_details": {
+          "argument_quality_score": 0.6350205162599794,
+          "coherence_score": 0.47269546761758674,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Alla luce dell’art. 43 c.p., il venditore ha agito con dolo perché, consapevole da settimane dei difetti e della mancanza di componenti del macchinario, ha deliberatamente promesso una revisione mai effettuata al fine di indurre l’acquirente al pagamento di € 6.000; tale condotta integra gli elementi psicologici del reato di truffa (art. 640 c.p.) in quanto finalizzata a procurare un ingiusto profitto. La consapevolezza del vizio e la volontà di occultarlo escludono la configurazione di caso fortuito o forza maggiore (art. 45 c.p.), rendendo il comportamento penalmente rilevante. Pertanto, oltre alla responsabilità civile, il venditore è perseguibile penalmente per dolo nella vendita fraudolenta.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7228483874124504,
+        "nesso_plausibility": 0.4530483874124504,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se è da sé sufficiente a produrre il danno. Nel caso in esame il vizio del macchinario – componenti mancanti e malfunzionamento – era già noto al venditore settimane prima della consegna, come dimostrano le chat, perciò il difetto esisteva antecedentemente al trasporto. Pertanto il trasporto non può essere considerato una causa da sola sufficiente, ma una causa concorrente che non spezza il nesso tra l’omissione dolosa del venditore e il danno subito dall’acquirente.",
+        "retrieved_norms": [
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "43",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "640",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": "codice_penale"
+          },
+          {
+            "articolo": "45",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_51_45",
+            "title": "Caso fortuito o forza maggiore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5223032994360515,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5223032994360515
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se è da sé sufficiente a produrre il danno. Nel caso in esame il vizio del macchinario – componenti mancanti e malfunzionamento – era già noto al venditore settimane prima della consegna, come dimostrano le chat, perciò il difetto esisteva antecedentemente al trasporto. Pertanto il trasporto non può essere considerato una causa da sola sufficiente, ma una causa concorrente che non spezza il nesso tra l’omissione dolosa del venditore e il danno subito dall’acquirente."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.127,
+            "attacker_base_score": 0.7203,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0632,
+            "damage_factor": 0.4,
+            "excess": 0.3175,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.738,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0887,
+            "attacker_base_score": 0.7271,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9676,
+            "damage_factor": 0.4,
+            "excess": 0.2219,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7827,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7422,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7303,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7228,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6129,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7066,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7583,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.6556,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7689,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.2157,
+        "base_score": 0.7457227371774212,
+        "cogency": 0.5775376066013089,
+        "cogency_details": {
+          "argument_quality_score": 0.7085679947641673,
+          "coherence_score": 0.44650721843845065,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c., il lucro cessante deve essere quantificato mediante prova certa dell’entità del danno patrimoniale subito; spetta al compratore dimostrare, con documentazione contabile o perizia, il reddito che il macchinario avrebbe prodotto. In assenza di tale evidenza, il giudice non può concedere un indennizzo basato su stime ipotetiche, ma è tenuto a limitare il risarcimento alle sole spese debitamente comprovate, come il prezzo pagato e gli eventuali costi di riparazione.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7457227371774212,
+        "nesso_plausibility": 0.5300227371774212,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1490 c.c., il venditore è tenuto a garantire l’assenza di vizi occulti e, in caso di contestazione, l’onere della prova della sua non conoscenza grava su di lui; pertanto spetta al venditore dimostrare che il macchinario era privo di difetti o che non ne era a conoscenza, non al compratore provare il contrario. Inoltre, l’art. 1494 c.c. prevede che il venditore risponde del danno salvo prova di aver ignorato il vizio senza colpa, rafforzando il ribaltamento dell’onere probatorio a suo carico.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5748715173234284,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5748715173234284
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1490 c.c., il venditore è tenuto a garantire l’assenza di vizi occulti e, in caso di contestazione, l’onere della prova della sua non conoscenza grava su di lui; pertanto spetta al venditore dimostrare che il macchinario era privo di difetti o che non ne era a conoscenza, non al compratore provare il contrario. Inoltre, l’art. 1494 c.c. prevede che il venditore risponde del danno salvo prova di aver ignorato il vizio senza colpa, rafforzando il ribaltamento dell’onere probatorio a suo carico."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1521,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1007,
+            "damage_factor": 0.4,
+            "excess": 0.3803,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.738,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7203,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.812,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.6435,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.1521,
+        "base_score": 0.7203435839679835,
+        "cogency": 0.5809048633016466,
+        "cogency_details": {
+          "argument_quality_score": 0.6220088687230028,
+          "coherence_score": 0.5398008578802904,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Secondo l’art. 41 c.p., la causa sopravvenuta esclude il nesso di causalità solo se è da sé sufficiente a produrre il danno. Nel caso in esame il vizio del macchinario – componenti mancanti e malfunzionamento – era già noto al venditore settimane prima della consegna, come dimostrano le chat, perciò il difetto esisteva antecedentemente al trasporto. Pertanto il trasporto non può essere considerato una causa da sola sufficiente, ma una causa concorrente che non spezza il nesso tra l’omissione dolosa del venditore e il danno subito dall’acquirente.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7203435839679835,
+        "nesso_plausibility": 0.5682435839679835,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1492 c.c., il compratore, constatato che il macchinario consegnato è inutilizzabile e privo di componenti essenziali – difetto che supera i limiti di tolleranza e rende la cosa perita – può domandare la risoluzione del contratto, scelta che diventa irrevocabile con la domanda giudiziale; la riduzione del prezzo è esclusa perché il vizio rende la cosa inadatta al suo uso dichiarato.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6153594766088901,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6153594766088901
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1492 c.c., il compratore, constatato che il macchinario consegnato è inutilizzabile e privo di componenti essenziali – difetto che supera i limiti di tolleranza e rende la cosa perita – può domandare la risoluzione del contratto, scelta che diventa irrevocabile con la domanda giudiziale; la riduzione del prezzo è esclusa perché il vizio rende la cosa inadatta al suo uso dichiarato."
+      }
+    ]
+  },
+  "verdict": "uncertain",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

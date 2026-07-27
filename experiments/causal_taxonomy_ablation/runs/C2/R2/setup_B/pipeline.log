@@ -1,0 +1,34 @@
+[2026-03-02T16:58:52.431714] Pipeline log - Setup B
+Claim: Un contratto a prestazioni corrispettive fissava un termine essenziale al 30 giugno, con penale giornaliera e milestone intermedie. La parte debitrice consegna con 40 giorni di ritardo e solo il 60% d
+======================================================================
+Status: ok
+Duration: 946.02s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 8
+  Arguments: 1
+  Causal type: CIV_CONTRACT_REMEDIES
+
+[COUNTER]
+  Chain steps: 5
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7525588880052206
+  Net contra: 0.40690564121435135
+  Net final: 0.3456532467908693
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

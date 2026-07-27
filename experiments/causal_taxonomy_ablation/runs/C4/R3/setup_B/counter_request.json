@@ -1,0 +1,140 @@
+{
+  "claim": "Nel preliminare di vendita immobiliare l'acquirente versa 30.000 euro a titolo di caparra confirmatoria, con rogito fissato entro 4 mesi. A 20 giorni dal rogito il venditore comunica che non intende piu vendere perche ha ricevuto offerta economicamente superiore. L'acquirente dichiara recesso e chiede il doppio della caparra, oltre a 7.800 euro di costi notarili, tecnici e istruttoria mutuo. Il venditore sostiene che il mancato perfezionamento dipenda da ritardi della banca dell'acquirente e che quindi al massimo sia dovuta la semplice restituzione. Si chiede di verificare presupposti per il doppio della caparra, relazione tra recesso e domanda di esecuzione/risoluzione, e cumulabilita con ulteriori danni specificamente provati.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "Il rifiuto del venditore di concludere la vendita costituisce inadempimento della sua obbligazione principale e, ai sensi dell’art. 1385 c.c., l’acquirente può recedere dal preliminare e pretendere il doppio della caparra versata, ossia € 60.000; la difesa basata sul ritardo della banca non integra i requisiti di esonero previsti dall’art. 1218 c.c. Pertanto il venditore è tenuto a restituire il doppio della caparra e, qualora l’acquirente dimostri con adeguata documentazione il nesso causale, anche le spese notarili, tecniche e di istruttoria mutuo per € 7.800. In mancanza di tale prova, il giudice riconoscerà esclusivamente il doppio della caparra.",
+  "routing": {
+    "additional_causal_types": [
+      "CIV_CONTRACT_REMEDIES"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 1455 c.c.",
+          "role": "Non scarsa importanza dell'inadempimento"
+        },
+        {
+          "ref": "Art. 1385 c.c.",
+          "role": "Caparra confirmatoria"
+        },
+        {
+          "ref": "Art. 1382 c.c.",
+          "role": "Clausola penale"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 1218 c.c.",
+          "role": "Responsabilità del debitore per inadempimento"
+        },
+        {
+          "ref": "Art. 1453 c.c.",
+          "role": "Risoluzione per inadempimento e cumulo con risarcimento"
+        }
+      ]
+    },
+    "causal_type_id": "CIV_CONTRACT_REMEDIES",
+    "claim": "Nel preliminare di vendita immobiliare l'acquirente versa 30.000 euro a titolo di caparra confirmatoria, con rogito fissato entro 4 mesi. A 20 giorni dal rogito il venditore comunica che non intende piu vendere perche ha ricevuto offerta economicamente superiore. L'acquirente dichiara recesso e chiede il doppio della caparra, oltre a 7.800 euro di costi notarili, tecnici e istruttoria mutuo. Il venditore sostiene che il mancato perfezionamento dipenda da ritardi della banca dell'acquirente e che quindi al massimo sia dovuta la semplice restituzione. Si chiede di verificare presupposti per il doppio della caparra, relazione tra recesso e domanda di esecuzione/risoluzione, e cumulabilita con ulteriori danni specificamente provati.",
+    "domain": "CIVILE",
+    "principle_tests": [
+      {
+        "description": "Verifica se l'inadempimento supera la soglia di non scarsa importanza",
+        "id": "BREACH_SERIOUSNESS",
+        "name": "Gravità dell'inadempimento"
+      },
+      {
+        "description": "Controlla compatibilità e limiti tra risoluzione, caparra, penale e risarcimento",
+        "id": "REMEDY_COMPATIBILITY",
+        "name": "Compatibilità tra rimedi"
+      }
+    ],
+    "theory_id": "T_CIV_REMEDIES"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "art1385",
+      "libro": "CC Libro IV",
+      "score": 0.9640432466809763,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1455_art1385",
+      "testo": "Se al momento della conclusione del contratto una parte dà all'altra, a titolo di caparra, una somma di danaro o una quantità di altre cose fungibili, la caparra, in caso di adempimento, deve essere restituita o imputata alla prestazione dovuta. Se la parte che ha dato la caparra è inadempiente, l'altra può recedere dal contratto, ritenendo la caparra; se inadempiente è invece la parte che l'ha ricevuta, l'altra può recedere dal contratto ed esigere il doppio della caparra. Se però la parte che non è inadempiente preferisce domandare l'esecuzione o la risoluzione del contratto, il risarcimento del danno è regolato dalle norme generali.",
+      "titolo": "Caparra confirmatoria"
+    },
+    {
+      "articolo": "art1453",
+      "libro": "CC Libro IV",
+      "score": 0.9220291903319172,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1523_art1453",
+      "testo": "Nei contratti con prestazioni corrispettive, quando uno dei contraenti non adempie le sue obbligazioni, l'altro può a sua scelta chiedere l'adempimento o la risoluzione del contratto, salvo, in ogni caso, il risarcimento del danno. La risoluzione può essere domandata anche quando il giudizio è stato promosso per ottenere l'adempimento; ma non può più chiedersi l'adempimento quando è stata domandata la risoluzione. Dalla data della domanda di risoluzione l'inadempiente non può più adempiere la propria obbligazione.",
+      "titolo": "Risolubilità del contratto per inadempimento"
+    },
+    {
+      "articolo": "art1373",
+      "libro": "CC Libro IV",
+      "score": 0.8587831571137081,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1443_art1373",
+      "testo": "Se a una delle parti è attribuita la facoltà di recedere dal contratto, tale facoltà può essere esercitata finchè il contratto non abbia avuto un principio di esecuzione. Nei contratti a esecuzione continuata o periodica, tale facoltà può essere esercitata anche successivamente, ma il recesso non ha effetto per le prestazioni già eseguite o in corso di esecuzione. Qualora sia stata stipulata la prestazione di un corrispettivo per il recesso, questo ha effetto quando la prestazione è eseguita. È salvo in ogni caso il patto contrario.",
+      "titolo": "Recesso unilaterale"
+    },
+    {
+      "articolo": "art1351",
+      "libro": "CC Libro IV",
+      "score": 0.811957671957672,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1421_art1351",
+      "testo": "Il contratto preliminare è nullo, se non è fatto nella stessa forma che la legge prescrive per il contratto definitivo.",
+      "titolo": "Contratto preliminare"
+    },
+    {
+      "articolo": "art1386",
+      "libro": "CC Libro IV",
+      "score": 0.8074709701354109,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1456_art1386",
+      "testo": "Se nel contratto è stipulato il diritto di recesso per una o per entrambe le parti, la caparra ha la sola funzione di corrispettivo del recesso. In questo caso, il recedente perde la caparra data o deve restituire il doppio di quella che ha ricevuta.",
+      "titolo": "Caparra penitenziale"
+    },
+    {
+      "articolo": "art1223",
+      "libro": "CC Libro IV",
+      "score": 0.6808888888888889,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1293_art1223",
+      "testo": "Il risarcimento del danno per l'inadempimento o per il ritardo deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta.",
+      "titolo": "Risarcimento del danno"
+    },
+    {
+      "articolo": "art2056",
+      "libro": "CC Libro IV",
+      "score": 0.6594086440363569,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2145_art2056",
+      "testo": "Il risarcimento dovuto al danneggiato si deve determinare secondo le disposizioni degli articoli 1223, 1226 e 1227. Il lucro cessante è valutato dal giudice con equo apprezzamento delle circostanze del caso.",
+      "titolo": "Valutazione dei danni"
+    },
+    {
+      "articolo": "art1375",
+      "libro": "CC Libro IV",
+      "score": 0.5991111111111111,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1445_art1375",
+      "testo": "Il contratto deve essere eseguito secondo buona fede.",
+      "titolo": "Esecuzione di buona fede"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

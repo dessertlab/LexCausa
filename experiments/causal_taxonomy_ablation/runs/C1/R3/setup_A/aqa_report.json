@@ -1,0 +1,2223 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 4,
+      "attack_coverage_axes_total": 5,
+      "attack_coverage_bonus": 0.050385408,
+      "attack_coverage_ratio": 0.8,
+      "attack_coverage_score": 0.41987840000000004,
+      "attacks_avg": 0.48336666666666667,
+      "base_score_avg": 0.7598129259494087,
+      "cogency_avg": 0.5988512643465319,
+      "net_plausibility": 0.30827048629818704,
+      "net_plausibility_adjusted": 0.30827048629818704,
+      "net_plausibility_raw": 0.2764462592827421,
+      "norm_support_avg": 0.935773803324704,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.14848944787644053,
+      "redundancy_penalty": 0.018561180984555066,
+      "semantics_avg": 0.6861600843852255
+    },
+    "pro": {
+      "attacks_avg": 0.23381666666666664,
+      "base_score_avg": 0.7919144786825251,
+      "cogency_avg": 0.6190600927205091,
+      "net_plausibility": 0.7919144786825251,
+      "net_plausibility_adjusted": 0.7919144786825251,
+      "net_plausibility_dialectical_raw": 0.5580978120158585,
+      "net_plausibility_intrinsic_raw": 0.7919144786825251,
+      "net_plausibility_raw": 0.7919144786825251,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.114302249596403,
+      "redundancy_penalty": 0.02857556239910075,
+      "semantics_avg": 0.687321502887908
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2708,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.4195,
+            "damage_factor": 0.4,
+            "excess": 0.6769,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8362,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2543,
+            "attacker_base_score": 0.7913,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3784,
+            "damage_factor": 0.4,
+            "excess": 0.6358,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.871,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2211,
+            "attacker_base_score": 0.7923,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2952,
+            "damage_factor": 0.4,
+            "excess": 0.5526,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8174,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1814,
+            "attacker_base_score": 0.8339,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.196,
+            "damage_factor": 0.4,
+            "excess": 0.4534,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7171,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1676,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1616,
+            "damage_factor": 0.4,
+            "excess": 0.4191,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7696,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1102,
+            "attacker_base_score": 0.7305,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0182,
+            "damage_factor": 0.4,
+            "excess": 0.2756,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6969,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.5251,
+        "base_score": 0.742595989223704,
+        "cogency": 0.6040924493108607,
+        "cogency_details": {
+          "argument_quality_score": 0.6840127214135631,
+          "coherence_score": 0.5241721772081583,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1494 c.c. il venditore non è tenuto al risarcimento se riesce a dimostrare che il vizio è stato determinato da uso improprio o da interventi di manutenzione effettuati da soggetti non autorizzati; pertanto l’onere della prova passa al venditore, il quale può avvalersi dei log di funzionamento, delle testimonianze del personale e della documentazione di terzi per provare la violazione dei parametri operativi previsti dal manuale obbligatorio. La semplice contestazione dell’acquirente, pur corredata da perizia tecnica, non esclude la possibilità che il venditore adempia a tale onere probatorio. Di conseguenza, la responsabilità del venditore rimane sospesa fino a prova contraria del suo corretto adempimento.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.742595989223704,
+        "nesso_plausibility": 0.21749598922370394,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "La garanzia di resa di 500 unità/ora ± 2 % deve essere qualificata come clausola di qualità e non come condizione essenziale del contratto, poiché la stessa prevede una tolleranza di variazione e il valore contrattuale principale resta la consegna di un macchinario funzionante; di conseguenza, ai sensi dell’art. 1492 c.c., il compratore può chiedere solo la riduzione del prezzo e non la risoluzione, salvo prova che il bene sia perito a causa del vizio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6663465747854111,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6663465747854111
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La garanzia di resa di 500 unità/ora ± 2 % deve essere qualificata come clausola di qualità e non come condizione essenziale del contratto, poiché la stessa prevede una tolleranza di variazione e il valore contrattuale principale resta la consegna di un macchinario funzionante; di conseguenza, ai sensi dell’art. 1492 c.c., il compratore può chiedere solo la riduzione del prezzo e non la risoluzione, salvo prova che il bene sia perito a causa del vizio."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2928,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.483,
+            "damage_factor": 0.4,
+            "excess": 0.732,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8736,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2447,
+            "attacker_base_score": 0.8339,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.3627,
+            "damage_factor": 0.4,
+            "excess": 0.6117,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.817,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2415,
+            "attacker_base_score": 0.7913,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3546,
+            "damage_factor": 0.4,
+            "excess": 0.6037,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.856,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2079,
+            "attacker_base_score": 0.7923,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2708,
+            "damage_factor": 0.4,
+            "excess": 0.5198,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.802,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1784,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1969,
+            "damage_factor": 0.4,
+            "excess": 0.4459,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.793,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0986,
+            "attacker_base_score": 0.7305,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9974,
+            "damage_factor": 0.4,
+            "excess": 0.2464,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6827,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.5375,
+        "base_score": 0.7509685292043079,
+        "cogency": 0.5769213224173169,
+        "cogency_details": {
+          "argument_quality_score": 0.6421493400634993,
+          "coherence_score": 0.5116933047711345,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La mera indicazione di ordini persi per € 80.000 non costituisce prova certa del nesso causale con la riduzione della produzione a 320 unità/ora; ai sensi dell’art. 1223 c.c. il danno risarcibile deve essere conseguenza immediata e certa del vizio, mentre l’art. 1225 c.c. richiede la prevedibilità del danno. In assenza di una dimostrazione concreta che ciascun ordine sia stato annullato per l’insufficiente capacità produttiva, il lucro cessante resta non provato o, quantomeno, deve essere ridotto.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7509685292043079,
+        "nesso_plausibility": 0.21346852920430792,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1494 c.c. il venditore non è tenuto al risarcimento se riesce a dimostrare che il vizio è stato determinato da uso improprio o da interventi di manutenzione effettuati da soggetti non autorizzati; pertanto l’onere della prova passa al venditore, il quale può avvalersi dei log di funzionamento, delle testimonianze del personale e della documentazione di terzi per provare la violazione dei parametri operativi previsti dal manuale obbligatorio. La semplice contestazione dell’acquirente, pur corredata da perizia tecnica, non esclude la possibilità che il venditore adempia a tale onere probatorio. Di conseguenza, la responsabilità del venditore rimane sospesa fino a prova contraria del suo corretto adempimento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5929737749303763,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5929737749303763
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1494 c.c. il venditore non è tenuto al risarcimento se riesce a dimostrare che il vizio è stato determinato da uso improprio o da interventi di manutenzione effettuati da soggetti non autorizzati; pertanto l’onere della prova passa al venditore, il quale può avvalersi dei log di funzionamento, delle testimonianze del personale e della documentazione di terzi per provare la violazione dei parametri operativi previsti dal manuale obbligatorio. La semplice contestazione dell’acquirente, pur corredata da perizia tecnica, non esclude la possibilità che il venditore adempia a tale onere probatorio. Di conseguenza, la responsabilità del venditore rimane sospesa fino a prova contraria del suo corretto adempimento."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.242,
+            "attacker_base_score": 0.8339,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.3909,
+            "damage_factor": 0.4,
+            "excess": 0.6051,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.834,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1455,
+            "attacker_base_score": 0.7913,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1497,
+            "damage_factor": 0.4,
+            "excess": 0.3638,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7265,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1342,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1214,
+            "damage_factor": 0.4,
+            "excess": 0.3355,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.743,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1337,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.12,
+            "damage_factor": 0.4,
+            "excess": 0.3341,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6597,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1029,
+            "attacker_base_score": 0.7923,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0431,
+            "damage_factor": 0.4,
+            "excess": 0.2572,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6583,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7305,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.4957,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6462,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.38749999999999996,
+        "base_score": 0.7858742594202144,
+        "cogency": 0.6155400213114184,
+        "cogency_details": {
+          "argument_quality_score": 0.6645405780568391,
+          "coherence_score": 0.5665394645659977,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Secondo l’art. 1225 c.c., il risarcimento è limitato al danno che il venditore poteva ragionevolmente prevedere al momento della stipula; la garanzia contrattuale riguarda esclusivamente la resa tecnica del macchinario (500 ± 2 unità/ora) e non la realizzazione di specifici ordini commerciali. Pertanto il lucro cessante di € 80.000, derivante da ordini persi, non è stato prevedibile né direttamente collegato al vizio, ma dipende da variabili di mercato indipendenti, perciò non rientra nella categoria di danni risarcibili ex art. 1225 c.c.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7858742594202144,
+        "nesso_plausibility": 0.3983742594202144,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "La mera indicazione di ordini persi per € 80.000 non costituisce prova certa del nesso causale con la riduzione della produzione a 320 unità/ora; ai sensi dell’art. 1223 c.c. il danno risarcibile deve essere conseguenza immediata e certa del vizio, mentre l’art. 1225 c.c. richiede la prevedibilità del danno. In assenza di una dimostrazione concreta che ciascun ordine sia stato annullato per l’insufficiente capacità produttiva, il lucro cessante resta non provato o, quantomeno, deve essere ridotto.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7991599034398886,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7991599034398886
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La mera indicazione di ordini persi per € 80.000 non costituisce prova certa del nesso causale con la riduzione della produzione a 320 unità/ora; ai sensi dell’art. 1223 c.c. il danno risarcibile deve essere conseguenza immediata e certa del vizio, mentre l’art. 1225 c.c. richiede la prevedibilità del danno. In assenza di una dimostrazione concreta che ciascun ordine sia stato annullato per l’insufficiente capacità produttiva, il lucro cessante resta non provato o, quantomeno, deve essere ridotto."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0597,
+            "attacker_base_score": 0.7426,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8798,
+            "damage_factor": 0.4,
+            "excess": 0.1493,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6969,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7305,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0564,
+            "attacker_base_score": 0.751,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8715,
+            "damage_factor": 0.4,
+            "excess": 0.141,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6827,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7305,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7859,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6094,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6462,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7305,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.11610000000000001,
+        "base_score": 0.730507384087397,
+        "cogency": 0.5516033815622174,
+        "cogency_details": {
+          "argument_quality_score": 0.5771336463121298,
+          "coherence_score": 0.5260731168123052,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "La produzione effettiva di circa 320 unità/ora, ben al di sotto del valore garantito di 500 unità/ora ± 2 % (cioè 490‑510 unità/ora), configura un vizio di conformità ai sensi dell’art. 1490 c.c., poiché la cosa venduta risulta inidonea all’uso a cui è destinata e ne diminuisce apprezzabilmente il valore; tale difformità supera i limiti di tolleranza previsti dall’art. 1497 c.c., che prevede la risoluzione del contratto quando la cosa non possiede le qualità promesse essenziali per la sua destinazione.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.730507384087397,
+        "nesso_plausibility": 0.614407384087397,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "L’acquirente ha presentato la denuncia dei vizi entro otto giorni dalla scoperta del difetto, come indicato nella fattispecie (\"l’acquirente denuncia i vizi entro 8 giorni\"). Tale tempestività rispetta il termine di decadenza previsto dall’art. 1495 c.c., il quale stabilisce che il compratore decade dal diritto di garanzia se non denuncia i vizi entro otto giorni dalla scoperta, salvo diverso accordo. Pertanto, la denuncia è valida e non è soggetta a decadenza.",
+        "retrieved_norms": [
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1497",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1572_art1497",
+            "title": "Mancanza di qualità"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5500878987291057,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5500878987291057
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "L’acquirente ha presentato la denuncia dei vizi entro otto giorni dalla scoperta del difetto, come indicato nella fattispecie (\"l’acquirente denuncia i vizi entro 8 giorni\"). Tale tempestività rispetta il termine di decadenza previsto dall’art. 1495 c.c., il quale stabilisce che il compratore decade dal diritto di garanzia se non denuncia i vizi entro otto giorni dalla scoperta, salvo diverso accordo. Pertanto, la denuncia è valida e non è soggetta a decadenza."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2009,
+            "attacker_base_score": 0.7426,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2936,
+            "damage_factor": 0.4,
+            "excess": 0.5023,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.871,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7913,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1206,
+            "attacker_base_score": 0.751,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0928,
+            "damage_factor": 0.4,
+            "excess": 0.3015,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.856,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7913,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7859,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6851,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7265,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7913,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3215,
+        "base_score": 0.7912631191588351,
+        "cogency": 0.621899765346998,
+        "cogency_details": {
+          "argument_quality_score": 0.6814823950191806,
+          "coherence_score": 0.5623171356748153,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 1667 c.c. il venditore è esente dalla garanzia solo se dimostra, con prova certa, che il vizio è stato cagionato dal mancato rispetto da parte dell’acquirente dei parametri di uso o da interventi di manutenzione non autorizzati, mentre l’onere della prova grava sul venditore ex art. 1490 c.c.; pertanto, la semplice affermazione che il personale non ha osservato il manuale operativo o che la manutenzione è stata effettuata da terzi non autorizzati non è sufficiente, occorre produrre perizie o documenti che attestino concretamente la violazione. Inoltre, il contratto prevedeva assistenza del venditore nei primi 90 giorni e il vizio si è manifestato già entro le prime 5 settimane, perciò il venditore non può invocare il decorso del periodo di assistenza come scusante, ma deve dimostrare che le 11 fermate e la produzione di 320 unità/ora derivano esclusivamente da errori operativi dell’acquirente. In mancanza di tale prova, la difesa di uso improprio risulta irrilevante e il vizio di conformità rimane a carico del venditore.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7912631191588351,
+        "nesso_plausibility": 0.46976311915883506,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "La produzione effettiva di circa 320 unità/ora, ben al di sotto del valore garantito di 500 unità/ora ± 2 % (cioè 490‑510 unità/ora), configura un vizio di conformità ai sensi dell’art. 1490 c.c., poiché la cosa venduta risulta inidonea all’uso a cui è destinata e ne diminuisce apprezzabilmente il valore; tale difformità supera i limiti di tolleranza previsti dall’art. 1497 c.c., che prevede la risoluzione del contratto quando la cosa non possiede le qualità promesse essenziali per la sua destinazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1497",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1572_art1497",
+            "title": "Mancanza di qualità"
+          },
+          {
+            "articolo": "1667",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1750_art1667",
+            "title": "Difformità e vizi dell'opera"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6823106318491189,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6823106318491189
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La produzione effettiva di circa 320 unità/ora, ben al di sotto del valore garantito di 500 unità/ora ± 2 % (cioè 490‑510 unità/ora), configura un vizio di conformità ai sensi dell’art. 1490 c.c., poiché la cosa venduta risulta inidonea all’uso a cui è destinata e ne diminuisce apprezzabilmente il valore; tale difformità supera i limiti di tolleranza previsti dall’art. 1497 c.c., che prevede la risoluzione del contratto quando la cosa non possiede le qualità promesse essenziali per la sua destinazione."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1853,
+            "attacker_base_score": 0.751,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.312,
+            "damage_factor": 0.4,
+            "excess": 0.4632,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8736,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8488,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1572,
+            "attacker_base_score": 0.7426,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2419,
+            "damage_factor": 0.4,
+            "excess": 0.393,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8362,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8488,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7859,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6222,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6597,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8488,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.3425,
+        "base_score": 0.8488308730535492,
+        "cogency": 0.7234865707905019,
+        "cogency_details": {
+          "argument_quality_score": 0.7917445774778302,
+          "coherence_score": 0.6552285641031736,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1494 c.c. l’onere della prova spetta al venditore, il quale deve dimostrare l’assenza di vizio o, in alternativa, che la non conformità sia derivata da un uso non conforme o da una manutenzione effettuata da soggetti non autorizzati dal compratore; la prova di tali fatti deve essere fornita con mezzi idonei (rapporti di manutenzione, testimonianze, documentazione contrattuale). Poiché l’acquirente ha già adempiuto al dovere di denuncia entro gli otto giorni previsti dall’art. 1495 c.c., la sua posizione è tutelata e il venditore non può più avvalersi della difesa di mancata tempestività. Qualora il venditore non riesca a produrre prova convincente dell’uso improprio o della manutenzione non autorizzata, rimane gravato dell’onere probatorio e il vizio si presume imputabile a lui.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.8488308730535492,
+        "nesso_plausibility": 0.5063308730535492,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Ai sensi dell’art. 1667 c.c. il venditore è esente dalla garanzia solo se dimostra, con prova certa, che il vizio è stato cagionato dal mancato rispetto da parte dell’acquirente dei parametri di uso o da interventi di manutenzione non autorizzati, mentre l’onere della prova grava sul venditore ex art. 1490 c.c.; pertanto, la semplice affermazione che il personale non ha osservato il manuale operativo o che la manutenzione è stata effettuata da terzi non autorizzati non è sufficiente, occorre produrre perizie o documenti che attestino concretamente la violazione. Inoltre, il contratto prevedeva assistenza del venditore nei primi 90 giorni e il vizio si è manifestato già entro le prime 5 settimane, perciò il venditore non può invocare il decorso del periodo di assistenza come scusante, ma deve dimostrare che le 11 fermate e la produzione di 320 unità/ora derivano esclusivamente da errori operativi dell’acquirente. In mancanza di tale prova, la difesa di uso improprio risulta irrilevante e il vizio di conformità rimane a carico del venditore.",
+        "retrieved_norms": [
+          {
+            "articolo": "1667",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1750_art1667",
+            "title": "Difformità e vizi dell'opera"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7726163393879957,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7726163393879957
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1667 c.c. il venditore è esente dalla garanzia solo se dimostra, con prova certa, che il vizio è stato cagionato dal mancato rispetto da parte dell’acquirente dei parametri di uso o da interventi di manutenzione non autorizzati, mentre l’onere della prova grava sul venditore ex art. 1490 c.c.; pertanto, la semplice affermazione che il personale non ha osservato il manuale operativo o che la manutenzione è stata effettuata da terzi non autorizzati non è sufficiente, occorre produrre perizie o documenti che attestino concretamente la violazione. Inoltre, il contratto prevedeva assistenza del venditore nei primi 90 giorni e il vizio si è manifestato già entro le prime 5 settimane, perciò il venditore non può invocare il decorso del periodo di assistenza come scusante, ma deve dimostrare che le 11 fermate e la produzione di 320 unità/ora derivano esclusivamente da errori operativi dell’acquirente. In mancanza di tale prova, la difesa di uso improprio risulta irrilevante e il vizio di conformità rimane a carico del venditore."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1687,
+            "attacker_base_score": 0.7426,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.214,
+            "damage_factor": 0.4,
+            "excess": 0.4218,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8174,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7923,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.751,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.802,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7859,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6208,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6583,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7923,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1687,
+        "base_score": 0.7922558238591225,
+        "cogency": 0.6115680524984577,
+        "cogency_details": {
+          "argument_quality_score": 0.6496668047793064,
+          "coherence_score": 0.5734693002176091,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 1492 c.c. il compratore, constatato il vizio di conformità che rende il macchinario inidoneo a produrre le 500 unità/ora garantite (difformità evidente e grave), può scegliere tra la risoluzione del contratto e la riduzione del prezzo; la scelta diventa irrevocabile con la domanda giudiziale. Poiché il difetto è di tale entità da compromettere la destinazione stessa della cosa (produzione molto inferiore al valore contrattuale), la risoluzione risulta ammissibile, ma il compratore potrebbe comunque optare per la riduzione del prezzo qualora ritenga che la prestazione possa essere corretta entro un termine ragionevole, come previsto dall’art. 1493 c.c. che disciplina gli effetti della risoluzione e il rimborso delle somme già versate.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7922558238591225,
+        "nesso_plausibility": 0.6235558238591226,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1494 c.c. l’onere della prova spetta al venditore, il quale deve dimostrare l’assenza di vizio o, in alternativa, che la non conformità sia derivata da un uso non conforme o da una manutenzione effettuata da soggetti non autorizzati dal compratore; la prova di tali fatti deve essere fornita con mezzi idonei (rapporti di manutenzione, testimonianze, documentazione contrattuale). Poiché l’acquirente ha già adempiuto al dovere di denuncia entro gli otto giorni previsti dall’art. 1495 c.c., la sua posizione è tutelata e il venditore non può più avvalersi della difesa di mancata tempestività. Qualora il venditore non riesca a produrre prova convincente dell’uso improprio o della manutenzione non autorizzata, rimane gravato dell’onere probatorio e il vizio si presume imputabile a lui.",
+        "retrieved_norms": [
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6959513603652842,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6959513603652842
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1494 c.c. l’onere della prova spetta al venditore, il quale deve dimostrare l’assenza di vizio o, in alternativa, che la non conformità sia derivata da un uso non conforme o da una manutenzione effettuata da soggetti non autorizzati dal compratore; la prova di tali fatti deve essere fornita con mezzi idonei (rapporti di manutenzione, testimonianze, documentazione contrattuale). Poiché l’acquirente ha già adempiuto al dovere di denuncia entro gli otto giorni previsti dall’art. 1495 c.c., la sua posizione è tutelata e il venditore non può più avvalersi della difesa di mancata tempestività. Qualora il venditore non riesca a produrre prova convincente dell’uso improprio o della manutenzione non autorizzata, rimane gravato dell’onere probatorio e il vizio si presume imputabile a lui."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1553,
+            "attacker_base_score": 0.7426,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.143,
+            "damage_factor": 0.4,
+            "excess": 0.3883,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7696,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7547,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1031,
+            "attacker_base_score": 0.751,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0123,
+            "damage_factor": 0.4,
+            "excess": 0.2576,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.793,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7547,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7859,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7006,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.743,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7547,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.25839999999999996,
+        "base_score": 0.7547073707518505,
+        "cogency": 0.5694812315181057,
+        "cogency_details": {
+          "argument_quality_score": 0.6254068586321097,
+          "coherence_score": 0.5135556044041016,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c. il danno risarcibile comprende sia le spese effettivamente sostenute dall’acquirente (noleggio dell’impianto sostitutivo per € 45.000) sia il lucro cessante derivante dalla perdita di ordini (€ 80.000), per un ammontare complessivo di € 125.000; tuttavia, ai sensi dell’art. 1225 c.c. il venditore può opporsi al risarcimento dei danni indiretti (perdita di ordini) sostenendo che tali perdite non erano prevedibili al momento della stipula del contratto, limitando così la sua responsabilità ai soli danni diretti comprovati.",
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7547073707518505,
+        "nesso_plausibility": 0.4963073707518505,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’art. 1492 c.c. il compratore, constatato il vizio di conformità che rende il macchinario inidoneo a produrre le 500 unità/ora garantite (difformità evidente e grave), può scegliere tra la risoluzione del contratto e la riduzione del prezzo; la scelta diventa irrevocabile con la domanda giudiziale. Poiché il difetto è di tale entità da compromettere la destinazione stessa della cosa (produzione molto inferiore al valore contrattuale), la risoluzione risulta ammissibile, ma il compratore potrebbe comunque optare per la riduzione del prezzo qualora ritenga che la prestazione possa essere corretta entro un termine ragionevole, come previsto dall’art. 1493 c.c. che disciplina gli effetti della risoluzione e il rimborso delle somme già versate.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6128766709880626,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6128766709880626
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1492 c.c. il compratore, constatato il vizio di conformità che rende il macchinario inidoneo a produrre le 500 unità/ora garantite (difformità evidente e grave), può scegliere tra la risoluzione del contratto e la riduzione del prezzo; la scelta diventa irrevocabile con la domanda giudiziale. Poiché il difetto è di tale entità da compromettere la destinazione stessa della cosa (produzione molto inferiore al valore contrattuale), la risoluzione risulta ammissibile, ma il compratore potrebbe comunque optare per la riduzione del prezzo qualora ritenga che la prestazione possa essere corretta entro un termine ragionevole, come previsto dall’art. 1493 c.c. che disciplina gli effetti della risoluzione e il rimborso delle somme già versate."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1121,
+            "attacker_base_score": 0.7859,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1142,
+            "damage_factor": 0.4,
+            "excess": 0.2803,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.834,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8339,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0836,
+            "attacker_base_score": 0.751,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.043,
+            "damage_factor": 0.4,
+            "excess": 0.2091,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.817,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8339,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0285,
+            "attacker_base_score": 0.7426,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9053,
+            "damage_factor": 0.4,
+            "excess": 0.0713,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7171,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8339,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.19569999999999999,
+        "base_score": 0.8339223011843966,
+        "cogency": 0.6363215546067735,
+        "cogency_details": {
+          "argument_quality_score": 0.6882512332561987,
+          "coherence_score": 0.5843918759573484,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "Ai sensi dell’art. 1225 c.c., il venditore è tenuto a risarcire solo il danno che era prevedibile al momento della stipula del contratto; pertanto il costo del noleggio sostitutivo (45 000 €), legato direttamente all’interruzione della produzione, è presumibilmente prevedibile, mentre la perdita di ordini per 80 000 € appare più incerta e dipendente da eventi futuri non necessariamente anticipabili, perciò potrebbe essere esclusa o ridotta. Inoltre, secondo l’art. 1227 c.c., la difesa del venditore secondo cui l’acquirente non ha rispettato i parametri di uso e ha affidato la manutenzione a terzi non autorizzati costituisce una colpa concorrente del compratore, che comporta una diminuzione proporzionale del risarcimento anche per i danni diretti, qualora il giudice accerti che tale comportamento abbia concorso alla diminuzione della resa del macchinario.",
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.8339223011843966,
+        "nesso_plausibility": 0.6382223011843966,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Ai sensi dell’art. 2056 c.c. il danno risarcibile comprende sia le spese effettivamente sostenute dall’acquirente (noleggio dell’impianto sostitutivo per € 45.000) sia il lucro cessante derivante dalla perdita di ordini (€ 80.000), per un ammontare complessivo di € 125.000; tuttavia, ai sensi dell’art. 1225 c.c. il venditore può opporsi al risarcimento dei danni indiretti (perdita di ordini) sostenendo che tali perdite non erano prevedibili al momento della stipula del contratto, limitando così la sua responsabilità ai soli danni diretti comprovati.",
+        "retrieved_norms": [
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8100861160078818,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8100861160078818
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2056 c.c. il danno risarcibile comprende sia le spese effettivamente sostenute dall’acquirente (noleggio dell’impianto sostitutivo per € 45.000) sia il lucro cessante derivante dalla perdita di ordini (€ 80.000), per un ammontare complessivo di € 125.000; tuttavia, ai sensi dell’art. 1225 c.c. il venditore può opporsi al risarcimento dei danni indiretti (perdita di ordini) sostenendo che tali perdite non erano prevedibili al momento della stipula del contratto, limitando così la sua responsabilità ai soli danni diretti comprovati."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.30827048629818704,
+    "contra_adjusted": 0.30827048629818704,
+    "contra_raw": 0.2764462592827421,
+    "final": 0.48364399238433803,
+    "final_adjusted": 0.48364399238433803,
+    "final_raw": 0.515468219399783,
+    "pro": 0.7919144786825251,
+    "pro_adjusted": 0.7919144786825251,
+    "pro_raw": 0.7919144786825251,
+    "pro_raw_dialectical": 0.5580978120158585,
+    "pro_raw_intrinsic": 0.7919144786825251,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.8736,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2928
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.8362,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2708
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.871,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2543
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.817,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2447
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.834,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.242
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.856,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2415
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8174,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2211
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.802,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2079
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.871,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.2009
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8736,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1853
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 4,
+          "axes_total": 5,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7912631191588351,
+              "axis_id": "AX4",
+              "axis_quality": 0.23707999999999999,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.8488308730535492,
+              "axis_id": "AX1",
+              "axis_quality": 0.23246,
+              "link_ids": [
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 3,
+              "axis_base_avg": 0.7734815973054865,
+              "axis_id": "AX3",
+              "axis_quality": 0.22559999999999997,
+              "link_ids": [
+                "S4->S5",
+                "S5->S6"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.8339223011843966,
+              "axis_id": "AX2",
+              "axis_quality": 0.13718,
+              "link_ids": [
+                "S6->S7"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.730507384087397,
+              "axis_id": "AX5",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S1->S2"
+              ]
+            }
+          ],
+          "bonus": 0.050385408,
+          "coverage_ratio": 0.8,
+          "enabled": true,
+          "quality_avg": 0.166464,
+          "wpcs": 0.41987840000000004
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7135333554064186,
+          "high_similarity_pair_ratio": 0.6666666666666666,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.018561180984555066,
+          "redundancy_index": 0.14848944787644053
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.6854447397041606,
+          "high_similarity_pair_ratio": 0.26666666666666666,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.02857556239910075,
+          "redundancy_index": 0.114302249596403
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2928,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.483,
+            "damage_factor": 0.4,
+            "excess": 0.732,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8736,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2447,
+            "attacker_base_score": 0.8339,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.3627,
+            "damage_factor": 0.4,
+            "excess": 0.6117,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.817,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2415,
+            "attacker_base_score": 0.7913,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3546,
+            "damage_factor": 0.4,
+            "excess": 0.6037,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.856,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2079,
+            "attacker_base_score": 0.7923,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2708,
+            "damage_factor": 0.4,
+            "excess": 0.5198,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.802,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1784,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1969,
+            "damage_factor": 0.4,
+            "excess": 0.4459,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.793,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0986,
+            "attacker_base_score": 0.7305,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9974,
+            "damage_factor": 0.4,
+            "excess": 0.2464,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6827,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.751,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.5375,
+        "base_score": 0.7509685292043079,
+        "cogency": 0.5769213224173169,
+        "cogency_details": {
+          "argument_quality_score": 0.6421493400634993,
+          "coherence_score": 0.5116933047711345,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La mera indicazione di ordini persi per € 80.000 non costituisce prova certa del nesso causale con la riduzione della produzione a 320 unità/ora; ai sensi dell’art. 1223 c.c. il danno risarcibile deve essere conseguenza immediata e certa del vizio, mentre l’art. 1225 c.c. richiede la prevedibilità del danno. In assenza di una dimostrazione concreta che ciascun ordine sia stato annullato per l’insufficiente capacità produttiva, il lucro cessante resta non provato o, quantomeno, deve essere ridotto.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7509685292043079,
+        "nesso_plausibility": 0.21346852920430792,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 1494 c.c. il venditore non è tenuto al risarcimento se riesce a dimostrare che il vizio è stato determinato da uso improprio o da interventi di manutenzione effettuati da soggetti non autorizzati; pertanto l’onere della prova passa al venditore, il quale può avvalersi dei log di funzionamento, delle testimonianze del personale e della documentazione di terzi per provare la violazione dei parametri operativi previsti dal manuale obbligatorio. La semplice contestazione dell’acquirente, pur corredata da perizia tecnica, non esclude la possibilità che il venditore adempia a tale onere probatorio. Di conseguenza, la responsabilità del venditore rimane sospesa fino a prova contraria del suo corretto adempimento.",
+        "retrieved_norms": [
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5929737749303763,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5929737749303763
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1494 c.c. il venditore non è tenuto al risarcimento se riesce a dimostrare che il vizio è stato determinato da uso improprio o da interventi di manutenzione effettuati da soggetti non autorizzati; pertanto l’onere della prova passa al venditore, il quale può avvalersi dei log di funzionamento, delle testimonianze del personale e della documentazione di terzi per provare la violazione dei parametri operativi previsti dal manuale obbligatorio. La semplice contestazione dell’acquirente, pur corredata da perizia tecnica, non esclude la possibilità che il venditore adempia a tale onere probatorio. Di conseguenza, la responsabilità del venditore rimane sospesa fino a prova contraria del suo corretto adempimento."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2708,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.4195,
+            "damage_factor": 0.4,
+            "excess": 0.6769,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8362,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2543,
+            "attacker_base_score": 0.7913,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3784,
+            "damage_factor": 0.4,
+            "excess": 0.6358,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.871,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2211,
+            "attacker_base_score": 0.7923,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.2952,
+            "damage_factor": 0.4,
+            "excess": 0.5526,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8174,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1814,
+            "attacker_base_score": 0.8339,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.196,
+            "damage_factor": 0.4,
+            "excess": 0.4534,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7171,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1676,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1616,
+            "damage_factor": 0.4,
+            "excess": 0.4191,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7696,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1102,
+            "attacker_base_score": 0.7305,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0182,
+            "damage_factor": 0.4,
+            "excess": 0.2756,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6969,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7426,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.5251,
+        "base_score": 0.742595989223704,
+        "cogency": 0.6040924493108607,
+        "cogency_details": {
+          "argument_quality_score": 0.6840127214135631,
+          "coherence_score": 0.5241721772081583,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 1494 c.c. il venditore non è tenuto al risarcimento se riesce a dimostrare che il vizio è stato determinato da uso improprio o da interventi di manutenzione effettuati da soggetti non autorizzati; pertanto l’onere della prova passa al venditore, il quale può avvalersi dei log di funzionamento, delle testimonianze del personale e della documentazione di terzi per provare la violazione dei parametri operativi previsti dal manuale obbligatorio. La semplice contestazione dell’acquirente, pur corredata da perizia tecnica, non esclude la possibilità che il venditore adempia a tale onere probatorio. Di conseguenza, la responsabilità del venditore rimane sospesa fino a prova contraria del suo corretto adempimento.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.742595989223704,
+        "nesso_plausibility": 0.21749598922370394,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "La garanzia di resa di 500 unità/ora ± 2 % deve essere qualificata come clausola di qualità e non come condizione essenziale del contratto, poiché la stessa prevede una tolleranza di variazione e il valore contrattuale principale resta la consegna di un macchinario funzionante; di conseguenza, ai sensi dell’art. 1492 c.c., il compratore può chiedere solo la riduzione del prezzo e non la risoluzione, salvo prova che il bene sia perito a causa del vizio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6663465747854111,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6663465747854111
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La garanzia di resa di 500 unità/ora ± 2 % deve essere qualificata come clausola di qualità e non come condizione essenziale del contratto, poiché la stessa prevede una tolleranza di variazione e il valore contrattuale principale resta la consegna di un macchinario funzionante; di conseguenza, ai sensi dell’art. 1492 c.c., il compratore può chiedere solo la riduzione del prezzo e non la risoluzione, salvo prova che il bene sia perito a causa del vizio."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.242,
+            "attacker_base_score": 0.8339,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.3909,
+            "damage_factor": 0.4,
+            "excess": 0.6051,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.834,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1455,
+            "attacker_base_score": 0.7913,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1497,
+            "damage_factor": 0.4,
+            "excess": 0.3638,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7265,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1342,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 1.1214,
+            "damage_factor": 0.4,
+            "excess": 0.3355,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.743,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1337,
+            "attacker_base_score": 0.8488,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.12,
+            "damage_factor": 0.4,
+            "excess": 0.3341,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6597,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1029,
+            "attacker_base_score": 0.7923,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0431,
+            "damage_factor": 0.4,
+            "excess": 0.2572,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6583,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7305,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.4957,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6462,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7859,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.38749999999999996,
+        "base_score": 0.7858742594202144,
+        "cogency": 0.6155400213114184,
+        "cogency_details": {
+          "argument_quality_score": 0.6645405780568391,
+          "coherence_score": 0.5665394645659977,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Secondo l’art. 1225 c.c., il risarcimento è limitato al danno che il venditore poteva ragionevolmente prevedere al momento della stipula; la garanzia contrattuale riguarda esclusivamente la resa tecnica del macchinario (500 ± 2 unità/ora) e non la realizzazione di specifici ordini commerciali. Pertanto il lucro cessante di € 80.000, derivante da ordini persi, non è stato prevedibile né direttamente collegato al vizio, ma dipende da variabili di mercato indipendenti, perciò non rientra nella categoria di danni risarcibili ex art. 1225 c.c.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7858742594202144,
+        "nesso_plausibility": 0.3983742594202144,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "La mera indicazione di ordini persi per € 80.000 non costituisce prova certa del nesso causale con la riduzione della produzione a 320 unità/ora; ai sensi dell’art. 1223 c.c. il danno risarcibile deve essere conseguenza immediata e certa del vizio, mentre l’art. 1225 c.c. richiede la prevedibilità del danno. In assenza di una dimostrazione concreta che ciascun ordine sia stato annullato per l’insufficiente capacità produttiva, il lucro cessante resta non provato o, quantomeno, deve essere ridotto.",
+        "retrieved_norms": [
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7991599034398886,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7991599034398886
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La mera indicazione di ordini persi per € 80.000 non costituisce prova certa del nesso causale con la riduzione della produzione a 320 unità/ora; ai sensi dell’art. 1223 c.c. il danno risarcibile deve essere conseguenza immediata e certa del vizio, mentre l’art. 1225 c.c. richiede la prevedibilità del danno. In assenza di una dimostrazione concreta che ciascun ordine sia stato annullato per l’insufficiente capacità produttiva, il lucro cessante resta non provato o, quantomeno, deve essere ridotto."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

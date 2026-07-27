@@ -1,0 +1,34 @@
+[2026-03-05T15:49:51.926683] Pipeline log - Setup B
+Claim: Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso el
+======================================================================
+Status: ok
+Duration: 1152.97s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 6
+  Arguments: 1
+  Causal type: PEN_INTERVENING
+
+[COUNTER]
+  Chain steps: 4
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7209191564049389
+  Net contra: 0.4754454803575154
+  Net final: 0.24547367604742348
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

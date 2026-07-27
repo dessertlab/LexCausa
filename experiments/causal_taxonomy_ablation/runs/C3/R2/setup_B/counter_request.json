@@ -1,0 +1,177 @@
+{
+  "claim": "Un condomino subisce infiltrazioni nel proprio appartamento con danni a soffitto, pareti e arredi quantificati in 8.500 euro. Due perizie collocano la causa nella terrazza di copertura, ma divergono su un punto: una imputa il danno a vetusta impermeabilizzazione condominiale, l'altra evidenzia anche lavori privati eseguiti anni prima dal proprietario dell'ultimo piano. L'assemblea aveva deliberato manutenzione straordinaria, non eseguita per morosita diffusa e mancanza di cassa. Il danneggiato chiede risarcimento integrale al condominio; amministratore e alcuni condomini sostengono responsabilita esclusiva dei morosi o del singolo proprietario che usa la terrazza. Si chiede di valutare responsabilita da custodia, eventuale concorso causale e criteri di riparto interno del danno.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "Il condominio, in virtù dell’art. 1118 c.c. e dell’art. 2051 c.c., è custode della copertura impermeabilizzata, parte comune, e risponde della sua vetustà per mancata manutenzione, che costituisce nesso causale diretto delle infiltrazioni subite dal condomino. Pertanto è tenuto al risarcimento integrale del danno di € 8.500, indipendentemente dal possibile contributo dei lavori privati del proprietario dell’ultimo piano. L’eventuale responsabilità dei condomini morosi o del proprietario della terrazza potrà essere fatta valere dal condominio in sede di riparto interno, ma non esclude la sua obbligazione verso il danneggiato.",
+  "routing": {
+    "additional_causal_types": [
+      "CIV_CUSTODY_DAMAGE"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 1227 c.c.",
+          "role": "Concorso del danneggiato e mitigazione"
+        },
+        {
+          "ref": "Art. 2056 c.c.",
+          "role": "Criteri di liquidazione del danno"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 2051 c.c.",
+          "role": "Danno cagionato da cosa in custodia"
+        }
+      ]
+    },
+    "causal_type_id": "CIV_CUSTODY_DAMAGE",
+    "claim": "Un condomino subisce infiltrazioni nel proprio appartamento con danni a soffitto, pareti e arredi quantificati in 8.500 euro. Due perizie collocano la causa nella terrazza di copertura, ma divergono su un punto: una imputa il danno a vetusta impermeabilizzazione condominiale, l'altra evidenzia anche lavori privati eseguiti anni prima dal proprietario dell'ultimo piano. L'assemblea aveva deliberato manutenzione straordinaria, non eseguita per morosita diffusa e mancanza di cassa. Il danneggiato chiede risarcimento integrale al condominio; amministratore e alcuni condomini sostengono responsabilita esclusiva dei morosi o del singolo proprietario che usa la terrazza. Si chiede di valutare responsabilita da custodia, eventuale concorso causale e criteri di riparto interno del danno.",
+    "domain": "CIVILE",
+    "principle_tests": [
+      {
+        "description": "Verifica nesso causale tra fonte in custodia e evento dannoso",
+        "id": "CUSTODY_NEXUS",
+        "name": "Nesso cosa/animale-danno"
+      },
+      {
+        "description": "Valuta fortuito esterno e incidenza del comportamento del danneggiato",
+        "id": "FORTUITOUS_EVENT_CIV",
+        "name": "Caso fortuito e concorso"
+      }
+    ],
+    "theory_id": "T_CIV_CUSTODIA"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "art1123",
+      "libro": "CC Libro III",
+      "score": 0.9945135135135136,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1191_art1123",
+      "testo": "Le spese necessarie per la conservazione e per il godimento delle parti comuni dell'edificio, per la prestazione dei servizi nell'interesse comune e per le innovazioni deliberate dalla maggioranza sono sostenute dai condomini in misura proporzionale al valore della proprietà di ciascuno, salvo diversa convenzione. Se si tratta di cose destinate a servire i condomini in misura diversa, le spese sono ripartite in proporzione dell'uso che ciascuno può farne. Qualora un edificio abbia più scale, cortili, lastrici solari, opere o impianti destinati a servire una parte dell'intero fabbricato, le spese relative alla loro manutenzione sono a carico del gruppo di condomini che ne trae utilità.",
+      "titolo": "Ripartizione delle spese"
+    },
+    {
+      "articolo": "art1135",
+      "libro": "CC Libro III",
+      "score": 0.7872,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1204_art1135",
+      "testo": "Oltre a quanto è stabilito dagli articoli precedenti, l'assemblea dei condomini provvede: 1) alla conferma dell'amministratore e all'eventuale sua retribuzione; 2) all'approvazione del preventivo delle spese occorrenti durante l'anno e alla relativa ripartizione tra i condomini; 3) all'approvazione del rendiconto annuale dell'amministratore e all'impiego del residuo attivo della gestione; 4) alle opere di manutenzione straordinaria e alle innovazioni, costituendo obbligatoriamente un fondo speciale di importo pari all'ammontare dei lavori ((; se i lavori devono essere eseguiti in base a un contratto che ne prevede il pagamento graduale in funzione del loro progressivo stato di avanzamento, il fondo può essere costituito in relazione ai singoli pagamenti dovuti)) . L'amministratore non può ordinare lavori di manutenzione straordinaria, salvo che rivestano carattere urgente, ma in questo caso deve riferirne nella prima assemblea. L'assemblea può autorizzare l'amministratore a partecipare e collaborare a progetti, programmi e iniziative territoriali promossi dalle istituzioni locali o da soggetti privati qualificati, anche mediante opere di risanamento di parti comuni degli immobili nonché di demolizione, ricostruzione e messa in sicurezza statica, al fine di favorire il recupero del patrimonio edilizio esistente, la vivibilità urbana, la sicurezza e la sostenibilità ambientale della zona in cui il condominio è ubicato.",
+      "titolo": "Attribuzioni dell'assemblea dei condomini"
+    },
+    {
+      "articolo": "art1118",
+      "libro": "CC Libro III",
+      "score": 0.7547675675675676,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1184_art1118",
+      "testo": "((Il diritto di ciascun condomino sulle parti comuni, salvo che il titolo non disponga altrimenti, è proporzionale al valore dell'unità immobiliare che gli appartiene. Il condomino non può rinunziare al suo diritto sulle parti comuni. Il condomino non può sottrarsi all'obbligo di contribuire alle spese per la conservazione delle parti comuni, neanche modificando la destinazione d'uso della propria unità immobiliare, salvo quanto disposto da leggi speciali. Il condomino può rinunciare all'utilizzo dell'impianto centralizzato di riscaldamento o di condizionamento, se dal suo distacco non derivano notevoli squilibri di funzionamento o aggravi di spesa per gli altri condomini. In tal caso il rinunziante resta tenuto a concorrere al pagamento delle sole spese per la manutenzione straordinaria dell'impianto e per la sua conservazione e messa a norma)) .",
+      "titolo": "Diritti dei partecipanti sulle parti comuni"
+    },
+    {
+      "articolo": "art1130",
+      "libro": "CC Libro III",
+      "score": 0.7414486486486488,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1198_art1130",
+      "testo": "L'amministratore, oltre a quanto previsto dall'articolo 1129 e dalle vigenti disposizioni di legge, deve: 1) eseguire le deliberazioni dell'assemblea, convocarla annualmente per l'approvazione del rendiconto condominiale di cui all'articolo 1130-bis e curare l'osservanza del regolamento di condominio; 2) disciplinare l'uso delle cose comuni e la fruizione dei servizi nell'interesse comune, in modo che ne sia assicurato il miglior godimento a ciascuno dei condomini; 3) riscuotere i contributi ed erogare le spese occorrenti per la manutenzione ordinaria delle parti comuni dell'edificio e per l'esercizio dei servizi comuni; 4) compiere gli atti conservativi relativi alle parti comuni dell'edificio; 5) eseguire gli adempimenti fiscali; 6) curare la tenuta del registro di anagrafe condominiale contenente le generalità dei singoli proprietari e dei titolari di diritti reali e di diritti personali di godimento, comprensive del codice fiscale e della residenza o domicilio, i dati catastali di ciascuna unità immobiliare, nonché ogni dato relativo alle condizioni di sicurezza ((delle parti comuni dell'edificio)) . Ogni variazione dei dati deve essere comunicata all'amministratore in forma scritta entro sessanta giorni. L'amministratore, in caso di inerzia, mancanza o incompletezza delle comunicazioni, richiede con lettera raccomandata le informazioni necessarie alla tenuta del registro di anagrafe. Decorsi trenta giorni, in caso di omessa o incompleta risposta, l'amministratore acquisisce le informazioni necessarie, addebitandone il costo ai responsabili; 7) curare la tenuta del registro dei verbali delle assemblee, del registro di nomina e revoca dell'amministratore e del registro di contabilità. Nel registro dei verbali delle assemblee sono altresì annotate: le eventuali mancate costituzioni dell'assemblea, le deliberazioni nonché le brevi dichiarazioni rese dai condomini che ne hanno fatto richiesta; allo stesso registro è allegato il regolamento di condominio, ove adottato. Nel registro di nomina e revoca dell'amministratore sono annotate, in ordine cronologico, le date della nomina e della revoca di ciascun amministratore del condominio, nonché gli estremi del decreto in caso di provvedimento giudiziale. Nel registro di contabilità sono annotati in ordine cronologico, entro trenta giorni da quello dell'effettuazione, i singoli movimenti in entrata ed in uscita. Tale registro può tenersi anche con modalità informatizzate; 8) conservare tutta la documentazione inerente alla propria gestione riferibile sia al rapporto con i condomini sia allo stato tecnico-amministrativo dell'edificio e del condominio; 9) fornire al condomino che ne faccia richiesta attestazione relativa allo stato dei pagamenti degli oneri condominiali e delle eventuali liti in corso; 10) redigere il rendiconto condominiale annuale della gestione e convocare l'assemblea per la relativa approvazione entro centottanta giorni.",
+      "titolo": "Attribuzioni dell'amministratore"
+    },
+    {
+      "articolo": "art860",
+      "libro": "CC Libro III",
+      "score": 0.7063783783783785,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_922_art860",
+      "testo": "I proprietari dei beni situati entro il perimetro del comprensorio sono obbligati a contribuire nella spesa necessaria per l'esecuzione, la manutenzione e l'esercizio delle opere in ragione del beneficio che traggono dalla bonifica.",
+      "titolo": "Concorso dei proprietari nella spesa"
+    },
+    {
+      "articolo": "art2051",
+      "libro": "CC Libro IV",
+      "score": 0.4865294117647059,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2140_art2051",
+      "testo": "Ciascuno è responsabile del danno cagionato dalle cose che ha in custodia, salvo che provi il caso fortuito.",
+      "titolo": "Danno cagionato da cosa in custodia"
+    },
+    {
+      "articolo": "art1223",
+      "libro": "CC Libro IV",
+      "score": 0.4837058823529412,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1293_art1223",
+      "testo": "Il risarcimento del danno per l'inadempimento o per il ritardo deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta.",
+      "titolo": "Risarcimento del danno"
+    },
+    {
+      "articolo": "art1227",
+      "libro": "CC Libro IV",
+      "score": 0.44606343906510854,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1297_art1227",
+      "testo": "Se il fatto colposo del creditore ha concorso a cagionare il danno, il risarcimento è diminuito secondo la gravità della colpa e l'entità delle conseguenze che ne sono derivate. Il risarcimento non è dovuto per i danni che il creditore avrebbe potuto evitare usando l'ordinaria diligenza.",
+      "titolo": "Concorso del fatto colposo del creditore"
+    },
+    {
+      "articolo": "art2056",
+      "libro": "CC Libro IV",
+      "score": 0.4073030737503683,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2145_art2056",
+      "testo": "Il risarcimento dovuto al danneggiato si deve determinare secondo le disposizioni degli articoli 1223, 1226 e 1227. Il lucro cessante è valutato dal giudice con equo apprezzamento delle circostanze del caso.",
+      "titolo": "Valutazione dei danni"
+    },
+    {
+      "articolo": "art1104",
+      "libro": "CC Libro III",
+      "score": 0.3891891891891892,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1167_art1104",
+      "testo": "Ciascun partecipante deve contribuire nelle spese necessarie per la conservazione e per il godimento della cosa comune e nelle spese deliberate dalla maggioranza a norma delle disposizioni seguenti, salva la facoltà di liberarsene con la rinunzia al suo diritto. La rinunzia non giova al partecipante che abbia anche tacitamente approvato la spesa. Il cessionario del partecipante è tenuto in solido con il cedente a pagare i contributi da questo dovuti e non versati.",
+      "titolo": "Obblighi dei partecipanti"
+    },
+    {
+      "articolo": "art2053",
+      "libro": "CC Libro IV",
+      "score": 0.3794012766375332,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2142_art2053",
+      "testo": "Il proprietario di un edificio o di altra costruzione è responsabile dei danni cagionati dalla loro rovina, salvo che provi che questa non è dovuta a difetto di manutenzione o a vizio di costruzione.",
+      "titolo": "Rovina di edificio"
+    },
+    {
+      "articolo": "art1101",
+      "libro": "CC Libro III",
+      "score": 0.36454054054054064,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1164_art1101",
+      "testo": "Le quote dei partecipanti alla comunione si presumono eguali. Il concorso dei partecipanti, tanto nei vantaggi quanto nei pesi della comunione, è in proporzione delle rispettive quote.",
+      "titolo": "Quote dei partecipanti"
+    },
+    {
+      "articolo": "art2043",
+      "libro": "CC Libro IV",
+      "score": 0.3633882352941176,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2132_art2043",
+      "testo": "Qualunque fatto doloso o colposo, che cagiona ad altri un danno ingiusto, obbliga colui che ha commesso il fatto a risarcire il danno.",
+      "titolo": "Risarcimento per fatto illecito"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

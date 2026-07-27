@@ -1,0 +1,2963 @@
+{
+  "aqa_report": {
+    "chain_scores": {
+      "contra": {
+        "attack_coverage_axes_covered": 3,
+        "attack_coverage_axes_total": 3,
+        "attack_coverage_bonus": 0.060072480000000004,
+        "attack_coverage_ratio": 1.0,
+        "attack_coverage_score": 0.500604,
+        "attacks_avg": 0.26395,
+        "base_score_avg": 0.7439282723365644,
+        "cogency_avg": 0.6202394383555376,
+        "net_plausibility": 0.5400507523365644,
+        "net_plausibility_adjusted": 0.5400507523365644,
+        "net_plausibility_raw": 0.4799782723365644,
+        "norm_support_avg": 0.8890544456622768,
+        "precedent_delta_avg": 0.0,
+        "redundancy_index": 0.0,
+        "redundancy_penalty": 0.0,
+        "semantics_avg": 0.6741155418833079
+      },
+      "pro": {
+        "attacks_avg": 0.24086666666666667,
+        "base_score_avg": 0.7044175839873333,
+        "cogency_avg": 0.6058657617383323,
+        "net_plausibility": 0.7044175839873333,
+        "net_plausibility_adjusted": 0.7044175839873333,
+        "net_plausibility_dialectical_raw": 0.4635509173206666,
+        "net_plausibility_intrinsic_raw": 0.7044175839873333,
+        "net_plausibility_raw": 0.7044175839873333,
+        "norm_support_avg": 0.8618101004328885,
+        "precedent_delta_avg": 0.0,
+        "reasoner_plausibility_locked": true,
+        "redundancy_index": 0.13825247383083786,
+        "redundancy_penalty": 0.017281559228854732,
+        "semantics_avg": 0.5931127176422608
+      }
+    },
+    "enabled": true,
+    "links": {
+      "contra": [
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1557,
+              "attacker_base_score": 0.7358,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "support",
+              "boosted_attack": 1.0866,
+              "damage_factor": 0.4,
+              "excess": 0.3894,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7383,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.6973,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1443,
+              "attacker_base_score": 0.6874,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "support",
+              "boosted_attack": 1.0579,
+              "damage_factor": 0.4,
+              "excess": 0.3607,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7696,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.6973,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1291,
+              "attacker_base_score": 0.69,
+              "attacker_link_id": "S3->S4",
+              "attacker_role": "support",
+              "boosted_attack": 1.0201,
+              "damage_factor": 0.4,
+              "excess": 0.3229,
+              "filter_stage": "top_k",
+              "filtered": true,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7392,
+              "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+              "target_base_score": 0.6973,
+              "type_multiplier": 2.0
+            }
+          ],
+          "attacks_sum": 0.30000000000000004,
+          "base_score": 0.6972504842222284,
+          "cogency": 0.6267873195955014,
+          "cogency_details": {
+            "argument_quality_score": 0.7868025501429439,
+            "coherence_score": 0.4667720890480589,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.",
+          "libro": "CP Libro II",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.6972504842222284,
+          "nesso_plausibility": 0.3972504842222283,
+          "norm_support": 0.7781088913245535,
+          "norm_support_details": {
+            "citation_count": 1,
+            "citation_count_score": 0.5773502691896257,
+            "citation_score": 0.6830127018922193,
+            "citation_specificity_score": 1.0,
+            "final": 0.7781088913245535,
+            "retrieved_norms_count": 4,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p.",
+          "retrieved_norms": [
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            }
+          ],
+          "role": "counter",
+          "rule_id": "",
+          "semantics": 0.6599024393791881,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6599024393791881
+          },
+          "severity_category": "delitti",
+          "source": "codice_penale",
+          "text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p."
+        },
+        {
+          "argument_id": "chain_2",
+          "attacks_received": [
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1357,
+              "attacker_base_score": 0.69,
+              "attacker_link_id": "S3->S4",
+              "attacker_role": "support",
+              "boosted_attack": 1.1299,
+              "damage_factor": 0.4,
+              "excess": 0.3393,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.8187,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.7906,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.0922,
+              "attacker_base_score": 0.7358,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "support",
+              "boosted_attack": 1.0212,
+              "damage_factor": 0.4,
+              "excess": 0.2306,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.6939,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.7906,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "factual_impediment",
+              "attack_value": 0.0,
+              "attacker_base_score": 0.6874,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "support",
+              "boosted_attack": 0.6247,
+              "damage_factor": 0.4,
+              "excess": 0.0,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7574,
+              "reason": "active: factual_impediment [NLI-bypass]",
+              "target_base_score": 0.7906,
+              "type_multiplier": 1.2
+            }
+          ],
+          "attacks_sum": 0.2279,
+          "base_score": 0.7906060604509005,
+          "cogency": 0.6136915571155739,
+          "cogency_details": {
+            "argument_quality_score": 0.6381150838508185,
+            "coherence_score": 0.5892680303803292,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S3",
+          "conclusion_text": "Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.",
+          "libro": "",
+          "link_id": "S2->S3",
+          "nesso_intrinsic": 0.7906060604509005,
+          "nesso_plausibility": 0.5627060604509005,
+          "norm_support": 1.0,
+          "norm_support_details": {
+            "citation_count": 3,
+            "citation_count_score": 1.0,
+            "citation_score": 1.0,
+            "citation_specificity_score": 1.0,
+            "final": 1.0,
+            "retrieved_norms_count": 4,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S2"
+          ],
+          "premise_text": "Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.",
+          "retrieved_norms": [
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "role": "counter",
+          "rule_id": "",
+          "semantics": 0.6883286443874277,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6883286443874277
+          },
+          "severity_category": "delitti",
+          "source": "codice_penale",
+          "text": "Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p."
+        }
+      ],
+      "pro": [
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.1322,
+              "attacker_base_score": 0.7906,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 1.018,
+              "damage_factor": 0.4,
+              "excess": 0.3306,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7574,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.6874,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "exception",
+              "attack_value": 0.0899,
+              "attacker_base_score": 0.6973,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.9122,
+              "damage_factor": 0.4,
+              "excess": 0.2248,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7696,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.6874,
+              "type_multiplier": 1.7
+            }
+          ],
+          "attacks_sum": 0.22210000000000002,
+          "base_score": 0.6873646407714468,
+          "cogency": 0.5991451876251127,
+          "cogency_details": {
+            "argument_quality_score": 0.5984616248868116,
+            "coherence_score": 0.5998287503634138,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo.",
+          "libro": "CP Libro II",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.6873646407714468,
+          "nesso_plausibility": 0.46526464077144675,
+          "norm_support": 0.7781088913245535,
+          "norm_support_details": {
+            "citation_count": 1,
+            "citation_count_score": 0.5773502691896257,
+            "citation_score": 0.6830127018922193,
+            "citation_specificity_score": 1.0,
+            "final": 0.7781088913245535,
+            "retrieved_norms_count": 1,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi.",
+          "retrieved_norms": [
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.6545917598469718,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6545917598469718
+          },
+          "severity_category": "delitti",
+          "source": "codice_penale",
+          "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi."
+        },
+        {
+          "argument_id": "chain_2",
+          "attacks_received": [
+            {
+              "attack_type": "derogation",
+              "attack_value": 0.1445,
+              "attacker_base_score": 0.7906,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 1.0972,
+              "damage_factor": 0.4,
+              "excess": 0.3614,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.6939,
+              "reason": "active: derogation [NLI-bypass]",
+              "target_base_score": 0.7358,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "derogation",
+              "attack_value": 0.1175,
+              "attacker_base_score": 0.6973,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 1.0296,
+              "damage_factor": 0.4,
+              "excess": 0.2938,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7383,
+              "reason": "active: derogation [NLI-bypass]",
+              "target_base_score": 0.7358,
+              "type_multiplier": 2.0
+            }
+          ],
+          "attacks_sum": 0.262,
+          "base_score": 0.7358397446709009,
+          "cogency": 0.6234493379188404,
+          "cogency_details": {
+            "argument_quality_score": 0.6528294815515796,
+            "coherence_score": 0.5940691942861013,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S3",
+          "conclusion_text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”.",
+          "libro": "",
+          "link_id": "S2->S3",
+          "nesso_intrinsic": 0.7358397446709009,
+          "nesso_plausibility": 0.47383974467090084,
+          "norm_support": 0.903660704987056,
+          "norm_support_details": {
+            "citation_count": 2,
+            "citation_count_score": 0.816496580927726,
+            "citation_score": 0.8623724356957945,
+            "citation_specificity_score": 1.0,
+            "final": 0.903660704987056,
+            "retrieved_norms_count": 2,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S2"
+          ],
+          "premise_text": "La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo.",
+          "retrieved_norms": [
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.6244688710014213,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6244688710014213
+          },
+          "severity_category": "delitti",
+          "source": "codice_penale",
+          "text": "La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo."
+        },
+        {
+          "argument_id": "chain_3",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.1641,
+              "attacker_base_score": 0.7906,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 1.1004,
+              "damage_factor": 0.4,
+              "excess": 0.4103,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.8187,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.69,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "exception",
+              "attack_value": 0.0744,
+              "attacker_base_score": 0.6973,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.8761,
+              "damage_factor": 0.4,
+              "excess": 0.1861,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7392,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.69,
+              "type_multiplier": 1.7
+            }
+          ],
+          "attacks_sum": 0.2385,
+          "base_score": 0.6900483665196523,
+          "cogency": 0.5950027596710437,
+          "cogency_details": {
+            "argument_quality_score": 0.6654318724099647,
+            "coherence_score": 0.5245736469321226,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S4",
+          "conclusion_text": "Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.",
+          "libro": "CP Libro I",
+          "link_id": "S3->S4",
+          "nesso_intrinsic": 0.6900483665196523,
+          "nesso_plausibility": 0.4515483665196523,
+          "norm_support": 0.903660704987056,
+          "norm_support_details": {
+            "citation_count": 2,
+            "citation_count_score": 0.816496580927726,
+            "citation_score": 0.8623724356957945,
+            "citation_specificity_score": 1.0,
+            "final": 0.903660704987056,
+            "retrieved_norms_count": 2,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S3"
+          ],
+          "premise_text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.5002775220783894,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.5002775220783894
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”."
+        }
+      ]
+    },
+    "net_plausibility": {
+      "contra": 0.5400507523365644,
+      "contra_adjusted": 0.5400507523365644,
+      "contra_raw": 0.4799782723365644,
+      "final": 0.16436683165076893,
+      "final_adjusted": 0.16436683165076893,
+      "final_raw": 0.2244393116507689,
+      "pro": 0.7044175839873333,
+      "pro_adjusted": 0.7044175839873333,
+      "pro_raw": 0.7044175839873333,
+      "pro_raw_dialectical": 0.4635509173206666,
+      "pro_raw_intrinsic": 0.7044175839873333,
+      "uses_adjusted_score": true
+    },
+    "notes": {
+      "attacks_enabled": true,
+      "dominant_attacks": [
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "contra",
+          "overlap": 0.8187,
+          "target": "S3->S4",
+          "target_role": "support",
+          "value": 0.1641
+        },
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "support",
+          "overlap": 0.7383,
+          "target": "S1->S2",
+          "target_role": "counter",
+          "value": 0.1557
+        },
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "contra",
+          "overlap": 0.6939,
+          "target": "S2->S3",
+          "target_role": "support",
+          "value": 0.1445
+        },
+        {
+          "attacker": "S1->S2",
+          "attacker_role": "support",
+          "overlap": 0.7696,
+          "target": "S1->S2",
+          "target_role": "counter",
+          "value": 0.1443
+        },
+        {
+          "attacker": "S3->S4",
+          "attacker_role": "support",
+          "overlap": 0.8187,
+          "target": "S2->S3",
+          "target_role": "counter",
+          "value": 0.1357
+        },
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "contra",
+          "overlap": 0.7574,
+          "target": "S1->S2",
+          "target_role": "support",
+          "value": 0.1322
+        },
+        {
+          "attacker": "S3->S4",
+          "attacker_role": "support",
+          "overlap": 0.7392,
+          "target": "S1->S2",
+          "target_role": "counter",
+          "value": 0.1291
+        },
+        {
+          "attacker": "S1->S2",
+          "attacker_role": "contra",
+          "overlap": 0.7383,
+          "target": "S2->S3",
+          "target_role": "support",
+          "value": 0.1175
+        },
+        {
+          "attacker": "S2->S3",
+          "attacker_role": "support",
+          "overlap": 0.6939,
+          "target": "S2->S3",
+          "target_role": "counter",
+          "value": 0.0922
+        },
+        {
+          "attacker": "S1->S2",
+          "attacker_role": "contra",
+          "overlap": 0.7696,
+          "target": "S1->S2",
+          "target_role": "support",
+          "value": 0.0899
+        }
+      ],
+      "precedent_swings": [],
+      "severity_debug": [
+        {
+          "libro": "CP Libro II",
+          "link_id": "S1->S2",
+          "role": "support",
+          "severity_category": "delitti",
+          "source": "codice_penale"
+        },
+        {
+          "libro": "",
+          "link_id": "S2->S3",
+          "role": "support",
+          "severity_category": "delitti",
+          "source": "codice_penale"
+        },
+        {
+          "libro": "CP Libro I",
+          "link_id": "S3->S4",
+          "role": "support",
+          "severity_category": "generale",
+          "source": "codice_penale"
+        },
+        {
+          "libro": "CP Libro II",
+          "link_id": "S1->S2",
+          "role": "counter",
+          "severity_category": "delitti",
+          "source": "codice_penale"
+        },
+        {
+          "libro": "",
+          "link_id": "S2->S3",
+          "role": "counter",
+          "severity_category": "delitti",
+          "source": "codice_penale"
+        }
+      ],
+      "structural_adjustments": {
+        "contra": {
+          "attack_coverage": {
+            "axes_covered": 3,
+            "axes_total": 3,
+            "axis_details": [
+              {
+                "active_attacks": 2,
+                "axis_base_avg": 0.7358397446709009,
+                "axis_id": "AX1",
+                "axis_quality": 0.17975,
+                "link_ids": [
+                  "S2->S3"
+                ]
+              },
+              {
+                "active_attacks": 1,
+                "axis_base_avg": 0.6900483665196523,
+                "axis_id": "AX2",
+                "axis_quality": 0.1641,
+                "link_ids": [
+                  "S3->S4"
+                ]
+              },
+              {
+                "active_attacks": 2,
+                "axis_base_avg": 0.6873646407714468,
+                "axis_id": "AX3",
+                "axis_quality": 0.15917,
+                "link_ids": [
+                  "S1->S2"
+                ]
+              }
+            ],
+            "bonus": 0.060072480000000004,
+            "coverage_ratio": 1.0,
+            "enabled": true,
+            "quality_avg": 0.16767333333333334,
+            "wpcs": 0.500604
+          },
+          "redundancy": {
+            "avg_pair_similarity": 0.7182910110342531,
+            "high_similarity_pair_ratio": 0.0,
+            "links_count": 2,
+            "pair_count": 1,
+            "penalty": 0.0,
+            "redundancy_index": 0.0
+          }
+        },
+        "enabled": true,
+        "pro": {
+          "redundancy": {
+            "avg_pair_similarity": 0.7228226761241849,
+            "high_similarity_pair_ratio": 0.3333333333333333,
+            "links_count": 3,
+            "pair_count": 3,
+            "penalty": 0.017281559228854732,
+            "redundancy_index": 0.13825247383083786
+          }
+        },
+        "reasoner_plausibility_locked": true,
+        "verdict_uses_adjusted_score": true
+      },
+      "weakest_links": [
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1557,
+              "attacker_base_score": 0.7358,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "support",
+              "boosted_attack": 1.0866,
+              "damage_factor": 0.4,
+              "excess": 0.3894,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7383,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.6973,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1443,
+              "attacker_base_score": 0.6874,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "support",
+              "boosted_attack": 1.0579,
+              "damage_factor": 0.4,
+              "excess": 0.3607,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7696,
+              "reason": "active: contradiction [NLI-bypass]",
+              "target_base_score": 0.6973,
+              "type_multiplier": 2.0
+            },
+            {
+              "attack_type": "contradiction",
+              "attack_value": 0.1291,
+              "attacker_base_score": 0.69,
+              "attacker_link_id": "S3->S4",
+              "attacker_role": "support",
+              "boosted_attack": 1.0201,
+              "damage_factor": 0.4,
+              "excess": 0.3229,
+              "filter_stage": "top_k",
+              "filtered": true,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7392,
+              "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+              "target_base_score": 0.6973,
+              "type_multiplier": 2.0
+            }
+          ],
+          "attacks_sum": 0.30000000000000004,
+          "base_score": 0.6972504842222284,
+          "cogency": 0.6267873195955014,
+          "cogency_details": {
+            "argument_quality_score": 0.7868025501429439,
+            "coherence_score": 0.4667720890480589,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.",
+          "libro": "CP Libro II",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.6972504842222284,
+          "nesso_plausibility": 0.3972504842222283,
+          "norm_support": 0.7781088913245535,
+          "norm_support_details": {
+            "citation_count": 1,
+            "citation_count_score": 0.5773502691896257,
+            "citation_score": 0.6830127018922193,
+            "citation_specificity_score": 1.0,
+            "final": 0.7781088913245535,
+            "retrieved_norms_count": 4,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p.",
+          "retrieved_norms": [
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            },
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            }
+          ],
+          "role": "counter",
+          "rule_id": "",
+          "semantics": 0.6599024393791881,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6599024393791881
+          },
+          "severity_category": "delitti",
+          "source": "codice_penale",
+          "text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p."
+        },
+        {
+          "argument_id": "chain_3",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.1641,
+              "attacker_base_score": 0.7906,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 1.1004,
+              "damage_factor": 0.4,
+              "excess": 0.4103,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.8187,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.69,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "exception",
+              "attack_value": 0.0744,
+              "attacker_base_score": 0.6973,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.8761,
+              "damage_factor": 0.4,
+              "excess": 0.1861,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7392,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.69,
+              "type_multiplier": 1.7
+            }
+          ],
+          "attacks_sum": 0.2385,
+          "base_score": 0.6900483665196523,
+          "cogency": 0.5950027596710437,
+          "cogency_details": {
+            "argument_quality_score": 0.6654318724099647,
+            "coherence_score": 0.5245736469321226,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S4",
+          "conclusion_text": "Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.",
+          "libro": "CP Libro I",
+          "link_id": "S3->S4",
+          "nesso_intrinsic": 0.6900483665196523,
+          "nesso_plausibility": 0.4515483665196523,
+          "norm_support": 0.903660704987056,
+          "norm_support_details": {
+            "citation_count": 2,
+            "citation_count_score": 0.816496580927726,
+            "citation_score": 0.8623724356957945,
+            "citation_specificity_score": 1.0,
+            "final": 0.903660704987056,
+            "retrieved_norms_count": 2,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S3"
+          ],
+          "premise_text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”.",
+          "retrieved_norms": [
+            {
+              "articolo": "40",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            },
+            {
+              "articolo": "41",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.5002775220783894,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.5002775220783894
+          },
+          "severity_category": "generale",
+          "source": "codice_penale",
+          "text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”."
+        },
+        {
+          "argument_id": "chain_1",
+          "attacks_received": [
+            {
+              "attack_type": "exception",
+              "attack_value": 0.1322,
+              "attacker_base_score": 0.7906,
+              "attacker_link_id": "S2->S3",
+              "attacker_role": "contra",
+              "boosted_attack": 1.018,
+              "damage_factor": 0.4,
+              "excess": 0.3306,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7574,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.6874,
+              "type_multiplier": 1.7
+            },
+            {
+              "attack_type": "exception",
+              "attack_value": 0.0899,
+              "attacker_base_score": 0.6973,
+              "attacker_link_id": "S1->S2",
+              "attacker_role": "contra",
+              "boosted_attack": 0.9122,
+              "damage_factor": 0.4,
+              "excess": 0.2248,
+              "filtered": false,
+              "nli_bypass": true,
+              "nli_label": "contradiction",
+              "nli_score": 1.0,
+              "overlap": 0.7696,
+              "reason": "active: exception [NLI-bypass]",
+              "target_base_score": 0.6874,
+              "type_multiplier": 1.7
+            }
+          ],
+          "attacks_sum": 0.22210000000000002,
+          "base_score": 0.6873646407714468,
+          "cogency": 0.5991451876251127,
+          "cogency_details": {
+            "argument_quality_score": 0.5984616248868116,
+            "coherence_score": 0.5998287503634138,
+            "explanation": "coherence/argument_quality averaged (readability removed)"
+          },
+          "conclusion_id": "S2",
+          "conclusion_text": "La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo.",
+          "libro": "CP Libro II",
+          "link_id": "S1->S2",
+          "nesso_intrinsic": 0.6873646407714468,
+          "nesso_plausibility": 0.46526464077144675,
+          "norm_support": 0.7781088913245535,
+          "norm_support_details": {
+            "citation_count": 1,
+            "citation_count_score": 0.5773502691896257,
+            "citation_score": 0.6830127018922193,
+            "citation_specificity_score": 1.0,
+            "final": 0.7781088913245535,
+            "retrieved_norms_count": 1,
+            "retrieved_score": 1.0
+          },
+          "precedent_delta": 0.0,
+          "precedent_influences": [],
+          "premise_ids": [
+            "S1"
+          ],
+          "premise_text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi.",
+          "retrieved_norms": [
+            {
+              "articolo": "437",
+              "match_type": "exact",
+              "score": 1.0,
+              "similarity": 1.0,
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            }
+          ],
+          "role": "support",
+          "rule_id": "",
+          "semantics": 0.6545917598469718,
+          "semantics_details": {
+            "method": "similarity",
+            "score": 0.6545917598469718
+          },
+          "severity_category": "delitti",
+          "source": "codice_penale",
+          "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi."
+        }
+      ]
+    },
+    "verdict": "uncertain",
+    "weights": {
+      "alpha": 0.3,
+      "beta": 0.4,
+      "gamma": 0.3
+    }
+  },
+  "aqa_report_file": {
+    "absolute_path": "LexCausa\\logs\\aqa_reports\\20260305_172107_Durante_lavori_di_ristrutturazione_crolla_un_ponteggio_e_un_aqa_report.json",
+    "relative_path": "logs\\aqa_reports\\20260305_172107_Durante_lavori_di_ristrutturazione_crolla_un_ponteggio_e_un_aqa_report.json"
+  },
+  "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+  "confidence": 0.16436683165076893,
+  "consistency_report": {
+    "counter_reasoner": {
+      "agent": "counter_reasoner",
+      "citation_checks": [
+        {
+          "citation": "Art. 437 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque anni. Se dal fatto deriva un disastro o un infortunio, la pena è della reclusione da tre a dieci anni. ((7))",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque anni. Se dal fatto deriva un disastro o un infortunio, la pena è della reclusione da tre a dieci anni. ((7))",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        },
+        {
+          "citation": "Art. 41 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        },
+        {
+          "citation": "Art. 40 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        }
+      ],
+      "dropped_citations": 0,
+      "invalid_citations": 0,
+      "issues": [
+        "Art. 437: no text cited in response, repaired with DB text",
+        "Art. 41: no text cited in response, repaired with DB text",
+        "Art. 40: no text cited in response, repaired with DB text"
+      ],
+      "relevance_gate_dropped_citations": 0,
+      "repaired_citations": 3,
+      "text_matches": 0,
+      "text_mismatches": 3,
+      "total_citations": 3,
+      "valid_citations": 3
+    },
+    "counter_reasoner_gate": {
+      "abstain": false,
+      "checked": true,
+      "counter_steps": 3,
+      "label": "OPPOSING_LIMITATIVE",
+      "reason": "",
+      "reasoner_steps": 4
+    },
+    "reasoner": {
+      "agent": "reasoner",
+      "citation_checks": [
+        {
+          "citation": "Art. 437 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque anni. Se dal fatto deriva un disastro o un infortunio, la pena è della reclusione da tre a dieci anni. ((7))",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque anni. Se dal fatto deriva un disastro o un infortunio, la pena è della reclusione da tre a dieci anni. ((7))",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        },
+        {
+          "citation": "Art. 40 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non impedire un evento, che si ha l'obbligo giuridico di impedire, equivale a cagionarlo.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        },
+        {
+          "citation": "Art. 41 c.p.",
+          "cited_text": "",
+          "db_text_preview": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "details": "Verified in Neo4j (PENALE), no text cited → repaired with DB text",
+          "found_in_kb": true,
+          "is_core": true,
+          "llm_mismatch_confirmed": false,
+          "llm_validated": false,
+          "mismatch_action": "repaired",
+          "repair_success": true,
+          "repaired_text": "Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento. Le cause sopravvenute escludono il rapporto di causalità quando sono state da sole sufficienti a determinare l'evento. In tal caso, se l'azione od omissione precedentemente commessa costituisce per sé un reato, si applica la pena per questo stabilita. Le disposizioni precedenti si applicano anche quando la causa preesistente o simultanea o sopravvenuta consiste nel fatto illecito altrui.",
+          "source_type": "statute",
+          "text_match": false,
+          "text_similarity": 0.0,
+          "text_verified": true
+        }
+      ],
+      "dropped_citations": 0,
+      "invalid_citations": 0,
+      "issues": [
+        "Art. 437: no text cited in response, repaired with DB text",
+        "Art. 40: no text cited in response, repaired with DB text",
+        "Art. 41: no text cited in response, repaired with DB text"
+      ],
+      "relevance_gate_dropped_citations": 0,
+      "repaired_citations": 3,
+      "text_matches": 0,
+      "text_mismatches": 3,
+      "total_citations": 3,
+      "valid_citations": 3
+    }
+  },
+  "counter_reasoner_gate": {
+    "abstain": false,
+    "checked": true,
+    "counter_steps": 3,
+    "label": "OPPOSING_LIMITATIVE",
+    "reason": "",
+    "reasoner_steps": 4
+  },
+  "dialectical_tree": {
+    "counter": {
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                },
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  },
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 437 c.p. - Art. 41 c.p. - Art. 40 c.p.",
+              "type": "norm"
+            }
+          ],
+          "role": "counter",
+          "rule": {
+            "id": "A1.R1",
+            "text": "L'analisi giuridica dimostra che Le circostanze aggravanti possono non risultare concretamente integrate.; La catena causale è atipica/anomala e interrompe l'imputabilità.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+      "metadata": {
+        "attack_source": "taxonomy",
+        "causal_type_id": "PEN_INTERVENING",
+        "conclusion_point_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8"
+        ],
+        "conclusion_points_count": 8,
+        "selected_attack_by_step": [
+          {
+            "attack_id": "aggravating_circumstances_not_integrated",
+            "attack_ids": [
+              "aggravating_circumstances_not_integrated"
+            ],
+            "step": 1
+          },
+          {
+            "attack_id": "abnormal_or_atypical_chain",
+            "attack_ids": [
+              "abnormal_or_atypical_chain"
+            ],
+            "step": 2
+          },
+          {
+            "attack_id": "abnormal_or_atypical_chain",
+            "attack_ids": [
+              "abnormal_or_atypical_chain"
+            ],
+            "step": 3
+          }
+        ],
+        "selected_attack_id": "aggravating_circumstances_not_integrated",
+        "selected_attack_ids": [
+          "aggravating_circumstances_not_integrated",
+          "abnormal_or_atypical_chain"
+        ],
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa Alternativa**: L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 41 c.p.\n- Art. 40 c.p.\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che Le circostanze aggravanti possono non risultare concretamente integrate.; La catena causale è atipica/anomala e interrompe l'imputabilità.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n\n**Catena di ragionamento**:\n1. L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p.\n2. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n3. Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "437",
+                "label": "Art. 437 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_530_437",
+                "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "437",
+                "label": "Art. 437 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_530_437",
+                "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S4",
+          "text": "Precedents: none found."
+        }
+      ],
+      "role": "counter",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "437",
+            "label": "Art. 437 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          },
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "254",
+            "label": "Art. 254 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_276_254",
+            "title": "Agevolazione colposa"
+          },
+          {
+            "articolo": "590",
+            "label": "Art. 590 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_753_590",
+            "title": "Lesioni personali colpose"
+          },
+          {
+            "articolo": "452",
+            "label": "Art. 452 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_545_452",
+            "title": "Delitti colposi contro la salute pubblica"
+          },
+          {
+            "articolo": "451",
+            "label": "Art. 451 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_544_451",
+            "title": "Omissione colposa di cautele o difese contro disastri o infortuni sul lavoro"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          }
+        ]
+      }
+    },
+    "reasoner": {
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "437",
+                  "label": "Art. 437 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_530_437",
+                  "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                },
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Alla luce dell’art. 437 c.p. le omissioni del preposto (mancata imposizione dei DPI) e dell’operaio (rimozione degli elementi di fissaggio) costituiscono omessa adozione di cautele contro gli infortuni, punibili con reclusione da tre a dieci anni per la conseguente lesione grave. Il nesso di causalità è dimostrato dall’art. 40 c.p., poiché, privi di tali omissioni, il ponteggio non sarebbe crollato e le lesioni non si sarebbero verificate; la fatalità o l’imprevedibilità invocate non interrompono il rapporto causale ai sensi dell’art. 41 c.p. Conseguentemente, sussiste responsabilità penale per omissione dolosa di cautele, con cooperazione colposa tra il preposto e l’operaio."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  },
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo. Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”. Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  },
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 437 c.p. - Art. 40 c.p. - Art. 41 c.p.",
+              "type": "norm"
+            }
+          ],
+          "role": "support",
+          "rule": {
+            "id": "A1.R1",
+            "text": "La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+      "metadata": {
+        "causal_type_id": "PEN_INTERVENING",
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa**: Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo. Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”. Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 437 c.p. le omissioni del preposto (mancata imposizione dei DPI) e dell’operaio (rimozione degli elementi di fissaggio) costituiscono omessa adozione di cautele contro gli infortuni, punibili con reclusione da tre a dieci anni per la conseguente lesione grave. Il nesso di causalità è dimostrato dall’art. 40 c.p., poiché, privi di tali omissioni, il ponteggio non sarebbe crollato e le lesioni non si sarebbero verificate; la fatalità o l’imprevedibilità invocate non interrompono il rapporto causale ai sensi dell’art. 41 c.p. Conseguentemente, sussiste responsabilità penale per omissione dolosa di cautele, con cooperazione colposa tra il preposto e l’operaio.\n\n**Catena di ragionamento**:\n1. Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi.\n2. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo.\n3. Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”.\n4. Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "437",
+                "label": "Art. 437 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_530_437",
+                "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S4",
+          "text": "Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S5",
+          "text": "Precedents: none found."
+        }
+      ],
+      "role": "support",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "437",
+            "label": "Art. 437 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          },
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "254",
+            "label": "Art. 254 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_276_254",
+            "title": "Agevolazione colposa"
+          },
+          {
+            "articolo": "590",
+            "label": "Art. 590 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_753_590",
+            "title": "Lesioni personali colpose"
+          },
+          {
+            "articolo": "452",
+            "label": "Art. 452 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_545_452",
+            "title": "Delitti colposi contro la salute pubblica"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "42",
+            "label": "Art. 42 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "61",
+            "label": "Art. 61 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "113",
+            "label": "Art. 113 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_124_113",
+            "title": "Cooperazione nel delitto colposo"
+          }
+        ]
+      }
+    },
+    "repaired_counter": {
+      "_repair_metadata": {
+        "total_dropped": 0,
+        "total_repaired": 3
+      },
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                },
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "L’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…», punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  },
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 437 c.p. - Art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…», - Art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,",
+              "type": "norm"
+            }
+          ],
+          "role": "counter",
+          "rule": {
+            "id": "A1.R1",
+            "text": "L'analisi giuridica dimostra che Le circostanze aggravanti possono non risultare concretamente integrate.; La catena causale è atipica/anomala e interrompe l'imputabilità.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+      "metadata": {
+        "attack_source": "taxonomy",
+        "causal_type_id": "PEN_INTERVENING",
+        "conclusion_point_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8"
+        ],
+        "conclusion_points_count": 8,
+        "selected_attack_by_step": [
+          {
+            "attack_id": "aggravating_circumstances_not_integrated",
+            "attack_ids": [
+              "aggravating_circumstances_not_integrated"
+            ],
+            "step": 1
+          },
+          {
+            "attack_id": "abnormal_or_atypical_chain",
+            "attack_ids": [
+              "abnormal_or_atypical_chain"
+            ],
+            "step": 2
+          },
+          {
+            "attack_id": "abnormal_or_atypical_chain",
+            "attack_ids": [
+              "abnormal_or_atypical_chain"
+            ],
+            "step": 3
+          }
+        ],
+        "selected_attack_id": "aggravating_circumstances_not_integrated",
+        "selected_attack_ids": [
+          "aggravating_circumstances_not_integrated",
+          "abnormal_or_atypical_chain"
+        ],
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa Alternativa**: L’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…», punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,\n- Art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che Le circostanze aggravanti possono non risultare concretamente integrate.; La catena causale è atipica/anomala e interrompe l'imputabilità.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n\n**Catena di ragionamento**:\n1. L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p.\n2. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n3. Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "437",
+                "label": "Art. 437 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_530_437",
+                "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "437",
+                "label": "Art. 437 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_530_437",
+                "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione."
+        }
+      ],
+      "role": "counter",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "437",
+            "label": "Art. 437 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          },
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "254",
+            "label": "Art. 254 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_276_254",
+            "title": "Agevolazione colposa"
+          },
+          {
+            "articolo": "590",
+            "label": "Art. 590 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_753_590",
+            "title": "Lesioni personali colpose"
+          },
+          {
+            "articolo": "452",
+            "label": "Art. 452 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_545_452",
+            "title": "Delitti colposi contro la salute pubblica"
+          },
+          {
+            "articolo": "451",
+            "label": "Art. 451 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_544_451",
+            "title": "Omissione colposa di cautele o difese contro disastri o infortuni sul lavoro"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          }
+        ]
+      }
+    },
+    "repaired_reasoner": {
+      "_repair_metadata": {
+        "total_dropped": 0,
+        "total_repaired": 3
+      },
+      "arguments": [
+        {
+          "conclusion": {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "437",
+                  "label": "Art. 437 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_530_437",
+                  "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                },
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.C1",
+            "text": "Alla luce dell’art. 437 c.p. le omissioni del preposto (mancata imposizione dei DPI) e dell’operaio (rimozione degli elementi di fissaggio) costituiscono omessa adozione di cautele contro gli infortuni, punibili con reclusione da tre a dieci anni per la conseguente lesione grave. Il nesso di causalità è dimostrato dall’art. 40 c.p., poiché, privi di tali omissioni, il ponteggio non sarebbe crollato e le lesioni non si sarebbero verificate; la fatalità o l’imprevedibilità invocate non interrompono il rapporto causale ai sensi dell’art. 41 c.p. Conseguentemente, sussiste responsabilità penale per omissione dolosa di cautele, con cooperazione colposa tra il preposto e l’operaio."
+          },
+          "id": "A1",
+          "premises": [
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  },
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P1",
+              "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…»,, l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.",
+              "type": "premise"
+            },
+            {
+              "citations": {
+                "precedents": [],
+                "statutes": [
+                  {
+                    "articolo": "437",
+                    "label": "Art. 437 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_530_437",
+                    "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                  },
+                  {
+                    "articolo": "40",
+                    "label": "Art. 40 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_46_40",
+                    "title": "Rapporto di causalità"
+                  },
+                  {
+                    "articolo": "41",
+                    "label": "Art. 41 c.p.",
+                    "source": "codice_penale",
+                    "statute_id": "codice_penale_47_41",
+                    "title": "Concorso di cause"
+                  }
+                ],
+                "unknown_statutes": []
+              },
+              "id": "A1.P2",
+              "text": "- Art. 437 c.p. - Art. 40 c.p. - Art. 41 c.p.",
+              "type": "norm"
+            }
+          ],
+          "role": "support",
+          "rule": {
+            "id": "A1.R1",
+            "text": "La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.",
+            "type": "defeasible"
+          }
+        }
+      ],
+      "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+      "metadata": {
+        "causal_type_id": "PEN_INTERVENING",
+        "theory_id": "T_CONDIZIONALISTICA"
+      },
+      "precedent_links": [],
+      "precedent_nodes": [],
+      "raw_response": "**Premessa**: Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…»,, l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 437 c.p. le omissioni del preposto (mancata imposizione dei DPI) e dell’operaio (rimozione degli elementi di fissaggio) costituiscono omessa adozione di cautele contro gli infortuni, punibili con reclusione da tre a dieci anni per la conseguente lesione grave. Il nesso di causalità è dimostrato dall’art. 40 c.p., poiché, privi di tali omissioni, il ponteggio non sarebbe crollato e le lesioni non si sarebbero verificate; la fatalità o l’imprevedibilità invocate non interrompono il rapporto causale ai sensi dell’art. 41 c.p. Conseguentemente, sussiste responsabilità penale per omissione dolosa di cautele, con cooperazione colposa tra il preposto e l’operaio.\n\n**Catena di ragionamento**:\n1. Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi.\n2. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo.\n3. Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”.\n4. Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n",
+      "reasoning_chain": [
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [],
+            "unknown_statutes": []
+          },
+          "id": "S1",
+          "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "437",
+                "label": "Art. 437 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_530_437",
+                "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S2",
+          "text": "La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S3",
+          "text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”."
+        },
+        {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "S4",
+          "text": "Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio."
+        }
+      ],
+      "role": "support",
+      "schema": "aspic_ir_v1",
+      "sources": {
+        "precedents": [],
+        "statutes": [
+          {
+            "articolo": "437",
+            "label": "Art. 437 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          },
+          {
+            "articolo": "589",
+            "label": "Art. 589 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "254",
+            "label": "Art. 254 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_276_254",
+            "title": "Agevolazione colposa"
+          },
+          {
+            "articolo": "590",
+            "label": "Art. 590 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_753_590",
+            "title": "Lesioni personali colpose"
+          },
+          {
+            "articolo": "452",
+            "label": "Art. 452 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_545_452",
+            "title": "Delitti colposi contro la salute pubblica"
+          },
+          {
+            "articolo": "40",
+            "label": "Art. 40 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "label": "Art. 41 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "43",
+            "label": "Art. 43 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_49_43",
+            "title": "Elemento psicologico del reato"
+          },
+          {
+            "articolo": "42",
+            "label": "Art. 42 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_48_42",
+            "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+          },
+          {
+            "articolo": "61",
+            "label": "Art. 61 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "113",
+            "label": "Art. 113 c.p.",
+            "source": "codice_penale",
+            "statute_id": "codice_penale_124_113",
+            "title": "Cooperazione nel delitto colposo"
+          }
+        ]
+      }
+    },
+    "schema": "aspic_ir_bundle_v1"
+  },
+  "polished_response": "",
+  "repaired_aspic_files": {
+    "counter_reasoner": {
+      "absolute_path": "LexCausa\\logs\\aspic_repairs\\20260305_172107_Durante_lavori_di_ristrutturazione_crolla_un_ponteggio_e_un_counter_reasoner_repaired_aspic_ir.json",
+      "relative_path": "logs\\aspic_repairs\\20260305_172107_Durante_lavori_di_ristrutturazione_crolla_un_ponteggio_e_un_counter_reasoner_repaired_aspic_ir.json"
+    },
+    "reasoner": {
+      "absolute_path": "LexCausa\\logs\\aspic_repairs\\20260305_172107_Durante_lavori_di_ristrutturazione_crolla_un_ponteggio_e_un_reasoner_repaired_aspic_ir.json",
+      "relative_path": "logs\\aspic_repairs\\20260305_172107_Durante_lavori_di_ristrutturazione_crolla_un_ponteggio_e_un_reasoner_repaired_aspic_ir.json"
+    }
+  },
+  "repaired_counter_aspic_ir": {
+    "_repair_metadata": {
+      "total_dropped": 0,
+      "total_repaired": 3
+    },
+    "arguments": [
+      {
+        "conclusion": {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              },
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "A1.C1",
+          "text": "Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione."
+        },
+        "id": "A1",
+        "premises": [
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "437",
+                  "label": "Art. 437 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_530_437",
+                  "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P1",
+            "text": "L’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…», punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.",
+            "type": "premise"
+          },
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "437",
+                  "label": "Art. 437 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_530_437",
+                  "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                },
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P2",
+            "text": "- Art. 437 c.p. - Art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…», - Art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,",
+            "type": "norm"
+          }
+        ],
+        "role": "counter",
+        "rule": {
+          "id": "A1.R1",
+          "text": "L'analisi giuridica dimostra che Le circostanze aggravanti possono non risultare concretamente integrate.; La catena causale è atipica/anomala e interrompe l'imputabilità.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.",
+          "type": "defeasible"
+        }
+      }
+    ],
+    "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+    "metadata": {
+      "attack_source": "taxonomy",
+      "causal_type_id": "PEN_INTERVENING",
+      "conclusion_point_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ],
+      "conclusion_points_count": 8,
+      "selected_attack_by_step": [
+        {
+          "attack_id": "aggravating_circumstances_not_integrated",
+          "attack_ids": [
+            "aggravating_circumstances_not_integrated"
+          ],
+          "step": 1
+        },
+        {
+          "attack_id": "abnormal_or_atypical_chain",
+          "attack_ids": [
+            "abnormal_or_atypical_chain"
+          ],
+          "step": 2
+        },
+        {
+          "attack_id": "abnormal_or_atypical_chain",
+          "attack_ids": [
+            "abnormal_or_atypical_chain"
+          ],
+          "step": 3
+        }
+      ],
+      "selected_attack_id": "aggravating_circumstances_not_integrated",
+      "selected_attack_ids": [
+        "aggravating_circumstances_not_integrated",
+        "abnormal_or_atypical_chain"
+      ],
+      "theory_id": "T_CONDIZIONALISTICA"
+    },
+    "precedent_links": [],
+    "precedent_nodes": [],
+    "raw_response": "**Premessa Alternativa**: L’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…», punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,\n- Art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che Le circostanze aggravanti possono non risultare concretamente integrate.; La catena causale è atipica/anomala e interrompe l'imputabilità.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n\n**Catena di ragionamento**:\n1. L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p.\n2. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n3. Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n",
+    "reasoning_chain": [
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "437",
+              "label": "Art. 437 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S1",
+        "text": "L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "437",
+              "label": "Art. 437 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S2",
+        "text": "Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "41",
+              "label": "Art. 41 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            },
+            {
+              "articolo": "40",
+              "label": "Art. 40 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S3",
+        "text": "Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione."
+      }
+    ],
+    "role": "counter",
+    "schema": "aspic_ir_v1",
+    "sources": {
+      "precedents": [],
+      "statutes": [
+        {
+          "articolo": "437",
+          "label": "Art. 437 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_530_437",
+          "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+        },
+        {
+          "articolo": "589",
+          "label": "Art. 589 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_750_589",
+          "title": "Omicidio colposo"
+        },
+        {
+          "articolo": "254",
+          "label": "Art. 254 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_276_254",
+          "title": "Agevolazione colposa"
+        },
+        {
+          "articolo": "590",
+          "label": "Art. 590 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_753_590",
+          "title": "Lesioni personali colpose"
+        },
+        {
+          "articolo": "452",
+          "label": "Art. 452 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_545_452",
+          "title": "Delitti colposi contro la salute pubblica"
+        },
+        {
+          "articolo": "451",
+          "label": "Art. 451 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_544_451",
+          "title": "Omissione colposa di cautele o difese contro disastri o infortuni sul lavoro"
+        },
+        {
+          "articolo": "41",
+          "label": "Art. 41 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_47_41",
+          "title": "Concorso di cause"
+        },
+        {
+          "articolo": "40",
+          "label": "Art. 40 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_46_40",
+          "title": "Rapporto di causalità"
+        },
+        {
+          "articolo": "43",
+          "label": "Art. 43 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_49_43",
+          "title": "Elemento psicologico del reato"
+        }
+      ]
+    }
+  },
+  "repaired_counter_chain": "**Premessa Alternativa**: L’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…», punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,\n- Art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,\n\n**Nesso Causale Alternativo**: L'analisi giuridica dimostra che Le circostanze aggravanti possono non risultare concretamente integrate.; La catena causale è atipica/anomala e interrompe l'imputabilità.. La catena argomentativa evidenzia come le norme applicabili al caso consentano una ricostruzione alternativa o limitativa rispetto alla tesi principale.\n\n**Conclusione Contraria**: Pertanto, la tesi giuridica principale deve essere contestata o ridimensionata poiché Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n\n**Catena di ragionamento**:\n1. L’art. 437 c.p. punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni sul lavoro; i DPI, pur obbligatori per normativa di sicurezza, non sono “impianti o apparecchi” ma dispositivi di protezione individuale, quindi la loro mancata imposizione non rientra nella fattispecie di omissione di cautele prevista dal citato articolo. Di conseguenza le lesioni gravi subite dall’operaio non possono essere considerate aggravanti concretamente collegate a una violazione dell’art. 437 c.p.\n2. Pur riscontrato che un operaio ha rimosso elementi di fissaggio del ponteggio, tale comportamento non rientra nella fattispecie di omissione di cautele prevista dall’art. 437 c.p., poiché la norma punisce chi omette di collocare, rimuove o rende inservibili impianti, apparecchi o segnali destinati a prevenire infortuni, mentre i fissaggi del ponteggio sono componenti strutturali e non dispositivi di protezione. Di conseguenza la catena causale è atipica: l’evento scatenante è un atto attivo e autonomo, non la mancanza di una misura preventiva, indebolendo così l’applicazione dell’art. 437 c.p.\n3. Ai sensi dell’art. 41 c.p., una causa sopravvenuta che da sola è sufficiente a produrre l’evento esclude il rapporto di causalità; la fatalità e l’imprevedibilità invocate dagli imputati, se riconosciute come cause autonome e sufficienti, spezzano la catena tra le omissioni e il crollo del ponteggio, rendendo atipica la connessione richiesta dall’art. 40 c.p. Tale interpretazione indebolisce la tesi di responsabilità penale per omissione.\n",
+  "repaired_reasoner_aspic_ir": {
+    "_repair_metadata": {
+      "total_dropped": 0,
+      "total_repaired": 3
+    },
+    "arguments": [
+      {
+        "conclusion": {
+          "citations": {
+            "precedents": [],
+            "statutes": [
+              {
+                "articolo": "437",
+                "label": "Art. 437 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_530_437",
+                "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+              },
+              {
+                "articolo": "40",
+                "label": "Art. 40 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_46_40",
+                "title": "Rapporto di causalità"
+              },
+              {
+                "articolo": "41",
+                "label": "Art. 41 c.p.",
+                "source": "codice_penale",
+                "statute_id": "codice_penale_47_41",
+                "title": "Concorso di cause"
+              }
+            ],
+            "unknown_statutes": []
+          },
+          "id": "A1.C1",
+          "text": "Alla luce dell’art. 437 c.p. le omissioni del preposto (mancata imposizione dei DPI) e dell’operaio (rimozione degli elementi di fissaggio) costituiscono omessa adozione di cautele contro gli infortuni, punibili con reclusione da tre a dieci anni per la conseguente lesione grave. Il nesso di causalità è dimostrato dall’art. 40 c.p., poiché, privi di tali omissioni, il ponteggio non sarebbe crollato e le lesioni non si sarebbero verificate; la fatalità o l’imprevedibilità invocate non interrompono il rapporto causale ai sensi dell’art. 41 c.p. Conseguentemente, sussiste responsabilità penale per omissione dolosa di cautele, con cooperazione colposa tra il preposto e l’operaio."
+        },
+        "id": "A1",
+        "premises": [
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "437",
+                  "label": "Art. 437 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_530_437",
+                  "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                },
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P1",
+            "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…»,, l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.",
+            "type": "premise"
+          },
+          {
+            "citations": {
+              "precedents": [],
+              "statutes": [
+                {
+                  "articolo": "437",
+                  "label": "Art. 437 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_530_437",
+                  "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+                },
+                {
+                  "articolo": "40",
+                  "label": "Art. 40 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_46_40",
+                  "title": "Rapporto di causalità"
+                },
+                {
+                  "articolo": "41",
+                  "label": "Art. 41 c.p.",
+                  "source": "codice_penale",
+                  "statute_id": "codice_penale_47_41",
+                  "title": "Concorso di cause"
+                }
+              ],
+              "unknown_statutes": []
+            },
+            "id": "A1.P2",
+            "text": "- Art. 437 c.p. - Art. 40 c.p. - Art. 41 c.p.",
+            "type": "norm"
+          }
+        ],
+        "role": "support",
+        "rule": {
+          "id": "A1.R1",
+          "text": "La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.",
+          "type": "defeasible"
+        }
+      }
+    ],
+    "claim": "Durante lavori di ristrutturazione crolla un ponteggio e un operaio riporta lesioni gravi. Le verifiche indicano che il preposto non aveva imposto l'uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore produce POS e verbali di formazione, ma emergono controlli discontinui e segnalazioni pregresse ignorate. Gli imputati invocano fatalita e imprevedibilita della sequenza causale. Si chiede di verificare sussistenza della colpa, nesso causale individuale e possibile cooperazione colposa tra piu soggetti.",
+    "metadata": {
+      "causal_type_id": "PEN_INTERVENING",
+      "theory_id": "T_CONDIZIONALISTICA"
+    },
+    "precedent_links": [],
+    "precedent_nodes": [],
+    "raw_response": "**Premessa**: Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…»,, l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 437 c.p. le omissioni del preposto (mancata imposizione dei DPI) e dell’operaio (rimozione degli elementi di fissaggio) costituiscono omessa adozione di cautele contro gli infortuni, punibili con reclusione da tre a dieci anni per la conseguente lesione grave. Il nesso di causalità è dimostrato dall’art. 40 c.p., poiché, privi di tali omissioni, il ponteggio non sarebbe crollato e le lesioni non si sarebbero verificate; la fatalità o l’imprevedibilità invocate non interrompono il rapporto causale ai sensi dell’art. 41 c.p. Conseguentemente, sussiste responsabilità penale per omissione dolosa di cautele, con cooperazione colposa tra il preposto e l’operaio.\n\n**Catena di ragionamento**:\n1. Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi.\n2. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo.\n3. Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”.\n4. Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n",
+    "reasoning_chain": [
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [],
+          "unknown_statutes": []
+        },
+        "id": "S1",
+        "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "437",
+              "label": "Art. 437 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_530_437",
+              "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S2",
+        "text": "La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "40",
+              "label": "Art. 40 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_46_40",
+              "title": "Rapporto di causalità"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S3",
+        "text": "Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”."
+      },
+      {
+        "citations": {
+          "precedents": [],
+          "statutes": [
+            {
+              "articolo": "41",
+              "label": "Art. 41 c.p.",
+              "source": "codice_penale",
+              "statute_id": "codice_penale_47_41",
+              "title": "Concorso di cause"
+            }
+          ],
+          "unknown_statutes": []
+        },
+        "id": "S4",
+        "text": "Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio."
+      }
+    ],
+    "role": "support",
+    "schema": "aspic_ir_v1",
+    "sources": {
+      "precedents": [],
+      "statutes": [
+        {
+          "articolo": "437",
+          "label": "Art. 437 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_530_437",
+          "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+        },
+        {
+          "articolo": "589",
+          "label": "Art. 589 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_750_589",
+          "title": "Omicidio colposo"
+        },
+        {
+          "articolo": "254",
+          "label": "Art. 254 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_276_254",
+          "title": "Agevolazione colposa"
+        },
+        {
+          "articolo": "590",
+          "label": "Art. 590 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_753_590",
+          "title": "Lesioni personali colpose"
+        },
+        {
+          "articolo": "452",
+          "label": "Art. 452 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_545_452",
+          "title": "Delitti colposi contro la salute pubblica"
+        },
+        {
+          "articolo": "40",
+          "label": "Art. 40 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_46_40",
+          "title": "Rapporto di causalità"
+        },
+        {
+          "articolo": "41",
+          "label": "Art. 41 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_47_41",
+          "title": "Concorso di cause"
+        },
+        {
+          "articolo": "43",
+          "label": "Art. 43 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_49_43",
+          "title": "Elemento psicologico del reato"
+        },
+        {
+          "articolo": "42",
+          "label": "Art. 42 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_48_42",
+          "title": "Responsabilità per dolo o per colpa o per delitto preterintenzionale. Responsabilità obiettiva"
+        },
+        {
+          "articolo": "61",
+          "label": "Art. 61 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_69_61",
+          "title": "Circostanze aggravanti comuni"
+        },
+        {
+          "articolo": "113",
+          "label": "Art. 113 c.p.",
+          "source": "codice_penale",
+          "statute_id": "codice_penale_124_113",
+          "title": "Cooperazione nel delitto colposo"
+        }
+      ]
+    }
+  },
+  "repaired_reasoner_chain": "**Premessa**: Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., il quale dispone che «Chiunque omette di collocare impianti, apparecchi o segnali destinati a prevenire disastri o infortuni sul lavoro, ovvero li rimuove o li danneggia, è punito con la reclusione da sei mesi a cinque ann…»,, l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo. Ai sensi dell’art. 40 c.p., il quale dispone che «Nessuno può essere punito per un fatto preveduto dalla legge come reato, se l'evento dannoso o pericoloso, da cui dipende la esistenza del reato, non è conseguenza della sua azione od omissione. Non i…»,, la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”. Ai sensi dell’art. 41 c.p., il quale dispone che «Il concorso di cause preesistenti o simultanee o sopravvenute, anche se indipendenti dall'azione od omissione del colpevole, non esclude il rapporto di causalità fra l'azione od omissione e l'evento.…»,, le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n\n**Norma**:\n- Art. 437 c.p.\n- Art. 40 c.p.\n- Art. 41 c.p.\n\n**Nesso Causale**: La connessione tra le norme citate e la questione giuridica posta dal claim emerge dalla catena di ragionamento sottostante, dove ciascun passo costruisce logicamente sul precedente per motivare la valutazione giuridica finale.\n\n**Conclusione**: Alla luce dell’art. 437 c.p. le omissioni del preposto (mancata imposizione dei DPI) e dell’operaio (rimozione degli elementi di fissaggio) costituiscono omessa adozione di cautele contro gli infortuni, punibili con reclusione da tre a dieci anni per la conseguente lesione grave. Il nesso di causalità è dimostrato dall’art. 40 c.p., poiché, privi di tali omissioni, il ponteggio non sarebbe crollato e le lesioni non si sarebbero verificate; la fatalità o l’imprevedibilità invocate non interrompono il rapporto causale ai sensi dell’art. 41 c.p. Conseguentemente, sussiste responsabilità penale per omissione dolosa di cautele, con cooperazione colposa tra il preposto e l’operaio.\n\n**Catena di ragionamento**:\n1. Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, provocando lesioni gravi a un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi. Il datore di lavoro ha presentato il POS e i verbali di formazione, ma è emerso che i controlli sulla sicurezza erano discontinui e che segnalazioni pregresse erano state ignorate. Gli imputati hanno invocato la fatalità e l’imprevedibilità della sequenza causale per difendersi.\n2. La mancata imposizione dell’uso dei DPI da parte del preposto e la rimozione, da parte di un operaio, degli elementi di fissaggio del ponteggio configurano, ai sensi dell’art. 437 c.p., l’omissione dolosa di cautele contro gli infortuni sul lavoro, reato punito con la reclusione da sei mesi a cinque anni e, se dal fatto deriva un infortunio, con la reclusione da tre a dieci anni. Tale condotta, essendo finalizzata a garantire la sicurezza dei lavoratori, rientra nella fattispecie di “omissione di cautele” prevista dal medesimo articolo.\n3. Ai sensi dell’art. 40 c.p., la condizione sine qua non del crollo è rappresentata dall’omissione del preposto di imporre l’uso dei DPI e dalla rimozione, da parte dell’operaio, degli elementi di fissaggio del ponteggio; infatti, eliminando queste due condotte l’instabilità strutturale non si sarebbe verificata e il ponteggio non sarebbe crollato, soddisfacendo il test “but‑for”.\n4. Ai sensi dell’art. 41 c.p., le cause sopravvenute escludono il nesso di causalità solo se, da sole, sono sufficienti a produrre l’evento; la fatalità o l’imprevedibilità invocate dagli imputati non costituiscono una causa autonoma, poiché il crollo del ponteggio è stato reso possibile dalla mancata imposizione dei DPI e dalla rimozione degli elementi di fissaggio, fattori preesistenti che hanno determinato la perdita di stabilità. Pertanto, tali cause non interrompono il rapporto di causalità tra le omissioni e le lesioni gravissime subite dall’operaio.\n",
+  "summary": "## Analisi di Consistenza\n\n### Reasoner\n- Citazioni valide: 3/3\n- Testo verificato: 0 match / 3 verificati\n- Citazioni riparate: 3\n- Problemi: 3\n\n### Counter-Reasoner\n- Citazioni valide: 3/3\n- Testo verificato: 0 match / 3 verificati\n- Citazioni riparate: 3\n- Problemi: 3\n",
+  "winning_side": "undecided",
+  "winning_side_canonical": "undecided"
+}

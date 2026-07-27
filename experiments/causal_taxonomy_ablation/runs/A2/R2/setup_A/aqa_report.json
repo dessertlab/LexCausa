@@ -1,0 +1,1812 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 2,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.0681348,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.56779,
+      "attacks_avg": 0.44137499999999996,
+      "base_score_avg": 0.7512458973366556,
+      "cogency_avg": 0.6512250613087075,
+      "net_plausibility": 0.32133427359719907,
+      "net_plausibility_adjusted": 0.32133427359719907,
+      "net_plausibility_raw": 0.3098708973366556,
+      "norm_support_avg": 0.8339583333333332,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.3022475932771015,
+      "redundancy_penalty": 0.05667142373945653,
+      "semantics_avg": 0.7409834853690336
+    },
+    "pro": {
+      "attacks_avg": 0.3883666666666666,
+      "base_score_avg": 0.7916483527647745,
+      "cogency_avg": 0.6398510466940083,
+      "net_plausibility": 0.7916483527647745,
+      "net_plausibility_adjusted": 0.7916483527647745,
+      "net_plausibility_dialectical_raw": 0.4032816860981079,
+      "net_plausibility_intrinsic_raw": 0.7916483527647745,
+      "net_plausibility_raw": 0.7916483527647745,
+      "norm_support_avg": 0.955,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.17911664856644793,
+      "redundancy_penalty": 0.02238958107080599,
+      "semantics_avg": 0.7256434625219068
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2188,
+            "attacker_base_score": 0.8178,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2857,
+            "damage_factor": 0.4,
+            "excess": 0.5469,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7388,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2103,
+            "attacker_base_score": 0.8045,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2647,
+            "damage_factor": 0.4,
+            "excess": 0.5259,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7388,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1844,
+            "attacker_base_score": 0.7526,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1998,
+            "damage_factor": 0.4,
+            "excess": 0.461,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7972,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7388,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.4291,
+        "base_score": 0.738839247035475,
+        "cogency": 0.6542686625616143,
+        "cogency_details": {
+          "argument_quality_score": 0.7316467437952608,
+          "coherence_score": 0.5768905813279679,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 2, comma 2, L. 241/1990, il provvedimento di rigetto può essere redatto in forma semplificata quando la domanda risulta manifestamente inammissibile; la motivazione può limitarsi a un riferimento sintetico al presupposto di fatto ostativo, come “carenza requisiti”. Tale formulazione indica comunque il requisito di fatto che ha determinato il diniego, soddisfacendo così l’obbligo di motivazione previsto dal citato comma.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.738839247035475,
+        "nesso_plausibility": 0.309739247035475,
+        "norm_support": 0.8383333333333334,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.8333333333333334,
+          "citation_specificity_score": 0.3333333333333333,
+          "final": 0.8383333333333334,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo quando il responsabile del procedimento intende adottare un provvedimento negativo “in forma ordinaria”; tuttavia, l’art. 2, comma 2, della stessa legge prevede espressamente che, qualora il procedimento ad iniziativa di parte evidenzi una manifesta irricevibilità o infondatezza della domanda, l’amministrazione può concluderlo con un provvedimento di rigetto “in forma semplificata”, la cui motivazione può limitarsi a un sintetico riferimento ai requisiti mancanti. In tal caso, la disciplina dell’art. 10‑bis è incompatibile perché la norma di cui all’art. 2, comma 2, costituisce una deroga specifica che esclude l’obbligo di comunicare preventivamente i motivi ostativi, rendendo quindi non applicabile il requisito di preavviso al rigetto semplificato. (cfr. art. 2, comma 2 e art. 10‑bis L. 241/1990).",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6907510497788578,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6907510497788578
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo quando il responsabile del procedimento intende adottare un provvedimento negativo “in forma ordinaria”; tuttavia, l’art. 2, comma 2, della stessa legge prevede espressamente che, qualora il procedimento ad iniziativa di parte evidenzi una manifesta irricevibilità o infondatezza della domanda, l’amministrazione può concluderlo con un provvedimento di rigetto “in forma semplificata”, la cui motivazione può limitarsi a un sintetico riferimento ai requisiti mancanti. In tal caso, la disciplina dell’art. 10‑bis è incompatibile perché la norma di cui all’art. 2, comma 2, costituisce una deroga specifica che esclude l’obbligo di comunicare preventivamente i motivi ostativi, rendendo quindi non applicabile il requisito di preavviso al rigetto semplificato. (cfr. art. 2, comma 2 e art. 10‑bis L. 241/1990)."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2301,
+            "attacker_base_score": 0.8045,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3422,
+            "damage_factor": 0.4,
+            "excess": 0.5752,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8342,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.767,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2278,
+            "attacker_base_score": 0.8178,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.3365,
+            "damage_factor": 0.4,
+            "excess": 0.5695,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8171,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.767,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1203,
+            "attacker_base_score": 0.7526,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0676,
+            "damage_factor": 0.4,
+            "excess": 0.3007,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8345,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.767,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4579,
+        "base_score": 0.7669751591562279,
+        "cogency": 0.6539084874532549,
+        "cogency_details": {
+          "argument_quality_score": 0.7387708749841964,
+          "coherence_score": 0.5690460999223135,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo per i provvedimenti negativi adottati “in forma ordinaria”, mentre il rigetto di una domanda di contributo, qualora manifestamente inammissibile, è disciplinato dall’art. 2, comma 2, L. 241/1990, che consente un provvedimento sintetico senza obbligo di preavviso; di conseguenza l’assenza del preavviso non viola alcuna disposizione di legge. Inoltre, la dicitura “carenza requisiti” individua il presupposto di fatto ostativo previsto dall’art. 3, comma 1, L. 241/1990 e, nel contesto di un provvedimento semplificato, soddisfa il minimo richiesto di motivazione, perciò l’art. 21‑octies L. 241/1990 non prevede l’annullabilità per mera insufficienza motivazionale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7669751591562279,
+        "nesso_plausibility": 0.30907515915622796,
+        "norm_support": 0.8674999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8674999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 2, comma 2, L. 241/1990, il provvedimento di rigetto può essere redatto in forma semplificata quando la domanda risulta manifestamente inammissibile; la motivazione può limitarsi a un riferimento sintetico al presupposto di fatto ostativo, come “carenza requisiti”. Tale formulazione indica comunque il requisito di fatto che ha determinato il diniego, soddisfacendo così l’obbligo di motivazione previsto dal citato comma.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7460087097341717,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7460087097341717
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2, comma 2, L. 241/1990, il provvedimento di rigetto può essere redatto in forma semplificata quando la domanda risulta manifestamente inammissibile; la motivazione può limitarsi a un riferimento sintetico al presupposto di fatto ostativo, come “carenza requisiti”. Tale formulazione indica comunque il requisito di fatto che ha determinato il diniego, soddisfacendo così l’obbligo di motivazione previsto dal citato comma."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2581,
+            "attacker_base_score": 0.8178,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.4,
+            "damage_factor": 0.4,
+            "excess": 0.6453,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8559,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7547,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1806,
+            "attacker_base_score": 0.7526,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2063,
+            "damage_factor": 0.4,
+            "excess": 0.4516,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8014,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7547,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8045,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.7547,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8933,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7547,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.4387,
+        "base_score": 0.7546883926606069,
+        "cogency": 0.6374178783798621,
+        "cogency_details": {
+          "argument_quality_score": 0.7085518519948591,
+          "coherence_score": 0.5662839047648651,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1, comma 1, L. 241/1990, la trasparenza dell’attività amministrativa si ottiene anche mediante la pubblicazione del bando, che rende noti i criteri di ammissibilità; se tali criteri risultano autoevidenti, la loro sola indicazione nel bando è sufficiente a soddisfare il requisito di motivazione previsto dall’art. 2, comma 2, L. 241/1990. Pertanto, l’amministrazione non è obbligata a elencare puntualmente i profili ostativi nella decisione di rigetto, poiché il soggetto interessato può già conoscere e verificare i requisiti richiesti dal bando. La mancanza di una motivazione dettagliata non costituisce, dunque, violazione del principio di trasparenza né del diritto di contraddittorio.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7546883926606069,
+        "nesso_plausibility": 0.31598839266060696,
+        "norm_support": 0.85,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.85,
+          "citation_specificity_score": 0.4,
+          "final": 0.85,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo per i provvedimenti negativi adottati “in forma ordinaria”, mentre il rigetto di una domanda di contributo, qualora manifestamente inammissibile, è disciplinato dall’art. 2, comma 2, L. 241/1990, che consente un provvedimento sintetico senza obbligo di preavviso; di conseguenza l’assenza del preavviso non viola alcuna disposizione di legge. Inoltre, la dicitura “carenza requisiti” individua il presupposto di fatto ostativo previsto dall’art. 3, comma 1, L. 241/1990 e, nel contesto di un provvedimento semplificato, soddisfa il minimo richiesto di motivazione, perciò l’art. 21‑octies L. 241/1990 non prevede l’annullabilità per mera insufficienza motivazionale.",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "1",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.744876763822161,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.744876763822161
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo per i provvedimenti negativi adottati “in forma ordinaria”, mentre il rigetto di una domanda di contributo, qualora manifestamente inammissibile, è disciplinato dall’art. 2, comma 2, L. 241/1990, che consente un provvedimento sintetico senza obbligo di preavviso; di conseguenza l’assenza del preavviso non viola alcuna disposizione di legge. Inoltre, la dicitura “carenza requisiti” individua il presupposto di fatto ostativo previsto dall’art. 3, comma 1, L. 241/1990 e, nel contesto di un provvedimento semplificato, soddisfa il minimo richiesto di motivazione, perciò l’art. 21‑octies L. 241/1990 non prevede l’annullabilità per mera insufficienza motivazionale."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2326,
+            "attacker_base_score": 0.8045,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3259,
+            "damage_factor": 0.4,
+            "excess": 0.5814,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.824,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7445,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2072,
+            "attacker_base_score": 0.8178,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2625,
+            "damage_factor": 0.4,
+            "excess": 0.518,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7719,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7445,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1124,
+            "attacker_base_score": 0.7526,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0254,
+            "damage_factor": 0.4,
+            "excess": 0.2809,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8015,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7445,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.43979999999999997,
+        "base_score": 0.7444807904943127,
+        "cogency": 0.6593052168400987,
+        "cogency_details": {
+          "argument_quality_score": 0.7440260005792609,
+          "coherence_score": 0.5745844331009364,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, i requisiti di ammissibilità e accertare di ufficio i fatti, potendo avvalersi di criteri oggettivi già indicati nel bando; poiché tali criteri risultano auto‑evidenti, la verifica oggettiva compiuta dall’amministrazione soddisfa pienamente l’obbligo istruttorio previsto dal medesimo articolo, rendendo superflua una motivazione puntuale dei singoli profili ostativi e, di conseguenza, l’assenza del pre‑avviso di rigetto non invalida il provvedimento.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7444807904943127,
+        "nesso_plausibility": 0.30468079049431274,
+        "norm_support": 0.7799999999999999,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.75,
+          "citation_specificity_score": 0.0,
+          "final": 0.7799999999999999,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1, comma 1, L. 241/1990, la trasparenza dell’attività amministrativa si ottiene anche mediante la pubblicazione del bando, che rende noti i criteri di ammissibilità; se tali criteri risultano autoevidenti, la loro sola indicazione nel bando è sufficiente a soddisfare il requisito di motivazione previsto dall’art. 2, comma 2, L. 241/1990. Pertanto, l’amministrazione non è obbligata a elencare puntualmente i profili ostativi nella decisione di rigetto, poiché il soggetto interessato può già conoscere e verificare i requisiti richiesti dal bando. La mancanza di una motivazione dettagliata non costituisce, dunque, violazione del principio di trasparenza né del diritto di contraddittorio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7822974181409437,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7822974181409437
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 1, comma 1, L. 241/1990, la trasparenza dell’attività amministrativa si ottiene anche mediante la pubblicazione del bando, che rende noti i criteri di ammissibilità; se tali criteri risultano autoevidenti, la loro sola indicazione nel bando è sufficiente a soddisfare il requisito di motivazione previsto dall’art. 2, comma 2, L. 241/1990. Pertanto, l’amministrazione non è obbligata a elencare puntualmente i profili ostativi nella decisione di rigetto, poiché il soggetto interessato può già conoscere e verificare i requisiti richiesti dal bando. La mancanza di una motivazione dettagliata non costituisce, dunque, violazione del principio di trasparenza né del diritto di contraddittorio."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.211,
+            "attacker_base_score": 0.767,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2801,
+            "damage_factor": 0.4,
+            "excess": 0.5275,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8345,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7526,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1828,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2097,
+            "damage_factor": 0.4,
+            "excess": 0.4571,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8014,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7526,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1702,
+            "attacker_base_score": 0.7388,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.178,
+            "damage_factor": 0.4,
+            "excess": 0.4254,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7972,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7526,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1047,
+            "attacker_base_score": 0.7445,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0143,
+            "damage_factor": 0.4,
+            "excess": 0.2618,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8015,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7526,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3938,
+        "base_score": 0.7525609486746303,
+        "cogency": 0.5606858548235711,
+        "cogency_details": {
+          "argument_quality_score": 0.6494352291916305,
+          "coherence_score": 0.47193648045551184,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, riferendosi alle risultanze dell’istruttoria; la formulazione generica “carenza requisiti” senza specificare quali requisiti risultino mancanti né indicare i profili ostativi contestati non soddisfa tale obbligo, rendendo la motivazione insufficiente e vulnerabile all’annullamento. Inoltre, l’assenza di una motivazione puntuale impedisce al soggetto di verificare la congruità della valutazione amministrativa con i criteri del bando, violando il principio di trasparenza sancito dall’art. 1 L. 241/1990.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7525609486746303,
+        "nesso_plausibility": 0.3587609486746303,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Nel procedimento di concessione del contributo, l’art. 10‑bis L. 241/1990 impone che, prima dell’adozione del provvedimento negativo, l’amministrazione comunichi tempestivamente i motivi ostativi, sospendendo i termini di conclusione; la mancata emissione di tale preavviso, come nel caso in esame, costituisce una violazione di tale disposizione. Inoltre, ai sensi dell’art. 2 L. 241/1990, il procedimento deve concludersi entro il termine fissato nella comunicazione di avvio, termine che resta sospeso finché non è stato inviato il preavviso di rigetto; l’assenza di tale comunicazione implica anche il mancato rispetto del termine di conclusione. Pertanto, l’atto di rigetto risulta viziato sia per omissione del preavviso sia per violazione del termine procedimentale.",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6145173074251963,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6145173074251963
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Nel procedimento di concessione del contributo, l’art. 10‑bis L. 241/1990 impone che, prima dell’adozione del provvedimento negativo, l’amministrazione comunichi tempestivamente i motivi ostativi, sospendendo i termini di conclusione; la mancata emissione di tale preavviso, come nel caso in esame, costituisce una violazione di tale disposizione. Inoltre, ai sensi dell’art. 2 L. 241/1990, il procedimento deve concludersi entro il termine fissato nella comunicazione di avvio, termine che resta sospeso finché non è stato inviato il preavviso di rigetto; l’assenza di tale comunicazione implica anche il mancato rispetto del termine di conclusione. Pertanto, l’atto di rigetto risulta viziato sia per omissione del preavviso sia per violazione del termine procedimentale."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2175,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.3484,
+            "damage_factor": 0.4,
+            "excess": 0.5438,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8933,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8045,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.19,
+            "attacker_base_score": 0.767,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2796,
+            "damage_factor": 0.4,
+            "excess": 0.475,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8342,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8045,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1428,
+            "attacker_base_score": 0.7388,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1614,
+            "damage_factor": 0.4,
+            "excess": 0.3569,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.8045,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0953,
+            "attacker_base_score": 0.7445,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0429,
+            "damage_factor": 0.4,
+            "excess": 0.2383,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.824,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8045,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4075,
+        "base_score": 0.804537159460888,
+        "cogency": 0.6522215621457602,
+        "cogency_details": {
+          "argument_quality_score": 0.7019950643187154,
+          "coherence_score": 0.602448059972805,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’art. 10‑bis L. 241/1990 impone all’amministrazione, prima di adottare un provvedimento negativo, di comunicare tempestivamente i motivi ostativi all’istanza, sospendendo i termini di conclusione e concedendo all’interessato dieci giorni per presentare osservazioni scritte; la mancata emissione di tale preavviso, unitamente all’assenza di indicazione puntuale dei requisiti carenti, viola il diritto di contraddittorio riconosciuto anche dall’art. 10 L. 241/1990, che prevede la facoltà di presentare memorie e documenti da valutare nell’istruttoria. Pertanto, il rigetto formulato con la sola dicitura generica “carenza requisiti” non ha rispettato le garanzie procedurali di partecipazione e di difesa, configurando una violazione dell’art. 10‑bis e dell’art. 10 della legge 241/1990.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.804537159460888,
+        "nesso_plausibility": 0.397037159460888,
+        "norm_support": 0.9649999999999999,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.95,
+          "citation_specificity_score": 0.8,
+          "final": 0.9649999999999999,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, riferendosi alle risultanze dell’istruttoria; la formulazione generica “carenza requisiti” senza specificare quali requisiti risultino mancanti né indicare i profili ostativi contestati non soddisfa tale obbligo, rendendo la motivazione insufficiente e vulnerabile all’annullamento. Inoltre, l’assenza di una motivazione puntuale impedisce al soggetto di verificare la congruità della valutazione amministrativa con i criteri del bando, violando il principio di trasparenza sancito dall’art. 1 L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "3",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "1",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7429023027238666,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7429023027238666
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 3 L. 241/1990 la motivazione deve indicare i presupposti di fatto e le ragioni giuridiche che hanno determinato la decisione, riferendosi alle risultanze dell’istruttoria; la formulazione generica “carenza requisiti” senza specificare quali requisiti risultino mancanti né indicare i profili ostativi contestati non soddisfa tale obbligo, rendendo la motivazione insufficiente e vulnerabile all’annullamento. Inoltre, l’assenza di una motivazione puntuale impedisce al soggetto di verificare la congruità della valutazione amministrativa con i criteri del bando, violando il principio di trasparenza sancito dall’art. 1 L. 241/1990."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1896,
+            "attacker_base_score": 0.7547,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2919,
+            "damage_factor": 0.4,
+            "excess": 0.474,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8559,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8178,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1742,
+            "attacker_base_score": 0.767,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2534,
+            "damage_factor": 0.4,
+            "excess": 0.4355,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8171,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8178,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1375,
+            "attacker_base_score": 0.7388,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1615,
+            "damage_factor": 0.4,
+            "excess": 0.3437,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.8178,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0636,
+            "attacker_base_score": 0.7445,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9769,
+            "damage_factor": 0.4,
+            "excess": 0.159,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7719,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8178,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3638,
+        "base_score": 0.8178469501588053,
+        "cogency": 0.7066457231126932,
+        "cogency_details": {
+          "argument_quality_score": 0.7589272481494629,
+          "coherence_score": 0.6543641980759236,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 21‑octies della L. 241/1990, il provvedimento finale è annullabile quando è adottato in violazione di norme sul procedimento, salvo che il contenuto del provvedimento non avrebbe potuto risultare diverso; l’omissione del preavviso di rigetto previsto dall’art. 10‑bis L. 241/1990 priva l’impresa del diritto di presentare osservazioni e, quindi, rende possibile una diversa valutazione dei requisiti richiesti per il contributo, che è un atto discrezionale. Poiché la decisione di rigetto si basa proprio sulla verifica di tali requisiti, la mancata comunicazione dei motivi ostativi impedisce di dimostrare che il provvedimento sarebbe stato invariato, configurando così un vizio annullabile. Di conseguenza, il rigetto generico per “carenza requisiti” è suscettibile di essere annullato per violazione dell’art. 21‑octies L. 241/1990.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.8178469501588053,
+        "nesso_plausibility": 0.45404695015880525,
+        "norm_support": 0.9,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9,
+          "citation_specificity_score": 0.6,
+          "final": 0.9,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "L’art. 10‑bis L. 241/1990 impone all’amministrazione, prima di adottare un provvedimento negativo, di comunicare tempestivamente i motivi ostativi all’istanza, sospendendo i termini di conclusione e concedendo all’interessato dieci giorni per presentare osservazioni scritte; la mancata emissione di tale preavviso, unitamente all’assenza di indicazione puntuale dei requisiti carenti, viola il diritto di contraddittorio riconosciuto anche dall’art. 10 L. 241/1990, che prevede la facoltà di presentare memorie e documenti da valutare nell’istruttoria. Pertanto, il rigetto formulato con la sola dicitura generica “carenza requisiti” non ha rispettato le garanzie procedurali di partecipazione e di difesa, configurando una violazione dell’art. 10‑bis e dell’art. 10 della legge 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8195107774166573,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8195107774166573
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 10‑bis L. 241/1990 impone all’amministrazione, prima di adottare un provvedimento negativo, di comunicare tempestivamente i motivi ostativi all’istanza, sospendendo i termini di conclusione e concedendo all’interessato dieci giorni per presentare osservazioni scritte; la mancata emissione di tale preavviso, unitamente all’assenza di indicazione puntuale dei requisiti carenti, viola il diritto di contraddittorio riconosciuto anche dall’art. 10 L. 241/1990, che prevede la facoltà di presentare memorie e documenti da valutare nell’istruttoria. Pertanto, il rigetto formulato con la sola dicitura generica “carenza requisiti” non ha rispettato le garanzie procedurali di partecipazione e di difesa, configurando una violazione dell’art. 10‑bis e dell’art. 10 della legge 241/1990."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.32133427359719907,
+    "contra_adjusted": 0.32133427359719907,
+    "contra_raw": 0.3098708973366556,
+    "final": 0.47031407916757545,
+    "final_adjusted": 0.47031407916757545,
+    "final_raw": 0.4817774554281189,
+    "pro": 0.7916483527647745,
+    "pro_adjusted": 0.7916483527647745,
+    "pro_raw": 0.7916483527647745,
+    "pro_raw_dialectical": 0.4032816860981079,
+    "pro_raw_intrinsic": 0.7916483527647745,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.8559,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.2581
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.824,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.2326
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8342,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2301
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.8171,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2278
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.786,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2188
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.8933,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.2175
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8345,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.211
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.786,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2103
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7719,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.2072
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8342,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.19
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 2,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.8111920548098466,
+              "axis_id": "AX1",
+              "axis_quality": 0.29345999999999994,
+              "link_ids": [
+                "S3->S4",
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7525609486746303,
+              "axis_id": "AX2",
+              "axis_quality": 0.26583999999999997,
+              "link_ids": [
+                "S1->S2"
+              ]
+            }
+          ],
+          "bonus": 0.0681348,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.27964999999999995,
+          "wpcs": 0.56779
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.8046293261175883,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.05667142373945653,
+          "redundancy_index": 0.3022475932771015
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7397969292853532,
+          "high_similarity_pair_ratio": 0.6666666666666666,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.02238958107080599,
+          "redundancy_index": 0.17911664856644793
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2326,
+            "attacker_base_score": 0.8045,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3259,
+            "damage_factor": 0.4,
+            "excess": 0.5814,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.824,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7445,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2072,
+            "attacker_base_score": 0.8178,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2625,
+            "damage_factor": 0.4,
+            "excess": 0.518,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7719,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7445,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1124,
+            "attacker_base_score": 0.7526,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0254,
+            "damage_factor": 0.4,
+            "excess": 0.2809,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8015,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7445,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.43979999999999997,
+        "base_score": 0.7444807904943127,
+        "cogency": 0.6593052168400987,
+        "cogency_details": {
+          "argument_quality_score": 0.7440260005792609,
+          "coherence_score": 0.5745844331009364,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 6, comma 1, lett. a) della L. 241/1990 il responsabile del procedimento deve valutare, ai fini istruttori, i requisiti di ammissibilità e accertare di ufficio i fatti, potendo avvalersi di criteri oggettivi già indicati nel bando; poiché tali criteri risultano auto‑evidenti, la verifica oggettiva compiuta dall’amministrazione soddisfa pienamente l’obbligo istruttorio previsto dal medesimo articolo, rendendo superflua una motivazione puntuale dei singoli profili ostativi e, di conseguenza, l’assenza del pre‑avviso di rigetto non invalida il provvedimento.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7444807904943127,
+        "nesso_plausibility": 0.30468079049431274,
+        "norm_support": 0.7799999999999999,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.75,
+          "citation_specificity_score": 0.0,
+          "final": 0.7799999999999999,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1, comma 1, L. 241/1990, la trasparenza dell’attività amministrativa si ottiene anche mediante la pubblicazione del bando, che rende noti i criteri di ammissibilità; se tali criteri risultano autoevidenti, la loro sola indicazione nel bando è sufficiente a soddisfare il requisito di motivazione previsto dall’art. 2, comma 2, L. 241/1990. Pertanto, l’amministrazione non è obbligata a elencare puntualmente i profili ostativi nella decisione di rigetto, poiché il soggetto interessato può già conoscere e verificare i requisiti richiesti dal bando. La mancanza di una motivazione dettagliata non costituisce, dunque, violazione del principio di trasparenza né del diritto di contraddittorio.",
+        "retrieved_norms": [
+          {
+            "articolo": "1",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_0_1",
+            "title": "Principi generali dell'attività amministrativa"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "6",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_7_6",
+            "title": "Compiti del responsabile del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7822974181409437,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7822974181409437
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 1, comma 1, L. 241/1990, la trasparenza dell’attività amministrativa si ottiene anche mediante la pubblicazione del bando, che rende noti i criteri di ammissibilità; se tali criteri risultano autoevidenti, la loro sola indicazione nel bando è sufficiente a soddisfare il requisito di motivazione previsto dall’art. 2, comma 2, L. 241/1990. Pertanto, l’amministrazione non è obbligata a elencare puntualmente i profili ostativi nella decisione di rigetto, poiché il soggetto interessato può già conoscere e verificare i requisiti richiesti dal bando. La mancanza di una motivazione dettagliata non costituisce, dunque, violazione del principio di trasparenza né del diritto di contraddittorio."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2301,
+            "attacker_base_score": 0.8045,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3422,
+            "damage_factor": 0.4,
+            "excess": 0.5752,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8342,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.767,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2278,
+            "attacker_base_score": 0.8178,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.3365,
+            "damage_factor": 0.4,
+            "excess": 0.5695,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8171,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.767,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1203,
+            "attacker_base_score": 0.7526,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.0676,
+            "damage_factor": 0.4,
+            "excess": 0.3007,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8345,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.767,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.4579,
+        "base_score": 0.7669751591562279,
+        "cogency": 0.6539084874532549,
+        "cogency_details": {
+          "argument_quality_score": 0.7387708749841964,
+          "coherence_score": 0.5690460999223135,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo per i provvedimenti negativi adottati “in forma ordinaria”, mentre il rigetto di una domanda di contributo, qualora manifestamente inammissibile, è disciplinato dall’art. 2, comma 2, L. 241/1990, che consente un provvedimento sintetico senza obbligo di preavviso; di conseguenza l’assenza del preavviso non viola alcuna disposizione di legge. Inoltre, la dicitura “carenza requisiti” individua il presupposto di fatto ostativo previsto dall’art. 3, comma 1, L. 241/1990 e, nel contesto di un provvedimento semplificato, soddisfa il minimo richiesto di motivazione, perciò l’art. 21‑octies L. 241/1990 non prevede l’annullabilità per mera insufficienza motivazionale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7669751591562279,
+        "nesso_plausibility": 0.30907515915622796,
+        "norm_support": 0.8674999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8674999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 2, comma 2, L. 241/1990, il provvedimento di rigetto può essere redatto in forma semplificata quando la domanda risulta manifestamente inammissibile; la motivazione può limitarsi a un riferimento sintetico al presupposto di fatto ostativo, come “carenza requisiti”. Tale formulazione indica comunque il requisito di fatto che ha determinato il diniego, soddisfacendo così l’obbligo di motivazione previsto dal citato comma.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "3",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_3_3",
+            "title": "Motivazione del provvedimento"
+          },
+          {
+            "articolo": "21",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_31_21",
+            "title": "Disposizioni sanzionatorie"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7460087097341717,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7460087097341717
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2, comma 2, L. 241/1990, il provvedimento di rigetto può essere redatto in forma semplificata quando la domanda risulta manifestamente inammissibile; la motivazione può limitarsi a un riferimento sintetico al presupposto di fatto ostativo, come “carenza requisiti”. Tale formulazione indica comunque il requisito di fatto che ha determinato il diniego, soddisfacendo così l’obbligo di motivazione previsto dal citato comma."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2188,
+            "attacker_base_score": 0.8178,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2857,
+            "damage_factor": 0.4,
+            "excess": 0.5469,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7388,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2103,
+            "attacker_base_score": 0.8045,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2647,
+            "damage_factor": 0.4,
+            "excess": 0.5259,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.786,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7388,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1844,
+            "attacker_base_score": 0.7526,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1998,
+            "damage_factor": 0.4,
+            "excess": 0.461,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7972,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7388,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.4291,
+        "base_score": 0.738839247035475,
+        "cogency": 0.6542686625616143,
+        "cogency_details": {
+          "argument_quality_score": 0.7316467437952608,
+          "coherence_score": 0.5768905813279679,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 2, comma 2, L. 241/1990, il provvedimento di rigetto può essere redatto in forma semplificata quando la domanda risulta manifestamente inammissibile; la motivazione può limitarsi a un riferimento sintetico al presupposto di fatto ostativo, come “carenza requisiti”. Tale formulazione indica comunque il requisito di fatto che ha determinato il diniego, soddisfacendo così l’obbligo di motivazione previsto dal citato comma.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.738839247035475,
+        "nesso_plausibility": 0.309739247035475,
+        "norm_support": 0.8383333333333334,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.8333333333333334,
+          "citation_specificity_score": 0.3333333333333333,
+          "final": 0.8383333333333334,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo quando il responsabile del procedimento intende adottare un provvedimento negativo “in forma ordinaria”; tuttavia, l’art. 2, comma 2, della stessa legge prevede espressamente che, qualora il procedimento ad iniziativa di parte evidenzi una manifesta irricevibilità o infondatezza della domanda, l’amministrazione può concluderlo con un provvedimento di rigetto “in forma semplificata”, la cui motivazione può limitarsi a un sintetico riferimento ai requisiti mancanti. In tal caso, la disciplina dell’art. 10‑bis è incompatibile perché la norma di cui all’art. 2, comma 2, costituisce una deroga specifica che esclude l’obbligo di comunicare preventivamente i motivi ostativi, rendendo quindi non applicabile il requisito di preavviso al rigetto semplificato. (cfr. art. 2, comma 2 e art. 10‑bis L. 241/1990).",
+        "retrieved_norms": [
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "10",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_12_10",
+            "title": "Diritti dei partecipanti al procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6907510497788578,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6907510497788578
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 10‑bis L. 241/1990 impone il preavviso di ostatività solo quando il responsabile del procedimento intende adottare un provvedimento negativo “in forma ordinaria”; tuttavia, l’art. 2, comma 2, della stessa legge prevede espressamente che, qualora il procedimento ad iniziativa di parte evidenzi una manifesta irricevibilità o infondatezza della domanda, l’amministrazione può concluderlo con un provvedimento di rigetto “in forma semplificata”, la cui motivazione può limitarsi a un sintetico riferimento ai requisiti mancanti. In tal caso, la disciplina dell’art. 10‑bis è incompatibile perché la norma di cui all’art. 2, comma 2, costituisce una deroga specifica che esclude l’obbligo di comunicare preventivamente i motivi ostativi, rendendo quindi non applicabile il requisito di preavviso al rigetto semplificato. (cfr. art. 2, comma 2 e art. 10‑bis L. 241/1990)."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

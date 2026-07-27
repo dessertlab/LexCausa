@@ -1,0 +1,34 @@
+[2026-03-07T22:08:39.148731] Pipeline log - Setup B
+Claim: Un professionista presenta domanda autorizzativa; il termine procedimentale scade senza provvedimento espresso ne comunicazioni utili. Il richiedente invia tre solleciti formali e documenta perdita di
+======================================================================
+Status: ok
+Duration: 660.5s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 7
+  Arguments: 1
+  Causal type: AMM_DELAY_REMEDIES
+
+[COUNTER]
+  Chain steps: 3
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7467551018532462
+  Net contra: 0.4513643048672213
+  Net final: 0.29539079698602494
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

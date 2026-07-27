@@ -1,0 +1,2355 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 4,
+      "attack_coverage_axes_total": 5,
+      "attack_coverage_bonus": 0.048854256000000006,
+      "attack_coverage_ratio": 0.8,
+      "attack_coverage_score": 0.40711880000000006,
+      "attacks_avg": 0.26455,
+      "base_score_avg": 0.781940925437018,
+      "cogency_avg": 0.6347300500948521,
+      "net_plausibility": 0.5221432672110718,
+      "net_plausibility_adjusted": 0.5221432672110718,
+      "net_plausibility_raw": 0.517390925437018,
+      "norm_support_avg": 0.9503943429134307,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.23521020920504654,
+      "redundancy_penalty": 0.044101914225946226,
+      "semantics_avg": 0.7045472441439671
+    },
+    "pro": {
+      "attacks_avg": 0.16501666666666667,
+      "base_score_avg": 0.7435665935245593,
+      "cogency_avg": 0.6122034087702583,
+      "net_plausibility": 0.7435665935245593,
+      "net_plausibility_adjusted": 0.7435665935245593,
+      "net_plausibility_dialectical_raw": 0.5785499268578926,
+      "net_plausibility_intrinsic_raw": 0.7435665935245593,
+      "net_plausibility_raw": 0.7435665935245593,
+      "norm_support_avg": 0.9469615993852681,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.1388521200460062,
+      "redundancy_penalty": 0.03471303001150155,
+      "semantics_avg": 0.6037364371312484
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1831,
+            "attacker_base_score": 0.7909,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2769,
+            "damage_factor": 0.4,
+            "excess": 0.4578,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8073,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.8191,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.086,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0342,
+            "damage_factor": 0.4,
+            "excess": 0.2151,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7059,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8191,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0682,
+            "attacker_base_score": 0.742,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.9897,
+            "damage_factor": 0.4,
+            "excess": 0.1706,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6669,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.8191,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6618,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5276,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6643,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.8191,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7983,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.2691,
+        "base_score": 0.8191243937937536,
+        "cogency": 0.6558455752777644,
+        "cogency_details": {
+          "argument_quality_score": 0.7371128444736694,
+          "coherence_score": 0.5745783060818594,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Nel procedimento penale la configurazione della truffa ex art. 640 c.p. richiede la prova oltre ogni ragionevole dubbio dell’esistenza di artifizi, dell’errore dell’acquirente e del profitto ingiusto, mentre nel giudizio civile la responsabilità per vizio occulto ex art. 1490 c.c. è valutata con il criterio della preponderanza delle prove. Pertanto, la perizia che accerta il chilometraggio falsato e il sinistro occulto può bastare a dimostrare il dolo civile e il vizio della cosa, ma non è di per sé sufficiente a soddisfare il più gravoso standard probatorio penale. Di conseguenza, la eventuale condanna penale non è un prerequisito per l’applicazione delle misure di risoluzione contrattuale e di risarcimento richieste dall’acquirente.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.8191243937937536,
+        "nesso_plausibility": 0.5500243937937536,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Pur se la condotta può configurare il reato di truffa ex art. 640 c.p., la responsabilità civile per risoluzione del contratto e risarcimento non deriva automaticamente dalla eventuale condanna penale, poiché i due procedimenti hanno regimi probatori e finalità distinti. Il giudice civile deve valutare autonomamente gli elementi di dolo e di vizio occulto ex art. 1439 c.c. e art. 1490 c.c., indipendentemente dall’esito dell’azione penale, in ossequio al principio della separazione dei poteri e della duplice via di tutela.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1439",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1509_art1439",
+            "title": "Dolo"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7412357373680808,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7412357373680808
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Pur se la condotta può configurare il reato di truffa ex art. 640 c.p., la responsabilità civile per risoluzione del contratto e risarcimento non deriva automaticamente dalla eventuale condanna penale, poiché i due procedimenti hanno regimi probatori e finalità distinti. Il giudice civile deve valutare autonomamente gli elementi di dolo e di vizio occulto ex art. 1439 c.c. e art. 1490 c.c., indipendentemente dall’esito dell’azione penale, in ossequio al principio della separazione dei poteri e della duplice via di tutela."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0978,
+            "attacker_base_score": 0.742,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0422,
+            "damage_factor": 0.4,
+            "excess": 0.2445,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7023,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7977,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0862,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0132,
+            "damage_factor": 0.4,
+            "excess": 0.2155,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6916,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7977,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6618,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5626,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7084,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7977,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7983,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7909,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "filter_stage": "nli_entailment",
+            "filtered": true,
+            "nli_label": "entailment",
+            "nli_score": 1.0,
+            "overlap": 0.7666,
+            "reason": "filtered: LLM entailment - nessi non contraddittori"
+          }
+        ],
+        "attacks_sum": 0.184,
+        "base_score": 0.7977418628952841,
+        "cogency": 0.680938055970896,
+        "cogency_details": {
+          "argument_quality_score": 0.7542859055994529,
+          "coherence_score": 0.607590206342339,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Pur riscontrandosi il vizio occulto, l’art. 1490 c.c. impone che il compratore dimostri autonomamente che il venditore, in mala fede, ha taciuto il difetto; la mera constatazione penale di truffa non costituisce prova di tale dolo né di conoscenza del chilometraggio falsato. Di conseguenza, il giudice civile dovrà valutare, con il medesimo standard probatorio della responsabilità contrattuale, se la perizia tecnica e le dichiarazioni del concessionario soddisfano il requisito di dolo, senza fare affidamento sulla eventuale condanna penale.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7977418628952841,
+        "nesso_plausibility": 0.6137418628952842,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Nel procedimento penale la configurazione della truffa ex art. 640 c.p. richiede la prova oltre ogni ragionevole dubbio dell’esistenza di artifizi, dell’errore dell’acquirente e del profitto ingiusto, mentre nel giudizio civile la responsabilità per vizio occulto ex art. 1490 c.c. è valutata con il criterio della preponderanza delle prove. Pertanto, la perizia che accerta il chilometraggio falsato e il sinistro occulto può bastare a dimostrare il dolo civile e il vizio della cosa, ma non è di per sé sufficiente a soddisfare il più gravoso standard probatorio penale. Di conseguenza, la eventuale condanna penale non è un prerequisito per l’applicazione delle misure di risoluzione contrattuale e di risarcimento richieste dall’acquirente.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7733205470306433,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7733205470306433
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Nel procedimento penale la configurazione della truffa ex art. 640 c.p. richiede la prova oltre ogni ragionevole dubbio dell’esistenza di artifizi, dell’errore dell’acquirente e del profitto ingiusto, mentre nel giudizio civile la responsabilità per vizio occulto ex art. 1490 c.c. è valutata con il criterio della preponderanza delle prove. Pertanto, la perizia che accerta il chilometraggio falsato e il sinistro occulto può bastare a dimostrare il dolo civile e il vizio della cosa, ma non è di per sé sufficiente a soddisfare il più gravoso standard probatorio penale. Di conseguenza, la eventuale condanna penale non è un prerequisito per l’applicazione delle misure di risoluzione contrattuale e di risarcimento richieste dall’acquirente."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1813,
+            "attacker_base_score": 0.7909,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.2386,
+            "damage_factor": 0.4,
+            "excess": 0.4533,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7831,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7853,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1004,
+            "attacker_base_score": 0.742,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0363,
+            "damage_factor": 0.4,
+            "excess": 0.2509,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6983,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7853,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0849,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 0.9977,
+            "damage_factor": 0.4,
+            "excess": 0.2123,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.681,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7853,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6618,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6208,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7817,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7853,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7983,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.2817,
+        "base_score": 0.785342341307535,
+        "cogency": 0.6234670866546853,
+        "cogency_details": {
+          "argument_quality_score": 0.6482472931163688,
+          "coherence_score": 0.5986868801930019,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Il comportamento del concessionario rientra nella fattispecie di frode nell’esercizio del commercio prevista dall’art. 515 c.p., che punisce chi, nell’attività commerciale, consegna una cosa mobile per una diversa per origine, qualità o quantità rispetto a quanto dichiarato; la falsificazione del chilometraggio, la manipolazione del quadro strumenti e l’omissione del sinistro costituiscono, nella vendita di auto usata, una dichiarazione ingannevole sulla qualità e sullo stato del veicolo. Tale qualificazione penale è autonoma rispetto al procedimento civile, poiché i due regimi hanno finalità e oneri probatori differenti: la condanna per art. 515 non determina di per sé la risoluzione contrattuale né il risarcimento, i quali devono essere accertati con le norme civili sul vizio occulto (art. 1490 c.c.).",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.785342341307535,
+        "nesso_plausibility": 0.503642341307535,
+        "norm_support": 0.9416666666666667,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9416666666666667,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Pur riscontrandosi il vizio occulto, l’art. 1490 c.c. impone che il compratore dimostri autonomamente che il venditore, in mala fede, ha taciuto il difetto; la mera constatazione penale di truffa non costituisce prova di tale dolo né di conoscenza del chilometraggio falsato. Di conseguenza, il giudice civile dovrà valutare, con il medesimo standard probatorio della responsabilità contrattuale, se la perizia tecnica e le dichiarazioni del concessionario soddisfano il requisito di dolo, senza fare affidamento sulla eventuale condanna penale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "515",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_636_515",
+            "title": "Frode nell'esercizio del commercio"
+          },
+          {
+            "articolo": "515",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_636_515",
+            "title": "Frode nell'esercizio del commercio"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7387851621482089,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7387851621482089
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Pur riscontrandosi il vizio occulto, l’art. 1490 c.c. impone che il compratore dimostri autonomamente che il venditore, in mala fede, ha taciuto il difetto; la mera constatazione penale di truffa non costituisce prova di tale dolo né di conoscenza del chilometraggio falsato. Di conseguenza, il giudice civile dovrà valutare, con il medesimo standard probatorio della responsabilità contrattuale, se la perizia tecnica e le dichiarazioni del concessionario soddisfano il requisito di dolo, senza fare affidamento sulla eventuale condanna penale."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1938,
+            "attacker_base_score": 0.7909,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.21,
+            "damage_factor": 0.4,
+            "excess": 0.4845,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.765,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1296,
+            "attacker_base_score": 0.742,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0496,
+            "damage_factor": 0.4,
+            "excess": 0.3241,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7073,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1176,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0194,
+            "damage_factor": 0.4,
+            "excess": 0.2939,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6958,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6618,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5664,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7983,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.3234,
+        "base_score": 0.7255551037514993,
+        "cogency": 0.5786694824760623,
+        "cogency_details": {
+          "argument_quality_score": 0.6314625892821384,
+          "coherence_score": 0.5258763756699862,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Per configurare la truffa ex art. 640 c.p. è necessario provare, oltre ogni ragionevole dubbio, che l’artificio del chilometraggio falsificato abbia effettivamente indotto l’acquirente in errore, ossia che la sua decisione di acquisto sia stata basata sul valore dichiarato di 60.000 km; la perizia tecnica, pur accertando la discrepanza e le tracce di manomissione, non dimostra alcun nesso causale diretto né la dipendenza della volontà contrattuale dell’acquirente dal chilometraggio dichiarato, lasciando quindi non provato l’elemento di errore richiesto dall’art. 640 c.p.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7255551037514993,
+        "nesso_plausibility": 0.4021551037514993,
+        "norm_support": 0.95625,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9375,
+          "citation_specificity_score": 0.75,
+          "final": 0.95625,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Il comportamento del concessionario rientra nella fattispecie di frode nell’esercizio del commercio prevista dall’art. 515 c.p., che punisce chi, nell’attività commerciale, consegna una cosa mobile per una diversa per origine, qualità o quantità rispetto a quanto dichiarato; la falsificazione del chilometraggio, la manipolazione del quadro strumenti e l’omissione del sinistro costituiscono, nella vendita di auto usata, una dichiarazione ingannevole sulla qualità e sullo stato del veicolo. Tale qualificazione penale è autonoma rispetto al procedimento civile, poiché i due regimi hanno finalità e oneri probatori differenti: la condanna per art. 515 non determina di per sé la risoluzione contrattuale né il risarcimento, i quali devono essere accertati con le norme civili sul vizio occulto (art. 1490 c.c.).",
+        "retrieved_norms": [
+          {
+            "articolo": "515",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_636_515",
+            "title": "Frode nell'esercizio del commercio"
+          },
+          {
+            "articolo": "515",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_636_515",
+            "title": "Frode nell'esercizio del commercio"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5648475300289353,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5648475300289353
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il comportamento del concessionario rientra nella fattispecie di frode nell’esercizio del commercio prevista dall’art. 515 c.p., che punisce chi, nell’attività commerciale, consegna una cosa mobile per una diversa per origine, qualità o quantità rispetto a quanto dichiarato; la falsificazione del chilometraggio, la manipolazione del quadro strumenti e l’omissione del sinistro costituiscono, nella vendita di auto usata, una dichiarazione ingannevole sulla qualità e sullo stato del veicolo. Tale qualificazione penale è autonoma rispetto al procedimento civile, poiché i due regimi hanno finalità e oneri probatori differenti: la condanna per art. 515 non determina di per sé la risoluzione contrattuale né il risarcimento, i quali devono essere accertati con le norme civili sul vizio occulto (art. 1490 c.c.)."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2084,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1829,
+            "damage_factor": 0.4,
+            "excess": 0.5211,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1527,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0436,
+            "damage_factor": 0.4,
+            "excess": 0.3818,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7817,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1196,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9607,
+            "damage_factor": 0.4,
+            "excess": 0.2989,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7084,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1053,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9251,
+            "damage_factor": 0.4,
+            "excess": 0.2633,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6643,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3611,
+        "base_score": 0.6617851152878498,
+        "cogency": 0.6025259001141547,
+        "cogency_details": {
+          "argument_quality_score": 0.6649046377682303,
+          "coherence_score": 0.5401471624600791,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti, la condotta del concessionario integra tutti gli elementi costitutivi della truffa di cui all’art. 640 c.p.: mediante artifici (dichiarazione fraudolenta del chilometraggio, occultamento della manomissione del quadro strumenti e del sinistro pregresso) ha indotto l’acquirente in errore, procurandosi un ingiusto profitto (il prezzo di vendita) a danno patrimoniale dell’acquirente; l’attività è svolta nell’esercizio di un’attività commerciale, requisito previsto dal medesimo articolo, perciò la fattispecie penale di truffa è configurabile.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6617851152878498,
+        "nesso_plausibility": 0.3006851152878498,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il concessionario ha venduto all’acquirente un’autovettura usata dichiarandone il chilometraggio pari a 60.000 km; successivamente, una perizia tecnica ha accertato che il reale chilometraggio supera i 180.000 km e ha rilevato evidenti tracce di manomissione del quadro strumenti. Inoltre, la perizia ha evidenziato segni di un precedente sinistro strutturale che il venditore non ha dichiarato durante la trattativa. L’acquirente ha sporto querela e, in sede civile, ha chiesto la risoluzione del contratto, la restituzione del prezzo, il risarcimento delle spese sostenute e del fermo veicolo, mentre il concessionario ha negato ogni conoscenza della manomissione avvalendosi della documentazione ricevuta dal precedente proprietario.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5659459624126065,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5659459624126065
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il concessionario ha venduto all’acquirente un’autovettura usata dichiarandone il chilometraggio pari a 60.000 km; successivamente, una perizia tecnica ha accertato che il reale chilometraggio supera i 180.000 km e ha rilevato evidenti tracce di manomissione del quadro strumenti. Inoltre, la perizia ha evidenziato segni di un precedente sinistro strutturale che il venditore non ha dichiarato durante la trattativa. L’acquirente ha sporto querela e, in sede civile, ha chiesto la risoluzione del contratto, la restituzione del prezzo, il risarcimento delle spese sostenute e del fermo veicolo, mentre il concessionario ha negato ogni conoscenza della manomissione avvalendosi della documentazione ricevuta dal precedente proprietario."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1419,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0968,
+            "damage_factor": 0.4,
+            "excess": 0.3548,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6983,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1137,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0264,
+            "damage_factor": 0.4,
+            "excess": 0.2843,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7073,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0842,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9524,
+            "damage_factor": 0.4,
+            "excess": 0.2104,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7023,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5736,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6669,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.2556,
+        "base_score": 0.7420056816822905,
+        "cogency": 0.6491040355128894,
+        "cogency_details": {
+          "argument_quality_score": 0.6703415681740974,
+          "coherence_score": 0.6278665028516814,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La manomissione del quadro strumenti, comprovata dalla perizia tecnica, integra l’elemento di “artificialmente alterazione… di un documento o di un oggetto da impiegare come elemento di prova” previsto dall’art. 375 c.p.; pertanto la condotta del concessionario può essere qualificata come uso di atto falso, punibile a norma di tale disposizione.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7420056816822905,
+        "nesso_plausibility": 0.48640568168229054,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Alla luce dei fatti, la condotta del concessionario integra tutti gli elementi costitutivi della truffa di cui all’art. 640 c.p.: mediante artifici (dichiarazione fraudolenta del chilometraggio, occultamento della manomissione del quadro strumenti e del sinistro pregresso) ha indotto l’acquirente in errore, procurandosi un ingiusto profitto (il prezzo di vendita) a danno patrimoniale dell’acquirente; l’attività è svolta nell’esercizio di un’attività commerciale, requisito previsto dal medesimo articolo, perciò la fattispecie penale di truffa è configurabile.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "375",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_446_375",
+            "title": "Frode in processo penale e depistaggio"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6193672967786713,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6193672967786713
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Alla luce dei fatti, la condotta del concessionario integra tutti gli elementi costitutivi della truffa di cui all’art. 640 c.p.: mediante artifici (dichiarazione fraudolenta del chilometraggio, occultamento della manomissione del quadro strumenti e del sinistro pregresso) ha indotto l’acquirente in errore, procurandosi un ingiusto profitto (il prezzo di vendita) a danno patrimoniale dell’acquirente; l’attività è svolta nell’esercizio di un’attività commerciale, requisito previsto dal medesimo articolo, perciò la fattispecie penale di truffa è configurabile."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1348,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0696,
+            "damage_factor": 0.4,
+            "excess": 0.337,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.681,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7326,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1109,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0097,
+            "damage_factor": 0.4,
+            "excess": 0.2771,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6958,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7326,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0821,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9379,
+            "damage_factor": 0.4,
+            "excess": 0.2053,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6916,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7326,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6071,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7059,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7326,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.2457,
+        "base_score": 0.7325553551462886,
+        "cogency": 0.5676519517643994,
+        "cogency_details": {
+          "argument_quality_score": 0.6187260422722414,
+          "coherence_score": 0.5165778612565574,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Il nesso causale si configura perché, eliminando la condotta del concessionario – la dichiarazione fraudolenta del chilometraggio e la vendita di un veicolo con quadro strumenti manomesso – l’acquirente non avrebbe concluso il contratto, perciò il danno patrimoniale (prezzo pagato, spese di fermo e altre perdite) è la conseguenza diretta della sua azione (testo del “but‑for”) ai sensi dell’art. 40 c.p.; l’art. 41 c.p. non esclude tale nesso, poiché le eventuali cause preesistenti (es. documentazione ricevuta dal precedente proprietario) non sono da sole sufficienti a produrre il danno, ma rimangono concause che non spezzano il rapporto di causalità.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7325553551462886,
+        "nesso_plausibility": 0.4868553551462885,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "La manomissione del quadro strumenti, comprovata dalla perizia tecnica, integra l’elemento di “artificialmente alterazione… di un documento o di un oggetto da impiegare come elemento di prova” previsto dall’art. 375 c.p.; pertanto la condotta del concessionario può essere qualificata come uso di atto falso, punibile a norma di tale disposizione.",
+        "retrieved_norms": [
+          {
+            "articolo": "375",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_446_375",
+            "title": "Frode in processo penale e depistaggio"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5408658987232293,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5408658987232293
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La manomissione del quadro strumenti, comprovata dalla perizia tecnica, integra l’elemento di “artificialmente alterazione… di un documento o di un oggetto da impiegare come elemento di prova” previsto dall’art. 375 c.p.; pertanto la condotta del concessionario può essere qualificata come uso di atto falso, punibile a norma di tale disposizione."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7359301535257928,
+        "cogency": 0.5848569537493237,
+        "cogency_details": {
+          "argument_quality_score": 0.6881213013473501,
+          "coherence_score": 0.48159260615129723,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Alla luce della perizia, il veicolo presenta vizi occulti – chilometraggio reale superiore a 180 000 km e quadro strumenti manomesso – che lo rendono inidoneo all’uso a cui è destinato e ne diminuiscono apprezzabilmente il valore, configurando la garanzia di cui all’art. 1490 c.c.; inoltre, la dichiarazione fraudolenta del chilometraggio e la mancata comunicazione del sinistro strutturale costituiscono raggiri determinanti, perciò il contratto è viziato da dolo ai sensi dell’art. 1439 c.c., poiché l’acquirente non avrebbe stipulato l’accordo in assenza di tali artifici.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7359301535257928,
+        "nesso_plausibility": 0.7359301535257928,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Il nesso causale si configura perché, eliminando la condotta del concessionario – la dichiarazione fraudolenta del chilometraggio e la vendita di un veicolo con quadro strumenti manomesso – l’acquirente non avrebbe concluso il contratto, perciò il danno patrimoniale (prezzo pagato, spese di fermo e altre perdite) è la conseguenza diretta della sua azione (testo del “but‑for”) ai sensi dell’art. 40 c.p.; l’art. 41 c.p. non esclude tale nesso, poiché le eventuali cause preesistenti (es. documentazione ricevuta dal precedente proprietario) non sono da sole sufficienti a produrre il danno, ma rimangono concause che non spezzano il rapporto di causalità.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1439",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1509_art1439",
+            "title": "Dolo"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5349102246699856,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5349102246699856
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_penale",
+        "text": "Il nesso causale si configura perché, eliminando la condotta del concessionario – la dichiarazione fraudolenta del chilometraggio e la vendita di un veicolo con quadro strumenti manomesso – l’acquirente non avrebbe concluso il contratto, perciò il danno patrimoniale (prezzo pagato, spese di fermo e altre perdite) è la conseguenza diretta della sua azione (testo del “but‑for”) ai sensi dell’art. 40 c.p.; l’art. 41 c.p. non esclude tale nesso, poiché le eventuali cause preesistenti (es. documentazione ricevuta dal precedente proprietario) non sono da sole sufficienti a produrre il danno, ma rimangono concause che non spezzano il rapporto di causalità."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (obbligazioni vs delitti)"
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7982710589068772,
+        "cogency": 0.6530853248954218,
+        "cogency_details": {
+          "argument_quality_score": 0.655926026005385,
+          "coherence_score": 0.6502446237854587,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Il compratore può chiedere la risoluzione del contratto ai sensi dell’art. 1564 c.c., con conseguente obbligo per il concessionario di restituire il prezzo pagato e le spese sostenute (art. 1493 c.c.). Inoltre, il danno patrimoniale derivante dal chilometraggio falsato, dalla manomissione del quadro strumenti e dal sinistro non dichiarato è risarcibile ai sensi dell’art. 1223 c.c. e dell’art. 2043 c.c., con integrazione delle restituzioni previste dall’art. 185 c.p. per il reato di truffa.",
+        "libro": "",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7982710589068772,
+        "nesso_plausibility": 0.7982710589068772,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 7,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Alla luce della perizia, il veicolo presenta vizi occulti – chilometraggio reale superiore a 180 000 km e quadro strumenti manomesso – che lo rendono inidoneo all’uso a cui è destinato e ne diminuiscono apprezzabilmente il valore, configurando la garanzia di cui all’art. 1490 c.c.; inoltre, la dichiarazione fraudolenta del chilometraggio e la mancata comunicazione del sinistro strutturale costituiscono raggiri determinanti, perciò il contratto è viziato da dolo ai sensi dell’art. 1439 c.c., poiché l’acquirente non avrebbe stipulato l’accordo in assenza di tali artifici.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1439",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1509_art1439",
+            "title": "Dolo"
+          },
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6744848714608352,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6744848714608352
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_penale",
+        "text": "Alla luce della perizia, il veicolo presenta vizi occulti – chilometraggio reale superiore a 180 000 km e quadro strumenti manomesso – che lo rendono inidoneo all’uso a cui è destinato e ne diminuiscono apprezzabilmente il valore, configurando la garanzia di cui all’art. 1490 c.c.; inoltre, la dichiarazione fraudolenta del chilometraggio e la mancata comunicazione del sinistro strutturale costituiscono raggiri determinanti, perciò il contratto è viziato da dolo ai sensi dell’art. 1439 c.c., poiché l’acquirente non avrebbe stipulato l’accordo in assenza di tali artifici."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1277,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1101,
+            "damage_factor": 0.4,
+            "excess": 0.3193,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.765,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7909,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6943,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8073,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7909,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6422,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7666,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7909,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.738,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7831,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7909,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1277,
+        "base_score": 0.7908521965982571,
+        "cogency": 0.615996286585361,
+        "cogency_details": {
+          "argument_quality_score": 0.7263698248602652,
+          "coherence_score": 0.5056227483104566,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "In base al principio di separazione dei binari (TRACK_SEPARATION), l’azione penale per truffa (art. 640 c.p.) e l’azione civile per risoluzione del contratto e risarcimento (art. 1490 c.c., art. 1453 c.c.) sono autonome e possono concorrere senza pregiudizio reciproco; tuttavia, ai sensi dell’art. 185 c.p., la condanna penale impone la restituzione del prezzo e il risarcimento del danno, perciò il giudice civile dovrà valutare la cumulabilità dei danni richiesti, escludendo la duplicazione di quanto già coperto dalla responsabilità penale (CUMULABILITY_LIMITS); di conseguenza, il compratore potrà ottenere la risoluzione contrattuale con restituzione integrale del prezzo, il rimborso delle spese sostenute e un ulteriore risarcimento per il danno patrimoniale derivante dal vizio occulto, purché tali importi non superino la somma complessiva determinata dalla responsabilità penale del concessionario.",
+        "libro": "",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.7908521965982571,
+        "nesso_plausibility": 0.6631521965982571,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 8,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 9,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Il compratore può chiedere la risoluzione del contratto ai sensi dell’art. 1564 c.c., con conseguente obbligo per il concessionario di restituire il prezzo pagato e le spese sostenute (art. 1493 c.c.). Inoltre, il danno patrimoniale derivante dal chilometraggio falsato, dalla manomissione del quadro strumenti e dal sinistro non dichiarato è risarcibile ai sensi dell’art. 1223 c.c. e dell’art. 2043 c.c., con integrazione delle restituzioni previste dall’art. 185 c.p. per il reato di truffa.",
+        "retrieved_norms": [
+          {
+            "articolo": "1564",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1647_art1564",
+            "title": "Risoluzione del contratto"
+          },
+          {
+            "articolo": "1493",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1568_art1493",
+            "title": "Effetti della risoluzione del contratto"
+          },
+          {
+            "articolo": "1223",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1293_art1223",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "2043",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2132_art2043",
+            "title": "Risarcimento per fatto illecito"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1453",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1523_art1453",
+            "title": "Risolubilità del contratto per inadempimento"
+          },
+          {
+            "articolo": "185",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_205_185",
+            "title": "Restituzioni e risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6868443687421625,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6868443687421625
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il compratore può chiedere la risoluzione del contratto ai sensi dell’art. 1564 c.c., con conseguente obbligo per il concessionario di restituire il prezzo pagato e le spese sostenute (art. 1493 c.c.). Inoltre, il danno patrimoniale derivante dal chilometraggio falsato, dalla manomissione del quadro strumenti e dal sinistro non dichiarato è risarcibile ai sensi dell’art. 1223 c.c. e dell’art. 2043 c.c., con integrazione delle restituzioni previste dall’art. 185 c.p. per il reato di truffa."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.5221432672110718,
+    "contra_adjusted": 0.5221432672110718,
+    "contra_raw": 0.517390925437018,
+    "final": 0.2214233263134875,
+    "final_adjusted": 0.2214233263134875,
+    "final_raw": 0.2261756680875413,
+    "pro": 0.7435665935245593,
+    "pro_adjusted": 0.7435665935245593,
+    "pro_raw": 0.7435665935245593,
+    "pro_raw_dialectical": 0.5785499268578926,
+    "pro_raw_intrinsic": 0.7435665935245593,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "contra",
+        "overlap": 0.8151,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.2084
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.765,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.1938
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.8073,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1831
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7831,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1813
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.7817,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1527
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.6983,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1419
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.681,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1348
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7073,
+        "target": "S4->S5",
+        "target_role": "counter",
+        "value": 0.1296
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "contra",
+        "overlap": 0.765,
+        "target": "S6->S7",
+        "target_role": "support",
+        "value": 0.1277
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.7084,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1196
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 4,
+          "axes_total": 5,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.6617851152878498,
+              "axis_id": "AX5",
+              "axis_quality": 0.25421,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7420056816822905,
+              "axis_id": "AX3",
+              "axis_quality": 0.17601,
+              "link_ids": [
+                "S2->S3"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7342427543360407,
+              "axis_id": "AX4",
+              "axis_quality": 0.16807,
+              "link_ids": [
+                "S4->S5",
+                "S3->S4"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7908521965982571,
+              "axis_id": "AX2",
+              "axis_quality": 0.1277,
+              "link_ids": [
+                "S6->S7"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7982710589068772,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S5->S6"
+              ]
+            }
+          ],
+          "bonus": 0.048854256000000006,
+          "coverage_ratio": 0.8,
+          "enabled": true,
+          "quality_avg": 0.145198,
+          "wpcs": 0.40711880000000006
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.785858858577413,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.044101914225946226,
+          "redundancy_index": 0.23521020920504654
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.6786921266930085,
+          "high_similarity_pair_ratio": 0.2,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.03471303001150155,
+          "redundancy_index": 0.1388521200460062
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2084,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1829,
+            "damage_factor": 0.4,
+            "excess": 0.5211,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1527,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0436,
+            "damage_factor": 0.4,
+            "excess": 0.3818,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7817,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1196,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9607,
+            "damage_factor": 0.4,
+            "excess": 0.2989,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7084,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1053,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9251,
+            "damage_factor": 0.4,
+            "excess": 0.2633,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6643,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6618,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.3611,
+        "base_score": 0.6617851152878498,
+        "cogency": 0.6025259001141547,
+        "cogency_details": {
+          "argument_quality_score": 0.6649046377682303,
+          "coherence_score": 0.5401471624600791,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti, la condotta del concessionario integra tutti gli elementi costitutivi della truffa di cui all’art. 640 c.p.: mediante artifici (dichiarazione fraudolenta del chilometraggio, occultamento della manomissione del quadro strumenti e del sinistro pregresso) ha indotto l’acquirente in errore, procurandosi un ingiusto profitto (il prezzo di vendita) a danno patrimoniale dell’acquirente; l’attività è svolta nell’esercizio di un’attività commerciale, requisito previsto dal medesimo articolo, perciò la fattispecie penale di truffa è configurabile.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6617851152878498,
+        "nesso_plausibility": 0.3006851152878498,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il concessionario ha venduto all’acquirente un’autovettura usata dichiarandone il chilometraggio pari a 60.000 km; successivamente, una perizia tecnica ha accertato che il reale chilometraggio supera i 180.000 km e ha rilevato evidenti tracce di manomissione del quadro strumenti. Inoltre, la perizia ha evidenziato segni di un precedente sinistro strutturale che il venditore non ha dichiarato durante la trattativa. L’acquirente ha sporto querela e, in sede civile, ha chiesto la risoluzione del contratto, la restituzione del prezzo, il risarcimento delle spese sostenute e del fermo veicolo, mentre il concessionario ha negato ogni conoscenza della manomissione avvalendosi della documentazione ricevuta dal precedente proprietario.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5659459624126065,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5659459624126065
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il concessionario ha venduto all’acquirente un’autovettura usata dichiarandone il chilometraggio pari a 60.000 km; successivamente, una perizia tecnica ha accertato che il reale chilometraggio supera i 180.000 km e ha rilevato evidenti tracce di manomissione del quadro strumenti. Inoltre, la perizia ha evidenziato segni di un precedente sinistro strutturale che il venditore non ha dichiarato durante la trattativa. L’acquirente ha sporto querela e, in sede civile, ha chiesto la risoluzione del contratto, la restituzione del prezzo, il risarcimento delle spese sostenute e del fermo veicolo, mentre il concessionario ha negato ogni conoscenza della manomissione avvalendosi della documentazione ricevuta dal precedente proprietario."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1938,
+            "attacker_base_score": 0.7909,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.21,
+            "damage_factor": 0.4,
+            "excess": 0.4845,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.765,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1296,
+            "attacker_base_score": 0.742,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0496,
+            "damage_factor": 0.4,
+            "excess": 0.3241,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7073,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1176,
+            "attacker_base_score": 0.7326,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0194,
+            "damage_factor": 0.4,
+            "excess": 0.2939,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6958,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6618,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.5664,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8151,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7256,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7359,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          },
+          {
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7983,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "filter_stage": "domain",
+            "filtered": true,
+            "overlap": 0.0,
+            "reason": "denied: severity mismatch (delitti vs obbligazioni)"
+          }
+        ],
+        "attacks_sum": 0.3234,
+        "base_score": 0.7255551037514993,
+        "cogency": 0.5786694824760623,
+        "cogency_details": {
+          "argument_quality_score": 0.6314625892821384,
+          "coherence_score": 0.5258763756699862,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Per configurare la truffa ex art. 640 c.p. è necessario provare, oltre ogni ragionevole dubbio, che l’artificio del chilometraggio falsificato abbia effettivamente indotto l’acquirente in errore, ossia che la sua decisione di acquisto sia stata basata sul valore dichiarato di 60.000 km; la perizia tecnica, pur accertando la discrepanza e le tracce di manomissione, non dimostra alcun nesso causale diretto né la dipendenza della volontà contrattuale dell’acquirente dal chilometraggio dichiarato, lasciando quindi non provato l’elemento di errore richiesto dall’art. 640 c.p.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7255551037514993,
+        "nesso_plausibility": 0.4021551037514993,
+        "norm_support": 0.95625,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9375,
+          "citation_specificity_score": 0.75,
+          "final": 0.95625,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Il comportamento del concessionario rientra nella fattispecie di frode nell’esercizio del commercio prevista dall’art. 515 c.p., che punisce chi, nell’attività commerciale, consegna una cosa mobile per una diversa per origine, qualità o quantità rispetto a quanto dichiarato; la falsificazione del chilometraggio, la manipolazione del quadro strumenti e l’omissione del sinistro costituiscono, nella vendita di auto usata, una dichiarazione ingannevole sulla qualità e sullo stato del veicolo. Tale qualificazione penale è autonoma rispetto al procedimento civile, poiché i due regimi hanno finalità e oneri probatori differenti: la condanna per art. 515 non determina di per sé la risoluzione contrattuale né il risarcimento, i quali devono essere accertati con le norme civili sul vizio occulto (art. 1490 c.c.).",
+        "retrieved_norms": [
+          {
+            "articolo": "515",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_636_515",
+            "title": "Frode nell'esercizio del commercio"
+          },
+          {
+            "articolo": "515",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_636_515",
+            "title": "Frode nell'esercizio del commercio"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5648475300289353,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5648475300289353
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il comportamento del concessionario rientra nella fattispecie di frode nell’esercizio del commercio prevista dall’art. 515 c.p., che punisce chi, nell’attività commerciale, consegna una cosa mobile per una diversa per origine, qualità o quantità rispetto a quanto dichiarato; la falsificazione del chilometraggio, la manipolazione del quadro strumenti e l’omissione del sinistro costituiscono, nella vendita di auto usata, una dichiarazione ingannevole sulla qualità e sullo stato del veicolo. Tale qualificazione penale è autonoma rispetto al procedimento civile, poiché i due regimi hanno finalità e oneri probatori differenti: la condanna per art. 515 non determina di per sé la risoluzione contrattuale né il risarcimento, i quali devono essere accertati con le norme civili sul vizio occulto (art. 1490 c.c.)."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1419,
+            "attacker_base_score": 0.7853,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0968,
+            "damage_factor": 0.4,
+            "excess": 0.3548,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6983,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1137,
+            "attacker_base_score": 0.7256,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0264,
+            "damage_factor": 0.4,
+            "excess": 0.2843,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7073,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0842,
+            "attacker_base_score": 0.7977,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9524,
+            "damage_factor": 0.4,
+            "excess": 0.2104,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7023,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8191,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5736,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6669,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.742,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.2556,
+        "base_score": 0.7420056816822905,
+        "cogency": 0.6491040355128894,
+        "cogency_details": {
+          "argument_quality_score": 0.6703415681740974,
+          "coherence_score": 0.6278665028516814,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La manomissione del quadro strumenti, comprovata dalla perizia tecnica, integra l’elemento di “artificialmente alterazione… di un documento o di un oggetto da impiegare come elemento di prova” previsto dall’art. 375 c.p.; pertanto la condotta del concessionario può essere qualificata come uso di atto falso, punibile a norma di tale disposizione.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7420056816822905,
+        "nesso_plausibility": 0.48640568168229054,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Alla luce dei fatti, la condotta del concessionario integra tutti gli elementi costitutivi della truffa di cui all’art. 640 c.p.: mediante artifici (dichiarazione fraudolenta del chilometraggio, occultamento della manomissione del quadro strumenti e del sinistro pregresso) ha indotto l’acquirente in errore, procurandosi un ingiusto profitto (il prezzo di vendita) a danno patrimoniale dell’acquirente; l’attività è svolta nell’esercizio di un’attività commerciale, requisito previsto dal medesimo articolo, perciò la fattispecie penale di truffa è configurabile.",
+        "retrieved_norms": [
+          {
+            "articolo": "640",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_871_640",
+            "title": "Truffa"
+          },
+          {
+            "articolo": "375",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_446_375",
+            "title": "Frode in processo penale e depistaggio"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6193672967786713,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6193672967786713
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Alla luce dei fatti, la condotta del concessionario integra tutti gli elementi costitutivi della truffa di cui all’art. 640 c.p.: mediante artifici (dichiarazione fraudolenta del chilometraggio, occultamento della manomissione del quadro strumenti e del sinistro pregresso) ha indotto l’acquirente in errore, procurandosi un ingiusto profitto (il prezzo di vendita) a danno patrimoniale dell’acquirente; l’attività è svolta nell’esercizio di un’attività commerciale, requisito previsto dal medesimo articolo, perciò la fattispecie penale di truffa è configurabile."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

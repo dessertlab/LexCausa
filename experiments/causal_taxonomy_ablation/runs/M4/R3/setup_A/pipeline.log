@@ -1,0 +1,62 @@
+[2026-03-07T11:30:59.961206] Pipeline log - Setup A
+Claim: Un concessionario vende un'auto usata dichiarando 60.000 km; dopo l'acquisto una perizia tecnica rileva chilometraggio reale oltre 180.000 km e tracce di manomissione del quadro strumenti. Emergeno in
+======================================================================
+Status: ok
+Duration: 1622.38s
+
+[SETTINGS]
+{
+  "reasoner_model": "gpt_oss_120b",
+  "counter_model": "gpt_oss_120b",
+  "reasoner_temperature": 0.0,
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "chain_min_steps": 3,
+  "chain_max_steps": 10,
+  "search_min_kept_statutes": 8,
+  "aqa_alpha": 0.3,
+  "aqa_beta": 0.4,
+  "aqa_gamma": 0.3,
+  "aqa_min_semantic_overlap": 0.5,
+  "aqa_min_strength_ratio": 1.2,
+  "aqa_damage_factor": 0.4,
+  "aqa_allow_factual_attacks": true,
+  "aqa_allow_cross_codice": true,
+  "aqa_lock_reasoner_plausibility": true,
+  "search_use_top_n_libri": 3,
+  "search_query_terms_mode": "llm",
+  "search_query_terms_llm_max_terms": 12,
+  "search_query_terms_llm_max_tokens": 128,
+  "aqa_strength_ratio_by_type": {
+    "contradiction": 0.05,
+    "exception": 0.05,
+    "derogation": 0.0,
+    "extinction": 0.0,
+    "factual_impediment": 0.55,
+    "general_opposition": 0.55
+  },
+  "enable_causality": true,
+  "reasoner_enable_causality": true,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": false,
+  "counter_pass_taxonomy_attacks": false,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 7
+  Arguments: 1
+  Causal type: MIXED_PEN_CIV_CONCURRENCE
+
+[COUNTER]
+  Chain steps: 3
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7488774191117782
+  Net contra: 0.35530476764304
+  Net final: 0.3935726514687382
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

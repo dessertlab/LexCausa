@@ -1,0 +1,1790 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 3,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.06569976,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.547498,
+      "attacks_avg": 0.38555,
+      "base_score_avg": 0.7683722234326411,
+      "cogency_avg": 0.5910410352957296,
+      "net_plausibility": 0.4467639918429646,
+      "net_plausibility_adjusted": 0.4467639918429646,
+      "net_plausibility_raw": 0.3828222234326411,
+      "norm_support_avg": 1.0,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.028127865434824213,
+      "redundancy_penalty": 0.0017579915896765133,
+      "semantics_avg": 0.6368663761464075
+    },
+    "pro": {
+      "attacks_avg": 0.2482,
+      "base_score_avg": 0.7683808425867422,
+      "cogency_avg": 0.6272571771065686,
+      "net_plausibility": 0.7683808425867422,
+      "net_plausibility_adjusted": 0.7683808425867422,
+      "net_plausibility_dialectical_raw": 0.5201808425867424,
+      "net_plausibility_intrinsic_raw": 0.7683808425867422,
+      "net_plausibility_raw": 0.7683808425867422,
+      "norm_support_avg": 0.935773803324704,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.18065715268049945,
+      "redundancy_penalty": 0.04516428817012486,
+      "semantics_avg": 0.6863138937496339
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2206,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3306,
+            "damage_factor": 0.4,
+            "excess": 0.5515,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8238,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1533,
+            "attacker_base_score": 0.8104,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1623,
+            "damage_factor": 0.4,
+            "excess": 0.3832,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7171,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1502,
+            "attacker_base_score": 0.7605,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1546,
+            "damage_factor": 0.4,
+            "excess": 0.3755,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7591,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1113,
+            "attacker_base_score": 0.6959,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0575,
+            "damage_factor": 0.4,
+            "excess": 0.2784,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7598,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7394,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6728,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7583,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7964,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.5696,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.6811,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.7792,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3739,
+        "base_score": 0.779152012061855,
+        "cogency": 0.5996639226488556,
+        "cogency_details": {
+          "argument_quality_score": 0.6512245723795643,
+          "coherence_score": 0.548103272918147,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il vizio constatato, pur determinando una produzione di 320 u/h, non elimina la capacità del macchinario di operare e quindi non lo rende totalmente inidoneo all’uso per il quale è stato acquistato; pertanto, ai sensi dell’art. 1492 c.c., il compratore può legittimamente chiedere la riduzione proporzionale del prezzo anziché la risoluzione del contratto. La scelta della risoluzione è riservata ai casi in cui il bene sia perito o totalmente inadatto, circostanza non verificatasi nella fattispecie.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.779152012061855,
+        "nesso_plausibility": 0.405252012061855,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1495 c.c., il compratore è tenuto a denunciare il vizio entro otto giorni e a provare la non conformità della cosa; finché non sia accertata tale non conformità, il venditore non è obbligato a dimostrare l’assenza di colpa. L’art. 1494 c.c. prevede che il venditore possa sottrarsi al risarcimento solo se prova di non aver ignorato il vizio, ma tale onere è subordinato alla precedente accertazione del difetto da parte del compratore. Pertanto, l’onere probatorio non si sposta automaticamente al venditore, ma rimane in capo al compratore fino a che non abbia fornito prova convincente della resa inferiore al minimo contrattuale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6641761175573279,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6641761175573279
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1495 c.c., il compratore è tenuto a denunciare il vizio entro otto giorni e a provare la non conformità della cosa; finché non sia accertata tale non conformità, il venditore non è obbligato a dimostrare l’assenza di colpa. L’art. 1494 c.c. prevede che il venditore possa sottrarsi al risarcimento solo se prova di non aver ignorato il vizio, ma tale onere è subordinato alla precedente accertazione del difetto da parte del compratore. Pertanto, l’onere probatorio non si sposta automaticamente al venditore, ma rimane in capo al compratore fino a che non abbia fornito prova convincente della resa inferiore al minimo contrattuale."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2163,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2984,
+            "damage_factor": 0.4,
+            "excess": 0.5408,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8038,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1809,
+            "attacker_base_score": 0.7605,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2098,
+            "damage_factor": 0.4,
+            "excess": 0.4522,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7954,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1538,
+            "attacker_base_score": 0.6959,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1421,
+            "damage_factor": 0.4,
+            "excess": 0.3845,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8205,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7394,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7036,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.793,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7964,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.6288,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.752,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8104,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.6986,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.821,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3972,
+        "base_score": 0.7575924348034272,
+        "cogency": 0.5824181479426036,
+        "cogency_details": {
+          "argument_quality_score": 0.6642503220742332,
+          "coherence_score": 0.5005859738109739,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Poiché il contratto prevede assistenza del venditore solo per i primi novanta giorni, ai sensi dell’art. 1512 c.c. l’obbligo di garanzia di buon funzionamento decade al termine di tale periodo; di conseguenza, la manutenzione effettuata da soggetti non autorizzati non rientra nella responsabilità del venditore. Inoltre, l’art. 1227 c.c. prevede che il risarcimento sia diminuito nella misura in cui il creditore ha concorso colposamente al danno, e il ricorso a operatori non autorizzati costituisce tale concorso, limitando così l’onere risarcitorio del venditore.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7575924348034272,
+        "nesso_plausibility": 0.3603924348034272,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il vizio constatato, pur determinando una produzione di 320 u/h, non elimina la capacità del macchinario di operare e quindi non lo rende totalmente inidoneo all’uso per il quale è stato acquistato; pertanto, ai sensi dell’art. 1492 c.c., il compratore può legittimamente chiedere la riduzione proporzionale del prezzo anziché la risoluzione del contratto. La scelta della risoluzione è riservata ai casi in cui il bene sia perito o totalmente inadatto, circostanza non verificatasi nella fattispecie.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1512",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1587_art1512",
+            "title": "Garanzia di buon funzionamento"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.609556634735487,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.609556634735487
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il vizio constatato, pur determinando una produzione di 320 u/h, non elimina la capacità del macchinario di operare e quindi non lo rende totalmente inidoneo all’uso per il quale è stato acquistato; pertanto, ai sensi dell’art. 1492 c.c., il compratore può legittimamente chiedere la riduzione proporzionale del prezzo anziché la risoluzione del contratto. La scelta della risoluzione è riservata ai casi in cui il bene sia perito o totalmente inadatto, circostanza non verificatasi nella fattispecie."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1849,
+            "attacker_base_score": 0.7576,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2016,
+            "damage_factor": 0.4,
+            "excess": 0.4622,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.793,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7394,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.106,
+            "attacker_base_score": 0.7792,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0044,
+            "damage_factor": 0.4,
+            "excess": 0.265,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7583,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7394,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2909,
+        "base_score": 0.7393728502078194,
+        "cogency": 0.6069320078302267,
+        "cogency_details": {
+          "argument_quality_score": 0.606671166948123,
+          "coherence_score": 0.6071928487123306,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il macchinario doveva garantire una resa di 500 unità/ora ± 2 %, perciò il valore minimo accettabile è 490 unità/ora; la produzione effettiva di 320 unità/ora, attestata dai log e dalla perizia, è notevolmente inferiore a tale soglia, configurando un vizio che lo rende inidoneo all’uso a cui è destinato. Questa difformità rientra nella disciplina dell’art. 1490 c.c., che impone al venditore la garanzia contro i vizi che diminuiscono apprezzabilmente il valore o l’idoneità della cosa.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7393728502078194,
+        "nesso_plausibility": 0.4484728502078194,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il compratore ha denunciato i vizi del macchinario entro otto giorni dalla scoperta, come attestato dalla documentazione allegata (log, report e perizia), soddisfacendo così il termine di decadenza previsto dall’art. 1495 c.c., che prevede la perdita del diritto di garanzia se la denuncia non avviene entro otto giorni dalla scoperta del vizio. Pertanto, la denuncia è tempestiva e il compratore non è soggetto a decadenza né a prescrizione dell’azione di garanzia.",
+        "retrieved_norms": [
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6527632195464297,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6527632195464297
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il compratore ha denunciato i vizi del macchinario entro otto giorni dalla scoperta, come attestato dalla documentazione allegata (log, report e perizia), soddisfacendo così il termine di decadenza previsto dall’art. 1495 c.c., che prevede la perdita del diritto di garanzia se la denuncia non avviene entro otto giorni dalla scoperta del vizio. Pertanto, la denuncia è tempestiva e il compratore non è soggetto a decadenza né a prescrizione dell’azione di garanzia."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1641,
+            "attacker_base_score": 0.7576,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2179,
+            "damage_factor": 0.4,
+            "excess": 0.4103,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8038,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1134,
+            "attacker_base_score": 0.7792,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0912,
+            "damage_factor": 0.4,
+            "excess": 0.2835,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8238,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8076,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.27749999999999997,
+        "base_score": 0.8076102622650476,
+        "cogency": 0.688687116795764,
+        "cogency_details": {
+          "argument_quality_score": 0.6890929306814824,
+          "coherence_score": 0.6882813029100456,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La riduzione della resa a 320 unità/ora, ben al di sotto del minimo contrattuale di 490 unità/ora (500 ± 2 %), rende il macchinario inidoneo all’uso a cui è destinato, configurando così un vizio che lo pervade in modo tale da renderlo “perito” ai sensi dell’art. 1492 c.c.; pertanto il compratore può legittimamente domandare la risoluzione del contratto, oppure, in alternativa, una riduzione proporzionale del prezzo tenendo conto della perdita di capacità produttiva. La scelta è irrevocabile una volta presentata la domanda giudiziale (art. 1492 c.c.). Qualora il compratore opti per la riduzione, il prezzo dovrà essere adeguato in misura tale da riflettere la differenza tra la resa garantita e quella effettivamente ottenuta.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8076102622650476,
+        "nesso_plausibility": 0.5301102622650476,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il macchinario doveva garantire una resa di 500 unità/ora ± 2 %, perciò il valore minimo accettabile è 490 unità/ora; la produzione effettiva di 320 unità/ora, attestata dai log e dalla perizia, è notevolmente inferiore a tale soglia, configurando un vizio che lo rende inidoneo all’uso a cui è destinato. Questa difformità rientra nella disciplina dell’art. 1490 c.c., che impone al venditore la garanzia contro i vizi che diminuiscono apprezzabilmente il valore o l’idoneità della cosa.",
+        "retrieved_norms": [
+          {
+            "articolo": "1490",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1565_art1490",
+            "title": "Garanzia per i vizi della cosa venduta"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7984661507716536,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7984661507716536
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il macchinario doveva garantire una resa di 500 unità/ora ± 2 %, perciò il valore minimo accettabile è 490 unità/ora; la produzione effettiva di 320 unità/ora, attestata dai log e dalla perizia, è notevolmente inferiore a tale soglia, configurando un vizio che lo rende inidoneo all’uso a cui è destinato. Questa difformità rientra nella disciplina dell’art. 1490 c.c., che impone al venditore la garanzia contro i vizi che diminuiscono apprezzabilmente il valore o l’idoneità della cosa."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.098,
+            "attacker_base_score": 0.7792,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0055,
+            "damage_factor": 0.4,
+            "excess": 0.245,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7591,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7605,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7576,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7231,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7954,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7605,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.098,
+        "base_score": 0.7605180820644744,
+        "cogency": 0.606113753342095,
+        "cogency_details": {
+          "argument_quality_score": 0.6480063780137055,
+          "coherence_score": 0.5642211286704845,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 1494 c.c., spetta al venditore dimostrare che la diminuzione della resa è dovuta a una errata conduzione dell’impianto o a interventi di manutenzione effettuati da terzi non autorizzati; in mancanza di prova concreta di tali cause, l’onere della prova resta a carico dell’acquirente, il quale ha già provato l’esistenza del vizio con i log, i report e la perizia.",
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7605180820644744,
+        "nesso_plausibility": 0.6625180820644744,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "La riduzione della resa a 320 unità/ora, ben al di sotto del minimo contrattuale di 490 unità/ora (500 ± 2 %), rende il macchinario inidoneo all’uso a cui è destinato, configurando così un vizio che lo pervade in modo tale da renderlo “perito” ai sensi dell’art. 1492 c.c.; pertanto il compratore può legittimamente domandare la risoluzione del contratto, oppure, in alternativa, una riduzione proporzionale del prezzo tenendo conto della perdita di capacità produttiva. La scelta è irrevocabile una volta presentata la domanda giudiziale (art. 1492 c.c.). Qualora il compratore opti per la riduzione, il prezzo dovrà essere adeguato in misura tale da riflettere la differenza tra la resa garantita e quella effettivamente ottenuta.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7240655802234116,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7240655802234116
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "La riduzione della resa a 320 unità/ora, ben al di sotto del minimo contrattuale di 490 unità/ora (500 ± 2 %), rende il macchinario inidoneo all’uso a cui è destinato, configurando così un vizio che lo pervade in modo tale da renderlo “perito” ai sensi dell’art. 1492 c.c.; pertanto il compratore può legittimamente domandare la risoluzione del contratto, oppure, in alternativa, una riduzione proporzionale del prezzo tenendo conto della perdita di capacità produttiva. La scelta è irrevocabile una volta presentata la domanda giudiziale (art. 1492 c.c.). Qualora il compratore opti per la riduzione, il prezzo dovrà essere adeguato in misura tale da riflettere la differenza tra la resa garantita e quella effettivamente ottenuta."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2189,
+            "attacker_base_score": 0.7576,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2433,
+            "damage_factor": 0.4,
+            "excess": 0.5473,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8205,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6959,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1952,
+            "attacker_base_score": 0.7792,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.184,
+            "damage_factor": 0.4,
+            "excess": 0.488,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7598,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6959,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.4141,
+        "base_score": 0.6959408217977909,
+        "cogency": 0.5794431698202247,
+        "cogency_details": {
+          "argument_quality_score": 0.6526994486449242,
+          "coherence_score": 0.5061868909955252,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 1225 c.c., il risarcimento per inadempimento è limitato al danno che era prevedibile al momento della conclusione del contratto; dunque il compratore potrà ottenere il rimborso del canone di noleggio del macchinario sostitutivo (45 000 €) solo se il venditore non dimostra che tale spesa era imprevedibile o che il danno è stato aggravato da una colpa del compratore (ad es. manutenzione non autorizzata). Per le perdite di ordini (80 000 €) si tratta di lucro cessante, risarcibile soltanto se il giudice accerta che esse costituiscono una conseguenza diretta e prevedibile della ridotta resa del macchinario (320 u/h anziché 500 u/h). In assenza di prova contraria, il danno è presumibilmente prevedibile, ma il venditore potrà limitare la responsabilità sostenendo la non prevedibilità o la colpa del compratore.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.6959408217977909,
+        "nesso_plausibility": 0.2818408217977909,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1494 c.c., spetta al venditore dimostrare che la diminuzione della resa è dovuta a una errata conduzione dell’impianto o a interventi di manutenzione effettuati da terzi non autorizzati; in mancanza di prova concreta di tali cause, l’onere della prova resta a carico dell’acquirente, il quale ha già provato l’esistenza del vizio con i log, i report e la perizia.",
+        "retrieved_norms": [
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5354786295230038,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5354786295230038
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1494 c.c., spetta al venditore dimostrare che la diminuzione della resa è dovuta a una errata conduzione dell’impianto o a interventi di manutenzione effettuati da terzi non autorizzati; in mancanza di prova concreta di tali cause, l’onere della prova resta a carico dell’acquirente, il quale ha già provato l’esistenza del vizio con i log, i report e la perizia."
+      },
+      {
+        "argument_id": "chain_5",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1372,
+            "attacker_base_score": 0.7576,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1393,
+            "damage_factor": 0.4,
+            "excess": 0.3429,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.752,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7964,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0423,
+            "attacker_base_score": 0.7792,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9021,
+            "damage_factor": 0.4,
+            "excess": 0.1057,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6811,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7964,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1795,
+        "base_score": 0.7964313258730725,
+        "cogency": 0.6647751170663443,
+        "cogency_details": {
+          "argument_quality_score": 0.6853950661819641,
+          "coherence_score": 0.6441551679507245,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S6",
+        "conclusion_text": "Ai sensi dell’art. 2056 c.c., il danno risarcibile comprende le spese effettivamente sostenute dal compratore (noleggio dell’impianto sostitutivo pari a € 45.000) e il lucro cessante derivante dagli ordini persi (€ 80.000), per un ammontare complessivo di € 125.000, salvo eventuale riduzione per colpa concorrente del compratore ai sensi dell’art. 1227 c.c. e per mancanza di prevedibilità del danno ai sensi dell’art. 1225 c.c.",
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "nesso_intrinsic": 0.7964313258730725,
+        "nesso_plausibility": 0.6169313258730725,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S5"
+        ],
+        "premise_text": "Ai sensi dell’art. 1225 c.c., il risarcimento per inadempimento è limitato al danno che era prevedibile al momento della conclusione del contratto; dunque il compratore potrà ottenere il rimborso del canone di noleggio del macchinario sostitutivo (45 000 €) solo se il venditore non dimostra che tale spesa era imprevedibile o che il danno è stato aggravato da una colpa del compratore (ad es. manutenzione non autorizzata). Per le perdite di ordini (80 000 €) si tratta di lucro cessante, risarcibile soltanto se il giudice accerta che esse costituiscono una conseguenza diretta e prevedibile della ridotta resa del macchinario (320 u/h anziché 500 u/h). In assenza di prova contraria, il danno è presumibilmente prevedibile, ma il venditore potrà limitare la responsabilità sostenendo la non prevedibilità o la colpa del compratore.",
+        "retrieved_norms": [
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6566626358438975,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6566626358438975
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1225 c.c., il risarcimento per inadempimento è limitato al danno che era prevedibile al momento della conclusione del contratto; dunque il compratore potrà ottenere il rimborso del canone di noleggio del macchinario sostitutivo (45 000 €) solo se il venditore non dimostra che tale spesa era imprevedibile o che il danno è stato aggravato da una colpa del compratore (ad es. manutenzione non autorizzata). Per le perdite di ordini (80 000 €) si tratta di lucro cessante, risarcibile soltanto se il giudice accerta che esse costituiscono una conseguenza diretta e prevedibile della ridotta resa del macchinario (320 u/h anziché 500 u/h). In assenza di prova contraria, il danno è presumibilmente prevedibile, ma il venditore potrà limitare la responsabilità sostenendo la non prevedibilità o la colpa del compratore."
+      },
+      {
+        "argument_id": "chain_6",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1734,
+            "attacker_base_score": 0.7576,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2439,
+            "damage_factor": 0.4,
+            "excess": 0.4335,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.821,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8104,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0558,
+            "attacker_base_score": 0.7792,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9499,
+            "damage_factor": 0.4,
+            "excess": 0.1395,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7171,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8104,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.22920000000000001,
+        "base_score": 0.8104117133122489,
+        "cogency": 0.6175918977847561,
+        "cogency_details": {
+          "argument_quality_score": 0.6540250741154355,
+          "coherence_score": 0.5811587214540767,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S7",
+        "conclusion_text": "Alla luce dell’adempimento tempestivo della denuncia (art. 1495 c.c.) e della prova inequivocabile del vizio (produzione 320 u/h contro il minimo contrattuale di 490 u/h), il venditore resta gravato dall’onere di dimostrare che la diminuzione di resa sia dovuta a uso non conforme o a manutenzione non autorizzata; in assenza di tale prova, l’art. 1494 c.c. impone il risarcimento dei danni. Il danno diretto, rappresentato dal canone di noleggio del macchinario sostitutivo (45 000 €), è pienamente risarcibile, mentre il lucro cessante per gli ordini persi (80 000 €) è soggetto al limite di prevedibilità previsto dall’art. 1225 c.c., che esclude la responsabilità per perdite non ragionevolmente prevedibili al momento della stipula. Pertanto, la soluzione più idonea è la risoluzione del contratto con restituzione del prezzo pagato, il rimborso delle spese di noleggio e la compensazione limitata al danno diretto, escludendo o riducendo il risarcimento per i danni indiretti non prevedibili.",
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "nesso_intrinsic": 0.8104117133122489,
+        "nesso_plausibility": 0.581211713312249,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S6"
+        ],
+        "premise_text": "Ai sensi dell’art. 2056 c.c., il danno risarcibile comprende le spese effettivamente sostenute dal compratore (noleggio dell’impianto sostitutivo pari a € 45.000) e il lucro cessante derivante dagli ordini persi (€ 80.000), per un ammontare complessivo di € 125.000, salvo eventuale riduzione per colpa concorrente del compratore ai sensi dell’art. 1227 c.c. e per mancanza di prevedibilità del danno ai sensi dell’art. 1225 c.c.",
+        "retrieved_norms": [
+          {
+            "articolo": "2056",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_2145_art2056",
+            "title": "Valutazione dei danni"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          },
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.750447146589407,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.750447146589407
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 2056 c.c., il danno risarcibile comprende le spese effettivamente sostenute dal compratore (noleggio dell’impianto sostitutivo pari a € 45.000) e il lucro cessante derivante dagli ordini persi (€ 80.000), per un ammontare complessivo di € 125.000, salvo eventuale riduzione per colpa concorrente del compratore ai sensi dell’art. 1227 c.c. e per mancanza di prevedibilità del danno ai sensi dell’art. 1225 c.c."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.4467639918429646,
+    "contra_adjusted": 0.4467639918429646,
+    "contra_raw": 0.3828222234326411,
+    "final": 0.3216168507437776,
+    "final_adjusted": 0.3216168507437776,
+    "final_raw": 0.3855586191541011,
+    "pro": 0.7683808425867422,
+    "pro_adjusted": 0.7683808425867422,
+    "pro_raw": 0.7683808425867422,
+    "pro_raw_dialectical": 0.5201808425867424,
+    "pro_raw_intrinsic": 0.7683808425867422,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8238,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2206
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8205,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.2189
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8038,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2163
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7598,
+        "target": "S4->S5",
+        "target_role": "support",
+        "value": 0.1952
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.793,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1849
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7954,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1809
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.821,
+        "target": "S6->S7",
+        "target_role": "support",
+        "value": 0.1734
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8038,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1641
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.8205,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1538
+      },
+      {
+        "attacker": "S6->S7",
+        "attacker_role": "support",
+        "overlap": 0.7171,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1533
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S5->S6",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S6->S7",
+        "role": "support",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      },
+      {
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "obbligazioni",
+        "source": "codice_civile"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 3,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.6959408217977909,
+              "axis_id": "AX3",
+              "axis_quality": 0.27746000000000004,
+              "link_ids": [
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 5,
+              "axis_base_avg": 0.7691670648457803,
+              "axis_id": "AX2",
+              "axis_quality": 0.24547,
+              "link_ids": [
+                "S2->S3",
+                "S3->S4",
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.8034215195926607,
+              "axis_id": "AX1",
+              "axis_quality": 0.21456,
+              "link_ids": [
+                "S6->S7",
+                "S5->S6"
+              ]
+            }
+          ],
+          "bonus": 0.06569976,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.24583,
+          "wpcs": 0.547498
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7278758023217508,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0017579915896765133,
+          "redundancy_index": 0.028127865434824213
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7554295036095178,
+          "high_similarity_pair_ratio": 0.8,
+          "links_count": 6,
+          "pair_count": 15,
+          "penalty": 0.04516428817012486,
+          "redundancy_index": 0.18065715268049945
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2189,
+            "attacker_base_score": 0.7576,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2433,
+            "damage_factor": 0.4,
+            "excess": 0.5473,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8205,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6959,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1952,
+            "attacker_base_score": 0.7792,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.184,
+            "damage_factor": 0.4,
+            "excess": 0.488,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7598,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6959,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.4141,
+        "base_score": 0.6959408217977909,
+        "cogency": 0.5794431698202247,
+        "cogency_details": {
+          "argument_quality_score": 0.6526994486449242,
+          "coherence_score": 0.5061868909955252,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 1225 c.c., il risarcimento per inadempimento è limitato al danno che era prevedibile al momento della conclusione del contratto; dunque il compratore potrà ottenere il rimborso del canone di noleggio del macchinario sostitutivo (45 000 €) solo se il venditore non dimostra che tale spesa era imprevedibile o che il danno è stato aggravato da una colpa del compratore (ad es. manutenzione non autorizzata). Per le perdite di ordini (80 000 €) si tratta di lucro cessante, risarcibile soltanto se il giudice accerta che esse costituiscono una conseguenza diretta e prevedibile della ridotta resa del macchinario (320 u/h anziché 500 u/h). In assenza di prova contraria, il danno è presumibilmente prevedibile, ma il venditore potrà limitare la responsabilità sostenendo la non prevedibilità o la colpa del compratore.",
+        "libro": "CC Libro IV",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.6959408217977909,
+        "nesso_plausibility": 0.2818408217977909,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 1494 c.c., spetta al venditore dimostrare che la diminuzione della resa è dovuta a una errata conduzione dell’impianto o a interventi di manutenzione effettuati da terzi non autorizzati; in mancanza di prova concreta di tali cause, l’onere della prova resta a carico dell’acquirente, il quale ha già provato l’esistenza del vizio con i log, i report e la perizia.",
+        "retrieved_norms": [
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1225",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1295_art1225",
+            "title": "Prevedibilità del danno"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5354786295230038,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5354786295230038
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Ai sensi dell’art. 1494 c.c., spetta al venditore dimostrare che la diminuzione della resa è dovuta a una errata conduzione dell’impianto o a interventi di manutenzione effettuati da terzi non autorizzati; in mancanza di prova concreta di tali cause, l’onere della prova resta a carico dell’acquirente, il quale ha già provato l’esistenza del vizio con i log, i report e la perizia."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2163,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.2984,
+            "damage_factor": 0.4,
+            "excess": 0.5408,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8038,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1809,
+            "attacker_base_score": 0.7605,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.2098,
+            "damage_factor": 0.4,
+            "excess": 0.4522,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7954,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1538,
+            "attacker_base_score": 0.6959,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1421,
+            "damage_factor": 0.4,
+            "excess": 0.3845,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8205,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7394,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7036,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.793,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7964,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.6288,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.752,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 1.05
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.8104,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 0.6986,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.821,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7576,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3972,
+        "base_score": 0.7575924348034272,
+        "cogency": 0.5824181479426036,
+        "cogency_details": {
+          "argument_quality_score": 0.6642503220742332,
+          "coherence_score": 0.5005859738109739,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Poiché il contratto prevede assistenza del venditore solo per i primi novanta giorni, ai sensi dell’art. 1512 c.c. l’obbligo di garanzia di buon funzionamento decade al termine di tale periodo; di conseguenza, la manutenzione effettuata da soggetti non autorizzati non rientra nella responsabilità del venditore. Inoltre, l’art. 1227 c.c. prevede che il risarcimento sia diminuito nella misura in cui il creditore ha concorso colposamente al danno, e il ricorso a operatori non autorizzati costituisce tale concorso, limitando così l’onere risarcitorio del venditore.",
+        "libro": "CC Libro IV",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7575924348034272,
+        "nesso_plausibility": 0.3603924348034272,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Il vizio constatato, pur determinando una produzione di 320 u/h, non elimina la capacità del macchinario di operare e quindi non lo rende totalmente inidoneo all’uso per il quale è stato acquistato; pertanto, ai sensi dell’art. 1492 c.c., il compratore può legittimamente chiedere la riduzione proporzionale del prezzo anziché la risoluzione del contratto. La scelta della risoluzione è riservata ai casi in cui il bene sia perito o totalmente inadatto, circostanza non verificatasi nella fattispecie.",
+        "retrieved_norms": [
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          },
+          {
+            "articolo": "1512",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1587_art1512",
+            "title": "Garanzia di buon funzionamento"
+          },
+          {
+            "articolo": "1227",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1297_art1227",
+            "title": "Concorso del fatto colposo del creditore"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.609556634735487,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.609556634735487
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Il vizio constatato, pur determinando una produzione di 320 u/h, non elimina la capacità del macchinario di operare e quindi non lo rende totalmente inidoneo all’uso per il quale è stato acquistato; pertanto, ai sensi dell’art. 1492 c.c., il compratore può legittimamente chiedere la riduzione proporzionale del prezzo anziché la risoluzione del contratto. La scelta della risoluzione è riservata ai casi in cui il bene sia perito o totalmente inadatto, circostanza non verificatasi nella fattispecie."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2206,
+            "attacker_base_score": 0.8076,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.3306,
+            "damage_factor": 0.4,
+            "excess": 0.5515,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8238,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1533,
+            "attacker_base_score": 0.8104,
+            "attacker_link_id": "S6->S7",
+            "attacker_role": "support",
+            "boosted_attack": 1.1623,
+            "damage_factor": 0.4,
+            "excess": 0.3832,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7171,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1502,
+            "attacker_base_score": 0.7605,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1546,
+            "damage_factor": 0.4,
+            "excess": 0.3755,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7591,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1113,
+            "attacker_base_score": 0.6959,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0575,
+            "damage_factor": 0.4,
+            "excess": 0.2784,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7598,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7394,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.6728,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7583,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7792,
+            "type_multiplier": 1.2
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7964,
+            "attacker_link_id": "S5->S6",
+            "attacker_role": "support",
+            "boosted_attack": 0.5696,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.6811,
+            "reason": "active: general_opposition",
+            "target_base_score": 0.7792,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.3739,
+        "base_score": 0.779152012061855,
+        "cogency": 0.5996639226488556,
+        "cogency_details": {
+          "argument_quality_score": 0.6512245723795643,
+          "coherence_score": 0.548103272918147,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Il vizio constatato, pur determinando una produzione di 320 u/h, non elimina la capacità del macchinario di operare e quindi non lo rende totalmente inidoneo all’uso per il quale è stato acquistato; pertanto, ai sensi dell’art. 1492 c.c., il compratore può legittimamente chiedere la riduzione proporzionale del prezzo anziché la risoluzione del contratto. La scelta della risoluzione è riservata ai casi in cui il bene sia perito o totalmente inadatto, circostanza non verificatasi nella fattispecie.",
+        "libro": "CC Libro IV",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.779152012061855,
+        "nesso_plausibility": 0.405252012061855,
+        "norm_support": 1.0,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 1.0,
+          "citation_specificity_score": 1.0,
+          "final": 1.0,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Secondo l’art. 1495 c.c., il compratore è tenuto a denunciare il vizio entro otto giorni e a provare la non conformità della cosa; finché non sia accertata tale non conformità, il venditore non è obbligato a dimostrare l’assenza di colpa. L’art. 1494 c.c. prevede che il venditore possa sottrarsi al risarcimento solo se prova di non aver ignorato il vizio, ma tale onere è subordinato alla precedente accertazione del difetto da parte del compratore. Pertanto, l’onere probatorio non si sposta automaticamente al venditore, ma rimane in capo al compratore fino a che non abbia fornito prova convincente della resa inferiore al minimo contrattuale.",
+        "retrieved_norms": [
+          {
+            "articolo": "1495",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1570_art1495",
+            "title": "Termini e condizioni per l'azione"
+          },
+          {
+            "articolo": "1494",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1569_art1494",
+            "title": "Risarcimento del danno"
+          },
+          {
+            "articolo": "1492",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_civile",
+            "statute_id": "codice_civile_1567_art1492",
+            "title": "Effetti della garanzia"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6641761175573279,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6641761175573279
+        },
+        "severity_category": "obbligazioni",
+        "source": "codice_civile",
+        "text": "Secondo l’art. 1495 c.c., il compratore è tenuto a denunciare il vizio entro otto giorni e a provare la non conformità della cosa; finché non sia accertata tale non conformità, il venditore non è obbligato a dimostrare l’assenza di colpa. L’art. 1494 c.c. prevede che il venditore possa sottrarsi al risarcimento solo se prova di non aver ignorato il vizio, ma tale onere è subordinato alla precedente accertazione del difetto da parte del compratore. Pertanto, l’onere probatorio non si sposta automaticamente al venditore, ma rimane in capo al compratore fino a che non abbia fornito prova convincente della resa inferiore al minimo contrattuale."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

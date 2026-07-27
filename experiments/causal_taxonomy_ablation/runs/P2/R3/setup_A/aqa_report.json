@@ -1,0 +1,700 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 0,
+      "attack_coverage_axes_total": 2,
+      "attack_coverage_bonus": 0.0,
+      "attack_coverage_ratio": 0.0,
+      "attack_coverage_score": 0.0,
+      "attacks_avg": 0.22749999999999998,
+      "base_score_avg": 0.693936835572786,
+      "cogency_avg": 0.620236481911776,
+      "net_plausibility": 0.466436835572786,
+      "net_plausibility_adjusted": 0.466436835572786,
+      "net_plausibility_raw": 0.466436835572786,
+      "norm_support_avg": 0.7936607049870561,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.0,
+      "redundancy_penalty": 0.0,
+      "semantics_avg": 0.6346720300147691
+    },
+    "pro": {
+      "attacks_avg": 0.0,
+      "base_score_avg": 0.7516252718450331,
+      "cogency_avg": 0.6682971659459966,
+      "net_plausibility": 0.7516252718450331,
+      "net_plausibility_adjusted": 0.7516252718450331,
+      "net_plausibility_dialectical_raw": 0.7516252718450331,
+      "net_plausibility_intrinsic_raw": 0.7516252718450331,
+      "net_plausibility_raw": 0.7516252718450331,
+      "norm_support_avg": 0.8408847981558047,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.013465709872310341,
+      "redundancy_penalty": 0.0008416068670193963,
+      "semantics_avg": 0.715940675996374
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2007,
+            "attacker_base_score": 0.7459,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1957,
+            "damage_factor": 0.4,
+            "excess": 0.5017,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8015,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6939,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0268,
+            "attacker_base_score": 0.7574,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.761,
+            "damage_factor": 0.4,
+            "excess": 0.0671,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8373,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6939,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.22749999999999998,
+        "base_score": 0.693936835572786,
+        "cogency": 0.620236481911776,
+        "cogency_details": {
+          "argument_quality_score": 0.6976129225306111,
+          "coherence_score": 0.5428600412929409,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Sulla base dell’art. 589 c.p., per configurare l’omicidio colposo è necessario che la condotta dell’autore costituisca la causa esclusiva e sufficiente della morte; l’emotività grave del conducente, dovuta all’urgenza di rientrare in ospedale per il parto della moglie, rappresenta un fattore concorso che ha influito sulla capacità di controllo del veicolo, rompendo tale esclusività; pertanto, in mancanza del nesso causale esclusivo richiesto dall’art. 589, la fattispecie si limita alla violazione del limite di velocità, punibile come contravvenzione amministrativa e non come reato di omicidio.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.693936835572786,
+        "nesso_plausibility": 0.466436835572786,
+        "norm_support": 0.7936607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.7936607049870561,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.925
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Le perizie confermano che a velocità regolare l’incidente non si sarebbe verificato, ma non escludono che lo stato emotivo grave del conducente abbia influito sulla capacità di controllo del veicolo; così la pericolosità non può essere attribuita esclusivamente all’eccesso di velocità. In mancanza di prova certa che la sola violazione del limite sia la causa determinante, la qualificazione prevista dalla norma di pericolosità risulta indebolita.",
+        "retrieved_norms": [
+          {
+            "articolo": "589",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "589",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6346720300147691,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6346720300147691
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Le perizie confermano che a velocità regolare l’incidente non si sarebbe verificato, ma non escludono che lo stato emotivo grave del conducente abbia influito sulla capacità di controllo del veicolo; così la pericolosità non può essere attribuita esclusivamente all’eccesso di velocità. In mancanza di prova certa che la sola violazione del limite sia la causa determinante, la qualificazione prevista dalla norma di pericolosità risulta indebolita."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6973,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8373,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7574,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7573786064741633,
+        "cogency": 0.7004188615958608,
+        "cogency_details": {
+          "argument_quality_score": 0.7297276496722768,
+          "coherence_score": 0.6711100735194447,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7573786064741633,
+        "nesso_plausibility": 0.7573786064741633,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7866979715519455,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7866979715519455
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6675,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8015,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7459,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7458719372159028,
+        "cogency": 0.6361754702961324,
+        "cogency_details": {
+          "argument_quality_score": 0.6723495294947288,
+          "coherence_score": 0.600001411097536,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.",
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7458719372159028,
+        "nesso_plausibility": 0.7458719372159028,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6451833804408026,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6451833804408026
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.466436835572786,
+    "contra_adjusted": 0.466436835572786,
+    "contra_raw": 0.466436835572786,
+    "final": 0.28518843627224716,
+    "final_adjusted": 0.28518843627224716,
+    "final_raw": 0.28518843627224716,
+    "pro": 0.7516252718450331,
+    "pro_adjusted": 0.7516252718450331,
+    "pro_raw": 0.7516252718450331,
+    "pro_raw_dialectical": 0.7516252718450331,
+    "pro_raw_intrinsic": 0.7516252718450331,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8015,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2007
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8373,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.0268
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 0,
+          "axes_total": 2,
+          "axis_details": [
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7573786064741633,
+              "axis_id": "AX1",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 0,
+              "axis_base_avg": 0.7458719372159028,
+              "axis_id": "AX2",
+              "axis_quality": 0.0,
+              "link_ids": [
+                "S2->S3"
+              ]
+            }
+          ],
+          "bonus": 0.0,
+          "coverage_ratio": 0.0,
+          "enabled": true,
+          "quality_avg": 0.0,
+          "wpcs": 0.0
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.0,
+          "high_similarity_pair_ratio": 0.0,
+          "links_count": 1,
+          "pair_count": 0,
+          "penalty": 0.0,
+          "redundancy_index": 0.0
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7237703987642469,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.0008416068670193963,
+          "redundancy_index": 0.013465709872310341
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2007,
+            "attacker_base_score": 0.7459,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1957,
+            "damage_factor": 0.4,
+            "excess": 0.5017,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8015,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6939,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0268,
+            "attacker_base_score": 0.7574,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.761,
+            "damage_factor": 0.4,
+            "excess": 0.0671,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8373,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.6939,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.22749999999999998,
+        "base_score": 0.693936835572786,
+        "cogency": 0.620236481911776,
+        "cogency_details": {
+          "argument_quality_score": 0.6976129225306111,
+          "coherence_score": 0.5428600412929409,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Sulla base dell’art. 589 c.p., per configurare l’omicidio colposo è necessario che la condotta dell’autore costituisca la causa esclusiva e sufficiente della morte; l’emotività grave del conducente, dovuta all’urgenza di rientrare in ospedale per il parto della moglie, rappresenta un fattore concorso che ha influito sulla capacità di controllo del veicolo, rompendo tale esclusività; pertanto, in mancanza del nesso causale esclusivo richiesto dall’art. 589, la fattispecie si limita alla violazione del limite di velocità, punibile come contravvenzione amministrativa e non come reato di omicidio.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.693936835572786,
+        "nesso_plausibility": 0.466436835572786,
+        "norm_support": 0.7936607049870561,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.7936607049870561,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.925
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Le perizie confermano che a velocità regolare l’incidente non si sarebbe verificato, ma non escludono che lo stato emotivo grave del conducente abbia influito sulla capacità di controllo del veicolo; così la pericolosità non può essere attribuita esclusivamente all’eccesso di velocità. In mancanza di prova certa che la sola violazione del limite sia la causa determinante, la qualificazione prevista dalla norma di pericolosità risulta indebolita.",
+        "retrieved_norms": [
+          {
+            "articolo": "589",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          },
+          {
+            "articolo": "589",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_750_589",
+            "title": "Omicidio colposo"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6346720300147691,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6346720300147691
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Le perizie confermano che a velocità regolare l’incidente non si sarebbe verificato, ma non escludono che lo stato emotivo grave del conducente abbia influito sulla capacità di controllo del veicolo; così la pericolosità non può essere attribuita esclusivamente all’eccesso di velocità. In mancanza di prova certa che la sola violazione del limite sia la causa determinante, la qualificazione prevista dalla norma di pericolosità risulta indebolita."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6675,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8015,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7459,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7458719372159028,
+        "cogency": 0.6361754702961324,
+        "cogency_details": {
+          "argument_quality_score": 0.6723495294947288,
+          "coherence_score": 0.600001411097536,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Ai sensi dell’art. 41 c.p. la “causa sopravvenuta da sola sufficiente” deve essere un evento esterno, autonomo e comparso dopo la condotta dell’imputato, capace di produrre l’evento dannoso senza il contributo della sua azione; lo stato emotivo dell’automobilista, seppur grave, è una condizione interna che ha preceduto la decisione di superare il limite di velocità e non costituisce un evento esterno né un fatto comparso successivamente, perciò non può rientrare nella fattispecie di causa sopravvenuta da sola sufficiente prevista dall’art. 41 c.p.",
+        "libro": "CP Libro I",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7458719372159028,
+        "nesso_plausibility": 0.7458719372159028,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6451833804408026,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6451833804408026
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.6939,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6973,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8373,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7574,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0,
+        "base_score": 0.7573786064741633,
+        "cogency": 0.7004188615958608,
+        "cogency_details": {
+          "argument_quality_score": 0.7297276496722768,
+          "coherence_score": 0.6711100735194447,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Ai sensi dell’art. 40 c.p., la condotta dell’automobilista (superamento del limite di 90 km/h fino a circa 140 km/h) costituisce una condizione di pericolosità che, in assenza di altre cause intervenute, è la causa immediata della perdita di controllo e della morte; pertanto, eliminando tale eccesso di velocità, l’evento mortale non si sarebbe verificato, confermando il nesso di causalità richiesto dal test del “but‑for”.",
+        "libro": "CP Libro I",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7573786064741633,
+        "nesso_plausibility": 0.7573786064741633,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7866979715519455,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7866979715519455
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Il fatto di parte riporta che l’automobilista, percorrendo un tratto con limite di 90 km/h, ha superato il limite arrivando a circa 140 km/h, perdendo il controllo del veicolo e provocando un incidente mortale. Contestualmente, l’automobilista dichiara di trovarsi in uno stato emotivo grave per complicazioni nel parto della moglie e per l’urgenza di rientrare in ospedale. Le perizie tecniche attestano che il fondo stradale era asciutto, la visibilità buona e il veicolo privo di guasti, e concludono che, a velocità regolare, l’evento non si sarebbe verificato. La difesa, infine, sostiene la necessità di ridurre la rimproverabilità soggettiva e contesta l’automatismo tra la violazione del limite di velocità e il massimo valore della colpa."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

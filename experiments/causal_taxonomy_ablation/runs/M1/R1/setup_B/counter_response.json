@@ -1,0 +1,393 @@
+{
+  "abstained": true,
+  "abstention_reason": "generation_failed_after_retries: Counter planner failed: All 21 Groq API keys are rate-limited for model 'openai/gpt-oss-120b'. Wait a few minutes or add more GROQ_API_KEY_V* entries to .env.",
+  "aspic_ir": {
+    "abstained": true,
+    "abstention_reason": "generation_failed_after_retries: Counter planner failed: All 21 Groq API keys are rate-limited for model 'openai/gpt-oss-120b'. Wait a few minutes or add more GROQ_API_KEY_V* entries to .env.",
+    "reasoning_chain": [],
+    "role": "counter"
+  },
+  "causal_type_id": "MIXED_PEN_CIV_CONCURRENCE",
+  "claim": "Un venditore online incassa 6.000 euro per un macchinario dichiarato funzionante, ma consegna un bene inutilizzabile e con componenti mancanti. Dalle chat emerge che il venditore conosceva da settimane i difetti e aveva promesso una revisione mai effettuata. L'acquirente presenta querela e, in sede civile, chiede risoluzione, restituzione del prezzo e danni da fermo attivita. Il venditore eccepisce che il bene fosse usato e venduto \"come visto\", sostenendo che il malfunzionamento dipenda dal trasporto. Si chiede di valutare concorso tra responsabilita penale e rimedi civili, inclusi presupposti e limiti del risarcimento.",
+  "counter_arguments": [],
+  "precedents": [],
+  "raw_response": "Counter-Reasoner abstained: generation_failed_after_retries: Counter planner failed: All 21 Groq API keys are rate-limited for model 'openai/gpt-oss-120b'. Wait a few minutes or add more GROQ_API_KEY_V* entries to .env.. Non è stato possibile costruire una contro-catena valida senza contraddire i fatti espliciti o introdurre fatti nuovi.",
+  "reasoner_causality": {
+    "causal_type_id": "MIXED_PEN_CIV_CONCURRENCE",
+    "theory_id": "T_MIXED_CONCORSO_TUTELE"
+  },
+  "reasoner_conclusion_context": "Il venditore è tenuto a risolvere il contratto, a restituire integralmente il prezzo di € 6.000 e a risarcire l’acquirente per il danno emergente e il lucro cessante derivanti dal fermo attività, in quanto ha violato gli obblighi di consegna di cosa conforme (art. 1218, 1490 c.c.) e la clausola “come visto” è inefficace per i difetti occulti deliberatamente taciuti (art. 1341 c.c.). Contestualmente, la sua condotta dolosa, comprovata dalle chat, integra la fattispecie di truffa (art. 42‑43 c.p.) con aggravanti di lucro illecito (art. 61 c.p.), per cui è perseguibile penalmente e obbligato alla restituzione del profitto illecito, senza che il risarcimento civile possa essere duplicato.",
+  "reasoning_chain": [],
+  "selected_attack_id": "criminal_and_civil_tracks_are_distinct",
+  "selected_attack_ids": [
+    "criminal_and_civil_tracks_are_distinct",
+    "criminal_threshold_not_equal_civil_threshold",
+    "civil_remedy_requires_autonomous_proof"
+  ],
+  "statutes": [
+    {
+      "articolo": "art1526",
+      "libro": "CC Libro IV",
+      "score": 1.008194279141472,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1609_art1526",
+      "testo": "Se la risoluzione del contratto ha luogo per l'inadempimento del compratore, il venditore deve restituire le rate riscosse, salvo il diritto a un equo compenso per l'uso della cosa, oltre al risarcimento del danno. Qualora si sia convenuto che le rate pagate restino acquisite al venditore a titolo d'indennità, il giudice, secondo le circostanze, può ridurre l'indennità convenuta. La stessa disposizione si applica nel caso in cui il contratto sia configurato come locazione, e sia convenuto che, al termine di esso, la proprietà della cosa sia acquisita al conduttore per effetto del pagamento dei canoni pattuiti.",
+      "titolo": "Risoluzione del contratto"
+    },
+    {
+      "articolo": "art1518",
+      "libro": "CC Libro IV",
+      "score": 0.8954160442843335,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1593_art1518",
+      "testo": "Se la vendita ha per oggetto una cosa che ha un prezzo corrente a norma del terzo comma dell'art. 1515, e il contratto si risolve per l'inadempimento di una delle parti, il risarcimento è costituito dalla differenza tra il prezzo convenuto e quello corrente nel luogo e nel giorno in cui si doveva fare la consegna, salva la prova di un maggior danno. Nella vendita a esecuzione periodica, la liquidazione del danno si determina sulla base dei prezzi correnti nel luogo e nel giorno fissati per le singole consegne.",
+      "titolo": "Normale determinazione del risarcimento"
+    },
+    {
+      "articolo": "art1493",
+      "libro": "CC Libro IV",
+      "score": 0.8801563211412962,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1568_art1493",
+      "testo": "In caso di risoluzione del contratto il venditore deve restituire il prezzo e rimborsare al compratore le spese e i pagamenti legittimamente fatti per la vendita. Il compratore deve restituire la cosa, se questa non è perita in conseguenza dei vizi.",
+      "titolo": "Effetti della risoluzione del contratto"
+    },
+    {
+      "articolo": "art1517",
+      "libro": "CC Libro IV",
+      "score": 0.8454564625252615,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1592_art1517",
+      "testo": "La risoluzione ha luogo di diritto a favore del contraente che, prima della scadenza del termine stabilito, abbia offerto all'altro, nelle forme di uso, la consegna della cosa o il pagamento del prezzo, se l'altra parte non adempie la propria obbligazione. La risoluzione di diritto ha luogo pure a favore del venditore, se, alla scadenza del termine stabilito per la consegna, il compratore, la cui obbligazione di pagare il prezzo non sia scaduta, non si presenta per ricevere la cosa preventivamente offerta, ovvero non l'accetta. Il contraente che intende valersi della risoluzione disposta dal presente articolo deve darne comunicazione all'altra parte entro otto giorni dalla scadenza del termine; in mancanza di tale comunicazione, si osservano le disposizioni generali sulla risoluzione per inadempimento.",
+      "titolo": "Risoluzione di diritto"
+    },
+    {
+      "articolo": "art1564",
+      "libro": "CC Libro IV",
+      "score": 0.8249619914104581,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1647_art1564",
+      "testo": "In caso d'inadempimento di una delle parti relativo a singole prestazioni, l'altra può chiedere la risoluzione del contratto, se l'inadempimento ha una notevole importanza ed è tale da menomare la fiducia nell'esattezza dei successivi adempimenti.",
+      "titolo": "Risoluzione del contratto"
+    },
+    {
+      "articolo": "art2050",
+      "libro": "CC Libro IV",
+      "score": 0.8059068410135979,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2139_art2050",
+      "testo": "Chiunque cagiona danno ad altri nello svolgimento di un'attività pericolosa, per sua natura o per la natura dei mezzi adoperati, è tenuto al risarcimento, se non prova di avere adottato tutte le misure idonee a evitare il danno.",
+      "titolo": "Responsabilità per l'esercizio di attività pericolose"
+    },
+    {
+      "articolo": "art1497",
+      "libro": "CC Libro IV",
+      "score": 0.7663251618194068,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1572_art1497",
+      "testo": "Quando la cosa venduta non ha le qualità promesse ovvero quelle essenziali per l'uso a cui è destinata, il compratore ha diritto di ottenere la risoluzione del contratto secondo le disposizioni generali sulla risoluzione per inadempimento, purché il difetto di qualità ecceda i limiti di tolleranza stabiliti dagli usi. Tuttavia il diritto di ottenere la risoluzione è soggetto alla decadenza e alla prescrizione stabilite dall'art. 1495.",
+      "titolo": "Mancanza di qualità"
+    },
+    {
+      "articolo": "art1453",
+      "libro": "CC Libro IV",
+      "score": 0.7600272383797557,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1523_art1453",
+      "testo": "Nei contratti con prestazioni corrispettive, quando uno dei contraenti non adempie le sue obbligazioni, l'altro può a sua scelta chiedere l'adempimento o la risoluzione del contratto, salvo, in ogni caso, il risarcimento del danno. La risoluzione può essere domandata anche quando il giudizio è stato promosso per ottenere l'adempimento; ma non può più chiedersi l'adempimento quando è stata domandata la risoluzione. Dalla data della domanda di risoluzione l'inadempiente non può più adempiere la propria obbligazione.",
+      "titolo": "Risolubilità del contratto per inadempimento"
+    },
+    {
+      "articolo": "art1227",
+      "libro": "CC Libro IV",
+      "score": 0.7554485546085582,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1297_art1227",
+      "testo": "Se il fatto colposo del creditore ha concorso a cagionare il danno, il risarcimento è diminuito secondo la gravità della colpa e l'entità delle conseguenze che ne sono derivate. Il risarcimento non è dovuto per i danni che il creditore avrebbe potuto evitare usando l'ordinaria diligenza.",
+      "titolo": "Concorso del fatto colposo del creditore"
+    },
+    {
+      "articolo": "art1341",
+      "libro": "CC Libro IV",
+      "score": 0.7449679290044813,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1411_art1341",
+      "testo": "Le condizioni generali di contratto predisposte da uno dei contraenti sono efficaci nei confronti dell'altro, se al momento della conclusione del contratto questi le ha conosciute o avrebbe dovuto conoscerle usando l'ordinaria diligenza. In ogni caso non hanno effetto, se non sono specificamente approvate per iscritto, le condizioni che stabiliscono, a favore di colui che le ha predisposte, limitazioni di responsabilità, facoltà di recedere dal contratto o di sospenderne l'esecuzione, ovvero sanciscono a carico dell'altro contraente decadenze, limitazioni alla facoltà di opporre eccezioni, restrizioni alla libertà contrattuale nei rapporti coi terzi, tacita proroga o rinnovazione del contratto, clausole compromissorie o deroghe alla competenza dell'autorità giudiziaria.",
+      "titolo": "Condizioni generali di contratto"
+    },
+    {
+      "articolo": "art1344",
+      "libro": "CC Libro IV",
+      "score": 0.7437799043062201,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1414_art1344",
+      "testo": "Si reputa altresì illecita la causa quando il contratto costituisce il mezzo per eludere l'applicazione di una norma imperativa.",
+      "titolo": "Contratto in frode alla legge"
+    },
+    {
+      "articolo": "art1512",
+      "libro": "CC Libro IV",
+      "score": 0.7324324166007674,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1587_art1512",
+      "testo": "Se il venditore ha garantito per un tempo determinato il buon funzionamento della cosa venduta, il compratore, salvo patto contrario, deve denunziare al venditore il difetto di funzionamento entro trenta giorni dalla scoperta, sotto pena di decadenza. L'azione si prescrive in sei mesi dalla scoperta. Il giudice, secondo le circostanze, può assegnare al venditore un termine per sostituire o riparare la cosa in modo da assicurarne il buon funzionamento, salvo il risarcimento dei danni. Sono salvi gli usi i quali stabiliscono che la garanzia di buon funzionamento è dovuta anche in mancanza di patto espresso.",
+      "titolo": "Garanzia di buon funzionamento"
+    },
+    {
+      "articolo": "art1492",
+      "libro": "CC Libro IV",
+      "score": 0.7230483554462116,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1567_art1492",
+      "testo": "Nei casi indicati dall'art. 1490 il compratore può domandare a sua scelta la risoluzione del contratto ovvero la riduzione del prezzo, salvo che, per determinati vizi, gli usi escludano la risoluzione. La scelta è irrevocabile quando è fatta con la domanda giudiziale. Se la cosa consegnata è perita in conseguenza dei vizi, il compratore ha diritto alla risoluzione del contratto; se invece è perita per caso fortuito o per colpa del compratore, o se questi l'ha alienata o trasformata, egli non può domandare che la riduzione del prezzo.",
+      "titolo": "Effetti della garanzia"
+    },
+    {
+      "articolo": "art1818",
+      "libro": "CC Libro IV",
+      "score": 0.7173376680432301,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1907_art1818",
+      "testo": "Se sono state mutuate cose diverse dal danaro, e la restituzione è divenuta impossibile o notevolmente difficile per causa non imputabile al debitore, questi è tenuto a pagarne il valore, avuto riguardo al tempo e al luogo in cui la restituzione si doveva eseguire.",
+      "titolo": "Impossibilità o notevole difficoltà di restituzione"
+    },
+    {
+      "articolo": "art1477",
+      "libro": "CC Libro IV",
+      "score": 0.7085071610579036,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1552_art1477",
+      "testo": "La cosa deve essere consegnata nello stato in cui si trovava al momento della vendita. Salvo diversa volontà delle parti, la cosa deve essere consegnata insieme con gli accessori, le pertinenze e i frutti dal giorno della vendita. Il venditore deve pure consegnare i titoli e i documenti relativi alla proprietà a all'uso della cosa venduta.",
+      "titolo": "Consegna della cosa"
+    },
+    {
+      "articolo": "art1494",
+      "libro": "CC Libro IV",
+      "score": 0.7016325454705212,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1569_art1494",
+      "testo": "In ogni caso il venditore è tenuto verso il compratore al risarcimento del danno, se non prova di avere ignorato senza colpa i vizi della cosa. Il venditore deve altresì risarcire al compratore i danni derivati dai vizi della cosa.",
+      "titolo": "Risarcimento del danno"
+    },
+    {
+      "articolo": "art1458",
+      "libro": "CC Libro IV",
+      "score": 0.6903716720850541,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1528_art1458",
+      "testo": "La risoluzione del contratto per inadempimento ha effetto retroattivo tra le parti, salvo il caso di contratti ad esecuzione continuata o periodica, riguardo ai quali l'effetto della risoluzione non si estende alle prestazioni già eseguite. La risoluzione, anche se è stata espressamente pattuita, non pregiudica i diritti acquistati dai terzi, salvi gli effetti della trascrizione della domanda di risoluzione.",
+      "titolo": "Effetti della risoluzione"
+    },
+    {
+      "articolo": "art2056",
+      "libro": "CC Libro IV",
+      "score": 0.6899420086108428,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2145_art2056",
+      "testo": "Il risarcimento dovuto al danneggiato si deve determinare secondo le disposizioni degli articoli 1223, 1226 e 1227. Il lucro cessante è valutato dal giudice con equo apprezzamento delle circostanze del caso.",
+      "titolo": "Valutazione dei danni"
+    },
+    {
+      "articolo": "art1668",
+      "libro": "CC Libro IV",
+      "score": 0.6858565445332866,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1751_art1668",
+      "testo": "Il committente può chiedere che le difformità o i vizi siano eliminati a spese dell'appaltatore, oppure che il prezzo sia proporzionalmente diminuito, salvo il risarcimento del danno nel caso di colpa dell'appaltatore. Se però le difformità o i vizi dell'opera sono tali da renderla del tutto inadatta alla sua destinazione, il committente può chiedere la risoluzione del contratto.",
+      "titolo": "Contenuto della garanzia per difetti dell'opera"
+    },
+    {
+      "articolo": "art1488",
+      "libro": "CC Libro IV",
+      "score": 0.6778197580763261,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1563_art1488",
+      "testo": "Quando è esclusa la garanzia, non si applicano le disposizioni degli articoli 1479 e 1480; se si verifica l'evizione, il compratore può pretendere dal venditore soltanto la restituzione del prezzo pagato e il rimborso delle spese. Il venditore è esente anche da quest'obbligo quando la vendita è stata convenuta a rischio e pericolo del compratore.",
+      "titolo": "Effetti dell'esclusione della garanzia"
+    },
+    {
+      "articolo": "art2055",
+      "libro": "CC Libro IV",
+      "score": 0.6670512257270891,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2144_art2055",
+      "testo": "Se il fatto dannoso è imputabile a più persone, tutte sono obbligate in solido al risarcimento del danno. Colui che ha risarcito il danno ha regresso contro ciascuno degli altri, nella misura determinata dalla gravità della rispettiva colpa e dall'entità delle conseguenze che ne sono derivate. Nel dubbio, le singole colpe si presumono uguali.",
+      "titolo": "Responsabilità solidale"
+    },
+    {
+      "articolo": "art1218",
+      "libro": "CC Libro IV",
+      "score": 0.6436279764519814,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1288_art1218",
+      "testo": "Il debitore che non esegue esattamente la prestazione dovuta è tenuto al risarcimento del danno, se non prova che l'inadempimento o il ritardo è stato determinato da impossibilità della prestazione derivante da causa a lui non imputabile.",
+      "titolo": "Responsabilità del debitore"
+    },
+    {
+      "articolo": "art1224",
+      "libro": "CC Libro IV",
+      "score": 0.6365477550303138,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1294_art1224",
+      "testo": "Nelle obbligazioni che hanno per oggetto una somma di danaro, sono dovuti dal giorno della mora gli interessi legali, anche se non erano dovuti precedentemente e anche se il creditore non prova di aver sofferto alcun danno. Se prima della mora erano dovuti interessi in misura superiore a quella legale, gli interessi moratori sono dovuti nella stessa misura. Al creditore che dimostra di aver subito un danno maggiore spetta l'ulteriore risarcimento. Questo non è dovuto se è stata convenuta la misura degli interessi moratori.",
+      "titolo": "Danni nelle obbligazioni pecuniarie"
+    },
+    {
+      "articolo": "art2058",
+      "libro": "CC Libro IV",
+      "score": 0.6324830858448292,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2147_art2058",
+      "testo": "Il danneggiato può chiedere la reintegrazione in forma specifica, qualora sia in tutto o in parte possibile. Tuttavia il giudice può disporre che il risarcimento avvenga solo per equivalente, se la reintegrazione in forma specifica risulta eccessivamente onerosa per il debitore.",
+      "titolo": "Risarcimento in forma specifica"
+    },
+    {
+      "articolo": "art1479",
+      "libro": "CC Libro IV",
+      "score": 0.6284790440207364,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1554_art1479",
+      "testo": "Il compratore può chiedere la risoluzione del contratto, se, quando l'ha concluso, ignorava che la cosa non era di proprietà del venditore, e se frattanto il venditore non gliene ha fatto acquistare la proprietà. Salvo il disposto dell'art. 1223, il venditore è tenuto a restituire all'acquirente il prezzo pagato, anche se la cosa è diminuita di valore o è deteriorata; deve inoltre rimborsargli le spese e i pagamenti legittimamente fatti per il contratto. Se la diminuzione di valore o il deterioramento derivano da un fatto del compratore, dall'ammontare suddetto si deve detrarre l'utile che il compratore ne ha ricavato. Il venditore è inoltre tenuto a rimborsare al compratore le spese necessarie e utili fatte per la cosa, e, se era in mala fede, anche quelle voluttuarie.",
+      "titolo": "Buona fede del compratore"
+    },
+    {
+      "articolo": "art2037",
+      "libro": "CC Libro IV",
+      "score": 0.6172946138300678,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2126_art2037",
+      "testo": "Chi ha ricevuto indebitamente una cosa determinata è tenuto a restituirla. Se la cosa è perita, anche per caso fortuito, chi l'ha ricevuta in mala fede è tenuto a corrisponderne il valore; se la cosa è soltanto deteriorata, colui che l'ha data può chiedere l'equivalente, oppure la restituzione e un'indennità per la diminuzione di valore. Chi ha ricevuto la cosa in buona fede non risponde del perimento o del deterioramento di essa, ancorché dipenda da fatto proprio, se non nei limiti del suo arricchimento.",
+      "titolo": "Restituzione di cosa determinata"
+    },
+    {
+      "articolo": "art1579",
+      "libro": "CC Libro IV",
+      "score": 0.6052218609963975,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1662_art1579",
+      "testo": "Il patto con cui si esclude o si limita la responsabilità del locatore per i vizi della cosa non ha effetto se il locatore li ha in mala fede taciuti al conduttore oppure se i vizi sono tali da rendere impossibile il godimento della cosa.",
+      "titolo": "Limitazioni convenzionali della responsabilità"
+    },
+    {
+      "articolo": "art1495",
+      "libro": "CC Libro IV",
+      "score": 0.5364276132735847,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1570_art1495",
+      "testo": "Il compratore decade dal diritto alla garanzia, se non denunzia i vizi al venditore entro otto giorni dalla scoperta, salvo il diverso termine stabilito dalle parti o dalla legge. La denunzia non è necessaria se il venditore ha riconosciuto l'esistenza del vizio o l'ha occultato. L'azione si prescrive, in ogni caso, in un anno dalla consegna; ma il compratore, che sia convenuto per l'esecuzione del contratto, può sempre far valere la garanzia, purché il vizio della cosa sia stato denunziato entro otto giorni dalla scoperta e prima del decorso dell'anno dalla consegna.",
+      "titolo": "Termini e condizioni per l'azione"
+    },
+    {
+      "articolo": "art1490",
+      "libro": "CC Libro IV",
+      "score": 0.5061338488123481,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1565_art1490",
+      "testo": "Il venditore è tenuto a garantire che la cosa venduta sia immune da vizi che la rendano inidonea all'uso a cui è destinata o ne diminuiscano in modo apprezzabile il valore. Il patto con cui si esclude o si limita la garanzia non ha effetto, se il venditore ha in mala fede taciuto al compratore i vizi della cosa.",
+      "titolo": "Garanzia per i vizi della cosa venduta"
+    },
+    {
+      "articolo": "art1223",
+      "libro": "CC Libro IV",
+      "score": 0.43993533081451547,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1293_art1223",
+      "testo": "Il risarcimento del danno per l'inadempimento o per il ritardo deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta.",
+      "titolo": "Risarcimento del danno"
+    },
+    {
+      "articolo": "640",
+      "libro": "CP Libro II",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_871_640",
+      "testo": "Chiunque, con artifizi o raggiri, inducendo taluno in errore, procura a sé o ad altri un ingiusto profitto con altrui danno, è punito con la reclusione da sei mesi a tre anni e con la multa da lire cinquecento a diecimila. La pena è della reclusione da uno a cinque anni e della multa da lire tremila a quindicimila: 1° se il fatto è commesso a danno dello Stato o di un altro ente pubblico o dell'Unione europea o col pretesto di far esonerare taluno dal servizio militare; 2° se il fatto è commesso ingenerando nella persona offesa il timore di un pericolo immaginario o l'erroneo convincimento di dovere eseguire un ordine dell'Autorità; (119) (154) 2-bis) ((NUMERO ABROGATO DAL D.L. 11 APRILE 2025, N. 48 )) . 2-ter) se il fatto è commesso a distanza attraverso strumenti informatici o telematici idonei a ostacolare la propria o altrui identificazione. ((Quando ricorre la circostanza di cui all'articolo 61, numero 5), la pena è della reclusione da due a sei anni e della multa da euro 700 a euro 3.000.)) Il delitto è punibile a querela della persona offesa, salvo che ricorra taluna delle circostanze previste dal secondo comma, a eccezione di quella di cui al numero 2-ter) ((, e dal terzo comma)) .",
+      "titolo": "Truffa"
+    },
+    {
+      "articolo": "603-bis.2",
+      "libro": "CP Libro II",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_791_603-bis.2",
+      "testo": "((In caso di condanna o di applicazione della pena su richiesta delle parti ai sensi dell' articolo 444 del codice di procedura penale per i delitti previsti dall'articolo 603-bis, è sempre obbligatoria, salvi i diritti della persona offesa alle restituzioni e al risarcimento del danno, la confisca delle cose che servirono o furono destinate a commettere il reato e delle cose che ne sono il prezzo, il prodotto o il profitto, salvo che appartengano a persona estranea al reato. Ove essa non sia possibile è disposta la confisca di beni di cui il reo ha la disponibilità, anche indirettamente o per interposta persona, per un valore corrispondente al prodotto, prezzo o profitto del reato)) .",
+      "titolo": "Confisca obbligatoria"
+    },
+    {
+      "articolo": "648-quater",
+      "libro": "CP Libro II",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_889_648-quater",
+      "testo": "Nel caso di condanna o di applicazione della pena su richiesta delle parti, a norma dell' articolo 444 del codice di procedura penale , per uno dei delitti previsti dagli ((articoli 648-bis, 648-ter e 648-ter.1)) , è sempre ordinata la confisca dei beni che ne costituiscono il prodotto o il profitto, salvo che appartengano a persone estranee al reato. Nel caso in cui non sia possibile procedere alla confisca di cui al primo comma, il giudice ordina la confisca delle somme di denaro, dei beni o delle altre utilità delle quali il reo ha la disponibilità, anche per interposta persona, per un valore equivalente al prodotto, profitto o prezzo del reato. In relazione ai reati di cui agli articoli ((648-bis, 648-ter e 648-ter.1)) , il pubblico ministero può compiere, nel termine e ai fini di cui all' articolo 430 del codice di procedura penale , ogni attività di indagine che si renda necessaria circa i beni, il denaro o le altre utilità da sottoporre a confisca a norma dei commi precedenti.",
+      "titolo": "Confisca"
+    },
+    {
+      "articolo": "474-bis",
+      "libro": "CP Libro II",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_582_474-bis",
+      "testo": "((Nei casi di cui agli articoli 473 e 474 è sempre ordinata, salvi i diritti della persona offesa alle restituzioni e al risarcimento del danno, la confisca delle cose che servirono o furono destinate a commettere il reato e delle cose che ne sono l'oggetto, il prodotto, il prezzo o il profitto, a chiunque appartenenti. Quando non è possibile eseguire il provvedimento di cui al primo comma, il giudice ordina la confisca di beni di cui il reo ha la disponibilità per un valore corrispondente al profitto. Si applica il terzo comma dell'articolo 322-ter. Si applicano le disposizioni dell'articolo 240, commi terzo e quarto, se si tratta di cose che servirono o furono destinate a commettere il reato, ovvero che ne sono l'oggetto, il prodotto, il prezzo o il profitto, appartenenti a persona estranea al reato medesimo, qualora questa dimostri di non averne potuto prevedere l'illecito impiego, anche occasionale, o l'illecita provenienza e di non essere incorsa in un difetto di vigilanza. Le disposizioni del presente articolo si osservano anche nel caso di applicazione della pena su richiesta delle parti a norma del titolo II del libro sesto del codice di procedura penale .))",
+      "titolo": "Confisca"
+    },
+    {
+      "articolo": "515",
+      "libro": "CP Libro II",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_636_515",
+      "testo": "Chiunque, nell'esercizio di una attività commerciale, ovvero in uno spaccio aperto al pubblico, consegna all'acquirente una cosa mobile per un'altra, ovvero una cosa mobile, per origine, provenienza, qualità o quantità, diversa da quella dichiarata o pattuita, è punito, qualora il fatto non costituisca un più grave delitto, con la reclusione fino a due anni o con la multa fino a lire ventimila. Se si tratta di oggetti preziosi, la pena è della reclusione fino a tre anni o della multa non inferiore a lire mille.",
+      "titolo": "Frode nell'esercizio del commercio"
+    },
+    {
+      "articolo": "61",
+      "libro": "CP Libro I",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_69_61",
+      "testo": "Aggravano il reato, quando non ne sono elementi costitutivi o circostanze aggravanti speciali, le circostanze seguenti: 1° l'avere agito per motivi abietti o futili; 2° l'aver commesso il reato per eseguirne od occultarne un altro, ovvero per conseguire o assicurare a sé o ad altri il prodotto o il profitto o il prezzo ovvero la impunità di un altro reato; 3° l'avere, nei delitti colposi, agito nonostante la previsione dell'evento; 4° l'avere adoperato sevizie, o l'aver agito con crudeltà verso le persone; 5) l'avere profittato di circostanze di tempo, di luogo o di persona, anche in riferimento all'età, tali da ostacolare la pubblica o privata difesa; 6° l'avere il colpevole commesso il reato durante il tempo, in cui si è sottratto volontariamente alla esecuzione di un mandato o di un ordine di arresto o di cattura o di carcerazione, spedito per un precedente reato; 7° l'avere, nei delitti contro il patrimonio, o che comunque offendono il patrimonio, ovvero nei delitti determinati da motivi di lucro, cagionato alla persona offesa dal reato un danno patrimoniale di rilevante gravità; 8° l'avere aggravato o tentato di aggravare le conseguenze del delitto commesso; 9° l'avere commesso il fatto con abuso dei poteri, o con violazione dei doveri inerenti a una pubblica funzione o a un pubblico servizio, ovvero alla qualità di ministro di un culto; 10° l'avere commesso il fatto contro un pubblico ufficiale o una persona incaricata di un pubblico servizio, o rivestita della qualità di ministro del culto cattolico o di un culto ammesso nello Stato, ovvero contro un agente diplomatico o consolare di uno Stato estero, nell'atto o a causa dell'adempimento delle funzioni o del servizio; 11° l'avere commesso il fatto con abuso di autorità o di relazioni domestiche, ovvero con abuso di relazioni di ufficio, di prestazione d'opera, di coabitazione, o di ospitalità. 11-bis. l'avere il colpevole commesso il fatto mentre si trova illegalmente sul territorio nazionale.(217) (223) 11-ter) l'aver commesso un delitto contro la persona ai danni di un soggetto minore all'interno o nelle adiacenze di istituti di istruzione o di formazione. 11-quater. l'avere il colpevole commesso un delitto non colposo durante il periodo in cui era ammesso ad una misura alternativa alla detenzione in carcere. 11-quinquies) l'avere, nei delitti non colposi contro la vita e l'incolumità individuale e contro la libertà personale, commesso il fatto in presenza o in danno di un minore di anni diciotto ovvero in danno di persona in stato di gravidanza. 11-sexies) l'avere, nei delitti non colposi, commesso il fatto in danno di persone ricoverate presso strutture sanitarie o presso strutture sociosanitarie residenziali o semiresidenziali, pubbliche o private, ovvero presso strutture socio-educative. 11-septies) l'avere commesso il fatto in occasione o a causa di manifestazioni sportive o durante i trasferimenti da o verso i luoghi in cui si svolgono dette manifestazioni. 11-octies) l'avere agito, nei delitti commessi con violenza o minaccia, in danno degli esercenti le professioni sanitarie e socio-sanitarie nonché di chiunque svolga attività ausiliarie di cura, assistenza sanitaria o soccorso, funzionali allo svolgimento di dette professioni, a causa o nell'esercizio di tali professioni o attività. 11-novies) l'avere agito, nei delitti commessi con violenza o minaccia, in danno di un dirigente scolastico o di un membro del personale docente, educativo, amministrativo, tecnico o ausiliario della scuola, a causa o nell'esercizio delle loro funzioni. 11-decies) l'avere, nei delitti non colposi contro la vita e l'incolumità pubblica e individuale, contro la libertà personale e contro il patrimonio, o che comunque offendono il patrimonio commesso il fatto all'interno o nelle immediate adiacenze delle stazioni ferroviarie e delle metropolitane o all'interno dei convogli adibiti al trasporto di passeggeri. ((11-undecies) l'avere commesso il fatto mediante l'impiego di sistemi di intelligenza artificiale, quando gli stessi, per la loro natura o per le modalità di utilizzo, abbiano costituito mezzo insidioso, ovvero quando il loro impiego abbia comunque ostacolato la pubblica o la privata difesa, ovvero aggravato le conseguenze del reato)) .",
+      "titolo": "Circostanze aggravanti comuni"
+    },
+    {
+      "articolo": "240",
+      "libro": "CP Libro I",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_261_240",
+      "testo": "Nel caso di condanna, il giudice può ordinare la confisca delle cose che servirono o furono destinate a commettere il reato, e delle cose che ne sono il prodotto o il profitto. È sempre ordinata la confisca: 1° delle cose che costituiscono il prezzo del reato; 1-bis. dei beni e degli strumenti informatici o telematici che risultino essere stati in tutto o in parte utilizzati per la commissione dei reati di cui agli articoli 615-ter, 615-quater, 615-quinquies, 617-bis, 617-ter, 617-quater, 617-quinquies, 617-sexies, 635-bis, 635-ter, 635-quater, 635-quinquies, ((640, secondo comma, numero 2-ter),)) 640-ter e 640-quinquies nonché dei beni che ne costituiscono il profitto o il prodotto ovvero di somme di denaro, beni o altre utilità di cui il colpevole ha la disponibilità per un valore corrispondente a tale profitto o prodotto, se non è possibile eseguire la confisca del profitto o del prodotto diretti; 2° delle cose, la fabbricazione, l'uso, il porto, la detenzione o l'alienazione delle quali costituisce reato, anche se non è stata pronunciata condanna. Le disposizioni della prima parte e dei numeri 1 e 1-bis del capoverso precedente non si applicano se la cosa o il bene o lo strumento informatico o telematico appartiene a persona estranea al reato. La disposizione del numero 1-bis del capoverso precedente si applica anche nel caso di applicazione della pena su richiesta delle parti a norma dell' articolo 444 del codice di procedura penale . La disposizione del numero 2° non si applica se la cosa appartiene a persona estranea al reato e la fabbricazione, l'uso, il porto, la detenzione o l'alienazione possono essere consentiti mediante autorizzazione amministrativa.",
+      "titolo": "Confisca"
+    },
+    {
+      "articolo": "322-ter",
+      "libro": "CP Libro II",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_379_322-ter",
+      "testo": "Nel caso di condanna, o di applicazione della pena su richiesta delle parti a norma dell' articolo 444 del codice di procedura penale , per uno dei delitti previsti dagli articoli da 314 a 320, anche se commessi dai soggetti indicati nell'articolo 322-bis, primo comma, è sempre ordinata la confisca dei beni che ne costituiscono il profitto o il prezzo, salvo che appartengano a persona estranea al reato, ovvero, quando essa non è possibile, la confisca di beni, di cui il reo ha la disponibilità, per un valore corrispondente a tale prezzo ((o profitto)) . Nel caso di condanna, o di applicazione della pena a norma dell' articolo 444 del codice di procedura penale , per il delitto previsto dall'articolo 321, anche se commesso ai sensi dell'articolo 322-bis, secondo comma, è sempre ordinata la confisca dei beni che ne costituiscono il profitto salvo che appartengano a persona estranea al reato, ovvero, quando essa non è possibile, la confisca di beni, di cui il reo ha la disponibilità, per un valore corrispondente a quello di detto profitto e, comunque, non inferiore a quello del denaro o delle altre utilità date o promesse al pubblico ufficiale o all'incaricato di pubblico servizio o agli altri soggetti indicati nell'articolo 322-bis, secondo comma. Nei casi di cui ai commi primo e secondo, il giudice, con la sentenza di condanna, determina le somme di denaro o individua i beni assoggettati a confisca in quanto costituenti il profitto o il prezzo del reato ovvero in quanto di valore corrispondente al profitto o al prezzo del reato. (170)",
+      "titolo": "Confisca"
+    },
+    {
+      "_kb_origin": "taxonomy_core",
+      "articolo": "185",
+      "libro": "CP Libro I",
+      "role": "Restituzioni e risarcimento del danno da reato",
+      "source": "codice_penale",
+      "statute_id": "codice_penale_205_185",
+      "testo": "Ogni reato obbliga alle restituzioni, a norma delle leggi civili. Ogni reato, che abbia cagionato un danno patrimoniale o non patrimoniale, obbliga al risarcimento il colpevole e le persone che, a norma delle leggi civili, debbono rispondere per il fatto di lui.",
+      "titolo": "Restituzioni e risarcimento del danno"
+    },
+    {
+      "_kb_origin": "taxonomy_core",
+      "articolo": "art2043",
+      "libro": "CC Libro IV",
+      "role": "Responsabilità extracontrattuale",
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2132_art2043",
+      "testo": "Qualunque fatto doloso o colposo, che cagiona ad altri un danno ingiusto, obbliga colui che ha commesso il fatto a risarcire il danno.",
+      "titolo": "Risarcimento per fatto illecito"
+    },
+    {
+      "articolo": "art1515",
+      "found": true,
+      "libro": "CC Libro IV",
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1590_art1515",
+      "testo": "Se il compratore non adempie l'obbligazione di pagare il prezzo, il venditore può far vendere senza ritardo la cosa per conto e a spese di lui. La vendita è fatta all'incanto a mezzo di una persona autorizzata a tali atti o, in mancanza di essa nel luogo in cui la vendita deve essere eseguita, a mezzo di un ufficiale giudiziario. Il venditore deve dare tempestiva notizia al compratore del giorno, del luogo e dell'ora in cui la vendita sarà eseguita. Se la cosa ha un prezzo corrente, stabilito per atto della pubblica autorità o da norme corporative, ovvero risultante da listini di borsa o da mercuriali, la vendita può essere fatta senza incanto, al prezzo corrente, a mezzo delle persone indicate nel comma precedente o di un commissario nominato ((dal giudice di pace)) . In tal caso il venditore deve dare al compratore pronta notizia della vendita. (111) (112a) ((273)) ((300)) ((341)) Il venditore ha diritto alla differenza tra il prezzo convenuto e il ricavo netto della vendita, oltre al risarcimento del maggior danno. -----------",
+      "titolo": "Esecuzione coattiva per inadempimento del compratore"
+    }
+  ],
+  "theory_id": "T_MIXED_CONCORSO_TUTELE"
+}

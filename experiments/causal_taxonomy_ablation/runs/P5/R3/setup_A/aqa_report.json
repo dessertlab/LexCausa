@@ -1,0 +1,1698 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 3,
+      "attack_coverage_axes_total": 3,
+      "attack_coverage_bonus": 0.05759376,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.47994800000000004,
+      "attacks_avg": 0.3641666666666667,
+      "base_score_avg": 0.661024884480332,
+      "cogency_avg": 0.5606702334985334,
+      "net_plausibility": 0.31362670367676826,
+      "net_plausibility_adjusted": 0.31362670367676826,
+      "net_plausibility_raw": 0.2968582178136654,
+      "norm_support_avg": 0.793998012773463,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.3266021930951772,
+      "redundancy_penalty": 0.04082527413689715,
+      "semantics_avg": 0.584082031071289
+    },
+    "pro": {
+      "attacks_avg": 0.1799,
+      "base_score_avg": 0.7258519343059081,
+      "cogency_avg": 0.6301435960812882,
+      "net_plausibility": 0.7258519343059081,
+      "net_plausibility_adjusted": 0.7258519343059081,
+      "net_plausibility_dialectical_raw": 0.5459519343059082,
+      "net_plausibility_intrinsic_raw": 0.7258519343059081,
+      "net_plausibility_raw": 0.7258519343059081,
+      "norm_support_avg": 0.8423397228311384,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.18736875988804727,
+      "redundancy_penalty": 0.035131642479008865,
+      "semantics_avg": 0.6662432211635544
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.206,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1847,
+            "damage_factor": 0.4,
+            "excess": 0.5149,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7896,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1975,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1637,
+            "damage_factor": 0.4,
+            "excess": 0.4939,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7803,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1922,
+            "attacker_base_score": 0.7647,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1504,
+            "damage_factor": 0.4,
+            "excess": 0.4805,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7522,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1308,
+            "attacker_base_score": 0.6428,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9968,
+            "damage_factor": 0.4,
+            "excess": 0.3269,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7754,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.40349999999999997,
+        "base_score": 0.6698550729071056,
+        "cogency": 0.543125695210909,
+        "cogency_details": {
+          "argument_quality_score": 0.5953999194607932,
+          "coherence_score": 0.4908514709610248,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 625 n. 2 c.p. prevede l’aggravante “violenza sulle cose” solo quando il fatto provoca una distruzione, rottura o danneggiamento tale da alterare la struttura o l’utilizzabilità dell’oggetto; nel caso in esame la condotta è descritta semplicemente come “forzare” la finestra, senza alcuna prova che il telaio o il vetro siano stati resi inservibili o la loro struttura compromessa, perciò non sussiste la violenza sulle cose e l’aggravante non può essere applicata.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6698550729071056,
+        "nesso_plausibility": 0.2663550729071056,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Poiché l’appartamento, al momento dell’ingresso, appariva disabitato, non sussiste la condizione di “luogo destinato in tutto o in parte a privata dimora” prevista dall’art. 624‑bis c.p.; di conseguenza il fatto deve essere qualificato come semplice furto ex art. 624 c.p., escludendo la fattispecie aggravata di furto in abitazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "624",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          },
+          {
+            "articolo": "624",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          },
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.4741689922572203,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.4741689922572203
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Poiché l’appartamento, al momento dell’ingresso, appariva disabitato, non sussiste la condizione di “luogo destinato in tutto o in parte a privata dimora” prevista dall’art. 624‑bis c.p.; di conseguenza il fatto deve essere qualificato come semplice furto ex art. 624 c.p., escludendo la fattispecie aggravata di furto in abitazione."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2395,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1765,
+            "damage_factor": 0.4,
+            "excess": 0.5987,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7841,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0228,
+            "damage_factor": 0.4,
+            "excess": 0.445,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6858,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1349,
+            "attacker_base_score": 0.6428,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9151,
+            "damage_factor": 0.4,
+            "excess": 0.3372,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7118,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0191,
+            "attacker_base_score": 0.7647,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6256,
+            "damage_factor": 0.4,
+            "excess": 0.0478,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7792,
+            "reason": "capped: top-K overflow (rank > 2), original=active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.4175,
+        "base_score": 0.5778439535670544,
+        "cogency": 0.5141300728222935,
+        "cogency_details": {
+          "argument_quality_score": 0.5844794946525973,
+          "coherence_score": 0.44378065099198966,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Per l’applicazione della riduzione di un terzo prevista dall’art. 518‑septiesdecies c.p. è necessario provare che il lucro conseguito sia di speciale tenuità; tuttavia il fatto descrive il furto di gioielli e di denaro contante, beni che, in assenza di una perizia di stima allegata, non possono essere considerati di modesto valore. In mancanza di tale quantificazione certificata, la tenuità del profitto non è dimostrata e la riduzione di pena non può essere disposta.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.5778439535670544,
+        "nesso_plausibility": 0.16034395356705444,
+        "norm_support": 0.6436607049870562,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.6436607049870562,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.425
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 625 n. 2 c.p. prevede l’aggravante “violenza sulle cose” solo quando il fatto provoca una distruzione, rottura o danneggiamento tale da alterare la struttura o l’utilizzabilità dell’oggetto; nel caso in esame la condotta è descritta semplicemente come “forzare” la finestra, senza alcuna prova che il telaio o il vetro siano stati resi inservibili o la loro struttura compromessa, perciò non sussiste la violenza sulle cose e l’aggravante non può essere applicata.",
+        "retrieved_norms": [
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5538021657518128,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5538021657518128
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "L’art. 625 n. 2 c.p. prevede l’aggravante “violenza sulle cose” solo quando il fatto provoca una distruzione, rottura o danneggiamento tale da alterare la struttura o l’utilizzabilità dell’oggetto; nel caso in esame la condotta è descritta semplicemente come “forzare” la finestra, senza alcuna prova che il telaio o il vetro siano stati resi inservibili o la loro struttura compromessa, perciò non sussiste la violenza sulle cose e l’aggravante non può essere applicata."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1418,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0899,
+            "damage_factor": 0.4,
+            "excess": 0.3546,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7264,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7354,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1297,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0597,
+            "damage_factor": 0.4,
+            "excess": 0.3243,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7105,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7354,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0675,
+            "attacker_base_score": 0.6428,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9042,
+            "damage_factor": 0.4,
+            "excess": 0.1689,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7034,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation",
+            "target_base_score": 0.7354,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7647,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6886,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8576,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7354,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.2715,
+        "base_score": 0.7353756269668362,
+        "cogency": 0.6247549324623979,
+        "cogency_details": {
+          "argument_quality_score": 0.71800301575751,
+          "coherence_score": 0.5315068491672857,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 518‑septiesdecies c.p., la diminuzione di un terzo per lucro di speciale tenuità si applica alla pena di partenza prevista per il reato, prima di qualunque aumento previsto dall’art. 625 n. 2 o dall’art. 425 c.p.; dunque, anche qualora l’aggravante di violenza sulle cose fosse riconosciuta, la riduzione dovrebbe essere operata prima dell’incremento aggravante, limitando l’entità della pena finale.",
+        "libro": "CP Libro II",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7353756269668362,
+        "nesso_plausibility": 0.4638756269668362,
+        "norm_support": 0.8266666666666667,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.8266666666666667,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.6166666666666667
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Per l’applicazione della riduzione di un terzo prevista dall’art. 518‑septiesdecies c.p. è necessario provare che il lucro conseguito sia di speciale tenuità; tuttavia il fatto descrive il furto di gioielli e di denaro contante, beni che, in assenza di una perizia di stima allegata, non possono essere considerati di modesto valore. In mancanza di tale quantificazione certificata, la tenuità del profitto non è dimostrata e la riduzione di pena non può essere disposta.",
+        "retrieved_norms": [
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "425",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_516_425",
+            "title": "Circostanze aggravanti"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7242749352048339,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7242749352048339
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Per l’applicazione della riduzione di un terzo prevista dall’art. 518‑septiesdecies c.p. è necessario provare che il lucro conseguito sia di speciale tenuità; tuttavia il fatto descrive il furto di gioielli e di denaro contante, beni che, in assenza di una perizia di stima allegata, non possono essere considerati di modesto valore. In mancanza di tale quantificazione certificata, la tenuità del profitto non è dimostrata e la riduzione di pena non può essere disposta."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0961,
+            "attacker_base_score": 0.6699,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8829,
+            "damage_factor": 0.4,
+            "excess": 0.2401,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7754,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6428,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0946,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8793,
+            "damage_factor": 0.4,
+            "excess": 0.2365,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7034,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6428,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0226,
+            "attacker_base_score": 0.5778,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6992,
+            "damage_factor": 0.4,
+            "excess": 0.0564,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7118,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6428,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1907,
+        "base_score": 0.6427896102899806,
+        "cogency": 0.5926910293639884,
+        "cogency_details": {
+          "argument_quality_score": 0.6226975837952701,
+          "coherence_score": 0.5626844749327067,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti descritti, il soggetto ha commesso il reato di furto in abitazione ai sensi dell’art. 624‑bis c.p., poiché si è introdotto con violenza sulla finestra in un edificio destinato a privata dimora per impossessarsi di gioielli e denaro, configurando così la fattispecie di “introduzione in un edificio o in altro luogo destinato in tutto o in parte a privata dimora”. La pena prevista è la reclusione da quattro a sette anni, con relativa multa.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6427896102899806,
+        "nesso_plausibility": 0.4520896102899806,
+        "norm_support": 0.7331088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7331088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il soggetto, in orario notturno, ha forzato una finestra per introdursi nell’appartamento, sottraendo gioielli e denaro contante; le sue impronte sulla finestra e le riprese delle telecamere condominiali hanno consentito l’identificazione. La difesa sostiene che l’immobile apparisse disabitato al momento del fatto e che il valore complessivo dei beni sottratti fosse modesto. L’accusa evidenzia la violazione della privata dimora mediante effrazione e la sottrazione di cose mobili di valore.",
+        "retrieved_norms": [
+          {
+            "articolo": "624",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5724624831698755,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5724624831698755
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il soggetto, in orario notturno, ha forzato una finestra per introdursi nell’appartamento, sottraendo gioielli e denaro contante; le sue impronte sulla finestra e le riprese delle telecamere condominiali hanno consentito l’identificazione. La difesa sostiene che l’immobile apparisse disabitato al momento del fatto e che il valore complessivo dei beni sottratti fosse modesto. L’accusa evidenzia la violazione della privata dimora mediante effrazione e la sottrazione di cose mobili di valore."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0571,
+            "attacker_base_score": 0.6699,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8885,
+            "damage_factor": 0.4,
+            "excess": 0.1428,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7803,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.057,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8882,
+            "damage_factor": 0.4,
+            "excess": 0.1425,
+            "filtered": false,
+            "nli_bypass": false,
+            "nli_label": "neutral",
+            "nli_score": 1.0,
+            "overlap": 0.7105,
+            "reason": "active: exception",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.5778,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.4755,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6858,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7457,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.11410000000000001,
+        "base_score": 0.7457299321098557,
+        "cogency": 0.6496660519039976,
+        "cogency_details": {
+          "argument_quality_score": 0.6537820649969547,
+          "coherence_score": 0.6455500388110406,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "La rottura forzata della finestra configura violenza sulle cose ai sensi dell’art. 625, n. 2 c.p., integrando così la prima aggravante prevista per il furto in abitazione; inoltre, l’appartamento è un edificio destinato a privata dimora, rientrando nell’aggravante dell’art. 425, n. 2 c.p. (edificio abitato). Per le aggravanti comuni dell’art. 61 c.p., dal materiale probatorio (impronte e riprese delle telecamere) non emergono motivi abietti, futili o altre circostanze previste, perciò non si può ritenere configurata alcuna di esse.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7457299321098557,
+        "nesso_plausibility": 0.6316299321098557,
+        "norm_support": 0.8825,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.875,
+          "citation_specificity_score": 0.5,
+          "final": 0.8825,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Alla luce dei fatti descritti, il soggetto ha commesso il reato di furto in abitazione ai sensi dell’art. 624‑bis c.p., poiché si è introdotto con violenza sulla finestra in un edificio destinato a privata dimora per impossessarsi di gioielli e denaro, configurando così la fattispecie di “introduzione in un edificio o in altro luogo destinato in tutto o in parte a privata dimora”. La pena prevista è la reclusione da quattro a sette anni, con relativa multa.",
+        "retrieved_norms": [
+          {
+            "articolo": "624",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          },
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "425",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_516_425",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6594337217955216,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6594337217955216
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Alla luce dei fatti descritti, il soggetto ha commesso il reato di furto in abitazione ai sensi dell’art. 624‑bis c.p., poiché si è introdotto con violenza sulla finestra in un edificio destinato a privata dimora per impossessarsi di gioielli e denaro, configurando così la fattispecie di “introduzione in un edificio o in altro luogo destinato in tutto o in parte a privata dimora”. La pena prevista è la reclusione da quattro a sette anni, con relativa multa."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1231,
+            "attacker_base_score": 0.6699,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0579,
+            "damage_factor": 0.4,
+            "excess": 0.3077,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7896,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7502,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0632,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.9082,
+            "damage_factor": 0.4,
+            "excess": 0.158,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7264,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7502,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.008,
+            "attacker_base_score": 0.5778,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7703,
+            "damage_factor": 0.4,
+            "excess": 0.0201,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7841,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7502,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.19430000000000003,
+        "base_score": 0.7501892859815547,
+        "cogency": 0.6020841243774598,
+        "cogency_details": {
+          "argument_quality_score": 0.6644920655820099,
+          "coherence_score": 0.5396761831729098,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 518‑septiesdecies c.p., il modesto valore dei gioielli e del denaro sottratti può configurare un “lucro di speciale tenuità”, consentendo una diminuzione della pena fino a un terzo; tuttavia, ai sensi dell’art. 133 c.p., il giudice dovrà comunque valutare la gravità complessiva del reato tenendo conto della violenza sulle cose (art. 625 n. 2), dell’ingresso notturno in abitazione privata (art. 425 n. 2) e del profitto comunque realizzato, bilanciando così le attenuanti con le aggravanti per determinare la pena finale.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7501892859815547,
+        "nesso_plausibility": 0.5558892859815546,
+        "norm_support": 0.915,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9,
+          "citation_specificity_score": 0.6,
+          "final": 0.915,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "La rottura forzata della finestra configura violenza sulle cose ai sensi dell’art. 625, n. 2 c.p., integrando così la prima aggravante prevista per il furto in abitazione; inoltre, l’appartamento è un edificio destinato a privata dimora, rientrando nell’aggravante dell’art. 425, n. 2 c.p. (edificio abitato). Per le aggravanti comuni dell’art. 61 c.p., dal materiale probatorio (impronte e riprese delle telecamere) non emergono motivi abietti, futili o altre circostanze previste, perciò non si può ritenere configurata alcuna di esse.",
+        "retrieved_norms": [
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "425",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_516_425",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "61",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "133",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          },
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "425",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_516_425",
+            "title": "Circostanze aggravanti"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6785468288943891,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6785468288943891
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "La rottura forzata della finestra configura violenza sulle cose ai sensi dell’art. 625, n. 2 c.p., integrando così la prima aggravante prevista per il furto in abitazione; inoltre, l’appartamento è un edificio destinato a privata dimora, rientrando nell’aggravante dell’art. 425, n. 2 c.p. (edificio abitato). Per le aggravanti comuni dell’art. 61 c.p., dal materiale probatorio (impronte e riprese delle telecamere) non emergono motivi abietti, futili o altre circostanze previste, perciò non si può ritenere configurata alcuna di esse."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.123,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0721,
+            "damage_factor": 0.4,
+            "excess": 0.3074,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8576,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7647,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.0972,
+            "attacker_base_score": 0.6699,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0077,
+            "damage_factor": 0.4,
+            "excess": 0.243,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7522,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7647,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0003,
+            "attacker_base_score": 0.5778,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.7654,
+            "damage_factor": 0.4,
+            "excess": 0.0007,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7792,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7647,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2205,
+        "base_score": 0.7646989088422416,
+        "cogency": 0.6761331786797071,
+        "cogency_details": {
+          "argument_quality_score": 0.7515418273518746,
+          "coherence_score": 0.6007245300075396,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "La condotta descritta integra il reato di furto in abitazione ai sensi dell’art. 624‑bis, aggravato dalla violenza sulle cose (art. 625 n. 2) e dal fatto che l’immobile è una dimora privata (art. 425 n. 2); eventuali circostanze comuni di cui all’art. 61, n. 1, potrebbero ulteriormente aumentare la pena. Pur riconoscendo la tenuità del profitto derivante dal valore modesto dei gioielli e del denaro, l’art. 518‑septiesdecies consente una diminuzione di un terzo della pena, ma tale attenuazione non può sopravanzare l’incremento previsto dalle aggravanti. Pertanto, la tesi principale è che il soggetto debba essere condannato per furto in abitazione aggravato, con la pena ridotta di un terzo per tenuità del lucro, nel rispetto dei criteri di commisurazione di cui all’art. 133.",
+        "libro": "",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7646989088422416,
+        "nesso_plausibility": 0.5441989088422415,
+        "norm_support": 0.83875,
+        "norm_support_details": {
+          "citation_count": 8,
+          "citation_count_score": 1.0,
+          "citation_score": 0.8125,
+          "citation_specificity_score": 0.25,
+          "final": 0.83875,
+          "retrieved_norms_count": 10,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 518‑septiesdecies c.p., il modesto valore dei gioielli e del denaro sottratti può configurare un “lucro di speciale tenuità”, consentendo una diminuzione della pena fino a un terzo; tuttavia, ai sensi dell’art. 133 c.p., il giudice dovrà comunque valutare la gravità complessiva del reato tenendo conto della violenza sulle cose (art. 625 n. 2), dell’ingresso notturno in abitazione privata (art. 425 n. 2) e del profitto comunque realizzato, bilanciando così le attenuanti con le aggravanti per determinare la pena finale.",
+        "retrieved_norms": [
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "133",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          },
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "425",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_516_425",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "624",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          },
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "425",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_516_425",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "61",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_69_61",
+            "title": "Circostanze aggravanti comuni"
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          },
+          {
+            "articolo": "133",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_145_133",
+            "title": "Gravità del reato: valutazione agli effetti della pena"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7545298507944315,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7545298507944315
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 518‑septiesdecies c.p., il modesto valore dei gioielli e del denaro sottratti può configurare un “lucro di speciale tenuità”, consentendo una diminuzione della pena fino a un terzo; tuttavia, ai sensi dell’art. 133 c.p., il giudice dovrà comunque valutare la gravità complessiva del reato tenendo conto della violenza sulle cose (art. 625 n. 2), dell’ingresso notturno in abitazione privata (art. 425 n. 2) e del profitto comunque realizzato, bilanciando così le attenuanti con le aggravanti per determinare la pena finale."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.31362670367676826,
+    "contra_adjusted": 0.31362670367676826,
+    "contra_raw": 0.2968582178136654,
+    "final": 0.41222523062913985,
+    "final_adjusted": 0.41222523062913985,
+    "final_raw": 0.4289937164922427,
+    "pro": 0.7258519343059081,
+    "pro_adjusted": 0.7258519343059081,
+    "pro_raw": 0.7258519343059081,
+    "pro_raw_dialectical": 0.5459519343059082,
+    "pro_raw_intrinsic": 0.7258519343059081,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7841,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2395
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7896,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.206
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7803,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1975
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.7522,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1922
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.6858,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.178
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7264,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1418
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7118,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1349
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7754,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1308
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7105,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1297
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7896,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1231
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 3,
+          "axes_total": 3,
+          "axis_details": [
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.7646989088422416,
+              "axis_id": "AX1",
+              "axis_quality": 0.15216,
+              "link_ids": [
+                "S4->S5"
+              ]
+            },
+            {
+              "active_attacks": 2,
+              "axis_base_avg": 0.6427896102899806,
+              "axis_id": "AX3",
+              "axis_quality": 0.12448000000000001,
+              "link_ids": [
+                "S1->S2"
+              ]
+            },
+            {
+              "active_attacks": 1,
+              "axis_base_avg": 0.7479596090457052,
+              "axis_id": "AX2",
+              "axis_quality": 0.1231,
+              "link_ids": [
+                "S3->S4",
+                "S2->S3"
+              ]
+            }
+          ],
+          "bonus": 0.05759376,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.13324666666666665,
+          "wpcs": 0.47994800000000004
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7152927216098739,
+          "high_similarity_pair_ratio": 0.3333333333333333,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.04082527413689715,
+          "redundancy_index": 0.3266021930951772
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.7486598857107016,
+          "high_similarity_pair_ratio": 0.6666666666666666,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.035131642479008865,
+          "redundancy_index": 0.18736875988804727
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2395,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1765,
+            "damage_factor": 0.4,
+            "excess": 0.5987,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7841,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0228,
+            "damage_factor": 0.4,
+            "excess": 0.445,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6858,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1349,
+            "attacker_base_score": 0.6428,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9151,
+            "damage_factor": 0.4,
+            "excess": 0.3372,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7118,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0191,
+            "attacker_base_score": 0.7647,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 0.6256,
+            "damage_factor": 0.4,
+            "excess": 0.0478,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7792,
+            "reason": "capped: top-K overflow (rank > 2), original=active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.5778,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.4175,
+        "base_score": 0.5778439535670544,
+        "cogency": 0.5141300728222935,
+        "cogency_details": {
+          "argument_quality_score": 0.5844794946525973,
+          "coherence_score": 0.44378065099198966,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Per l’applicazione della riduzione di un terzo prevista dall’art. 518‑septiesdecies c.p. è necessario provare che il lucro conseguito sia di speciale tenuità; tuttavia il fatto descrive il furto di gioielli e di denaro contante, beni che, in assenza di una perizia di stima allegata, non possono essere considerati di modesto valore. In mancanza di tale quantificazione certificata, la tenuità del profitto non è dimostrata e la riduzione di pena non può essere disposta.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.5778439535670544,
+        "nesso_plausibility": 0.16034395356705444,
+        "norm_support": 0.6436607049870562,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.7373724356957945,
+          "citation_specificity_score": 0.5,
+          "final": 0.6436607049870562,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 0.425
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 625 n. 2 c.p. prevede l’aggravante “violenza sulle cose” solo quando il fatto provoca una distruzione, rottura o danneggiamento tale da alterare la struttura o l’utilizzabilità dell’oggetto; nel caso in esame la condotta è descritta semplicemente come “forzare” la finestra, senza alcuna prova che il telaio o il vetro siano stati resi inservibili o la loro struttura compromessa, perciò non sussiste la violenza sulle cose e l’aggravante non può essere applicata.",
+        "retrieved_norms": [
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          },
+          {
+            "articolo": "518",
+            "match_type": "missing",
+            "score": 0.0,
+            "similarity": 0.0,
+            "source": ""
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.5538021657518128,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5538021657518128
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "L’art. 625 n. 2 c.p. prevede l’aggravante “violenza sulle cose” solo quando il fatto provoca una distruzione, rottura o danneggiamento tale da alterare la struttura o l’utilizzabilità dell’oggetto; nel caso in esame la condotta è descritta semplicemente come “forzare” la finestra, senza alcuna prova che il telaio o il vetro siano stati resi inservibili o la loro struttura compromessa, perciò non sussiste la violenza sulle cose e l’aggravante non può essere applicata."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.206,
+            "attacker_base_score": 0.7502,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.1847,
+            "damage_factor": 0.4,
+            "excess": 0.5149,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7896,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1975,
+            "attacker_base_score": 0.7457,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1637,
+            "damage_factor": 0.4,
+            "excess": 0.4939,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7803,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1922,
+            "attacker_base_score": 0.7647,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.1504,
+            "damage_factor": 0.4,
+            "excess": 0.4805,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7522,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.1308,
+            "attacker_base_score": 0.6428,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.9968,
+            "damage_factor": 0.4,
+            "excess": 0.3269,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7754,
+            "reason": "capped: top-K overflow (rank > 2), original=active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6699,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.40349999999999997,
+        "base_score": 0.6698550729071056,
+        "cogency": 0.543125695210909,
+        "cogency_details": {
+          "argument_quality_score": 0.5953999194607932,
+          "coherence_score": 0.4908514709610248,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 625 n. 2 c.p. prevede l’aggravante “violenza sulle cose” solo quando il fatto provoca una distruzione, rottura o danneggiamento tale da alterare la struttura o l’utilizzabilità dell’oggetto; nel caso in esame la condotta è descritta semplicemente come “forzare” la finestra, senza alcuna prova che il telaio o il vetro siano stati resi inservibili o la loro struttura compromessa, perciò non sussiste la violenza sulle cose e l’aggravante non può essere applicata.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6698550729071056,
+        "nesso_plausibility": 0.2663550729071056,
+        "norm_support": 0.9116666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9116666666666666,
+          "retrieved_norms_count": 3,
+          "retrieved_score": 0.9
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Poiché l’appartamento, al momento dell’ingresso, appariva disabitato, non sussiste la condizione di “luogo destinato in tutto o in parte a privata dimora” prevista dall’art. 624‑bis c.p.; di conseguenza il fatto deve essere qualificato come semplice furto ex art. 624 c.p., escludendo la fattispecie aggravata di furto in abitazione.",
+        "retrieved_norms": [
+          {
+            "articolo": "624",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          },
+          {
+            "articolo": "624",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          },
+          {
+            "articolo": "625",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_846_625",
+            "title": "Circostanze aggravanti"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.4741689922572203,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.4741689922572203
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Poiché l’appartamento, al momento dell’ingresso, appariva disabitato, non sussiste la condizione di “luogo destinato in tutto o in parte a privata dimora” prevista dall’art. 624‑bis c.p.; di conseguenza il fatto deve essere qualificato come semplice furto ex art. 624 c.p., escludendo la fattispecie aggravata di furto in abitazione."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0961,
+            "attacker_base_score": 0.6699,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8829,
+            "damage_factor": 0.4,
+            "excess": 0.2401,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7754,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6428,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0946,
+            "attacker_base_score": 0.7354,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 0.8793,
+            "damage_factor": 0.4,
+            "excess": 0.2365,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7034,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.6428,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0226,
+            "attacker_base_score": 0.5778,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6992,
+            "damage_factor": 0.4,
+            "excess": 0.0564,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7118,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.6428,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.1907,
+        "base_score": 0.6427896102899806,
+        "cogency": 0.5926910293639884,
+        "cogency_details": {
+          "argument_quality_score": 0.6226975837952701,
+          "coherence_score": 0.5626844749327067,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Alla luce dei fatti descritti, il soggetto ha commesso il reato di furto in abitazione ai sensi dell’art. 624‑bis c.p., poiché si è introdotto con violenza sulla finestra in un edificio destinato a privata dimora per impossessarsi di gioielli e denaro, configurando così la fattispecie di “introduzione in un edificio o in altro luogo destinato in tutto o in parte a privata dimora”. La pena prevista è la reclusione da quattro a sette anni, con relativa multa.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.6427896102899806,
+        "nesso_plausibility": 0.4520896102899806,
+        "norm_support": 0.7331088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7331088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Il soggetto, in orario notturno, ha forzato una finestra per introdursi nell’appartamento, sottraendo gioielli e denaro contante; le sue impronte sulla finestra e le riprese delle telecamere condominiali hanno consentito l’identificazione. La difesa sostiene che l’immobile apparisse disabitato al momento del fatto e che il valore complessivo dei beni sottratti fosse modesto. L’accusa evidenzia la violazione della privata dimora mediante effrazione e la sottrazione di cose mobili di valore.",
+        "retrieved_norms": [
+          {
+            "articolo": "624",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_844_624",
+            "title": "Furto"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5724624831698755,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5724624831698755
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il soggetto, in orario notturno, ha forzato una finestra per introdursi nell’appartamento, sottraendo gioielli e denaro contante; le sue impronte sulla finestra e le riprese delle telecamere condominiali hanno consentito l’identificazione. La difesa sostiene che l’immobile apparisse disabitato al momento del fatto e che il valore complessivo dei beni sottratti fosse modesto. L’accusa evidenzia la violazione della privata dimora mediante effrazione e la sottrazione di cose mobili di valore."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

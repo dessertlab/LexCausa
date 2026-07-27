@@ -1,0 +1,62 @@
+[2026-03-04T13:53:06.608419] Pipeline log - Setup A
+Claim: Un automobilista percorre un tratto con limite 90 km/h a circa 140 km/h, perde il controllo del veicolo e provoca un incidente mortale. Riferisce grave stato emotivo per complicazioni nel parto della 
+======================================================================
+Status: ok
+Duration: 1518.36s
+
+[SETTINGS]
+{
+  "reasoner_model": "gpt_oss_120b",
+  "counter_model": "gpt_oss_120b",
+  "reasoner_temperature": 0.0,
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "chain_min_steps": 3,
+  "chain_max_steps": 10,
+  "search_min_kept_statutes": 8,
+  "aqa_alpha": 0.3,
+  "aqa_beta": 0.4,
+  "aqa_gamma": 0.3,
+  "aqa_min_semantic_overlap": 0.5,
+  "aqa_min_strength_ratio": 1.2,
+  "aqa_damage_factor": 0.4,
+  "aqa_allow_factual_attacks": true,
+  "aqa_allow_cross_codice": true,
+  "aqa_lock_reasoner_plausibility": true,
+  "search_use_top_n_libri": 3,
+  "search_query_terms_mode": "llm",
+  "search_query_terms_llm_max_terms": 12,
+  "search_query_terms_llm_max_tokens": 128,
+  "aqa_strength_ratio_by_type": {
+    "contradiction": 0.05,
+    "exception": 0.05,
+    "derogation": 0.0,
+    "extinction": 0.0,
+    "factual_impediment": 0.55,
+    "general_opposition": 0.55
+  },
+  "enable_causality": true,
+  "reasoner_enable_causality": true,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": false,
+  "counter_pass_taxonomy_attacks": false,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 4
+  Arguments: 1
+  Causal type: PEN_INTERVENING
+
+[COUNTER]
+  Chain steps: 4
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: uncertain
+  Net pro: 0.7241371855466467
+  Net contra: 0.6609205776672468
+  Net final: 0.06321660787939998
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

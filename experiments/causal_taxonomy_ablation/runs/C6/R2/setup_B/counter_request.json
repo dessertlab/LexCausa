@@ -1,0 +1,145 @@
+{
+  "claim": "Un cane di grossa taglia esce dal giardino per cancello rimasto aperto e aggredisce un ciclista, che riporta fratture e danni alla bicicletta. Il proprietario afferma che il cancello sia stato lasciato aperto da un manutentore e che l'animale, normalmente mansueto, sia stato spaventato da fuochi artificiali provenienti dalla zona. Il danneggiato era in discesa ad alta velocita e senza luci anteriori; il proprietario invoca concorso colposo del ciclista. Sono disponibili referti medici, verbale della polizia locale e testimonianze contrastanti sulla dinamica. Si chiede di valutare titolo di responsabilita del custode, rilievo del caso fortuito e misura dell'eventuale riduzione del risarcimento per condotta del danneggiato.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "Il proprietario del cane è tenuto al risarcimento ai sensi dell’art. 2052 c.c., poiché non è riuscito a dimostrare che i fuochi artificiali costituiscano un caso fortuito e ha violato l’obbligo di diligenza previsto dall’art. 1768 c.c.; pertanto la responsabilità rimane oggettiva. Il risarcimento dovrà comprendere danni emergenziali, patrimoniali e lucro cessante, ma sarà diminuito in proporzione al concorso colposo del ciclista, che ha violato l’obbligo di prudenza (art. 1227 c.c.). Inoltre, il manutentore che ha lasciato il cancello aperto può essere ritenuto solidariamente responsabile e il proprietario potrà esercitare regresso nei suoi confronti ai sensi dell’art. 2055 c.c.",
+  "routing": {
+    "additional_causal_types": [
+      "CIV_CUSTODY_DAMAGE"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 1227 c.c.",
+          "role": "Concorso del danneggiato e mitigazione"
+        },
+        {
+          "ref": "Art. 2056 c.c.",
+          "role": "Criteri di liquidazione del danno"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 2051 c.c.",
+          "role": "Danno cagionato da cosa in custodia"
+        },
+        {
+          "ref": "Art. 2052 c.c.",
+          "role": "Danno cagionato da animali"
+        }
+      ]
+    },
+    "causal_type_id": "CIV_CUSTODY_DAMAGE",
+    "claim": "Un cane di grossa taglia esce dal giardino per cancello rimasto aperto e aggredisce un ciclista, che riporta fratture e danni alla bicicletta. Il proprietario afferma che il cancello sia stato lasciato aperto da un manutentore e che l'animale, normalmente mansueto, sia stato spaventato da fuochi artificiali provenienti dalla zona. Il danneggiato era in discesa ad alta velocita e senza luci anteriori; il proprietario invoca concorso colposo del ciclista. Sono disponibili referti medici, verbale della polizia locale e testimonianze contrastanti sulla dinamica. Si chiede di valutare titolo di responsabilita del custode, rilievo del caso fortuito e misura dell'eventuale riduzione del risarcimento per condotta del danneggiato.",
+    "domain": "CIVILE",
+    "principle_tests": [
+      {
+        "description": "Verifica nesso causale tra fonte in custodia e evento dannoso",
+        "id": "CUSTODY_NEXUS",
+        "name": "Nesso cosa/animale-danno"
+      },
+      {
+        "description": "Valuta fortuito esterno e incidenza del comportamento del danneggiato",
+        "id": "FORTUITOUS_EVENT_CIV",
+        "name": "Caso fortuito e concorso"
+      }
+    ],
+    "theory_id": "T_CIV_CUSTODIA"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "art2055",
+      "libro": "CC Libro IV",
+      "score": 0.8694439885685182,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2144_art2055",
+      "testo": "Se il fatto dannoso è imputabile a più persone, tutte sono obbligate in solido al risarcimento del danno. Colui che ha risarcito il danno ha regresso contro ciascuno degli altri, nella misura determinata dalla gravità della rispettiva colpa e dall'entità delle conseguenze che ne sono derivate. Nel dubbio, le singole colpe si presumono uguali.",
+      "titolo": "Responsabilità solidale"
+    },
+    {
+      "articolo": "art2051",
+      "libro": "CC Libro IV",
+      "score": 0.8446151129943503,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2140_art2051",
+      "testo": "Ciascuno è responsabile del danno cagionato dalle cose che ha in custodia, salvo che provi il caso fortuito.",
+      "titolo": "Danno cagionato da cosa in custodia"
+    },
+    {
+      "articolo": "art2052",
+      "libro": "CC Libro IV",
+      "score": 0.8347913188647746,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2141_art2052",
+      "testo": "Il proprietario di un animale o chi se ne serve per il tempo in cui lo ha in uso, è responsabile dei danni cagionati dall'animale, sia che fosse sotto la sua custodia, sia che fosse smarrito o fuggito, salvo che provi il caso fortuito.",
+      "titolo": "Danno cagionato da animali"
+    },
+    {
+      "articolo": "art1227",
+      "libro": "CC Libro IV",
+      "score": 0.8153759090008772,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1297_art1227",
+      "testo": "Se il fatto colposo del creditore ha concorso a cagionare il danno, il risarcimento è diminuito secondo la gravità della colpa e l'entità delle conseguenze che ne sono derivate. Il risarcimento non è dovuto per i danni che il creditore avrebbe potuto evitare usando l'ordinaria diligenza.",
+      "titolo": "Concorso del fatto colposo del creditore"
+    },
+    {
+      "articolo": "art1223",
+      "libro": "CC Libro IV",
+      "score": 0.8018714689265537,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1293_art1223",
+      "testo": "Il risarcimento del danno per l'inadempimento o per il ritardo deve comprendere così la perdita subita dal creditore come il mancato guadagno, in quanto ne siano conseguenza immediata e diretta.",
+      "titolo": "Risarcimento del danno"
+    },
+    {
+      "articolo": "art1218",
+      "libro": "CC Libro IV",
+      "score": 0.7271050621091651,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1288_art1218",
+      "testo": "Il debitore che non esegue esattamente la prestazione dovuta è tenuto al risarcimento del danno, se non prova che l'inadempimento o il ritardo è stato determinato da impossibilità della prestazione derivante da causa a lui non imputabile.",
+      "titolo": "Responsabilità del debitore"
+    },
+    {
+      "articolo": "art1768",
+      "libro": "CC Libro IV",
+      "score": 0.7100393310885375,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_1853_art1768",
+      "testo": "Il depositario deve usare nella custodia la diligenza del buon padre di famiglia. Se il deposito è gratuito, la responsabilità per colpa è valutata con minor rigore.",
+      "titolo": "Diligenza nella custodia"
+    },
+    {
+      "articolo": "art2056",
+      "libro": "CC Libro IV",
+      "score": 0.6572023051602012,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2145_art2056",
+      "testo": "Il risarcimento dovuto al danneggiato si deve determinare secondo le disposizioni degli articoli 1223, 1226 e 1227. Il lucro cessante è valutato dal giudice con equo apprezzamento delle circostanze del caso.",
+      "titolo": "Valutazione dei danni"
+    },
+    {
+      "articolo": "art2043",
+      "libro": "CC Libro IV",
+      "score": 0.6223728813559323,
+      "source": "codice_civile",
+      "statute_id": "codice_civile_2132_art2043",
+      "testo": "Qualunque fatto doloso o colposo, che cagiona ad altri un danno ingiusto, obbliga colui che ha commesso il fatto a risarcire il danno.",
+      "titolo": "Risarcimento per fatto illecito"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

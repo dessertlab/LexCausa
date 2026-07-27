@@ -1,0 +1,1363 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 1,
+      "attack_coverage_axes_total": 1,
+      "attack_coverage_bonus": 0.06752640000000001,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.5627200000000001,
+      "attacks_avg": 0.23026666666666665,
+      "base_score_avg": 0.7365202846793414,
+      "cogency_avg": 0.6590813124560336,
+      "net_plausibility": 0.5384104463204326,
+      "net_plausibility_adjusted": 0.5384104463204326,
+      "net_plausibility_raw": 0.5062536180126747,
+      "norm_support_avg": 0.7897222222222222,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.2829565735379369,
+      "redundancy_penalty": 0.03536957169224211,
+      "semantics_avg": 0.7430233401788078
+    },
+    "pro": {
+      "attacks_avg": 0.3238,
+      "base_score_avg": 0.785840310144803,
+      "cogency_avg": 0.6212723091644253,
+      "net_plausibility": 0.785840310144803,
+      "net_plausibility_adjusted": 0.785840310144803,
+      "net_plausibility_dialectical_raw": 0.46204031014480307,
+      "net_plausibility_intrinsic_raw": 0.785840310144803,
+      "net_plausibility_raw": 0.785840310144803,
+      "norm_support_avg": 0.9458333333333333,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.4449483321572106,
+      "redundancy_penalty": 0.02780927075982566,
+      "semantics_avg": 0.7370842802071406
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.18,
+            "attacker_base_score": 0.7542,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2252,
+            "damage_factor": 0.4,
+            "excess": 0.4499,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8122,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7752,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0115,
+            "attacker_base_score": 0.8175,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 0.8041,
+            "damage_factor": 0.4,
+            "excess": 0.0289,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8197,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7752,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1915,
+        "base_score": 0.7752497246795123,
+        "cogency": 0.7028096499895369,
+        "cogency_details": {
+          "argument_quality_score": 0.7361847532380748,
+          "coherence_score": 0.669434546740999,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’art. 8, comma 1, della L. 241/1990 impone la comunicazione dell’avvio del procedimento con indicazione del termine di conclusione, ma tale obbligo non è assoluto: l’art. 17, comma 1, prevede che, qualora siano necessarie valutazioni tecniche di organi o enti esterni, la procedura resta sospesa finché tali valutazioni non siano acquisite, e il responsabile del procedimento può chiedere le informazioni necessarie prima di procedere. Di conseguenza, l’assenza di comunicazione ex art. 8 è giustificata dal fatto che la pratica richiedeva verifiche intersettoriali ancora non concluse, le quali hanno legittimamente sospeso l’istruttoria.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7752497246795123,
+        "nesso_plausibility": 0.5837497246795122,
+        "norm_support": 0.7799999999999999,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.75,
+          "citation_specificity_score": 0.0,
+          "final": 0.7799999999999999,
+          "retrieved_norms_count": 7,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "L’art. 2, comma 1, della L. 241/1990 impone all’amministrazione di concludere il procedimento entro un termine ragionevole, ma non prevede alcun obbligo di comunicare l’avvio né di indicare la data di scadenza; tali adempimenti spettano all’art. 8, che è discrezionale e può essere omesso qualora l’amministrazione ritenga non necessario avvisare l’interessato. Di conseguenza, l’assenza di comunicazione non costituisce di per sé violazione dell’obbligo di conclusione previsto dall’art. 2, ma solo una eventuale inadempienza dell’art. 8, la cui inosservanza non genera automaticamente il silenzio‑assenso.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.8413560989421708,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8413560989421708
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 2, comma 1, della L. 241/1990 impone all’amministrazione di concludere il procedimento entro un termine ragionevole, ma non prevede alcun obbligo di comunicare l’avvio né di indicare la data di scadenza; tali adempimenti spettano all’art. 8, che è discrezionale e può essere omesso qualora l’amministrazione ritenga non necessario avvisare l’interessato. Di conseguenza, l’assenza di comunicazione non costituisce di per sé violazione dell’obbligo di conclusione previsto dall’art. 2, ma solo una eventuale inadempienza dell’art. 8, la cui inosservanza non genera automaticamente il silenzio‑assenso."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2886,
+            "attacker_base_score": 0.8175,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.4225,
+            "damage_factor": 0.4,
+            "excess": 0.7214,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8701,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7011,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.028,
+            "attacker_base_score": 0.7542,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.771,
+            "damage_factor": 0.4,
+            "excess": 0.0699,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8519,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7011,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.31660000000000005,
+        "base_score": 0.7010914902964998,
+        "cogency": 0.6206670996199382,
+        "cogency_details": {
+          "argument_quality_score": 0.6769256427324714,
+          "coherence_score": 0.5644085565074051,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’art. 20, comma 1, della L. 241/1990 stabilisce che, nei procedimenti ad istanza di parte, il silenzio dell’amministrazione equivale a provvedimento di accoglimento della domanda, salvo che entro il termine fissato dall’art. 2, commi 2‑3, l’amministrazione comunichi il diniego; la norma non subordina il silenzio‑assenso a una preventiva comunicazione di avvio del procedimento, che è prevista dall’art. 8 a titolo informativo. Pertanto, anche in assenza di tale comunicazione, il silenzio dell’amministrazione può produrre un provvedimento implicito di accoglimento, a condizione che la legge preveda espressamente il silenzio‑assenso per il tipo di autorizzazione richiesto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7010914902964998,
+        "nesso_plausibility": 0.3844914902964997,
+        "norm_support": 0.7799999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.75,
+          "citation_specificity_score": 0.0,
+          "final": 0.7799999999999999,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 8, comma 1, della L. 241/1990 impone la comunicazione dell’avvio del procedimento con indicazione del termine di conclusione, ma tale obbligo non è assoluto: l’art. 17, comma 1, prevede che, qualora siano necessarie valutazioni tecniche di organi o enti esterni, la procedura resta sospesa finché tali valutazioni non siano acquisite, e il responsabile del procedimento può chiedere le informazioni necessarie prima di procedere. Di conseguenza, l’assenza di comunicazione ex art. 8 è giustificata dal fatto che la pratica richiedeva verifiche intersettoriali ancora non concluse, le quali hanno legittimamente sospeso l’istruttoria.",
+        "retrieved_norms": [
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6763045347017276,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6763045347017276
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 8, comma 1, della L. 241/1990 impone la comunicazione dell’avvio del procedimento con indicazione del termine di conclusione, ma tale obbligo non è assoluto: l’art. 17, comma 1, prevede che, qualora siano necessarie valutazioni tecniche di organi o enti esterni, la procedura resta sospesa finché tali valutazioni non siano acquisite, e il responsabile del procedimento può chiedere le informazioni necessarie prima di procedere. Di conseguenza, l’assenza di comunicazione ex art. 8 è giustificata dal fatto che la pratica richiedeva verifiche intersettoriali ancora non concluse, le quali hanno legittimamente sospeso l’istruttoria."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1827,
+            "attacker_base_score": 0.8175,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1901,
+            "damage_factor": 0.4,
+            "excess": 0.4568,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8563,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.7332,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7542,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.7201,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7957,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7332,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.1827,
+        "base_score": 0.7332196390620119,
+        "cogency": 0.653767187758626,
+        "cogency_details": {
+          "argument_quality_score": 0.6818611711308589,
+          "coherence_score": 0.6256732043863932,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "L’art. 17‑bis L. 241/1990 ammette il ricorso al potere sostitutivo solo quando il procedimento è “impossibile da concludere per cause non imputabili al richiedente” e dopo l’esaurimento di tutti i rimedi amministrativi ordinari; pertanto, finché permangono verifiche intersettoriali, la sospensione è legittima ai sensi dell’art. 17, comma 1, che impone al responsabile di richiedere formalmente tali valutazioni entro novanta giorni. Inoltre, l’attivazione del canale interno per il potere sostitutivo costituisce un rimedio amministrativo ancora in corso, il cui esito non è stato ancora prodotto, così da non sussistere il requisito di esaurimento previsto dall’art. 17‑bis. Di conseguenza, la normativa stessa esclude la configurazione di inerzia amministrativa in presenza di verifiche tecniche pendenti.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.7332196390620119,
+        "nesso_plausibility": 0.550519639062012,
+        "norm_support": 0.8091666666666666,
+        "norm_support_details": {
+          "citation_count": 6,
+          "citation_count_score": 1.0,
+          "citation_score": 0.7916666666666666,
+          "citation_specificity_score": 0.16666666666666666,
+          "final": 0.8091666666666666,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "L’art. 20, comma 1, della L. 241/1990 stabilisce che, nei procedimenti ad istanza di parte, il silenzio dell’amministrazione equivale a provvedimento di accoglimento della domanda, salvo che entro il termine fissato dall’art. 2, commi 2‑3, l’amministrazione comunichi il diniego; la norma non subordina il silenzio‑assenso a una preventiva comunicazione di avvio del procedimento, che è prevista dall’art. 8 a titolo informativo. Pertanto, anche in assenza di tale comunicazione, il silenzio dell’amministrazione può produrre un provvedimento implicito di accoglimento, a condizione che la legge preveda espressamente il silenzio‑assenso per il tipo di autorizzazione richiesto.",
+        "retrieved_norms": [
+          {
+            "articolo": "20",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7114093868925251,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7114093868925251
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 20, comma 1, della L. 241/1990 stabilisce che, nei procedimenti ad istanza di parte, il silenzio dell’amministrazione equivale a provvedimento di accoglimento della domanda, salvo che entro il termine fissato dall’art. 2, commi 2‑3, l’amministrazione comunichi il diniego; la norma non subordina il silenzio‑assenso a una preventiva comunicazione di avvio del procedimento, che è prevista dall’art. 8 a titolo informativo. Pertanto, anche in assenza di tale comunicazione, il silenzio dell’amministrazione può produrre un provvedimento implicito di accoglimento, a condizione che la legge preveda espressamente il silenzio‑assenso per il tipo di autorizzazione richiesto."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2021,
+            "attacker_base_score": 0.7752,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2594,
+            "damage_factor": 0.4,
+            "excess": 0.5052,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8122,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7542,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1651,
+            "attacker_base_score": 0.7332,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1669,
+            "damage_factor": 0.4,
+            "excess": 0.4127,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7957,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7542,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1045,
+            "attacker_base_score": 0.7011,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0154,
+            "damage_factor": 0.4,
+            "excess": 0.2612,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8519,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7542,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.36719999999999997,
+        "base_score": 0.754197310538794,
+        "cogency": 0.6059855399007564,
+        "cogency_details": {
+          "argument_quality_score": 0.6614869246929272,
+          "coherence_score": 0.5504841551085856,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Dalla descrizione dei fatti risulta che l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8 L. 241/1990, la data entro cui doveva concludersi né i rimedi esperibili in caso di inerzia, configurando quindi una violazione dell’obbligo di informare l’interessato sul termine procedimentale.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.754197310538794,
+        "nesso_plausibility": 0.38699731053879405,
+        "norm_support": 0.9266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9266666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 2 della L. 241/1990, l’amministrazione è tenuta a concludere il procedimento entro il termine indicato nella comunicazione di avvio prevista dall’art. 8 della stessa legge; in assenza di tale indicazione, il termine è quello fissato dall’amministrazione stessa con atto di avvio. Poiché l’impresa ha presentato un’istanza completa e il “termine legale” è decorso senza alcun provvedimento espresso né richieste istruttorie, risulta violato l’obbligo di conclusione previsto dall’art. 2 L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6724499396730014,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6724499396730014
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2 della L. 241/1990, l’amministrazione è tenuta a concludere il procedimento entro il termine indicato nella comunicazione di avvio prevista dall’art. 8 della stessa legge; in assenza di tale indicazione, il termine è quello fissato dall’amministrazione stessa con atto di avvio. Poiché l’impresa ha presentato un’istanza completa e il “termine legale” è decorso senza alcun provvedimento espresso né richieste istruttorie, risulta violato l’obbligo di conclusione previsto dall’art. 2 L. 241/1990."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1753,
+            "attacker_base_score": 0.7332,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2558,
+            "damage_factor": 0.4,
+            "excess": 0.4383,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8563,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8175,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1051,
+            "attacker_base_score": 0.7752,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0803,
+            "damage_factor": 0.4,
+            "excess": 0.2628,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8197,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8175,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0878,
+            "attacker_base_score": 0.7011,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.037,
+            "damage_factor": 0.4,
+            "excess": 0.2195,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8701,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8175,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2804,
+        "base_score": 0.8174833097508121,
+        "cogency": 0.6365590784280942,
+        "cogency_details": {
+          "argument_quality_score": 0.7227236286290264,
+          "coherence_score": 0.5503945282271621,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Poiché l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8, il termine entro cui concludere, il silenzio non può essere qualificato come “silenzio‑assenso” previsto dall’art. 20 L. 241/1990; pertanto non sussiste alcun provvedimento di accoglimento implicito. In assenza di tale comunicazione, la mancata adozione di un provvedimento entro il termine fissato dall’art. 2 L. 241/1990 configura, ai sensi dell’art. 17‑bis L. 241/1990, inerzia amministrativa, con le relative conseguenze di responsabilità per danno ingiusto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8174833097508121,
+        "nesso_plausibility": 0.5370833097508121,
+        "norm_support": 0.9649999999999999,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.95,
+          "citation_specificity_score": 0.8,
+          "final": 0.9649999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Dalla descrizione dei fatti risulta che l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8 L. 241/1990, la data entro cui doveva concludersi né i rimedi esperibili in caso di inerzia, configurando quindi una violazione dell’obbligo di informare l’interessato sul termine procedimentale.",
+        "retrieved_norms": [
+          {
+            "articolo": "8",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8017186207412798,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8017186207412798
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Dalla descrizione dei fatti risulta che l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8 L. 241/1990, la data entro cui doveva concludersi né i rimedi esperibili in caso di inerzia, configurando quindi una violazione dell’obbligo di informare l’interessato sul termine procedimentale."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.5384104463204326,
+    "contra_adjusted": 0.5384104463204326,
+    "contra_raw": 0.5062536180126747,
+    "final": 0.2474298638243705,
+    "final_adjusted": 0.2474298638243705,
+    "final_raw": 0.2795866921321284,
+    "pro": 0.785840310144803,
+    "pro_adjusted": 0.785840310144803,
+    "pro_raw": 0.785840310144803,
+    "pro_raw_dialectical": 0.46204031014480307,
+    "pro_raw_intrinsic": 0.785840310144803,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8701,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.2886
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8122,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.2021
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.8563,
+        "target": "S3->S4",
+        "target_role": "counter",
+        "value": 0.1827
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8122,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.18
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.8563,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1753
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "contra",
+        "overlap": 0.7957,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1651
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8197,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1051
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8519,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1045
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "contra",
+        "overlap": 0.8701,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.0878
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8519,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.028
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "counter",
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 1,
+          "axes_total": 1,
+          "axis_details": [
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.785840310144803,
+              "axis_id": "AX1",
+              "axis_quality": 0.27120000000000005,
+              "link_ids": [
+                "S2->S3",
+                "S1->S2"
+              ]
+            }
+          ],
+          "bonus": 0.06752640000000001,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.27120000000000005,
+          "wpcs": 0.5627200000000001
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7992278405906225,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 3,
+          "pair_count": 3,
+          "penalty": 0.03536957169224211,
+          "redundancy_index": 0.2829565735379369
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.844585533004019,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.02780927075982566,
+          "redundancy_index": 0.4449483321572106
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2886,
+            "attacker_base_score": 0.8175,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.4225,
+            "damage_factor": 0.4,
+            "excess": 0.7214,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8701,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.7011,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "factual_impediment",
+            "attack_value": 0.028,
+            "attacker_base_score": 0.7542,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 0.771,
+            "damage_factor": 0.4,
+            "excess": 0.0699,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8519,
+            "reason": "active: factual_impediment [NLI-bypass]",
+            "target_base_score": 0.7011,
+            "type_multiplier": 1.2
+          }
+        ],
+        "attacks_sum": 0.31660000000000005,
+        "base_score": 0.7010914902964998,
+        "cogency": 0.6206670996199382,
+        "cogency_details": {
+          "argument_quality_score": 0.6769256427324714,
+          "coherence_score": 0.5644085565074051,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "L’art. 20, comma 1, della L. 241/1990 stabilisce che, nei procedimenti ad istanza di parte, il silenzio dell’amministrazione equivale a provvedimento di accoglimento della domanda, salvo che entro il termine fissato dall’art. 2, commi 2‑3, l’amministrazione comunichi il diniego; la norma non subordina il silenzio‑assenso a una preventiva comunicazione di avvio del procedimento, che è prevista dall’art. 8 a titolo informativo. Pertanto, anche in assenza di tale comunicazione, il silenzio dell’amministrazione può produrre un provvedimento implicito di accoglimento, a condizione che la legge preveda espressamente il silenzio‑assenso per il tipo di autorizzazione richiesto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7010914902964998,
+        "nesso_plausibility": 0.3844914902964997,
+        "norm_support": 0.7799999999999999,
+        "norm_support_details": {
+          "citation_count": 4,
+          "citation_count_score": 1.0,
+          "citation_score": 0.75,
+          "citation_specificity_score": 0.0,
+          "final": 0.7799999999999999,
+          "retrieved_norms_count": 6,
+          "retrieved_score": 0.85
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’art. 8, comma 1, della L. 241/1990 impone la comunicazione dell’avvio del procedimento con indicazione del termine di conclusione, ma tale obbligo non è assoluto: l’art. 17, comma 1, prevede che, qualora siano necessarie valutazioni tecniche di organi o enti esterni, la procedura resta sospesa finché tali valutazioni non siano acquisite, e il responsabile del procedimento può chiedere le informazioni necessarie prima di procedere. Di conseguenza, l’assenza di comunicazione ex art. 8 è giustificata dal fatto che la pratica richiedeva verifiche intersettoriali ancora non concluse, le quali hanno legittimamente sospeso l’istruttoria.",
+        "retrieved_norms": [
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6763045347017276,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6763045347017276
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "L’art. 8, comma 1, della L. 241/1990 impone la comunicazione dell’avvio del procedimento con indicazione del termine di conclusione, ma tale obbligo non è assoluto: l’art. 17, comma 1, prevede che, qualora siano necessarie valutazioni tecniche di organi o enti esterni, la procedura resta sospesa finché tali valutazioni non siano acquisite, e il responsabile del procedimento può chiedere le informazioni necessarie prima di procedere. Di conseguenza, l’assenza di comunicazione ex art. 8 è giustificata dal fatto che la pratica richiedeva verifiche intersettoriali ancora non concluse, le quali hanno legittimamente sospeso l’istruttoria."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.2021,
+            "attacker_base_score": 0.7752,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2594,
+            "damage_factor": 0.4,
+            "excess": 0.5052,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8122,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7542,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1651,
+            "attacker_base_score": 0.7332,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1669,
+            "damage_factor": 0.4,
+            "excess": 0.4127,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7957,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7542,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1045,
+            "attacker_base_score": 0.7011,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0154,
+            "damage_factor": 0.4,
+            "excess": 0.2612,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8519,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.7542,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.36719999999999997,
+        "base_score": 0.754197310538794,
+        "cogency": 0.6059855399007564,
+        "cogency_details": {
+          "argument_quality_score": 0.6614869246929272,
+          "coherence_score": 0.5504841551085856,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Dalla descrizione dei fatti risulta che l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8 L. 241/1990, la data entro cui doveva concludersi né i rimedi esperibili in caso di inerzia, configurando quindi una violazione dell’obbligo di informare l’interessato sul termine procedimentale.",
+        "libro": "",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.754197310538794,
+        "nesso_plausibility": 0.38699731053879405,
+        "norm_support": 0.9266666666666666,
+        "norm_support_details": {
+          "citation_count": 3,
+          "citation_count_score": 1.0,
+          "citation_score": 0.9166666666666666,
+          "citation_specificity_score": 0.6666666666666666,
+          "final": 0.9266666666666666,
+          "retrieved_norms_count": 4,
+          "retrieved_score": 0.9500000000000001
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Ai sensi dell’art. 2 della L. 241/1990, l’amministrazione è tenuta a concludere il procedimento entro il termine indicato nella comunicazione di avvio prevista dall’art. 8 della stessa legge; in assenza di tale indicazione, il termine è quello fissato dall’amministrazione stessa con atto di avvio. Poiché l’impresa ha presentato un’istanza completa e il “termine legale” è decorso senza alcun provvedimento espresso né richieste istruttorie, risulta violato l’obbligo di conclusione previsto dall’art. 2 L. 241/1990.",
+        "retrieved_norms": [
+          {
+            "articolo": "2",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6724499396730014,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6724499396730014
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Ai sensi dell’art. 2 della L. 241/1990, l’amministrazione è tenuta a concludere il procedimento entro il termine indicato nella comunicazione di avvio prevista dall’art. 8 della stessa legge; in assenza di tale indicazione, il termine è quello fissato dall’amministrazione stessa con atto di avvio. Poiché l’impresa ha presentato un’istanza completa e il “termine legale” è decorso senza alcun provvedimento espresso né richieste istruttorie, risulta violato l’obbligo di conclusione previsto dall’art. 2 L. 241/1990."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1753,
+            "attacker_base_score": 0.7332,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "contra",
+            "boosted_attack": 1.2558,
+            "damage_factor": 0.4,
+            "excess": 0.4383,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8563,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.8175,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.1051,
+            "attacker_base_score": 0.7752,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0803,
+            "damage_factor": 0.4,
+            "excess": 0.2628,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8197,
+            "reason": "active: exception [NLI-bypass]",
+            "target_base_score": 0.8175,
+            "type_multiplier": 1.7
+          },
+          {
+            "attack_type": "exception",
+            "attack_value": 0.0878,
+            "attacker_base_score": 0.7011,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 1.037,
+            "damage_factor": 0.4,
+            "excess": 0.2195,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8701,
+            "reason": "capped: top-K overflow (rank > 2), original=active: exception [NLI-bypass]",
+            "target_base_score": 0.8175,
+            "type_multiplier": 1.7
+          }
+        ],
+        "attacks_sum": 0.2804,
+        "base_score": 0.8174833097508121,
+        "cogency": 0.6365590784280942,
+        "cogency_details": {
+          "argument_quality_score": 0.7227236286290264,
+          "coherence_score": 0.5503945282271621,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Poiché l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8, il termine entro cui concludere, il silenzio non può essere qualificato come “silenzio‑assenso” previsto dall’art. 20 L. 241/1990; pertanto non sussiste alcun provvedimento di accoglimento implicito. In assenza di tale comunicazione, la mancata adozione di un provvedimento entro il termine fissato dall’art. 2 L. 241/1990 configura, ai sensi dell’art. 17‑bis L. 241/1990, inerzia amministrativa, con le relative conseguenze di responsabilità per danno ingiusto.",
+        "libro": "",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.8174833097508121,
+        "nesso_plausibility": 0.5370833097508121,
+        "norm_support": 0.9649999999999999,
+        "norm_support_details": {
+          "citation_count": 5,
+          "citation_count_score": 1.0,
+          "citation_score": 0.95,
+          "citation_specificity_score": 0.8,
+          "final": 0.9649999999999999,
+          "retrieved_norms_count": 5,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Dalla descrizione dei fatti risulta che l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8 L. 241/1990, la data entro cui doveva concludersi né i rimedi esperibili in caso di inerzia, configurando quindi una violazione dell’obbligo di informare l’interessato sul termine procedimentale.",
+        "retrieved_norms": [
+          {
+            "articolo": "8",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "8",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_10_8",
+            "title": "Modalità e contenuti della comunicazione di avvio del procedimento"
+          },
+          {
+            "articolo": "20",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_30_20",
+            "title": "Silenzio assenso"
+          },
+          {
+            "articolo": "2",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_1_2",
+            "title": "Conclusione del procedimento"
+          },
+          {
+            "articolo": "17",
+            "match_type": "article_fallback",
+            "score": 0.85,
+            "similarity": 0.85,
+            "source": "codice_amministrativo",
+            "statute_id": "codice_amministrativo_24_17",
+            "title": "Valutazioni tecniche"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.8017186207412798,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.8017186207412798
+        },
+        "severity_category": "amministrativo",
+        "source": "codice_amministrativo",
+        "text": "Dalla descrizione dei fatti risulta che l’amministrazione non ha inviato alcuna comunicazione di avvio del procedimento né ha indicato, ai sensi dell’art. 8 L. 241/1990, la data entro cui doveva concludersi né i rimedi esperibili in caso di inerzia, configurando quindi una violazione dell’obbligo di informare l’interessato sul termine procedimentale."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}

@@ -1,0 +1,34 @@
+[2026-03-07T11:52:46.097040] Pipeline log - Setup B
+Claim: Un concessionario vende un'auto usata dichiarando 60.000 km; dopo l'acquisto una perizia tecnica rileva chilometraggio reale oltre 180.000 km e tracce di manomissione del quadro strumenti. Emergeno in
+======================================================================
+Status: ok
+Duration: 1306.1s
+
+[SETTINGS]
+{
+  "counter_model": "gpt_oss_120b",
+  "counter_temperature": 0.3,
+  "llm_max_tokens": 8192,
+  "counter_enable_causality": true,
+  "counter_pass_causal_identity": true,
+  "counter_pass_taxonomy_attacks": true,
+  "counter_pass_norms": true
+}
+
+[REASONER]
+  Chain steps: 7
+  Arguments: 1
+  Causal type: MIXED_PEN_CIV_CONCURRENCE
+
+[COUNTER]
+  Chain steps: 3
+  Arguments: 1
+  Abstained: False
+  Planning mode: N/A
+
+[EVALUATION]
+  Verdict: plausible
+  Net pro: 0.7488774191117782
+  Net contra: 0.4950403793042122
+  Net final: 0.253837039807566
+  Counter gate: label=OPPOSING_LIMITATIVE, abstain=False

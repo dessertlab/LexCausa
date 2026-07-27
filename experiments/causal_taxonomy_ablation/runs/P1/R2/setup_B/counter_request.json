@@ -1,0 +1,161 @@
+{
+  "claim": "Durante un controllo contabile in una s.r.l. emerge che l'amministratore unico ha disposto 6 bonifici per complessivi 45.000 euro dal conto sociale verso propri creditori personali. Egli sostiene che si trattasse di un prestito ponte autorizzato verbalmente da due soci e poi integralmente restituito dopo 8 mesi con interessi legali. I soci di minoranza negano qualsiasi delibera, evidenziano assenza di verbalizzazione e segnalano che nel periodo la societa ha pagato in ritardo fornitori strategici. La difesa deduce assenza di danno finale per intervenuta restituzione e incertezza sull'elemento soggettivo. Si chiede di verificare qualificazione penale della condotta, rilievo della restituzione tardiva e impatto della mancata formalizzazione societaria.",
+  "include_precedents": true,
+  "max_statutes": 100,
+  "max_precedents": 5,
+  "claim_context_memory_enabled": true,
+  "claim_context_memory_overwrite": false,
+  "reasoner_conclusion": "L’amministratore unico è penalmente responsabile per appropriazione indebita dolosa ai sensi dell’art. 646 c.p., poiché ha disposto i bonifici senza alcuna deliberazione societaria, consapevole dell’illiceità della sua condotta (art. 42 c.p.). La restituzione tardiva dei € 45.000, seppur integrale e con interessi, non spezza il nesso causale tra l’appropriazione e i ritardi nei pagamenti ai fornitori (articoli 40‑41 c.p.) e costituisce solo una circostanza attenuante di “restituzione del profitto” (art. 518‑septiesdecies c.p.). Pertanto, l’amministratore è punibile per il reato di appropriazione indebita, con possibile riduzione della pena ma senza escludere la responsabilità penale.",
+  "routing": {
+    "additional_causal_types": [
+      "PEN_PROPERTY_QUALIFICATION",
+      "PEN_FACTUAL",
+      "PEN_INTERVENING"
+    ],
+    "anchor_norms": {
+      "accessory_norms": [
+        {
+          "ref": "Art. 41 c.p.",
+          "role": "Concorso di cause e cause sopravvenute, da leggere sistematicamente con Art. 40 c.p."
+        },
+        {
+          "ref": "Art. 43 c.p.",
+          "role": "Elemento soggettivo (colpa/dolo). Rilevante per causalità colposa, non definisce il nesso in sé"
+        },
+        {
+          "ref": "Art. 40 c.p.",
+          "role": "Base del nesso, letto sistematicamente con Art. 41 c.p."
+        },
+        {
+          "ref": "Art. 43 c.p.",
+          "role": "Prevedibilità/colpa: utile per valutare la rilevanza della causa sopravvenuta nel fatto colposo"
+        }
+      ],
+      "core_norms": [
+        {
+          "ref": "Art. 646 c.p.",
+          "role": "Appropriazione indebita"
+        },
+        {
+          "ref": "Art. 40 c.p.",
+          "role": "Fondamento del nesso condotta (azione/omissione) -> evento"
+        },
+        {
+          "ref": "Art. 41 c.p.",
+          "role": "Concorso di cause e interruzione del nesso per causa sopravvenuta da sola sufficiente"
+        }
+      ]
+    },
+    "causal_type_id": "PEN_PROPERTY_QUALIFICATION",
+    "claim": "Durante un controllo contabile in una s.r.l. emerge che l'amministratore unico ha disposto 6 bonifici per complessivi 45.000 euro dal conto sociale verso propri creditori personali. Egli sostiene che si trattasse di un prestito ponte autorizzato verbalmente da due soci e poi integralmente restituito dopo 8 mesi con interessi legali. I soci di minoranza negano qualsiasi delibera, evidenziano assenza di verbalizzazione e segnalano che nel periodo la societa ha pagato in ritardo fornitori strategici. La difesa deduce assenza di danno finale per intervenuta restituzione e incertezza sull'elemento soggettivo. Si chiede di verificare qualificazione penale della condotta, rilievo della restituzione tardiva e impatto della mancata formalizzazione societaria.",
+    "domain": "ENTRAMBI",
+    "principle_tests": [
+      {
+        "description": "Controlla confini tra fattispecie patrimoniali contigue",
+        "id": "OFFENCE_BOUNDARY",
+        "name": "Confini di fattispecie"
+      },
+      {
+        "description": "Verifica prova di dolo specifico o profitto ingiusto richiesti",
+        "id": "SUBJECTIVE_PROOF",
+        "name": "Prova dell'elemento soggettivo"
+      },
+      {
+        "description": "Se eliminando mentalmente la condotta l’evento non si verifica, la condotta è condizione dell’evento",
+        "id": "BUT_FOR",
+        "name": "Conditio sine qua non (controfattuale)"
+      },
+      {
+        "description": "Quando il nesso non è deterministico, si usa una regola scientifica/empirica per supportare il controfattuale",
+        "id": "COVERING_LAW",
+        "name": "Legge di copertura (scientifico-probabilistica quando necessario)"
+      },
+      {
+        "description": "Le concause non escludono il nesso se la condotta resta condizione dell’evento",
+        "id": "EQUIVALENCE",
+        "name": "Equivalenza delle condizioni (41.1)"
+      },
+      {
+        "description": "Una causa sopravvenuta rompe il nesso se è autonomamente sufficiente a produrre l’evento",
+        "id": "SOLE_SUFFICIENT_CAUSE",
+        "name": "Causa sopravvenuta da sola sufficiente (41.2)"
+      }
+    ],
+    "theory_id": "T_PEN_PATRIMONIALI"
+  },
+  "settings": {
+    "counter_model": "gpt_oss_120b",
+    "counter_temperature": 0.3,
+    "llm_max_tokens": 8192,
+    "counter_enable_causality": true,
+    "counter_pass_causal_identity": true,
+    "counter_pass_taxonomy_attacks": true,
+    "counter_pass_norms": true
+  },
+  "pre_retrieved_statutes": [
+    {
+      "articolo": "646",
+      "libro": "CP Libro II",
+      "score": 0.9289879317025563,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_883_646",
+      "testo": "Chiunque, per procurare a sé o ad altri un ingiusto profitto, si appropria il denaro o la cosa mobile altrui di cui abbia, a qualsiasi titolo, il possesso, è punito, a querela della persona offesa, con la reclusione fino a tre anni e con la multa fino a lire diecimila.(294) ((356)) Se il fatto è commesso su cose possedute a titolo di deposito necessario, la pena è aumentata. COMMA ABROGATO DAL D.LGS. 10 APRILE 2018, N. 36 .",
+      "titolo": "Appropriazione indebita"
+    },
+    {
+      "articolo": "319-quater",
+      "libro": "CP Libro II",
+      "score": 0.891217769089233,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_374_319-quater",
+      "testo": "Salvo che il fatto costituisca più grave reato, il pubblico ufficiale o l'incaricato di pubblico servizio che, abusando della sua qualità o dei suoi poteri, induce taluno a dare o a promettere indebitamente, a lui o a un terzo, denaro o altra utilità è punito con la reclusione da sei anni a dieci anni e sei mesi. Nei casi previsti dal primo comma, chi dà o promette denaro o altra utilità è punito con la reclusione fino a tre anni ((ovvero con la reclusione fino a quattro anni quando il fatto offende gli interessi finanziari dell'Unione europea e il danno o il profitto sono superiori a euro 100.000)) . (281)",
+      "titolo": "Induzione indebita a dare o promettere utilità"
+    },
+    {
+      "articolo": "640-ter",
+      "libro": "CP Libro II",
+      "score": 0.6140801529681252,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_873_640-ter",
+      "testo": "Chiunque, alterando in qualsiasi modo il funzionamento di un sistema informatico o telematico o intervenendo senza diritto con qualsiasi modalità su dati, informazioni o programmi contenuti in un sistema informatico o telematico o ad esso pertinenti, procura a sé o ad altri un ingiusto profitto con altrui danno, è punito con la reclusione da sei mesi a tre anni e con la multa da lire centomila a due milioni. La pena è della reclusione da uno a cinque anni e della multa da lire seicentomila a tre milioni se ricorre una delle circostanze previste dal numero 1) del secondo comma dell'articolo 640, ovvero se il fatto produce un trasferimento di denaro, di valore monetario o di valuta virtuale o è commesso con abuso della qualità di operatore del sistema. La pena è della reclusione da due a sei anni e della multa da euro 600 a euro 3.000 se il fatto è commesso con furto o indebito utilizzo dell'identità digitale in danno di uno o più soggetti. Il delitto è punibile a querela della persona offesa, salvo che ricorra taluna delle circostanze di cui al secondo e terzo comma o ((la circostanza prevista)) dall'articolo 61, primo comma, numero 5, limitatamente all'aver approfittato di circostanze di persona, anche in riferimento all'età ((...)) .",
+      "titolo": "Frode informatica"
+    },
+    {
+      "articolo": "640-quater",
+      "libro": "CP Libro II",
+      "score": 0.3992269091897348,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_874_640-quater",
+      "testo": "Nei casi di cui agli articoli 640, secondo comma, ((numeri 1 e 2-ter) )) , 640-bis e 640-ter, secondo comma, con esclusione dell'ipotesi in cui il fatto è commesso con abuso della qualità di operatore del sistema, si osservano, in quanto applicabili, le disposizioni contenute nell'articolo 322-ter.",
+      "titolo": "Applicabilità dell'articolo 322-ter"
+    },
+    {
+      "articolo": "518-septiesdecies",
+      "libro": "CP Libro II",
+      "score": 0.388172147377412,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_659_518-septiesdecies",
+      "testo": "((La pena è diminuita di un terzo quando un reato previsto dal presente titolo cagioni un danno di speciale tenuità ovvero comporti un lucro di speciale tenuità quando anche l'evento dannoso o pericoloso sia di speciale tenuità. La pena è diminuita da un terzo a due terzi nei confronti di chi abbia consentito l'individuazione dei correi o abbia fatto assicurare le prove del reato o si sia efficacemente adoperato per evitare che l'attività delittuosa fosse portata a conseguenze ulteriori o abbia recuperato o fatto recuperare i beni culturali oggetto del delitto.))",
+      "titolo": "Circostanze attenuanti"
+    },
+    {
+      "articolo": "61",
+      "libro": "CP Libro I",
+      "score": 0.4298561070776876,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_69_61",
+      "testo": "Aggravano il reato, quando non ne sono elementi costitutivi o circostanze aggravanti speciali, le circostanze seguenti: 1° l'avere agito per motivi abietti o futili; 2° l'aver commesso il reato per eseguirne od occultarne un altro, ovvero per conseguire o assicurare a sé o ad altri il prodotto o il profitto o il prezzo ovvero la impunità di un altro reato; 3° l'avere, nei delitti colposi, agito nonostante la previsione dell'evento; 4° l'avere adoperato sevizie, o l'aver agito con crudeltà verso le persone; 5) l'avere profittato di circostanze di tempo, di luogo o di persona, anche in riferimento all'età, tali da ostacolare la pubblica o privata difesa; 6° l'avere il colpevole commesso il reato durante il tempo, in cui si è sottratto volontariamente alla esecuzione di un mandato o di un ordine di arresto o di cattura o di carcerazione, spedito per un precedente reato; 7° l'avere, nei delitti contro il patrimonio, o che comunque offendono il patrimonio, ovvero nei delitti determinati da motivi di lucro, cagionato alla persona offesa dal reato un danno patrimoniale di rilevante gravità; 8° l'avere aggravato o tentato di aggravare le conseguenze del delitto commesso; 9° l'avere commesso il fatto con abuso dei poteri, o con violazione dei doveri inerenti a una pubblica funzione o a un pubblico servizio, ovvero alla qualità di ministro di un culto; 10° l'avere commesso il fatto contro un pubblico ufficiale o una persona incaricata di un pubblico servizio, o rivestita della qualità di ministro del culto cattolico o di un culto ammesso nello Stato, ovvero contro un agente diplomatico o consolare di uno Stato estero, nell'atto o a causa dell'adempimento delle funzioni o del servizio; 11° l'avere commesso il fatto con abuso di autorità o di relazioni domestiche, ovvero con abuso di relazioni di ufficio, di prestazione d'opera, di coabitazione, o di ospitalità. 11-bis. l'avere il colpevole commesso il fatto mentre si trova illegalmente sul territorio nazionale.(217) (223) 11-ter) l'aver commesso un delitto contro la persona ai danni di un soggetto minore all'interno o nelle adiacenze di istituti di istruzione o di formazione. 11-quater. l'avere il colpevole commesso un delitto non colposo durante il periodo in cui era ammesso ad una misura alternativa alla detenzione in carcere. 11-quinquies) l'avere, nei delitti non colposi contro la vita e l'incolumità individuale e contro la libertà personale, commesso il fatto in presenza o in danno di un minore di anni diciotto ovvero in danno di persona in stato di gravidanza. 11-sexies) l'avere, nei delitti non colposi, commesso il fatto in danno di persone ricoverate presso strutture sanitarie o presso strutture sociosanitarie residenziali o semiresidenziali, pubbliche o private, ovvero presso strutture socio-educative. 11-septies) l'avere commesso il fatto in occasione o a causa di manifestazioni sportive o durante i trasferimenti da o verso i luoghi in cui si svolgono dette manifestazioni. 11-octies) l'avere agito, nei delitti commessi con violenza o minaccia, in danno degli esercenti le professioni sanitarie e socio-sanitarie nonché di chiunque svolga attività ausiliarie di cura, assistenza sanitaria o soccorso, funzionali allo svolgimento di dette professioni, a causa o nell'esercizio di tali professioni o attività. 11-novies) l'avere agito, nei delitti commessi con violenza o minaccia, in danno di un dirigente scolastico o di un membro del personale docente, educativo, amministrativo, tecnico o ausiliario della scuola, a causa o nell'esercizio delle loro funzioni. 11-decies) l'avere, nei delitti non colposi contro la vita e l'incolumità pubblica e individuale, contro la libertà personale e contro il patrimonio, o che comunque offendono il patrimonio commesso il fatto all'interno o nelle immediate adiacenze delle stazioni ferroviarie e delle metropolitane o all'interno dei convogli adibiti al trasporto di passeggeri. ((11-undecies) l'avere commesso il fatto mediante l'impiego di sistemi di intelligenza artificiale, quando gli stessi, per la loro natura o per le modalità di utilizzo, abbiano costituito mezzo insidioso, ovvero quando il loro impiego abbia comunque ostacolato la pubblica o la privata difesa, ovvero aggravato le conseguenze del reato)) .",
+      "titolo": "Circostanze aggravanti comuni"
+    },
+    {
+      "articolo": "322-ter",
+      "libro": "CP Libro II",
+      "score": 0.27945883643281433,
+      "source": "codice_penale",
+      "statute_id": "codice_penale_379_322-ter",
+      "testo": "Nel caso di condanna, o di applicazione della pena su richiesta delle parti a norma dell' articolo 444 del codice di procedura penale , per uno dei delitti previsti dagli articoli da 314 a 320, anche se commessi dai soggetti indicati nell'articolo 322-bis, primo comma, è sempre ordinata la confisca dei beni che ne costituiscono il profitto o il prezzo, salvo che appartengano a persona estranea al reato, ovvero, quando essa non è possibile, la confisca di beni, di cui il reo ha la disponibilità, per un valore corrispondente a tale prezzo ((o profitto)) . Nel caso di condanna, o di applicazione della pena a norma dell' articolo 444 del codice di procedura penale , per il delitto previsto dall'articolo 321, anche se commesso ai sensi dell'articolo 322-bis, secondo comma, è sempre ordinata la confisca dei beni che ne costituiscono il profitto salvo che appartengano a persona estranea al reato, ovvero, quando essa non è possibile, la confisca di beni, di cui il reo ha la disponibilità, per un valore corrispondente a quello di detto profitto e, comunque, non inferiore a quello del denaro o delle altre utilità date o promesse al pubblico ufficiale o all'incaricato di pubblico servizio o agli altri soggetti indicati nell'articolo 322-bis, secondo comma. Nei casi di cui ai commi primo e secondo, il giudice, con la sentenza di condanna, determina le somme di denaro o individua i beni assoggettati a confisca in quanto costituenti il profitto o il prezzo del reato ovvero in quanto di valore corrispondente al profitto o al prezzo del reato. (170)",
+      "titolo": "Confisca"
+    }
+  ],
+  "pre_retrieved_precedents": []
+}

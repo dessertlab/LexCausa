@@ -1,0 +1,1270 @@
+{
+  "chain_scores": {
+    "contra": {
+      "attack_coverage_axes_covered": 1,
+      "attack_coverage_axes_total": 1,
+      "attack_coverage_bonus": 0.06539448,
+      "attack_coverage_ratio": 1.0,
+      "attack_coverage_score": 0.544954,
+      "attacks_avg": 0.32915,
+      "base_score_avg": 0.7226099925587302,
+      "cogency_avg": 0.6545941536886015,
+      "net_plausibility": 0.4439584076336013,
+      "net_plausibility_adjusted": 0.4439584076336013,
+      "net_plausibility_raw": 0.3934599925587302,
+      "norm_support_avg": 0.7781088913245535,
+      "precedent_delta_avg": 0.0,
+      "redundancy_index": 0.2383370388020627,
+      "redundancy_penalty": 0.014896064925128918,
+      "semantics_avg": 0.7166272997410945
+    },
+    "pro": {
+      "attacks_avg": 0.14025,
+      "base_score_avg": 0.7209191564049389,
+      "cogency_avg": 0.606854244819259,
+      "net_plausibility": 0.7209191564049389,
+      "net_plausibility_adjusted": 0.7209191564049389,
+      "net_plausibility_dialectical_raw": 0.5806691564049389,
+      "net_plausibility_intrinsic_raw": 0.7209191564049389,
+      "net_plausibility_raw": 0.7209191564049389,
+      "norm_support_avg": 0.8722727515714304,
+      "precedent_delta_avg": 0.0,
+      "reasoner_plausibility_locked": true,
+      "redundancy_index": 0.33569201596847864,
+      "redundancy_penalty": 0.06294225299408975,
+      "semantics_avg": 0.6331792744352965
+    }
+  },
+  "enabled": true,
+  "links": {
+    "contra": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2181,
+            "attacker_base_score": 0.719,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2335,
+            "damage_factor": 0.4,
+            "excess": 0.5451,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8577,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.7186,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1333,
+            "damage_factor": 0.4,
+            "excess": 0.4449,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7885,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1591,
+            "attacker_base_score": 0.7476,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0861,
+            "damage_factor": 0.4,
+            "excess": 0.3977,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7264,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1386,
+            "attacker_base_score": 0.6985,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0348,
+            "damage_factor": 0.4,
+            "excess": 0.3464,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7408,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.3961,
+        "base_score": 0.688367383570406,
+        "cogency": 0.5959258431354713,
+        "cogency_details": {
+          "argument_quality_score": 0.6877008730566035,
+          "coherence_score": 0.504150813214339,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Poiché i controlli sulla sicurezza erano effettuati in maniera discontinua e le segnalazioni pregresse di criticità erano sistematicamente ignorate, il datore di lavoro non poteva ragionevolmente prevedere la rimozione degli elementi di fissaggio né il conseguente crollo del ponteggio, rendendo la sequenza di eventi imprevedibile e configurando la difesa di fatalità. L’assenza di un monitoraggio costante ha interrotto il nesso di prevedibilità richiesto per attribuire colpa per negligenza, poiché la normativa penale richiede la dimostrazione di una previsione ragionevole del danno. Pertanto, la responsabilità penale del preposto e dell’operaio risulta indebolita dalla mancanza di prevedibilità dell’incidente.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.688367383570406,
+        "nesso_plausibility": 0.29226738357040605,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Pur riconoscendo che l’art. 437 c.p. punisce chi omette di collocare o di imporre cautele contro gli infortuni, la norma non individua espressamente il preposto come soggetto obbligato a far rispettare l’uso dei DPI, ma attribuisce tale responsabilità al datore di lavoro, il quale ha già prodotto il POS e i verbali di formazione. In assenza di una disposizione normativa che imponga al preposto un obbligo diretto di vigilare sull’applicazione dei DPI, la sua eventuale delega operativa a soggetti preposti al controllo non può configurare la violazione dell’art. 437 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "437",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          },
+          {
+            "articolo": "437",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6611535803331441,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6611535803331441
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Pur riconoscendo che l’art. 437 c.p. punisce chi omette di collocare o di imporre cautele contro gli infortuni, la norma non individua espressamente il preposto come soggetto obbligato a far rispettare l’uso dei DPI, ma attribuisce tale responsabilità al datore di lavoro, il quale ha già prodotto il POS e i verbali di formazione. In assenza di una disposizione normativa che imponga al preposto un obbligo diretto di vigilare sull’applicazione dei DPI, la sua eventuale delega operativa a soggetti preposti al controllo non può configurare la violazione dell’art. 437 c.p."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.144,
+            "attacker_base_score": 0.719,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1169,
+            "damage_factor": 0.4,
+            "excess": 0.36,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7767,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1182,
+            "attacker_base_score": 0.7186,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0523,
+            "damage_factor": 0.4,
+            "excess": 0.2954,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7322,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1143,
+            "attacker_base_score": 0.7476,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0427,
+            "damage_factor": 0.4,
+            "excess": 0.2858,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6974,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1116,
+            "attacker_base_score": 0.6985,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0358,
+            "damage_factor": 0.4,
+            "excess": 0.279,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7415,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.2622,
+        "base_score": 0.7568526015470544,
+        "cogency": 0.7132624642417317,
+        "cogency_details": {
+          "argument_quality_score": 0.7242722018810636,
+          "coherence_score": 0.7022527266023998,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Pur riconoscendo l’esistenza di controlli discontinui e l’ignoranza delle segnalazioni pregresse, la disciplina sulla cooperazione colposa (art. 254 c.p.) richiede che la condotta di ciascun soggetto abbia reso possibile o agevolato il delitto con un nesso di causalità diretto; la sola omissione del datore di garantire una vigilanza costante non dimostra, di per sé, un contributo determinante al rimuovere gli elementi di fissaggio né all’assenza dei DPI. Pertanto, la responsabilità non può essere automaticamente attribuita in modo solidale a tutti gli attori, ma deve essere valutata singolarmente in base al reale apporto al verificarsi del crollo.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7568526015470544,
+        "nesso_plausibility": 0.49465260154705437,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Poiché i controlli sulla sicurezza erano effettuati in maniera discontinua e le segnalazioni pregresse di criticità erano sistematicamente ignorate, il datore di lavoro non poteva ragionevolmente prevedere la rimozione degli elementi di fissaggio né il conseguente crollo del ponteggio, rendendo la sequenza di eventi imprevedibile e configurando la difesa di fatalità. L’assenza di un monitoraggio costante ha interrotto il nesso di prevedibilità richiesto per attribuire colpa per negligenza, poiché la normativa penale richiede la dimostrazione di una previsione ragionevole del danno. Pertanto, la responsabilità penale del preposto e dell’operaio risulta indebolita dalla mancanza di prevedibilità dell’incidente.",
+        "retrieved_norms": [
+          {
+            "articolo": "254",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_276_254",
+            "title": "Agevolazione colposa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7721010191490449,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7721010191490449
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Poiché i controlli sulla sicurezza erano effettuati in maniera discontinua e le segnalazioni pregresse di criticità erano sistematicamente ignorate, il datore di lavoro non poteva ragionevolmente prevedere la rimozione degli elementi di fissaggio né il conseguente crollo del ponteggio, rendendo la sequenza di eventi imprevedibile e configurando la difesa di fatalità. L’assenza di un monitoraggio costante ha interrotto il nesso di prevedibilità richiesto per attribuire colpa per negligenza, poiché la normativa penale richiede la dimostrazione di una previsione ragionevole del danno. Pertanto, la responsabilità penale del preposto e dell’operaio risulta indebolita dalla mancanza di prevedibilità dell’incidente."
+      }
+    ],
+    "pro": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1847,
+            "attacker_base_score": 0.6884,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1809,
+            "damage_factor": 0.4,
+            "excess": 0.4618,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8577,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.719,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7569,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6172,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7767,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.719,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1847,
+        "base_score": 0.7190422789483732,
+        "cogency": 0.655019090147676,
+        "cogency_details": {
+          "argument_quality_score": 0.6550808824285125,
+          "coherence_score": 0.6549572978668394,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’omissione del preposto di imporre l’uso dei DPI costituisce una violazione delle cautele obbligatorie di prevenzione degli infortuni sul lavoro prevista dall’art. 437 c.p., che punisce chi omette di adottare o di mantenere i dispositivi di sicurezza destinati a evitare lesioni. Tale comportamento, in assenza di ogni giustificazione, integra l’elemento soggettivo di colpa per negligenza, poiché il preposto era consapevole dell’obbligo normativo e della pericolosità del lavoro in quota.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7190422789483732,
+        "nesso_plausibility": 0.5343422789483733,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, con conseguente lesione grave di un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi; il datore di lavoro ha prodotto il POS e i verbali di formazione, ma i controlli sulla sicurezza risultano discontinui e le segnalazioni pregresse sono state ignorate; gli imputati hanno sostenuto la fatalità e l’imprevedibilità della sequenza causale.",
+        "retrieved_norms": [
+          {
+            "articolo": "437",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7043099845808302,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7043099845808302
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, con conseguente lesione grave di un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi; il datore di lavoro ha prodotto il POS e i verbali di formazione, ma i controlli sulla sicurezza risultano discontinui e le segnalazioni pregresse sono state ignorate; gli imputati hanno sostenuto la fatalità e l’imprevedibilità della sequenza causale."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1468,
+            "attacker_base_score": 0.6884,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0856,
+            "damage_factor": 0.4,
+            "excess": 0.367,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7885,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7186,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7569,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5818,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7322,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7186,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1468,
+        "base_score": 0.7186222586906315,
+        "cogency": 0.5753619739039642,
+        "cogency_details": {
+          "argument_quality_score": 0.660167082661514,
+          "coherence_score": 0.4905568651464142,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Il lavoratore che, al fine di accelerare i tempi, ha rimosso gli elementi di fissaggio del ponteggio ha violato le norme di sicurezza obbligatorie, configurando una condotta colposa ai sensi dell’art. 590 c.p., poiché tale omissione ha determinato il crollo e la lesione grave dell’operaio. La rimozione dei fissaggi, elemento essenziale per la stabilità del ponteggio, è stata compiuta con negligenza e imprudenza, requisiti della colpa nella fattispecie di lesioni personali colpose.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7186222586906315,
+        "nesso_plausibility": 0.5718222586906314,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "L’omissione del preposto di imporre l’uso dei DPI costituisce una violazione delle cautele obbligatorie di prevenzione degli infortuni sul lavoro prevista dall’art. 437 c.p., che punisce chi omette di adottare o di mantenere i dispositivi di sicurezza destinati a evitare lesioni. Tale comportamento, in assenza di ogni giustificazione, integra l’elemento soggettivo di colpa per negligenza, poiché il preposto era consapevole dell’obbligo normativo e della pericolosità del lavoro in quota.",
+        "retrieved_norms": [
+          {
+            "articolo": "437",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          },
+          {
+            "articolo": "590",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_753_590",
+            "title": "Lesioni personali colpose"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6151646150820658,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6151646150820658
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "L’omissione del preposto di imporre l’uso dei DPI costituisce una violazione delle cautele obbligatorie di prevenzione degli infortuni sul lavoro prevista dall’art. 437 c.p., che punisce chi omette di adottare o di mantenere i dispositivi di sicurezza destinati a evitare lesioni. Tale comportamento, in assenza di ogni giustificazione, integra l’elemento soggettivo di colpa per negligenza, poiché il preposto era consapevole dell’obbligo normativo e della pericolosità del lavoro in quota."
+      },
+      {
+        "argument_id": "chain_3",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1285,
+            "attacker_base_score": 0.6884,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0198,
+            "damage_factor": 0.4,
+            "excess": 0.3214,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7408,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.6985,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7569,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5893,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7415,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.6985,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1285,
+        "base_score": 0.6984569895856588,
+        "cogency": 0.585998901661539,
+        "cogency_details": {
+          "argument_quality_score": 0.6295897683843003,
+          "coherence_score": 0.5424080349387777,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S4",
+        "conclusion_text": "Ai sensi dell’art. 40 c.p., l’omissione del preposto di non imporre l’uso dei DPI è una condizione sine qua non dell’aggravamento delle lesioni subite dall’operaio: se i DPI fossero stati indossati, la gravità delle lesioni conseguenti al crollo del ponteggio sarebbe stata notevolmente ridotta; dunque, eliminando tale omissione, l’esito lesivo grave non si sarebbe verificato nella sua attuale entità, soddisfacendo il test del “but‑for”.",
+        "libro": "",
+        "link_id": "S3->S4",
+        "nesso_intrinsic": 0.6984569895856588,
+        "nesso_plausibility": 0.5699569895856589,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S3"
+        ],
+        "premise_text": "Il lavoratore che, al fine di accelerare i tempi, ha rimosso gli elementi di fissaggio del ponteggio ha violato le norme di sicurezza obbligatorie, configurando una condotta colposa ai sensi dell’art. 590 c.p., poiché tale omissione ha determinato il crollo e la lesione grave dell’operaio. La rimozione dei fissaggi, elemento essenziale per la stabilità del ponteggio, è stata compiuta con negligenza e imprudenza, requisiti della colpa nella fattispecie di lesioni personali colpose.",
+        "retrieved_norms": [
+          {
+            "articolo": "590",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_753_590",
+            "title": "Lesioni personali colpose"
+          },
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.5373101236412492,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.5373101236412492
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Il lavoratore che, al fine di accelerare i tempi, ha rimosso gli elementi di fissaggio del ponteggio ha violato le norme di sicurezza obbligatorie, configurando una condotta colposa ai sensi dell’art. 590 c.p., poiché tale omissione ha determinato il crollo e la lesione grave dell’operaio. La rimozione dei fissaggi, elemento essenziale per la stabilità del ponteggio, è stata compiuta con negligenza e imprudenza, requisiti della colpa nella fattispecie di lesioni personali colpose."
+      },
+      {
+        "argument_id": "chain_4",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.101,
+            "attacker_base_score": 0.6884,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.0001,
+            "damage_factor": 0.4,
+            "excess": 0.2526,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7264,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7476,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7569,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.5542,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6974,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.7476,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.101,
+        "base_score": 0.7475550983950918,
+        "cogency": 0.6110370135638568,
+        "cogency_details": {
+          "argument_quality_score": 0.6399455874199925,
+          "coherence_score": 0.5821284397077209,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S5",
+        "conclusion_text": "Ai sensi dell’art. 41 c.p., la rimozione degli elementi di fissaggio da parte dell’operaio costituisce una causa sopravvenuta da sola sufficiente a determinare il crollo del ponteggio; pertanto, tale condotta spezza il nesso di causalità tra l’omissione del preposto (mancata imposizione dei DPI) e l’evento di crollo, pur rimanendo la mancanza di DPI una causa concorrevole per la gravità della lesione subita.",
+        "libro": "CP Libro I",
+        "link_id": "S4->S5",
+        "nesso_intrinsic": 0.7475550983950918,
+        "nesso_plausibility": 0.6465550983950918,
+        "norm_support": 0.903660704987056,
+        "norm_support_details": {
+          "citation_count": 2,
+          "citation_count_score": 0.816496580927726,
+          "citation_score": 0.8623724356957945,
+          "citation_specificity_score": 1.0,
+          "final": 0.903660704987056,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S4"
+        ],
+        "premise_text": "Ai sensi dell’art. 40 c.p., l’omissione del preposto di non imporre l’uso dei DPI è una condizione sine qua non dell’aggravamento delle lesioni subite dall’operaio: se i DPI fossero stati indossati, la gravità delle lesioni conseguenti al crollo del ponteggio sarebbe stata notevolmente ridotta; dunque, eliminando tale omissione, l’esito lesivo grave non si sarebbe verificato nella sua attuale entità, soddisfacendo il test del “but‑for”.",
+        "retrieved_norms": [
+          {
+            "articolo": "40",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_46_40",
+            "title": "Rapporto di causalità"
+          },
+          {
+            "articolo": "41",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_47_41",
+            "title": "Concorso di cause"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.6759323744370411,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6759323744370411
+        },
+        "severity_category": "generale",
+        "source": "codice_penale",
+        "text": "Ai sensi dell’art. 40 c.p., l’omissione del preposto di non imporre l’uso dei DPI è una condizione sine qua non dell’aggravamento delle lesioni subite dall’operaio: se i DPI fossero stati indossati, la gravità delle lesioni conseguenti al crollo del ponteggio sarebbe stata notevolmente ridotta; dunque, eliminando tale omissione, l’esito lesivo grave non si sarebbe verificato nella sua attuale entità, soddisfacendo il test del “but‑for”."
+      }
+    ]
+  },
+  "net_plausibility": {
+    "contra": 0.4439584076336013,
+    "contra_adjusted": 0.4439584076336013,
+    "contra_raw": 0.3934599925587302,
+    "final": 0.2769607487713376,
+    "final_adjusted": 0.2769607487713376,
+    "final_raw": 0.32745916384620866,
+    "pro": 0.7209191564049389,
+    "pro_adjusted": 0.7209191564049389,
+    "pro_raw": 0.7209191564049389,
+    "pro_raw_dialectical": 0.5806691564049389,
+    "pro_raw_intrinsic": 0.7209191564049389,
+    "uses_adjusted_score": true
+  },
+  "notes": {
+    "attacks_enabled": true,
+    "dominant_attacks": [
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.8577,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.2181
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.8577,
+        "target": "S1->S2",
+        "target_role": "support",
+        "value": 0.1847
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7885,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.178
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.7264,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1591
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7885,
+        "target": "S2->S3",
+        "target_role": "support",
+        "value": 0.1468
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "support",
+        "overlap": 0.7767,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.144
+      },
+      {
+        "attacker": "S3->S4",
+        "attacker_role": "support",
+        "overlap": 0.7408,
+        "target": "S1->S2",
+        "target_role": "counter",
+        "value": 0.1386
+      },
+      {
+        "attacker": "S1->S2",
+        "attacker_role": "contra",
+        "overlap": 0.7408,
+        "target": "S3->S4",
+        "target_role": "support",
+        "value": 0.1285
+      },
+      {
+        "attacker": "S2->S3",
+        "attacker_role": "support",
+        "overlap": 0.7322,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1182
+      },
+      {
+        "attacker": "S4->S5",
+        "attacker_role": "support",
+        "overlap": 0.6974,
+        "target": "S2->S3",
+        "target_role": "counter",
+        "value": 0.1143
+      }
+    ],
+    "precedent_swings": [],
+    "severity_debug": [
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "",
+        "link_id": "S3->S4",
+        "role": "support",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro I",
+        "link_id": "S4->S5",
+        "role": "support",
+        "severity_category": "generale",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      },
+      {
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "role": "counter",
+        "severity_category": "delitti",
+        "source": "codice_penale"
+      }
+    ],
+    "structural_adjustments": {
+      "contra": {
+        "attack_coverage": {
+          "axes_covered": 1,
+          "axes_total": 1,
+          "axis_details": [
+            {
+              "active_attacks": 4,
+              "axis_base_avg": 0.7209191564049389,
+              "axis_id": "AX1",
+              "axis_quality": 0.24159,
+              "link_ids": [
+                "S4->S5",
+                "S1->S2",
+                "S2->S3",
+                "S3->S4"
+              ]
+            }
+          ],
+          "bonus": 0.06539448,
+          "coverage_ratio": 1.0,
+          "enabled": true,
+          "quality_avg": 0.24159,
+          "wpcs": 0.544954
+        },
+        "redundancy": {
+          "avg_pair_similarity": 0.7867343708645775,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 2,
+          "pair_count": 1,
+          "penalty": 0.014896064925128918,
+          "redundancy_index": 0.2383370388020627
+        }
+      },
+      "enabled": true,
+      "pro": {
+        "redundancy": {
+          "avg_pair_similarity": 0.813993764471174,
+          "high_similarity_pair_ratio": 1.0,
+          "links_count": 4,
+          "pair_count": 6,
+          "penalty": 0.06294225299408975,
+          "redundancy_index": 0.33569201596847864
+        }
+      },
+      "reasoner_plausibility_locked": true,
+      "verdict_uses_adjusted_score": true
+    },
+    "weakest_links": [
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.2181,
+            "attacker_base_score": 0.719,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.2335,
+            "damage_factor": 0.4,
+            "excess": 0.5451,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8577,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "contradiction",
+            "attack_value": 0.178,
+            "attacker_base_score": 0.7186,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.1333,
+            "damage_factor": 0.4,
+            "excess": 0.4449,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7885,
+            "reason": "active: contradiction [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1591,
+            "attacker_base_score": 0.7476,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0861,
+            "damage_factor": 0.4,
+            "excess": 0.3977,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7264,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1386,
+            "attacker_base_score": 0.6985,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0348,
+            "damage_factor": 0.4,
+            "excess": 0.3464,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7408,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.6884,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.3961,
+        "base_score": 0.688367383570406,
+        "cogency": 0.5959258431354713,
+        "cogency_details": {
+          "argument_quality_score": 0.6877008730566035,
+          "coherence_score": 0.504150813214339,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "Poiché i controlli sulla sicurezza erano effettuati in maniera discontinua e le segnalazioni pregresse di criticità erano sistematicamente ignorate, il datore di lavoro non poteva ragionevolmente prevedere la rimozione degli elementi di fissaggio né il conseguente crollo del ponteggio, rendendo la sequenza di eventi imprevedibile e configurando la difesa di fatalità. L’assenza di un monitoraggio costante ha interrotto il nesso di prevedibilità richiesto per attribuire colpa per negligenza, poiché la normativa penale richiede la dimostrazione di una previsione ragionevole del danno. Pertanto, la responsabilità penale del preposto e dell’operaio risulta indebolita dalla mancanza di prevedibilità dell’incidente.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.688367383570406,
+        "nesso_plausibility": 0.29226738357040605,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 2,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Pur riconoscendo che l’art. 437 c.p. punisce chi omette di collocare o di imporre cautele contro gli infortuni, la norma non individua espressamente il preposto come soggetto obbligato a far rispettare l’uso dei DPI, ma attribuisce tale responsabilità al datore di lavoro, il quale ha già prodotto il POS e i verbali di formazione. In assenza di una disposizione normativa che imponga al preposto un obbligo diretto di vigilare sull’applicazione dei DPI, la sua eventuale delega operativa a soggetti preposti al controllo non può configurare la violazione dell’art. 437 c.p.",
+        "retrieved_norms": [
+          {
+            "articolo": "437",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          },
+          {
+            "articolo": "437",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.6611535803331441,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.6611535803331441
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Pur riconoscendo che l’art. 437 c.p. punisce chi omette di collocare o di imporre cautele contro gli infortuni, la norma non individua espressamente il preposto come soggetto obbligato a far rispettare l’uso dei DPI, ma attribuisce tale responsabilità al datore di lavoro, il quale ha già prodotto il POS e i verbali di formazione. In assenza di una disposizione normativa che imponga al preposto un obbligo diretto di vigilare sull’applicazione dei DPI, la sua eventuale delega operativa a soggetti preposti al controllo non può configurare la violazione dell’art. 437 c.p."
+      },
+      {
+        "argument_id": "chain_2",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.144,
+            "attacker_base_score": 0.719,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "support",
+            "boosted_attack": 1.1169,
+            "damage_factor": 0.4,
+            "excess": 0.36,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7767,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1182,
+            "attacker_base_score": 0.7186,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "support",
+            "boosted_attack": 1.0523,
+            "damage_factor": 0.4,
+            "excess": 0.2954,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7322,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1143,
+            "attacker_base_score": 0.7476,
+            "attacker_link_id": "S4->S5",
+            "attacker_role": "support",
+            "boosted_attack": 1.0427,
+            "damage_factor": 0.4,
+            "excess": 0.2858,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.6974,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1116,
+            "attacker_base_score": 0.6985,
+            "attacker_link_id": "S3->S4",
+            "attacker_role": "support",
+            "boosted_attack": 1.0358,
+            "damage_factor": 0.4,
+            "excess": 0.279,
+            "filter_stage": "top_k",
+            "filtered": true,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7415,
+            "reason": "capped: top-K overflow (rank > 2), original=active: derogation [NLI-bypass]",
+            "target_base_score": 0.7569,
+            "type_multiplier": 2.0
+          }
+        ],
+        "attacks_sum": 0.2622,
+        "base_score": 0.7568526015470544,
+        "cogency": 0.7132624642417317,
+        "cogency_details": {
+          "argument_quality_score": 0.7242722018810636,
+          "coherence_score": 0.7022527266023998,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S3",
+        "conclusion_text": "Pur riconoscendo l’esistenza di controlli discontinui e l’ignoranza delle segnalazioni pregresse, la disciplina sulla cooperazione colposa (art. 254 c.p.) richiede che la condotta di ciascun soggetto abbia reso possibile o agevolato il delitto con un nesso di causalità diretto; la sola omissione del datore di garantire una vigilanza costante non dimostra, di per sé, un contributo determinante al rimuovere gli elementi di fissaggio né all’assenza dei DPI. Pertanto, la responsabilità non può essere automaticamente attribuita in modo solidale a tutti gli attori, ma deve essere valutata singolarmente in base al reale apporto al verificarsi del crollo.",
+        "libro": "CP Libro II",
+        "link_id": "S2->S3",
+        "nesso_intrinsic": 0.7568526015470544,
+        "nesso_plausibility": 0.49465260154705437,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S2"
+        ],
+        "premise_text": "Poiché i controlli sulla sicurezza erano effettuati in maniera discontinua e le segnalazioni pregresse di criticità erano sistematicamente ignorate, il datore di lavoro non poteva ragionevolmente prevedere la rimozione degli elementi di fissaggio né il conseguente crollo del ponteggio, rendendo la sequenza di eventi imprevedibile e configurando la difesa di fatalità. L’assenza di un monitoraggio costante ha interrotto il nesso di prevedibilità richiesto per attribuire colpa per negligenza, poiché la normativa penale richiede la dimostrazione di una previsione ragionevole del danno. Pertanto, la responsabilità penale del preposto e dell’operaio risulta indebolita dalla mancanza di prevedibilità dell’incidente.",
+        "retrieved_norms": [
+          {
+            "articolo": "254",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_276_254",
+            "title": "Agevolazione colposa"
+          }
+        ],
+        "role": "counter",
+        "rule_id": "",
+        "semantics": 0.7721010191490449,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7721010191490449
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Poiché i controlli sulla sicurezza erano effettuati in maniera discontinua e le segnalazioni pregresse di criticità erano sistematicamente ignorate, il datore di lavoro non poteva ragionevolmente prevedere la rimozione degli elementi di fissaggio né il conseguente crollo del ponteggio, rendendo la sequenza di eventi imprevedibile e configurando la difesa di fatalità. L’assenza di un monitoraggio costante ha interrotto il nesso di prevedibilità richiesto per attribuire colpa per negligenza, poiché la normativa penale richiede la dimostrazione di una previsione ragionevole del danno. Pertanto, la responsabilità penale del preposto e dell’operaio risulta indebolita dalla mancanza di prevedibilità dell’incidente."
+      },
+      {
+        "argument_id": "chain_1",
+        "attacks_received": [
+          {
+            "attack_type": "derogation",
+            "attack_value": 0.1847,
+            "attacker_base_score": 0.6884,
+            "attacker_link_id": "S1->S2",
+            "attacker_role": "contra",
+            "boosted_attack": 1.1809,
+            "damage_factor": 0.4,
+            "excess": 0.4618,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.8577,
+            "reason": "active: derogation [NLI-bypass]",
+            "target_base_score": 0.719,
+            "type_multiplier": 2.0
+          },
+          {
+            "attack_type": "general_opposition",
+            "attack_value": 0.0,
+            "attacker_base_score": 0.7569,
+            "attacker_link_id": "S2->S3",
+            "attacker_role": "contra",
+            "boosted_attack": 0.6172,
+            "damage_factor": 0.4,
+            "excess": 0.0,
+            "filtered": false,
+            "nli_bypass": true,
+            "nli_label": "contradiction",
+            "nli_score": 1.0,
+            "overlap": 0.7767,
+            "reason": "active: general_opposition [NLI-bypass]",
+            "target_base_score": 0.719,
+            "type_multiplier": 1.05
+          }
+        ],
+        "attacks_sum": 0.1847,
+        "base_score": 0.7190422789483732,
+        "cogency": 0.655019090147676,
+        "cogency_details": {
+          "argument_quality_score": 0.6550808824285125,
+          "coherence_score": 0.6549572978668394,
+          "explanation": "coherence/argument_quality averaged (readability removed)"
+        },
+        "conclusion_id": "S2",
+        "conclusion_text": "L’omissione del preposto di imporre l’uso dei DPI costituisce una violazione delle cautele obbligatorie di prevenzione degli infortuni sul lavoro prevista dall’art. 437 c.p., che punisce chi omette di adottare o di mantenere i dispositivi di sicurezza destinati a evitare lesioni. Tale comportamento, in assenza di ogni giustificazione, integra l’elemento soggettivo di colpa per negligenza, poiché il preposto era consapevole dell’obbligo normativo e della pericolosità del lavoro in quota.",
+        "libro": "CP Libro II",
+        "link_id": "S1->S2",
+        "nesso_intrinsic": 0.7190422789483732,
+        "nesso_plausibility": 0.5343422789483733,
+        "norm_support": 0.7781088913245535,
+        "norm_support_details": {
+          "citation_count": 1,
+          "citation_count_score": 0.5773502691896257,
+          "citation_score": 0.6830127018922193,
+          "citation_specificity_score": 1.0,
+          "final": 0.7781088913245535,
+          "retrieved_norms_count": 1,
+          "retrieved_score": 1.0
+        },
+        "precedent_delta": 0.0,
+        "precedent_influences": [],
+        "premise_ids": [
+          "S1"
+        ],
+        "premise_text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, con conseguente lesione grave di un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi; il datore di lavoro ha prodotto il POS e i verbali di formazione, ma i controlli sulla sicurezza risultano discontinui e le segnalazioni pregresse sono state ignorate; gli imputati hanno sostenuto la fatalità e l’imprevedibilità della sequenza causale.",
+        "retrieved_norms": [
+          {
+            "articolo": "437",
+            "match_type": "exact",
+            "score": 1.0,
+            "similarity": 1.0,
+            "source": "codice_penale",
+            "statute_id": "codice_penale_530_437",
+            "title": "Rimozione od omissione dolosa di cautele contro infortuni sul lavoro"
+          }
+        ],
+        "role": "support",
+        "rule_id": "",
+        "semantics": 0.7043099845808302,
+        "semantics_details": {
+          "method": "similarity",
+          "score": 0.7043099845808302
+        },
+        "severity_category": "delitti",
+        "source": "codice_penale",
+        "text": "Durante i lavori di ristrutturazione è avvenuto il crollo del ponteggio, con conseguente lesione grave di un operaio; le indagini hanno accertato che il preposto non aveva imposto l’uso dei DPI e che un altro operaio aveva rimosso elementi di fissaggio per accelerare i tempi; il datore di lavoro ha prodotto il POS e i verbali di formazione, ma i controlli sulla sicurezza risultano discontinui e le segnalazioni pregresse sono state ignorate; gli imputati hanno sostenuto la fatalità e l’imprevedibilità della sequenza causale."
+      }
+    ]
+  },
+  "verdict": "plausible",
+  "weights": {
+    "alpha": 0.3,
+    "beta": 0.4,
+    "gamma": 0.3
+  }
+}
