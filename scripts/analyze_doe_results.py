@@ -106,14 +106,13 @@ def sign_test(a: np.ndarray, b: np.ndarray, alternative: str = "greater"):
     return n_b_wins, n_clean, result.pvalue
 
 
-def verdict_label(final_plaus: float) -> str:
+def verdict_label(net: float, tau: float = 0.2) -> str:
     """Classifica il verdetto come plausible / uncertain / implausible."""
-    if final_plaus >= 0.5:
+    if net > tau:
         return "plausible"
-    elif final_plaus >= 0.3:
-        return "uncertain"
-    else:
+    if net < -tau:
         return "implausible"
+    return "uncertain"
 
 
 # ---------------------------------------------------------------------------
