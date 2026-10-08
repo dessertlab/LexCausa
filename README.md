@@ -64,6 +64,7 @@ scripts/
 ├── run_multi_doe.py              # campaign orchestrator (cloud backends + in-process vLLM / HPC via LLM_BACKEND, sharding)
 ├── run_doe_batch.py              # taxonomy-ablation A/B batch runner (→ experiments/causal_taxonomy_ablation/)
 ├── analyze_doe_results.py        # A/B ablation analysis (paired t-test, sign test, Cohen's d)
+├── plot_ablation_dims.py         # Appendix H figure: contra-side dimensions
 ├── merge_doe_shards.py           # merge sharded/multi-machine runs into one dir
 ├── analyze_multi_doe.py          # statistical analysis → doe_analysis.json (RQ1/RQ2/RQ3)
 ├── sensitivity_tau.py            # verdict-threshold τ sweep over metrics.csv (App. G)
